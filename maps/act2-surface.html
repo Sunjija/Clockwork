@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLOCKWORK — ACT2 상세 맵 초안 (룸 단위)</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.min.css">
+<style>
+  :root{
+    --u:60px;
+    --bg:#0d1015;
+    --panel:#151a22;
+    --line:#2a3140;
+    --txt:#d8dee6;
+    --sub:#8b93a1;
+    --gold:#d9b344;
+    --gold-dim:#8a6f2a;
+    --teal:#3fd2c7;
+    --copper:#b0713f;
+    --outer:#6f7a6a;
+    --mid:#9c7f45;
+    --purple:#b06fc4;
+    --mono:'Pretendard',-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:'Pretendard',-apple-system,sans-serif;padding:48px 24px 80px;line-height:1.5}
+  .wrap{max-width:1040px;margin:0 auto}
+
+  header{margin-bottom:28px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+  h1{font-size:28px;font-weight:700;letter-spacing:-.02em}
+  h1 span{color:var(--sub);font-weight:400;font-size:16px;margin-left:10px}
+  .note{color:var(--sub);font-size:13px;margin-top:10px;max-width:680px}
+  .note b{color:var(--teal);font-weight:600}
+
+  .map-scroll{overflow-x:auto;padding:8px 0}
+
+  /* 인지 구배 존 바 */
+  .zonebar{
+    display:flex;width:calc(21 * var(--u));
+    margin-top:40px;
+    font-family:var(--mono);font-size:10.5px;text-align:center;
+  }
+  .zonebar div{flex-shrink:0;padding:5px 2px;border-right:1px solid var(--bg);line-height:1.3;overflow:hidden;white-space:nowrap;font-weight:500}
+  .zonebar .zo{background:rgba(111,122,106,.25);color:var(--outer)}
+  .zonebar .zm{background:rgba(156,127,69,.25);color:var(--mid)}
+  .zonebar .zc{background:rgba(217,179,68,.28);color:var(--gold)}
+
+  .canvas{
+    position:relative;
+    width:calc(21 * var(--u));
+    height:calc(8 * var(--u));
+    margin:52px 0 8px;
+  }
+  .band{position:absolute;left:0;right:0;border-top:1px solid rgba(42,49,64,.6)}
+  .band .bl{position:absolute;left:3px;top:4px;font-family:var(--mono);font-size:10.5px;color:var(--sub);opacity:.8;z-index:5}
+  .band:nth-child(even){background:rgba(255,255,255,.015)}
+
+  .room{
+    position:absolute;
+    left:calc(var(--x) * var(--u) + 3px);
+    top:calc(var(--y) * var(--u) + 3px);
+    width:calc(var(--w) * var(--u) - 6px);
+    height:calc(var(--h) * var(--u) - 6px);
+    border:1.5px solid var(--rc,var(--mid));
+    background:color-mix(in srgb, var(--rc,var(--mid)) 14%, var(--bg));
+    border-radius:5px;
+    padding:7px 8px;
+    font-size:11px;line-height:1.35;z-index:2;word-break:keep-all;
+  }
+  .room .nm{font-weight:600;font-size:12px;color:var(--txt)}
+  .room .nm > span{display:block;margin-top:2px;opacity:.85}
+  .room .ic{margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;align-items:center;font-size:10.5px}
+
+  .outer{--rc:var(--outer)}
+  .mid{--rc:var(--mid)}
+  .core{--rc:var(--gold)}
+  .roof{--rc:#7a828f}
+  .pipe{--rc:var(--copper)}
+  .warp{--rc:var(--purple); background:repeating-linear-gradient(135deg, rgba(176,111,196,.14) 0 8px, rgba(176,111,196,.04) 8px 16px)}
+  .tower{--rc:var(--gold); background:linear-gradient(180deg, rgba(217,179,68,.28), rgba(217,179,68,.10)); box-shadow:0 0 14px rgba(217,179,68,.25)}
+
+  .d{
+    position:absolute;z-index:3;
+    left:calc(var(--dx) * var(--u));
+    top:calc(var(--dy) * var(--u));
+    transform:translate(-50%,-50%);
+    background:var(--bg);border:1.5px solid var(--sub);border-radius:2px;
+  }
+  .d.h{width:8px;height:20px}
+  .d.v{width:20px;height:8px}
+  .d.gate{border-color:var(--gold)}
+  .d.unk{border-color:var(--purple);border-style:dashed}
+
+  .chip{
+    display:inline-flex;align-items:center;justify-content:center;
+    font-family:var(--mono);font-size:9.5px;font-weight:500;
+    border-radius:3px;padding:0 4px;height:15px;line-height:1;
+  }
+  .chip.boss{background:var(--gold);color:var(--bg)}
+  .chip.mem{background:transparent;border:1px solid var(--teal);color:var(--teal)}
+  .chip.cp{background:transparent;border:1px solid #c47bd1;color:#c47bd1}
+  .chip.unk{background:#252b36;color:var(--purple);border:1px dashed var(--purple)}
+  .chip.lock{background:#252b36;color:var(--gold);border:1px solid var(--gold-dim)}
+  .step{
+    position:absolute;top:-8px;left:-8px;z-index:4;
+    width:20px;height:20px;border-radius:50%;
+    background:var(--teal);color:var(--bg);
+    font-family:var(--mono);font-size:10px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;
+    border:2px solid var(--bg);
+  }
+  .step.two{width:auto;border-radius:9px;padding:0 4px}
+
+  .up-act3{
+    position:absolute;z-index:4;
+    left:calc(10.5 * var(--u));top:-42px;white-space:nowrap;transform:translateX(-50%);
+    font-family:var(--mono);font-size:10px;color:var(--gold);text-align:center;line-height:1.1;
+  }
+  .dn-act1{
+    position:absolute;z-index:4;
+    left:calc(17 * var(--u));bottom:-20px;transform:translateX(-50%);
+    font-family:var(--mono);font-size:10px;color:var(--gold-dim);white-space:nowrap;
+  }
+
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--sub);margin:22px 0 0;align-items:center}
+  .legend .sw{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}
+  .legend .item{display:flex;align-items:center}
+
+  .routes{margin-top:48px}
+  .routes h2{font-size:17px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+  .routes h2 .tag{font-family:var(--mono);font-size:10px;border:1px solid var(--line);border-radius:3px;padding:2px 7px;color:var(--sub);font-weight:400}
+  .routes h2 .tag.p{border-color:var(--teal);color:var(--teal)}
+  .routes .sec{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:18px 20px;margin-top:16px}
+  .routes p{font-size:13px;color:var(--txt);margin-top:8px}
+  .routes p.dim{color:var(--sub);font-size:12.5px}
+  .flow{
+    font-family:var(--mono);font-size:12px;color:var(--teal);
+    background:#10151c;border:1px solid var(--line);border-radius:6px;
+    padding:12px 14px;margin-top:10px;line-height:1.9;
+    overflow-x:auto;white-space:nowrap;
+  }
+  .flow b{color:var(--gold);font-weight:700}
+  .flow i{font-style:normal;color:var(--sub)}
+  .kv{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+  .kv .row{display:flex;gap:12px;font-size:13px;align-items:baseline}
+  .kv .k{flex-shrink:0;width:160px;font-weight:600;color:var(--gold);font-size:12.5px}
+  .kv .v{color:var(--txt)}
+  .kv .v i{font-style:normal;color:var(--sub);font-size:12px}
+
+  @media (max-width:720px){
+    body{padding:28px 12px 60px}
+    :root{--u:46px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">Clockwork · ACT2 Draft Map</div>
+    <h1>ACT2 지상 메티아 <span>룸 단위 상세 맵 · 초안 [전부 제안]</span></h1>
+    <p class="note">확정 틀(시내/변두리/외곽 + 인지 구배 + 기계 몬스터·기억코어 원칙)만 문서 기반이고, 나머지는 전부 제안. 구도: <b>화물 터미널(동측)에서 내려 도심을 향해 걸어 들어가는 수평 단면</b>. 세로는 지붕층 / 거리층(0F) / 배관층 3층. ACT2 이동 능력이 미정이라 능력 게이트는 <b>?로 표시</b>.</p>
+  </header>
+
+  <div class="map-scroll">
+
+  <!-- 인지 구배 존 바 -->
+  <div class="zonebar">
+    <div class="zo" style="width:calc(3*var(--u))">외곽 · 인지 1</div>
+    <div class="zm" style="width:calc(3*var(--u))">변두리 서 · 1/2</div>
+    <div class="zc" style="width:calc(10*var(--u))">시내 · 인지 1/4</div>
+    <div class="zm" style="width:calc(2*var(--u))">변두리 동</div>
+    <div class="zo" style="width:calc(3*var(--u))">외곽 · 인지 1</div>
+  </div>
+
+  <div class="canvas">
+
+    <div class="up-act3">▲<br>크로노스 타워<br>(ACT3)</div>
+    <div class="dn-act1">▼ ACT1 터미너스 (B20~B25 수직 동굴)</div>
+
+    <!-- 층 밴드 -->
+    <div class="band" style="top:0;height:calc(2*var(--u))"><span class="bl">지붕층</span></div>
+    <div class="band" style="top:calc(2*var(--u));height:calc(3*var(--u))"><span class="bl">거리층 0F</span></div>
+    <div class="band" style="top:calc(5*var(--u));height:calc(3*var(--u))"><span class="bl">배관층</span></div>
+
+    <!-- ══ 지붕층 ══ -->
+    <div class="room tower" style="--x:10;--y:0;--w:1;--h:2">
+      <div class="nm">타워<br>하층부<br>진입</div>
+    </div>
+    <div class="room mid" style="--x:4;--y:1;--w:2;--h:1">
+      <span class="step">8</span>
+      <div class="nm">엘리아스 은신 공방</div>
+      <div class="ic"><span class="chip unk">정보/권한?</span><span class="chip unk">?</span></div>
+    </div>
+    <div class="room roof" style="--x:6;--y:1;--w:3;--h:1">
+      <div class="nm">지붕길 서</div>
+      <div class="ic"><span class="chip unk">?</span> <span style="color:var(--sub)">옥상 통로</span></div>
+    </div>
+    <div class="room roof" style="--x:12;--y:1;--w:3;--h:1">
+      <div class="nm">지붕길 동</div>
+      <div class="ic"><span class="chip unk">?</span> <span style="color:var(--sub)">숏컷</span></div>
+    </div>
+
+    <!-- ══ 거리층 ══ -->
+    <div class="room outer" style="--x:0;--y:3;--w:2;--h:2">
+      <div class="nm">황폐 들판 서</div>
+      <div class="ic"><span style="color:var(--sub)">선택 탐색 · 기근의 원점</span></div>
+    </div>
+    <div class="room outer" style="--x:2;--y:2;--w:1;--h:3">
+      <div class="nm">보호벽<br>관문<br>서</div>
+    </div>
+    <div class="room mid" style="--x:3;--y:2;--w:3;--h:2">
+      <span class="step">6</span>
+      <div class="nm">빈 집 지대</div>
+      <div class="ic"><span style="color:var(--sub)">인적 없는 완충지 (RUL-005)</span></div>
+    </div>
+    <div class="room mid" style="--x:3;--y:4;--w:3;--h:1">
+      <span class="step">7</span>
+      <div class="nm">폐가 골목 — 들개형 기계</div>
+      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A·유대</span></div>
+    </div>
+    <div class="room core" style="--x:6;--y:2;--w:3;--h:3">
+      <span class="step">5</span>
+      <div class="nm">대광장</div>
+      <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">결정화 군중 · 침묵 구간</span></div>
+    </div>
+    <div class="room core" style="--x:9;--y:2;--w:3;--h:3">
+      <span class="step two">4·11</span>
+      <div class="nm">시계탑 기슭</div>
+      <div class="ic"><span class="chip lock">잠김·열쇠 미정</span></div>
+    </div>
+    <div class="room core" style="--x:12;--y:2;--w:2;--h:3">
+      <span class="step">3</span>
+      <div class="nm">공급 허브 지상부</div>
+      <div class="ic"><span style="color:var(--sub)">기계 몬스터 첫 조우</span></div>
+    </div>
+    <div class="room core" style="--x:14;--y:2;--w:2;--h:3">
+      <span class="step">2</span>
+      <div class="nm">시장 거리</div>
+      <div class="ic"><span style="color:var(--sub)">결정화 상인·행인 · 배관 노출</span></div>
+    </div>
+    <div class="room mid" style="--x:16;--y:2;--w:2;--h:3">
+      <span class="step">1</span>
+      <div class="nm">화물 터미널</div>
+      <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">거점 · ACT2의 칼리고</span></div>
+    </div>
+    <div class="room outer" style="--x:18;--y:2;--w:1;--h:3">
+      <div class="nm">보호벽<br>관문<br>동</div>
+    </div>
+    <div class="room outer" style="--x:19;--y:3;--w:2;--h:2">
+      <div class="nm">황폐 가도 동</div>
+      <div class="ic"><span style="color:var(--sub)">선택 탐색</span></div>
+    </div>
+
+    <!-- ══ 배관층 ══ -->
+    <div class="room pipe" style="--x:16;--y:5;--w:2;--h:1">
+      <div class="nm">배관 진입구</div>
+      <div class="ic"><span style="color:var(--sub)">터미널 하부 정비구</span></div>
+    </div>
+    <div class="room pipe" style="--x:14;--y:5;--w:2;--h:1">
+      <div class="nm">배관 간선 동</div>
+    </div>
+    <div class="room pipe" style="--x:12;--y:5;--w:2;--h:3">
+      <span class="step">10</span>
+      <div class="nm">공급 허브 심부</div>
+      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B·미정</span></div>
+    </div>
+    <div class="room warp" style="--x:8;--y:6;--w:4;--h:2">
+      <span class="step">9</span>
+      <div class="nm">왜곡 구역</div>
+      <div class="ic"><span style="color:var(--purple)">출력 집중이 낳은 방치 배관 · 기믹 지대</span></div>
+    </div>
+    <div class="room pipe" style="--x:4;--y:6;--w:4;--h:1">
+      <div class="nm">배관 간선 서</div>
+    </div>
+    <div class="room pipe" style="--x:4;--y:5;--w:1;--h:1">
+      <div class="nm">정비<br>수직구</div>
+    </div>
+
+    <!-- ══ 문 ══ -->
+    <!-- 거리층 횡단 -->
+    <i class="d h" style="--dx:2;--dy:3.5"></i>
+    <i class="d h" style="--dx:3;--dy:3"></i>
+    <i class="d h" style="--dx:6;--dy:3"></i>
+    <i class="d h" style="--dx:9;--dy:3.5"></i>
+    <i class="d h" style="--dx:12;--dy:3.5"></i>
+    <i class="d h" style="--dx:14;--dy:3.5"></i>
+    <i class="d h" style="--dx:16;--dy:3.5"></i>
+    <i class="d h" style="--dx:18;--dy:3.5"></i>
+    <i class="d h" style="--dx:19;--dy:3.5"></i>
+    <!-- 주거·폐가·공방 -->
+    <i class="d v" style="--dx:4.5;--dy:4"></i>
+    <i class="d v unk" style="--dx:5;--dy:2"></i>
+    <!-- 지붕층 -->
+    <i class="d h unk" style="--dx:6;--dy:1.5"></i>
+    <i class="d v unk" style="--dx:7.5;--dy:2"></i>
+    <i class="d v unk" style="--dx:12.5;--dy:2"></i>
+    <i class="d v unk" style="--dx:14.5;--dy:2"></i>
+    <!-- 타워 게이트 -->
+    <i class="d v gate" style="--dx:10.5;--dy:2"></i>
+    <!-- 배관층 -->
+    <i class="d v" style="--dx:17;--dy:5"></i>
+    <i class="d h" style="--dx:16;--dy:5.5"></i>
+    <i class="d h" style="--dx:14;--dy:5.5"></i>
+    <i class="d v" style="--dx:13;--dy:5"></i>
+    <i class="d h" style="--dx:12;--dy:7"></i>
+    <i class="d h" style="--dx:8;--dy:6.5"></i>
+    <i class="d v" style="--dx:4.5;--dy:6"></i>
+    <i class="d v" style="--dx:4.5;--dy:5"></i>
+
+  </div>
+  </div>
+
+  <div class="legend">
+    <span class="item"><span class="sw" style="background:var(--outer)"></span>외곽 (선택)</span>
+    <span class="item"><span class="sw" style="background:var(--mid)"></span>변두리</span>
+    <span class="item"><span class="sw" style="background:var(--gold)"></span>시내</span>
+    <span class="item"><span class="sw" style="background:#7a828f"></span>지붕길</span>
+    <span class="item"><span class="sw" style="background:var(--copper)"></span>배관층</span>
+    <span class="item"><span class="sw" style="background:var(--purple)"></span>왜곡 구역</span>
+  </div>
+  <div class="legend">
+    <span class="item"><span class="chip boss" style="margin-right:5px">BOSS</span>기계 보스 = 기억코어 결합</span>
+    <span class="item"><span class="chip mem" style="margin-right:5px">기억</span>기억코어</span>
+    <span class="item"><span class="chip cp" style="margin-right:5px">CP</span>체크포인트 [제안]</span>
+    <span class="item"><span class="chip unk" style="margin-right:5px">?</span>미정 능력 게이트</span>
+    <span class="item" style="color:var(--gold)">─ 금색 문 = 잠긴 연결부</span>
+  </div>
+
+  <section class="routes">
+
+    <div class="sec">
+      <h2>A. 크리티컬 패스 초안 <span class="tag p">[제안]</span></h2>
+      <div class="flow">
+        터미널<b>[CP]</b><i>(터미너스 개구부에서 지상으로)</i> → 시장 거리<i>(시내 상업지구 · 결정화 인파 · 배관 노출)</i> → 공급 허브 지상부<i>(첫 전투)</i><br>
+        → 시계탑 기슭 1차 <b>잠김 목격</b><i>(자물쇠 먼저)</i> → 대광장<b>[CP]</b><i>(결정화 군중 · 전투 없는 침묵 구간)</i><br>
+        → 빈 집 지대<i>(인적 없는 변두리, RUL-005)</i> → 폐가 골목 <b>들개형 기계</b><i>(하울링 개체 호출)</i> → <b>기억A·유대</b> → 은신 공방<i>(엘리아스 발견 · 정보/권한)</i><br>
+        → 정비 수직구 → 배관 간선 서 → 왜곡 구역<i>(말파스 기믹 지대)</i> → 공급 허브 심부 <b>정비 기계</b> → <b>기억B</b><br>
+        → 허브 지상부로 상승 → 시계탑 기슭 2차 <b>개방</b> → 타워 하층부 <b>(ACT3)</b>
+      </div>
+      <p class="dim">ACT1이 "아래로 파고드는" 이야기였다면 ACT2는 "중심으로 파고드는" 이야기 — 동쪽 끝에서 진입해 도심을 향해 걷고, 서쪽 날개(엘리아스)를 찍고, 배관층으로 잠행해 중심으로 되돌아오는 갈고리 모양 동선.</p>
+    </div>
+
+    <div class="sec">
+      <h2>B. 구역 설계 의도 <span class="tag p">[제안]</span></h2>
+      <div class="kv">
+        <div class="row"><div class="k">화물 터미널</div><div class="v">ACT2의 칼리고 포지션(거점). 터미너스에서 올라온 티크가 처음 만나는 결정화 시민은 군중이 아니라 <b>단 한 명</b> — 시내로 갈수록 밀도가 올라가는 구배 연출의 출발점. 단, 살아 있는 인간은 지하뿐(RUL-006)이므로 제작·수리는 여전히 모르비 몫 — 터미널은 CP·저장만 있는 <b>전초기지</b>이고, 터미너스 숏컷으로 칼리고에 내려가는 것이 ACT2 중반의 자연스러운 귀향 비트가 된다(회복된 마을: 물이 흐르고 사냥이 재개된 연출 = ACT1 성과 확인).</div></div>
+        <div class="row"><div class="k">대광장</div><div class="v">결정화 군중 최대 밀도 — 밥상 앞·빨래터·거리에서 일상 그대로 박제된 사람들(RUL-005 위반 없이 시내에 집중 배치). 전투 없는 침묵 구간으로, "황금빛의 아름다움과 섬뜩함"을 걷는 속도로 강제 감상. 2년 전 그 순간이 통째로 박제된 도시의 핵심 이미지.</div></div>
+        <div class="row"><div class="k">시계탑 기슭</div><div class="v">ACT2 초반부터 스카이라인에 계속 보이다가 4번째 스텝에 도달 — 그리고 잠겨 있음. "자물쇠 먼저" 원칙의 ACT2 버전. 열쇠는 미정(기억B 회수? 엘리아스의 권한? — 상의 필요).</div></div>
+        <div class="row"><div class="k">배관층</div><div class="v">지하 ACT1의 오수와 대칭되는 <b>정제 렌티움 배관망</b>. 기계 몬스터의 발원지이자 도시의 혈관. 왜곡의 동기 재정의 [제안]: 말파스가 타워의 정제·출력 용량을 <b>옥상(클레아 연구, RUL-008)에 집중</b>하면서, 말단 배관의 정제도가 방치 속에 저하 — 폐렌티움급이 흘러들어 기계들이 변질. ACT2 몬스터는 말파스의 병기가 아니라 <b>말파스가 버린 것들</b>이다(딸에게만 몰두하는 캐릭터와 정합). 기믹: 오작동 리프트, 역류 압력 등.</div></div>
+        <div class="row"><div class="k">외곽 (선택)</div><div class="v">보호벽 밖 황폐지. 크리티컬 패스 밖에 두어, "왜 이 도시가 타워를 지었는가"(기근의 원점)를 스스로 찾는 플레이어에게 주는 서사 보상.</div></div>
+      </div>
+      <p class="dim">권역 각주: 시내/변두리 표기는 도시 행정 구분이며, 인지 필드는 타워 중심 방사형(RUL-005) — 두 경계는 정확히 일치하지 않는다(시내 동측이 긴 것은 행정 구역 모양일 뿐).</p>
+    </div>
+
+    <div class="sec">
+      <h2>C. 보스-기억 결합 <span class="tag">확정 원칙 적용</span></h2>
+      <div class="kv">
+        <div class="row"><div class="k">들개형 (기억A·유대)</div><div class="v">문서의 확정 예시 그대로 — 하울링으로 개체를 호출하는 패턴. 변두리 폐가 골목 배치.</div></div>
+        <div class="row"><div class="k">정비 기계 (기억B·미정)</div><div class="v">공급 허브 심부. 기억 주제 후보: "근무/의무" → 순찰 루틴을 강박적으로 반복하는 패턴, 또는 "조망(내려다보는 시점)" → 기억①의 복선 회수. <i>기억B 주제 = 상의 필요.</i></div></div>
+        <div class="row"><div class="k">엘리아스 공방</div><div class="v">룰북 4장 확정에 따라 <b>기억을 주지 않는다</b>(기억 복원 = 기억 보스의 코어 한정). 여기서 얻는 것은 정보 또는 권한 — 후보: 타워 출력 권한 단서(RUL-009와 연결, 시계탑 기슭의 열쇠가 될 수 있음). <i>[구체 내용 미정]</i> "내려다보는 시점" 복선 회수는 기억 보스(기억B 이후) 쪽으로.</div></div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2>D. 미정 — 다음에 정할 것</h2>
+      <p>① <b>ACT2 이동 능력 축</b>: 지붕길·공방 진입에 ?게이트를 걸어뒀는데, 보류된 벽타기(ABL-003)를 여기서 살릴지, 새 능력(배관 대시? 자기 부착?)으로 갈지. 이게 정해져야 지붕층 설계가 잠김. ② 시계탑 기슭의 열쇠. ③ 기억B 주제와 "조망" 복선의 회수 위치. ④ ACT2 보스 수(현재 2 — 3시간대 분량이면 1개 더 필요할 수 있음).</p>
+    </div>
+
+  </section>
+
+</div>
+</body>
+</html>
