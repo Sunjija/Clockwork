@@ -124,14 +124,15 @@
 
   @media (max-width:720px){body{padding:28px 12px 60px} :root{--u:46px} .clockface{display:none}}
 </style>
+<link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body>
+<body data-map-id="act3" data-map-version="2">
 <div class="wrap">
 
   <header>
     <div class="eyebrow">Clockwork · ACT3 Draft Map</div>
     <h1>ACT3 크로노스 타워 <span>십자 5탑 구조 · 초안 [전부 제안]</span></h1>
-    <p class="note">확정 앵커는 셋뿐 — 하층/중층/최상층 3단, 옥상=말파스 최종전·클레아 보존, 기슭에서 진입. 나머지(위성탑 기능·회전 가교·진행 사슬)는 전부 제안. <b>평면 = 시계판</b>: 위성탑 4개가 12·3·6·9시, 메인 타워가 축.</p>
+    <p class="note">확정 앵커는 셋뿐 — 하층/중층/최상층 3단, 옥상=말파스 최종전·클레아 보존, 기슭에서 진입. 나머지는 제안. <b>평면 = 시계판</b>: 위성탑 4개가 12·3·6·9시, 메인 타워가 축. 흐름 보정안은 과부하 반격 → 동탑 동력 → 서탑 수문장(공중 대시·코어 A) → 남탑 수문장(코어 B) → 북탑 기억 재해석 → 승강로를 강제한다.</p>
     <div class="clockface">
       <div class="hand"></div>
       <div class="c">메인</div>
@@ -152,114 +153,114 @@
     <div class="band" style="top:calc(10*var(--u));height:calc(6*var(--u))"><span class="bl">하층부</span></div>
 
     <!-- ══ 메인 타워 ══ -->
-    <div class="room main" style="--x:8;--y:0;--w:4;--h:2">
+    <div id="act3-room-001" class="room main" data-node-type="room" data-flow-order="7" data-flow-group="ACT3" data-flow-label="말파스" data-flow-note="옥상 최종전" style="--x:8;--y:0;--w:4;--h:2">
       <span class="step">8</span>
       <div class="nm">옥상 거처</div>
       <div class="ic"><span class="chip boss">BOSS</span> <span style="color:var(--sub)">말파스 최종전 · 클레아 보존 (RUL-008)</span></div>
     </div>
-    <div class="room main" style="--x:8;--y:2;--w:4;--h:2">
+    <div id="act3-room-002" class="room main" data-node-type="room" style="--x:8;--y:2;--w:4;--h:2">
       <div class="nm">정제로 코어</div>
       <div class="ic"><span style="color:var(--sub)">렌티움 정제의 심장 (RUL-011b)</span></div>
     </div>
-    <div class="room shaft" style="--x:9;--y:4;--w:2;--h:2">
+    <div id="act3-room-003" class="room shaft" data-node-type="room" data-requires="ability_overload_counter_unlocked ability_air_dash_unlocked bridge_power core_a core_b audit_signature" style="--x:9;--y:4;--w:2;--h:2">
       <div class="nm">중앙 승강로 상부</div>
-      <div class="ic"><span class="chip lock">봉쇄</span></div>
+      <div class="ic"><span class="chip lock">6조건 봉쇄</span></div>
     </div>
-    <div class="room main" style="--x:8;--y:6;--w:4;--h:2">
+    <div id="act3-room-004" class="room main" data-node-type="room" style="--x:8;--y:6;--w:4;--h:2">
       <span class="step">4</span>
       <div class="nm">회전 가교 허브 <span>시곗바늘 축</span></div>
       <div class="ic"><span class="chip key">가교 동력 필요</span><span class="chip cp">CP</span></div>
     </div>
-    <div class="room shaft" style="--x:9;--y:8;--w:2;--h:2">
+    <div id="act3-room-005" class="room shaft" data-node-type="room" data-requires="ability_overload_counter_unlocked ability_air_dash_unlocked bridge_power core_a core_b audit_signature" data-flow-order="6" data-flow-group="ACT3" data-flow-label="중앙 승강로" data-flow-note="6조건 해제" style="--x:9;--y:8;--w:2;--h:2">
       <div class="nm">중앙 승강로 하부</div>
-      <div class="ic"><span class="chip lock">봉쇄</span></div>
+      <div class="ic"><span class="chip lock">6조건 봉쇄</span></div>
     </div>
-    <div class="room main" style="--x:8;--y:10;--w:4;--h:2">
+    <div id="act3-room-006" class="room main" data-node-type="room" data-requires="ability_overload_counter_unlocked" data-flow-order="1" data-flow-group="ACT3" data-flow-label="하층 로비" data-flow-note="승강로 봉쇄 목격" style="--x:8;--y:10;--w:4;--h:2">
       <span class="step">1</span>
       <div class="nm">하층 로비</div>
-      <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">기슭(ACT2)에서 진입 · 승강로 봉쇄 목격</span></div>
+      <div class="ic"><span class="chip cp">CP</span><span class="chip counter">과부하 반격</span> <span style="color:var(--sub)">기슭(ACT2)에서 진입 · 승강로 봉쇄 목격</span></div>
     </div>
-    <div class="room main" style="--x:8;--y:12;--w:4;--h:2">
+    <div id="act3-room-007" class="room main" data-node-type="room" style="--x:8;--y:12;--w:4;--h:2">
       <span class="step">2</span>
       <div class="nm">원석 하역장</div>
       <div class="ic"><span style="color:var(--sub)">동탑 화물 통로 연결</span></div>
     </div>
-    <div class="room shaft" style="--x:9;--y:14;--w:2;--h:2">
+    <div id="act3-room-008" class="room shaft" data-node-type="room" style="--x:9;--y:14;--w:2;--h:2">
       <div class="nm">배출 기부</div>
       <div class="ic"><span style="color:var(--sewage)">폐렌티움 직하 배출 (RGN-008 상류)</span></div>
     </div>
 
     <!-- ══ 동탑 (3시 · 반입) ══ -->
-    <div class="room east" style="--x:14;--y:6;--w:3;--h:2">
+    <div id="act3-room-009" class="room east" data-node-type="room" data-requires="ability_overload_counter_unlocked" data-reward="bridge_power" data-flow-order="2" data-flow-group="ACT3" data-flow-label="동탑 동력" data-flow-note="반격으로 릴레이 복구" style="--x:14;--y:6;--w:3;--h:2">
       <span class="step">3</span>
       <div class="nm">크레인 정상</div>
-      <div class="ic"><span class="chip key">가교 동력</span></div>
+      <div class="ic"><span class="chip counter">과부하 반격</span><span class="chip key">가교 동력</span></div>
     </div>
-    <div class="room east" style="--x:14;--y:8;--w:3;--h:2">
+    <div id="act3-room-010" class="room east" data-node-type="room" style="--x:14;--y:8;--w:3;--h:2">
       <div class="nm">반입 권양층</div>
       <div class="ic"><span style="color:var(--sub)">수직 등반 구간</span></div>
     </div>
-    <div class="room east" style="--x:14;--y:10;--w:3;--h:2">
+    <div id="act3-room-011" class="room east" data-node-type="room" style="--x:14;--y:10;--w:3;--h:2">
       <div class="nm">동탑 기부</div>
       <div class="ic"><span style="color:var(--sub)">원석 반입 — 도시 물류 축(동측)의 종점</span></div>
     </div>
 
     <!-- ══ 서탑 (9시 · 방출) ══ -->
-    <div class="room west" style="--x:3;--y:6;--w:3;--h:2">
+    <div id="act3-room-012" class="room west" data-node-type="room" data-reward="ability_air_dash core_a" data-event="west_core_guardian_defeated south_tower_unlocked" data-flow-order="3" data-flow-group="ACT3" data-flow-label="서탑 수문장" data-flow-note="공중 대시 · 코어 A" style="--x:3;--y:6;--w:3;--h:2">
       <span class="step">5</span>
-      <div class="nm">방출 노즐 상부</div>
-      <div class="ic"><span class="chip key">권한 코어 A</span></div>
+      <div class="nm">방출 노즐 상부 · 수문장</div>
+      <div class="ic"><span class="chip boss">BOSS</span><span class="chip dash">공중 대시</span><span class="chip key">권한 코어 A</span><span class="chip auth">남탑 해금</span></div>
     </div>
-    <div class="room west" style="--x:3;--y:8;--w:3;--h:2">
+    <div id="act3-room-013" class="room west" data-node-type="room" style="--x:3;--y:8;--w:3;--h:2">
       <div class="nm">방출 제어층</div>
       <div class="ic"><span style="color:var(--sub)">대기 방출 계통 (RUL-011b ①)</span></div>
     </div>
 
     <!-- ══ 북탑 (12시 · 기록, 깊이축) ══ -->
-    <div class="room depthtw" style="--x:0;--y:4;--w:2;--h:2">
+    <div id="act3-room-014" class="room depthtw" data-node-type="room" data-requires="core_b" data-reward="audit_signature" data-event="memories_recontextualized rul_003_revealed" data-flow-order="5" data-flow-group="ACT3" data-flow-label="북탑 기록" data-flow-note="기억 재해석 · 감사 서명" style="--x:0;--y:4;--w:2;--h:2">
       <span class="step">7</span>
       <div class="nm">기록 열람층</div>
-      <div class="ic"><span class="chip unk">진실 공개 후보</span></div>
+      <div class="ic"><span class="chip echo">기억 재해석</span><span class="chip auth">감사 서명</span></div>
     </div>
-    <div class="room depthtw" style="--x:0;--y:6;--w:2;--h:2">
+    <div id="act3-room-015" class="room depthtw" data-node-type="room" style="--x:0;--y:6;--w:2;--h:2">
       <div class="nm">기록 서고</div>
       <div class="ic"><span style="color:var(--sub)">엘리아스의 연구 기록 (RUL-002·003)</span></div>
     </div>
 
     <!-- ══ 남탑 (6시 · 회수, 깊이축) ══ -->
-    <div class="room depthtw" style="--x:18;--y:4;--w:2;--h:2">
+    <div id="act3-room-016" class="room depthtw" data-node-type="room" data-requires="core_a ability_air_dash_unlocked" data-reward="core_b" data-event="south_core_guardian_defeated north_tower_unlocked" data-flow-order="4" data-flow-group="ACT3" data-flow-label="남탑 수문장" data-flow-note="코어 B" style="--x:18;--y:4;--w:2;--h:2">
       <span class="step">6</span>
-      <div class="nm">회수 계통 제어</div>
-      <div class="ic"><span class="chip key">권한 코어 B</span></div>
+      <div class="nm">회수 계통 제어 · 수문장</div>
+      <div class="ic"><span class="chip boss">BOSS</span><span class="chip dash">공중 대시</span><span class="chip key">권한 코어 B</span><span class="chip auth">북탑 해금</span></div>
     </div>
-    <div class="room depthtw" style="--x:18;--y:6;--w:2;--h:2">
+    <div id="act3-room-017" class="room depthtw" data-node-type="room" style="--x:18;--y:6;--w:2;--h:2">
       <div class="nm">회수 집수층</div>
       <div class="ic"><span style="color:var(--sub)">폐렌티움 집결 → 직하 배출로</span></div>
     </div>
 
     <!-- ══ 연결 ══ -->
     <!-- 실선: 가교 현재 자세 (동-서, 3시-9시) -->
-    <div class="lk hor" style="--dx:6;--dy:7;--len:2"><span class="tag">가교 서편</span></div>
-    <div class="lk hor" style="--dx:12;--dy:7;--len:2"><span class="tag">가교 동편</span></div>
+    <div id="act3-link-001" class="lk hor" data-node-type="link" style="--dx:6;--dy:7;--len:2"><span class="tag">가교 서편</span></div>
+    <div id="act3-link-002" class="lk hor" data-node-type="link" style="--dx:12;--dy:7;--len:2"><span class="tag">가교 동편</span></div>
     <!-- 점선: 회전 시 접속 (남-북, 12시-6시 = 화면 깊이축) -->
-    <div class="lk hor rot" style="--dx:2;--dy:5;--len:6"><span class="tag">⟳ 회전 접속 (깊이축 · 북)</span></div>
-    <div class="lk hor rot" style="--dx:12;--dy:5;--len:6"><span class="tag">⟳ 회전 접속 (깊이축 · 남)</span></div>
+    <div id="act3-link-003" class="lk hor rot" data-node-type="link" data-from="act3-room-004" data-to="act3-room-015" data-requires="core_b" style="--dx:2;--dy:5;--len:6"><span class="tag">⟳ 북 접속 · 코어 B 필요</span></div>
+    <div id="act3-link-004" class="lk hor rot" data-node-type="link" data-from="act3-room-004" data-to="act3-room-017" data-requires="core_a" style="--dx:12;--dy:5;--len:6"><span class="tag">⟳ 남 접속 · 코어 A 필요</span></div>
     <!-- 하층 화물 통로 -->
-    <div class="lk hor" style="--dx:12;--dy:13;--len:2"><span class="tag">화물 통로</span></div>
+    <div id="act3-link-005" class="lk hor" data-node-type="link" style="--dx:12;--dy:13;--len:2"><span class="tag">화물 통로</span></div>
 
     <!-- 문 -->
-    <i class="d v" style="--dx:10;--dy:2"></i>
-    <i class="d v gate" style="--dx:10;--dy:4"></i>
-    <i class="d v gate" style="--dx:10;--dy:6"></i>
-    <i class="d v gate" style="--dx:10;--dy:8"></i>
-    <i class="d v gate" style="--dx:10;--dy:10"></i>
-    <i class="d v" style="--dx:10;--dy:12"></i>
-    <i class="d v" style="--dx:10;--dy:14"></i>
-    <i class="d v" style="--dx:15.5;--dy:8"></i>
-    <i class="d v" style="--dx:15.5;--dy:10"></i>
-    <i class="d v" style="--dx:4.5;--dy:8"></i>
-    <i class="d v" style="--dx:1;--dy:6"></i>
-    <i class="d v" style="--dx:19;--dy:6"></i>
+    <i id="act3-door-001" class="d v" data-node-type="door" style="--dx:10;--dy:2"></i>
+    <i id="act3-door-002" class="d v gate" data-node-type="door" data-requires="ability_overload_counter_unlocked ability_air_dash_unlocked bridge_power core_a core_b audit_signature" style="--dx:10;--dy:4"></i>
+    <i id="act3-door-003" class="d v gate" data-node-type="door" data-requires="ability_overload_counter_unlocked ability_air_dash_unlocked bridge_power core_a core_b audit_signature" style="--dx:10;--dy:6"></i>
+    <i id="act3-door-004" class="d v gate" data-node-type="door" data-requires="ability_overload_counter_unlocked ability_air_dash_unlocked bridge_power core_a core_b audit_signature" style="--dx:10;--dy:8"></i>
+    <i id="act3-door-005" class="d v gate" data-node-type="door" data-requires="ability_overload_counter_unlocked ability_air_dash_unlocked bridge_power core_a core_b audit_signature" data-unlocks="central_elevator" style="--dx:10;--dy:10" aria-label="과부하 반격, 공중 대시, 가교 동력, 코어 A와 B, 감사 서명으로 중앙 승강로 개방"></i>
+    <i id="act3-door-006" class="d v" data-node-type="door" style="--dx:10;--dy:12"></i>
+    <i id="act3-door-007" class="d v" data-node-type="door" style="--dx:10;--dy:14"></i>
+    <i id="act3-door-008" class="d v gate" data-node-type="door" data-from="act3-room-010" data-to="act3-room-009" data-requires="ability_overload_counter_unlocked" style="--dx:15.5;--dy:8" aria-label="과부하 반격으로 동탑 릴레이 방어를 해제"></i>
+    <i id="act3-door-009" class="d v" data-node-type="door" style="--dx:15.5;--dy:10"></i>
+    <i id="act3-door-010" class="d v" data-node-type="door" style="--dx:4.5;--dy:8"></i>
+    <i id="act3-door-011" class="d v gate" data-node-type="door" data-from="act3-room-015" data-to="act3-room-014" data-requires="core_b" style="--dx:1;--dy:6"></i>
+    <i id="act3-door-012" class="d v gate" data-node-type="door" data-from="act3-room-017" data-to="act3-room-016" data-requires="core_a ability_air_dash_unlocked" style="--dx:19;--dy:6" aria-label="코어 A와 공중 대시로 남탑 수문장 구역 진입"></i>
 
   </div>
   </div>
@@ -280,7 +281,7 @@
       <h2>A. 구조 개념 — 타워 평면 = 시계판 <span class="tag p">[제안]</span></h2>
       <div class="kv">
         <div class="row"><div class="k">십자 5탑</div><div class="v">위성탑 4개(동·서·남·북)가 시계판의 12·3·6·9시 위치, 메인 타워가 축. 각 위성탑은 렌티움 순환의 한 단계를 담당 — <b>반입(동) → 정제(메인) → 방출(서) / 공급 → 회수(남) → 직하 배출(기부)</b>. 타워 단지 전체가 렌티움의 순환 회로이자 거대한 시계.</div></div>
-        <div class="row"><div class="k">회전 가교 = 시곗바늘</div><div class="v">중층 허브의 가교는 시곗바늘처럼 <b>회전해 접속 탑을 바꾼다</b>. 3-9시 자세면 동·서탑, 12-6시 자세면 남·북탑(화면 깊이축) 접속. 횡스크롤에서 남북 = 깊이 문제를 "다리를 돌려서 간다"로 해결 — 건너는 순간은 화면 전환 하나면 되므로 구현 비용도 낮음. 가교 회전 자체가 퍼즐/게이트 장치(자세 전환 권한·동력).</div></div>
+        <div class="row"><div class="k">회전 가교 = 시곗바늘</div><div class="v">중층 허브의 가교는 시곗바늘처럼 <b>회전해 한 번에 한 위성탑만 접속</b>한다. 동탑에서 동력을 복구하면 서탑, 코어 A를 얻으면 남탑, 코어 B를 얻으면 북탑 자세가 순차 해금된다. 횡스크롤의 남북 깊이 문제를 화면 전환으로 해결하면서, 두 방향을 동시에 열어 생기는 순서 파괴를 막는다.</div></div>
         <div class="row"><div class="k">수직 순환의 완성</div><div class="v">배출 기부가 오수 낙하 기둥(RGN-008)의 상류 — <b>ACT1에서 맞았던 폭포의 수원을 ACT3에서 위에서 내려다보게 됨.</b> 남탑 회수 계통 → 배출 기부 → 대공동 폭포 → 심층. 세계의 물이 어디서 와서 어디로 가는지가 3막에 걸쳐 완결.</div></div>
       </div>
     </div>
@@ -289,11 +290,11 @@
       <h2>B. 진행 사슬 초안 <span class="tag p">[제안]</span></h2>
       <div class="flow">
         기슭(ACT2 종점) → 하층 로비<b>[CP]</b><i>(중앙 승강로 봉쇄 목격 — 자물쇠 먼저)</i> → 원석 하역장 → 화물 통로 → 동탑 기부<br>
-        → 반입 권양층<i>(수직 등반)</i> → 크레인 정상 → <b>가교 동력</b> 확보 → 회전 가교 허브<b>[CP]</b> 가동<br>
-        → 가교 3-9시: 서탑 → 방출 제어층 → 노즐 상부 → <b>권한 코어 A</b><br>
-        → 가교 12-6시(회전): 남탑 → 회수 집수층 → 회수 제어 → <b>권한 코어 B</b><i>(RGN-008 상류 목격)</i><br>
-        → 북탑: 기록 서고 → 열람층 <b>진실 기록</b><i>(RUL-003 공개 후보 — 필수 여부·시점 미정)</i><br>
-        → 코어 A+B → <b>중앙 승강로 개방</b> → 정제로 코어 → <b>옥상: 말파스</b><i>(프롤로그의 그 옥상 — 원환 완성)</i>
+        → 반입 권양층<i>(과부하 반격 릴레이)</i> → 크레인 정상 → <b>가교 동력</b> 확보 → 회전 가교 허브<b>[CP]</b> 가동<br>
+        → 가교 서편: 서탑 → 방출 제어층 → <b>서탑 수문장</b> → <b>짧은 공중 대시 + 권한 코어 A</b><i>(대시 귀환 · 남탑 자세 해금)</i><br>
+        → 가교 남편: 남탑 → 회수 집수층 → <b>남탑 수문장</b> → <b>권한 코어 B</b><i>(RGN-008 상류 목격 · 북탑 자세 해금)</i><br>
+        → 가교 북편: 기록 서고 → 열람층 → 기존 기억 A·B와 기록을 대조해 <b>기억 재해석 + 감사 서명</b><i>(새 기억코어는 지급하지 않음 · RUL-003 공개)</i><br>
+        → 과부하 반격 + 공중 대시 + 동력 + 코어 A+B + 감사 서명 → <b>중앙 승강로 개방</b> → 정제로 코어 → <b>옥상: 말파스</b><i>(프롤로그의 그 옥상 — 원환 완성)</i>
       </div>
       <p class="dim">"자물쇠 먼저" 계승: 승강로 봉쇄를 1분 안에 목격 → 위성탑 3~4개를 돌아 열쇠를 모아 돌아온다. ACT1(수직 하강→상승), ACT2(수평 횡단)에 이어 ACT3는 <b>방사형(축을 중심으로 돌기)</b> — 3막의 동선 기하가 전부 다름.</p>
     </div>
@@ -304,18 +305,19 @@
         <div class="row"><div class="k">동탑 — 반입</div><div class="v">원석 반입 크레인. 도시 물류 축(동측 — 화물 터미널·터미너스·림부스)의 지상 종점이 타워까지 이어짐. 통합 단면에서 동쪽 수직선이 하나로 완성.</div></div>
         <div class="row"><div class="k">서탑 — 방출</div><div class="v">대기 방출 노즐(RUL-011b ①). 도시의 '시간'이 뿜어져 나오는 곳 — 결정화 사건 때 최대 출력으로 쓰인 바로 그 계통.</div></div>
         <div class="row"><div class="k">남탑 — 회수</div><div class="v">배관망 회수 계통 집결(RUL-011b 보강안). 폐렌티움이 모여 배출 기부로 떨어짐 — ACT1 전체를 만든 원인의 제어실.</div></div>
-        <div class="row"><div class="k">북탑 — 기록</div><div class="v">엘리아스의 연구 기록동. 렌티움 발명(RUL-002)과 은폐(RUL-003)의 문서가 잠들어 있음 — <b>진실 공개(시점 미정, 1-B)의 유력 후보 지점.</b> 필수 경로로 할지 선택 탐색으로 할지는 공개 시점 결정에 종속.</div></div>
+        <div class="row"><div class="k">북탑 — 기록</div><div class="v"><b>[제안 · 필수 경로]</b> 엘리아스의 연구 기록동. 렌티움 발명(RUL-002)과 은폐(RUL-003)의 문서를 기억 A·B의 장면과 대조한다. 새 기억코어를 더 주지 않고, 이미 본 기억의 의미를 뒤집어 말파스 대면의 동기를 완성하며 중앙 승강로용 감사 서명을 얻는다.</div></div>
         <div class="row"><div class="k">옥상 — 말파스</div><div class="v">확정 앵커. 클레아 보존 거처(RUL-008)이자 티크가 던져진 곳(EVT-009). 기억①의 "내려다보는 시점" 복선이 여기서 회수(4장) — 보스전 무대 자체가 복선의 답.</div></div>
       </div>
     </div>
 
     <div class="sec">
       <h2>D. 미정 — 다음에 정할 것</h2>
-      <p>① ACT3 이동 능력/최종 기술 유무(ACT1 갈고리·더블점프, ACT2 미정에 이어) ② 위성탑 중간보스 여부와 기억(M?) 배치 — 4장 의존 관계(M 내용 선행) 동일 적용 ③ 진실 공개 시점(북탑 필수 여부가 여기 종속) ④ 가교 회전의 조작 방식(레버? 동력 재분배 퍼즐?) ⑤ 말파스전 페이즈 구조(전신 기계화 + 타워 출력 권한자라는 설정 활용).</p>
+      <p>흐름 검증을 위해 서탑·남탑 수문장, 서탑의 짧은 공중 대시, 북탑 필수화와 6조건 승강로를 <b>[제안]</b>으로 임시 반영함. ACT3 보스는 서탑 수문장·남탑 수문장·말파스의 3기다. 최종 결정이 필요한 것은 ① 공중 대시와 과부하 반격의 세부 수치 ② 두 수문장의 이름·외형·패턴 ③ 북탑 RUL-003의 구체 문서와 기억 재해석 연출 ④ 가교 회전 조작 방식 ⑤ 말파스전 페이즈 구조.</p>
     </div>
 
   </section>
 
 </div>
+<script src="./map-viewer.js"></script>
 </body>
 </html>

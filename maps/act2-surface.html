@@ -153,14 +153,15 @@
     :root{--u:46px}
   }
 </style>
+<link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body>
+<body data-map-id="act2" data-map-version="2">
 <div class="wrap">
 
   <header>
     <div class="eyebrow">Clockwork · ACT2 Draft Map</div>
     <h1>ACT2 지상 메티아 <span>룸 단위 상세 맵 · 초안 [전부 제안]</span></h1>
-    <p class="note">확정 틀(시내/변두리/외곽 + 인지 구배 + 기계 몬스터·기억코어 원칙)만 문서 기반이고, 나머지는 전부 제안. 구도: <b>화물 터미널(동측)에서 내려 도심을 향해 걸어 들어가는 수평 단면</b>. 세로는 지붕층 / 거리층(0F) / 배관층 3층. ACT2 이동 능력이 미정이라 능력 게이트는 <b>?로 표시</b>.</p>
+    <p class="note">확정 틀(시내/변두리/외곽 + 인지 구배 + 기계 몬스터·기억코어 원칙)만 문서 기반이고, 나머지는 전부 제안. 구도: <b>화물 터미널(동측)에서 내려 도심을 향해 걸어 들어가는 수평 단면</b>. 세로는 지붕층 / 거리층(0F) / 배관층 3층. 흐름 보정안으로 ABL-003 벽타기, 공방 관리자 키, 공급 복구를 순차 게이트로 반영했다.</p>
   </header>
 
   <div class="map-scroll">
@@ -185,129 +186,130 @@
     <div class="band" style="top:calc(5*var(--u));height:calc(3*var(--u))"><span class="bl">배관층</span></div>
 
     <!-- ══ 지붕층 ══ -->
-    <div class="room tower" style="--x:10;--y:0;--w:1;--h:2">
+    <div id="act2-room-001" class="room tower" data-node-type="room" data-flow-order="7" data-flow-group="ACT3" data-flow-label="ACT3 진입" data-flow-note="과부하 릴레이 통과" style="--x:10;--y:0;--w:1;--h:2">
+      <span class="step">12</span>
       <div class="nm">타워<br>하층부<br>진입</div>
     </div>
-    <div class="room mid" style="--x:4;--y:1;--w:2;--h:1">
+    <div id="act2-room-002" class="room mid compact" data-node-type="room" data-reward="workshop_admin_key" data-event="memory_a_echo_resolved" data-flow-order="4" data-flow-group="ACT2" data-flow-label="엘리아스 공방" data-flow-note="공방 관리자 키" style="--x:4;--y:1;--w:2;--h:1">
       <span class="step">8</span>
       <div class="nm">엘리아스 은신 공방</div>
-      <div class="ic"><span class="chip unk">정보/권한?</span><span class="chip unk">?</span></div>
+      <div class="ic"><span class="chip auth" aria-label="공방 관리자 키" title="공방 관리자 키">관리자 키</span><span class="chip echo" aria-label="기억 잔향" title="기억 잔향">잔향</span><span class="chip cp">CP</span></div>
     </div>
-    <div class="room roof" style="--x:6;--y:1;--w:3;--h:1">
+    <div id="act2-room-003" class="room roof" data-node-type="room" style="--x:6;--y:1;--w:3;--h:1">
       <div class="nm">지붕길 서</div>
-      <div class="ic"><span class="chip unk">?</span> <span style="color:var(--sub)">옥상 통로</span></div>
+      <div class="ic"><span class="chip abl">벽타기</span><span class="chip echo">공방 표식 잔향</span></div>
     </div>
-    <div class="room roof" style="--x:12;--y:1;--w:3;--h:1">
+    <div id="act2-room-004" class="room roof" data-node-type="room" style="--x:12;--y:1;--w:3;--h:1">
       <div class="nm">지붕길 동</div>
-      <div class="ic"><span class="chip unk">?</span> <span style="color:var(--sub)">숏컷</span></div>
+      <div class="ic"><span class="chip abl">벽타기</span> <span style="color:var(--sub)">터미널 복귀 숏컷</span></div>
     </div>
 
     <!-- ══ 거리층 ══ -->
-    <div class="room outer" style="--x:0;--y:3;--w:2;--h:2">
+    <div id="act2-room-005" class="room outer" data-node-type="room" style="--x:0;--y:3;--w:2;--h:2">
       <div class="nm">황폐 들판 서</div>
       <div class="ic"><span style="color:var(--sub)">선택 탐색 · 기근의 원점</span></div>
     </div>
-    <div class="room outer" style="--x:2;--y:2;--w:1;--h:3">
+    <div id="act2-room-006" class="room outer" data-node-type="room" style="--x:2;--y:2;--w:1;--h:3">
       <div class="nm">보호벽<br>관문<br>서</div>
     </div>
-    <div class="room mid" style="--x:3;--y:2;--w:3;--h:2">
+    <div id="act2-room-007" class="room mid" data-node-type="room" style="--x:3;--y:2;--w:3;--h:2">
       <span class="step">6</span>
       <div class="nm">빈 집 지대</div>
       <div class="ic"><span style="color:var(--sub)">인적 없는 완충지 (RUL-005)</span></div>
     </div>
-    <div class="room mid" style="--x:3;--y:4;--w:3;--h:1">
+    <div id="act2-room-008" class="room mid" data-node-type="room" data-reward="memory_a_bond ability_wall_run" data-event="flashback_elias_roof_mark" data-flow-order="3" data-flow-group="ACT2" data-flow-label="들개형 기계" data-flow-note="벽타기 · 기억 A" style="--x:3;--y:4;--w:3;--h:1">
       <span class="step">7</span>
       <div class="nm">폐가 골목 — 들개형 기계</div>
-      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A·유대</span></div>
+      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A·유대</span><span class="chip abl">ABL-003 벽타기</span><span class="chip echo">공방 표식</span></div>
     </div>
-    <div class="room core" style="--x:6;--y:2;--w:3;--h:3">
+    <div id="act2-room-009" class="room core" data-node-type="room" data-flow-order="2" data-flow-group="ACT2" data-flow-label="기슭 잠금 목격" data-flow-note="대광장에서 서쪽 우회" style="--x:6;--y:2;--w:3;--h:3">
       <span class="step">5</span>
       <div class="nm">대광장</div>
       <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">결정화 군중 · 침묵 구간</span></div>
     </div>
-    <div class="room core" style="--x:9;--y:2;--w:3;--h:3">
+    <div id="act2-room-010" class="room core" data-node-type="room" data-trigger-requires="workshop_admin_key_acquired surface_supply_restored" data-reward="ability_overload_counter" data-event="tower_foot_lock_seen tower_gatekeeper_defeated" data-flow-order="6" data-flow-group="ACT2" data-flow-label="시계탑 수문장" data-flow-note="과부하 반격" style="--x:9;--y:2;--w:3;--h:3">
       <span class="step two">4·11</span>
-      <div class="nm">시계탑 기슭</div>
-      <div class="ic"><span class="chip lock">잠김·열쇠 미정</span></div>
+      <div class="nm">시계탑 기슭 · 수문장</div>
+      <div class="ic"><span class="chip boss">BOSS</span><span class="chip auth">공방 관리자 키</span><span class="chip restore">공급 복구</span><span class="chip counter">과부하 반격</span></div>
     </div>
-    <div class="room core" style="--x:12;--y:2;--w:2;--h:3">
+    <div id="act2-room-011" class="room core" data-node-type="room" style="--x:12;--y:2;--w:2;--h:3">
       <span class="step">3</span>
       <div class="nm">공급 허브 지상부</div>
-      <div class="ic"><span style="color:var(--sub)">기계 몬스터 첫 조우</span></div>
+      <div class="ic"><span class="chip cp">CP</span><span style="color:var(--sub)">첫 전투 · 보스 전 재정비 · 보스 후 상승 리프트</span></div>
     </div>
-    <div class="room core" style="--x:14;--y:2;--w:2;--h:3">
+    <div id="act2-room-012" class="room core" data-node-type="room" style="--x:14;--y:2;--w:2;--h:3">
       <span class="step">2</span>
       <div class="nm">시장 거리</div>
       <div class="ic"><span style="color:var(--sub)">결정화 상인·행인 · 배관 노출</span></div>
     </div>
-    <div class="room mid" style="--x:16;--y:2;--w:2;--h:3">
+    <div id="act2-room-013" class="room mid" data-node-type="room" data-flow-order="1" data-flow-group="ACT2" data-flow-label="화물 터미널" data-flow-note="ACT2 시작" style="--x:16;--y:2;--w:2;--h:3">
       <span class="step">1</span>
       <div class="nm">화물 터미널</div>
       <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">거점 · ACT2의 칼리고</span></div>
     </div>
-    <div class="room outer" style="--x:18;--y:2;--w:1;--h:3">
+    <div id="act2-room-014" class="room outer" data-node-type="room" style="--x:18;--y:2;--w:1;--h:3">
       <div class="nm">보호벽<br>관문<br>동</div>
     </div>
-    <div class="room outer" style="--x:19;--y:3;--w:2;--h:2">
+    <div id="act2-room-015" class="room outer" data-node-type="room" style="--x:19;--y:3;--w:2;--h:2">
       <div class="nm">황폐 가도 동</div>
       <div class="ic"><span style="color:var(--sub)">선택 탐색</span></div>
     </div>
 
     <!-- ══ 배관층 ══ -->
-    <div class="room pipe" style="--x:16;--y:5;--w:2;--h:1">
+    <div id="act2-room-016" class="room pipe" data-node-type="room" data-requires="surface_supply_restored" style="--x:16;--y:5;--w:2;--h:1">
       <div class="nm">배관 진입구</div>
-      <div class="ic"><span style="color:var(--sub)">터미널 하부 정비구</span></div>
+      <div class="ic"><span style="color:var(--sub)">보스 후 터미널행 일방 숏컷</span></div>
     </div>
-    <div class="room pipe" style="--x:14;--y:5;--w:2;--h:1">
+    <div id="act2-room-017" class="room pipe" data-node-type="room" style="--x:14;--y:5;--w:2;--h:1">
       <div class="nm">배관 간선 동</div>
     </div>
-    <div class="room pipe" style="--x:12;--y:5;--w:2;--h:3">
+    <div id="act2-room-018" class="room pipe" data-node-type="room" data-reward="memory_b_duty" data-event="surface_supply_restored" data-flow-order="5" data-flow-group="ACT2" data-flow-label="정비 기계" data-flow-note="기억 B · 공급 복구" style="--x:12;--y:5;--w:2;--h:3">
       <span class="step">10</span>
       <div class="nm">공급 허브 심부</div>
-      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B·미정</span></div>
+      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B·근무/의무</span><span class="chip restore">도시 공급 복구</span></div>
     </div>
-    <div class="room warp" style="--x:8;--y:6;--w:4;--h:2">
+    <div id="act2-room-019" class="room warp" data-node-type="room" style="--x:8;--y:6;--w:4;--h:2">
       <span class="step">9</span>
       <div class="nm">왜곡 구역</div>
       <div class="ic"><span style="color:var(--purple)">출력 집중이 낳은 방치 배관 · 기믹 지대</span></div>
     </div>
-    <div class="room pipe" style="--x:4;--y:6;--w:4;--h:1">
+    <div id="act2-room-020" class="room pipe" data-node-type="room" style="--x:4;--y:6;--w:4;--h:1">
       <div class="nm">배관 간선 서</div>
     </div>
-    <div class="room pipe" style="--x:4;--y:5;--w:1;--h:1">
+    <div id="act2-room-021" class="room pipe" data-node-type="room" style="--x:4;--y:5;--w:1;--h:1">
       <div class="nm">정비<br>수직구</div>
     </div>
 
     <!-- ══ 문 ══ -->
     <!-- 거리층 횡단 -->
-    <i class="d h" style="--dx:2;--dy:3.5"></i>
-    <i class="d h" style="--dx:3;--dy:3"></i>
-    <i class="d h" style="--dx:6;--dy:3"></i>
-    <i class="d h" style="--dx:9;--dy:3.5"></i>
-    <i class="d h" style="--dx:12;--dy:3.5"></i>
-    <i class="d h" style="--dx:14;--dy:3.5"></i>
-    <i class="d h" style="--dx:16;--dy:3.5"></i>
-    <i class="d h" style="--dx:18;--dy:3.5"></i>
-    <i class="d h" style="--dx:19;--dy:3.5"></i>
+    <i id="act2-door-001" class="d h" data-node-type="door" style="--dx:2;--dy:3.5"></i>
+    <i id="act2-door-002" class="d h" data-node-type="door" style="--dx:3;--dy:3"></i>
+    <i id="act2-door-003" class="d h" data-node-type="door" style="--dx:6;--dy:3"></i>
+    <i id="act2-door-004" class="d h" data-node-type="door" style="--dx:9;--dy:3.5"></i>
+    <i id="act2-door-005" class="d h" data-node-type="door" style="--dx:12;--dy:3.5"></i>
+    <i id="act2-door-006" class="d h" data-node-type="door" style="--dx:14;--dy:3.5"></i>
+    <i id="act2-door-007" class="d h" data-node-type="door" style="--dx:16;--dy:3.5"></i>
+    <i id="act2-door-008" class="d h" data-node-type="door" style="--dx:18;--dy:3.5"></i>
+    <i id="act2-door-009" class="d h" data-node-type="door" style="--dx:19;--dy:3.5"></i>
     <!-- 주거·폐가·공방 -->
-    <i class="d v" style="--dx:4.5;--dy:4"></i>
-    <i class="d v unk" style="--dx:5;--dy:2"></i>
+    <i id="act2-door-010" class="d v" data-node-type="door" style="--dx:4.5;--dy:4"></i>
+    <i id="act2-door-011" class="d v gate" data-node-type="door" data-from="act2-room-007" data-to="act2-room-002" data-requires="ability_wall_run_unlocked" style="--dx:5;--dy:2" aria-label="벽타기로 엘리아스 은신 공방 진입"></i>
     <!-- 지붕층 -->
-    <i class="d h unk" style="--dx:6;--dy:1.5"></i>
-    <i class="d v unk" style="--dx:7.5;--dy:2"></i>
-    <i class="d v unk" style="--dx:12.5;--dy:2"></i>
-    <i class="d v unk" style="--dx:14.5;--dy:2"></i>
+    <i id="act2-door-012" class="d h gate" data-node-type="door" data-from="act2-room-002" data-to="act2-room-003" data-requires="ability_wall_run_unlocked" style="--dx:6;--dy:1.5"></i>
+    <i id="act2-door-013" class="d v gate" data-node-type="door" data-requires="ability_wall_run_unlocked" style="--dx:7.5;--dy:2"></i>
+    <i id="act2-door-014" class="d v gate" data-node-type="door" data-requires="ability_wall_run_unlocked" style="--dx:12.5;--dy:2"></i>
+    <i id="act2-door-015" class="d v gate" data-node-type="door" data-requires="ability_wall_run_unlocked" style="--dx:14.5;--dy:2"></i>
     <!-- 타워 게이트 -->
-    <i class="d v gate" style="--dx:10.5;--dy:2"></i>
+    <i id="act2-door-016" class="d v gate" data-node-type="door" data-from="act2-room-010" data-to="act2-room-001" data-requires="tower_gatekeeper_defeated ability_overload_counter_unlocked" data-unlocks="act3_entry" style="--dx:10.5;--dy:2" aria-label="시계탑 수문장 격파 후 과부하 반격으로 릴레이를 가동하여 타워 진입"></i>
     <!-- 배관층 -->
-    <i class="d v" style="--dx:17;--dy:5"></i>
-    <i class="d h" style="--dx:16;--dy:5.5"></i>
-    <i class="d h" style="--dx:14;--dy:5.5"></i>
-    <i class="d v" style="--dx:13;--dy:5"></i>
-    <i class="d h" style="--dx:12;--dy:7"></i>
-    <i class="d h" style="--dx:8;--dy:6.5"></i>
-    <i class="d v" style="--dx:4.5;--dy:6"></i>
-    <i class="d v" style="--dx:4.5;--dy:5"></i>
+    <i id="act2-door-017" class="d v gate oneway" data-node-type="door" data-from="act2-room-016" data-to="act2-room-013" data-direction="up" data-requires="surface_supply_restored" data-unlocks="terminal_pipe_shortcut" style="--dx:17;--dy:5" aria-label="공급 복구 후 배관에서 터미널로만 이동하는 일방 숏컷"></i>
+    <i id="act2-door-018" class="d h" data-node-type="door" style="--dx:16;--dy:5.5"></i>
+    <i id="act2-door-019" class="d h" data-node-type="door" style="--dx:14;--dy:5.5"></i>
+    <i id="act2-door-020" class="d v gate oneway" data-node-type="door" data-from="act2-room-018" data-to="act2-room-011" data-direction="up" data-requires="surface_supply_restored" data-unlocks="supply_hub_ascent_lift" style="--dx:13;--dy:5" aria-label="공급 복구 후 심부에서 지상부로만 상승하는 리프트"></i>
+    <i id="act2-door-021" class="d h" data-node-type="door" style="--dx:12;--dy:7"></i>
+    <i id="act2-door-022" class="d h" data-node-type="door" style="--dx:8;--dy:6.5"></i>
+    <i id="act2-door-023" class="d v" data-node-type="door" style="--dx:4.5;--dy:6"></i>
+    <i id="act2-door-024" class="d v gate" data-node-type="door" data-from="act2-room-008" data-to="act2-room-021" data-requires="workshop_admin_key_acquired" style="--dx:4.5;--dy:5" aria-label="공방 관리자 키로 정비 수직구 개방"></i>
 
   </div>
   </div>
@@ -324,7 +326,9 @@
     <span class="item"><span class="chip boss" style="margin-right:5px">BOSS</span>기계 보스 = 기억코어 결합</span>
     <span class="item"><span class="chip mem" style="margin-right:5px">기억</span>기억코어</span>
     <span class="item"><span class="chip cp" style="margin-right:5px">CP</span>체크포인트 [제안]</span>
-    <span class="item"><span class="chip unk" style="margin-right:5px">?</span>미정 능력 게이트</span>
+    <span class="item"><span class="chip abl" style="margin-right:5px">ABL</span>벽타기 게이트 [제안]</span>
+    <span class="item"><span class="chip echo" style="margin-right:5px">잔향</span>플래시백 공간 단서 [제안]</span>
+    <span class="item" style="color:var(--teal)">═ 청록 이중선 = 해금 후 일방 숏컷</span>
     <span class="item" style="color:var(--gold)">─ 금색 문 = 잠긴 연결부</span>
   </div>
 
@@ -335,9 +339,10 @@
       <div class="flow">
         터미널<b>[CP]</b><i>(터미너스 개구부에서 지상으로)</i> → 시장 거리<i>(시내 상업지구 · 결정화 인파 · 배관 노출)</i> → 공급 허브 지상부<i>(첫 전투)</i><br>
         → 시계탑 기슭 1차 <b>잠김 목격</b><i>(자물쇠 먼저)</i> → 대광장<b>[CP]</b><i>(결정화 군중 · 전투 없는 침묵 구간)</i><br>
-        → 빈 집 지대<i>(인적 없는 변두리, RUL-005)</i> → 폐가 골목 <b>들개형 기계</b><i>(하울링 개체 호출)</i> → <b>기억A·유대</b> → 은신 공방<i>(엘리아스 발견 · 정보/권한)</i><br>
-        → 정비 수직구 → 배관 간선 서 → 왜곡 구역<i>(말파스 기믹 지대)</i> → 공급 허브 심부 <b>정비 기계</b> → <b>기억B</b><br>
-        → 허브 지상부로 상승 → 시계탑 기슭 2차 <b>개방</b> → 타워 하층부 <b>(ACT3)</b>
+        → 빈 집 지대<i>(인적 없는 변두리, RUL-005)</i> → 폐가 골목 <b>들개형 기계</b><i>(하울링 개체 호출)</i> → <b>기억A·유대 + ABL-003 벽타기</b><br>
+        → 플래시백의 <b>공방 지붕 표식</b>을 따라 지붕길 서 → 은신 공방<b>[CP]</b><i>(기억 잔향 대조 · 공방 관리자 키)</i><br>
+        → 권한으로 정비 수직구 개방 → 배관 간선 서 → 왜곡 구역<i>(말파스의 출력 편중이 남긴 방치 배관)</i> → 공급 허브 심부 <b>정비 기계</b> → <b>기억B·근무/의무 + 도시 공급 복구</b><br>
+        → 복구된 일방 상승 리프트로 허브 지상부 복귀 → 시계탑 기슭 2차 <b>수문장전</b><i>(공방 관리자 키 + 공급 복구)</i> → <b>과부하 반격</b> → 릴레이 반격으로 타워 하층부 <b>(ACT3)</b>
       </div>
       <p class="dim">ACT1이 "아래로 파고드는" 이야기였다면 ACT2는 "중심으로 파고드는" 이야기 — 동쪽 끝에서 진입해 도심을 향해 걷고, 서쪽 날개(엘리아스)를 찍고, 배관층으로 잠행해 중심으로 되돌아오는 갈고리 모양 동선.</p>
     </div>
@@ -347,7 +352,7 @@
       <div class="kv">
         <div class="row"><div class="k">화물 터미널</div><div class="v">ACT2의 칼리고 포지션(거점). 터미너스에서 올라온 티크가 처음 만나는 결정화 시민은 군중이 아니라 <b>단 한 명</b> — 시내로 갈수록 밀도가 올라가는 구배 연출의 출발점. 단, 살아 있는 인간은 지하뿐(RUL-006)이므로 제작·수리는 여전히 모르비 몫 — 터미널은 CP·저장만 있는 <b>전초기지</b>이고, 터미너스 숏컷으로 칼리고에 내려가는 것이 ACT2 중반의 자연스러운 귀향 비트가 된다(회복된 마을: 물이 흐르고 사냥이 재개된 연출 = ACT1 성과 확인).</div></div>
         <div class="row"><div class="k">대광장</div><div class="v">결정화 군중 최대 밀도 — 밥상 앞·빨래터·거리에서 일상 그대로 박제된 사람들(RUL-005 위반 없이 시내에 집중 배치). 전투 없는 침묵 구간으로, "황금빛의 아름다움과 섬뜩함"을 걷는 속도로 강제 감상. 2년 전 그 순간이 통째로 박제된 도시의 핵심 이미지.</div></div>
-        <div class="row"><div class="k">시계탑 기슭</div><div class="v">ACT2 초반부터 스카이라인에 계속 보이다가 4번째 스텝에 도달 — 그리고 잠겨 있음. "자물쇠 먼저" 원칙의 ACT2 버전. 열쇠는 미정(기억B 회수? 엘리아스의 권한? — 상의 필요).</div></div>
+        <div class="row"><div class="k">시계탑 기슭</div><div class="v">ACT2 초반부터 스카이라인에 계속 보이다가 4번째 스텝에 도달 — 그리고 잠겨 있음. "자물쇠 먼저" 원칙의 ACT2 버전. <b>[제안] 공방 관리자 키 + 공급 허브 복구</b>를 모두 만족해야 열린다.</div></div>
         <div class="row"><div class="k">배관층</div><div class="v">지하 ACT1의 오수와 대칭되는 <b>정제 렌티움 배관망</b>. 기계 몬스터의 발원지이자 도시의 혈관. 왜곡의 동기 재정의 [제안]: 말파스가 타워의 정제·출력 용량을 <b>옥상(클레아 연구, RUL-008)에 집중</b>하면서, 말단 배관의 정제도가 방치 속에 저하 — 폐렌티움급이 흘러들어 기계들이 변질. ACT2 몬스터는 말파스의 병기가 아니라 <b>말파스가 버린 것들</b>이다(딸에게만 몰두하는 캐릭터와 정합). 기믹: 오작동 리프트, 역류 압력 등.</div></div>
         <div class="row"><div class="k">외곽 (선택)</div><div class="v">보호벽 밖 황폐지. 크리티컬 패스 밖에 두어, "왜 이 도시가 타워를 지었는가"(기근의 원점)를 스스로 찾는 플레이어에게 주는 서사 보상.</div></div>
       </div>
@@ -357,19 +362,20 @@
     <div class="sec">
       <h2>C. 보스-기억 결합 <span class="tag">확정 원칙 적용</span></h2>
       <div class="kv">
-        <div class="row"><div class="k">들개형 (기억A·유대)</div><div class="v">문서의 확정 예시 그대로 — 하울링으로 개체를 호출하는 패턴. 변두리 폐가 골목 배치.</div></div>
-        <div class="row"><div class="k">정비 기계 (기억B·미정)</div><div class="v">공급 허브 심부. 기억 주제 후보: "근무/의무" → 순찰 루틴을 강박적으로 반복하는 패턴, 또는 "조망(내려다보는 시점)" → 기억①의 복선 회수. <i>기억B 주제 = 상의 필요.</i></div></div>
-        <div class="row"><div class="k">엘리아스 공방</div><div class="v">룰북 4장 확정에 따라 <b>기억을 주지 않는다</b>(기억 복원 = 기억 보스의 코어 한정). 여기서 얻는 것은 정보 또는 권한 — 후보: 타워 출력 권한 단서(RUL-009와 연결, 시계탑 기슭의 열쇠가 될 수 있음). <i>[구체 내용 미정]</i> "내려다보는 시점" 복선 회수는 기억 보스(기억B 이후) 쪽으로.</div></div>
+        <div class="row"><div class="k">들개형 (기억A·유대)</div><div class="v">문서의 확정 예시 그대로 — 하울링으로 개체를 호출하는 패턴. <b>[제안]</b> 격파 보상은 기억A와 ABL-003 벽타기를 분리 지급한다. 플래시백 끝에 엘리아스 공방의 지붕 표식을 보여 주고, 현실의 지붕길·공방에 같은 기억 잔향을 배치해 다음 목적지를 대사 없이 안내한다.</div></div>
+        <div class="row"><div class="k">정비 기계 (기억B·근무/의무)</div><div class="v"><b>[제안]</b> 공급 허브를 떠나지 못하고 순찰 루틴을 반복하던 정비 개체의 기억. 격파 후 기억B 회수와 동시에 도시 공급이 복구되며, 플래시백의 밸브·근무 기록 이미지가 현실의 상승 리프트 가동과 타워 조명 복구로 이어진다.</div></div>
+        <div class="row"><div class="k">엘리아스 공방</div><div class="v">룰북 4장 확정에 따라 <b>기억을 주지 않는다</b>(기억 복원 = 기억 보스의 코어 한정). <b>[제안]</b> 기억A의 공간 단서를 확인하고 공방 관리자 키를 얻는 안전 거점이다. 이 키는 서쪽 수직구와 시계탑 기슭의 첫 번째 잠금 조건을 담당한다.</div></div>
       </div>
     </div>
 
     <div class="sec">
       <h2>D. 미정 — 다음에 정할 것</h2>
-      <p>① <b>ACT2 이동 능력 축</b>: 지붕길·공방 진입에 ?게이트를 걸어뒀는데, 보류된 벽타기(ABL-003)를 여기서 살릴지, 새 능력(배관 대시? 자기 부착?)으로 갈지. 이게 정해져야 지붕층 설계가 잠김. ② 시계탑 기슭의 열쇠. ③ 기억B 주제와 "조망" 복선의 회수 위치. ④ ACT2 보스 수(현재 2 — 3시간대 분량이면 1개 더 필요할 수 있음).</p>
+      <p>흐름 검증을 위해 다음을 <b>[제안]</b>으로 임시 반영함: ABL-003 벽타기, 공방 관리자 키 + 공급 복구로 활성화되는 시계탑 수문장, 수문장 보상인 과부하 반격, 기억B의 근무/의무 주제. ACT2 보스는 들개형 기계·정비 기계·시계탑 수문장의 3기로 구성한다. 최종 결정이 필요한 것은 ① 각 능력의 정확한 조작·전투 수치 ② 기억A·B 플래시백의 구체 장면과 대사 ③ 시계탑 수문장의 이름·외형·패턴 ④ 지붕길 동측 숏컷의 최종 착지점.</p>
     </div>
 
   </section>
 
 </div>
+<script src="./map-viewer.js"></script>
 </body>
 </html>

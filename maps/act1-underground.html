@@ -184,14 +184,15 @@
     :root{--u:48px}
   }
 </style>
+<link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body>
+<body data-map-id="act1" data-map-version="2">
 <div class="wrap">
 
   <header>
     <div class="eyebrow">Clockwork · ACT1 Detail Map</div>
     <h1>ACT1 지하 안드레스 <span>룸 단위 상세 맵 · 초안</span></h1>
-    <p class="note">확정 9개 지역을 <b>24개 룸</b>으로 세분화한 제안입니다. <b>방위는 세계 단면 기준으로 확정</b>: 동측(오른쪽)=림부스·터미너스(도시 상업지구 직하), 서측=칼리고·정수장치. 터미너스는 위아래로 뚫린 수직 원통 동굴(등반 전투 건틀릿). 확정 동선(①~⑨)과 문서의 확정 요소(보스·기억·보물방 3곳·오수 기둥)는 그대로 두고, 룸 분할·숏컷·게이트 배치는 전부 [제안]입니다.</p>
+    <p class="note">확정 9개 지역을 룸 단위로 세분화한 제안입니다. <b>방위는 세계 단면 기준으로 확정</b>: 동측(오른쪽)=림부스·터미너스(도시 상업지구 직하), 서측=칼리고·정수장치. RGN-011 교량은 파손 프롤로그의 단일 연속 스테이지이며, 터미너스는 위아래로 뚫린 수직 원통 동굴(등반 전투 건틀릿). 확정 동선(①~⑨)과 문서의 확정 요소(보스·기억·보물방 3곳·오수 기둥)는 그대로 두고, 룸 분할·숏컷·게이트 배치는 전부 [제안]입니다.</p>
   </header>
 
   <div class="map-scroll">
@@ -203,7 +204,7 @@
     <div class="dn" style="left:calc(16*var(--u))">▽ 하단 개구부 — 지하심층 습지와 연결 (위아래 관통)</div>
 
     <!-- 오수 낙하 기둥: 타워 직하, 지표에서 낙하해 교차로 대공동으로 -->
-    <div class="room sewage" style="--x:9;--y:0;--w:1;--h:6">
+    <div id="act1-room-001" class="room sewage" data-node-type="room" style="--x:9;--y:0;--w:1;--h:6">
       <div class="nm">오수 낙하 기둥 RGN-008 — 타워 직하 · 결정화 후 폭증 (진입 불가)</div>
     </div>
 <!-- ═══ ACT1 (좌우 반전) ═══ -->
@@ -218,149 +219,145 @@
     <div class="band" style="top:calc(11*var(--u));height:calc(3*var(--u))"><span class="bl">B25</span></div>
 
     <!-- ══ 림부스 ══ -->
-    <div class="room limbus" style="--x:13;--y:0;--w:2;--h:1">
+    <div id="act1-room-002" class="room limbus compact" data-node-type="room" data-event="terminus_seal_seen" style="--x:13;--y:0;--w:2;--h:1">
       <span class="step">1</span>
       <div class="nm">추락 지점</div>
-      <div class="ic"><span style="color:var(--sub)">폐기 슈트 종점 · 각성</span></div>
+      <div class="ic"><span style="color:var(--sub)">각성</span><span class="chip lockG" title="터미너스 안쪽에서만 개방">터미너스 봉인</span></div>
     </div>
-    <div class="room limbus" style="--x:10;--y:0;--w:3;--h:1">
-      <div class="nm">고철 평원 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-006</span></div>
-      <div class="ic"><span style="color:var(--sub)">이동 튜토리얼</span></div>
+    <div id="act1-room-003" class="room limbus compact" data-node-type="room" style="--x:9;--y:0;--w:4;--h:1">
+      <div class="nm">림부스 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-006</span></div>
+      <div class="ic"><span style="color:var(--sub)">고철 평원 · 이동</span></div>
     </div>
-    <div class="room limbus" style="--x:11;--y:1;--w:2;--h:1">
-      <div class="nm">보물방 A</div>
-      <div class="ic"><span class="chip trs">부품 3택1</span> <span style="color:var(--sub)">정체 미상 → 공방 판명</span></div>
+    <div id="act1-room-004" class="room caligo compact" data-node-type="room" data-requires="morbi_repair_complete" data-reward="mod_choice_a" data-event="morbi_salvage_presented" style="--x:1;--y:3;--w:2;--h:1">
+      <div class="nm">공방 부품고 A</div>
+      <div class="ic"><span class="chip trs">MOD 3택1</span></div>
     </div>
-    <div class="room limbus" style="--x:14;--y:1;--w:1;--h:1">
+    <div id="act1-room-005" class="room limbus" data-node-type="room" data-reward="module_slot_plus_1" data-requires="ability_double_jump_unlocked" style="--x:14;--y:1;--w:1;--h:1">
       <div class="nm">은닉 선반</div>
-      <div class="ic"><span class="chip trs">MOD</span><span class="chip lockD">D</span></div>
+      <div class="ic"><span class="chip slot">MOD 슬롯 +1</span><span class="chip lockD">D</span></div>
     </div>
 
     <!-- ══ 다리 ══ -->
-    <div class="room limbus" style="--x:6;--y:0;--w:3;--h:1;--rc:#7a828f">
+    <div id="act1-room-006" class="room limbus" data-node-type="room" data-event="pre_repair_collapse morbi_rescue_triggered" style="--x:4;--y:0;--w:5;--h:2;--rc:#7a828f">
       <span class="step">2</span>
-      <div class="nm">다리 상부 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-011</span></div>
-      <div class="ic"><span style="color:var(--sub)">쥐떼 · 공격 튜토리얼</span></div>
-    </div>
-    <div class="room limbus" style="--x:4;--y:1;--w:3;--h:1;--rc:#7a828f">
-      <div class="nm">다리 하부</div>
-      <div class="ic"><span style="color:var(--sub)">쥐떼 · 전투 심화 <span class="chip unk" style="border:1px dashed var(--purple);color:var(--purple);background:#252b36">미정</span><br>쓰러짐 → 모르비 구조</span></div>
+      <div class="nm">림부스-칼리고 교량 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-011</span></div>
+      <div class="ic"><span style="color:var(--sub)">회피·긴급 밀치기 → 쥐떼 추격 → 파손 누적 → 각본상 쓰러짐 → 모르비 구조</span></div>
     </div>
 
     <!-- ══ 칼리고 ══ -->
-    <div class="room caligo" style="--x:6;--y:2;--w:1;--h:2">
+    <div id="act1-room-008" class="room caligo" data-node-type="room" style="--x:6;--y:2;--w:1;--h:2">
       <div class="nm">망루<br>·<br>정문</div>
     </div>
-    <div class="room caligo" style="--x:3;--y:2;--w:3;--h:1">
+    <div id="act1-room-009" class="room caligo" data-node-type="room" style="--x:3;--y:2;--w:3;--h:1">
       <div class="nm">마을 광장</div>
       <div class="ic"><span class="chip cp">CP</span></div>
     </div>
-    <div class="room caligo" style="--x:4;--y:3;--w:2;--h:1">
+    <div id="act1-room-010" class="room caligo" data-node-type="room" data-event="morbi_repair_complete" style="--x:4;--y:3;--w:2;--h:1">
       <span class="step">3</span>
       <div class="nm">모르비 공방</div>
       <div class="ic"><span style="color:var(--sub)">수리 후 눈뜸 · 의뢰 · 개조 제작</span></div>
     </div>
-    <div class="room caligo" style="--x:3;--y:3;--w:1;--h:1">
+    <div id="act1-room-011" class="room caligo" data-node-type="room" style="--x:3;--y:3;--w:1;--h:1">
       <div class="nm">정화수<br>저장소</div>
     </div>
-    <div class="room caligo" style="--x:7;--y:3;--w:1;--h:3">
+    <div id="act1-room-012" class="room caligo" data-node-type="room" style="--x:7;--y:3;--w:1;--h:3">
       <div class="nm">낙하<br>샤프트</div>
       <div class="ic"><span class="chip drop">▼</span><span class="chip lockG">G↑</span></div>
     </div>
 
     <!-- ══ 교차로 ══ -->
-    <div class="room cross" style="--x:7;--y:6;--w:3;--h:2">
+    <div id="act1-room-013" class="room cross" data-node-type="room" style="--x:7;--y:6;--w:3;--h:2">
       <span class="step two">4·7</span>
       <div class="nm">교차로 대공동</div>
       <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">허브 · 오수 폭포 저수 공동</span></div>
     </div>
-    <div class="room cross" style="--x:8;--y:8;--w:2;--h:1">
+    <div id="act1-room-014" class="room cross" data-node-type="room" style="--x:8;--y:8;--w:2;--h:1">
       <div class="nm">심층 문 전실 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">GAT-101</span></div>
       <div class="ic"><span class="chip lockG" style="color:var(--water);border-color:var(--water)">수위</span></div>
     </div>
-    <div class="room cross" style="--x:6;--y:7;--w:1;--h:1">
+    <div id="act1-room-015" class="room cross" data-node-type="room" style="--x:6;--y:7;--w:1;--h:1">
       <div class="nm">서측<br>통로</div>
     </div>
 
     <!-- ══ 정수장치 + 갈고리 시험 공간 ══ -->
-    <div class="room water" style="--x:4;--y:6;--w:2;--h:1">
+    <div id="act1-room-016" class="room water" data-node-type="room" style="--x:4;--y:6;--w:2;--h:1">
       <div class="nm">갈고리 시험 홀 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-015 · GAT-104</span></div>
       <div class="ic"><span style="color:var(--sub)">사출 연습</span></div>
     </div>
-    <div class="room water" style="--x:3;--y:6;--w:1;--h:1">
+    <div id="act1-room-017" class="room water" data-node-type="room" style="--x:3;--y:6;--w:1;--h:1">
       <div class="nm">상승<br>챌린지</div>
     </div>
-    <div class="room water" style="--x:2;--y:6;--w:1;--h:1">
+    <div id="act1-room-018" class="room water" data-node-type="room" style="--x:2;--y:6;--w:1;--h:1">
       <span class="step">6</span>
       <div class="nm">코어실</div>
       <div class="ic"><span class="chip mem">기억①</span></div>
     </div>
-    <div class="room water" style="--x:4;--y:7;--w:2;--h:1">
+    <div id="act1-room-019" class="room water" data-node-type="room" style="--x:4;--y:7;--w:2;--h:1">
       <div class="nm">여과실</div>
       <div class="ic"><span style="color:var(--sub)">하운드</span></div>
     </div>
-    <div class="room water" style="--x:3;--y:7;--w:1;--h:1">
+    <div id="act1-room-020" class="room water" data-node-type="room" style="--x:3;--y:7;--w:1;--h:1">
       <div class="nm">펌프실</div>
-      <div class="ic"><span style="color:var(--sub)">밸브 퍼즐</span></div>
+      <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">밸브 퍼즐 · 렌토 직전</span></div>
     </div>
-    <div class="room water" style="--x:3;--y:8;--w:3;--h:1">
+    <div id="act1-room-021" class="room water" data-node-type="room" style="--x:3;--y:8;--w:3;--h:1">
       <span class="step">5</span>
       <div class="nm">중앙 정수조 — 렌토</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem" style="border-color:var(--teal)">→갈고리</span><span style="color:var(--sub)">내부 둥지 · 시설 정지</span></div>
     </div>
-    <div class="room water" style="--x:6;--y:8;--w:1;--h:1">
+    <div id="act1-room-022" class="room water" data-node-type="room" style="--x:6;--y:8;--w:1;--h:1">
       <div class="nm">취수구 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">EDG-013</span></div>
       <div class="ic"><span class="chip trs">MOD</span><span class="chip lockG">G</span></div>
     </div>
 
     <!-- ══ B24 하강 ══ -->
-    <div class="room b24" style="--x:9;--y:9;--w:1;--h:2">
+    <div id="act1-room-023" class="room b24" data-node-type="room" style="--x:9;--y:9;--w:1;--h:2">
       <div class="nm">배수<br>수직갱</div>
       <div class="ic"><span style="color:var(--sub)">수위 흔적</span></div>
     </div>
-    <div class="room b24" style="--x:6;--y:10;--w:3;--h:1">
+    <div id="act1-room-024" class="room b24" data-node-type="room" style="--x:6;--y:10;--w:3;--h:1">
       <div class="nm">진흙 동굴</div>
       <div class="ic"><span style="color:var(--gold)">황금 결정 파편</span></div>
     </div>
 
     <!-- ══ 지하심층 ══ -->
-    <div class="room deep" style="--x:7;--y:11;--w:3;--h:1">
+    <div id="act1-room-025" class="room deep" data-node-type="room" style="--x:7;--y:11;--w:3;--h:1">
       <div class="nm">침수 입구</div>
       <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">수위 하강 후 진입 · 진흙 습지</span></div>
     </div>
-    <div class="room deep" style="--x:10;--y:11;--w:3;--h:1">
+    <div id="act1-room-026" class="room deep" data-node-type="room" style="--x:10;--y:11;--w:3;--h:1">
       <div class="nm">흔적 지대</div>
       <div class="ic"><span style="color:var(--sub)">끌린 자국 · 사냥감 잔해 (환경 예고)</span></div>
     </div>
-    <div class="room deep" style="--x:13;--y:11;--w:2;--h:2">
+    <div id="act1-room-027" class="room deep" data-node-type="room" style="--x:13;--y:11;--w:2;--h:2">
       <span class="step">8</span>
       <div class="nm">사냥꾼 둥지</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem" style="border-color:var(--teal)">→더블점프</span></div>
     </div>
-    <div class="room deep" style="--x:13;--y:13;--w:2;--h:1">
+    <div id="act1-room-028" class="room deep" data-node-type="room" style="--x:13;--y:13;--w:2;--h:1">
       <div class="nm">기억 회수실</div>
       <div class="ic"><span class="chip mem">기억②</span></div>
     </div>
 
     <!-- ══ 터미너스 — 수직 원통 동굴 (등반 건틀릿) ══ -->
-    <div class="room term" style="--x:15;--y:0;--w:2;--h:2">
+    <div id="act1-room-029" class="room term" data-node-type="room" style="--x:15;--y:0;--w:2;--h:2">
       <span class="step">9</span>
       <div class="nm">정상부 둥지</div>
       <div class="ic"><span class="chip boss">BOSS</span> <span style="color:var(--sub)">원통 보스전</span></div>
     </div>
-    <div class="room term" style="--x:15;--y:2;--w:2;--h:4">
+    <div id="act1-room-030" class="room term" data-node-type="room" style="--x:15;--y:2;--w:2;--h:4">
       <div class="nm">상부 등반</div>
       <div class="ic"><span style="color:var(--sub)">거미떼 2파<br>붕괴 발판<br>거미줄 지대</span></div>
     </div>
-    <div class="room term" style="--x:15;--y:6;--w:2;--h:2">
+    <div id="act1-room-031" class="room term" data-node-type="room" style="--x:15;--y:6;--w:2;--h:2">
       <div class="nm">화물 적재장</div>
       <div class="ic"><span class="chip cp">CP</span><span class="chip trs">MOD 3택1</span></div>
     </div>
-    <div class="room term" style="--x:15;--y:8;--w:2;--h:3">
+    <div id="act1-room-032" class="room term" data-node-type="room" style="--x:15;--y:8;--w:2;--h:3">
       <div class="nm">하부 등반 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">GAT-003</span></div>
       <div class="ic"><span class="chip lockG">G</span><span class="chip lockD">D</span><br><span style="color:var(--sub)">거미떼 1파<br>벽 발판·앵커</span></div>
     </div>
-    <div class="room term" style="--x:15;--y:11;--w:2;--h:3">
+    <div id="act1-room-033" class="room term" data-node-type="room" style="--x:15;--y:11;--w:2;--h:3">
       <div class="nm">하단 개구부</div>
       <div class="ic"><span style="color:var(--sub)">심층 수면 위<br>진입부</span></div>
     </div>
@@ -368,52 +365,52 @@
     <!-- ══ 오수 낙하 기둥 ══ -->
 
     <!-- 송수관: 펌프실(B23) → 정화수 저장소(B21) -->
-    <div class="lk ver" style="--dx:3.5;--dy:4;--len:3"><span class="tag">송수관 ↑</span></div>
+    <div id="act1-link-001" class="lk ver" data-node-type="link" style="--dx:3.5;--dy:4;--len:3"><span class="tag">송수관 ↑</span></div>
 
     <!-- ══ 문 (연결부) ══ -->
     <!-- 림부스/다리 -->
-    <i class="d h" style="--dx:13;--dy:0.5"></i>
-    <i class="d v" style="--dx:12;--dy:1"></i>
-    <i class="d h" style="--dx:9;--dy:0.5"></i>
-    <i class="d h" style="--dx:10;--dy:0.5"></i>
-    <i class="d v" style="--dx:6.5;--dy:1"></i>
+    <i id="act1-door-001" class="d h" data-node-type="door" style="--dx:13;--dy:0.5"></i>
+    <i id="act1-door-002" class="d h gate" data-node-type="door" data-from="act1-room-011" data-to="act1-room-004" data-requires="morbi_repair_complete" style="--dx:3;--dy:3.5" aria-label="모르비의 수리 완료 후 공방 부품고 개방"></i>
+    <i id="act1-door-003" class="d h" data-node-type="door" style="--dx:9;--dy:0.5"></i>
+    <i id="act1-door-004" class="d h" data-node-type="door" style="--dx:10;--dy:0.5"></i>
+    <!-- act1-door-005 retired: RGN-011 상·하부 통합 -->
     <!-- 칼리고 -->
-    <i class="d v" style="--dx:6.5;--dy:2"></i>
-    <i class="d h" style="--dx:6;--dy:2.5"></i>
-    <i class="d v" style="--dx:5;--dy:3"></i>
-    <i class="d v" style="--dx:3.5;--dy:3"></i>
-    <i class="d h" style="--dx:7;--dy:3.5"></i>
+    <i id="act1-door-006" class="d v" data-node-type="door" style="--dx:6.5;--dy:2"></i>
+    <i id="act1-door-007" class="d h" data-node-type="door" style="--dx:6;--dy:2.5"></i>
+    <i id="act1-door-008" class="d v" data-node-type="door" style="--dx:5;--dy:3"></i>
+    <i id="act1-door-009" class="d v" data-node-type="door" style="--dx:3.5;--dy:3"></i>
+    <i id="act1-door-010" class="d h" data-node-type="door" style="--dx:7;--dy:3.5"></i>
     <!-- 낙하 샤프트 → 교차로 -->
-    <i class="d v" style="--dx:7.5;--dy:6"></i>
+    <i id="act1-door-011" class="d v" data-node-type="door" style="--dx:7.5;--dy:6"></i>
     <!-- 교차로 -->
-    <i class="d v gate" style="--dx:9;--dy:8"></i>
-    <i class="d h" style="--dx:7;--dy:7.5"></i>
-    <i class="d h" style="--dx:6;--dy:7.5"></i>
+    <i id="act1-door-012" class="d v gate" data-node-type="door" style="--dx:9;--dy:8"></i>
+    <i id="act1-door-013" class="d h" data-node-type="door" style="--dx:7;--dy:7.5"></i>
+    <i id="act1-door-014" class="d h" data-node-type="door" style="--dx:6;--dy:7.5"></i>
     <!-- 정수장치/시험 공간 -->
-    <i class="d v" style="--dx:5;--dy:7"></i>
-    <i class="d h" style="--dx:4;--dy:6.5"></i>
-    <i class="d h" style="--dx:3;--dy:6.5"></i>
-    <i class="d h" style="--dx:4;--dy:7.5"></i>
-    <i class="d v" style="--dx:5;--dy:8"></i>
-    <i class="d v" style="--dx:3.5;--dy:8"></i>
-    <i class="d h gate" style="--dx:6;--dy:8.5"></i>
+    <i id="act1-door-015" class="d v" data-node-type="door" style="--dx:5;--dy:7"></i>
+    <i id="act1-door-016" class="d h" data-node-type="door" style="--dx:4;--dy:6.5"></i>
+    <i id="act1-door-017" class="d h" data-node-type="door" style="--dx:3;--dy:6.5"></i>
+    <i id="act1-door-018" class="d h" data-node-type="door" style="--dx:4;--dy:7.5"></i>
+    <i id="act1-door-019" class="d v" data-node-type="door" style="--dx:5;--dy:8"></i>
+    <i id="act1-door-020" class="d v" data-node-type="door" style="--dx:3.5;--dy:8"></i>
+    <i id="act1-door-021" class="d h gate" data-node-type="door" style="--dx:6;--dy:8.5"></i>
     <!-- B24 하강 -->
-    <i class="d v" style="--dx:9.5;--dy:9"></i>
-    <i class="d h" style="--dx:9;--dy:10.5"></i>
-    <i class="d v" style="--dx:8;--dy:11"></i>
+    <i id="act1-door-022" class="d v" data-node-type="door" style="--dx:9.5;--dy:9"></i>
+    <i id="act1-door-023" class="d h" data-node-type="door" style="--dx:9;--dy:10.5"></i>
+    <i id="act1-door-024" class="d v" data-node-type="door" style="--dx:8;--dy:11"></i>
     <!-- 지하심층 -->
-    <i class="d h" style="--dx:10;--dy:11.5"></i>
-    <i class="d h" style="--dx:13;--dy:11.5"></i>
-    <i class="d v" style="--dx:14;--dy:13"></i>
+    <i id="act1-door-025" class="d h" data-node-type="door" style="--dx:10;--dy:11.5"></i>
+    <i id="act1-door-026" class="d h" data-node-type="door" style="--dx:13;--dy:11.5"></i>
+    <i id="act1-door-027" class="d v" data-node-type="door" style="--dx:14;--dy:13"></i>
     <!-- 터미너스 수직 동굴: 진입 + 세그먼트 개구부 -->
-    <i class="d h gate" style="--dx:15;--dy:13.5"></i>
-    <i class="d v" style="--dx:16;--dy:11"></i>
-    <i class="d v" style="--dx:16;--dy:8"></i>
-    <i class="d v" style="--dx:16;--dy:6"></i>
-    <i class="d v" style="--dx:16;--dy:2"></i>
+    <i id="act1-door-028" class="d h gate" data-node-type="door" style="--dx:15;--dy:13.5"></i>
+    <i id="act1-door-029" class="d v" data-node-type="door" style="--dx:16;--dy:11"></i>
+    <i id="act1-door-030" class="d v" data-node-type="door" style="--dx:16;--dy:8"></i>
+    <i id="act1-door-031" class="d v" data-node-type="door" style="--dx:16;--dy:6"></i>
+    <i id="act1-door-032" class="d v" data-node-type="door" style="--dx:16;--dy:2"></i>
     <!-- 봉인 개구부(림부스 측 목격) + 은닉 선반 -->
-    <i class="d h gate" style="--dx:15;--dy:0.5"></i>
-    <i class="d h gate" style="--dx:15;--dy:1.5"></i>
+    <i id="act1-door-033" class="d h gate" data-node-type="door" data-from="act1-room-029" data-to="act1-room-002" data-requires="terminus_guardian_defeated" data-unlocks="limbus_terminus_shortcut" style="--dx:15;--dy:0.5" aria-label="거미줄과 붕괴 화물로 봉인된 개구부. 터미너스 안쪽에서 거대 거미 격파 후 개방"></i>
+    <i id="act1-door-034" class="d h gate" data-node-type="door" data-from="act1-room-029" data-to="act1-room-005" data-requires="terminus_guardian_defeated ability_double_jump_unlocked" data-unlocks="limbus_hidden_shelf_access" style="--dx:15;--dy:1.5" aria-label="거대 거미 격파 후 터미너스 안쪽에서 은닉 선반 연결 개방"></i>
 
 
   </div>
@@ -445,10 +442,10 @@
     <div class="sec">
       <h2>A. 메인 크리티컬 패스 <span class="tag">확정 동선의 룸 전개</span></h2>
       <div class="flow">
-        추락 지점<i>(폐기 슈트 종점 · 각성 · 봉인 개구부 목격)</i> → 고철 평원<i>(보물방 A — 정체불명 부품 3택1)</i> → 다리 상부<i>(쥐떼)</i> → 다리 하부 → <b>쓰러짐</b><i>(모르비 구조 · 암전)</i><br>
-        → 공방에서 눈뜸<i>(수리 · 부품 판명 = MOD 튜토리얼 · 의뢰)</i> → 광장<b>[CP]</b><br>
+        추락 지점<i>(폐기 슈트 종점 · 터미너스 봉인 개구부 목격)</i> → 고철 평원<i>(전투 없는 이동 튜토리얼)</i> → 림부스-칼리고 교량<i>(회피·긴급 밀치기 → 쥐떼 추격)</i> → <b>각본상 쓰러짐</b><i>(모르비 구조 · 암전)</i><br>
+        → 공방에서 눈뜸<i>(기본 골격·구동부·공격 기능 수리)</i> → 공방 부품고 <b>보물방 A</b><i>(모르비가 구조 때 함께 회수한 케이스 공개 · 성능 확인 후 MOD 3택1)</i> → 광장<b>[CP]</b><br>
         → 낙하 샤프트<i>▼일방향</i> → 대공동<b>[CP]</b> → 심층 문 전실<i>(잠김 목격 = 자물쇠 먼저 ①)</i><br>
-        → 서측 통로 → 여과실 → 펌프실<i>(밸브)</i> → 중앙 정수조 <b>렌토</b><i>(내부 둥지 · 시설 정지)</i> → 격파 → <b>티크가 재가동</b><i>(배수 재개, 로그 한 줄)</i> → <b>갈고리 획득</b><br>
+        → 서측 통로 → 여과실 → 펌프실<b>[CP]</b><i>(밸브)</i> → 중앙 정수조 <b>렌토</b><i>(내부 둥지 · 시설 정지)</i> → 격파 → <b>티크가 재가동</b><i>(배수 재개, 로그 한 줄)</i> → <b>갈고리 획득</b><br>
         → 취수구<i>(보물방 B, 갈고리 즉시 사용)</i> → 시험 홀 → 상승 챌린지 → 코어실 <b>기억①</b><br>
         → 대공동 2차<i>(수위 하강, 문 개방)</i> → 배수 수직갱 → 진흙 동굴<i>(황금 파편 = 기억② 복선)</i><br>
         → 침수 입구<b>[CP]</b> → 흔적 지대<i>(끌린 자국 · 환경 예고)</i> → 둥지 <b>사냥꾼</b><i>(매복+끌어당김 단일 전투)</i> → <b>더블점프</b> + 기억 회수실 <b>기억②</b><br>
@@ -465,9 +462,9 @@
         <div class="row"><div class="k">심층 문 (GAT-101)</div><div class="v">능력 게이트가 아닌 <b>이벤트 게이트</b>. 열쇠 = 렌토 격파 후 시설 재가동(배수 재개). "자물쇠 먼저" 원칙의 대표 사례로, 1차 방문 때 물에 잠긴 문 너머로 어둠 속 반짝임(황금 파편)을 살짝 보여줌.</div></div>
         <div class="row"><div class="k">취수구 G (EDG-013)</div><div class="v">렌토 격파 직후 같은 방에서 갈고리로만 닿는 상단 통풍구 — 보물방 B. 새 능력의 첫 사용을 튜토리얼이 아닌 <b>보상</b>으로 처리.</div></div>
         <div class="row"><div class="k">송수관 (제안)</div><div class="v">펌프실(B23)에서 정화수 저장소(B21)로 물을 끌어올리는 수직 관로 — 칼리고 생존 경제 2축(정화수)의 물리적 구현. 렌토 격파 전에는 침묵한 관, 격파 후에는 <b>물 흐르는 소리·진동</b>이 관을 따라 올라감. 교차로 수위 하강과 함께 "정수장치가 살아났다"를 두 곳에서 동시에 보여주는 환경 피드백.</div></div>
-        <div class="row"><div class="k">봉인 개구부 (B20)</div><div class="v">터미너스 정상부는 림부스 바로 옆 — <b>게임 시작 1분 안에</b> 거미줄과 화물 잔해로 봉인된 최종 출구를 목격하게 됨. "자물쇠 먼저" 3호이자 가장 큰 스케일의 복선: 처음 본 그 문을 3시간 뒤 안쪽에서 연다. 격파 후에는 림부스↔터미너스 상시 숏컷.</div></div>
+        <div class="row"><div class="k">봉인 개구부 (B20)</div><div class="v">터미너스 정상부와 림부스는 같은 높이에서 맞닿지만 열린 통로가 아니다. 옛 정비 개구부가 <b>수년간 쌓인 거미줄과 붕괴 화물로 압착 봉인</b>됐고 해제 장치는 터미너스 안쪽에만 남아 있다. 림부스에서는 틈 너머의 움직임과 빛만 보이며 진입할 수 없다. 갈고리+더블점프로 심층의 하단 입구부터 역등반해 거대 거미를 격파하면 안쪽 장력이 풀리고 잠금 장치를 조작해 개방한다. 이후 림부스↔터미너스 상시 숏컷.</div></div>
         <div class="row"><div class="k">터미너스 진입 G+D</div><div class="v">하부 등반 구간이 갈고리+더블점프 복합 게이트 그 자체 — 별도의 잠금 없이 <b>지형이 곧 자물쇠</b>. 기억② 회수실에서 하단 개구부로 바로 이어져 보스 직후 동선이 끊기지 않음.</div></div>
-        <div class="row"><div class="k">은닉 선반 (D)</div><div class="v">정상부 둥지 옆, 거대 거미 격파 후 지상으로 나가기 직전 더블점프로 닿는 선반 — ACT1 마지막 빌드 보강. "시작점(림부스)을 반대편 높이에서 내려다보는" 순환의 마침표.</div></div>
+        <div class="row"><div class="k">은닉 선반 (D)</div><div class="v">정상부 둥지 옆, 거대 거미 격파 후 지상으로 나가기 직전 더블점프로 닿는 선반 — 중복 MOD 대신 <b>MOD 슬롯 +1</b>을 지급해 ACT1에서 모은 부품을 실제 빌드 확장으로 연결. "시작점(림부스)을 반대편 높이에서 내려다보는" 순환의 마침표.</div></div>
       </div>
     </div>
 
@@ -485,11 +482,12 @@
 
     <div class="sec">
       <h2>D. 체크포인트 배치 <span class="tag p">[제안 — 시스템 미정]</span></h2>
-      <p>광장(마을) / 대공동(허브) / 침수 입구(심층 진입) / 화물 적재장(건틀릿 중간·최종전 앞) — <b>보스 전마다 1개, 코너당 1개</b> 원칙. 정체(벤치·충전소)와 사망 페널티는 미정이라 위치만 잡아둔 상태.</p>
+      <p>광장(마을) / 대공동(허브) / <b>펌프실(렌토 직전)</b> / 침수 입구(심층 진입) / 화물 적재장(건틀릿 중간·최종전 앞) — <b>보스 전마다 1개, 코너당 1개</b> 원칙. 정체(벤치·충전소)와 사망 페널티는 미정이라 위치만 잡아둔 상태.</p>
     </div>
 
   </section>
 
 </div>
+<script src="./map-viewer.js"></script>
 </body>
 </html>
