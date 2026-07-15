@@ -9,13 +9,26 @@
   },
   "tique": {
     "cellSize": [128, 128],
-    "implementationStatus": "core PixelLab motions, dash, and hit reaction integrated",
+    "implementationStatus": "generated 3/4 master integrated with proportion-locked procedural motion",
+    "master": "reference/tique-3q-generated-source.png",
+    "renderMode": "dedicated-action-pose-procedural-timing",
+    "actionSources": {
+      "attack": "assets/tique/generated/attack-source.png",
+      "jump": "assets/tique/generated/jump-source.png",
+      "dash": "assets/tique/generated/dash-source.png"
+    },
+    "distortionPolicy": {
+      "uniformScaleOnly": true,
+      "bottomCenterPivot": true,
+      "allowedMotion": ["translation", "rotation", "horizontalMirror", "alphaAfterimage"],
+      "disallowedMotion": ["nonUniformScale", "sharedPoseForAttackJumpDash", "spriteCellCropping"]
+    },
     "animations": {
       "idle": { "frames": 4, "fps": 6, "loop": true, "sheet": "assets/tique/animations/idle.png" },
       "run": { "frames": 8, "fps": 12, "loop": true, "sheet": "assets/tique/animations/run.png" },
-      "jump": { "frames": 7, "fps": 12, "loop": false, "sheet": "assets/tique/animations/jump.png" },
-      "attack1": { "frames": 6, "fps": 24, "loop": false, "activeFrames": [2, 3], "sheet": "assets/tique/animations/attack.png" },
-      "dodge": { "frames": 6, "fps": 18, "loop": false, "sheet": "assets/tique/animations/dash.png" },
+      "jump": { "frames": 1, "fps": 12, "loop": false, "source": "assets/tique/generated/jump-source.png", "timing": "physics-driven" },
+      "attack1": { "frames": 1, "fps": 24, "loop": false, "activeWindowSeconds": [0.08, 0.19], "source": "assets/tique/generated/attack-source.png", "timing": "anticipation-contact-recovery" },
+      "dodge": { "frames": 1, "fps": 18, "loop": false, "source": "assets/tique/generated/dash-source.png", "timing": "ground-dash-with-alpha-afterimages" },
       "hit": { "frames": 6, "fps": 13, "loop": false, "sheet": "assets/tique/animations/hit.png" },
       "stunned": { "frames": 4, "fps": 8, "loop": true },
       "captured": { "frames": 4, "fps": 12, "loop": true },

@@ -28,6 +28,14 @@
     actionSprites: {},
     animations: {},
     tique: Object.assign(new Image(), { src: "reference/tique-character-sheet.png" }),
+    tiqueMaster: null,
+    tiqueMasterSource: Object.assign(new Image(), { src: "reference/tique-3q-generated-source.png" }),
+    tiqueActions: {},
+    tiqueActionSources: {
+      attack: Object.assign(new Image(), { src: "assets/tique/generated/attack-source.png" }),
+      jump: Object.assign(new Image(), { src: "assets/tique/generated/jump-source.png" }),
+      dash: Object.assign(new Image(), { src: "assets/tique/generated/dash-source.png" })
+    },
     lento: Object.assign(new Image(), { src: "reference/lento-concept-board.png" })
   };
 
@@ -123,7 +131,9 @@
     const isBackdrop = index => {
       const i = index * 4;
       const r = d[i], green = d[i + 1], b = d[i + 2];
-      return r > 178 && green > 178 && b > 178 && Math.max(r, green, b) - Math.min(r, green, b) < 38;
+      const neutral = r > 178 && green > 178 && b > 178 && Math.max(r, green, b) - Math.min(r, green, b) < 38;
+      const chromaGreen = green > 170 && r < 90 && b < 110 && green > r * 2.2 && green > b * 1.8;
+      return neutral || chromaGreen;
     };
     const enqueue = index => {
       if (seen[index] || !isBackdrop(index)) return;
@@ -148,6 +158,36 @@
     return out;
   }
 
+  function trimTransparent(source, padding = 12) {
+    const g = source.getContext("2d", { willReadFrequently: true });
+    const { data } = g.getImageData(0, 0, source.width, source.height);
+    let minX = source.width;
+    let minY = source.height;
+    let maxX = -1;
+    let maxY = -1;
+    for (let y = 0; y < source.height; y++) {
+      for (let x = 0; x < source.width; x++) {
+        if (data[(y * source.width + x) * 4 + 3] === 0) continue;
+        minX = Math.min(minX, x);
+        minY = Math.min(minY, y);
+        maxX = Math.max(maxX, x);
+        maxY = Math.max(maxY, y);
+      }
+    }
+    if (maxX < 0) return source;
+    minX = Math.max(0, minX - padding);
+    minY = Math.max(0, minY - padding);
+    maxX = Math.min(source.width - 1, maxX + padding);
+    maxY = Math.min(source.height - 1, maxY + padding);
+    const out = document.createElement("canvas");
+    out.width = maxX - minX + 1;
+    out.height = maxY - minY + 1;
+    const outCtx = out.getContext("2d");
+    outCtx.imageSmoothingEnabled = false;
+    outCtx.drawImage(source, minX, minY, out.width, out.height, 0, 0, out.width, out.height);
+    return out;
+  }
+
   const actionSpriteLoads = Object.entries(actionSpriteFiles).map(([name, src]) => {
     const image = Object.assign(new Image(), { src });
     return image.decode().then(() => { art.actionSprites[name] = image; });
@@ -161,9 +201,17 @@
     });
   });
 
-  Promise.all([art.tique.decode(), art.lento.decode(), ...actionSpriteLoads, ...animationLoads]).then(() => {
+  const tiqueActionLoads = Object.values(art.tiqueActionSources).map(image => image.decode());
+
+  Promise.all([art.tique.decode(), art.tiqueMasterSource.decode(), art.lento.decode(), ...tiqueActionLoads, ...actionSpriteLoads, ...animationLoads]).then(() => {
     for (const [name, crop] of Object.entries(cropTable)) {
       art.sprites[name] = chromaCrop(name.startsWith("tique") ? art.tique : art.lento, crop);
+    }
+    const keyedMaster = chromaCrop(art.tiqueMasterSource, [0, 0, art.tiqueMasterSource.width, art.tiqueMasterSource.height]);
+    art.tiqueMaster = trimTransparent(keyedMaster, 10);
+    for (const [name, image] of Object.entries(art.tiqueActionSources)) {
+      const keyed = chromaCrop(image, [0, 0, image.width, image.height]);
+      art.tiqueActions[name] = trimTransparent(keyed, 10);
     }
     art.ready = true;
   }).catch(() => { art.ready = false; });
@@ -199,7 +247,7 @@
   function makePlayer() {
     return {
       x: 62, y: FLOOR - 48, w: 32, h: 48, vx: 0, vy: 0, face: 1,
-      hp: 5, maxHp: 5, grounded: true, attacking: 0, attackUsed: false,
+      hp: 5, maxHp: 5, grounded: true, attacking: 0, attackUsed: false, attackDirection: "horizontal",
       dodge: 0, invuln: 0, slow: 0, stun: 0, captured: 0, hidden: 0,
       state: "idle", damageTaken: 0
     };
@@ -345,7 +393,22 @@
 
   function attackRect() {
     const p = game.player;
-    return { x: p.face > 0 ? p.x + p.w - 4 : p.x - 24, y: p.y + 11, w: 28, h: 26 };
+    const centerX = p.x + p.w / 2;
+    if (p.attackDirection === "up") {
+      return { x: centerX - 15, y: p.y - 30, w: 30, h: 42 };
+    }
+    if (p.attackDirection === "down") {
+      return { x: centerX - 15, y: p.y + p.h - 6, w: 30, h: 34 };
+    }
+    return { x: p.face > 0 ? p.x + p.w - 1 : p.x - 35, y: p.y + 13, w: 36, h: 22 };
+  }
+
+  function playerHurtRect(p = game.player) {
+    return { x: p.x + 2, y: p.y - 22, w: p.w - 4, h: p.h + 20 };
+  }
+
+  function attackIsActive(p = game.player) {
+    return p.attacking > 0.08 && p.attacking < 0.19;
   }
 
   function startAttack() {
@@ -353,6 +416,7 @@
     if (p.attacking > 0 || p.dodge > 0 || p.hidden > 0 || p.stun > 0 || p.captured > 0 || p.hp <= 0) return;
     p.attacking = 0.24;
     p.attackUsed = false;
+    p.attackDirection = down("ArrowUp") ? "up" : down("ArrowDown") ? "down" : "horizontal";
     beep(280, 0.04, "square", 0.025);
   }
 
@@ -427,7 +491,7 @@
     }
     p.x = clamp(p.x, 18, WORLD_W - p.w - 18);
 
-    if (p.attacking > 0.08 && p.attacking < 0.19 && !p.attackUsed) {
+    if (attackIsActive(p) && !p.attackUsed) {
       const ar = attackRect();
       let connected = false;
       for (const rat of game.rats) {
@@ -499,7 +563,7 @@
     }
     if (game.pattern === "p1_bite") {
       const bite = { x: b.face < 0 ? b.x - 62 : b.x + b.w - 6, y: b.y + 14, w: 68, h: 48 };
-      if (game.patternTime > 0.11 && game.patternTime < 0.29 && hit(bite, game.player)) damagePlayer(1, b.x);
+      if (game.patternTime > 0.11 && game.patternTime < 0.29 && hit(bite, playerHurtRect())) damagePlayer(1, b.x);
       if (game.patternTime >= game.nextPattern) {
         setPattern("p1_recover", 1.45);
         b.vulnerable = true;
@@ -546,7 +610,7 @@
       beep(85, 0.13, "sawtooth", 0.04);
     } else if (game.pattern === "p2_tail") {
       const sweep = { x: b.x - 92, y: FLOOR - 34, w: 225, h: 32 };
-      if (game.patternTime > 0.12 && game.patternTime < 0.48 && hit(sweep, p) && damagePlayer(1, b.x)) {
+      if (game.patternTime > 0.12 && game.patternTime < 0.48 && hit(sweep, playerHurtRect(p)) && damagePlayer(1, b.x)) {
         p.captured = 1.1;
         p.x = b.x + (b.face < 0 ? -12 : 72);
         showMessage("렌토가 티크를 물고 갉아먹는다", 1.1);
@@ -605,7 +669,7 @@
         shake = 0.55;
         burst(b.x + b.w / 2, FLOOR - 4, colors.warning, 14);
         const slam = { x: b.x - 50, y: FLOOR - 32, w: b.w + 100, h: 32 };
-        if (hit(slam, p)) damagePlayer(2, b.x);
+        if (hit(slam, playerHurtRect(p))) damagePlayer(2, b.x);
         setPattern("p3_neutral", 1.05);
       }
     } else if (game.pattern === "p3_sonic_tell" && game.patternTime >= game.nextPattern) {
@@ -620,7 +684,7 @@
       beep(92, 0.2, "sawtooth", 0.045);
     } else if (game.pattern === "p3_charge") {
       b.x += b.face * 390 * dt;
-      if (hit(b, p) && p.hidden <= 0 && !tuning.parry) damagePlayer(2, b.x);
+      if (hit(b, playerHurtRect(p)) && p.hidden <= 0 && !tuning.parry) damagePlayer(2, b.x);
       if (b.x <= 14 || b.x + b.w >= WORLD_W - 14 || game.patternTime >= game.nextPattern) chargeCrash(false);
     } else if (game.pattern === "p3_groggy" && game.patternTime >= game.nextPattern) {
       setPattern("p3_neutral", 0.75);
@@ -680,7 +744,7 @@
       if (q.y > FLOOR - 8) {
         game.puddles.push({ x: q.x - 24, y: FLOOR - 7, w: 58, life: 5 });
         q.life = 0;
-      } else if (hit({ x: q.x - 6, y: q.y - 6, w: 12, h: 12 }, p)) {
+      } else if (hit({ x: q.x - 6, y: q.y - 6, w: 12, h: 12 }, playerHurtRect(p))) {
         if (damagePlayer(1, q.x)) p.slow = 3.2;
         q.life = 0;
       }
@@ -695,7 +759,7 @@
       w.life -= dt;
       w.x += w.dir * 245 * dt;
       const wr = { x: w.x - 16, y: FLOOR - 26, w: 32, h: 26 };
-      if (!w.hit && hit(wr, p)) {
+      if (!w.hit && hit(wr, playerHurtRect(p))) {
         if (damagePlayer(1, w.x)) p.stun = 1.15;
         w.hit = true;
       }
@@ -909,6 +973,24 @@
     return true;
   }
 
+  function drawTiquePose(sprite, sourceFacing, x, bottom, height, facing = 1, alpha = 1, angle = 0, offsetX = 0, offsetY = 0) {
+    if (!sprite) return false;
+    const width = height * sprite.width / sprite.height;
+    const mirror = facing === sourceFacing ? 1 : -1;
+    ctx.save();
+    ctx.globalAlpha = alpha;
+    ctx.translate(Math.round(x + offsetX), Math.round(bottom + offsetY));
+    ctx.scale(mirror, 1);
+    ctx.rotate(angle * mirror);
+    ctx.drawImage(sprite, -width / 2, -height, width, height);
+    ctx.restore();
+    return true;
+  }
+
+  function drawTiqueMaster(x, bottom, height, facing = 1, alpha = 1, angle = 0, offsetX = 0, offsetY = 0) {
+    return drawTiquePose(art.tiqueMaster, -1, x, bottom, height, facing, alpha, angle, offsetX, offsetY);
+  }
+
   function drawTique(p) {
     if (p.hidden > 0) {
       const pipe = PIPE_X.reduce((a, b) => Math.abs(b - p.x) < Math.abs(a - p.x) ? b : a);
@@ -917,7 +999,7 @@
       ctx.beginPath();
       ctx.arc(x, PIPE_CY, 40, 0, Math.PI * 2);
       ctx.clip();
-      if (art.ready) drawArtSprite("tiqueIdle", x, FLOOR - 2, 72, 94, 1, 0.82);
+      if (art.ready) drawTiqueMaster(x, FLOOR - 2, 78, 1, 0.82);
       ctx.restore();
       drawPixelGlow(x, PIPE_CY, colors.cyan, 31);
       rect(x - 13, PIPE_CY - 8, 7, 6, colors.cyan);
@@ -929,29 +1011,57 @@
     const bottom = (p.grounded ? FLOOR : p.y + p.h) + 5;
     const flicker = p.invuln > 0 && Math.floor(performance.now() / 65) % 2 === 0;
     const alpha = flicker ? 0.42 : 1;
-    let sprite = "tiqueIdle";
-    let width = 96;
-    let height = 96;
+    const time = performance.now() / 1000;
+    let height = 84;
+    let pose = art.tiqueMaster;
+    let poseFacing = -1;
     let angle = 0;
-    let frameIndex = null;
-    if (p.state === "run") sprite = "tiqueRun";
+    let offsetX = 0;
+    let offsetY = Math.round(Math.sin(time * 2.5));
+
+    if (p.state === "run") {
+      const stride = Math.sin(time * 13.5);
+      angle = stride * 0.025;
+      offsetY = -Math.round(Math.abs(stride) * 2);
+      if (p.grounded && Math.abs(stride) > 0.92) {
+        rect(x - p.face * 13, FLOOR - 1, 3, 2, "#69717488");
+      }
+    }
     if (p.state === "jump") {
-      sprite = "tiqueJump";
-      frameIndex = Math.round(clamp((p.vy + 315) / 630, 0, 1) * 6);
+      pose = art.tiqueActions.jump || pose;
+      poseFacing = -1;
+      angle = clamp(p.vx / 3200, -0.055, 0.055);
+      offsetY = 0;
     }
     if (p.attacking > 0) {
-      sprite = down("ArrowUp") ? "tiqueAttackUp" : down("ArrowDown") ? "tiqueAttackDown" : "tiqueAttackHorizontal";
-      if (sprite === "tiqueAttackHorizontal") frameIndex = Math.floor(clamp(1 - p.attacking / 0.24, 0, 0.999) * 6);
+      pose = art.tiqueActions.attack || pose;
+      poseFacing = 1;
+      const progress = clamp(1 - p.attacking / 0.24, 0, 1);
+      const swing = Math.sin(progress * Math.PI);
+      angle = (p.attackDirection === "up" ? -0.045 : p.attackDirection === "down" ? 0.045 : -0.065) * swing;
+      offsetX = p.face * Math.round(swing * 3);
+      offsetY = -Math.round(swing);
     }
-    if (p.state === "stunned") sprite = "tiqueStunned";
+    if (p.state === "stunned") {
+      angle = Math.sin(time * 10) * 0.045;
+      offsetY = -1;
+    }
     if (p.invuln > 0.58 && p.state !== "dodge") {
-      sprite = "tiqueHit";
-      frameIndex = Math.floor(clamp((1.05 - p.invuln) / 0.47, 0, 0.999) * 6);
+      angle = 0.11;
+      offsetX = -p.face * 3;
     }
-    if (p.state === "down") { sprite = "tiqueDown"; width = 112; height = 112; }
+    if (p.state === "down") {
+      height = 82;
+      angle = 1.28;
+      offsetX = p.face * 14;
+      offsetY = 5;
+    }
     if (p.state === "dodge") {
-      sprite = "tiqueDash";
-      frameIndex = Math.floor(clamp(1 - p.dodge / 0.34, 0, 0.999) * 6);
+      pose = art.tiqueActions.dash || pose;
+      poseFacing = 1;
+      angle = -0.035;
+      offsetX = p.face * 2;
+      offsetY = 1;
     }
 
     ctx.save();
@@ -962,19 +1072,29 @@
     ctx.fill();
     ctx.restore();
 
-    drawArtSprite(sprite, x, bottom, width, height, p.face, alpha, angle, frameIndex);
+    if (p.state === "dodge") {
+      drawTiquePose(pose, poseFacing, x - p.face * 18, bottom, height, p.face, alpha * 0.12, angle, offsetX, offsetY);
+      drawTiquePose(pose, poseFacing, x - p.face * 9, bottom, height, p.face, alpha * 0.24, angle, offsetX, offsetY);
+    }
+    drawTiquePose(pose, poseFacing, x, bottom, height, p.face, alpha, angle, offsetX, offsetY);
 
     if (p.attacking > 0) {
-      const reach = p.face > 0 ? x + 21 : x - 21;
+      const vertical = p.attackDirection === "up" ? -1 : p.attackDirection === "down" ? 1 : 0;
+      const reach = vertical === 0 ? x + p.face * 23 : x;
+      const arcY = vertical < 0 ? bottom - 70 : vertical > 0 ? bottom - 17 : bottom - 40;
       ctx.save();
       ctx.globalAlpha = 0.78;
       ctx.strokeStyle = colors.cyan;
       ctx.lineWidth = 4;
       ctx.beginPath();
-      ctx.arc(reach, bottom - 37, 26, p.face > 0 ? -1.1 : 2.1, p.face > 0 ? 1.15 : 4.25);
+      if (vertical < 0) ctx.arc(reach, arcY, 25, Math.PI, Math.PI * 2);
+      else if (vertical > 0) ctx.arc(reach, arcY, 25, 0, Math.PI);
+      else ctx.arc(reach, arcY, 26, p.face > 0 ? -1.1 : 2.1, p.face > 0 ? 1.15 : 4.25);
       ctx.stroke();
       ctx.restore();
-      rect(reach + p.face * 17 - 3, bottom - 41, 7, 7, colors.brassLight);
+      const tipX = vertical === 0 ? reach + p.face * 17 : reach + p.face * 3;
+      const tipY = vertical < 0 ? arcY - 23 : vertical > 0 ? arcY + 20 : arcY - 4;
+      rect(tipX - 3, tipY - 3, 7, 7, colors.brassLight);
     }
     if (p.slow > 0) {
       rect(x - 22, FLOOR - 3, 44, 5, "#506e31");
@@ -1111,12 +1231,13 @@
 
     if (tuning.hitboxes) {
       ctx.strokeStyle = colors.cyan;
-      ctx.strokeRect(game.player.x - cameraX, game.player.y, game.player.w, game.player.h);
+      const hurt = playerHurtRect();
+      ctx.strokeRect(hurt.x - cameraX, hurt.y, hurt.w, hurt.h);
       if (game.boss.visible) {
         ctx.strokeStyle = colors.warning;
         ctx.strokeRect(game.boss.x - cameraX, game.boss.y, game.boss.w, game.boss.h);
       }
-      if (game.player.attacking > 0) {
+      if (attackIsActive()) {
         const ar = attackRect();
         ctx.strokeStyle = colors.brassLight;
         ctx.strokeRect(ar.x - cameraX, ar.y, ar.w, ar.h);
