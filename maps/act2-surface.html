@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CLOCKWORK — ACT2 상세 맵 초안 (룸 단위)</title>
+<title>CLOCKWORK - ACT2 지상 메티아 원형 도시 맵</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard.min.css">
 <style>
   :root{
-    --u:60px;
+    --u:58px;
     --bg:#0d1015;
     --panel:#151a22;
     --line:#2a3140;
@@ -17,364 +17,295 @@
     --gold-dim:#8a6f2a;
     --teal:#3fd2c7;
     --copper:#b0713f;
-    --outer:#6f7a6a;
-    --mid:#9c7f45;
+    --outer:#748172;
+    --mid:#a48648;
     --purple:#b06fc4;
+    --wall:#9ba3ad;
     --mono:'Pretendard',-apple-system,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:var(--bg);color:var(--txt);font-family:'Pretendard',-apple-system,sans-serif;padding:48px 24px 80px;line-height:1.5}
-  .wrap{max-width:1040px;margin:0 auto}
-
+  .wrap{max-width:1160px;margin:0 auto}
   header{margin-bottom:28px}
-  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
-  h1{font-size:28px;font-weight:700;letter-spacing:-.02em}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+  h1{font-size:28px;font-weight:700;letter-spacing:0}
   h1 span{color:var(--sub);font-weight:400;font-size:16px;margin-left:10px}
-  .note{color:var(--sub);font-size:13px;margin-top:10px;max-width:680px}
+  .note{color:var(--sub);font-size:13px;margin-top:10px;max-width:900px}
   .note b{color:var(--teal);font-weight:600}
-
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin:34px 0 12px}
+  .section-head h2{font-size:17px;font-weight:650}
+  .section-head p{color:var(--sub);font-size:11px;text-align:right}
   .map-scroll{overflow-x:auto;padding:8px 0}
 
-  /* 인지 구배 존 바 */
-  .zonebar{
-    display:flex;width:calc(21 * var(--u));
-    margin-top:40px;
-    font-family:var(--mono);font-size:10.5px;text-align:center;
-  }
-  .zonebar div{flex-shrink:0;padding:5px 2px;border-right:1px solid var(--bg);line-height:1.3;overflow:hidden;white-space:nowrap;font-weight:500}
-  .zonebar .zo{background:rgba(111,122,106,.25);color:var(--outer)}
-  .zonebar .zm{background:rgba(156,127,69,.25);color:var(--mid)}
+  /* 원형 도시 평면도 */
+  .plan-scroll{overflow-x:auto;border:1px solid var(--line);background:#10141a;padding:18px}
+  .city-plan{position:relative;width:960px;height:590px;margin:0 auto;overflow:hidden}
+  .city-plan::before{position:absolute;inset:22px 190px;border:3px double var(--wall);border-radius:50%;content:"";box-shadow:0 0 0 8px rgba(155,163,173,.05)}
+  .city-ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none}
+  .city-ring.outer{width:500px;height:500px;border:1px dashed rgba(116,129,114,.75);background:rgba(116,129,114,.06)}
+  .city-ring.mid{width:354px;height:354px;border:1px solid rgba(164,134,72,.55);background:rgba(164,134,72,.06)}
+  .city-ring.core{width:204px;height:204px;border:1px solid rgba(217,179,68,.75);background:rgba(217,179,68,.08)}
+  .wall-label{position:absolute;z-index:4;color:var(--wall);font-size:10px;font-family:var(--mono);letter-spacing:.08em}
+  .wall-label.w{left:157px;top:286px;transform:rotate(-90deg)}
+  .wall-label.e{right:157px;top:286px;transform:rotate(90deg)}
+  .recognition{position:absolute;z-index:2;color:var(--sub);font-family:var(--mono);font-size:10px;text-align:center}
+  .recognition.r1{left:236px;top:78px}
+  .recognition.r2{left:322px;top:142px}
+  .recognition.r4{left:424px;top:211px;color:var(--gold)}
+  .plan-node{position:absolute;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:92px;min-height:38px;border:1px solid var(--line);border-radius:4px;background:#151b23;color:var(--txt);padding:6px 9px;text-align:center;font-size:11px;line-height:1.25}
+  .plan-node strong{display:block;font-size:11px;color:inherit}
+  .plan-node small{display:block;color:var(--sub);font-size:9px;margin-top:2px}
+  .plan-node.tower-base{width:112px;border-color:var(--gold);background:#201c13;color:var(--gold)}
+  .plan-node.main{left:418px;top:256px;width:124px;height:78px;border-color:var(--gold);background:#262013;color:var(--gold);font-weight:700}
+  .plan-node.north{left:424px;top:136px}
+  .plan-node.south{left:424px;bottom:136px}
+  .plan-node.west{left:284px;top:276px}
+  .plan-node.east{right:284px;top:276px}
+  .plan-node.start{left:246px;top:390px;width:170px;border-color:var(--teal);color:var(--teal)}
+  .plan-node.dog{right:250px;top:365px;width:142px;border-color:#d89058}
+  .plan-node.workshop{right:72px;top:154px;width:150px;border-color:var(--mid)}
+  .plan-node.waste-intake{right:250px;top:470px;width:200px;min-height:52px;border-color:var(--teal);color:var(--teal)}
+  .plan-node.waste{right:42px;top:410px;width:170px;border-color:var(--outer)}
+  .plan-node.west-yard{left:34px;top:168px;width:170px;border-color:var(--outer)}
+  .plan-node .lock{color:var(--gold);font-size:9px}
+  .plan-scope{position:absolute;left:12px;bottom:8px;color:var(--sub);font-family:var(--mono);font-size:10px}
+  .plan-caption{position:absolute;right:8px;bottom:8px;color:var(--sub);font-size:10px;text-align:right}
+  .flow-ledger{width:960px;margin:14px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .flow-ledger__row{display:grid;grid-template-columns:118px 1fr;min-height:58px;border-top:1px solid rgba(42,49,64,.6)}
+  .flow-ledger__row:first-child{border-top:0}
+  .flow-ledger__label{display:flex;align-items:center;color:var(--sub);font-size:10px;font-weight:700;padding:10px 12px}
+  .flow-ledger__list{display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+  .flow-ledger__list.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .flow-ledger__list.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .flow-ledger__item{position:relative;display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--line);padding:9px 10px;color:var(--txt);font-size:10px;line-height:1.35}
+  .flow-ledger__item b{color:var(--teal);font-size:10px}
+  .flow-ledger__item small{display:block;margin-top:2px;color:var(--sub);font-size:9px}
+  .flow-ledger__row.optional .flow-ledger__item b{color:var(--mid)}
+  .flow-ledger__row.story .flow-ledger__item b{color:#8fc4ce}
+
+  /* 실제 플레이 횡단면 */
+  .zonebar{display:flex;width:calc(29 * var(--u));margin-top:28px;font-family:var(--mono);font-size:10.5px;text-align:center}
+  .zonebar div{flex-shrink:0;padding:6px 2px;border-right:1px solid var(--bg);line-height:1.3;overflow:hidden;white-space:nowrap;font-weight:500}
+  .zonebar .zo{background:rgba(116,129,114,.25);color:var(--outer)}
+  .zonebar .zm{background:rgba(164,134,72,.25);color:var(--mid)}
   .zonebar .zc{background:rgba(217,179,68,.28);color:var(--gold)}
-
-  .canvas{
-    position:relative;
-    width:calc(21 * var(--u));
-    height:calc(8 * var(--u));
-    margin:52px 0 8px;
-  }
+  .canvas{position:relative;width:calc(29 * var(--u));height:calc(10 * var(--u));margin:48px 0 8px}
   .band{position:absolute;left:0;right:0;border-top:1px solid rgba(42,49,64,.6)}
-  .band .bl{position:absolute;left:3px;top:4px;font-family:var(--mono);font-size:10.5px;color:var(--sub);opacity:.8;z-index:5}
+  .band .bl{position:absolute;left:4px;top:4px;font-family:var(--mono);font-size:10px;color:var(--sub);opacity:.9;z-index:5}
   .band:nth-child(even){background:rgba(255,255,255,.015)}
-
-  .room{
-    position:absolute;
-    left:calc(var(--x) * var(--u) + 3px);
-    top:calc(var(--y) * var(--u) + 3px);
-    width:calc(var(--w) * var(--u) - 6px);
-    height:calc(var(--h) * var(--u) - 6px);
-    border:1.5px solid var(--rc,var(--mid));
-    background:color-mix(in srgb, var(--rc,var(--mid)) 14%, var(--bg));
-    border-radius:5px;
-    padding:7px 8px;
-    font-size:11px;line-height:1.35;z-index:2;word-break:keep-all;
-  }
-  .room .nm{font-weight:600;font-size:12px;color:var(--txt)}
-  .room .nm > span{display:block;margin-top:2px;opacity:.85}
-  .room .ic{margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;align-items:center;font-size:10.5px}
-
-  .outer{--rc:var(--outer)}
-  .mid{--rc:var(--mid)}
-  .core{--rc:var(--gold)}
-  .roof{--rc:#7a828f}
-  .pipe{--rc:var(--copper)}
-  .warp{--rc:var(--purple); background:repeating-linear-gradient(135deg, rgba(176,111,196,.14) 0 8px, rgba(176,111,196,.04) 8px 16px)}
-  .tower{--rc:var(--gold); background:linear-gradient(180deg, rgba(217,179,68,.28), rgba(217,179,68,.10)); box-shadow:0 0 14px rgba(217,179,68,.25)}
-
-  .d{
-    position:absolute;z-index:3;
-    left:calc(var(--dx) * var(--u));
-    top:calc(var(--dy) * var(--u));
-    transform:translate(-50%,-50%);
-    background:var(--bg);border:1.5px solid var(--sub);border-radius:2px;
-  }
-  .d.h{width:8px;height:20px}
-  .d.v{width:20px;height:8px}
-  .d.gate{border-color:var(--gold)}
-  .d.unk{border-color:var(--purple);border-style:dashed}
-
-  .chip{
-    display:inline-flex;align-items:center;justify-content:center;
-    font-family:var(--mono);font-size:9.5px;font-weight:500;
-    border-radius:3px;padding:0 4px;height:15px;line-height:1;
-  }
-  .chip.boss{background:var(--gold);color:var(--bg)}
-  .chip.mem{background:transparent;border:1px solid var(--teal);color:var(--teal)}
-  .chip.cp{background:transparent;border:1px solid #c47bd1;color:#c47bd1}
-  .chip.unk{background:#252b36;color:var(--purple);border:1px dashed var(--purple)}
-  .chip.lock{background:#252b36;color:var(--gold);border:1px solid var(--gold-dim)}
-  .step{
-    position:absolute;top:-8px;left:-8px;z-index:4;
-    width:20px;height:20px;border-radius:50%;
-    background:var(--teal);color:var(--bg);
-    font-family:var(--mono);font-size:10px;font-weight:700;
-    display:flex;align-items:center;justify-content:center;
-    border:2px solid var(--bg);
-  }
+  .wall-line{position:absolute;z-index:1;top:0;height:calc(7 * var(--u));width:8px;border-left:2px solid var(--wall);border-right:2px solid var(--wall);background:rgba(155,163,173,.08)}
+  .wall-line.w{left:calc(4 * var(--u) - 4px)}
+  .wall-line.e{left:calc(25 * var(--u) - 4px)}
+  .wall-line span{position:absolute;top:8px;left:8px;color:var(--wall);font-family:var(--mono);font-size:9px;white-space:nowrap}
+  .wall-line.e span{left:auto;right:8px}
+  .branch-line{position:absolute;z-index:1;top:calc(.95 * var(--u));height:2px;background:rgba(217,179,68,.35)}
+  .branch-line.west{left:calc(8 * var(--u));width:calc(5 * var(--u))}
+  .branch-line.east{left:calc(16 * var(--u));width:calc(5 * var(--u))}
+  .branch-line.cross{left:calc(13 * var(--u));width:calc(3 * var(--u))}
+  .room{position:absolute;left:calc(var(--x) * var(--u) + 3px);top:calc(var(--y) * var(--u) + 3px);width:calc(var(--w) * var(--u) - 6px);height:calc(var(--h) * var(--u) - 6px);border:1.5px solid var(--rc,var(--mid));background:color-mix(in srgb,var(--rc,var(--mid)) 14%,var(--bg));border-radius:5px;padding:7px 8px;font-size:11px;line-height:1.35;z-index:2;word-break:keep-all;overflow:hidden}
+  .room .nm{font-weight:650;font-size:12px;color:var(--txt)}
+  .room .ic{margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;align-items:center;font-size:10px}
+  .outer{--rc:var(--outer)} .mid{--rc:var(--mid)} .core{--rc:var(--gold)} .roof{--rc:#7a828f} .pipe{--rc:var(--copper)}
+  .warp{--rc:var(--purple);background:repeating-linear-gradient(135deg,rgba(176,111,196,.14) 0 8px,rgba(176,111,196,.04) 8px 16px)}
+  .tower{--rc:var(--gold);background:linear-gradient(180deg,rgba(217,179,68,.28),rgba(217,179,68,.10));box-shadow:0 0 14px rgba(217,179,68,.18)}
+  .sealed{border-style:dashed;opacity:.82}
+  .d{position:absolute;z-index:3;left:calc(var(--dx) * var(--u));top:calc(var(--dy) * var(--u));transform:translate(-50%,-50%);background:var(--bg);border:1.5px solid var(--sub);border-radius:2px}
+  .d.h{width:8px;height:20px}.d.v{width:20px;height:8px}.d.gate{border-color:var(--gold)}.d.unk{border-color:var(--purple);border-style:dashed}
+  .chip{display:inline-flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:9px;font-weight:500;border-radius:3px;padding:0 4px;height:15px;line-height:1}
+  .chip.boss{background:var(--gold);color:var(--bg)}.chip.mem{background:transparent;border:1px solid var(--teal);color:var(--teal)}.chip.cp{background:transparent;border:1px solid #c47bd1;color:#c47bd1}.chip.lock{background:#252b36;color:var(--gold);border:1px solid var(--gold-dim)}
+  .step{position:absolute;top:-8px;left:-8px;z-index:4;width:20px;height:20px;border-radius:50%;background:var(--teal);color:var(--bg);font-family:var(--mono);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;border:2px solid var(--bg)}
   .step.two{width:auto;border-radius:9px;padding:0 4px}
-
-  .up-act3{
-    position:absolute;z-index:4;
-    left:calc(10.5 * var(--u));top:-42px;white-space:nowrap;transform:translateX(-50%);
-    font-family:var(--mono);font-size:10px;color:var(--gold);text-align:center;line-height:1.1;
-  }
-  .dn-act1{
-    position:absolute;z-index:4;
-    left:calc(17 * var(--u));bottom:-20px;transform:translateX(-50%);
-    font-family:var(--mono);font-size:10px;color:var(--gold-dim);white-space:nowrap;
-  }
-
-  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--sub);margin:22px 0 0;align-items:center}
-  .legend .sw{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}
-  .legend .item{display:flex;align-items:center}
-
-  .routes{margin-top:48px}
-  .routes h2{font-size:17px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px}
-  .routes h2 .tag{font-family:var(--mono);font-size:10px;border:1px solid var(--line);border-radius:3px;padding:2px 7px;color:var(--sub);font-weight:400}
-  .routes h2 .tag.p{border-color:var(--teal);color:var(--teal)}
-  .routes .sec{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:18px 20px;margin-top:16px}
-  .routes p{font-size:13px;color:var(--txt);margin-top:8px}
-  .routes p.dim{color:var(--sub);font-size:12.5px}
-  .flow{
-    font-family:var(--mono);font-size:12px;color:var(--teal);
-    background:#10151c;border:1px solid var(--line);border-radius:6px;
-    padding:12px 14px;margin-top:10px;line-height:1.9;
-    overflow-x:auto;white-space:nowrap;
-  }
-  .flow b{color:var(--gold);font-weight:700}
-  .flow i{font-style:normal;color:var(--sub)}
-  .kv{margin-top:10px;display:flex;flex-direction:column;gap:8px}
-  .kv .row{display:flex;gap:12px;font-size:13px;align-items:baseline}
-  .kv .k{flex-shrink:0;width:160px;font-weight:600;color:var(--gold);font-size:12.5px}
-  .kv .v{color:var(--txt)}
-  .kv .v i{font-style:normal;color:var(--sub);font-size:12px}
-
-  @media (max-width:720px){
-    body{padding:28px 12px 60px}
-    :root{--u:46px}
-  }
+  .dn-act1{position:absolute;z-index:4;left:calc(5 * var(--u));bottom:-20px;transform:translateX(-50%);font-family:var(--mono);font-size:10px;color:var(--gold-dim);white-space:nowrap}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;color:var(--sub);margin:20px 0 0;align-items:center}.legend .sw{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:5px;vertical-align:-1px}.legend .item{display:flex;align-items:center}
+  .routes{margin-top:42px}.routes h2{font-size:17px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px}.routes h2 .tag{font-family:var(--mono);font-size:10px;border:1px solid var(--line);border-radius:3px;padding:2px 7px;color:var(--sub);font-weight:400}.routes h2 .tag.p{border-color:var(--teal);color:var(--teal)}
+  .routes .sec{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:18px 20px;margin-top:16px}.routes p{font-size:13px;color:var(--txt);margin-top:8px}.routes p.dim{color:var(--sub);font-size:12.5px}
+  .flow{font-family:var(--mono);font-size:12px;color:var(--teal);background:#10151c;border:1px solid var(--line);border-radius:6px;padding:12px 14px;margin-top:10px;line-height:1.9;overflow-x:auto}.flow b{color:var(--gold);font-weight:700}.flow i{font-style:normal;color:var(--sub)}
+  .kv{margin-top:10px;display:flex;flex-direction:column;gap:8px}.kv .row{display:flex;gap:12px;font-size:13px;align-items:baseline}.kv .k{flex-shrink:0;width:170px;font-weight:600;color:var(--gold);font-size:12.5px}.kv .v{color:var(--txt)}.kv .v i{font-style:normal;color:var(--sub);font-size:12px}
+  @media(max-width:720px){body{padding:28px 12px 60px}:root{--u:46px}.section-head{align-items:flex-start;flex-direction:column;gap:4px}.section-head p{text-align:left}}
 </style>
 <link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body data-map-id="act2" data-map-version="2">
+<body data-map-id="act2" data-map-version="14">
 <div class="wrap">
-
   <header>
-    <div class="eyebrow">Clockwork · ACT2 Draft Map</div>
-    <h1>ACT2 지상 메티아 <span>룸 단위 상세 맵 · 초안 [전부 제안]</span></h1>
-    <p class="note">확정 틀(시내/변두리/외곽 + 인지 구배 + 기계 몬스터·기억코어 원칙)만 문서 기반이고, 나머지는 전부 제안. 구도: <b>화물 터미널(동측)에서 내려 도심을 향해 걸어 들어가는 수평 단면</b>. 세로는 지붕층 / 거리층(0F) / 배관층 3층. 흐름 보정안으로 ABL-003 벽타기, 공방 관리자 키, 공급 복구를 순차 게이트로 반영했다.</p>
+    <div class="eyebrow">Clockwork · ACT2 Surface City</div>
+    <h1>ACT2 지상 메티아 <span>원형 성벽 도시 · 평면도 + 플레이 횡단면</span></h1>
+    <p class="note">지상 메티아는 <b>거대한 원형 성벽 안에 중심 시내와 네 방향 타워 기부가 놓인 도시</b>다. 인지 구배는 중심에서 좌우 모두 1/4 → 1/2 → 1로 약해진다. ACT2 시작 동선은 성벽 안쪽에 고정하고, 들개형 기계에게서 벽타기를 얻은 뒤에만 서부·동부 외곽을 탐사할 수 있다.</p>
   </header>
 
+  <div class="section-head"><h2>도시 평면도</h2><p>실제 방위·성벽·타워 위치를 읽는 지도 · 북쪽이 위</p></div>
+  <div class="plan-scroll">
+    <div class="city-plan" aria-label="원형 성벽으로 둘러싸인 메티아 도시 평면도">
+      <div class="city-ring outer"></div><div class="city-ring mid"></div><div class="city-ring core"></div>
+      <span class="wall-label w">서부 원형 성벽</span><span class="wall-label e">동부 원형 성벽</span>
+      <span class="recognition r1">외곽 · 인지 1</span><span class="recognition r2">변두리 · 인지 1/2</span><span class="recognition r4">중심 · 인지 1/4</span>
+      <div class="plan-node main">메인 타워<small>초반 잠금 확인 · 후반 ACT3 진입</small></div>
+      <div class="plan-node tower-base north" data-city-band="mid-core-boundary"><strong>북부 타워 기부</strong><small>기록·행정 가도</small></div>
+      <div class="plan-node tower-base south" data-city-band="mid-core-boundary"><strong>남부 타워 기부</strong><small>수도·회수 가도</small></div>
+      <div class="plan-node tower-base west" data-city-band="mid-core-boundary"><strong>서부 타워 기부</strong><small>물류 가도</small></div>
+      <div class="plan-node tower-base east" data-city-band="mid-core-boundary"><strong>동부 타워 기부</strong><small>원석 반입·정비 가도</small></div>
+      <div class="plan-node start"><strong>서부 내벽 승강장</strong><small>ACT2 시작 · 터미너스 직상</small></div>
+      <div class="plan-node dog"><strong>들개형 기계</strong><small>벽타기 획득</small></div>
+      <div class="plan-node workshop"><strong>엘리아스 공방</strong><small>벽타기 이후 외곽</small></div>
+      <div class="plan-node waste-intake"><strong>도심 밀폐 투입구</strong><small>청소 로봇 투입 → 지하 수거관 → 림부스</small></div>
+      <div class="plan-node waste"><strong>외곽 재활용 처리장</strong><small>선택 탐사 · 림부스 자동 수거관과 분리</small></div>
+      <div class="plan-node west-yard"><strong>외벽 화물 야적장</strong><small>서부 외곽 선택 탐사</small></div>
+      <div class="plan-scope">공간 배치 전용 · 연결선 없음</div>
+      <p class="plan-caption">중앙 메인 타워 + 중심·변두리 경계의 동·서·남·북 위성 타워 4기<br>각 타워는 지상 기부를 가지며 ACT3에서 내부가 순차 개방</p>
+    </div>
+    <div class="flow-ledger" aria-label="ACT2 실제 진행 순서와 선택 탐사 및 서사 이동">
+      <div class="flow-ledger__row">
+        <div class="flow-ledger__label">실제 필수 진행</div>
+        <div class="flow-ledger__list">
+          <div class="flow-ledger__item"><b>01 시작</b><small>서부 내벽 승강장</small></div>
+          <div class="flow-ledger__item"><b>02 잠금 확인</b><small>메인 타워 기슭</small></div>
+          <div class="flow-ledger__item"><b>03 벽타기</b><small>들개형 기계 격파</small></div>
+          <div class="flow-ledger__item"><b>04 관리자 키</b><small>엘리아스 공방</small></div>
+          <div class="flow-ledger__item"><b>05 공급 복구</b><small>배관 심부 정비 기계</small></div>
+          <div class="flow-ledger__item"><b>06 ACT3 진입</b><small>메인 타워 수문장</small></div>
+        </div>
+      </div>
+      <div class="flow-ledger__row optional">
+        <div class="flow-ledger__label">벽타기 후 선택</div>
+        <div class="flow-ledger__list two">
+          <div class="flow-ledger__item"><b>서부 외곽</b><small>외벽 화물 야적장 · 회수로</small></div>
+          <div class="flow-ledger__item"><b>동부 외곽</b><small>재활용 처리장 · 황폐 가도</small></div>
+        </div>
+      </div>
+      <div class="flow-ledger__row story">
+        <div class="flow-ledger__label">서사상 자동 이동</div>
+        <div class="flow-ledger__list three">
+          <div class="flow-ledger__item"><b>도심 밀폐 투입구</b><small>청소 로봇은 여기까지만 이동</small></div>
+          <div class="flow-ledger__item"><b>지하 자동 수거관</b><small>플레이 공간이 아닌 운반 설비</small></div>
+          <div class="flow-ledger__item"><b>림부스 추락 지점</b><small>ACT1 시작</small></div>
+        </div>
+      </div>
+    </div>
+    <p style="width:960px;margin:10px auto 0;color:var(--sub);font-size:11px">원형 도식은 지역의 실제 방위와 성벽 안팎만 보여준다. 플레이 순서와 서사상 자동 이동은 위 단계표에서 별도로 읽는다.</p>
+  </div>
+
+  <div class="section-head"><h2>플레이 횡단면</h2><p>횡스크롤 방 연결 · 북/남 방향은 배경/전경 분기 노드로 전환</p></div>
   <div class="map-scroll">
+    <div class="zonebar">
+      <div class="zo" style="width:calc(4*var(--u))">서부 외곽 · 인지 1</div>
+      <div class="zm" style="width:calc(5*var(--u))">서부 변두리 · 인지 1/2</div>
+      <div class="zc" style="width:calc(11*var(--u))">중심 시내 · 인지 1/4</div>
+      <div class="zm" style="width:calc(5*var(--u))">동부 변두리 · 인지 1/2</div>
+      <div class="zo" style="width:calc(4*var(--u))">동부 외곽 · 인지 1</div>
+    </div>
+    <div class="canvas">
+      <div class="dn-act1">▼ 터미너스 승강축 · 서부 성벽 직하</div>
+      <div class="band" style="top:0;height:calc(2*var(--u))"><span class="bl">타워 기부·방위 분기</span></div>
+      <div class="band" style="top:calc(2*var(--u));height:calc(2*var(--u))"><span class="bl">성벽·지붕층</span></div>
+      <div class="band" style="top:calc(4*var(--u));height:calc(3*var(--u))"><span class="bl">거리층 0F</span></div>
+      <div class="band" style="top:calc(7*var(--u));height:calc(3*var(--u))"><span class="bl">배관층</span></div>
+      <div class="wall-line w"><span>서부 성벽</span></div><div class="wall-line e"><span>동부 성벽</span></div>
+      <div class="branch-line west"></div><div class="branch-line cross"></div><div class="branch-line east"></div>
 
-  <!-- 인지 구배 존 바 -->
-  <div class="zonebar">
-    <div class="zo" style="width:calc(3*var(--u))">외곽 · 인지 1</div>
-    <div class="zm" style="width:calc(3*var(--u))">변두리 서 · 1/2</div>
-    <div class="zc" style="width:calc(10*var(--u))">시내 · 인지 1/4</div>
-    <div class="zm" style="width:calc(2*var(--u))">변두리 동</div>
-    <div class="zo" style="width:calc(3*var(--u))">외곽 · 인지 1</div>
-  </div>
+      <!-- 네 방향 타워 기부와 중앙 타워 -->
+      <div id="act2-room-023" class="room tower sealed" data-node-type="room" data-city-band="mid-core-boundary" data-requires="act3_west_tower_route" style="--x:8;--y:0;--w:2;--h:2"><div class="nm">서부 타워 기부</div><div class="ic"><span class="chip lock">ACT3 봉쇄</span><span>물류 가도</span></div></div>
+      <div id="act2-room-024" class="room tower sealed" data-node-type="room" data-city-band="mid-core-boundary" data-requires="act3_north_tower_route" style="--x:11;--y:0;--w:2;--h:2"><div class="nm">북부 타워 기부</div><div class="ic"><span class="chip lock">배경 방향</span><span>기록 가도</span></div></div>
+      <div id="act2-room-001" class="room tower" data-node-type="room" data-flow-order="7" data-flow-group="ACT2" data-flow-label="ACT3 진입" data-flow-note="중앙 릴레이 통과" style="--x:13;--y:0;--w:3;--h:2"><span class="step">12</span><div class="nm">메인 타워 하층부</div><div class="ic"><span class="chip lock">과부하 반격</span><span>ACT3 중앙 허브</span></div></div>
+      <div id="act2-room-025" class="room tower sealed" data-node-type="room" data-city-band="mid-core-boundary" data-requires="act3_south_tower_route" style="--x:16;--y:0;--w:2;--h:2"><div class="nm">남부 타워 기부</div><div class="ic"><span class="chip lock">전경 방향</span><span>수도 가도</span></div></div>
+      <div id="act2-room-026" class="room tower sealed" data-node-type="room" data-city-band="mid-core-boundary" data-requires="act3_east_tower_route" style="--x:19;--y:0;--w:2;--h:2"><div class="nm">동부 타워 기부</div><div class="ic"><span class="chip lock">ACT3 봉쇄</span><span>원석 반입·정비 가도</span></div></div>
 
-  <div class="canvas">
+      <!-- 지붕과 외곽 -->
+      <div id="act2-room-027" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:0;--y:2;--w:4;--h:2"><div class="nm">서부 외벽 화물 야적장</div><div class="ic"><span class="chip abl">벽타기</span><span>선택 탐사 · 물류 기록</span></div></div>
+      <div id="act2-room-004" class="room roof" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:4;--y:2;--w:5;--h:2"><div class="nm">서부 성벽 상부·지붕길</div><div class="ic"><span class="chip abl">벽타기</span><span>시작점 복귀 순환로</span></div></div>
+      <div id="act2-room-003" class="room roof" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:20;--y:2;--w:5;--h:2"><div class="nm">동부 성벽 상부·지붕길</div><div class="ic"><span class="chip abl">벽타기</span><span class="chip echo">공방 표식 잔향</span></div></div>
+      <div id="act2-room-002" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" data-reward="workshop_admin_key_acquired" data-event="memory_a_echo_resolved" data-flow-order="4" data-flow-group="ACT2" data-flow-label="엘리아스 공방" data-flow-note="공방 관리자 키" style="--x:25;--y:2;--w:4;--h:2"><span class="step">8</span><div class="nm">엘리아스 외벽 은신 공방</div><div class="ic"><span class="chip auth">관리자 키</span><span class="chip echo">잔향</span><span class="chip cp">CP</span></div></div>
 
-    <div class="up-act3">▲<br>크로노스 타워<br>(ACT3)</div>
-    <div class="dn-act1">▼ ACT1 터미너스 (B20~B25 수직 동굴)</div>
+      <!-- 거리층: 성벽 안쪽이 선행 필수 경로 -->
+      <div id="act2-room-028" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:0;--y:4;--w:4;--h:3"><div class="nm">서부 외곽 회수로</div><div class="ic"><span>선택 탐사 · 터미너스 외부 설비</span></div></div>
+      <div id="act2-room-006" class="room mid" data-node-type="room" style="--x:4;--y:4;--w:1;--h:3"><div class="nm">서부<br>성벽<br>관문</div><div class="ic"><span class="chip abl">외벽 잠금</span></div></div>
+      <div id="act2-room-013" class="room mid" data-node-type="room" data-flow-order="1" data-flow-group="ACT2" data-flow-label="서부 내벽 승강장" data-flow-note="ACT2 시작" style="--x:5;--y:4;--w:2;--h:3"><span class="step">1</span><div class="nm">서부 내벽 화물 승강장</div><div class="ic"><span class="chip cp">CP</span><span>터미너스 직상</span></div></div>
+      <div id="act2-room-012" class="room mid" data-node-type="room" style="--x:7;--y:4;--w:2;--h:3"><span class="step">2</span><div class="nm">서부 변두리 시장</div><div class="ic"><span>결정화 상인·배관 노출</span></div></div>
+      <div id="act2-room-011" class="room core" data-node-type="room" style="--x:9;--y:4;--w:2;--h:3"><span class="step">3</span><div class="nm">공급 허브 지상부</div><div class="ic"><span class="chip cp">CP</span><span>상승 리프트</span></div></div>
+      <div id="act2-room-010" class="room core" data-node-type="room" data-trigger-requires="workshop_admin_key_acquired surface_supply_restored" data-reward="ability_overload_counter_unlocked" data-event="tower_foot_lock_seen tower_gatekeeper_defeated" data-flow-order="6" data-flow-group="ACT2" data-flow-label="메인 타워 수문장" data-flow-note="과부하 반격" style="--x:11;--y:4;--w:3;--h:3"><span class="step two">4·11</span><div class="nm">메인 타워 기슭·수문장</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip auth">관리자 키</span><span class="chip restore">공급 복구</span></div></div>
+      <div id="act2-room-009" class="room core" data-node-type="room" data-flow-order="2" data-flow-group="ACT2" data-flow-label="중앙 잠금 목격" data-flow-note="대광장에서 동쪽 우회" style="--x:14;--y:4;--w:3;--h:3"><span class="step">5</span><div class="nm">중앙 대광장</div><div class="ic"><span class="chip cp">CP</span><span>결정화 군중·침묵 구간</span></div></div>
+      <div id="act2-room-029" class="room core" data-node-type="room" style="--x:17;--y:4;--w:3;--h:3"><div class="nm">동부 중심 연결가</div><div class="ic"><span>북·남·동 타워 가도 표식</span></div></div>
+      <div id="act2-room-007" class="room mid" data-node-type="room" style="--x:20;--y:4;--w:3;--h:2"><span class="step">6</span><div class="nm">동부 빈 집 지대</div><div class="ic"><span>인적 없는 완충지</span></div></div>
+      <div id="act2-room-030" class="room mid compact" data-node-type="room" data-event="tique_disposal_route_observed" style="--x:20;--y:6;--w:3;--h:1"><div class="nm">도심 밀폐 폐기물 투입구</div><div class="ic"><span>청소 로봇 접근 · 지하 수거관으로 자동 이송</span></div></div>
+      <div id="act2-room-008" class="room mid" data-node-type="room" data-reward="memory_a_bond ability_wall_run_unlocked" data-event="flashback_elias_roof_mark" data-flow-order="3" data-flow-group="ACT2" data-flow-label="들개형 기계" data-flow-note="벽타기·기억 A" style="--x:23;--y:4;--w:2;--h:3"><span class="step">7</span><div class="nm">폐가 골목·들개형 기계</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A</span><span class="chip abl">벽타기</span></div></div>
+      <div id="act2-room-014" class="room mid" data-node-type="room" style="--x:25;--y:4;--w:1;--h:3"><div class="nm">동부<br>성벽<br>관문</div><div class="ic"><span class="chip abl">외벽 잠금</span></div></div>
+      <div id="act2-room-022" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" data-event="recycling_plant_observed" style="--x:26;--y:4;--w:2;--h:3"><div class="nm">외곽 재활용 처리장</div><div class="ic"><span>선택 탐사 · 림부스 자동 수거관과 분리</span></div></div>
+      <div id="act2-room-015" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:28;--y:5;--w:1;--h:2"><div class="nm">동부<br>황폐<br>가도</div></div>
 
-    <!-- 층 밴드 -->
-    <div class="band" style="top:0;height:calc(2*var(--u))"><span class="bl">지붕층</span></div>
-    <div class="band" style="top:calc(2*var(--u));height:calc(3*var(--u))"><span class="bl">거리층 0F</span></div>
-    <div class="band" style="top:calc(5*var(--u));height:calc(3*var(--u))"><span class="bl">배관층</span></div>
+      <!-- 배관층 -->
+      <div id="act2-room-016" class="room pipe" data-node-type="room" data-requires="surface_supply_restored" style="--x:5;--y:7;--w:2;--h:1"><div class="nm">승강장 배관 진입구</div></div>
+      <div id="act2-room-017" class="room pipe" data-node-type="room" style="--x:7;--y:7;--w:2;--h:1"><div class="nm">서부 배관 간선</div></div>
+      <div id="act2-room-018" class="room pipe" data-node-type="room" data-reward="memory_b_duty" data-event="surface_supply_restored" data-flow-order="5" data-flow-group="ACT2" data-flow-label="정비 기계" data-flow-note="기억 B·공급 복구" style="--x:9;--y:7;--w:3;--h:3"><span class="step">10</span><div class="nm">공급 허브 심부</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B</span><span class="chip restore">공급 복구</span></div></div>
+      <div id="act2-room-019" class="room warp" data-node-type="room" style="--x:12;--y:8;--w:4;--h:2"><span class="step">9</span><div class="nm">왜곡 구역</div><div class="ic"><span>방치 배관·압력 기믹</span></div></div>
+      <div id="act2-room-020" class="room pipe" data-node-type="room" style="--x:16;--y:8;--w:5;--h:1"><div class="nm">동부 배관 간선</div></div>
+      <div id="act2-room-021" class="room pipe" data-node-type="room" style="--x:21;--y:7;--w:2;--h:1"><div class="nm">동부 정비 수직구</div></div>
 
-    <!-- ══ 지붕층 ══ -->
-    <div id="act2-room-001" class="room tower" data-node-type="room" data-flow-order="7" data-flow-group="ACT3" data-flow-label="ACT3 진입" data-flow-note="과부하 릴레이 통과" style="--x:10;--y:0;--w:1;--h:2">
-      <span class="step">12</span>
-      <div class="nm">타워<br>하층부<br>진입</div>
+      <!-- 거리층 필수 연결 -->
+      <i id="act2-door-001" class="d h" data-node-type="door" data-from="act2-room-013" data-to="act2-room-012" style="--dx:7;--dy:5.5"></i>
+      <i id="act2-door-002" class="d h" data-node-type="door" data-from="act2-room-012" data-to="act2-room-011" style="--dx:9;--dy:5.5"></i>
+      <i id="act2-door-003" class="d h" data-node-type="door" data-from="act2-room-011" data-to="act2-room-010" style="--dx:11;--dy:5.5"></i>
+      <i id="act2-door-004" class="d h" data-node-type="door" data-from="act2-room-010" data-to="act2-room-009" style="--dx:14;--dy:5.5"></i>
+      <i id="act2-door-005" class="d h" data-node-type="door" data-from="act2-room-009" data-to="act2-room-029" style="--dx:17;--dy:5.5"></i>
+      <i id="act2-door-006" class="d h" data-node-type="door" data-from="act2-room-029" data-to="act2-room-007" style="--dx:20;--dy:5"></i>
+      <i id="act2-door-007" class="d h" data-node-type="door" data-from="act2-room-007" data-to="act2-room-008" style="--dx:23;--dy:5"></i>
+      <i id="act2-door-030" class="d v" data-node-type="door" data-from="act2-room-007" data-to="act2-room-030" style="--dx:21.5;--dy:6" aria-label="동부 빈 집 지대에서 청소 로봇용 도심 폐기물 투입구로 진입"></i>
+      <!-- 외곽은 벽타기 획득 후 -->
+      <i id="act2-door-008" class="d h gate" data-node-type="door" data-from="act2-room-028" data-to="act2-room-006" data-requires="ability_wall_run_unlocked" style="--dx:4;--dy:5.5" aria-label="벽타기로 서부 성벽을 넘어 외곽 회수로 진입"></i>
+      <i id="act2-door-009" class="d h gate" data-node-type="door" data-from="act2-room-014" data-to="act2-room-022" data-requires="ability_wall_run_unlocked" style="--dx:26;--dy:5.5" aria-label="벽타기로 동부 성벽을 넘어 외곽 재활용 처리장 진입"></i>
+      <i id="act2-door-025" class="d h" data-node-type="door" data-from="act2-room-022" data-to="act2-room-015" style="--dx:28;--dy:6"></i>
+      <i id="act2-door-026" class="d h" data-node-type="door" data-from="act2-room-006" data-to="act2-room-013" style="--dx:5;--dy:5.5"></i>
+      <i id="act2-door-027" class="d h gate" data-node-type="door" data-from="act2-room-008" data-to="act2-room-014" data-requires="ability_wall_run_unlocked" style="--dx:25;--dy:5.5"></i>
+      <!-- 성벽 상부와 공방 -->
+      <i id="act2-door-010" class="d v gate" data-node-type="door" data-from="act2-room-006" data-to="act2-room-004" data-requires="ability_wall_run_unlocked" style="--dx:4.5;--dy:4"></i>
+      <i id="act2-door-011" class="d v gate" data-node-type="door" data-from="act2-room-014" data-to="act2-room-003" data-requires="ability_wall_run_unlocked" style="--dx:25;--dy:4"></i>
+      <i id="act2-door-012" class="d h gate" data-node-type="door" data-from="act2-room-003" data-to="act2-room-002" data-requires="ability_wall_run_unlocked" style="--dx:25;--dy:3"></i>
+      <i id="act2-door-013" class="d h gate" data-node-type="door" data-from="act2-room-027" data-to="act2-room-004" data-requires="ability_wall_run_unlocked" style="--dx:4;--dy:3"></i>
+      <!-- 네 방향 타워의 지상 기부: 보이지만 ACT3 내부 진행으로 개방 -->
+      <i id="act2-door-014" class="d v gate" data-node-type="door" data-from="act2-room-011" data-to="act2-room-023" data-requires="act3_west_tower_route" style="--dx:9.5;--dy:4"></i>
+      <i id="act2-door-015" class="d v gate" data-node-type="door" data-from="act2-room-009" data-to="act2-room-024" data-requires="act3_north_tower_route" style="--dx:12;--dy:4"></i>
+      <i id="act2-door-016" class="d v gate" data-node-type="door" data-from="act2-room-010" data-to="act2-room-001" data-requires="tower_gatekeeper_defeated ability_overload_counter_unlocked" data-unlocks="act3_entry" style="--dx:14;--dy:4"></i>
+      <i id="act2-door-028" class="d v gate" data-node-type="door" data-from="act2-room-009" data-to="act2-room-025" data-requires="act3_south_tower_route" style="--dx:17;--dy:4"></i>
+      <i id="act2-door-029" class="d v gate" data-node-type="door" data-from="act2-room-029" data-to="act2-room-026" data-requires="act3_east_tower_route" style="--dx:20;--dy:4"></i>
+      <!-- 배관 루프 -->
+      <i id="act2-door-017" class="d v gate oneway" data-node-type="door" data-from="act2-room-016" data-to="act2-room-013" data-direction="up" data-requires="surface_supply_restored" data-unlocks="inner_wall_lift_pipe_shortcut" style="--dx:6;--dy:7"></i>
+      <i id="act2-door-018" class="d h" data-node-type="door" data-from="act2-room-016" data-to="act2-room-017" style="--dx:7;--dy:7.5"></i>
+      <i id="act2-door-019" class="d h" data-node-type="door" data-from="act2-room-017" data-to="act2-room-018" style="--dx:9;--dy:7.5"></i>
+      <i id="act2-door-020" class="d v gate oneway" data-node-type="door" data-from="act2-room-018" data-to="act2-room-011" data-direction="up" data-requires="surface_supply_restored" data-unlocks="supply_hub_ascent_lift" style="--dx:10;--dy:7"></i>
+      <i id="act2-door-021" class="d h" data-node-type="door" data-from="act2-room-018" data-to="act2-room-019" style="--dx:12;--dy:9"></i>
+      <i id="act2-door-022" class="d h" data-node-type="door" data-from="act2-room-019" data-to="act2-room-020" style="--dx:16;--dy:8.5"></i>
+      <i id="act2-door-023" class="d h" data-node-type="door" data-from="act2-room-020" data-to="act2-room-021" style="--dx:21;--dy:8"></i>
+      <i id="act2-door-024" class="d v gate" data-node-type="door" data-from="act2-room-008" data-to="act2-room-021" data-requires="workshop_admin_key_acquired" style="--dx:23;--dy:7"></i>
     </div>
-    <div id="act2-room-002" class="room mid compact" data-node-type="room" data-reward="workshop_admin_key" data-event="memory_a_echo_resolved" data-flow-order="4" data-flow-group="ACT2" data-flow-label="엘리아스 공방" data-flow-note="공방 관리자 키" style="--x:4;--y:1;--w:2;--h:1">
-      <span class="step">8</span>
-      <div class="nm">엘리아스 은신 공방</div>
-      <div class="ic"><span class="chip auth" aria-label="공방 관리자 키" title="공방 관리자 키">관리자 키</span><span class="chip echo" aria-label="기억 잔향" title="기억 잔향">잔향</span><span class="chip cp">CP</span></div>
-    </div>
-    <div id="act2-room-003" class="room roof" data-node-type="room" style="--x:6;--y:1;--w:3;--h:1">
-      <div class="nm">지붕길 서</div>
-      <div class="ic"><span class="chip abl">벽타기</span><span class="chip echo">공방 표식 잔향</span></div>
-    </div>
-    <div id="act2-room-004" class="room roof" data-node-type="room" style="--x:12;--y:1;--w:3;--h:1">
-      <div class="nm">지붕길 동</div>
-      <div class="ic"><span class="chip abl">벽타기</span> <span style="color:var(--sub)">터미널 복귀 숏컷</span></div>
-    </div>
-
-    <!-- ══ 거리층 ══ -->
-    <div id="act2-room-005" class="room outer" data-node-type="room" style="--x:0;--y:3;--w:2;--h:2">
-      <div class="nm">황폐 들판 서</div>
-      <div class="ic"><span style="color:var(--sub)">선택 탐색 · 기근의 원점</span></div>
-    </div>
-    <div id="act2-room-006" class="room outer" data-node-type="room" style="--x:2;--y:2;--w:1;--h:3">
-      <div class="nm">보호벽<br>관문<br>서</div>
-    </div>
-    <div id="act2-room-007" class="room mid" data-node-type="room" style="--x:3;--y:2;--w:3;--h:2">
-      <span class="step">6</span>
-      <div class="nm">빈 집 지대</div>
-      <div class="ic"><span style="color:var(--sub)">인적 없는 완충지 (RUL-005)</span></div>
-    </div>
-    <div id="act2-room-008" class="room mid" data-node-type="room" data-reward="memory_a_bond ability_wall_run" data-event="flashback_elias_roof_mark" data-flow-order="3" data-flow-group="ACT2" data-flow-label="들개형 기계" data-flow-note="벽타기 · 기억 A" style="--x:3;--y:4;--w:3;--h:1">
-      <span class="step">7</span>
-      <div class="nm">폐가 골목 — 들개형 기계</div>
-      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A·유대</span><span class="chip abl">ABL-003 벽타기</span><span class="chip echo">공방 표식</span></div>
-    </div>
-    <div id="act2-room-009" class="room core" data-node-type="room" data-flow-order="2" data-flow-group="ACT2" data-flow-label="기슭 잠금 목격" data-flow-note="대광장에서 서쪽 우회" style="--x:6;--y:2;--w:3;--h:3">
-      <span class="step">5</span>
-      <div class="nm">대광장</div>
-      <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">결정화 군중 · 침묵 구간</span></div>
-    </div>
-    <div id="act2-room-010" class="room core" data-node-type="room" data-trigger-requires="workshop_admin_key_acquired surface_supply_restored" data-reward="ability_overload_counter" data-event="tower_foot_lock_seen tower_gatekeeper_defeated" data-flow-order="6" data-flow-group="ACT2" data-flow-label="시계탑 수문장" data-flow-note="과부하 반격" style="--x:9;--y:2;--w:3;--h:3">
-      <span class="step two">4·11</span>
-      <div class="nm">시계탑 기슭 · 수문장</div>
-      <div class="ic"><span class="chip boss">BOSS</span><span class="chip auth">공방 관리자 키</span><span class="chip restore">공급 복구</span><span class="chip counter">과부하 반격</span></div>
-    </div>
-    <div id="act2-room-011" class="room core" data-node-type="room" style="--x:12;--y:2;--w:2;--h:3">
-      <span class="step">3</span>
-      <div class="nm">공급 허브 지상부</div>
-      <div class="ic"><span class="chip cp">CP</span><span style="color:var(--sub)">첫 전투 · 보스 전 재정비 · 보스 후 상승 리프트</span></div>
-    </div>
-    <div id="act2-room-012" class="room core" data-node-type="room" style="--x:14;--y:2;--w:2;--h:3">
-      <span class="step">2</span>
-      <div class="nm">시장 거리</div>
-      <div class="ic"><span style="color:var(--sub)">결정화 상인·행인 · 배관 노출</span></div>
-    </div>
-    <div id="act2-room-013" class="room mid" data-node-type="room" data-flow-order="1" data-flow-group="ACT2" data-flow-label="화물 터미널" data-flow-note="ACT2 시작" style="--x:16;--y:2;--w:2;--h:3">
-      <span class="step">1</span>
-      <div class="nm">화물 터미널</div>
-      <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">거점 · ACT2의 칼리고</span></div>
-    </div>
-    <div id="act2-room-014" class="room outer" data-node-type="room" style="--x:18;--y:2;--w:1;--h:3">
-      <div class="nm">보호벽<br>관문<br>동</div>
-    </div>
-    <div id="act2-room-015" class="room outer" data-node-type="room" style="--x:19;--y:3;--w:2;--h:2">
-      <div class="nm">황폐 가도 동</div>
-      <div class="ic"><span style="color:var(--sub)">선택 탐색</span></div>
-    </div>
-
-    <!-- ══ 배관층 ══ -->
-    <div id="act2-room-016" class="room pipe" data-node-type="room" data-requires="surface_supply_restored" style="--x:16;--y:5;--w:2;--h:1">
-      <div class="nm">배관 진입구</div>
-      <div class="ic"><span style="color:var(--sub)">보스 후 터미널행 일방 숏컷</span></div>
-    </div>
-    <div id="act2-room-017" class="room pipe" data-node-type="room" style="--x:14;--y:5;--w:2;--h:1">
-      <div class="nm">배관 간선 동</div>
-    </div>
-    <div id="act2-room-018" class="room pipe" data-node-type="room" data-reward="memory_b_duty" data-event="surface_supply_restored" data-flow-order="5" data-flow-group="ACT2" data-flow-label="정비 기계" data-flow-note="기억 B · 공급 복구" style="--x:12;--y:5;--w:2;--h:3">
-      <span class="step">10</span>
-      <div class="nm">공급 허브 심부</div>
-      <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B·근무/의무</span><span class="chip restore">도시 공급 복구</span></div>
-    </div>
-    <div id="act2-room-019" class="room warp" data-node-type="room" style="--x:8;--y:6;--w:4;--h:2">
-      <span class="step">9</span>
-      <div class="nm">왜곡 구역</div>
-      <div class="ic"><span style="color:var(--purple)">출력 집중이 낳은 방치 배관 · 기믹 지대</span></div>
-    </div>
-    <div id="act2-room-020" class="room pipe" data-node-type="room" style="--x:4;--y:6;--w:4;--h:1">
-      <div class="nm">배관 간선 서</div>
-    </div>
-    <div id="act2-room-021" class="room pipe" data-node-type="room" style="--x:4;--y:5;--w:1;--h:1">
-      <div class="nm">정비<br>수직구</div>
-    </div>
-
-    <!-- ══ 문 ══ -->
-    <!-- 거리층 횡단 -->
-    <i id="act2-door-001" class="d h" data-node-type="door" style="--dx:2;--dy:3.5"></i>
-    <i id="act2-door-002" class="d h" data-node-type="door" style="--dx:3;--dy:3"></i>
-    <i id="act2-door-003" class="d h" data-node-type="door" style="--dx:6;--dy:3"></i>
-    <i id="act2-door-004" class="d h" data-node-type="door" style="--dx:9;--dy:3.5"></i>
-    <i id="act2-door-005" class="d h" data-node-type="door" style="--dx:12;--dy:3.5"></i>
-    <i id="act2-door-006" class="d h" data-node-type="door" style="--dx:14;--dy:3.5"></i>
-    <i id="act2-door-007" class="d h" data-node-type="door" style="--dx:16;--dy:3.5"></i>
-    <i id="act2-door-008" class="d h" data-node-type="door" style="--dx:18;--dy:3.5"></i>
-    <i id="act2-door-009" class="d h" data-node-type="door" style="--dx:19;--dy:3.5"></i>
-    <!-- 주거·폐가·공방 -->
-    <i id="act2-door-010" class="d v" data-node-type="door" style="--dx:4.5;--dy:4"></i>
-    <i id="act2-door-011" class="d v gate" data-node-type="door" data-from="act2-room-007" data-to="act2-room-002" data-requires="ability_wall_run_unlocked" style="--dx:5;--dy:2" aria-label="벽타기로 엘리아스 은신 공방 진입"></i>
-    <!-- 지붕층 -->
-    <i id="act2-door-012" class="d h gate" data-node-type="door" data-from="act2-room-002" data-to="act2-room-003" data-requires="ability_wall_run_unlocked" style="--dx:6;--dy:1.5"></i>
-    <i id="act2-door-013" class="d v gate" data-node-type="door" data-requires="ability_wall_run_unlocked" style="--dx:7.5;--dy:2"></i>
-    <i id="act2-door-014" class="d v gate" data-node-type="door" data-requires="ability_wall_run_unlocked" style="--dx:12.5;--dy:2"></i>
-    <i id="act2-door-015" class="d v gate" data-node-type="door" data-requires="ability_wall_run_unlocked" style="--dx:14.5;--dy:2"></i>
-    <!-- 타워 게이트 -->
-    <i id="act2-door-016" class="d v gate" data-node-type="door" data-from="act2-room-010" data-to="act2-room-001" data-requires="tower_gatekeeper_defeated ability_overload_counter_unlocked" data-unlocks="act3_entry" style="--dx:10.5;--dy:2" aria-label="시계탑 수문장 격파 후 과부하 반격으로 릴레이를 가동하여 타워 진입"></i>
-    <!-- 배관층 -->
-    <i id="act2-door-017" class="d v gate oneway" data-node-type="door" data-from="act2-room-016" data-to="act2-room-013" data-direction="up" data-requires="surface_supply_restored" data-unlocks="terminal_pipe_shortcut" style="--dx:17;--dy:5" aria-label="공급 복구 후 배관에서 터미널로만 이동하는 일방 숏컷"></i>
-    <i id="act2-door-018" class="d h" data-node-type="door" style="--dx:16;--dy:5.5"></i>
-    <i id="act2-door-019" class="d h" data-node-type="door" style="--dx:14;--dy:5.5"></i>
-    <i id="act2-door-020" class="d v gate oneway" data-node-type="door" data-from="act2-room-018" data-to="act2-room-011" data-direction="up" data-requires="surface_supply_restored" data-unlocks="supply_hub_ascent_lift" style="--dx:13;--dy:5" aria-label="공급 복구 후 심부에서 지상부로만 상승하는 리프트"></i>
-    <i id="act2-door-021" class="d h" data-node-type="door" style="--dx:12;--dy:7"></i>
-    <i id="act2-door-022" class="d h" data-node-type="door" style="--dx:8;--dy:6.5"></i>
-    <i id="act2-door-023" class="d v" data-node-type="door" style="--dx:4.5;--dy:6"></i>
-    <i id="act2-door-024" class="d v gate" data-node-type="door" data-from="act2-room-008" data-to="act2-room-021" data-requires="workshop_admin_key_acquired" style="--dx:4.5;--dy:5" aria-label="공방 관리자 키로 정비 수직구 개방"></i>
-
-  </div>
   </div>
 
   <div class="legend">
-    <span class="item"><span class="sw" style="background:var(--outer)"></span>외곽 (선택)</span>
-    <span class="item"><span class="sw" style="background:var(--mid)"></span>변두리</span>
-    <span class="item"><span class="sw" style="background:var(--gold)"></span>시내</span>
-    <span class="item"><span class="sw" style="background:#7a828f"></span>지붕길</span>
-    <span class="item"><span class="sw" style="background:var(--copper)"></span>배관층</span>
-    <span class="item"><span class="sw" style="background:var(--purple)"></span>왜곡 구역</span>
-  </div>
-  <div class="legend">
-    <span class="item"><span class="chip boss" style="margin-right:5px">BOSS</span>기계 보스 = 기억코어 결합</span>
-    <span class="item"><span class="chip mem" style="margin-right:5px">기억</span>기억코어</span>
-    <span class="item"><span class="chip cp" style="margin-right:5px">CP</span>체크포인트 [제안]</span>
-    <span class="item"><span class="chip abl" style="margin-right:5px">ABL</span>벽타기 게이트 [제안]</span>
-    <span class="item"><span class="chip echo" style="margin-right:5px">잔향</span>플래시백 공간 단서 [제안]</span>
-    <span class="item" style="color:var(--teal)">═ 청록 이중선 = 해금 후 일방 숏컷</span>
-    <span class="item" style="color:var(--gold)">─ 금색 문 = 잠긴 연결부</span>
+    <span class="item"><span class="sw" style="background:var(--outer)"></span>외곽·인지 1</span><span class="item"><span class="sw" style="background:var(--mid)"></span>변두리·인지 1/2</span><span class="item"><span class="sw" style="background:var(--gold)"></span>중심·인지 1/4</span><span class="item"><span class="sw" style="background:var(--wall)"></span>원형 성벽</span><span class="item"><span class="chip abl" style="margin-right:5px">ABL</span>벽타기 이후</span><span class="item"><span class="chip lock" style="margin-right:5px">ACT3</span>타워 내부 진행으로 개방</span>
   </div>
 
   <section class="routes">
-
     <div class="sec">
-      <h2>A. 크리티컬 패스 초안 <span class="tag p">[제안]</span></h2>
-      <div class="flow">
-        터미널<b>[CP]</b><i>(터미너스 개구부에서 지상으로)</i> → 시장 거리<i>(시내 상업지구 · 결정화 인파 · 배관 노출)</i> → 공급 허브 지상부<i>(첫 전투)</i><br>
-        → 시계탑 기슭 1차 <b>잠김 목격</b><i>(자물쇠 먼저)</i> → 대광장<b>[CP]</b><i>(결정화 군중 · 전투 없는 침묵 구간)</i><br>
-        → 빈 집 지대<i>(인적 없는 변두리, RUL-005)</i> → 폐가 골목 <b>들개형 기계</b><i>(하울링 개체 호출)</i> → <b>기억A·유대 + ABL-003 벽타기</b><br>
-        → 플래시백의 <b>공방 지붕 표식</b>을 따라 지붕길 서 → 은신 공방<b>[CP]</b><i>(기억 잔향 대조 · 공방 관리자 키)</i><br>
-        → 권한으로 정비 수직구 개방 → 배관 간선 서 → 왜곡 구역<i>(말파스의 출력 편중이 남긴 방치 배관)</i> → 공급 허브 심부 <b>정비 기계</b> → <b>기억B·근무/의무 + 도시 공급 복구</b><br>
-        → 복구된 일방 상승 리프트로 허브 지상부 복귀 → 시계탑 기슭 2차 <b>수문장전</b><i>(공방 관리자 키 + 공급 복구)</i> → <b>과부하 반격</b> → 릴레이 반격으로 타워 하층부 <b>(ACT3)</b>
-      </div>
-      <p class="dim">ACT1이 "아래로 파고드는" 이야기였다면 ACT2는 "중심으로 파고드는" 이야기 — 동쪽 끝에서 진입해 도심을 향해 걷고, 서쪽 날개(엘리아스)를 찍고, 배관층으로 잠행해 중심으로 되돌아오는 갈고리 모양 동선.</p>
+      <h2>A. 실제 플레이 흐름 <span class="tag p">수정안 반영</span></h2>
+      <div class="flow">터미너스 승강축 → <b>서부 내벽 화물 승강장</b>[CP] → 서부 변두리 시장 → 공급 허브 지상부 → 메인 타워 잠금 목격 → 중앙 대광장 → 동부 중심 연결가 → 동부 빈 집 지대 → <b>들개형 기계</b> → <b>기억A + 벽타기</b><br>→ 동부 성벽 등반 → 외벽 지붕길 → <b>엘리아스 외벽 공방</b>[CP] → 공방 관리자 키 → 동부 정비 수직구 → 배관 루프 → <b>정비 기계</b> → 기억B + 공급 복구 → 공급 허브 상승 리프트 → 메인 타워 수문장 → <b>과부하 반격</b> → ACT3</div>
+      <p class="dim">벽타기 획득 전에는 서부 내벽 승강장부터 들개형 기계까지 모든 필수 방이 성벽 안에 있다. 청소 로봇은 동부 빈 집 지대의 도심 밀폐 투입구까지만 이동하며, 티크는 여기서 지하 자동 수거관을 타고 림부스로 운반됐다. 로봇이 성벽을 넘은 적은 없다.</p>
     </div>
-
     <div class="sec">
-      <h2>B. 구역 설계 의도 <span class="tag p">[제안]</span></h2>
+      <h2>B. 원형 도시와 타워 연결 <span class="tag p">표현 규칙</span></h2>
       <div class="kv">
-        <div class="row"><div class="k">화물 터미널</div><div class="v">ACT2의 칼리고 포지션(거점). 터미너스에서 올라온 티크가 처음 만나는 결정화 시민은 군중이 아니라 <b>단 한 명</b> — 시내로 갈수록 밀도가 올라가는 구배 연출의 출발점. 단, 살아 있는 인간은 지하뿐(RUL-006)이므로 제작·수리는 여전히 모르비 몫 — 터미널은 CP·저장만 있는 <b>전초기지</b>이고, 터미너스 숏컷으로 칼리고에 내려가는 것이 ACT2 중반의 자연스러운 귀향 비트가 된다(회복된 마을: 물이 흐르고 사냥이 재개된 연출 = ACT1 성과 확인).</div></div>
-        <div class="row"><div class="k">대광장</div><div class="v">결정화 군중 최대 밀도 — 밥상 앞·빨래터·거리에서 일상 그대로 박제된 사람들(RUL-005 위반 없이 시내에 집중 배치). 전투 없는 침묵 구간으로, "황금빛의 아름다움과 섬뜩함"을 걷는 속도로 강제 감상. 2년 전 그 순간이 통째로 박제된 도시의 핵심 이미지.</div></div>
-        <div class="row"><div class="k">시계탑 기슭</div><div class="v">ACT2 초반부터 스카이라인에 계속 보이다가 4번째 스텝에 도달 — 그리고 잠겨 있음. "자물쇠 먼저" 원칙의 ACT2 버전. <b>[제안] 공방 관리자 키 + 공급 허브 복구</b>를 모두 만족해야 열린다.</div></div>
-        <div class="row"><div class="k">배관층</div><div class="v">지하 ACT1의 오수와 대칭되는 <b>정제 렌티움 배관망</b>. 기계 몬스터의 발원지이자 도시의 혈관. 왜곡의 동기 재정의 [제안]: 말파스가 타워의 정제·출력 용량을 <b>옥상(클레아 연구, RUL-008)에 집중</b>하면서, 말단 배관의 정제도가 방치 속에 저하 — 폐렌티움급이 흘러들어 기계들이 변질. ACT2 몬스터는 말파스의 병기가 아니라 <b>말파스가 버린 것들</b>이다(딸에게만 몰두하는 캐릭터와 정합). 기믹: 오작동 리프트, 역류 압력 등.</div></div>
-        <div class="row"><div class="k">외곽 (선택)</div><div class="v">보호벽 밖 황폐지. 크리티컬 패스 밖에 두어, "왜 이 도시가 타워를 지었는가"(기근의 원점)를 스스로 찾는 플레이어에게 주는 서사 보상.</div></div>
-      </div>
-      <p class="dim">권역 각주: 시내/변두리 표기는 도시 행정 구분이며, 인지 필드는 타워 중심 방사형(RUL-005) — 두 경계는 정확히 일치하지 않는다(시내 동측이 긴 것은 행정 구역 모양일 뿐).</p>
-    </div>
-
-    <div class="sec">
-      <h2>C. 보스-기억 결합 <span class="tag">확정 원칙 적용</span></h2>
-      <div class="kv">
-        <div class="row"><div class="k">들개형 (기억A·유대)</div><div class="v">문서의 확정 예시 그대로 — 하울링으로 개체를 호출하는 패턴. <b>[제안]</b> 격파 보상은 기억A와 ABL-003 벽타기를 분리 지급한다. 플래시백 끝에 엘리아스 공방의 지붕 표식을 보여 주고, 현실의 지붕길·공방에 같은 기억 잔향을 배치해 다음 목적지를 대사 없이 안내한다.</div></div>
-        <div class="row"><div class="k">정비 기계 (기억B·근무/의무)</div><div class="v"><b>[제안]</b> 공급 허브를 떠나지 못하고 순찰 루틴을 반복하던 정비 개체의 기억. 격파 후 기억B 회수와 동시에 도시 공급이 복구되며, 플래시백의 밸브·근무 기록 이미지가 현실의 상승 리프트 가동과 타워 조명 복구로 이어진다.</div></div>
-        <div class="row"><div class="k">엘리아스 공방</div><div class="v">룰북 4장 확정에 따라 <b>기억을 주지 않는다</b>(기억 복원 = 기억 보스의 코어 한정). <b>[제안]</b> 기억A의 공간 단서를 확인하고 공방 관리자 키를 얻는 안전 거점이다. 이 키는 서쪽 수직구와 시계탑 기슭의 첫 번째 잠금 조건을 담당한다.</div></div>
+        <div class="row"><div class="k">중앙 메인 타워</div><div class="v">ACT2의 최종 잠금이자 ACT3 중앙 허브. 중심부에 홀로 서며 네 방향 위성 타워를 묶는 릴레이 축이다.</div></div>
+        <div class="row"><div class="k">네 방향 타워 위치</div><div class="v">동·서·남·북 타워 기부는 성벽이나 외곽이 아니라 <b>변두리(인지 1/2)와 중심(인지 1/4) 사이의 환상 경계</b>에 같은 반지름으로 배치된다.</div></div>
+        <div class="row"><div class="k">서부 타워 기부</div><div class="v">물류 가도와 연결. 횡단면에 직접 보이며 ACT3 서탑 루트가 열리면 지상문도 개방된다.</div></div>
+        <div class="row"><div class="k">동부 타워 기부</div><div class="v">원석 반입·정비 가도와 연결. 서부 내벽 화물 승강장에서 들어온 화물은 성벽 안쪽 지하 순환 화물선을 거쳐 동탑 반입 설비로 전달된다.</div></div>
+        <div class="row"><div class="k">북부·남부 타워 기부</div><div class="v">횡스크롤 단면에서 깊이축을 그릴 수 없으므로 북부는 배경 방향, 남부는 전경 방향 분기 방으로 표시한다. 평면도에서는 실제 북·남 위치를 확인할 수 있다.</div></div>
+        <div class="row"><div class="k">원형 성벽</div><div class="v">서·동 보호벽은 별도 구조물이 아니라 하나의 거대한 원형 성벽의 양쪽 단면이다. 벽타기를 얻으면 양쪽 성벽 상부와 외곽 순환 탐사가 동시에 열린다.</div></div>
+        <div class="row"><div class="k">티크 폐기 경로</div><div class="v">도심 청소 로봇 → 성벽 안쪽 밀폐 투입구 → 지하 자동 수거관 → 림부스 추락 지점. 외곽 재활용 처리장은 플레이어가 벽타기 후 방문하는 별도 설비이며 티크 투입 사건과 무관하다.</div></div>
       </div>
     </div>
-
     <div class="sec">
-      <h2>D. 미정 — 다음에 정할 것</h2>
-      <p>흐름 검증을 위해 다음을 <b>[제안]</b>으로 임시 반영함: ABL-003 벽타기, 공방 관리자 키 + 공급 복구로 활성화되는 시계탑 수문장, 수문장 보상인 과부하 반격, 기억B의 근무/의무 주제. ACT2 보스는 들개형 기계·정비 기계·시계탑 수문장의 3기로 구성한다. 최종 결정이 필요한 것은 ① 각 능력의 정확한 조작·전투 수치 ② 기억A·B 플래시백의 구체 장면과 대사 ③ 시계탑 수문장의 이름·외형·패턴 ④ 지붕길 동측 숏컷의 최종 착지점.</p>
+      <h2>C. 설정 정합성</h2>
+      <p><b>문서 명시:</b> 들개형 기계의 기억A·유대, 기계 보스와 기억코어의 결합 원칙, 시내에서 외곽으로 갈수록 인지가 강해지는 구배.</p>
+      <p><b>이번 구조화 제안:</b> 원형 성벽, 네 방향 타워의 지상 기부, 성벽 내장형 화물 승강장, 북·남 가도 분기, 벽타기 후 양쪽 외곽 동시 개방.</p>
+      <p class="dim"><b>결정 필요:</b> 네 위성 타워 지상문을 ACT3 진행 중 역방향 숏컷으로 실제 개방할지, 외형과 복선만 제공하고 끝까지 봉쇄할지. 현재 맵 데이터는 ACT3 각 루트의 개방 플래그를 받는 문으로 임시 정의했다.</p>
     </div>
-
   </section>
-
 </div>
 <script src="./map-viewer.js"></script>
 </body>

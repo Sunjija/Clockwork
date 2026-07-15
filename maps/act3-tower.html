@@ -42,7 +42,7 @@
   .clockface .t.s{left:50%;bottom:6px;transform:translateX(-50%);border-color:var(--depth);color:var(--depth)}
   .clockface .t.e{right:6px;top:50%;transform:translateY(-50%)}
   .clockface .t.w{left:6px;top:50%;transform:translateY(-50%)}
-  .clockface .hand{position:absolute;left:50%;top:50%;width:52px;height:2px;background:var(--teal);
+  .clockface .hand{position:absolute;left:50%;top:50%;width:52px;height:2px;background:var(--gold);
     transform-origin:0 50%;transform:rotate(-15deg);opacity:.9}
   .clockface .lbl{position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);
     font-size:9.5px;color:var(--sub);white-space:nowrap}
@@ -80,10 +80,16 @@
 
   .lk{position:absolute;z-index:1;left:calc(var(--dx)*var(--u));top:calc(var(--dy)*var(--u))}
   .lk.hor{width:calc(var(--len)*var(--u));border-top:3px solid var(--teal);transform:translateY(-1px)}
+  .lk.hor.bridge{border-top-color:var(--gold)}
+  .lk.hor.bridge.next{border-top:2px dashed var(--gold-dim)}
   .lk.hor.rot{border-top:2px dashed var(--depth)}
+  .lk.hor.cargo{border-top:4px double var(--copper)}
   .lk .tag{position:absolute;top:-22px;left:50%;transform:translateX(-50%);
     font-size:9.5px;color:var(--teal);background:var(--bg);padding:2px 6px;border:1px solid var(--teal);border-radius:3px;white-space:nowrap}
   .lk.rot .tag{color:var(--depth);border-color:var(--depth)}
+  .lk.bridge .tag{color:var(--gold);border-color:var(--gold)}
+  .lk.bridge.next .tag{color:var(--gold-dim);border-color:var(--gold-dim)}
+  .lk.cargo .tag{color:var(--copper);border-color:var(--copper)}
 
   .chip{display:inline-flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:500;border-radius:3px;padding:0 4px;height:15px;line-height:1}
   .chip.boss{background:var(--gold);color:var(--bg)}
@@ -126,7 +132,7 @@
 </style>
 <link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body data-map-id="act3" data-map-version="2">
+<body data-map-id="act3" data-map-version="5">
 <div class="wrap">
 
   <header>
@@ -137,7 +143,7 @@
       <div class="hand"></div>
       <div class="c">메인</div>
       <div class="t n">북</div><div class="t e">동</div><div class="t s">남</div><div class="t w">서</div>
-      <div class="lbl">평면도 — 회전 가교 = 시곗바늘</div>
+      <div class="lbl">평면도 — 금색 단일 팔 = 현재 동탑 접속 자세</div>
     </div>
   </header>
 
@@ -191,7 +197,7 @@
     </div>
 
     <!-- ══ 동탑 (3시 · 반입) ══ -->
-    <div id="act3-room-009" class="room east" data-node-type="room" data-requires="ability_overload_counter_unlocked" data-reward="bridge_power" data-flow-order="2" data-flow-group="ACT3" data-flow-label="동탑 동력" data-flow-note="반격으로 릴레이 복구" style="--x:14;--y:6;--w:3;--h:2">
+    <div id="act3-room-009" class="room east" data-node-type="room" data-requires="ability_overload_counter_unlocked" data-reward="bridge_power" data-unlocks="act3_east_tower_route" data-flow-order="2" data-flow-group="ACT3" data-flow-label="동탑 동력" data-flow-note="반격으로 릴레이 복구" style="--x:14;--y:6;--w:3;--h:2">
       <span class="step">3</span>
       <div class="nm">크레인 정상</div>
       <div class="ic"><span class="chip counter">과부하 반격</span><span class="chip key">가교 동력</span></div>
@@ -206,7 +212,7 @@
     </div>
 
     <!-- ══ 서탑 (9시 · 방출) ══ -->
-    <div id="act3-room-012" class="room west" data-node-type="room" data-reward="ability_air_dash core_a" data-event="west_core_guardian_defeated south_tower_unlocked" data-flow-order="3" data-flow-group="ACT3" data-flow-label="서탑 수문장" data-flow-note="공중 대시 · 코어 A" style="--x:3;--y:6;--w:3;--h:2">
+    <div id="act3-room-012" class="room west" data-node-type="room" data-reward="ability_air_dash_unlocked core_a" data-event="west_core_guardian_defeated south_tower_unlocked" data-unlocks="act3_west_tower_route" data-flow-order="3" data-flow-group="ACT3" data-flow-label="서탑 수문장" data-flow-note="공중 대시 · 코어 A" style="--x:3;--y:6;--w:3;--h:2">
       <span class="step">5</span>
       <div class="nm">방출 노즐 상부 · 수문장</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip dash">공중 대시</span><span class="chip key">권한 코어 A</span><span class="chip auth">남탑 해금</span></div>
@@ -217,7 +223,7 @@
     </div>
 
     <!-- ══ 북탑 (12시 · 기록, 깊이축) ══ -->
-    <div id="act3-room-014" class="room depthtw" data-node-type="room" data-requires="core_b" data-reward="audit_signature" data-event="memories_recontextualized rul_003_revealed" data-flow-order="5" data-flow-group="ACT3" data-flow-label="북탑 기록" data-flow-note="기억 재해석 · 감사 서명" style="--x:0;--y:4;--w:2;--h:2">
+    <div id="act3-room-014" class="room depthtw" data-node-type="room" data-requires="core_b" data-reward="audit_signature" data-event="memories_recontextualized rul_003_revealed" data-unlocks="act3_north_tower_route" data-flow-order="5" data-flow-group="ACT3" data-flow-label="북탑 기록" data-flow-note="기억 재해석 · 감사 서명" style="--x:0;--y:4;--w:2;--h:2">
       <span class="step">7</span>
       <div class="nm">기록 열람층</div>
       <div class="ic"><span class="chip echo">기억 재해석</span><span class="chip auth">감사 서명</span></div>
@@ -228,7 +234,7 @@
     </div>
 
     <!-- ══ 남탑 (6시 · 회수, 깊이축) ══ -->
-    <div id="act3-room-016" class="room depthtw" data-node-type="room" data-requires="core_a ability_air_dash_unlocked" data-reward="core_b" data-event="south_core_guardian_defeated north_tower_unlocked" data-flow-order="4" data-flow-group="ACT3" data-flow-label="남탑 수문장" data-flow-note="코어 B" style="--x:18;--y:4;--w:2;--h:2">
+    <div id="act3-room-016" class="room depthtw" data-node-type="room" data-requires="core_a ability_air_dash_unlocked" data-reward="core_b" data-event="south_core_guardian_defeated north_tower_unlocked" data-unlocks="act3_south_tower_route" data-flow-order="4" data-flow-group="ACT3" data-flow-label="남탑 수문장" data-flow-note="코어 B" style="--x:18;--y:4;--w:2;--h:2">
       <span class="step">6</span>
       <div class="nm">회수 계통 제어 · 수문장</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip dash">공중 대시</span><span class="chip key">권한 코어 B</span><span class="chip auth">북탑 해금</span></div>
@@ -239,14 +245,14 @@
     </div>
 
     <!-- ══ 연결 ══ -->
-    <!-- 실선: 가교 현재 자세 (동-서, 3시-9시) -->
-    <div id="act3-link-001" class="lk hor" data-node-type="link" style="--dx:6;--dy:7;--len:2"><span class="tag">가교 서편</span></div>
-    <div id="act3-link-002" class="lk hor" data-node-type="link" style="--dx:12;--dy:7;--len:2"><span class="tag">가교 동편</span></div>
+    <!-- 가교는 한 번에 한 방향만 접속: 동탑 귀환 자세 이후 서탑 자세 해금 -->
+    <div id="act3-link-001" class="lk hor bridge next" data-node-type="link" data-from="act3-room-004" data-to="act3-room-012" data-requires="bridge_power" style="--dx:6;--dy:7;--len:2"><span class="tag">다음 자세 · 서탑</span></div>
+    <div id="act3-link-002" class="lk hor bridge" data-node-type="link" data-from="act3-room-009" data-to="act3-room-004" data-requires="bridge_power" style="--dx:12;--dy:7;--len:2"><span class="tag">현재 자세 · 동탑 귀환</span></div>
     <!-- 점선: 회전 시 접속 (남-북, 12시-6시 = 화면 깊이축) -->
     <div id="act3-link-003" class="lk hor rot" data-node-type="link" data-from="act3-room-004" data-to="act3-room-015" data-requires="core_b" style="--dx:2;--dy:5;--len:6"><span class="tag">⟳ 북 접속 · 코어 B 필요</span></div>
     <div id="act3-link-004" class="lk hor rot" data-node-type="link" data-from="act3-room-004" data-to="act3-room-017" data-requires="core_a" style="--dx:12;--dy:5;--len:6"><span class="tag">⟳ 남 접속 · 코어 A 필요</span></div>
     <!-- 하층 화물 통로 -->
-    <div id="act3-link-005" class="lk hor" data-node-type="link" style="--dx:12;--dy:13;--len:2"><span class="tag">화물 통로</span></div>
+    <div id="act3-link-005" class="lk hor cargo" data-node-type="link" data-from="act3-room-007" data-to="act3-room-011" style="--dx:12;--dy:13;--len:2"><span class="tag">초기 진입 · 고정 통로</span></div>
 
     <!-- 문 -->
     <i id="act3-door-001" class="d v" data-node-type="door" style="--dx:10;--dy:2"></i>
@@ -271,8 +277,10 @@
     <span class="item"><span class="sw" style="background:var(--copper)"></span>동탑 (반입)</span>
     <span class="item"><span class="sw" style="background:#4a8fa8"></span>서탑 (방출)</span>
     <span class="item"><span class="sw" style="background:var(--depth)"></span>북·남탑 (깊이축 — 가교 회전 접속)</span>
-    <span class="item" style="color:var(--teal)">― 실선 = 현재 가교 자세</span>
-    <span class="item" style="color:var(--depth)">┄ 점선 = 회전 시 접속</span>
+    <span class="item" style="color:var(--gold)">━ 금색 실선 = 현재 접속된 회전 가교</span>
+    <span class="item" style="color:var(--gold-dim)">┄ 금색 점선 = 다음에 돌릴 가교 자세</span>
+    <span class="item" style="color:var(--depth)">┄ 청회색 점선 = 북·남 깊이축 회전 자세</span>
+    <span class="item" style="color:var(--copper)">═ 구리색 이중선 = 움직이지 않는 화물 통로</span>
   </div>
 
   <section class="routes">
@@ -281,7 +289,7 @@
       <h2>A. 구조 개념 — 타워 평면 = 시계판 <span class="tag p">[제안]</span></h2>
       <div class="kv">
         <div class="row"><div class="k">십자 5탑</div><div class="v">위성탑 4개(동·서·남·북)가 시계판의 12·3·6·9시 위치, 메인 타워가 축. 각 위성탑은 렌티움 순환의 한 단계를 담당 — <b>반입(동) → 정제(메인) → 방출(서) / 공급 → 회수(남) → 직하 배출(기부)</b>. 타워 단지 전체가 렌티움의 순환 회로이자 거대한 시계.</div></div>
-        <div class="row"><div class="k">회전 가교 = 시곗바늘</div><div class="v">중층 허브의 가교는 시곗바늘처럼 <b>회전해 한 번에 한 위성탑만 접속</b>한다. 동탑에서 동력을 복구하면 서탑, 코어 A를 얻으면 남탑, 코어 B를 얻으면 북탑 자세가 순차 해금된다. 횡스크롤의 남북 깊이 문제를 화면 전환으로 해결하면서, 두 방향을 동시에 열어 생기는 순서 파괴를 막는다.</div></div>
+        <div class="row"><div class="k">회전 가교 = 시곗바늘</div><div class="v">중층 허브의 단일 가교는 시곗바늘처럼 <b>회전해 한 번에 한 위성탑만 접속</b>한다. 금색 실선은 현재 접속, 금색 점선은 다음 자세, 청회색 점선은 화면 깊이축의 북·남 자세다. 동탑 하층으로 가는 구리색 이중선은 가교가 아니라 고정 화물 통로다.</div></div>
         <div class="row"><div class="k">수직 순환의 완성</div><div class="v">배출 기부가 오수 낙하 기둥(RGN-008)의 상류 — <b>ACT1에서 맞았던 폭포의 수원을 ACT3에서 위에서 내려다보게 됨.</b> 남탑 회수 계통 → 배출 기부 → 대공동 폭포 → 심층. 세계의 물이 어디서 와서 어디로 가는지가 3막에 걸쳐 완결.</div></div>
       </div>
     </div>
@@ -291,7 +299,7 @@
       <div class="flow">
         기슭(ACT2 종점) → 하층 로비<b>[CP]</b><i>(중앙 승강로 봉쇄 목격 — 자물쇠 먼저)</i> → 원석 하역장 → 화물 통로 → 동탑 기부<br>
         → 반입 권양층<i>(과부하 반격 릴레이)</i> → 크레인 정상 → <b>가교 동력</b> 확보 → 회전 가교 허브<b>[CP]</b> 가동<br>
-        → 가교 서편: 서탑 → 방출 제어층 → <b>서탑 수문장</b> → <b>짧은 공중 대시 + 권한 코어 A</b><i>(대시 귀환 · 남탑 자세 해금)</i><br>
+        → 가교를 <b>서탑 자세</b>로 회전 → 방출 제어층 → <b>서탑 수문장</b> → <b>짧은 공중 대시 + 권한 코어 A</b><i>(대시 귀환 · 남탑 자세 해금)</i><br>
         → 가교 남편: 남탑 → 회수 집수층 → <b>남탑 수문장</b> → <b>권한 코어 B</b><i>(RGN-008 상류 목격 · 북탑 자세 해금)</i><br>
         → 가교 북편: 기록 서고 → 열람층 → 기존 기억 A·B와 기록을 대조해 <b>기억 재해석 + 감사 서명</b><i>(새 기억코어는 지급하지 않음 · RUL-003 공개)</i><br>
         → 과부하 반격 + 공중 대시 + 동력 + 코어 A+B + 감사 서명 → <b>중앙 승강로 개방</b> → 정제로 코어 → <b>옥상: 말파스</b><i>(프롤로그의 그 옥상 — 원환 완성)</i>
@@ -302,7 +310,7 @@
     <div class="sec">
       <h2>C. 각 탑의 기능과 서사 <span class="tag p">[제안]</span></h2>
       <div class="kv">
-        <div class="row"><div class="k">동탑 — 반입</div><div class="v">원석 반입 크레인. 도시 물류 축(동측 — 화물 터미널·터미너스·림부스)의 지상 종점이 타워까지 이어짐. 통합 단면에서 동쪽 수직선이 하나로 완성.</div></div>
+        <div class="row"><div class="k">동탑 — 반입</div><div class="v">원석 반입 크레인. 원석은 서부 내벽 화물 승강장·터미너스에서 성벽 안쪽 지하 순환 화물선을 거쳐 동탑 기부로 전달된다. 림부스 수거관과는 설비를 공유하지 않는다.</div></div>
         <div class="row"><div class="k">서탑 — 방출</div><div class="v">대기 방출 노즐(RUL-011b ①). 도시의 '시간'이 뿜어져 나오는 곳 — 결정화 사건 때 최대 출력으로 쓰인 바로 그 계통.</div></div>
         <div class="row"><div class="k">남탑 — 회수</div><div class="v">배관망 회수 계통 집결(RUL-011b 보강안). 폐렌티움이 모여 배출 기부로 떨어짐 — ACT1 전체를 만든 원인의 제어실.</div></div>
         <div class="row"><div class="k">북탑 — 기록</div><div class="v"><b>[제안 · 필수 경로]</b> 엘리아스의 연구 기록동. 렌티움 발명(RUL-002)과 은폐(RUL-003)의 문서를 기억 A·B의 장면과 대조한다. 새 기억코어를 더 주지 않고, 이미 본 기억의 의미를 뒤집어 말파스 대면의 동기를 완성하며 중앙 승강로용 감사 서명을 얻는다.</div></div>

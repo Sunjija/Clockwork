@@ -241,6 +241,11 @@ body.map-viewer-ready .room {
   transition: opacity 140ms ease, filter 140ms ease, box-shadow 140ms ease, transform 140ms ease;
 }
 
+body.map-viewer-ready .room.optional {
+  border-style: dashed;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--viewer-accent) 34%, transparent);
+}
+
 body.map-viewer-ready .room:hover,
 body.map-viewer-ready .room:focus-visible,
 body.map-viewer-ready .room.is-selected {
@@ -292,9 +297,14 @@ body.map-viewer-ready .chip.restore,
 body.map-viewer-ready .chip.echo,
 body.map-viewer-ready .chip.slot,
 body.map-viewer-ready .chip.counter,
-body.map-viewer-ready .chip.dash {
+body.map-viewer-ready .chip.dash,
+body.map-viewer-ready .chip.opt {
   border: 1px solid currentColor;
   background: #151b22;
+}
+
+body.map-viewer-ready .chip.opt {
+  color: #8fc4ce;
 }
 
 body.map-viewer-ready .chip.abl {
