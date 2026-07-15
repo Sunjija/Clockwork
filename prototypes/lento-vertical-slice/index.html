@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clockwork - 렌토 전투 버티컬 슬라이스</title>
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+  <main class="workspace">
+    <header class="topbar">
+      <div>
+        <strong>CLOCKWORK</strong>
+        <span>렌토 전투 검증 빌드 · 720P</span>
+      </div>
+      <div class="build-state" id="buildState">P1 · 배관 속 포식자</div>
+    </header>
+
+    <section class="game-shell" aria-label="렌토 보스 전투">
+      <div class="canvas-wrap">
+        <canvas id="game" width="1280" height="720" tabindex="0" aria-label="플레이 가능한 렌토 보스전"></canvas>
+        <div class="control-hud" aria-label="조작키 안내">
+          <span><kbd>←</kbd><kbd>→</kbd> 이동</span>
+          <span><kbd>Z</kbd> 점프</span>
+          <span><kbd>X</kbd> 공격</span>
+          <span><kbd>C</kbd> 대시</span>
+          <span><kbd>↑</kbd> 상호작용</span>
+        </div>
+        <button class="sound-toggle" id="soundToggle" type="button" title="효과음 켜기/끄기" aria-label="효과음 켜기/끄기">♪</button>
+      </div>
+
+      <aside class="debug-panel" aria-label="전투 검증 도구">
+        <div class="panel-heading">
+          <strong>PLAYTEST</strong>
+          <button id="resetBtn" class="icon-button" type="button" title="전투 초기화" aria-label="전투 초기화">↻</button>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">페이즈</span>
+          <div class="segments" role="group" aria-label="페이즈 이동">
+            <button data-phase="1" class="active" type="button">1</button>
+            <button data-phase="2" type="button">2</button>
+            <button data-phase="3" type="button">3</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">패턴 강제 실행</span>
+          <div class="pattern-grid" id="patternGrid"></div>
+        </div>
+
+        <label class="toggle-row">
+          <span>무적</span>
+          <input id="invincibleToggle" type="checkbox">
+        </label>
+        <label class="toggle-row">
+          <span>히트박스</span>
+          <input id="hitboxToggle" type="checkbox">
+        </label>
+        <label class="toggle-row">
+          <span>실험용 패링</span>
+          <input id="parryToggle" type="checkbox">
+        </label>
+
+        <label class="range-row">
+          <span>전조 속도 <output id="telegraphOut">1.0×</output></span>
+          <input id="telegraphRange" type="range" min="0.65" max="1.5" value="1" step="0.05">
+        </label>
+        <label class="range-row">
+          <span>시간 배율 <output id="timeOut">1.0×</output></span>
+          <input id="timeRange" type="range" min="0.35" max="1.25" value="1" step="0.05">
+        </label>
+
+        <div class="telemetry">
+          <span>상태</span><strong id="stateReadout">intro</strong>
+          <span>패턴</span><strong id="patternReadout">silhouette</strong>
+          <span>피해</span><strong id="damageReadout">0</strong>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="statusbar">
+      <span id="objective">배관을 공격해 렌토를 유인하라</span>
+      <span class="keys">←/→ 이동 · Z 점프 · X 공격 · C 대시 · ↑ 상호작용</span>
+    </footer>
+  </main>
+  <script src="game.js?v=7"></script>
+</body>
+</html>

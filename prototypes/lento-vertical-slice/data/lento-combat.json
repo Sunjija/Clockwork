@@ -1,0 +1,62 @@
+{
+  "$schemaVersion": "0.1.0-draft",
+  "encounterId": "boss_lento_purifier",
+  "displayName": "렌토",
+  "arena": {
+    "internalResolution": [1280, 720],
+    "simulationResolution": [640, 360],
+    "renderScale": 2,
+    "worldSizePixels": [1920, 720],
+    "pixelsPerUnit": 64,
+    "floorY": 604,
+    "pipesX": [300, 960, 1620],
+    "pipeCenterY": 486,
+    "pipeOuterRadius": 122,
+    "pipeVisual": "circularWallOpening"
+  },
+  "player": {
+    "characterId": "tique",
+    "maxHp": 5,
+    "moveSpeed": 142,
+    "jumpVelocity": 315,
+    "gravity": 900,
+    "dodgeSpeed": 255,
+    "basicAttackDamage": 4,
+    "abilitiesAvailable": ["move", "jump", "basicAttack", "groundDodge", "interact"],
+    "abilitiesUnavailable": ["hook", "airDash", "overloadCounter"]
+  },
+  "boss": {
+    "maxHp": 100,
+    "phaseThresholds": { "phase2": 70, "phase3": 20, "clear": 0 },
+    "phases": [
+      {
+        "id": "pipe_predator",
+        "hpRange": [71, 100],
+        "loop": ["pipeSilhouette", "pipeNoise", "slowBite", "recovery", "staggerCheck"],
+        "playerLesson": "소리로 출현 위치를 정하고 느린 물기 뒤 공격 기회를 만든다"
+      },
+      {
+        "id": "pack_leader",
+        "hpRange": [21, 70],
+        "entry": ["exitPipe", "howl", "spawnRatlings"],
+        "patterns": ["ratlingCommand", "tailSweepCapture", "poisonSpit"],
+        "playerLesson": "잡몹 우선순위, 점프 회피, 이동 둔화 대응"
+      },
+      {
+        "id": "cornered_frenzy",
+        "hpRange": [1, 20],
+        "entry": ["scream"],
+        "patterns": ["offscreenJumpSlam", "tripleSonicWave", "wallCharge"],
+        "playerLesson": "위험 지대 판독과 환경 상호작용으로 그로기 생성"
+      }
+    ]
+  },
+  "clearSequence": ["lentoHpZero", "controlPanelEnabled", "playerInteracts", "purifierRestart", "waterDrain", "hookRouteOpened"],
+  "prototypeAssumptions": [
+    "새끼쥐가 생존한 동안 렌토는 방어 상태이며 잡몹 제거 후 해제된다.",
+    "2페이즈 렌토는 방어 해제 후 일반 공격으로 피해를 받는다.",
+    "3페이즈는 일반 공격 피해가 절반이고 벽 충돌 그로기 중에는 전부 적용된다.",
+    "패링은 기본 비활성이며 배관 숨기가 돌진의 보장된 정답이다.",
+    "렌토 처치 뒤 자동 배수가 아니라 제어반 상호작용을 거쳐 배수가 시작된다."
+  ]
+}

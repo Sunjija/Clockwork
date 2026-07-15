@@ -16,8 +16,10 @@
 | `maps/act2-surface.html` | ACT2 지상 메티아 — 초안 [전부 제안] |
 | `maps/act3-tower.html` | ACT3 크로노스 타워 — 십자 5탑·회전 가교 초안 [전부 제안] |
 | `maps/world-atlas.html` | **전체 세계 전도** — 옥상~심층 습지 수직 40층 단면, 3막 통합 |
+| `prototypes/lento-vertical-slice/index.html` | 렌토 보스전 720P 웹 버티컬 슬라이스 — 3페이즈 전투, 패턴 강제 실행, 티크 PixelLab 애니메이션 검증 |
 
 맵 HTML은 브라우저에서 바로 열어 볼 수 있습니다 (외부 의존성: Pretendard 폰트 CDN만).
+렌토 프로토타입도 `index.html`을 브라우저에서 열거나 로컬 정적 서버로 실행할 수 있습니다.
 
 ## 확정/제안 구분 규칙
 

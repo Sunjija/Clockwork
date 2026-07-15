@@ -1,0 +1,85 @@
+{
+  "$schemaVersion": "0.1.0-draft",
+  "generationProvider": "PixelLab motion frames with source-sheet fallback poses",
+  "layoutRule": "oneActionPerSheet",
+  "frameLayout": "horizontal",
+  "background": "transparent",
+  "pivot": "bottomCenter",
+  "controls": {
+    "moveLeft": "ArrowLeft",
+    "moveRight": "ArrowRight",
+    "lookOrInteractUp": "ArrowUp",
+    "lookDown": "ArrowDown",
+    "jump": "KeyZ",
+    "attack": "KeyX",
+    "dash": "KeyC",
+    "focusOrCastReserved": "KeyF",
+    "quickCastReserved": "KeyR",
+    "dreamAbilityReserved": "KeyD",
+    "superDashReserved": "KeyS",
+    "inventoryReserved": "KeyI",
+    "mapReserved": "Tab",
+    "pauseReserved": "Escape"
+  },
+  "characters": {
+    "tique": {
+      "frameSize": [128, 128],
+      "reference": "reference/tique-character-sheet.png",
+      "pixelLabReference": "reference/tique-pixellab-reference.png",
+      "pixelLabCharacterId": "9580e2b4-d66e-40e4-8d38-5458f63397ee",
+      "pixelLabRotations": "assets/tique/pixellab/rotations",
+      "generationStatus": "pixelLabCoreCombatMotionFramesIntegrated",
+      "runtimeFrameLayout": "one PNG per frame in the matching action directory",
+      "actions": {
+        "idle": { "file": "assets/tique/animations/idle.png", "runtimeFrames": "assets/tique/animations/idle", "frames": 4, "fps": 6, "loop": true },
+        "run": { "file": "assets/tique/animations/run.png", "runtimeFrames": "assets/tique/animations/run", "frames": 8, "fps": 12, "loop": true },
+        "jumpStart": { "file": "assets/tique/animations/jump.png", "runtimeFrames": "assets/tique/animations/jump", "frames": 7, "fps": 12, "loop": false },
+        "jumpFall": { "file": "assets/tique/jump-fall.png", "frames": 4, "fps": 10, "loop": true },
+        "land": { "file": "assets/tique/land.png", "frames": 4, "fps": 14, "loop": false },
+        "attackHorizontal": { "file": "assets/tique/animations/attack.png", "runtimeFrames": "assets/tique/animations/attack", "frames": 6, "fps": 24, "loop": false, "activeFrames": [2, 3] },
+        "attackUp": { "file": "assets/tique/attack-up.png", "frames": 8, "fps": 16, "loop": false, "activeFrames": [4, 5] },
+        "attackDown": { "file": "assets/tique/attack-down.png", "frames": 8, "fps": 16, "loop": false, "activeFrames": [4, 5] },
+        "dash": { "file": "assets/tique/animations/dash.png", "runtimeFrames": "assets/tique/animations/dash", "frames": 6, "fps": 18, "loop": false },
+        "hit": { "file": "assets/tique/animations/hit.png", "runtimeFrames": "assets/tique/animations/hit", "frames": 6, "fps": 13, "loop": false },
+        "stunned": { "file": "assets/tique/stunned.png", "frames": 6, "fps": 8, "loop": true },
+        "captured": { "file": "assets/tique/captured.png", "frames": 6, "fps": 12, "loop": true },
+        "down": { "file": "assets/tique/down.png", "frames": 8, "fps": 10, "loop": false },
+        "pipeEnter": { "file": "assets/tique/pipe-enter.png", "frames": 6, "fps": 12, "loop": false },
+        "panelInteract": { "file": "assets/tique/panel-interact.png", "frames": 6, "fps": 10, "loop": false }
+      }
+    },
+    "lento": {
+      "frameSize": [256, 192],
+      "reference": "reference/lento-concept-board.png",
+      "generationStatus": "independentActionPNGsReady_motionFramesPendingPixelLab",
+      "interimFrameCountPerAction": 1,
+      "actions": {
+        "pipeSilhouette": { "file": "assets/lento/pipe-silhouette.png", "frames": 8, "fps": 8, "loop": true },
+        "pipeEmerge": { "file": "assets/lento/pipe-emerge.png", "frames": 8, "fps": 12, "loop": false },
+        "bite": { "file": "assets/lento/bite.png", "frames": 10, "fps": 14, "loop": false, "activeFrames": [5, 6] },
+        "biteRecover": { "file": "assets/lento/bite-recover.png", "frames": 6, "fps": 10, "loop": false },
+        "howl": { "file": "assets/lento/howl.png", "frames": 10, "fps": 12, "loop": false },
+        "tailSweep": { "file": "assets/lento/tail-sweep.png", "frames": 12, "fps": 16, "loop": false, "activeFrames": [6, 7, 8] },
+        "captureGnaw": { "file": "assets/lento/capture-gnaw.png", "frames": 10, "fps": 12, "loop": true },
+        "poisonSpit": { "file": "assets/lento/poison-spit.png", "frames": 10, "fps": 14, "loop": false, "eventFrame": 6 },
+        "scream": { "file": "assets/lento/scream.png", "frames": 10, "fps": 12, "loop": false },
+        "jumpSlam": { "file": "assets/lento/jump-slam.png", "frames": 12, "fps": 14, "loop": false, "activeFrames": [9] },
+        "sonicTailSlam": { "file": "assets/lento/sonic-tail-slam.png", "frames": 10, "fps": 14, "loop": false, "eventFrame": 6 },
+        "charge": { "file": "assets/lento/charge.png", "frames": 10, "fps": 16, "loop": false },
+        "wallCrash": { "file": "assets/lento/wall-crash.png", "frames": 10, "fps": 12, "loop": false },
+        "defeat": { "file": "assets/lento/defeat.png", "frames": 12, "fps": 12, "loop": false }
+      }
+    },
+    "ratling": {
+      "frameSize": [64, 64],
+      "generationStatus": "pendingPixelLab",
+      "actions": {
+        "idle": { "file": "assets/ratling/idle.png", "frames": 6, "fps": 8, "loop": true },
+        "run": { "file": "assets/ratling/run.png", "frames": 8, "fps": 14, "loop": true },
+        "bite": { "file": "assets/ratling/bite.png", "frames": 6, "fps": 16, "loop": false },
+        "hit": { "file": "assets/ratling/hit.png", "frames": 4, "fps": 12, "loop": false },
+        "defeat": { "file": "assets/ratling/defeat.png", "frames": 6, "fps": 12, "loop": false }
+      }
+    }
+  }
+}

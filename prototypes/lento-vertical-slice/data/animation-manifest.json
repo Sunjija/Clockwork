@@ -1,0 +1,65 @@
+{
+  "$schemaVersion": "0.1.0-draft",
+  "sheetRules": {
+    "origin": "bottom-center",
+    "direction": "right-facing-source",
+    "filterMode": "point",
+    "compression": "none",
+    "frameRateDefault": 10
+  },
+  "tique": {
+    "cellSize": [128, 128],
+    "implementationStatus": "core PixelLab motions, dash, and hit reaction integrated",
+    "animations": {
+      "idle": { "frames": 4, "fps": 6, "loop": true, "sheet": "assets/tique/animations/idle.png" },
+      "run": { "frames": 8, "fps": 12, "loop": true, "sheet": "assets/tique/animations/run.png" },
+      "jump": { "frames": 7, "fps": 12, "loop": false, "sheet": "assets/tique/animations/jump.png" },
+      "attack1": { "frames": 6, "fps": 24, "loop": false, "activeFrames": [2, 3], "sheet": "assets/tique/animations/attack.png" },
+      "dodge": { "frames": 6, "fps": 18, "loop": false, "sheet": "assets/tique/animations/dash.png" },
+      "hit": { "frames": 6, "fps": 13, "loop": false, "sheet": "assets/tique/animations/hit.png" },
+      "stunned": { "frames": 4, "fps": 8, "loop": true },
+      "captured": { "frames": 4, "fps": 12, "loop": true },
+      "down": { "frames": 5, "fps": 8, "loop": false },
+      "pipeHide": { "frames": 4, "fps": 10, "loop": false },
+      "panelInteract": { "frames": 5, "fps": 10, "loop": false }
+    }
+  },
+  "lento": {
+    "cellSize": [256, 192],
+    "animations": {
+      "pipeSilhouette": { "frames": 6, "fps": 6, "loop": true },
+      "pipeEmerge": { "frames": 6, "fps": 10, "loop": false },
+      "biteTell": { "frames": 6, "fps": 8, "loop": false },
+      "bite": { "frames": 5, "fps": 14, "loop": false, "activeFrames": [3, 4] },
+      "pipeRecover": { "frames": 6, "fps": 8, "loop": false },
+      "stagger": { "frames": 8, "fps": 8, "loop": true },
+      "pipeBreakout": { "frames": 10, "fps": 12, "loop": false },
+      "howl": { "frames": 8, "fps": 10, "loop": false },
+      "tailCoil": { "frames": 6, "fps": 8, "loop": false },
+      "tailSweep": { "frames": 8, "fps": 14, "loop": false, "activeFrames": [4, 5, 6] },
+      "captureGnaw": { "frames": 8, "fps": 12, "loop": true },
+      "poisonTell": { "frames": 5, "fps": 8, "loop": false },
+      "poisonSpit": { "frames": 5, "fps": 14, "loop": false, "eventFrame": 3 },
+      "scream": { "frames": 9, "fps": 12, "loop": false },
+      "jumpUp": { "frames": 5, "fps": 12, "loop": false },
+      "jumpFall": { "frames": 3, "fps": 10, "loop": true },
+      "slamLand": { "frames": 7, "fps": 14, "loop": false, "activeFrames": [2] },
+      "sonicTell": { "frames": 6, "fps": 8, "loop": false },
+      "sonicTailSlam": { "frames": 5, "fps": 14, "loop": false, "eventFrame": 3 },
+      "chargeTell": { "frames": 8, "fps": 8, "loop": false },
+      "charge": { "frames": 6, "fps": 14, "loop": true },
+      "wallCrash": { "frames": 8, "fps": 12, "loop": false },
+      "defeat": { "frames": 10, "fps": 10, "loop": false }
+    }
+  },
+  "ratling": {
+    "cellSize": [64, 64],
+    "animations": {
+      "idle": { "frames": 4, "fps": 6, "loop": true },
+      "run": { "frames": 6, "fps": 12, "loop": true },
+      "bite": { "frames": 4, "fps": 14, "loop": false, "activeFrames": [3] },
+      "hit": { "frames": 2, "fps": 10, "loop": false },
+      "defeat": { "frames": 4, "fps": 10, "loop": false }
+    }
+  }
+}
