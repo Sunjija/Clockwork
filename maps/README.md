@@ -23,7 +23,9 @@
 5. 문은 `.d`, 비인접 연결은 `.lk`를 사용하고 각각 안정적인 `id`를 부여한다.
 6. 문서의 마지막에 `map-viewer.js`, 인라인 스타일 뒤에 `map-viewer.css`를 불러온다.
 
-방에는 필요에 따라 `data-requires`, `data-reward`, `data-event`를 지정한다. 연결에는 `data-from`, `data-to`, `data-direction`, `data-requires`, `data-unlocks`를 사용할 수 있다. 일방통행은 `.oneway` 클래스로 표시하며, 이 값들은 JSON 내보내기에 그대로 포함된다.
+방에는 필요에 따라 `data-requires`, `data-reward`, `data-event`를 지정한다. 보상은 `data-reward-type`, `data-reward-tier`, `data-first-clear-reward`, `data-repeatable-reward`, `data-choice-group`, `data-reward-state`로 최초 획득과 반복 획득을 분리한다. 연결에는 `data-from`, `data-to`, `data-direction`, `data-requires`, `data-unlocks`를 사용할 수 있다. 일방통행은 `.oneway` 클래스로 표시하며, 이 값들은 JSON 내보내기에 그대로 포함된다.
+
+보상 속성의 의미와 ID 분류는 `docs/reward-system-v0.1.md`를 따른다. JSON 내보내기 스키마 2부터 기존 `reward` 문자열을 유지하면서 구조화된 `rewardProfile`을 함께 제공한다.
 
 최소 구조:
 

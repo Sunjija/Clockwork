@@ -12,11 +12,14 @@
 |---|---|
 | `docs/00_canon_rules_v5.4.md` | **정본 룰북** — 프로젝트 최상위 정본. 세계관 룰(RUL) · 연표(EVT) · 인물/보스 카드 · 시스템(ABL/WPN/MOD) · 동선 설계 원칙 |
 | `docs/rulebook-v5.5-patch.md` | v5.5 패치 제안 — 맵 설계 세션에서 나온 정정·재정의·신설 제안 (A~E 등급 구분) |
+| `docs/reward-system-v0.1.md` | 보상 체계 제안 — 능력·MOD·슬롯·코어 파편·고철 부품·기록의 역할과 맵 데이터 규약 |
+| `docs/music/` | 지역별 음악 방향, Suno 기준 실험, ACT1 생성·선별 기록 |
 | `maps/act1-underground.html` | ACT1 지하 안드레스 — 룸 단위 상세 맵 (24룸) + 크리티컬 패스 + 게이트/숏컷 설계 |
 | `maps/act2-surface.html` | ACT2 지상 메티아 — 초안 [전부 제안] |
 | `maps/act3-tower.html` | ACT3 크로노스 타워 — 십자 5탑·회전 가교 초안 [전부 제안] |
 | `maps/world-atlas.html` | **전체 세계 전도** — 옥상~심층 습지 수직 40층 단면, 3막 통합 |
 | `prototypes/lento-vertical-slice/index.html` | 렌토 보스전 720P 웹 버티컬 슬라이스 — 3페이즈 전투, 패턴 강제 실행, 티크 PixelLab 애니메이션 검증 |
+| `skills/clockwork-suno-ost/` | CLOCKWORK 지역·보스·기억 음악용 Suno 프롬프트 제작 스킬 |
 
 맵 HTML은 브라우저에서 바로 열어 볼 수 있습니다 (외부 의존성: Pretendard 폰트 CDN만).
 렌토 프로토타입도 `index.html`을 브라우저에서 열거나 로컬 정적 서버로 실행할 수 있습니다.

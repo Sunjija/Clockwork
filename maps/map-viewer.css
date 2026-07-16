@@ -335,6 +335,30 @@ body.map-viewer-ready .chip.dash {
   color: #7fdcff;
 }
 
+body.map-viewer-ready .chip.hp,
+body.map-viewer-ready .chip.energy,
+body.map-viewer-ready .chip.salvage,
+body.map-viewer-ready .chip.record {
+  border: 1px solid currentColor;
+  background: #151b22;
+}
+
+body.map-viewer-ready .chip.hp {
+  color: #ff8f86;
+}
+
+body.map-viewer-ready .chip.energy {
+  color: #64cce8;
+}
+
+body.map-viewer-ready .chip.salvage {
+  color: #bac4cd;
+}
+
+body.map-viewer-ready .chip.record {
+  color: #92c98d;
+}
+
 .map-critical-flow {
   margin: 0 0 18px;
   border-top: 1px solid var(--viewer-border);

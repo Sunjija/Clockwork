@@ -187,13 +187,13 @@
 </style>
 <link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body data-map-id="act1" data-map-version="14">
+<body data-map-id="act1" data-map-version="15">
 <div class="wrap">
 
   <header>
     <div class="eyebrow">Clockwork · ACT1 Detail Map</div>
     <h1>ACT1 지하 안드레스 <span>룸 단위 상세 맵 · 초안</span></h1>
-    <p class="note">원본의 9개 핵심 지역에 <b>구 폐기물 선별장·폐쇄 송수로·폐쇄 굴착지</b> 3개 선택 탐사 지역을 덧붙인 제안입니다. 최좌측=서부 내벽 화물 승강장 직하의 터미너스, 중앙=칼리고·정수장치, 최우측=도심 밀폐 투입구에서 내려오는 지하 자동 수거관의 종점인 림부스라는 큰 방위와 확정 동선(①~⑨)은 유지합니다. 신규 지역·룸 분할·숏컷·게이트·보상 배치는 전부 [제안]입니다.</p>
+    <p class="note">원본의 9개 핵심 지역에 <b>구 폐기물 선별장·폐쇄 송수로·심층 굴착지</b> 3개 선택 탐사 지역을 덧붙인 제안입니다. 최좌측=서부 내벽 화물 승강장 직하의 터미너스, 중앙=칼리고·정수장치, 최우측=도심 밀폐 투입구에서 내려오는 지하 자동 수거관의 종점인 림부스라는 큰 방위와 확정 동선(①~⑨)은 유지합니다. 신규 지역·룸 분할·숏컷·게이트·보상 배치는 전부 [제안]입니다.</p>
   </header>
 
   <div class="map-scroll">
@@ -220,44 +220,48 @@
     <div class="band" style="top:calc(11*var(--u));height:calc(7*var(--u))"><span class="bl" style="left:calc(2*var(--u) + 3px)">B25</span></div>
 
     <!-- ══ 림부스 ══ -->
-    <div id="act1-room-002" class="room limbus compact" data-node-type="room" style="--x:21;--y:1;--w:2;--h:1">
+    <div id="act1-room-002" class="room limbus compact" data-node-type="room" style="--x:21;--y:2;--w:2;--h:1">
       <span class="step">1</span>
       <div class="nm">추락 지점</div>
       <div class="ic"><span style="color:var(--sub)">각성 · 도심 자동 수거관 종점</span></div>
     </div>
-    <div id="act1-room-003" class="room limbus compact" data-node-type="room" style="--x:19;--y:1;--w:2;--h:1">
+    <div id="act1-room-052" class="room limbus compact optional" data-node-type="room" data-route="optional" data-reward="starter_mod_choice" data-reward-type="mod" data-reward-tier="major" data-first-clear-reward="starter_mod_choice" data-repeatable-reward="none" data-choice-group="act1_starter_mod" data-reward-state="unidentified_until_morbi_repair" style="--x:23;--y:2;--w:2;--h:1">
+      <div class="nm">부품 더미</div>
+      <div class="ic"><span class="chip trs">첫 MOD 3택1</span><span style="color:var(--sub)">수리 전 정체불명</span></div>
+    </div>
+    <div id="act1-room-003" class="room limbus compact" data-node-type="room" style="--x:19;--y:2;--w:2;--h:1">
       <div class="nm">림부스 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-006</span></div>
       <div class="ic"><span style="color:var(--sub)">고철 평원 · 이동</span></div>
     </div>
 
     <!-- ══ 신규 선택 지역: 구 폐기물 선별장 ══ -->
-    <div id="act1-room-036" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-requires="ability_hook_unlocked" style="--x:22;--y:2;--w:2;--h:2">
+    <div id="act1-room-036" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-requires="ability_hook_unlocked" style="--x:22;--y:3;--w:2;--h:2">
       <div class="nm">선별장 투입구</div>
       <div class="ic"><span class="chip opt">선택 지역</span><span class="chip lockG">G</span><span style="color:var(--sub)">재방문 입구</span></div>
     </div>
-    <div id="act1-room-037" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" style="--x:19;--y:3;--w:3;--h:1">
+    <div id="act1-room-037" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" style="--x:19;--y:4;--w:3;--h:1">
       <div class="nm">압축 벨트</div>
       <div class="ic"><span style="color:var(--sub)">파쇄 롤러 · 이동 발판</span></div>
     </div>
-    <div id="act1-room-038" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-event="waste_sorter_restarted" style="--x:19;--y:4;--w:3;--h:2">
+    <div id="act1-room-038" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-event="waste_sorter_restarted" style="--x:19;--y:5;--w:3;--h:2">
       <div class="nm">자력 분류실</div>
       <div class="ic"><span style="color:var(--sub)">극성 전환 퍼즐</span></div>
     </div>
-    <div id="act1-room-039" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-reward="mod_material_bundle" style="--x:22;--y:4;--w:2;--h:2">
+    <div id="act1-room-039" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-reward="waste_sorter_fixed_mod salvage_parts_large" data-reward-type="mod currency" data-reward-tier="major" data-first-clear-reward="waste_sorter_fixed_mod salvage_parts_large" data-repeatable-reward="none" style="--x:22;--y:5;--w:2;--h:2">
       <div class="nm">회수 승강기</div>
-      <div class="ic"><span class="chip trs">MOD 재료</span><span style="color:var(--sub)">입구 숏컷 복구</span></div>
+      <div class="ic"><span class="chip trs">고정 MOD</span><span class="chip salvage">고철 부품</span><span style="color:var(--sub)">입구 숏컷 복구</span></div>
     </div>
-    <div id="act1-room-004" class="room caligo compact optional" data-node-type="room" data-route="optional" data-requires="morbi_repair_complete" data-reward="salvage_material_cache" data-event="morbi_salvage_presented" style="--x:2;--y:4;--w:2;--h:1">
+    <div id="act1-room-004" class="room caligo compact optional" data-node-type="room" data-route="optional" data-requires="morbi_repair_complete" data-reward="salvage_parts_large" data-reward-type="currency" data-reward-tier="minor" data-first-clear-reward="salvage_parts_large" data-repeatable-reward="none" data-event="morbi_salvage_presented" style="--x:2;--y:4;--w:2;--h:1">
       <div class="nm">공방 부품고 A</div>
-      <div class="ic"><span class="chip opt">선택</span><span class="chip trs">개조 재료</span></div>
+      <div class="ic"><span class="chip opt">선택</span><span class="chip salvage">고철 부품</span></div>
     </div>
-    <div id="act1-room-005" class="room term optional" data-node-type="room" data-route="optional" data-reward="module_slot_plus_1" data-requires="terminus_guardian_defeated ability_double_jump_unlocked" style="--x:2;--y:1;--w:1;--h:1">
+    <div id="act1-room-005" class="room term optional" data-node-type="room" data-route="optional" data-reward="module_slot_plus_1" data-reward-type="slot" data-reward-tier="major" data-first-clear-reward="module_slot_plus_1" data-repeatable-reward="none" data-requires="terminus_guardian_defeated ability_double_jump_unlocked" style="--x:2;--y:1;--w:1;--h:1">
       <div class="nm">상단 정비 선반</div>
       <div class="ic"><span class="chip opt">선택</span><span class="chip slot">MOD 슬롯 +1</span><span class="chip lockD">D</span></div>
     </div>
 
     <!-- ══ 다리 ══ -->
-    <div id="act1-room-006" class="room limbus compact" data-node-type="room" data-event="pre_repair_collapse morbi_rescue_triggered" style="--x:4;--y:1;--w:15;--h:1;--rc:#7a828f">
+    <div id="act1-room-006" class="room limbus compact" data-node-type="room" data-event="pre_repair_collapse morbi_rescue_triggered" style="--x:7;--y:2;--w:12;--h:1;--rc:#7a828f">
       <span class="step">2</span>
       <div class="nm">림부스-칼리고 교량 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-011</span></div>
       <div class="ic"><span style="color:var(--sub)">회피·긴급 밀치기 → 쥐떼 추격 → 파손 누적 → 각본상 쓰러짐 → 모르비 구조</span></div>
@@ -295,9 +299,9 @@
       <div class="nm">침수 밸브실</div>
       <div class="ic"><span style="color:var(--sub)">수위 전환</span></div>
     </div>
-    <div id="act1-room-042" class="room water optional" data-node-type="room" data-region="optional-aqueduct" data-route="optional" data-reward="mod_choice_a" data-event="aqueduct_valves_balanced" style="--x:14;--y:4;--w:2;--h:2">
+    <div id="act1-room-042" class="room water optional" data-node-type="room" data-region="optional-aqueduct" data-route="optional" data-reward="mod_choice_utility" data-reward-type="mod" data-reward-tier="major" data-first-clear-reward="mod_choice_utility" data-repeatable-reward="none" data-choice-group="act1_aqueduct" data-event="aqueduct_valves_balanced" style="--x:14;--y:4;--w:2;--h:2">
       <div class="nm">폐쇄 제어실</div>
-      <div class="ic"><span class="chip trs">MOD 3택1</span><span style="color:var(--sub)">송수 기록</span></div>
+      <div class="ic"><span class="chip trs">유틸 MOD 3택1</span><span class="chip record">송수 기록</span></div>
     </div>
     <div id="act1-room-043" class="room water optional" data-node-type="room" data-region="optional-aqueduct" data-route="optional" style="--x:12;--y:4;--w:2;--h:2">
       <div class="nm">배수 우회로</div>
@@ -339,14 +343,14 @@
       <div class="nm">펌프실</div>
       <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">밸브 퍼즐 · 렌토 직전</span></div>
     </div>
-    <div id="act1-room-021" class="room water" data-node-type="room" data-event="rento_defeated water_treatment_restarted" data-reward="ability_hook_unlocked" style="--x:3;--y:8;--w:3;--h:1">
+    <div id="act1-room-021" class="room water" data-node-type="room" data-event="rento_defeated water_treatment_restarted" data-reward="ability_hook_unlocked" data-reward-type="ability" data-reward-tier="progression" data-first-clear-reward="ability_hook_unlocked" data-repeatable-reward="none" style="--x:3;--y:8;--w:3;--h:1">
       <span class="step">5</span>
       <div class="nm">중앙 정수조 — 렌토</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem" style="border-color:var(--teal)">→갈고리</span><span style="color:var(--sub)">내부 둥지 · 시설 정지</span></div>
     </div>
-    <div id="act1-room-022" class="room water optional" data-node-type="room" data-route="optional" data-requires="ability_hook_unlocked" data-reward="intake_filter_mod" style="--x:6;--y:8;--w:1;--h:1">
+    <div id="act1-room-022" class="room water optional" data-node-type="room" data-route="optional" data-requires="ability_hook_unlocked" data-reward="lentium_capacity_fragment" data-reward-type="fragment" data-reward-tier="standard" data-first-clear-reward="lentium_capacity_fragment" data-repeatable-reward="none" style="--x:6;--y:8;--w:1;--h:1">
       <div class="nm">취수구 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">EDG-013</span></div>
-      <div class="ic"><span class="chip opt">선택</span><span class="chip trs">MOD</span><span class="chip lockG">G</span></div>
+      <div class="ic"><span class="chip energy">용량 파편</span><span class="chip lockG">G</span></div>
     </div>
 
     <!-- ══ B24 하강 ══ -->
@@ -354,9 +358,9 @@
       <div class="nm">배수<br>수직갱</div>
       <div class="ic"><span style="color:var(--sub)">수위 흔적</span></div>
     </div>
-    <div id="act1-room-024" class="room b24 optional" data-node-type="room" data-route="optional" data-reward="golden_crystal_fragment" style="--x:8;--y:10;--w:3;--h:1">
+    <div id="act1-room-024" class="room b24 optional" data-node-type="room" data-route="optional" data-reward="heart_core_fragment unidentified_crystal_trace" data-reward-type="fragment record" data-reward-tier="standard" data-first-clear-reward="heart_core_fragment unidentified_crystal_trace" data-repeatable-reward="none" style="--x:8;--y:10;--w:3;--h:1">
       <div class="nm">진흙 동굴</div>
-      <div class="ic"><span class="chip opt">선택</span><span style="color:var(--gold)">황금 결정 파편</span></div>
+      <div class="ic"><span class="chip hp">하트 코어 파편</span><span class="chip record">정체불명 결정 흔적</span></div>
     </div>
 
     <!-- ══ 지하심층 ══ -->
@@ -372,20 +376,20 @@
       <div class="nm">하부 수문</div>
       <div class="ic"><span class="chip lockD">D→</span></div>
     </div>
-    <div id="act1-room-027" class="room deep" data-node-type="room" data-reward="ability_double_jump_unlocked" data-event="hunter_defeated" style="--x:3;--y:11;--w:2;--h:2">
+    <div id="act1-room-027" class="room deep" data-node-type="room" data-reward="ability_double_jump_unlocked" data-reward-type="ability" data-reward-tier="progression" data-first-clear-reward="ability_double_jump_unlocked" data-repeatable-reward="none" data-event="hunter_defeated" style="--x:3;--y:11;--w:2;--h:2">
       <span class="step">8</span>
       <div class="nm">사냥꾼 둥지</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem" style="border-color:var(--teal)">→더블점프</span></div>
     </div>
-    <div id="act1-room-028" class="room deep" data-node-type="room" data-requires="hunter_defeated" data-reward="memory_02_collected" style="--x:3;--y:13;--w:2;--h:1">
+    <div id="act1-room-028" class="room deep" data-node-type="room" data-requires="hunter_defeated" data-reward="memory_02_collected" data-reward-type="memory" data-reward-tier="progression" data-first-clear-reward="memory_02_collected" data-repeatable-reward="none" style="--x:3;--y:13;--w:2;--h:1">
       <div class="nm">기억 회수실</div>
       <div class="ic"><span class="chip mem">기억②</span><span class="chip lockD">D 인양로</span></div>
     </div>
 
-    <!-- ══ 신규 선택 지역: 폐쇄 굴착지 ══ -->
+    <!-- ══ 신규 선택 지역: 심층 굴착지 ══ -->
     <div id="act1-room-045" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" data-requires="ability_double_jump_unlocked" style="--x:12;--y:11;--w:2;--h:1">
-      <div class="nm">봉쇄 갱문</div>
-      <div class="ic"><span class="chip opt">선택 지역</span><span class="chip lockD">D</span></div>
+      <div class="nm">높은 갱구</div>
+      <div class="ic"><span class="chip opt">선택 지역</span><span class="chip lockD">D↑</span></div>
     </div>
     <div id="act1-room-046" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" style="--x:14;--y:11;--w:3;--h:2">
       <div class="nm">천공기 잔해</div>
@@ -395,9 +399,9 @@
       <div class="nm">붕괴 채굴 갱도</div>
       <div class="ic"><span style="color:var(--sub)">정예 기계 · 붕괴 발판</span></div>
     </div>
-    <div id="act1-room-048" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" data-reward="mod_choice_c" style="--x:20;--y:13;--w:3;--h:2">
-      <div class="nm">폐광 보급고</div>
-      <div class="ic"><span class="chip trs">MOD 3택1</span><span style="color:var(--sub)">굴착 장비 기록</span></div>
+    <div id="act1-room-048" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" data-reward="mod_choice_combat" data-reward-type="mod" data-reward-tier="major" data-first-clear-reward="mod_choice_combat" data-repeatable-reward="none" data-choice-group="act1_dig_site" style="--x:20;--y:13;--w:3;--h:2">
+      <div class="nm">굴착 보급고</div>
+      <div class="ic"><span class="chip trs">전투 MOD 3택1</span><span class="chip record">굴착 장비 기록</span></div>
     </div>
     <div id="act1-room-049" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" style="--x:14;--y:14;--w:6;--h:1">
       <div class="nm">광차 회차선</div>
@@ -440,11 +444,12 @@
 
     <!-- ══ 문 (연결부) ══ -->
     <!-- 림부스/다리 -->
-    <i id="act1-door-001" class="d h" data-node-type="door" style="--dx:21;--dy:1.5"></i>
+    <i id="act1-door-001" class="d h" data-node-type="door" style="--dx:21;--dy:2.5"></i>
+    <i id="act1-door-059" class="d h" data-node-type="door" data-from="act1-room-002" data-to="act1-room-052" style="--dx:23;--dy:2.5" aria-label="추락 지점에서 초반 림부스 부품 더미로 진입"></i>
     <i id="act1-door-002" class="d v gate" data-node-type="door" data-from="act1-room-011" data-to="act1-room-004" data-requires="morbi_repair_complete" style="--dx:3.5;--dy:4" aria-label="모르비의 수리 완료 후 정화수 저장소 아래 공방 부품고 개방"></i>
-    <i id="act1-door-003" class="d h" data-node-type="door" style="--dx:19;--dy:1.5"></i>
+    <i id="act1-door-003" class="d h" data-node-type="door" style="--dx:19;--dy:2.5"></i>
     <!-- 칼리고 -->
-    <i id="act1-door-006" class="d v" data-node-type="door" style="--dx:6.5;--dy:2"></i>
+    <i id="act1-door-006" class="d h" data-node-type="door" style="--dx:7;--dy:2.5"></i>
     <i id="act1-door-007" class="d h" data-node-type="door" style="--dx:6;--dy:2.5"></i>
     <i id="act1-door-008" class="d v" data-node-type="door" style="--dx:5;--dy:3"></i>
     <i id="act1-door-009" class="d v" data-node-type="door" style="--dx:3.5;--dy:3"></i>
@@ -482,11 +487,11 @@
     <i id="act1-door-036" class="d h gate" data-node-type="door" data-from="act1-room-013" data-to="act1-room-034" data-requires="ability_hook_unlocked" style="--dx:10;--dy:6.5" aria-label="갈고리 획득 후 교차로 대공동 동쪽의 폐쇄 송수로 진입"></i>
     <i id="act1-door-038" class="d v" data-node-type="door" data-from="act1-room-024" data-to="act1-room-025" style="--dx:9.5;--dy:11" aria-label="진흙 동굴에서 침수 입구로 합류"></i>
     <!-- 구 폐기물 선별장 -->
-    <i id="act1-door-039" class="d v gate" data-node-type="door" data-from="act1-room-002" data-to="act1-room-036" data-requires="ability_hook_unlocked" style="--dx:22.5;--dy:2" aria-label="갈고리 획득 후 추락 지점 아래 구 폐기물 선별장 진입"></i>
-    <i id="act1-door-040" class="d h" data-node-type="door" data-from="act1-room-036" data-to="act1-room-037" style="--dx:22;--dy:3.5"></i>
-    <i id="act1-door-041" class="d v" data-node-type="door" data-from="act1-room-037" data-to="act1-room-038" style="--dx:20.5;--dy:4"></i>
-    <i id="act1-door-042" class="d h" data-node-type="door" data-from="act1-room-038" data-to="act1-room-039" style="--dx:22;--dy:5"></i>
-    <i id="act1-door-043" class="d v gate" data-node-type="door" data-from="act1-room-039" data-to="act1-room-036" data-requires="waste_sorter_restarted" data-unlocks="waste_sorter_lift_shortcut" style="--dx:23;--dy:4" aria-label="자력 분류실 재가동 후 회수 승강기와 입구 사이 숏컷 개방"></i>
+    <i id="act1-door-039" class="d v gate" data-node-type="door" data-from="act1-room-002" data-to="act1-room-036" data-requires="ability_hook_unlocked" style="--dx:22.5;--dy:3" aria-label="갈고리 획득 후 추락 지점 아래 구 폐기물 선별장 진입"></i>
+    <i id="act1-door-040" class="d h" data-node-type="door" data-from="act1-room-036" data-to="act1-room-037" style="--dx:22;--dy:4.5"></i>
+    <i id="act1-door-041" class="d v" data-node-type="door" data-from="act1-room-037" data-to="act1-room-038" style="--dx:20.5;--dy:5"></i>
+    <i id="act1-door-042" class="d h" data-node-type="door" data-from="act1-room-038" data-to="act1-room-039" style="--dx:22;--dy:6"></i>
+    <i id="act1-door-043" class="d v gate" data-node-type="door" data-from="act1-room-039" data-to="act1-room-036" data-requires="waste_sorter_restarted" data-unlocks="waste_sorter_lift_shortcut" style="--dx:23;--dy:5" aria-label="자력 분류실 재가동 후 회수 승강기와 입구 사이 숏컷 개방"></i>
     <!-- 폐쇄 송수로 -->
     <i id="act1-door-044" class="d h" data-node-type="door" data-from="act1-room-034" data-to="act1-room-040" style="--dx:12;--dy:6.5"></i>
     <i id="act1-door-045" class="d h" data-node-type="door" data-from="act1-room-040" data-to="act1-room-041" style="--dx:16;--dy:6.5"></i>
@@ -494,8 +499,8 @@
     <i id="act1-door-047" class="d h" data-node-type="door" data-from="act1-room-042" data-to="act1-room-043" style="--dx:14;--dy:5"></i>
     <i id="act1-door-049" class="d h" data-node-type="door" data-from="act1-room-043" data-to="act1-room-044" style="--dx:12;--dy:5"></i>
     <i id="act1-door-050" class="d v gate" data-node-type="door" data-from="act1-room-044" data-to="act1-room-034" data-requires="aqueduct_valves_balanced" data-unlocks="aqueduct_loop_shortcut" style="--dx:11;--dy:6" aria-label="밸브 균형을 맞춘 뒤 역류 수문을 열어 송수로 입구로 복귀"></i>
-    <!-- 폐쇄 굴착지 -->
-    <i id="act1-door-051" class="d h gate" data-node-type="door" data-from="act1-room-051" data-to="act1-room-045" data-requires="ability_double_jump_unlocked" style="--dx:12;--dy:11.5" aria-label="더블점프 획득 후 하부 수문의 높은 봉쇄 갱문을 넘어 폐쇄 굴착지 진입"></i>
+    <!-- 심층 굴착지: 문이 아니라 높은 지형으로 더블점프 요구 -->
+    <i id="act1-door-051" class="d h" data-node-type="door" data-from="act1-room-051" data-to="act1-room-045" data-requires="ability_double_jump_unlocked" style="--dx:12;--dy:11.5" aria-label="더블점프 획득 후 하부 수문 동쪽의 높은 갱구에 올라 심층 굴착지 진입"></i>
     <i id="act1-door-052" class="d h" data-node-type="door" data-from="act1-room-045" data-to="act1-room-046" style="--dx:14;--dy:11.5"></i>
     <i id="act1-door-053" class="d h" data-node-type="door" data-from="act1-room-046" data-to="act1-room-047" style="--dx:17;--dy:12.5"></i>
     <i id="act1-door-054" class="d h" data-node-type="door" data-from="act1-room-047" data-to="act1-room-048" style="--dx:20;--dy:13.5"></i>
@@ -521,7 +526,10 @@
   <div class="legend">
     <span class="item"><span class="chip boss" style="margin-right:5px">BOSS</span>보스</span>
     <span class="item"><span class="chip mem" style="margin-right:5px">기억</span>기억 코어</span>
-    <span class="item"><span class="chip trs" style="margin-right:5px">MOD</span>탐사 보상·개조</span>
+    <span class="item"><span class="chip trs" style="margin-right:5px">MOD</span>빌드 보상</span>
+    <span class="item"><span class="chip hp" style="margin-right:5px">코어</span>체력 파편</span>
+    <span class="item"><span class="chip energy" style="margin-right:5px">용량</span>렌티움 게이지 파편</span>
+    <span class="item"><span class="chip salvage" style="margin-right:5px">고철</span>반복 재화</span>
     <span class="item"><span class="chip cp" style="margin-right:5px">CP</span>체크포인트 [제안]</span>
     <span class="item"><span class="chip lockG" style="margin-right:5px">G</span>갈고리 게이트</span>
     <span class="item"><span class="chip lockD" style="margin-right:5px">D</span>더블점프 게이트</span>
@@ -564,10 +572,11 @@
     <div class="sec">
       <h2>C. 신규 선택 탐사 지역 <span class="tag p">[제안]</span></h2>
       <div class="kv">
-        <div class="row"><div class="k">구 폐기물 선별장</div><div class="v">추락 지점 아래에 4개 방으로 배치한다. 초반에는 높은 투입구만 보고 지나가며, 갈고리 획득 후 림부스로 돌아오면 압축 벨트 → 자력 분류실 → 회수 승강기 순으로 탐사한다. 분류기를 재가동하면 입구로 돌아가는 승강기 숏컷이 열리고 MOD 제작 재료를 얻는다.</div></div>
-        <div class="row"><div class="k">폐쇄 송수로</div><div class="v">교차로 대공동 동쪽 점검구에서 시작하는 6개 방짜리 수로 루프다. 갈고리로 진입해 구 송수 관로·침수 밸브실·폐쇄 제어실을 돌고, 역류 수문을 열면 같은 입구로 복귀한다. 가장 깊은 제어실에서 <b>MOD 3택1</b>을 지급한다.</div></div>
-        <div class="row"><div class="k">폐쇄 굴착지</div><div class="v">침수 입구 동쪽의 높은 봉쇄 갱문 너머에 6개 방으로 배치한다. 사냥꾼 격파로 더블점프를 얻은 뒤 천공기 잔해·붕괴 갱도·광차 회차선을 한 바퀴 도는 후반 선택 지역이다. 끝의 폐광 보급고에서 두 번째 <b>MOD 3택1</b>을 얻고 환기 수직갱으로 입구에 복귀한다.</div></div>
-        <div class="row"><div class="k">기존 소형 보상실</div><div class="v">공방 부품고·취수구·진흙 동굴·상단 정비 선반은 짧은 발견 보상으로 유지한다. 큰 탐사 지역과 역할이 겹치지 않도록 개조 재료·고정 MOD·황금 결정 파편·MOD 슬롯처럼 서로 다른 보상을 배치한다.</div></div>
+        <div class="row"><div class="k">림부스 첫 MOD</div><div class="v">추락 직후 옆 부품 더미에서 3택1 정체불명 부품을 얻는다. 칼리고 수리 장면에서 모르비가 MOD로 식별해 장착하며, 미선택 2개는 다음 액트부터 제작 목록에 등록한다.</div></div>
+        <div class="row"><div class="k">구 폐기물 선별장</div><div class="v">추락 지점 아래에 4개 방으로 배치한다. 초반에는 높은 투입구만 보고 지나가며, 갈고리 획득 후 림부스로 돌아오면 압축 벨트 → 자력 분류실 → 회수 승강기 순으로 탐사한다. 분류기를 재가동하면 입구 숏컷과 <b>고정 탐사 MOD</b>, 고철 부품을 얻는다.</div></div>
+        <div class="row"><div class="k">폐쇄 송수로</div><div class="v">교차로 대공동 동쪽 점검구에서 시작하는 6개 방짜리 수로 루프다. 갈고리로 진입해 구 송수 관로·침수 밸브실·폐쇄 제어실을 돌고, 역류 수문을 열면 같은 입구로 복귀한다. 가장 깊은 제어실에서 <b>유틸리티 MOD 3택1</b>을 지급한다.</div></div>
+        <div class="row"><div class="k">심층 굴착지</div><div class="v">지하심층 동쪽 암반의 높은 갱구에서 시작하는 독립된 6개 방짜리 굴착 구역이다. 문이나 봉쇄 장치는 없지만 초반에는 높이 때문에 진입할 수 없다. 사냥꾼 격파로 더블점프를 얻은 뒤 천공기 잔해·붕괴 갱도·광차 회차선을 한 바퀴 돌고, 굴착 보급고에서 <b>전투 MOD 3택1</b>을 얻은 다음 환기 수직갱으로 입구에 복귀한다. 터미너스와는 물류·서사상 연결하지 않는다.</div></div>
+        <div class="row"><div class="k">기존 소형 보상실</div><div class="v">공방 부품고=고철 부품, 취수구=렌티움 용량 파편, 진흙 동굴=하트 코어 파편·정체불명 결정 흔적, 상단 정비 선반=MOD 슬롯으로 역할을 분리한다.</div></div>
         <div class="row"><div class="k">주동선 영향</div><div class="v">세 신규 지역은 전부 보스·기억·ACT2 진입 조건에서 제외한다. 입구를 먼저 보여주고 갈고리 또는 더블점프로 나중에 돌아오게 하며, 내부는 막다른 복도 대신 원래 입구로 되돌아오는 루프와 숏컷을 가진다.</div></div>
       </div>
     </div>

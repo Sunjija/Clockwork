@@ -125,7 +125,7 @@
 </style>
 <link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body data-map-id="act2" data-map-version="14">
+<body data-map-id="act2" data-map-version="15">
 <div class="wrap">
   <header>
     <div class="eyebrow">Clockwork · ACT2 Surface City</div>
@@ -168,8 +168,8 @@
       <div class="flow-ledger__row optional">
         <div class="flow-ledger__label">벽타기 후 선택</div>
         <div class="flow-ledger__list two">
-          <div class="flow-ledger__item"><b>서부 외곽</b><small>외벽 화물 야적장 · 회수로</small></div>
-          <div class="flow-ledger__item"><b>동부 외곽</b><small>재활용 처리장 · 황폐 가도</small></div>
+          <div class="flow-ledger__item"><b>서부 외곽</b><small>렌티움 용량 파편 · 화물 기록</small></div>
+          <div class="flow-ledger__item"><b>동부 외곽</b><small>하트 코어 파편 · 재활용 기록</small></div>
         </div>
       </div>
       <div class="flow-ledger__row story">
@@ -210,31 +210,31 @@
       <div id="act2-room-026" class="room tower sealed" data-node-type="room" data-city-band="mid-core-boundary" data-requires="act3_east_tower_route" style="--x:19;--y:0;--w:2;--h:2"><div class="nm">동부 타워 기부</div><div class="ic"><span class="chip lock">ACT3 봉쇄</span><span>원석 반입·정비 가도</span></div></div>
 
       <!-- 지붕과 외곽 -->
-      <div id="act2-room-027" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:0;--y:2;--w:4;--h:2"><div class="nm">서부 외벽 화물 야적장</div><div class="ic"><span class="chip abl">벽타기</span><span>선택 탐사 · 물류 기록</span></div></div>
+      <div id="act2-room-027" class="room outer optional" data-node-type="room" data-region="optional-west-yard" data-route="optional" data-requires="ability_wall_run_unlocked" data-reward="lentium_capacity_fragment archive_record_cargo" data-reward-type="fragment record" data-reward-tier="major" data-first-clear-reward="lentium_capacity_fragment archive_record_cargo" data-repeatable-reward="none" style="--x:0;--y:2;--w:4;--h:2"><div class="nm">서부 외벽 화물 야적장</div><div class="ic"><span class="chip energy">용량 파편</span><span class="chip record">화물 기록</span><span class="chip abl">벽타기</span></div></div>
       <div id="act2-room-004" class="room roof" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:4;--y:2;--w:5;--h:2"><div class="nm">서부 성벽 상부·지붕길</div><div class="ic"><span class="chip abl">벽타기</span><span>시작점 복귀 순환로</span></div></div>
       <div id="act2-room-003" class="room roof" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:20;--y:2;--w:5;--h:2"><div class="nm">동부 성벽 상부·지붕길</div><div class="ic"><span class="chip abl">벽타기</span><span class="chip echo">공방 표식 잔향</span></div></div>
-      <div id="act2-room-002" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" data-reward="workshop_admin_key_acquired" data-event="memory_a_echo_resolved" data-flow-order="4" data-flow-group="ACT2" data-flow-label="엘리아스 공방" data-flow-note="공방 관리자 키" style="--x:25;--y:2;--w:4;--h:2"><span class="step">8</span><div class="nm">엘리아스 외벽 은신 공방</div><div class="ic"><span class="chip auth">관리자 키</span><span class="chip echo">잔향</span><span class="chip cp">CP</span></div></div>
+      <div id="act2-room-002" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" data-reward="workshop_admin_key_acquired" data-reward-type="key" data-reward-tier="progression" data-first-clear-reward="workshop_admin_key_acquired" data-repeatable-reward="none" data-event="memory_a_echo_resolved" data-flow-order="4" data-flow-group="ACT2" data-flow-label="엘리아스 공방" data-flow-note="공방 관리자 키" style="--x:25;--y:2;--w:4;--h:2"><span class="step">8</span><div class="nm">엘리아스 외벽 은신 공방</div><div class="ic"><span class="chip auth">관리자 키</span><span class="chip echo">잔향</span><span class="chip cp">CP</span></div></div>
 
       <!-- 거리층: 성벽 안쪽이 선행 필수 경로 -->
-      <div id="act2-room-028" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:0;--y:4;--w:4;--h:3"><div class="nm">서부 외곽 회수로</div><div class="ic"><span>선택 탐사 · 터미너스 외부 설비</span></div></div>
+      <div id="act2-room-028" class="room outer optional" data-node-type="room" data-region="optional-west-yard" data-route="optional" data-requires="ability_wall_run_unlocked" style="--x:0;--y:4;--w:4;--h:3"><div class="nm">서부 외곽 회수로</div><div class="ic"><span class="chip opt">선택 탐사</span><span>터미너스 외부 설비</span></div></div>
       <div id="act2-room-006" class="room mid" data-node-type="room" style="--x:4;--y:4;--w:1;--h:3"><div class="nm">서부<br>성벽<br>관문</div><div class="ic"><span class="chip abl">외벽 잠금</span></div></div>
       <div id="act2-room-013" class="room mid" data-node-type="room" data-flow-order="1" data-flow-group="ACT2" data-flow-label="서부 내벽 승강장" data-flow-note="ACT2 시작" style="--x:5;--y:4;--w:2;--h:3"><span class="step">1</span><div class="nm">서부 내벽 화물 승강장</div><div class="ic"><span class="chip cp">CP</span><span>터미너스 직상</span></div></div>
       <div id="act2-room-012" class="room mid" data-node-type="room" style="--x:7;--y:4;--w:2;--h:3"><span class="step">2</span><div class="nm">서부 변두리 시장</div><div class="ic"><span>결정화 상인·배관 노출</span></div></div>
       <div id="act2-room-011" class="room core" data-node-type="room" style="--x:9;--y:4;--w:2;--h:3"><span class="step">3</span><div class="nm">공급 허브 지상부</div><div class="ic"><span class="chip cp">CP</span><span>상승 리프트</span></div></div>
-      <div id="act2-room-010" class="room core" data-node-type="room" data-trigger-requires="workshop_admin_key_acquired surface_supply_restored" data-reward="ability_overload_counter_unlocked" data-event="tower_foot_lock_seen tower_gatekeeper_defeated" data-flow-order="6" data-flow-group="ACT2" data-flow-label="메인 타워 수문장" data-flow-note="과부하 반격" style="--x:11;--y:4;--w:3;--h:3"><span class="step two">4·11</span><div class="nm">메인 타워 기슭·수문장</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip auth">관리자 키</span><span class="chip restore">공급 복구</span></div></div>
+      <div id="act2-room-010" class="room core" data-node-type="room" data-trigger-requires="workshop_admin_key_acquired surface_supply_restored" data-reward="ability_overload_counter_unlocked" data-reward-type="ability" data-reward-tier="progression" data-first-clear-reward="ability_overload_counter_unlocked" data-repeatable-reward="none" data-event="tower_foot_lock_seen tower_gatekeeper_defeated" data-flow-order="6" data-flow-group="ACT2" data-flow-label="메인 타워 수문장" data-flow-note="과부하 반격" style="--x:11;--y:4;--w:3;--h:3"><span class="step two">4·11</span><div class="nm">메인 타워 기슭·수문장</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip auth">관리자 키</span><span class="chip restore">공급 복구</span></div></div>
       <div id="act2-room-009" class="room core" data-node-type="room" data-flow-order="2" data-flow-group="ACT2" data-flow-label="중앙 잠금 목격" data-flow-note="대광장에서 동쪽 우회" style="--x:14;--y:4;--w:3;--h:3"><span class="step">5</span><div class="nm">중앙 대광장</div><div class="ic"><span class="chip cp">CP</span><span>결정화 군중·침묵 구간</span></div></div>
       <div id="act2-room-029" class="room core" data-node-type="room" style="--x:17;--y:4;--w:3;--h:3"><div class="nm">동부 중심 연결가</div><div class="ic"><span>북·남·동 타워 가도 표식</span></div></div>
       <div id="act2-room-007" class="room mid" data-node-type="room" style="--x:20;--y:4;--w:3;--h:2"><span class="step">6</span><div class="nm">동부 빈 집 지대</div><div class="ic"><span>인적 없는 완충지</span></div></div>
       <div id="act2-room-030" class="room mid compact" data-node-type="room" data-event="tique_disposal_route_observed" style="--x:20;--y:6;--w:3;--h:1"><div class="nm">도심 밀폐 폐기물 투입구</div><div class="ic"><span>청소 로봇 접근 · 지하 수거관으로 자동 이송</span></div></div>
-      <div id="act2-room-008" class="room mid" data-node-type="room" data-reward="memory_a_bond ability_wall_run_unlocked" data-event="flashback_elias_roof_mark" data-flow-order="3" data-flow-group="ACT2" data-flow-label="들개형 기계" data-flow-note="벽타기·기억 A" style="--x:23;--y:4;--w:2;--h:3"><span class="step">7</span><div class="nm">폐가 골목·들개형 기계</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A</span><span class="chip abl">벽타기</span></div></div>
+      <div id="act2-room-008" class="room mid" data-node-type="room" data-reward="memory_a_bond ability_wall_run_unlocked" data-reward-type="memory ability" data-reward-tier="progression" data-first-clear-reward="memory_a_bond ability_wall_run_unlocked" data-repeatable-reward="none" data-event="flashback_elias_roof_mark" data-flow-order="3" data-flow-group="ACT2" data-flow-label="들개형 기계" data-flow-note="벽타기·기억 A" style="--x:23;--y:4;--w:2;--h:3"><span class="step">7</span><div class="nm">폐가 골목·들개형 기계</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A</span><span class="chip abl">벽타기</span></div></div>
       <div id="act2-room-014" class="room mid" data-node-type="room" style="--x:25;--y:4;--w:1;--h:3"><div class="nm">동부<br>성벽<br>관문</div><div class="ic"><span class="chip abl">외벽 잠금</span></div></div>
-      <div id="act2-room-022" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" data-event="recycling_plant_observed" style="--x:26;--y:4;--w:2;--h:3"><div class="nm">외곽 재활용 처리장</div><div class="ic"><span>선택 탐사 · 림부스 자동 수거관과 분리</span></div></div>
-      <div id="act2-room-015" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:28;--y:5;--w:1;--h:2"><div class="nm">동부<br>황폐<br>가도</div></div>
+      <div id="act2-room-022" class="room outer optional" data-node-type="room" data-region="optional-recycling-plant" data-route="optional" data-requires="ability_wall_run_unlocked" data-reward="heart_core_fragment archive_record_recycling" data-reward-type="fragment record" data-reward-tier="major" data-first-clear-reward="heart_core_fragment archive_record_recycling" data-repeatable-reward="none" data-event="recycling_plant_observed" style="--x:26;--y:4;--w:2;--h:3"><div class="nm">외곽 재활용 처리장</div><div class="ic"><span class="chip hp">하트 코어 파편</span><span class="chip record">재활용 기록</span><span>림부스 수거관과 분리</span></div></div>
+      <div id="act2-room-015" class="room outer optional" data-node-type="room" data-region="optional-recycling-plant" data-route="optional" data-requires="ability_wall_run_unlocked" style="--x:28;--y:5;--w:1;--h:2"><div class="nm">동부<br>황폐<br>가도</div></div>
 
       <!-- 배관층 -->
       <div id="act2-room-016" class="room pipe" data-node-type="room" data-requires="surface_supply_restored" style="--x:5;--y:7;--w:2;--h:1"><div class="nm">승강장 배관 진입구</div></div>
       <div id="act2-room-017" class="room pipe" data-node-type="room" style="--x:7;--y:7;--w:2;--h:1"><div class="nm">서부 배관 간선</div></div>
-      <div id="act2-room-018" class="room pipe" data-node-type="room" data-reward="memory_b_duty" data-event="surface_supply_restored" data-flow-order="5" data-flow-group="ACT2" data-flow-label="정비 기계" data-flow-note="기억 B·공급 복구" style="--x:9;--y:7;--w:3;--h:3"><span class="step">10</span><div class="nm">공급 허브 심부</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B</span><span class="chip restore">공급 복구</span></div></div>
+      <div id="act2-room-018" class="room pipe" data-node-type="room" data-reward="memory_b_duty" data-reward-type="memory" data-reward-tier="progression" data-first-clear-reward="memory_b_duty" data-repeatable-reward="none" data-event="surface_supply_restored" data-flow-order="5" data-flow-group="ACT2" data-flow-label="정비 기계" data-flow-note="기억 B·공급 복구" style="--x:9;--y:7;--w:3;--h:3"><span class="step">10</span><div class="nm">공급 허브 심부</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B</span><span class="chip restore">공급 복구</span></div></div>
       <div id="act2-room-019" class="room warp" data-node-type="room" style="--x:12;--y:8;--w:4;--h:2"><span class="step">9</span><div class="nm">왜곡 구역</div><div class="ic"><span>방치 배관·압력 기믹</span></div></div>
       <div id="act2-room-020" class="room pipe" data-node-type="room" style="--x:16;--y:8;--w:5;--h:1"><div class="nm">동부 배관 간선</div></div>
       <div id="act2-room-021" class="room pipe" data-node-type="room" style="--x:21;--y:7;--w:2;--h:1"><div class="nm">동부 정비 수직구</div></div>
@@ -278,7 +278,7 @@
   </div>
 
   <div class="legend">
-    <span class="item"><span class="sw" style="background:var(--outer)"></span>외곽·인지 1</span><span class="item"><span class="sw" style="background:var(--mid)"></span>변두리·인지 1/2</span><span class="item"><span class="sw" style="background:var(--gold)"></span>중심·인지 1/4</span><span class="item"><span class="sw" style="background:var(--wall)"></span>원형 성벽</span><span class="item"><span class="chip abl" style="margin-right:5px">ABL</span>벽타기 이후</span><span class="item"><span class="chip lock" style="margin-right:5px">ACT3</span>타워 내부 진행으로 개방</span>
+    <span class="item"><span class="sw" style="background:var(--outer)"></span>외곽·인지 1</span><span class="item"><span class="sw" style="background:var(--mid)"></span>변두리·인지 1/2</span><span class="item"><span class="sw" style="background:var(--gold)"></span>중심·인지 1/4</span><span class="item"><span class="sw" style="background:var(--wall)"></span>원형 성벽</span><span class="item"><span class="chip abl" style="margin-right:5px">ABL</span>벽타기 이후</span><span class="item"><span class="chip hp" style="margin-right:5px">코어</span>체력 파편</span><span class="item"><span class="chip energy" style="margin-right:5px">용량</span>렌티움 게이지 파편</span><span class="item"><span class="chip lock" style="margin-right:5px">ACT3</span>타워 내부 진행으로 개방</span>
   </div>
 
   <section class="routes">

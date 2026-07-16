@@ -77,7 +77,7 @@
     if (room.querySelector(".chip.boss")) tags.add("boss");
     if (room.querySelector(".chip.mem, .chip.echo")) tags.add("memory");
     if (room.querySelector(".chip.cp")) tags.add("save");
-    if (room.dataset.reward || room.querySelector(".chip.trs, .chip.key, .chip.slot, .chip.abl, .chip.auth, .chip.restore")) tags.add("treasure");
+    if (room.dataset.reward || room.querySelector(".chip.trs, .chip.key, .chip.slot, .chip.abl, .chip.auth, .chip.restore, .chip.hp, .chip.energy, .chip.salvage, .chip.record")) tags.add("treasure");
     if (room.dataset.requires || room.querySelector(".chip.lock, .chip.lockG, .chip.lockD, .chip.unk")) tags.add("gate");
     return [...tags];
   }
@@ -89,7 +89,8 @@
       const tags = collectTags(room);
       room.dataset.nodeName = name;
       room.dataset.tags = tags.join(" ");
-      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")}`.toLocaleLowerCase("ko");
+      const rewardSearch = [room.dataset.rewardType, room.dataset.rewardTier, room.dataset.firstClearReward, room.dataset.repeatableReward, room.dataset.choiceGroup].filter(Boolean).join(" ");
+      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")} ${rewardSearch}`.toLocaleLowerCase("ko");
       room.tabIndex = 0;
       room.setAttribute("role", "button");
       room.setAttribute("aria-label", `${name} 상세 보기`);
@@ -282,6 +283,12 @@
       room.dataset.requires ? `필요 ${room.dataset.requires}` : "",
       room.dataset.triggerRequires ? `발동 ${room.dataset.triggerRequires}` : "",
       room.dataset.reward ? `보상 ${room.dataset.reward}` : "",
+      room.dataset.rewardType ? `보상 유형 ${room.dataset.rewardType}` : "",
+      room.dataset.rewardTier ? `보상 등급 ${room.dataset.rewardTier}` : "",
+      room.dataset.firstClearReward ? `최초 획득 ${room.dataset.firstClearReward}` : "",
+      room.dataset.repeatableReward && room.dataset.repeatableReward !== "none" ? `반복 획득 ${room.dataset.repeatableReward}` : "",
+      room.dataset.choiceGroup ? `선택 그룹 ${room.dataset.choiceGroup}` : "",
+      room.dataset.rewardState ? `보상 상태 ${room.dataset.rewardState}` : "",
       room.dataset.event ? `이벤트 ${room.dataset.event}` : "",
       `x ${point.x}`,
       `y ${point.y}`,
@@ -311,6 +318,11 @@
   function numberFromInline(value) {
     const number = Number.parseFloat(value);
     return Number.isFinite(number) ? number : 0;
+  }
+
+  function tokenList(value) {
+    if (!value || value === "none") return [];
+    return value.split(/\s+/).filter(Boolean);
   }
 
   function updateFilterState() {
@@ -366,7 +378,7 @@
 
   function exportData() {
     return {
-      schemaVersion: 1,
+      schemaVersion: 2,
       mapId: currentMap,
       title: document.title,
       exportedAt: new Date().toISOString(),
@@ -378,6 +390,14 @@
         requires: room.dataset.requires || null,
         triggerRequires: room.dataset.triggerRequires || null,
         reward: room.dataset.reward || null,
+        rewardProfile: {
+          types: tokenList(room.dataset.rewardType),
+          tier: room.dataset.rewardTier || null,
+          firstClear: tokenList(room.dataset.firstClearReward),
+          repeatable: tokenList(room.dataset.repeatableReward),
+          choiceGroup: room.dataset.choiceGroup || null,
+          state: room.dataset.rewardState || null
+        },
         event: room.dataset.event || null,
         text: room.textContent.replace(/\s+/g, " ").trim()
       })),

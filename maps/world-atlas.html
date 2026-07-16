@@ -154,7 +154,7 @@
 </style>
 <link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body data-map-id="world-atlas" data-map-version="15">
+<body data-map-id="world-atlas" data-map-version="16">
 <div class="wrap">
 
   <header>
@@ -223,7 +223,7 @@
     </div>
 
     <!-- ══ 동탑 (3시 · 반입) ══ -->
-    <div id="world-atlas-room-009" class="room east" data-node-type="room" data-requires="ability_overload_counter_unlocked" data-reward="bridge_power" data-unlocks="act3_east_tower_route" data-flow-order="2" data-flow-group="ACT3" data-flow-label="동탑 동력" data-flow-note="반격으로 릴레이 복구" style="--x:14.5;--y:6;--w:3;--h:2">
+    <div id="world-atlas-room-009" class="room east" data-node-type="room" data-requires="ability_overload_counter_unlocked" data-reward="bridge_power" data-reward-type="key" data-reward-tier="progression" data-first-clear-reward="bridge_power" data-repeatable-reward="none" data-unlocks="act3_east_tower_route" data-flow-order="2" data-flow-group="ACT3" data-flow-label="동탑 동력" data-flow-note="반격으로 릴레이 복구" style="--x:14.5;--y:6;--w:3;--h:2">
       <span class="step">3</span>
       <div class="nm">크레인 정상</div>
       <div class="ic"><span class="chip key">가교 동력</span></div>
@@ -238,7 +238,7 @@
     </div>
 
     <!-- ══ 서탑 (9시 · 방출) ══ -->
-    <div id="world-atlas-room-012" class="room west" data-node-type="room" data-reward="ability_air_dash_unlocked core_a" data-event="west_core_guardian_defeated south_tower_unlocked" data-unlocks="act3_west_tower_route" data-flow-order="3" data-flow-group="ACT3" data-flow-label="서탑 수문장" data-flow-note="공중 대시 · 코어 A" style="--x:3.5;--y:6;--w:3;--h:2">
+    <div id="world-atlas-room-012" class="room west" data-node-type="room" data-reward="ability_air_dash_unlocked core_a" data-reward-type="ability key" data-reward-tier="progression" data-first-clear-reward="ability_air_dash_unlocked core_a" data-repeatable-reward="none" data-event="west_core_guardian_defeated south_tower_unlocked" data-unlocks="act3_west_tower_route" data-flow-order="3" data-flow-group="ACT3" data-flow-label="서탑 수문장" data-flow-note="공중 대시 · 코어 A" style="--x:3.5;--y:6;--w:3;--h:2">
       <span class="step">5</span>
       <div class="nm">방출 노즐 상부 · 수문장</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip dash">공중 대시</span><span class="chip key">권한 코어 A</span><span class="chip auth">남탑 해금</span></div>
@@ -249,7 +249,7 @@
     </div>
 
     <!-- ══ 북탑 (12시 · 기록, 깊이축) ══ -->
-    <div id="world-atlas-room-014" class="room depthtw" data-node-type="room" data-requires="core_b" data-reward="audit_signature" data-event="memories_recontextualized rul_003_revealed" data-unlocks="act3_north_tower_route" data-flow-order="5" data-flow-group="ACT3" data-flow-label="북탑 기록" data-flow-note="기억 재해석 · 감사 서명" style="--x:0.5;--y:4;--w:2;--h:2">
+    <div id="world-atlas-room-014" class="room depthtw" data-node-type="room" data-requires="core_b" data-reward="audit_signature" data-reward-type="key" data-reward-tier="progression" data-first-clear-reward="audit_signature" data-repeatable-reward="none" data-event="memories_recontextualized rul_003_revealed" data-unlocks="act3_north_tower_route" data-flow-order="5" data-flow-group="ACT3" data-flow-label="북탑 기록" data-flow-note="기억 재해석 · 감사 서명" style="--x:0.5;--y:4;--w:2;--h:2">
       <span class="step">7</span>
       <div class="nm">기록 열람층</div>
       <div class="ic"><span class="chip echo">기억 재해석</span><span class="chip auth">감사 서명</span></div>
@@ -260,7 +260,7 @@
     </div>
 
     <!-- ══ 남탑 (6시 · 회수, 깊이축) ══ -->
-    <div id="world-atlas-room-016" class="room depthtw" data-node-type="room" data-requires="core_a ability_air_dash_unlocked" data-reward="core_b" data-event="south_core_guardian_defeated north_tower_unlocked" data-unlocks="act3_south_tower_route" data-flow-order="4" data-flow-group="ACT3" data-flow-label="남탑 수문장" data-flow-note="코어 B" style="--x:18.5;--y:4;--w:2;--h:2">
+    <div id="world-atlas-room-016" class="room depthtw" data-node-type="room" data-requires="core_a ability_air_dash_unlocked" data-reward="core_b" data-reward-type="key" data-reward-tier="progression" data-first-clear-reward="core_b" data-repeatable-reward="none" data-event="south_core_guardian_defeated north_tower_unlocked" data-unlocks="act3_south_tower_route" data-flow-order="4" data-flow-group="ACT3" data-flow-label="남탑 수문장" data-flow-note="코어 B" style="--x:18.5;--y:4;--w:2;--h:2">
       <span class="step">6</span>
       <div class="nm">회수 계통 제어 · 수문장</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip dash">공중 대시</span><span class="chip key">권한 코어 B</span><span class="chip auth">북탑 해금</span></div>
@@ -305,8 +305,8 @@
     <div id="world-atlas-room-018" class="room term" data-node-type="room" style="--x:3;--y:22;--w:2;--h:4">
       <div class="nm">서부 내벽<br>화물 승강관</div>
     </div>
-    <div id="world-atlas-link-007" class="lk ver waste-line" data-node-type="link" style="--dx:18.5;--dy:21;--len:6"><span class="tag side">도심 투입구 → 지하 자동 수거관</span></div>
-    <div id="world-atlas-link-015" class="lk hor waste-line" data-node-type="link" style="--dx:18.5;--dy:27;--len:2.5"><span class="tag">수거관 종점 → 림부스</span></div>
+    <div id="world-atlas-link-007" class="lk ver waste-line" data-node-type="link" style="--dx:18.5;--dy:21;--len:7"><span class="tag side">도심 투입구 → 지하 자동 수거관</span></div>
+    <div id="world-atlas-link-015" class="lk hor waste-line" data-node-type="link" style="--dx:18.5;--dy:28;--len:2.5"><span class="tag">수거관 종점 → 림부스</span></div>
     <div id="world-atlas-link-009" class="lk ver gd" data-node-type="link" style="--dx:4;--dy:21;--len:5"><span class="tag side">서부 성벽 내장 승강축 ↓</span></div>
     <div id="world-atlas-link-014" class="lk hor" data-node-type="link" data-requires="terminus_guardian_defeated" style="--dx:2;--dy:26;--len:1"><span class="tag">성벽 내장 인양관</span></div>
 
@@ -338,7 +338,7 @@
     </div>
 
     <!-- ══ 성벽 상부·지붕층 ══ -->
-    <div id="world-atlas-room-020" class="room outer compact" data-node-type="room" data-requires="ability_wall_run_unlocked" data-reward="workshop_admin_key_acquired" data-event="memory_a_echo_resolved" data-flow-order="4" data-flow-group="ACT2" data-flow-label="엘리아스 공방" data-flow-note="공방 관리자 키" style="--x:21;--y:17;--w:4;--h:1">
+    <div id="world-atlas-room-020" class="room outer compact" data-node-type="room" data-requires="ability_wall_run_unlocked" data-reward="workshop_admin_key_acquired" data-reward-type="key" data-reward-tier="progression" data-first-clear-reward="workshop_admin_key_acquired" data-repeatable-reward="none" data-event="memory_a_echo_resolved" data-flow-order="4" data-flow-group="ACT2" data-flow-label="엘리아스 공방" data-flow-note="공방 관리자 키" style="--x:21;--y:17;--w:4;--h:1">
       <span class="step">8</span>
       <div class="nm">엘리아스 외벽 은신 공방</div>
       <div class="ic"><span class="chip auth" aria-label="공방 관리자 키" title="공방 관리자 키">관리자 키</span><span class="chip echo" aria-label="기억 잔향" title="기억 잔향">잔향</span><span class="chip cp">CP</span></div>
@@ -353,9 +353,9 @@
     </div>
 
     <!-- ══ 거리층 ══ -->
-    <div id="world-atlas-room-023" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" style="--x:0;--y:19;--w:2;--h:2">
+    <div id="world-atlas-room-023" class="room outer optional" data-node-type="room" data-region="optional-west-yard" data-route="optional" data-requires="ability_wall_run_unlocked" data-reward="lentium_capacity_fragment archive_record_cargo" data-reward-type="fragment record" data-reward-tier="major" data-first-clear-reward="lentium_capacity_fragment archive_record_cargo" data-repeatable-reward="none" style="--x:0;--y:19;--w:2;--h:2">
       <div class="nm">서부 외벽 화물 야적장</div>
-      <div class="ic"><span style="color:var(--sub)">벽타기 후 선택 탐사</span></div>
+      <div class="ic"><span class="chip energy">용량 파편</span><span class="chip record">화물 기록</span></div>
     </div>
     <div id="world-atlas-room-024" class="room mid" data-node-type="room" style="--x:2;--y:18;--w:1;--h:3">
       <div class="nm">서부<br>성벽<br>관문</div>
@@ -369,7 +369,7 @@
     <div id="world-atlas-room-029" class="room core" data-node-type="room" style="--x:7;--y:18;--w:2;--h:3">
       <span class="step">3</span><div class="nm">공급 허브 지상부</div><div class="ic"><span>상승 리프트</span></div>
     </div>
-    <div id="world-atlas-room-028" class="room core" data-node-type="room" data-trigger-requires="workshop_admin_key_acquired surface_supply_restored" data-reward="ability_overload_counter_unlocked" data-event="tower_foot_lock_seen tower_gatekeeper_defeated" data-flow-order="6" data-flow-group="ACT2" data-flow-label="메인 타워 수문장" data-flow-note="과부하 반격" style="--x:9;--y:18;--w:3;--h:3">
+    <div id="world-atlas-room-028" class="room core" data-node-type="room" data-trigger-requires="workshop_admin_key_acquired surface_supply_restored" data-reward="ability_overload_counter_unlocked" data-reward-type="ability" data-reward-tier="progression" data-first-clear-reward="ability_overload_counter_unlocked" data-repeatable-reward="none" data-event="tower_foot_lock_seen tower_gatekeeper_defeated" data-flow-order="6" data-flow-group="ACT2" data-flow-label="메인 타워 수문장" data-flow-note="과부하 반격" style="--x:9;--y:18;--w:3;--h:3">
       <span class="step two">4·11</span><div class="nm">메인 타워 기슭·수문장</div><div class="ic"><span class="chip boss">BOSS</span><span class="chip counter">과부하 반격</span></div>
     </div>
     <div id="world-atlas-room-027" class="room core" data-node-type="room" data-flow-order="2" data-flow-group="ACT2" data-flow-label="중앙 잠금 목격" data-flow-note="대광장에서 동쪽 우회" style="--x:12;--y:18;--w:3;--h:3">
@@ -383,7 +383,7 @@
       <div class="nm">동부 빈 집 지대</div>
       <div class="ic"><span style="color:var(--sub)">인적 없는 완충지 · 도심 밀폐 폐기물 투입구</span></div>
     </div>
-    <div id="world-atlas-room-026" class="room mid" data-node-type="room" data-reward="memory_a_bond ability_wall_run_unlocked" data-event="flashback_elias_roof_mark" data-flow-order="3" data-flow-group="ACT2" data-flow-label="들개형 기계" data-flow-note="벽타기 · 기억 A" style="--x:17;--y:20;--w:2;--h:1">
+    <div id="world-atlas-room-026" class="room mid" data-node-type="room" data-reward="memory_a_bond ability_wall_run_unlocked" data-reward-type="memory ability" data-reward-tier="progression" data-first-clear-reward="memory_a_bond ability_wall_run_unlocked" data-repeatable-reward="none" data-event="flashback_elias_roof_mark" data-flow-order="3" data-flow-group="ACT2" data-flow-label="들개형 기계" data-flow-note="벽타기 · 기억 A" style="--x:17;--y:20;--w:2;--h:1">
       <span class="step">7</span>
       <div class="nm">폐가 골목·들개형 기계</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억A·유대</span><span class="chip abl">벽타기</span><span class="chip echo">공방 표식</span></div>
@@ -391,9 +391,9 @@
     <div id="world-atlas-room-032" class="room mid" data-node-type="room" style="--x:19;--y:18;--w:1;--h:3">
       <div class="nm">동부<br>성벽<br>관문</div>
     </div>
-    <div id="world-atlas-room-073" class="room outer" data-node-type="room" data-requires="ability_wall_run_unlocked" data-event="recycling_plant_observed" style="--x:20;--y:18;--w:3;--h:3">
+    <div id="world-atlas-room-073" class="room outer optional" data-node-type="room" data-region="optional-recycling-plant" data-route="optional" data-requires="ability_wall_run_unlocked" data-reward="heart_core_fragment archive_record_recycling" data-reward-type="fragment record" data-reward-tier="major" data-first-clear-reward="heart_core_fragment archive_record_recycling" data-repeatable-reward="none" data-event="recycling_plant_observed" style="--x:20;--y:18;--w:3;--h:3">
       <div class="nm">외곽 재활용 처리장</div>
-      <div class="ic"><span style="color:var(--sub)">벽타기 후 선택 탐사 · 림부스 자동 수거관과 분리</span></div>
+      <div class="ic"><span class="chip hp">하트 코어 파편</span><span class="chip record">재활용 기록</span><span style="color:var(--sub)">림부스 수거관과 분리</span></div>
     </div>
     <div id="world-atlas-room-033" class="room outer" data-node-type="room" style="--x:23;--y:19;--w:2;--h:2">
       <div class="nm">황폐 가도 동</div>
@@ -408,7 +408,7 @@
     <div id="world-atlas-room-035" class="room pipe" data-node-type="room" style="--x:5;--y:21;--w:2;--h:1">
       <div class="nm">서부 배관 간선</div>
     </div>
-    <div id="world-atlas-room-036" class="room pipe" data-node-type="room" data-reward="memory_b_duty" data-event="surface_supply_restored" data-flow-order="5" data-flow-group="ACT2" data-flow-label="정비 기계" data-flow-note="기억 B · 공급 복구" style="--x:7;--y:21;--w:3;--h:3">
+    <div id="world-atlas-room-036" class="room pipe" data-node-type="room" data-reward="memory_b_duty" data-reward-type="memory" data-reward-tier="progression" data-first-clear-reward="memory_b_duty" data-repeatable-reward="none" data-event="surface_supply_restored" data-flow-order="5" data-flow-group="ACT2" data-flow-label="정비 기계" data-flow-note="기억 B · 공급 복구" style="--x:7;--y:21;--w:3;--h:3">
       <span class="step">10</span>
       <div class="nm">공급 허브 심부</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem">기억B·근무/의무</span><span class="chip restore">공급 복구</span></div>
@@ -471,44 +471,48 @@
     <div class="band" style="top:calc(37*var(--u));height:calc(7*var(--u))"><span class="bl" style="left:calc(2*var(--u) + 3px)">B25</span></div>
 
     <!-- ══ 림부스 ══ -->
-    <div id="world-atlas-room-040" class="room limbus compact" data-node-type="room" style="--x:21;--y:27;--w:2;--h:1">
+    <div id="world-atlas-room-040" class="room limbus compact" data-node-type="room" style="--x:21;--y:28;--w:2;--h:1">
       <span class="step">1</span>
       <div class="nm">추락 지점</div>
       <div class="ic"><span style="color:var(--sub)">각성 · 도심 자동 수거관 종점</span></div>
     </div>
-    <div id="world-atlas-room-041" class="room limbus compact" data-node-type="room" style="--x:19;--y:27;--w:2;--h:1">
+    <div id="world-atlas-room-041" class="room limbus compact" data-node-type="room" style="--x:19;--y:28;--w:2;--h:1">
       <div class="nm">림부스 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-006</span></div>
       <div class="ic"><span style="color:var(--sub)">고철 평원 · 이동</span></div>
     </div>
+    <div id="world-atlas-room-096" class="room limbus compact optional" data-node-type="room" data-route="optional" data-reward="starter_mod_choice" data-reward-type="mod" data-reward-tier="major" data-first-clear-reward="starter_mod_choice" data-repeatable-reward="none" data-choice-group="act1_starter_mod" data-reward-state="unidentified_until_morbi_repair" style="--x:23;--y:28;--w:2;--h:1">
+      <div class="nm">부품 더미</div>
+      <div class="ic"><span class="chip trs">첫 MOD 3택1</span><span style="color:var(--sub)">수리 전 정체불명</span></div>
+    </div>
 
     <!-- ══ 신규 선택 지역: 구 폐기물 선별장 ══ -->
-    <div id="world-atlas-room-074" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-requires="ability_hook_unlocked" style="--x:22;--y:28;--w:2;--h:2">
+    <div id="world-atlas-room-074" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-requires="ability_hook_unlocked" style="--x:22;--y:29;--w:2;--h:2">
       <div class="nm">선별장 투입구</div>
       <div class="ic"><span class="chip opt">선택 지역</span><span class="chip lockG">G</span><span style="color:var(--sub)">재방문 입구</span></div>
     </div>
-    <div id="world-atlas-room-075" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" style="--x:19;--y:29;--w:3;--h:1">
+    <div id="world-atlas-room-075" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" style="--x:19;--y:30;--w:3;--h:1">
       <div class="nm">압축 벨트</div>
       <div class="ic"><span style="color:var(--sub)">파쇄 롤러 · 이동 발판</span></div>
     </div>
-    <div id="world-atlas-room-076" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-event="waste_sorter_restarted" style="--x:19;--y:30;--w:3;--h:2">
+    <div id="world-atlas-room-076" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-event="waste_sorter_restarted" style="--x:19;--y:31;--w:3;--h:2">
       <div class="nm">자력 분류실</div>
       <div class="ic"><span style="color:var(--sub)">극성 전환 퍼즐</span></div>
     </div>
-    <div id="world-atlas-room-077" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-reward="mod_material_bundle" style="--x:22;--y:30;--w:2;--h:2">
+    <div id="world-atlas-room-077" class="room limbus optional" data-node-type="room" data-region="optional-waste-sorter" data-route="optional" data-reward="waste_sorter_fixed_mod salvage_parts_large" data-reward-type="mod currency" data-reward-tier="major" data-first-clear-reward="waste_sorter_fixed_mod salvage_parts_large" data-repeatable-reward="none" style="--x:22;--y:31;--w:2;--h:2">
       <div class="nm">회수 승강기</div>
-      <div class="ic"><span class="chip trs">MOD 재료</span><span style="color:var(--sub)">입구 숏컷 복구</span></div>
+      <div class="ic"><span class="chip trs">고정 MOD</span><span class="chip salvage">고철 부품</span><span style="color:var(--sub)">입구 숏컷 복구</span></div>
     </div>
-    <div id="world-atlas-room-042" class="room caligo compact optional" data-node-type="room" data-route="optional" data-requires="morbi_repair_complete" data-reward="salvage_material_cache" data-event="morbi_salvage_presented" style="--x:3;--y:30;--w:2;--h:1">
+    <div id="world-atlas-room-042" class="room caligo compact optional" data-node-type="room" data-route="optional" data-requires="morbi_repair_complete" data-reward="salvage_parts_large" data-reward-type="currency" data-reward-tier="minor" data-first-clear-reward="salvage_parts_large" data-repeatable-reward="none" data-event="morbi_salvage_presented" style="--x:3;--y:30;--w:2;--h:1">
       <div class="nm">공방 부품고 A</div>
-      <div class="ic"><span class="chip opt">선택</span><span class="chip trs">개조 재료</span></div>
+      <div class="ic"><span class="chip opt">선택</span><span class="chip salvage">고철 부품</span></div>
     </div>
-    <div id="world-atlas-room-043" class="room term optional" data-node-type="room" data-route="optional" data-reward="module_slot_plus_1" data-requires="terminus_guardian_defeated ability_double_jump_unlocked" style="--x:2;--y:27;--w:1;--h:1">
+    <div id="world-atlas-room-043" class="room term optional" data-node-type="room" data-route="optional" data-reward="module_slot_plus_1" data-reward-type="slot" data-reward-tier="major" data-first-clear-reward="module_slot_plus_1" data-repeatable-reward="none" data-requires="terminus_guardian_defeated ability_double_jump_unlocked" style="--x:2;--y:27;--w:1;--h:1">
       <div class="nm">상단 정비 선반</div>
       <div class="ic"><span class="chip opt">선택</span><span class="chip slot">MOD 슬롯 +1</span><span class="chip lockD">D</span></div>
     </div>
 
     <!-- ══ 다리 ══ -->
-    <div id="world-atlas-room-044" class="room limbus compact" data-node-type="room" data-event="pre_repair_collapse morbi_rescue_triggered" style="--x:5;--y:27;--w:14;--h:1;--rc:#7a828f">
+    <div id="world-atlas-room-044" class="room limbus compact" data-node-type="room" data-event="pre_repair_collapse morbi_rescue_triggered" style="--x:8;--y:28;--w:11;--h:1;--rc:#7a828f">
       <span class="step">2</span>
       <div class="nm">림부스-칼리고 교량 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-011</span></div>
       <div class="ic"><span style="color:var(--sub)">회피·밀치기 → 쥐떼 추격 → 쓰러짐 → 모르비 구조</span></div>
@@ -548,9 +552,9 @@
       <div class="nm">침수 밸브실</div>
       <div class="ic"><span style="color:var(--sub)">수위 전환</span></div>
     </div>
-    <div id="world-atlas-room-081" class="room water optional" data-node-type="room" data-region="optional-aqueduct" data-route="optional" data-reward="mod_choice_a" data-event="aqueduct_valves_balanced" style="--x:15;--y:30;--w:2;--h:2">
+    <div id="world-atlas-room-081" class="room water optional" data-node-type="room" data-region="optional-aqueduct" data-route="optional" data-reward="mod_choice_utility" data-reward-type="mod" data-reward-tier="major" data-first-clear-reward="mod_choice_utility" data-repeatable-reward="none" data-choice-group="act1_aqueduct" data-event="aqueduct_valves_balanced" style="--x:15;--y:30;--w:2;--h:2">
       <div class="nm">폐쇄 제어실</div>
-      <div class="ic"><span class="chip trs">MOD 3택1</span><span style="color:var(--sub)">송수 기록</span></div>
+      <div class="ic"><span class="chip trs">유틸 MOD 3택1</span><span class="chip record">송수 기록</span></div>
     </div>
     <div id="world-atlas-room-082" class="room water optional" data-node-type="room" data-region="optional-aqueduct" data-route="optional" style="--x:13;--y:30;--w:2;--h:2">
       <div class="nm">배수 우회로</div>
@@ -592,14 +596,14 @@
       <div class="nm">펌프실</div>
       <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">밸브 퍼즐 · 렌토 직전</span></div>
     </div>
-    <div id="world-atlas-room-059" class="room water" data-node-type="room" data-event="rento_defeated water_treatment_restarted" data-reward="ability_hook_unlocked" data-flow-order="1" data-flow-group="ACT1" data-flow-label="렌토" data-flow-note="갈고리" style="--x:4;--y:34;--w:3;--h:1">
+    <div id="world-atlas-room-059" class="room water" data-node-type="room" data-event="rento_defeated water_treatment_restarted" data-reward="ability_hook_unlocked" data-reward-type="ability" data-reward-tier="progression" data-first-clear-reward="ability_hook_unlocked" data-repeatable-reward="none" data-flow-order="1" data-flow-group="ACT1" data-flow-label="렌토" data-flow-note="갈고리" style="--x:4;--y:34;--w:3;--h:1">
       <span class="step">5</span>
       <div class="nm">중앙 정수조 — 렌토</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem" style="border-color:var(--teal)">→갈고리</span><span style="color:var(--sub)">내부 둥지 · 시설 정지</span></div>
     </div>
-    <div id="world-atlas-room-060" class="room water optional" data-node-type="room" data-route="optional" data-requires="ability_hook_unlocked" data-reward="intake_filter_mod" style="--x:7;--y:34;--w:1;--h:1">
+    <div id="world-atlas-room-060" class="room water optional" data-node-type="room" data-route="optional" data-requires="ability_hook_unlocked" data-reward="lentium_capacity_fragment" data-reward-type="fragment" data-reward-tier="standard" data-first-clear-reward="lentium_capacity_fragment" data-repeatable-reward="none" style="--x:7;--y:34;--w:1;--h:1">
       <div class="nm">취수구 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">EDG-013</span></div>
-      <div class="ic"><span class="chip opt">선택</span><span class="chip trs">MOD</span><span class="chip lockG">G</span></div>
+      <div class="ic"><span class="chip energy">용량 파편</span><span class="chip lockG">G</span></div>
     </div>
 
     <!-- ══ B24 하강 ══ -->
@@ -607,9 +611,9 @@
       <div class="nm">배수<br>수직갱</div>
       <div class="ic"><span style="color:var(--sub)">수위 흔적</span></div>
     </div>
-    <div id="world-atlas-room-062" class="room b24 optional" data-node-type="room" data-route="optional" data-reward="golden_crystal_fragment" style="--x:9;--y:36;--w:3;--h:1">
+    <div id="world-atlas-room-062" class="room b24 optional" data-node-type="room" data-route="optional" data-reward="heart_core_fragment unidentified_crystal_trace" data-reward-type="fragment record" data-reward-tier="standard" data-first-clear-reward="heart_core_fragment unidentified_crystal_trace" data-repeatable-reward="none" style="--x:9;--y:36;--w:3;--h:1">
       <div class="nm">진흙 동굴</div>
-      <div class="ic"><span class="chip opt">선택</span><span style="color:var(--gold)">황금 결정 파편</span></div>
+      <div class="ic"><span class="chip hp">하트 코어 파편</span><span class="chip record">정체불명 결정 흔적</span></div>
     </div>
 
     <!-- ══ 지하심층 ══ -->
@@ -621,12 +625,12 @@
       <div class="nm">흔적 지대</div>
       <div class="ic"><span style="color:var(--sub)">끌린 자국 · 사냥감 잔해 (환경 예고)</span></div>
     </div>
-    <div id="world-atlas-room-065" class="room deep" data-node-type="room" data-reward="ability_double_jump_unlocked" data-event="hunter_defeated" data-flow-order="2" data-flow-group="ACT1" data-flow-label="지하 사냥꾼" data-flow-note="더블점프" style="--x:4;--y:37;--w:2;--h:2">
+    <div id="world-atlas-room-065" class="room deep" data-node-type="room" data-reward="ability_double_jump_unlocked" data-reward-type="ability" data-reward-tier="progression" data-first-clear-reward="ability_double_jump_unlocked" data-repeatable-reward="none" data-event="hunter_defeated" data-flow-order="2" data-flow-group="ACT1" data-flow-label="지하 사냥꾼" data-flow-note="더블점프" style="--x:4;--y:37;--w:2;--h:2">
       <span class="step">8</span>
       <div class="nm">사냥꾼 둥지</div>
       <div class="ic"><span class="chip boss">BOSS</span><span class="chip mem" style="border-color:var(--teal)">→더블점프</span></div>
     </div>
-    <div id="world-atlas-room-066" class="room deep" data-node-type="room" data-requires="hunter_defeated" data-reward="memory_02_collected" style="--x:4;--y:39;--w:2;--h:1">
+    <div id="world-atlas-room-066" class="room deep" data-node-type="room" data-requires="hunter_defeated" data-reward="memory_02_collected" data-reward-type="memory" data-reward-tier="progression" data-first-clear-reward="memory_02_collected" data-repeatable-reward="none" style="--x:4;--y:39;--w:2;--h:1">
       <div class="nm">기억 회수실</div>
       <div class="ic"><span class="chip mem">기억②</span><span class="chip lockD">D 인양로</span></div>
     </div>
@@ -636,10 +640,10 @@
       <div class="ic"><span class="chip lockD">D→</span></div>
     </div>
 
-    <!-- ══ 신규 선택 지역: 폐쇄 굴착지 ══ -->
+    <!-- ══ 신규 선택 지역: 심층 굴착지 ══ -->
     <div id="world-atlas-room-084" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" data-requires="ability_double_jump_unlocked" style="--x:13;--y:37;--w:2;--h:1">
-      <div class="nm">봉쇄 갱문</div>
-      <div class="ic"><span class="chip opt">선택 지역</span><span class="chip lockD">D</span></div>
+      <div class="nm">높은 갱구</div>
+      <div class="ic"><span class="chip opt">선택 지역</span><span class="chip lockD">D↑</span></div>
     </div>
     <div id="world-atlas-room-085" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" style="--x:15;--y:37;--w:3;--h:2">
       <div class="nm">천공기 잔해</div>
@@ -649,9 +653,9 @@
       <div class="nm">붕괴 채굴 갱도</div>
       <div class="ic"><span style="color:var(--sub)">정예 기계 · 붕괴 발판</span></div>
     </div>
-    <div id="world-atlas-room-087" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" data-reward="mod_choice_c" style="--x:21;--y:39;--w:3;--h:2">
-      <div class="nm">폐광 보급고</div>
-      <div class="ic"><span class="chip trs">MOD 3택1</span><span style="color:var(--sub)">굴착 장비 기록</span></div>
+    <div id="world-atlas-room-087" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" data-reward="mod_choice_combat" data-reward-type="mod" data-reward-tier="major" data-first-clear-reward="mod_choice_combat" data-repeatable-reward="none" data-choice-group="act1_dig_site" style="--x:21;--y:39;--w:3;--h:2">
+      <div class="nm">굴착 보급고</div>
+      <div class="ic"><span class="chip trs">전투 MOD 3택1</span><span class="chip record">굴착 장비 기록</span></div>
     </div>
     <div id="world-atlas-room-088" class="room deep optional" data-node-type="room" data-region="optional-dig-site" data-route="optional" style="--x:15;--y:40;--w:6;--h:1">
       <div class="nm">광차 회차선</div>
@@ -697,11 +701,12 @@
 
     <!-- ══ 문 (연결부) ══ -->
     <!-- 림부스/다리 -->
-    <i id="world-atlas-door-037" class="d h" data-node-type="door" style="--dx:21;--dy:27.5"></i>
+    <i id="world-atlas-door-037" class="d h" data-node-type="door" style="--dx:21;--dy:28.5"></i>
+    <i id="world-atlas-door-098" class="d h" data-node-type="door" data-from="world-atlas-room-040" data-to="world-atlas-room-096" style="--dx:23;--dy:28.5" aria-label="추락 지점에서 초반 림부스 부품 더미로 진입"></i>
     <i id="world-atlas-door-038" class="d v gate" data-node-type="door" data-from="world-atlas-room-049" data-to="world-atlas-room-042" data-requires="morbi_repair_complete" style="--dx:4.5;--dy:30" aria-label="모르비의 수리 완료 후 정화수 저장소 아래 공방 부품고 개방"></i>
-    <i id="world-atlas-door-039" class="d h" data-node-type="door" style="--dx:19;--dy:27.5"></i>
+    <i id="world-atlas-door-039" class="d h" data-node-type="door" style="--dx:19;--dy:28.5"></i>
     <!-- 칼리고 -->
-    <i id="world-atlas-door-042" class="d v" data-node-type="door" style="--dx:7.5;--dy:28"></i>
+    <i id="world-atlas-door-042" class="d h" data-node-type="door" style="--dx:8;--dy:28.5"></i>
     <i id="world-atlas-door-043" class="d h" data-node-type="door" style="--dx:7;--dy:28.5"></i>
     <i id="world-atlas-door-044" class="d v" data-node-type="door" style="--dx:6;--dy:29"></i>
     <i id="world-atlas-door-045" class="d v" data-node-type="door" style="--dx:4.5;--dy:29"></i>
@@ -737,11 +742,11 @@
     <i id="world-atlas-door-071" class="d h gate" data-node-type="door" data-from="world-atlas-room-066" data-to="world-atlas-room-071" data-requires="ability_double_jump_unlocked memory_02_collected" data-one-way="true" data-unlocks="hunter_terminus_shortcut" style="--dx:2;--dy:39.5" aria-label="기억② 회수 후 짧은 폐쇄 인양로를 건너 배수 점검 갱도 하단으로 진입"></i>
 
     <!-- 신규 선택 지역 연결: 구 폐기물 선별장 -->
-    <i id="world-atlas-door-073" class="d v gate" data-node-type="door" data-from="world-atlas-room-040" data-to="world-atlas-room-074" data-requires="ability_hook_unlocked" style="--dx:22.5;--dy:28" aria-label="갈고리 획득 후 추락 지점 아래 구 폐기물 선별장 진입"></i>
-    <i id="world-atlas-door-074" class="d h" data-node-type="door" data-from="world-atlas-room-074" data-to="world-atlas-room-075" style="--dx:22;--dy:29.5"></i>
-    <i id="world-atlas-door-075" class="d v" data-node-type="door" data-from="world-atlas-room-075" data-to="world-atlas-room-076" style="--dx:20.5;--dy:30"></i>
-    <i id="world-atlas-door-076" class="d h" data-node-type="door" data-from="world-atlas-room-076" data-to="world-atlas-room-077" style="--dx:22;--dy:31"></i>
-    <i id="world-atlas-door-077" class="d v gate" data-node-type="door" data-from="world-atlas-room-077" data-to="world-atlas-room-074" data-requires="waste_sorter_restarted" data-unlocks="waste_sorter_lift_shortcut" style="--dx:23;--dy:30" aria-label="자력 분류실 재가동 후 회수 승강기와 입구 사이 숏컷 개방"></i>
+    <i id="world-atlas-door-073" class="d v gate" data-node-type="door" data-from="world-atlas-room-040" data-to="world-atlas-room-074" data-requires="ability_hook_unlocked" style="--dx:22.5;--dy:29" aria-label="갈고리 획득 후 추락 지점 아래 구 폐기물 선별장 진입"></i>
+    <i id="world-atlas-door-074" class="d h" data-node-type="door" data-from="world-atlas-room-074" data-to="world-atlas-room-075" style="--dx:22;--dy:30.5"></i>
+    <i id="world-atlas-door-075" class="d v" data-node-type="door" data-from="world-atlas-room-075" data-to="world-atlas-room-076" style="--dx:20.5;--dy:31"></i>
+    <i id="world-atlas-door-076" class="d h" data-node-type="door" data-from="world-atlas-room-076" data-to="world-atlas-room-077" style="--dx:22;--dy:32"></i>
+    <i id="world-atlas-door-077" class="d v gate" data-node-type="door" data-from="world-atlas-room-077" data-to="world-atlas-room-074" data-requires="waste_sorter_restarted" data-unlocks="waste_sorter_lift_shortcut" style="--dx:23;--dy:31" aria-label="자력 분류실 재가동 후 회수 승강기와 입구 사이 숏컷 개방"></i>
     <!-- 신규 선택 지역 연결: 폐쇄 송수로 -->
     <i id="world-atlas-door-078" class="d h gate" data-node-type="door" data-from="world-atlas-room-051" data-to="world-atlas-room-078" data-requires="ability_hook_unlocked" style="--dx:11;--dy:32.5" aria-label="갈고리 획득 후 교차로 대공동 동쪽의 폐쇄 송수로 진입"></i>
     <i id="world-atlas-door-079" class="d h" data-node-type="door" data-from="world-atlas-room-078" data-to="world-atlas-room-079" style="--dx:13;--dy:32.5"></i>
@@ -750,8 +755,8 @@
     <i id="world-atlas-door-082" class="d h" data-node-type="door" data-from="world-atlas-room-081" data-to="world-atlas-room-082" style="--dx:15;--dy:31"></i>
     <i id="world-atlas-door-084" class="d h" data-node-type="door" data-from="world-atlas-room-082" data-to="world-atlas-room-083" style="--dx:13;--dy:31"></i>
     <i id="world-atlas-door-085" class="d v gate" data-node-type="door" data-from="world-atlas-room-083" data-to="world-atlas-room-078" data-requires="aqueduct_valves_balanced" data-unlocks="aqueduct_loop_shortcut" style="--dx:12;--dy:32" aria-label="밸브 균형을 맞춘 뒤 역류 수문을 열어 송수로 입구로 복귀"></i>
-    <!-- 신규 선택 지역 연결: 폐쇄 굴착지 -->
-    <i id="world-atlas-door-086" class="d h gate" data-node-type="door" data-from="world-atlas-room-090" data-to="world-atlas-room-084" data-requires="ability_double_jump_unlocked" style="--dx:13;--dy:37.5" aria-label="더블점프 획득 후 하부 수문의 높은 봉쇄 갱문을 넘어 폐쇄 굴착지 진입"></i>
+    <!-- 신규 선택 지역 연결: 심층 굴착지. 문이 아니라 높은 지형으로 더블점프 요구 -->
+    <i id="world-atlas-door-086" class="d h" data-node-type="door" data-from="world-atlas-room-090" data-to="world-atlas-room-084" data-requires="ability_double_jump_unlocked" style="--dx:13;--dy:37.5" aria-label="더블점프 획득 후 하부 수문 동쪽의 높은 갱구에 올라 심층 굴착지 진입"></i>
     <i id="world-atlas-door-087" class="d h" data-node-type="door" data-from="world-atlas-room-084" data-to="world-atlas-room-085" style="--dx:15;--dy:37.5"></i>
     <i id="world-atlas-door-088" class="d h" data-node-type="door" data-from="world-atlas-room-085" data-to="world-atlas-room-086" style="--dx:18;--dy:38.5"></i>
     <i id="world-atlas-door-089" class="d h" data-node-type="door" data-from="world-atlas-room-086" data-to="world-atlas-room-087" style="--dx:21;--dy:39.5"></i>
@@ -778,6 +783,9 @@
     <span class="item"><span class="sw" style="background:var(--sewage)"></span>오수 계통</span>
     <span class="item"><span class="sw" style="background:var(--purple)"></span>방치 배관(왜곡)</span>
     <span class="item"><span class="sw" style="background:transparent;border:1px dashed #8fc4ce"></span>점선 방 = 선택 탐사 지역</span>
+    <span class="item"><span class="chip hp" style="margin-right:5px">코어</span>체력 파편</span>
+    <span class="item"><span class="chip energy" style="margin-right:5px">용량</span>렌티움 게이지 파편</span>
+    <span class="item"><span class="chip salvage" style="margin-right:5px">고철</span>반복 재화</span>
     <span class="item" style="color:var(--gold)">━ 금색 실선 = 현재 회전 가교 접속</span>
     <span class="item" style="color:var(--gold-dim)">┄ 금색 점선 = 다음 가교 자세</span>
     <span class="item" style="color:var(--copper)">═ 구리색 이중선 = 고정 화물 통로</span>
@@ -791,8 +799,8 @@
         <div class="row"><div class="k">3막의 동선 기하</div><div class="v">ACT1 <b>수직</b>(내려갔다 올라옴) → ACT2 <b>수평</b>(도시 횡단) → ACT3 <b>방사</b>(축을 중심으로 회전). 같은 메트로베니아 문법으로 세 번 다른 기하를 통과한다.</div></div>
         <div class="row"><div class="k">물의 완전 순환</div><div class="v">남탑 회수 → 배출 기부 → (도시·기초 관통, 점선) → 대공동 폭포 → 심층 습지. 튜토리얼에서 옆을 지났던 폭포의 수원을 최종막에서 위에서 내려다본다 — <b>세계의 물이 어디서 와서 어디로 가는지가 게임 전체에 걸쳐 완결.</b></div></div>
         <div class="row"><div class="k">티크의 원환</div><div class="v">옥상에서 도시 안으로 추락 → 청소 로봇이 도심 밀폐 투입구에 티크를 넣음 → 지하 자동 수거관 → 림부스 각성 → 사냥꾼·기억② → 폐쇄 인양로 → B23 터미너스 → 서부 내벽 화물 승강장 → 도시 횡단 → 타워 등반 → <b>같은 옥상의 말파스.</b></div></div>
-        <div class="row"><div class="k">ACT1 선택 확장</div><div class="v"><b>갈고리 재방문:</b> 구 폐기물 선별장 4방 + 폐쇄 송수로 6방. <b>더블점프 재방문:</b> 폐쇄 굴착지 6방. 세 지역 모두 먼저 잠긴 입구를 보여주고, 내부 루프 끝에서 MOD 재료 또는 MOD 3택1을 지급한 뒤 입구로 되돌아오는 숏컷을 연다.</div></div>
-        <div class="row"><div class="k">폐기선·화물선 분리</div><div class="v"><b>티크 폐기선:</b> 성벽 안쪽 도심 투입구 → 지하 자동 수거관 → 림부스. 청소 로봇은 성벽을 넘지 않는다. <b>화물선:</b> 서부 내벽 화물 승강장 → 직하 터미너스 → B23 굴착 현장. 외곽 재활용 처리장은 별도 선택 지역이며 두 선과 직접 연결되지 않는다.</div></div>
+        <div class="row"><div class="k">ACT1 선택 확장</div><div class="v"><b>초반:</b> 림부스 부품 더미에서 첫 MOD 3택1. <b>갈고리 재방문:</b> 구 폐기물 선별장의 고정 MOD·고철 + 폐쇄 송수로의 유틸 MOD 3택1. <b>더블점프 재방문:</b> 심층 굴착지의 전투 MOD 3택1. 각 대형 지역은 완주 보상과 입구 복귀 숏컷을 함께 준다.</div></div>
+        <div class="row"><div class="k">폐기선·화물선 분리</div><div class="v"><b>티크 폐기선:</b> 성벽 안쪽 도심 투입구 → 지하 자동 수거관 → 림부스. 청소 로봇은 성벽을 넘지 않는다. <b>화물선:</b> 서부 내벽 화물 승강장 → 직하 터미너스 → B23 하부역. 외곽 재활용 처리장과 심층 굴착지는 별도 선택 지역이며 이 화물선과 직접 연결되지 않는다.</div></div>
         <div class="row"><div class="k">중앙 수직선</div><div class="v">옥상(말파스·클레아) → 정제로 → 승강로 → 기슭 → 오수 기둥 → 대공동(렌토의 탄생지). <b>최종 보스와 첫 보스가 같은 수직선 위에 있다</b> — 타워의 빛과 그림자.</div></div>
       </div>
       <p class="dim">각 ACT의 크리티컬 패스·게이트 상세는 개별 문서(clockwork-map-detailed / act2 / act3) 참조. 본 전도는 열람·발표용 포스터 겸 인게임 전체 지도의 참조 원본.</p>

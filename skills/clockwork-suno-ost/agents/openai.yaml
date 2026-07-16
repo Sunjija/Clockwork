@@ -1,0 +1,4 @@
+interface:
+  display_name: "CLOCKWORK Suno OST"
+  short_description: "Design cohesive instrumental game OST prompts"
+  default_prompt: "Use $clockwork-suno-ost to design a cohesive Suno prompt for a CLOCKWORK region or boss theme."
