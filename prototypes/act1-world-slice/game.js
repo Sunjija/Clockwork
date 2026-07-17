@@ -321,6 +321,7 @@
       vx: 0,
       vy: 0,
       face: spawnSide === "right" ? -1 : 1,
+      lastMoveDirection: spawnSide === "right" ? -1 : 1,
       grounded: true,
       coyote: 0.1,
       attackTime: 0,
@@ -425,7 +426,12 @@
     let move = (down("ArrowLeft", "KeyA") ? -1 : 0) + (down("ArrowRight", "KeyD") ? 1 : 0);
     if (previewMotion === "walk-left") move = -1;
     if (previewMotion === "walk-right") move = 1;
-    if (move) p.face = move;
+    if (move) {
+      p.face = move;
+      p.lastMoveDirection = move;
+    } else {
+      p.face = p.lastMoveDirection;
+    }
 
     if (consume("KeyC") && p.dashCooldown === 0) {
       p.dashTime = dashDuration;

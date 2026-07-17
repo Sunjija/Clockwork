@@ -3,16 +3,16 @@
   "assetRevision": 2,
   "resolution": { "width": 1280, "height": 720 },
   "characterAsset": {
-    "revision": 9,
+    "revision": 10,
     "animationSpec": "data/tique-animation-spec.json",
     "canonicalOpaqueHeight": 102,
     "sequenceScale": 0.34,
     "master": "../lento-vertical-slice/reference/tique-3q-generated-source.png",
     "idle": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 }
     ],
     "walk": [
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-01-contact-a.png", "sourceFacing": 1 },
@@ -25,12 +25,12 @@
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-08-up-b.png", "sourceFacing": 1 }
     ],
     "attack": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-01-anticipation.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-02-shift.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-03-contact.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-04-follow-through.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-05-recoil.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-06-recovery.png", "sourceFacing": 1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-03-contact-short.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-04-follow-through-short.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 }
     ],
     "jump": [
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-01-takeoff.png", "sourceFacing": 1 },
