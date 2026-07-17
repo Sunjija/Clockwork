@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "assetRevision": 2,
+  "resolution": { "width": 1280, "height": 720 },
+  "characterAsset": {
+    "revision": 8,
+    "animationSpec": "data/tique-animation-spec.json",
+    "canonicalOpaqueHeight": 102,
+    "sequenceScale": 0.34,
+    "master": "../lento-vertical-slice/reference/tique-3q-generated-source.png",
+    "idle": [
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-02-compress.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-03-rise.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-04-return.png", "sourceFacing": 1 }
+    ],
+    "walk": [
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-01-contact-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-02-down-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-03-pass-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-04-up-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-05-contact-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-06-down-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-07-pass-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-08-up-b.png", "sourceFacing": 1 }
+    ],
+    "attack": [
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-01-anticipation.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-02-shift.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-03-contact.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-04-follow-through.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-05-recoil.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-06-recovery.png", "sourceFacing": 1 }
+    ],
+    "jump": [
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-01-takeoff.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-02-launch.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-03-rise.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-04-apex.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-05-fall.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-06-land.png", "sourceFacing": 1 }
+    ],
+    "doubleJump": [
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-01-compress.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-02-impulse.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-03-extend.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-04-recover.png", "sourceFacing": 1 }
+    ],
+    "dash": [
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-01-anticipation.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-02-push.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-03-active.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-04-recovery.png", "sourceFacing": 1 }
+    ],
+    "renderRule": "uniform_scale_bottom_center"
+  },
+  "backgroundViews": {
+    "limbus": { "sourceGroundY": 682, "zoom": 1.06 },
+    "limbus-caligo-bridge": { "sourceGroundY": 687, "zoom": 1.06 },
+    "caligo": { "sourceGroundY": 710, "zoom": 1.06 },
+    "caligo-maintenance-shaft": { "sourceGroundY": 808, "zoom": 1.06 },
+    "crossroads-cavern": { "sourceGroundY": 703, "zoom": 1.06 },
+    "water-treatment": { "sourceGroundY": 730, "zoom": 1.06 },
+    "b24-drainage": { "sourceGroundY": 716, "zoom": 1.06 },
+    "deep-hunter-domain": { "sourceGroundY": 714, "zoom": 1.06 },
+    "terminus": { "sourceGroundY": 860, "zoom": 1.18 },
+    "optional-waste-sorter": { "sourceGroundY": 704, "zoom": 1.06 },
+    "optional-aqueduct": { "sourceGroundY": 724, "zoom": 1.06 },
+    "optional-dig-site": { "sourceGroundY": 814, "zoom": 1.06 }
+  },
+  "mainRoute": [
+    "limbus",
+    "limbus-caligo-bridge",
+    "caligo",
+    "caligo-maintenance-shaft",
+    "crossroads-cavern",
+    "water-treatment",
+    "b24-drainage",
+    "deep-hunter-domain",
+    "terminus"
+  ],
+  "optionalBranches": [
+    { "id": "optional-waste-sorter", "anchor": "limbus", "requires": "갈고리" },
+    { "id": "optional-aqueduct", "anchor": "crossroads-cavern", "requires": "갈고리" },
+    { "id": "optional-dig-site", "anchor": "b24-drainage", "requires": "더블점프" }
+  ],
+  "regions": [
+    { "id": "limbus", "name": "림부스", "route": "main", "layout": "flat", "image": "../../art/concepts/act1/01-limbus-background-v1.png", "description": "도심 자동 수거관의 종점. 티크가 폐기물로 오인되어 떨어진 차가운 고철 평원." },
+    { "id": "limbus-caligo-bridge", "name": "림부스-칼리고 교량", "route": "main", "layout": "bridge", "image": "../../art/concepts/act1/02-limbus-caligo-bridge-v1.png", "description": "폐기 구역과 칼리고를 잇는 오래된 통근로. 아래에는 초록색 렌티움 오염수가 흐른다." },
+    { "id": "caligo", "name": "칼리고", "route": "main", "layout": "town", "image": "../../art/concepts/act1/03-caligo-v1.png", "description": "재사용 구리판과 생활 배관으로 유지되는 지하 생활권." },
+    { "id": "caligo-maintenance-shaft", "name": "칼리고 하강 정비축", "route": "main", "layout": "vertical", "image": "../../art/concepts/act1/04-caligo-maintenance-shaft-v1.png", "description": "칼리고의 생활 배관이 교차로 대공동까지 내려가는 수직 전이 구간." },
+    { "id": "crossroads-cavern", "name": "교차로 대공동", "route": "main", "layout": "cavern", "image": "../../art/concepts/act1/05-crossroads-cavern-v1.png", "description": "여러 지하 시설과 선택 탐사로가 갈라지는 ACT1의 중심 허브." },
+    { "id": "water-treatment", "name": "정수장치", "route": "main", "layout": "treatment", "image": "../../art/concepts/act1/06-water-treatment-v1.png", "description": "칼리고의 생존을 떠받치던 정수 설비. 렌토 격파 후 초록 오염수가 청록 정화수로 바뀐다." },
+    { "id": "b24-drainage", "name": "B24 배수 구간", "route": "main", "layout": "drainage", "image": "../../art/concepts/act1/07-b24-drainage-v1.png", "description": "정수장치 재가동 후 수위가 낮아지며 드러나는 심층 하강 통로." },
+    { "id": "deep-hunter-domain", "name": "지하심층·사냥꾼 영역", "route": "main", "layout": "deep", "image": "../../art/concepts/act1/08-deep-hunter-domain-v1.png", "description": "낮은 진흙 습지와 매복 흔적, 탁한 금색 기억 흔적이 이어지는 사냥꾼의 영역." },
+    { "id": "terminus", "name": "터미너스", "route": "main", "layout": "vertical", "image": "../../art/concepts/act1/09-terminus-v1.png", "description": "B23까지만 굴착된 서부 수직 화물 시설. 지상 화물 승강장으로 이어진다." },
+    { "id": "optional-waste-sorter", "name": "구 폐기물 선별장", "route": "optional", "layout": "sorter", "requires": "갈고리", "returnTo": "limbus", "image": "../../art/concepts/act1/10-waste-sorter-v1.png", "description": "자력 분류기와 압축 장치가 남은 림부스의 선택 탐사 분기." },
+    { "id": "optional-aqueduct", "name": "폐쇄 송수로", "route": "optional", "layout": "aqueduct", "requires": "갈고리", "returnTo": "crossroads-cavern", "image": "../../art/concepts/act1/11-closed-aqueduct-v1.png", "description": "긴 수평 원형 관과 수압 밸브 퍼즐로 이루어진 선택 탐사 분기." },
+    { "id": "optional-dig-site", "name": "심층 굴착지", "route": "optional", "layout": "dig", "requires": "더블점프", "returnTo": "b24-drainage", "image": "../../art/concepts/act1/12-deep-dig-site-v1.png", "description": "건조한 암분, 천공기 프레임과 광차 레일이 남은 심층 선택 탐사 분기." }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "logicalResolution": { "width": 1280, "height": 720 },
+  "worldSize": { "width": 3840, "height": 720 },
+  "flowDirection": "right_to_left",
+  "sourceMapNodes": ["act1-room-002", "act1-room-052", "act1-room-003", "act1-room-006"],
+  "rendering": {
+    "backgroundType": "generated_raster_per_room",
+    "collisionType": "separate_temporary_layer",
+    "characterAnimationSource": "../lento-vertical-slice/assets/tique/animations",
+    "characterFrameSize": [128, 128],
+    "uniformScaleOnly": true,
+    "bottomCenterPivot": true
+  },
+  "screens": [
+    {
+      "id": "limbus-01-bridge-exit",
+      "name": "교량 출구",
+      "bounds": { "x": 0, "y": 0, "width": 1280, "height": 720 },
+      "background": "assets/backgrounds/01-bridge-exit.png",
+      "entrances": [{ "side": "right", "type": "open" }, { "side": "left", "type": "bridge_transition" }]
+    },
+    {
+      "id": "limbus-02-scrap-plain",
+      "name": "고철 평원",
+      "bounds": { "x": 1280, "y": 0, "width": 1280, "height": 720 },
+      "background": "assets/backgrounds/02-scrap-plain.png",
+      "entrances": [{ "side": "right", "type": "open" }, { "side": "left", "type": "open" }]
+    },
+    {
+      "id": "limbus-03-fall-site",
+      "name": "추락 지점",
+      "bounds": { "x": 2560, "y": 0, "width": 1280, "height": 720 },
+      "background": "assets/backgrounds/03-fall-site.png",
+      "entrances": [{ "side": "right", "type": "sealed_waste_chute" }, { "side": "left", "type": "open" }]
+    }
+  ],
+  "officialColorRoles": {
+    "contaminatedLentium": "#6f963c",
+    "purifiedWater": "#32b8c8",
+    "timeTrace": "#c9a14a"
+  }
+}

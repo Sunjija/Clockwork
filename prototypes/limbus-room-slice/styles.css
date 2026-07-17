@@ -1,0 +1,168 @@
+:root {
+  color-scheme: dark;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  background: #05070a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  overflow: hidden;
+  background: #05070a;
+  place-items: center;
+}
+
+.game-frame {
+  position: relative;
+  width: min(1280px, 100vw);
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #090d12;
+}
+
+#game {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background: #06090d;
+}
+
+.controls,
+.asset-status,
+.area-label,
+.message,
+.loading {
+  position: absolute;
+  z-index: 2;
+  color: #d8e1e6;
+  text-shadow: 0 2px #06080b;
+  pointer-events: none;
+}
+
+.controls {
+  top: 14px;
+  right: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 7px 11px;
+  max-width: 470px;
+  font-size: 11px;
+}
+
+.controls span,
+.asset-status span {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+kbd {
+  display: inline-grid;
+  min-width: 20px;
+  height: 20px;
+  border: 1px solid #56636c;
+  background: rgba(10, 15, 20, .9);
+  color: #f2c867;
+  font: inherit;
+  place-items: center;
+}
+
+.asset-status {
+  right: 14px;
+  bottom: 12px;
+  display: flex;
+  gap: 12px;
+  color: #82919b;
+  font-size: 10px;
+}
+
+.loading {
+  left: 50%;
+  top: 50%;
+  padding: 10px 14px;
+  border: 1px solid #46545d;
+  background: rgba(5, 9, 13, .9);
+  color: #d9e3e8;
+  font-size: 12px;
+  transform: translate(-50%, -50%);
+}
+
+.loading[hidden] {
+  display: none;
+}
+
+.loading.error {
+  border-color: #a84c4c;
+  color: #ffc1c1;
+}
+
+.area-label {
+  left: 18px;
+  top: 16px;
+  color: #f0c76d;
+  font-size: 14px;
+}
+
+.message {
+  left: 50%;
+  bottom: 42px;
+  border: 1px solid #43515a;
+  background: rgba(8, 12, 16, .94);
+  padding: 8px 12px;
+  color: #dce7eb;
+  font-size: 11px;
+  transform: translateX(-50%);
+}
+
+.message[hidden] {
+  display: none;
+}
+
+.icon-button {
+  position: absolute;
+  z-index: 3;
+  left: 14px;
+  bottom: 12px;
+  display: grid;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #4c5963;
+  background: rgba(8, 12, 16, .9);
+  color: #cbd5db;
+  font-size: 17px;
+  cursor: pointer;
+  place-items: center;
+}
+
+.icon-button.fullscreen {
+  left: 50px;
+}
+
+.icon-button:hover,
+.icon-button:focus-visible {
+  border-color: #e0b85b;
+  color: #f2c867;
+  outline: none;
+}
+
+@media (max-width: 760px) {
+  .controls {
+    max-width: 320px;
+    font-size: 9px;
+  }
+
+  .asset-status span:not(:last-child) {
+    display: none;
+  }
+}

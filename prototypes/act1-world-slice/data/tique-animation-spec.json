@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "canonical": {
+    "opaqueHeight": 102,
+    "anchor": "bottom-center",
+    "uniformScaleOnly": true,
+    "preserveGroundContact": true,
+    "sourceCanvas": { "width": 640, "height": 512 },
+    "sourceAnchor": { "x": 320, "y": 480 },
+    "pixelSmoothing": false
+  },
+  "clips": {
+    "idle": {
+      "duration": 1.6,
+      "loop": true,
+      "timeline": [
+        { "name": "settle", "frame": 0, "to": 0.34 },
+        { "name": "compress", "frame": 1, "to": 0.5 },
+        { "name": "rise", "frame": 2, "to": 0.68 },
+        { "name": "return", "frame": 3, "to": 1.0 }
+      ],
+      "phases": [
+        { "name": "settle", "from": 0.0, "to": 0.34 },
+        { "name": "compress", "from": 0.34, "to": 0.5 },
+        { "name": "rise", "from": 0.5, "to": 0.68 },
+        { "name": "return", "from": 0.68, "to": 1.0 }
+      ]
+    },
+    "walk": {
+      "duration": 0.72,
+      "cycleDistance": 155,
+      "loop": true,
+      "sync": "ground-distance",
+      "snapToContactOnStop": true,
+      "timeline": [
+        { "name": "contact-a", "frame": 0, "to": 0.1806, "offsetY": 0 },
+        { "name": "down-a", "frame": 1, "to": 0.3056, "offsetY": 0 },
+        { "name": "pass-a", "frame": 2, "to": 0.4167, "offsetY": 0 },
+        { "name": "up-a", "frame": 3, "to": 0.5, "offsetY": 0 },
+        { "name": "contact-b", "frame": 4, "to": 0.7083, "offsetY": 0 },
+        { "name": "down-b", "frame": 5, "to": 0.8333, "offsetY": 0 },
+        { "name": "pass-b", "frame": 6, "to": 0.9306, "offsetY": 0 },
+        { "name": "up-b", "frame": 7, "to": 1.0, "offsetY": 0 }
+      ]
+    },
+    "jump": {
+      "takeoffDuration": 0.14,
+      "landingDuration": 0.18,
+      "apexVelocity": 95,
+      "keyPoses": [
+        { "name": "compression", "frame": 0 },
+        { "name": "launch-contact", "frame": 1 },
+        { "name": "rise", "frame": 2 },
+        { "name": "apex", "frame": 3 },
+        { "name": "fall-contact", "frame": 4 },
+        { "name": "landing-compression", "frame": 5 }
+      ],
+      "takeoffTimeline": [
+        { "name": "compression", "frame": 0, "to": 0.42 },
+        { "name": "launch-contact", "frame": 1, "to": 1.0 }
+      ],
+      "phases": [
+        { "name": "takeoff", "from": 0.0, "to": 0.18 },
+        { "name": "rise", "from": 0.18, "to": 0.48 },
+        { "name": "apex", "from": 0.48, "to": 0.62 },
+        { "name": "fall", "from": 0.62, "to": 0.9 },
+        { "name": "land", "from": 0.9, "to": 1.0 }
+      ]
+    },
+    "doubleJump": {
+      "duration": 0.34,
+      "timeline": [
+        { "name": "compress", "frame": 0, "to": 0.1471 },
+        { "name": "impulse", "frame": 1, "to": 0.3529 },
+        { "name": "extend", "frame": 2, "to": 0.6471 },
+        { "name": "recover", "frame": 3, "to": 1.0 }
+      ],
+      "phases": [
+        { "name": "compress", "from": 0.0, "to": 0.1471 },
+        { "name": "impulse", "from": 0.1471, "to": 0.3529 },
+        { "name": "extend", "from": 0.3529, "to": 0.6471 },
+        { "name": "recover", "from": 0.6471, "to": 1.0 }
+      ]
+    },
+    "dash": {
+      "duration": 0.32,
+      "timeline": [
+        { "name": "anticipation", "frame": 0, "to": 0.0938 },
+        { "name": "push", "frame": 1, "to": 0.2813 },
+        { "name": "active", "frame": 2, "to": 0.6875 },
+        { "name": "recovery", "frame": 3, "to": 1.0 }
+      ],
+      "phases": [
+        { "name": "anticipation", "from": 0.0, "to": 0.0938 },
+        { "name": "active", "from": 0.0938, "to": 0.6875 },
+        { "name": "recovery", "from": 0.6875, "to": 1.0 }
+      ]
+    },
+    "attack": {
+      "duration": 0.42,
+      "activeWindow": [0.24, 0.68],
+      "timeline": [
+        { "name": "anticipation", "frame": 0, "to": 0.1667 },
+        { "name": "weight-shift", "frame": 1, "to": 0.2857 },
+        { "name": "contact", "frame": 2, "to": 0.381 },
+        { "name": "follow-through", "frame": 3, "to": 0.5238 },
+        { "name": "recoil", "frame": 4, "to": 0.7381 },
+        { "name": "recovery", "frame": 5, "to": 1.0 }
+      ],
+      "phases": [
+        { "name": "anticipation", "from": 0.0, "to": 0.2857 },
+        { "name": "action", "from": 0.2857, "to": 0.5238 },
+        { "name": "follow-through", "from": 0.5238, "to": 0.7381 },
+        { "name": "recovery", "from": 0.7381, "to": 1.0 }
+      ]
+    },
+    "hit": {
+      "duration": 0.24,
+      "implementation": "reserved-for-damage-system",
+      "phases": [
+        { "name": "impact", "from": 0.0, "to": 0.16 },
+        { "name": "recoil", "from": 0.16, "to": 0.62 },
+        { "name": "recover", "from": 0.62, "to": 1.0 }
+      ]
+    },
+    "down": {
+      "duration": 1.2,
+      "implementation": "reserved-for-health-system",
+      "phases": [
+        { "name": "impact", "from": 0.0, "to": 0.12 },
+        { "name": "collapse", "from": 0.12, "to": 0.46 },
+        { "name": "settle", "from": 0.46, "to": 0.76 },
+        { "name": "get-up", "from": 0.76, "to": 1.0 }
+      ]
+    }
+  }
+}

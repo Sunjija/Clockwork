@@ -27,6 +27,7 @@
 
   const currentMap = body.dataset.mapId || inferMapId();
   const rooms = [...canvas.querySelectorAll(".room")];
+  const regionArt = buildRegionArtIndex();
   const activeFilters = new Set();
   const initialUnit = numberFromCss("--u", 56);
   const canvasColumns = Math.max(1, canvas.getBoundingClientRect().width / initialUnit);
@@ -40,10 +41,11 @@
   const criticalFlow = buildCriticalFlow();
   const inspector = buildInspector();
   const dialog = buildNodeDialog();
+  const artDialog = buildArtDialog();
   const toast = buildToast();
   header.insertAdjacentElement("afterend", tools);
   if (criticalFlow) tools.insertAdjacentElement("afterend", criticalFlow);
-  wrap.append(inspector, dialog, toast);
+  wrap.append(inspector, dialog, artDialog, toast);
   addSkipLink();
   bindRoomInteractions();
   updateFilterState();
@@ -82,6 +84,21 @@
     return [...tags];
   }
 
+  function buildRegionArtIndex() {
+    const index = new Map();
+    const catalogue = window.CLOCKWORK_MAP_ART || {};
+    const entries = currentMap === "world-atlas"
+      ? Object.values(catalogue).flat()
+      : catalogue[currentMap] || [];
+    entries.forEach((entry) => {
+      entry.roomIds.forEach((roomId) => index.set(roomId, entry));
+      rooms
+        .filter((room) => room.dataset.region === entry.id)
+        .forEach((room) => index.set(room.id, entry));
+    });
+    return index;
+  }
+
   function enrichRooms() {
     rooms.forEach((room, index) => {
       if (!room.id) room.id = `${currentMap}-room-${String(index + 1).padStart(3, "0")}`;
@@ -90,7 +107,9 @@
       room.dataset.nodeName = name;
       room.dataset.tags = tags.join(" ");
       const rewardSearch = [room.dataset.rewardType, room.dataset.rewardTier, room.dataset.firstClearReward, room.dataset.repeatableReward, room.dataset.choiceGroup].filter(Boolean).join(" ");
-      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")} ${rewardSearch}`.toLocaleLowerCase("ko");
+      const art = regionArt.get(room.id);
+      if (art) room.dataset.artRegion = art.id;
+      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")} ${rewardSearch} ${art?.title || ""}`.toLocaleLowerCase("ko");
       room.tabIndex = 0;
       room.setAttribute("role", "button");
       room.setAttribute("aria-label", `${name} 상세 보기`);
@@ -173,10 +192,38 @@
         <div><h2></h2><div class="map-node-inspector__id"></div></div>
         <button class="map-node-inspector__close" type="button" title="닫기" aria-label="상세 닫기">×</button>
       </div>
+      <figure class="map-node-inspector__art" hidden>
+        <button type="button" class="map-node-inspector__art-open" title="지역 이미지 크게 보기">
+          <img alt="" loading="eager">
+        </button>
+        <figcaption>
+          <strong></strong>
+          <span class="map-node-inspector__art-status"></span>
+          <p></p>
+          <a class="map-node-inspector__prototype" hidden>플레이 샘플 열기</a>
+        </figcaption>
+      </figure>
       <div class="map-node-inspector__meta"></div>
       <div class="map-node-inspector__text"></div>`;
     panel.querySelector("button").addEventListener("click", closeInspector);
+    panel.querySelector(".map-node-inspector__art-open").addEventListener("click", openSelectedArt);
     return panel;
+  }
+
+  function buildArtDialog() {
+    const modal = document.createElement("dialog");
+    modal.className = "map-art-dialog";
+    modal.innerHTML = `
+      <div class="map-art-dialog__head">
+        <div><h2></h2><p></p></div>
+        <button class="map-node-dialog__close" type="button" title="닫기" aria-label="지역 이미지 닫기">×</button>
+      </div>
+      <img alt="">`;
+    modal.querySelector("button").addEventListener("click", () => modal.close());
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) modal.close();
+    });
+    return modal;
   }
 
   function buildCriticalFlow() {
@@ -278,6 +325,7 @@
     const point = coordinates(room);
     inspector.querySelector("h2").textContent = roomName(room);
     inspector.querySelector(".map-node-inspector__id").textContent = room.id;
+    updateInspectorArt(regionArt.get(room.id));
     inspector.querySelector(".map-node-inspector__meta").innerHTML = [
       ...room.dataset.tags.split(" ").filter(Boolean),
       room.dataset.requires ? `필요 ${room.dataset.requires}` : "",
@@ -297,6 +345,38 @@
     ].filter(Boolean).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
     inspector.querySelector(".map-node-inspector__text").textContent = room.textContent.replace(/\s+/g, " ").trim();
     inspector.hidden = false;
+  }
+
+  function updateInspectorArt(art) {
+    const figure = inspector.querySelector(".map-node-inspector__art");
+    if (!art) {
+      figure.hidden = true;
+      return;
+    }
+    const image = figure.querySelector("img");
+    image.src = art.image;
+    image.alt = `${art.title} 횡스크롤 환경 콘셉트`;
+    image.onerror = () => figure.classList.add("is-missing");
+    image.onload = () => figure.classList.remove("is-missing");
+    figure.querySelector("strong").textContent = art.title;
+    figure.querySelector(".map-node-inspector__art-status").textContent = art.status;
+    figure.querySelector("p").textContent = art.description;
+    const prototypeLink = figure.querySelector(".map-node-inspector__prototype");
+    prototypeLink.hidden = !art.prototype;
+    if (art.prototype) prototypeLink.href = art.prototype;
+    figure.hidden = false;
+  }
+
+  function openSelectedArt() {
+    if (!selectedRoom) return;
+    const art = regionArt.get(selectedRoom.id);
+    if (!art) return;
+    artDialog.querySelector("h2").textContent = art.title;
+    artDialog.querySelector("p").textContent = art.description;
+    const image = artDialog.querySelector("img");
+    image.src = art.image;
+    image.alt = `${art.title} 횡스크롤 환경 콘셉트`;
+    artDialog.showModal();
   }
 
   function closeInspector() {
@@ -399,6 +479,13 @@
           state: room.dataset.rewardState || null
         },
         event: room.dataset.event || null,
+        environmentArt: regionArt.get(room.id) ? {
+          id: regionArt.get(room.id).id,
+          title: regionArt.get(room.id).title,
+          image: regionArt.get(room.id).image,
+          status: regionArt.get(room.id).status,
+          prototype: regionArt.get(room.id).prototype || null
+        } : null,
         text: room.textContent.replace(/\s+/g, " ").trim()
       })),
       connections: [...canvas.querySelectorAll(".d, .lk")].map((connection, index) => ({

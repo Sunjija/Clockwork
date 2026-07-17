@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CLOCKWORK - ACT1 비주얼 월드 슬라이스</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <canvas id="game" width="1280" height="720" tabindex="0" aria-label="CLOCKWORK ACT1 플레이 화면"></canvas>
+
+    <header class="region-heading">
+      <span class="route-chip" id="routeChip">메인 진행</span>
+      <strong id="regionName">림부스</strong>
+      <small id="regionStep">01 / 09</small>
+    </header>
+
+    <div class="controls" aria-label="조작키">
+      <span><kbd>←</kbd><kbd>→</kbd> 이동</span>
+      <span><kbd>Z</kbd> 점프 / 더블점프</span>
+      <span><kbd>X</kbd> 공격</span>
+      <span><kbd>C</kbd> 대시</span>
+      <span><kbd>H</kbd> 충돌</span>
+    </div>
+
+    <div class="region-note" id="regionNote"></div>
+    <div class="gate-note" id="gateNote" hidden></div>
+    <div class="loading" id="loading">지역 배경을 불러오는 중</div>
+
+    <nav class="world-nav" aria-label="ACT1 지역 선택">
+      <div class="nav-row">
+        <span class="nav-label">MAIN</span>
+        <div class="nav-tabs" id="mainTabs"></div>
+      </div>
+      <div class="nav-row">
+        <span class="nav-label">EXPLORE</span>
+        <div class="nav-tabs optional-tabs" id="optionalTabs"></div>
+      </div>
+    </nav>
+
+    <button class="icon-button" id="resetButton" type="button" title="현재 지역 다시 시작" aria-label="현재 지역 다시 시작">↺</button>
+    <button class="icon-button fullscreen" id="fullscreenButton" type="button" title="전체 화면" aria-label="전체 화면">⛶</button>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
