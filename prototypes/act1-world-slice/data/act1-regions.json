@@ -3,16 +3,16 @@
   "assetRevision": 2,
   "resolution": { "width": 1280, "height": 720 },
   "characterAsset": {
-    "revision": 8,
+    "revision": 9,
     "animationSpec": "data/tique-animation-spec.json",
     "canonicalOpaqueHeight": 102,
     "sequenceScale": 0.34,
     "master": "../lento-vertical-slice/reference/tique-3q-generated-source.png",
     "idle": [
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-02-compress.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-03-rise.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-04-return.png", "sourceFacing": 1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": 1 }
     ],
     "walk": [
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-01-contact-a.png", "sourceFacing": 1 },

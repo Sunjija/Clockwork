@@ -7,7 +7,17 @@
     "preserveGroundContact": true,
     "sourceCanvas": { "width": 640, "height": 512 },
     "sourceAnchor": { "x": 320, "y": 480 },
-    "pixelSmoothing": false
+    "pixelSmoothing": false,
+    "modelLock": {
+      "headShape": "sphere",
+      "torsoShape": "round",
+      "headHeightRatio": 0.5,
+      "torsoHeightRatio": 0.34,
+      "maxExposedLegHeightRatio": 0.16,
+      "legSegments": 2,
+      "feetInsideTorsoWidth": true,
+      "rearWindUpKey": false
+    }
   },
   "clips": {
     "idle": {

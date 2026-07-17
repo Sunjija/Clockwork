@@ -15,6 +15,7 @@
 | `docs/reward-system-v0.1.md` | 보상 체계 제안 — 능력·MOD·슬롯·코어 파편·고철 부품·기록의 역할과 맵 데이터 규약 |
 | `docs/music/` | 지역별 음악 방향, Suno 기준 실험, ACT1 생성·선별 기록 |
 | `docs/art/act1-environment-art-bible.md` | ACT1 지역별 환경 콘셉트·전이 규칙·이미지 생성 순서 |
+| `docs/art/tique-character-model-lock.md` | 티크 인게임 외형 고정 규칙 — 짧은 다리, 체형 비율, 피벗, 팔레트 불변 조건 |
 | `maps/act1-underground.html` | ACT1 지하 안드레스 — 룸 단위 상세 맵 (24룸) + 크리티컬 패스 + 게이트/숏컷 설계 |
 | `maps/act2-surface.html` | ACT2 지상 메티아 — 초안 [전부 제안] |
 | `maps/act3-tower.html` | ACT3 크로노스 타워 — 십자 5탑·회전 가교 초안 [전부 제안] |

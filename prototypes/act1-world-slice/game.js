@@ -626,8 +626,16 @@
       animationPhase = phase?.name || "active";
       anchoredFrame = sequenceAt("dash", progress);
       if (animationPhase === "active") {
-        drawAnchoredPose(anchoredFrame, x - p.face * 36, bottom, p.face, 0.11);
-        drawAnchoredPose(anchoredFrame, x - p.face * 18, bottom, p.face, 0.24);
+        ctx.save();
+        ctx.strokeStyle = "rgba(86, 221, 242, .28)";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x - p.face * 54, bottom - 54);
+        ctx.lineTo(x - p.face * 18, bottom - 54);
+        ctx.moveTo(x - p.face * 44, bottom - 38);
+        ctx.lineTo(x - p.face * 12, bottom - 38);
+        ctx.stroke();
+        ctx.restore();
       }
     } else if (p.doubleJumpTime > 0) {
       const duration = clip("doubleJump").duration || 0.34;
@@ -676,6 +684,7 @@
       const progress = (p.motionTime % duration) / duration;
       animationPhase = phaseAt("idle", progress)?.name || "settle";
       anchoredFrame = sequenceAt("idle", progress);
+      offsetY = animationPhase === "compress" ? 1 : animationPhase === "rise" ? -1 : 0;
     }
 
     state.animationDebug = { name: animationName, phase: animationPhase };
@@ -683,6 +692,17 @@
     canvas.dataset.animationPhase = animationPhase;
     canvas.dataset.animationFrame = String(Math.max(0, (art.actions[animationName] || []).indexOf(anchoredFrame)));
     drawAnchoredPose(anchoredFrame, x, bottom, p.face, 1, angle, offsetX, offsetY);
+
+    if (animationName === "idle") {
+      const pulse = 0.5 + Math.sin(p.motionTime * Math.PI * 1.25) * 0.5;
+      ctx.save();
+      ctx.globalCompositeOperation = "screen";
+      ctx.fillStyle = `rgba(58, 224, 255, ${0.04 + pulse * 0.05})`;
+      ctx.beginPath();
+      ctx.ellipse(Math.round(x), Math.round(bottom - 34 + offsetY), 7 + pulse, 6 + pulse * 0.7, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
 
     if (p.doubleJumpTime > 0) {
       const duration = clip("doubleJump").duration || 0.34;
