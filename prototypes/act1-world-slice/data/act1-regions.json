@@ -3,7 +3,7 @@
   "assetRevision": 2,
   "resolution": { "width": 1280, "height": 720 },
   "characterAsset": {
-    "revision": 10,
+    "revision": 11,
     "animationSpec": "data/tique-animation-spec.json",
     "canonicalOpaqueHeight": 102,
     "sequenceScale": 0.34,
@@ -27,8 +27,8 @@
     "attack": [
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-03-contact-short.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/attack/attack-04-follow-through-short.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 }
     ],
@@ -47,10 +47,10 @@
       { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-04-recover.png", "sourceFacing": 1 }
     ],
     "dash": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-01-anticipation.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-02-push.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-03-active.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/dash/dash-04-recovery.png", "sourceFacing": 1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 }
     ],
     "renderRule": "uniform_scale_bottom_center"
   },

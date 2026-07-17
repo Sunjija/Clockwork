@@ -20,6 +20,8 @@
       "armThicknessToHeadWidthMax": 0.18,
       "fistDiameterToHeadWidthMax": 0.2,
       "extendedArmReachToHeadWidthMax": 0.55,
+      "canonicalSilhouetteClips": ["idle", "attack", "dash"],
+      "canonicalSilhouetteVariance": 0,
       "rearWindUpKey": false
     }
   },

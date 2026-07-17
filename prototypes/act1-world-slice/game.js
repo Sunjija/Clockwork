@@ -624,6 +624,19 @@
       animationName = "attack";
       animationPhase = phase?.name || "action";
       anchoredFrame = sequenceAt("attack", attackProgress);
+      if (animationPhase === "anticipation") {
+        angle = -0.045 * p.face;
+        offsetX = -2 * p.face;
+      } else if (animationPhase === "action") {
+        angle = 0.075 * p.face;
+        offsetX = 4 * p.face;
+      } else if (animationPhase === "follow-through") {
+        angle = 0.1 * p.face;
+        offsetX = 5 * p.face;
+      } else {
+        angle = 0.025 * p.face;
+        offsetX = 1 * p.face;
+      }
     } else if (p.dashTime > 0) {
       const duration = clip("dash").duration || 0.32;
       const progress = actionProgress(p.dashTime, duration);
@@ -631,6 +644,15 @@
       animationName = "dash";
       animationPhase = phase?.name || "active";
       anchoredFrame = sequenceAt("dash", progress);
+      if (animationPhase === "anticipation") {
+        angle = -0.055 * p.face;
+      } else if (animationPhase === "active") {
+        angle = 0.13 * p.face;
+        offsetX = 5 * p.face;
+      } else {
+        angle = 0.035 * p.face;
+        offsetX = 2 * p.face;
+      }
       if (animationPhase === "active") {
         ctx.save();
         ctx.strokeStyle = "rgba(86, 221, 242, .28)";
