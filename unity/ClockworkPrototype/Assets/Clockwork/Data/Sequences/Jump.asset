@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb355afb287f3242ac368798ed3a9d7, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.SpriteSequence
+  frames:
+  - {fileID: 21300000, guid: f2fbfa80101ffcf49a04b23b5880c3da, type: 3}
+  - {fileID: 21300000, guid: 62703ab18a4b5d5449340621da790ee6, type: 3}
+  - {fileID: 21300000, guid: a7cb3d92d691a5f49a32e1fb53ee44c2, type: 3}
+  - {fileID: 21300000, guid: c70e1d48bb90fe94aba5f7ae95c2ba0e, type: 3}
+  - {fileID: 21300000, guid: 8988ab1853a7e0a41b5a3656b5cdfe43, type: 3}
+  - {fileID: 21300000, guid: 42288923964308e4c95a8dd211f98b64, type: 3}
+  normalizedFrameEnds:
+  - 0.18
+  - 0.3
+  - 0.48
+  - 0.62
+  - 0.9
+  - 1
+  duration: 0.6
+  loop: 0
+  renderScale: 0.3

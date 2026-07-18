@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb355afb287f3242ac368798ed3a9d7, type: 3}
+  m_Name: FistAttack
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.SpriteSequence
+  frames:
+  - {fileID: 21300000, guid: ebe52b83c08c8884c8c3af9654b50a21, type: 3}
+  - {fileID: 21300000, guid: 944843b5f2fabc84c91166ed78a83765, type: 3}
+  - {fileID: 21300000, guid: 88bce72655f0b0a409d7acd1fc771431, type: 3}
+  - {fileID: 21300000, guid: fb173d6ce62beef4290c657cc5a60fdc, type: 3}
+  - {fileID: 21300000, guid: 6fc093e2f02238546a7966483b5352a6, type: 3}
+  - {fileID: 21300000, guid: 057a9ad2bdeee4b4ab484aa5f2dc3356, type: 3}
+  - {fileID: 21300000, guid: 05363acf3f75689418c7492f5ea21878, type: 3}
+  - {fileID: 21300000, guid: 6bcf080016a6c934b859cab933dd9a1b, type: 3}
+  normalizedFrameEnds:
+  - 0.1
+  - 0.22
+  - 0.34
+  - 0.46
+  - 0.58
+  - 0.7
+  - 0.84
+  - 1
+  duration: 0.36
+  loop: 0
+  renderScale: 0.31

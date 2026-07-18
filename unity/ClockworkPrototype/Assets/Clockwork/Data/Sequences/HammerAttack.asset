@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb355afb287f3242ac368798ed3a9d7, type: 3}
+  m_Name: HammerAttack
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.SpriteSequence
+  frames:
+  - {fileID: 21300000, guid: ffe10b25a47780744836618448b3be56, type: 3}
+  - {fileID: 21300000, guid: 7d05eff6f67c3bf47b29f9761582ae73, type: 3}
+  - {fileID: 21300000, guid: 051b8a3e8fea00d4a8b2319beaa0b838, type: 3}
+  - {fileID: 21300000, guid: 13456b5252881d5438a34c44e9a4d8b1, type: 3}
+  - {fileID: 21300000, guid: ac65dc7f740f7904ba47f3c4e30a1ca9, type: 3}
+  - {fileID: 21300000, guid: 7e76f849fba773043ba3ec7a410aeaba, type: 3}
+  - {fileID: 21300000, guid: b2395ecda7de84f45b1844811f7695fd, type: 3}
+  - {fileID: 21300000, guid: 16c3206ad4075bb4eb32587a46dd1910, type: 3}
+  normalizedFrameEnds:
+  - 0.14
+  - 0.3
+  - 0.38
+  - 0.46
+  - 0.58
+  - 0.72
+  - 0.88
+  - 1
+  duration: 0.86
+  loop: 0
+  renderScale: 0.36

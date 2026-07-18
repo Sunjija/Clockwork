@@ -136,3 +136,47 @@
 - 걷기와 대시는 실제 플레이에서 추가 속도 튜닝이 필요할 수 있다. 프레임을 바꾸더라도 640×512 캔버스, `(320, 480)` 소스 피벗, 짧은 다리 비율을 유지한다.
 - 피격, 다운, 기상, 위 공격, 아래 공격 전용 다중 프레임은 아직 제작하지 않았다.
 - 다음 작업은 점프·더블점프도 동일 모델 고정 규칙으로 재검수하는 것이다.
+
+---
+
+## 2026-07-19 갱신
+
+### Git 상태
+
+- 현재 브랜치: `main`
+- 추적 브랜치: `origin/main`
+- 작업 시작 시 최근 커밋: `c6c7862` (`Refine Tique animation scale and weapon attacks`)
+- 이번 커밋 대상: ACT1 웹 이동/더블점프 수정과 `unity/ClockworkPrototype` 정식 백업
+
+### 완료한 일
+
+- Unity `6000.5.3f1` 프로젝트와 칼리고 하강 정비축 테스트 씬을 생성했다.
+- 승인된 대기, 걷기, 점프, 더블점프, 대시, 주먹, 대검, 망치 프레임만 Unity 프로젝트에 복사했다.
+- 웹 프로토타입의 이동, 가변 점프, 더블점프, 대시와 세 무기 공격을 Unity 2D 물리로 옮겼다.
+- 공격별 타이밍, 히트박스와 무기 궤적을 `ScriptableObject` 데이터로 분리했다.
+- 더블점프의 발밑 제트 프레임을 런타임 시퀀스에서 제외하고 코어 중심 톱니 공명륜으로 교체했다.
+- 웹 이동속도를 림부스 파손 상태 `215px/s`, 칼리고 이후 정상 상태 `250px/s`로 분리했다.
+- Unity 정상 속도를 `2.5`, 파손 배율을 `0.86`, 지상 반응을 `21`로 설정하고 수리 이벤트 연결용 메서드를 추가했다.
+- Unity 생성 상태, 로그와 Windows 빌드를 제외하는 `.gitignore`를 추가했다.
+
+### 테스트 결과
+
+- 통과: `game.js` 문법 검사
+- 통과: `act1-regions.json` JSON 파싱
+- 통과: 브라우저 더블점프에서 발밑 제트 제거 및 코어 공명륜 표시
+- 통과: 브라우저 콘솔 오류 없음
+- 통과: 브라우저 지역 분기에서 림부스 `215/damaged`, 칼리고 `250/normal` 확인
+- 통과: Unity 승인 프리팹과 칼리고 씬 재생성
+- 통과: Unity Windows 빌드
+- 통과: Windows 빌드 런타임 스모크 테스트 (`CLOCKWORK_RUNTIME_SMOKE_OK`)
+- 미실행: Unity Input System, Cinemachine, URP 2D, Pixel Perfect Camera 통합
+- 미실행: 실제 Tilemap/Composite Collider 기반 방 제작
+- 미실행: 렌토 보스전을 Unity에서 처음부터 끝까지 플레이하는 회귀 테스트
+
+### 주의사항과 다음 작업
+
+- `unity/ClockworkPrototype`은 기능 검증용이다. 정식 32 PPU 프로젝트에서는 픽셀 속도를 월드 단위로 다시 환산해야 한다.
+- `Builds`, `Library`, `Logs`, `Temp`, `UserSettings`는 Git에 포함되지 않는다. 다른 컴퓨터에서 Unity로 다시 생성한다.
+- 실험용 `v5`, `v6`, `v8`, `v10`, `weapons-test` 계열 미추적 폴더는 이번 커밋에 포함하지 않는다.
+- 다음 작업은 Unity 공식 Input System, Cinemachine, URP 2D, Pixel Perfect와 Tilemap Extras를 적용한 칼리고 방 버티컬 슬라이스다.
+- 사용자명, 로컬 경로, 인증 정보와 API 키는 기록하지 않았다.

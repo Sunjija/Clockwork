@@ -1,0 +1,16 @@
+# Unity generated state
+/unity/**/Library/
+/unity/**/Temp/
+/unity/**/Logs/
+/unity/**/UserSettings/
+/unity/**/obj/
+/unity/**/*-create.log
+/unity/**/MemoryCaptures/
+/unity/**/Builds/
+/unity/*.log
+
+# Local IDE state
+.vs/
+*.csproj
+*.sln
+*.user

@@ -1,0 +1,30 @@
+{
+  "approvalCommit": "c6c7862",
+  "background": "art/concepts/act1/04-caligo-maintenance-shaft-v1.png",
+  "animations": {
+    "idle": "v7/idle",
+    "walk": "v9-rig-final/walk",
+    "jump": "v7/jump",
+    "doubleJump": "v7/double-jump",
+    "dash": "v7/dash",
+    "fist": "v11-attack-fixes/fist/fixed/frames",
+    "greatsword": "v14-greatsword-slash/fixed/frames",
+    "hammer": "v13-hammer-swing/fixed/frames"
+  },
+  "excluded": [
+    "v5",
+    "v5.1",
+    "v6",
+    "v6-source",
+    "v7-source",
+    "v8-rig",
+    "v8-rig2",
+    "v8-rig3",
+    "v8-rig-final",
+    "v8-rig-source",
+    "v10-weapon-sheet-runs",
+    "weapons-test",
+    "weapons-test-v2"
+  ]
+}
+

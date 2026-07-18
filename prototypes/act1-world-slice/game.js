@@ -22,6 +22,10 @@
   const FALL_GRAVITY = ASCENT_GRAVITY * 2;
   const JUMP_CUT_GRAVITY = 1120;
   const MAX_FALL_SPEED = 860;
+  const NORMAL_MOVE_SPEED = 250;
+  const DAMAGED_MOVE_SPEED = 215;
+  const GROUND_MOVE_RESPONSE = 21;
+  const AIR_MOVE_RESPONSE = 9;
   const WEAPON_PROFILES = {
     fist: {
       duration: 0.36,
@@ -69,6 +73,14 @@
   const consume = (...codes) => codes.some((code) => pressed.has(code));
   function weaponProfile(name = state.weapon) {
     return WEAPON_PROFILES[name] || WEAPON_PROFILES.fist;
+  }
+
+  function isDamagedMovementRegion(region) {
+    if (!region || !state.data) return false;
+    const mainIndex = state.data.mainRoute.indexOf(region.id);
+    if (mainIndex >= 0) return mainIndex <= 1;
+    const branch = state.data.optionalBranches.find((entry) => entry.id === region.id);
+    return branch?.anchor === "limbus";
   }
 
   function loadImage(src) {
@@ -511,8 +523,12 @@
       p.vx = p.face * 530;
       p.vy = 0;
     } else {
-      const target = move * 215;
-      p.vx += (target - p.vx) * Math.min(1, dt * (p.grounded ? 18 : 9));
+      const damagedMovement = isDamagedMovementRegion(state.region);
+      const moveSpeed = damagedMovement ? DAMAGED_MOVE_SPEED : NORMAL_MOVE_SPEED;
+      canvas.dataset.moveSpeed = String(moveSpeed);
+      canvas.dataset.movementState = damagedMovement ? "damaged" : "normal";
+      const target = move * moveSpeed;
+      p.vx += (target - p.vx) * Math.min(1, dt * (p.grounded ? GROUND_MOVE_RESPONSE : AIR_MOVE_RESPONSE));
       const gravity = p.vy < 0 ? ASCENT_GRAVITY : FALL_GRAVITY;
       p.vy = Math.min(MAX_FALL_SPEED, p.vy + gravity * dt);
     }
@@ -862,16 +878,46 @@
     if (p.doubleJumpTime > 0) {
       const duration = clip("doubleJump").duration || 0.34;
       const progress = actionProgress(p.doubleJumpTime, duration);
-      ctx.save();
-      ctx.globalAlpha = (1 - progress) * 0.72;
-      ctx.strokeStyle = "#6deeff";
-      ctx.lineWidth = 3;
-      ctx.beginPath();
-      ctx.ellipse(x, bottom - 5, 18 + progress * 34, 6 + progress * 10, 0, 0, Math.PI * 2);
-      ctx.stroke();
-      ctx.restore();
+      drawDoubleJumpCorePulse(x, bottom - 34 + offsetY, progress);
     }
 
+  }
+
+  function drawDoubleJumpCorePulse(x, y, progress) {
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const radius = 12 + eased * 34;
+    const alpha = Math.max(0, 1 - progress) * 0.78;
+
+    ctx.save();
+    ctx.translate(Math.round(x), Math.round(y));
+    ctx.globalCompositeOperation = "screen";
+    ctx.strokeStyle = `rgba(109, 238, 255, ${alpha})`;
+    ctx.fillStyle = `rgba(140, 245, 255, ${alpha * 0.32})`;
+    ctx.lineWidth = 3;
+
+    ctx.beginPath();
+    for (let i = 0; i <= 64; i += 1) {
+      const angle = (Math.PI * 2 * i) / 64;
+      const tooth = Math.max(0, Math.cos(angle * 8 + eased * 0.8)) * 3;
+      const pointRadius = radius + tooth;
+      const px = Math.cos(angle) * pointRadius;
+      const py = Math.sin(angle) * pointRadius;
+      if (i === 0) ctx.moveTo(px, py);
+      else ctx.lineTo(px, py);
+    }
+    ctx.closePath();
+    ctx.stroke();
+
+    ctx.globalAlpha = 0.72;
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(0, 0, 7 + eased * 22, 0, Math.PI * 2);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(0, 0, 6 + eased * 4, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
   }
 
   function drawExitSignals() {
@@ -940,7 +986,7 @@
   }
 
   async function initialize() {
-    const response = await fetch("data/act1-regions.json");
+    const response = await fetch("data/act1-regions.json?v=27");
     if (!response.ok) throw new Error("ACT1 지역 데이터를 불러오지 못했습니다.");
     state.data = await response.json();
     createTabs();

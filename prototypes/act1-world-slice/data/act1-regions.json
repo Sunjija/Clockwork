@@ -3,7 +3,7 @@
   "assetRevision": 2,
   "resolution": { "width": 1280, "height": 720 },
   "characterAsset": {
-    "revision": 26,
+    "revision": 27,
     "animationSpec": "data/tique-animation-spec.json",
     "canonicalOpaqueHeight": 102,
     "sequenceScale": 0.3,
@@ -58,7 +58,7 @@
     ],
     "doubleJump": [
       { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-01-compress.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-02-impulse.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-03-extend.png", "sourceFacing": 1 },
       { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-03-extend.png", "sourceFacing": 1 },
       { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-04-recover.png", "sourceFacing": 1 }
     ],

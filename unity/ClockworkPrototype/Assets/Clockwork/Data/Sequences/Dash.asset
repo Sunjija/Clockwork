@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdb355afb287f3242ac368798ed3a9d7, type: 3}
+  m_Name: Dash
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.SpriteSequence
+  frames:
+  - {fileID: 21300000, guid: 2b9e1dc04df86eb43a5eb38a87207fa8, type: 3}
+  - {fileID: 21300000, guid: 8af33cddba8ed0443860df452ea8bd55, type: 3}
+  - {fileID: 21300000, guid: c9b3f6d21e73c044cb64e4e07c2cdbf5, type: 3}
+  - {fileID: 21300000, guid: 07d42f8d0a9d7c24686e732c3d071601, type: 3}
+  normalizedFrameEnds:
+  - 0.0938
+  - 0.2813
+  - 0.6875
+  - 1
+  duration: 0.32
+  loop: 0
+  renderScale: 0.3
