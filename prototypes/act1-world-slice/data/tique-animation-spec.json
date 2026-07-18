@@ -20,6 +20,13 @@
       "armThicknessToHeadWidthMax": 0.18,
       "fistDiameterToHeadWidthMax": 0.2,
       "extendedArmReachToHeadWidthMax": 0.55,
+      "weaponPoseLock": {
+        "preserveShortArmsAndLegs": true,
+        "forbidLimbStretchToReachGrip": true,
+        "handsStayNearTorso": true,
+        "greatswordGrip": "short main grip with a lower auxiliary grip near the guard",
+        "hammerGrip": "medium shaft with a classic perpendicular T-head; both hands stay close to the chest"
+      },
       "canonicalSilhouetteClips": ["idle", "attack", "dash"],
       "canonicalSilhouetteVariance": 0,
       "rearWindUpKey": false
@@ -49,14 +56,18 @@
       "sync": "ground-distance",
       "snapToContactOnStop": true,
       "timeline": [
-        { "name": "contact-a", "frame": 0, "to": 0.1806, "offsetY": 0 },
-        { "name": "down-a", "frame": 1, "to": 0.3056, "offsetY": 0 },
-        { "name": "pass-a", "frame": 2, "to": 0.4167, "offsetY": 0 },
-        { "name": "up-a", "frame": 3, "to": 0.5, "offsetY": 0 },
-        { "name": "contact-b", "frame": 4, "to": 0.7083, "offsetY": 0 },
-        { "name": "down-b", "frame": 5, "to": 0.8333, "offsetY": 0 },
-        { "name": "pass-b", "frame": 6, "to": 0.9306, "offsetY": 0 },
-        { "name": "up-b", "frame": 7, "to": 1.0, "offsetY": 0 }
+        { "name": "contact-a", "frame": 0, "to": 0.0833, "offsetY": 0 },
+        { "name": "settle-a", "frame": 1, "to": 0.1667, "offsetY": 0 },
+        { "name": "down-a", "frame": 2, "to": 0.25, "offsetY": 0 },
+        { "name": "pass-a", "frame": 3, "to": 0.3333, "offsetY": 0 },
+        { "name": "push-a", "frame": 4, "to": 0.4167, "offsetY": 0 },
+        { "name": "up-a", "frame": 5, "to": 0.5, "offsetY": 0 },
+        { "name": "contact-b", "frame": 6, "to": 0.5833, "offsetY": 0 },
+        { "name": "settle-b", "frame": 7, "to": 0.6667, "offsetY": 0 },
+        { "name": "down-b", "frame": 8, "to": 0.75, "offsetY": 0 },
+        { "name": "pass-b", "frame": 9, "to": 0.8333, "offsetY": 0 },
+        { "name": "push-b", "frame": 10, "to": 0.9167, "offsetY": 0 },
+        { "name": "up-b", "frame": 11, "to": 1.0, "offsetY": 0 }
       ]
     },
     "jump": {
@@ -112,22 +123,68 @@
         { "name": "recovery", "from": 0.6875, "to": 1.0 }
       ]
     },
-    "attack": {
-      "duration": 0.42,
-      "activeWindow": [0.24, 0.68],
+    "fist-attack": {
+      "duration": 0.36,
+      "activeWindow": [0.3, 0.56],
       "timeline": [
-        { "name": "anticipation", "frame": 0, "to": 0.1667 },
-        { "name": "weight-shift", "frame": 1, "to": 0.2857 },
-        { "name": "contact", "frame": 2, "to": 0.381 },
-        { "name": "follow-through", "frame": 3, "to": 0.5238 },
-        { "name": "recoil", "frame": 4, "to": 0.7381 },
-        { "name": "recovery", "frame": 5, "to": 1.0 }
+        { "name": "guard", "frame": 0, "to": 0.1 },
+        { "name": "coil", "frame": 1, "to": 0.22 },
+        { "name": "acceleration", "frame": 2, "to": 0.34 },
+        { "name": "contact", "frame": 3, "to": 0.46 },
+        { "name": "hit-stop", "frame": 4, "to": 0.58 },
+        { "name": "recoil", "frame": 5, "to": 0.7 },
+        { "name": "settle", "frame": 6, "to": 0.84 },
+        { "name": "guard-return", "frame": 7, "to": 1.0 }
+      ]
+    },
+    "greatsword-attack": {
+      "duration": 0.68,
+      "activeWindow": [0.38, 0.62],
+      "timeline": [
+        { "name": "low-guard", "frame": 0, "to": 0.12 },
+        { "name": "rear-shoulder-load", "frame": 1, "to": 0.25 },
+        { "name": "high-load", "frame": 2, "to": 0.36 },
+        { "name": "edge-leading-acceleration", "frame": 3, "to": 0.46 },
+        { "name": "diagonal-cut", "frame": 4, "to": 0.54 },
+        { "name": "cut-contact", "frame": 5, "to": 0.62 },
+        { "name": "low-follow-through", "frame": 6, "to": 0.78 },
+        { "name": "guard-return", "frame": 7, "to": 1.0 }
+      ]
+    },
+    "hammer-attack": {
+      "duration": 0.86,
+      "activeWindow": [0.38, 0.58],
+      "timeline": [
+        { "name": "guard", "frame": 0, "to": 0.14 },
+        { "name": "rear-shoulder-load", "frame": 1, "to": 0.3 },
+        { "name": "torso-compression", "frame": 2, "to": 0.38 },
+        { "name": "single-heavy-swing", "frame": 3, "to": 0.46 },
+        { "name": "contact-stop", "frame": 4, "to": 0.58 },
+        { "name": "opposite-shoulder-follow-through", "frame": 5, "to": 0.72 },
+        { "name": "settle", "frame": 6, "to": 0.88 },
+        { "name": "guard-return", "frame": 7, "to": 1.0 }
+      ]
+    },
+    "attack": {
+      "duration": 0.4,
+      "activeWindow": [0.34, 0.64],
+      "timeline": [
+        { "name": "guard", "frame": 0, "to": 0.1 },
+        { "name": "coil", "frame": 1, "to": 0.19 },
+        { "name": "wind-up", "frame": 2, "to": 0.29 },
+        { "name": "weight-transfer", "frame": 3, "to": 0.37 },
+        { "name": "impact", "frame": 4, "to": 0.47 },
+        { "name": "hit-stop", "frame": 5, "to": 0.59 },
+        { "name": "follow-through", "frame": 6, "to": 0.69 },
+        { "name": "recoil", "frame": 7, "to": 0.79 },
+        { "name": "settle", "frame": 8, "to": 0.89 },
+        { "name": "recovery", "frame": 9, "to": 1.0 }
       ],
       "phases": [
-        { "name": "anticipation", "from": 0.0, "to": 0.2857 },
-        { "name": "action", "from": 0.2857, "to": 0.5238 },
-        { "name": "follow-through", "from": 0.5238, "to": 0.7381 },
-        { "name": "recovery", "from": 0.7381, "to": 1.0 }
+        { "name": "anticipation", "from": 0.0, "to": 0.29 },
+        { "name": "action", "from": 0.29, "to": 0.59 },
+        { "name": "follow-through", "from": 0.59, "to": 0.72 },
+        { "name": "recovery", "from": 0.72, "to": 1.0 }
       ]
     },
     "hit": {

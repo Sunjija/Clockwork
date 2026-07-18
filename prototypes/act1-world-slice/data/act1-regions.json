@@ -3,55 +3,119 @@
   "assetRevision": 2,
   "resolution": { "width": 1280, "height": 720 },
   "characterAsset": {
-    "revision": 11,
+    "revision": 26,
     "animationSpec": "data/tique-animation-spec.json",
     "canonicalOpaqueHeight": 102,
-    "sequenceScale": 0.34,
-    "master": "../lento-vertical-slice/reference/tique-3q-generated-source.png",
+    "sequenceScale": 0.3,
+    "sequenceScales": {
+      "idle": 0.3,
+      "walk": 0.3,
+      "jump": 0.3,
+      "doubleJump": 0.3,
+      "dash": 0.3
+    },
+    "master": "../lento-vertical-slice/assets/tique/generated/v7/master/tique-master.png",
+    "masterFacing": 1,
     "idle": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/idle/idle-01-open.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/idle/idle-02-half-blink.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/idle/idle-03-blink.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/idle/idle-04-open.png", "sourceFacing": 1 }
     ],
     "walk": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-01-contact-a.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-02-down-a.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-03-pass-a.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-04-up-a.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-05-contact-b.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-06-down-b.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-07-pass-b.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/walk/walk-08-up-b.png", "sourceFacing": 1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-01-contact-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-02-settle-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-03-down-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-04-pass-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-05-push-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-06-up-a.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-07-contact-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-08-settle-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-09-down-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-10-pass-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-11-push-b.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/walk/walk-12-up-b.png", "sourceFacing": 1 }
     ],
     "attack": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-01-guard.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-02-coil.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-03-windup.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-04-transfer.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-05-impact.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-06-hitstop.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-07-follow.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-08-recoil.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-09-settle.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v9-rig-final/attack/attack-10-recover.png", "sourceFacing": 1 }
     ],
     "jump": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-01-takeoff.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-02-launch.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-03-rise.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-04-apex.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-05-fall.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/jump/jump-06-land.png", "sourceFacing": 1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/jump/jump-01-takeoff.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/jump/jump-02-launch.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/jump/jump-03-rise.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/jump/jump-04-apex.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/jump/jump-05-fall.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/jump/jump-06-land.png", "sourceFacing": 1 }
     ],
     "doubleJump": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-01-compress.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-02-impulse.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-03-extend.png", "sourceFacing": 1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/double-jump/double-jump-04-recover.png", "sourceFacing": 1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-01-compress.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-02-impulse.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-03-extend.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/double-jump/double-jump-04-recover.png", "sourceFacing": 1 }
     ],
     "dash": [
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 },
-      { "src": "../lento-vertical-slice/assets/tique/generated/v3/idle/idle-01-settle.png", "sourceFacing": -1 }
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/dash/dash-01-anticipation.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/dash/dash-02-push.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/dash/dash-03-active.png", "sourceFacing": 1 },
+      { "src": "../lento-vertical-slice/assets/tique/generated/v7/dash/dash-04-recovery.png", "sourceFacing": 1 }
     ],
+    "attackSets": {
+      "default": "fist",
+      "sets": {
+        "fist": {
+          "label": "주먹",
+          "sequenceScale": 0.31,
+          "frames": [
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/00.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/01.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/02.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/03.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/04.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/05.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/06.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/07.png", "sourceFacing": 1 }
+          ]
+        },
+        "greatsword": {
+          "label": "대검",
+          "sequenceScale": 0.36,
+          "sourceAnchor": { "x": 240, "y": 430 },
+          "frames": [
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/00.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/01.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/02.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/03.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/04.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/05.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/06.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/07.png", "sourceFacing": 1 }
+          ]
+        },
+        "hammer": {
+          "label": "망치",
+          "sequenceScale": 0.36,
+          "frames": [
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/00.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/01.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/02.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/03.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/04.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/05.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/06.png", "sourceFacing": 1 },
+            { "src": "../lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/07.png", "sourceFacing": 1 }
+          ]
+        }
+      }
+    },
     "renderRule": "uniform_scale_bottom_center"
   },
   "backgroundViews": {

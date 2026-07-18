@@ -22,6 +22,23 @@
   const FALL_GRAVITY = ASCENT_GRAVITY * 2;
   const JUMP_CUT_GRAVITY = 1120;
   const MAX_FALL_SPEED = 860;
+  const WEAPON_PROFILES = {
+    fist: {
+      duration: 0.36,
+      activeWindow: [0.3, 0.56],
+      hitbox: { x: 12, y: -72, w: 54, h: 56 }
+    },
+    greatsword: {
+      duration: 0.68,
+      activeWindow: [0.38, 0.62],
+      hitbox: { x: 10, y: -96, w: 130, h: 100 }
+    },
+    hammer: {
+      duration: 0.86,
+      activeWindow: [0.38, 0.58],
+      hitbox: { x: 8, y: -100, w: 136, h: 102 }
+    }
+  };
   const previewMotion = new URLSearchParams(location.search).get("previewMotion");
   const keys = new Set();
   const pressed = new Set();
@@ -42,6 +59,7 @@
     imageToken: 0,
     lastTime: performance.now(),
     hitboxes: false,
+    weapon: "fist",
     player: null
   };
 
@@ -49,6 +67,9 @@
   const overlaps = (a, b) => a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
   const down = (...codes) => codes.some((code) => keys.has(code));
   const consume = (...codes) => codes.some((code) => pressed.has(code));
+  function weaponProfile(name = state.weapon) {
+    return WEAPON_PROFILES[name] || WEAPON_PROFILES.fist;
+  }
 
   function loadImage(src) {
     if (imageCache.has(src)) return imageCache.get(src);
@@ -188,8 +209,8 @@
     };
   }
 
-  function makeSequenceFrame(image, sourceFacing, scale) {
-    const sourceAnchor = art.animation?.canonical?.sourceAnchor || { x: 320, y: 480 };
+  function makeSequenceFrame(image, sourceFacing, scale, anchorOverride = null) {
+    const sourceAnchor = anchorOverride || art.animation?.canonical?.sourceAnchor || { x: 320, y: 480 };
     return {
       sprite: chromaCrop(image, false),
       sourceFacing,
@@ -228,7 +249,8 @@
   async function loadCharacterArt(config) {
     const characterImageSrc = (src) => `${src}?v=${config.revision || 1}`;
     const loadFrameSet = (frames) => Promise.all(frames.map((frame) => loadImage(characterImageSrc(frame.src))));
-    const [animation, master, idle, walk, attack, jump, doubleJump, dash] = await Promise.all([
+    const attackEntries = Object.entries(config.attackSets?.sets || {});
+    const [animation, master, idle, walk, jump, doubleJump, dash, attackImages] = await Promise.all([
       fetch(config.animationSpec).then((response) => {
         if (!response.ok) throw new Error(`Animation spec could not be loaded: ${config.animationSpec}`);
         return response.json();
@@ -236,22 +258,33 @@
       loadImage(characterImageSrc(config.master)),
       loadFrameSet(config.idle),
       loadFrameSet(config.walk),
-      loadFrameSet(config.attack),
       loadFrameSet(config.jump),
       loadFrameSet(config.doubleJump),
-      loadFrameSet(config.dash)
+      loadFrameSet(config.dash),
+      Promise.all(attackEntries.map(([, attack]) => loadFrameSet(attack.frames)))
     ]);
     art.animation = animation;
     const opaqueHeight = config.canonicalOpaqueHeight || animation.canonical?.opaqueHeight || RENDER_HEIGHT;
     const sequenceScale = config.sequenceScale || 0.34;
-    const prepareSequence = (images, frames) => images.map((image, index) => makeSequenceFrame(image, frames[index].sourceFacing, sequenceScale));
-    art.master = makeAnchoredFrame(master, -1, opaqueHeight);
-    art.actions.idle = prepareSequence(idle, config.idle);
-    art.actions.walk = prepareSequence(walk, config.walk);
-    art.actions.attack = prepareSequence(attack, config.attack);
-    art.actions.jump = prepareSequence(jump, config.jump);
-    art.actions.doubleJump = prepareSequence(doubleJump, config.doubleJump);
-    art.actions.dash = prepareSequence(dash, config.dash);
+    const sequenceScales = config.sequenceScales || {};
+    const prepareSequence = (images, frames, scale = sequenceScale, sourceAnchor = null) => images.map(
+      (image, index) => makeSequenceFrame(image, frames[index].sourceFacing, scale, sourceAnchor)
+    );
+    art.master = makeAnchoredFrame(master, config.masterFacing || 1, opaqueHeight);
+    art.actions.idle = prepareSequence(idle, config.idle, sequenceScales.idle || sequenceScale);
+    art.actions.walk = prepareSequence(walk, config.walk, sequenceScales.walk || sequenceScale);
+    art.actions.jump = prepareSequence(jump, config.jump, sequenceScales.jump || sequenceScale);
+    art.actions.doubleJump = prepareSequence(doubleJump, config.doubleJump, sequenceScales.doubleJump || sequenceScale);
+    art.actions.dash = prepareSequence(dash, config.dash, sequenceScales.dash || sequenceScale);
+    attackEntries.forEach(([name, attack], index) => {
+      art.actions[`${name}-attack`] = prepareSequence(
+        attackImages[index],
+        attack.frames,
+        attack.sequenceScale || sequenceScale,
+        attack.sourceAnchor || null
+      );
+    });
+    state.weapon = config.attackSets?.default || attackEntries[0]?.[0] || "fist";
     art.ready = true;
   }
 
@@ -325,6 +358,7 @@
       grounded: true,
       coyote: 0.1,
       attackTime: 0,
+      attackWeapon: null,
       dashTime: 0,
       dashCooldown: 0,
       jumpTakeoffTime: 0,
@@ -335,6 +369,15 @@
       walkDistance: 0,
       wasWalking: false
     };
+  }
+
+  function selectWeapon(name) {
+    if (!WEAPON_PROFILES[name] || !art.actions[`${name}-attack`]?.length) return;
+    state.weapon = name;
+    document.querySelectorAll("#weaponSwitch button[data-weapon]").forEach((button) => {
+      button.setAttribute("aria-pressed", button.dataset.weapon === name ? "true" : "false");
+    });
+    canvas.dataset.weapon = name;
   }
 
   function createTabs() {
@@ -410,7 +453,6 @@
   function update(dt) {
     const p = state.player;
     const groundedAtStart = p.grounded;
-    const attackDuration = clip("attack").duration || 0.42;
     const dashDuration = clip("dash").duration || 0.32;
     const doubleJumpDuration = clip("doubleJump").duration || 0.34;
     p.attackTime = Math.max(0, p.attackTime - dt);
@@ -422,6 +464,10 @@
     if (p.grounded) p.airJumps = 1;
     p.coyote = p.grounded ? 0.11 : Math.max(0, p.coyote - dt);
     p.motionTime += dt;
+
+    if (consume("Digit1")) selectWeapon("fist");
+    if (consume("Digit2")) selectWeapon("greatsword");
+    if (consume("Digit3")) selectWeapon("hammer");
 
     let move = (down("ArrowLeft", "KeyA") ? -1 : 0) + (down("ArrowRight", "KeyD") ? 1 : 0);
     if (previewMotion === "walk-left") move = -1;
@@ -440,7 +486,8 @@
       p.motionTime = 0;
     }
     if (consume("KeyX") && p.attackTime === 0 && p.dashTime === 0) {
-      p.attackTime = attackDuration;
+      p.attackWeapon = state.weapon;
+      p.attackTime = weaponProfile(p.attackWeapon).duration;
       p.motionTime = 0;
     }
     if (consume("KeyZ") && p.dashTime === 0) {
@@ -604,6 +651,66 @@
     ctx.restore();
   }
 
+  function drawHammerSwingTrail(x, bottom, facing, progress) {
+    const start = 0.34;
+    const end = 0.62;
+    if (progress < start || progress > end) return;
+
+    const t = clamp((progress - start) / (end - start), 0, 1);
+    const eased = 1 - Math.pow(1 - t, 3);
+    const tail = -2.52;
+    const head = tail + eased * 3.08;
+    const alpha = Math.sin(Math.PI * t);
+
+    ctx.save();
+    ctx.translate(Math.round(x), Math.round(bottom - 54));
+    ctx.scale(facing, 1);
+    ctx.rotate(-0.04);
+    ctx.lineCap = "round";
+    ctx.globalCompositeOperation = "screen";
+    ctx.shadowColor = `rgba(255, 190, 67, ${alpha * 0.6})`;
+    ctx.shadowBlur = 8;
+    ctx.beginPath();
+    ctx.arc(0, 0, 88, tail, head);
+    ctx.strokeStyle = `rgba(232, 147, 38, ${0.26 + alpha * 0.5})`;
+    ctx.lineWidth = 24;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(0, 0, 88, tail + 0.07, head);
+    ctx.strokeStyle = `rgba(255, 244, 190, ${0.28 + alpha * 0.7})`;
+    ctx.lineWidth = 9;
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function drawGreatswordSlashTrail(x, bottom, facing, progress) {
+    const start = 0.34;
+    const end = 0.62;
+    if (progress < start || progress > end) return;
+
+    const t = clamp((progress - start) / (end - start), 0, 1);
+    const alpha = Math.sin(Math.PI * t);
+
+    ctx.save();
+    ctx.translate(Math.round(x), Math.round(bottom - 42));
+    ctx.scale(facing, 1);
+    ctx.lineCap = "round";
+    ctx.globalCompositeOperation = "screen";
+    ctx.beginPath();
+    ctx.moveTo(-50, -67);
+    ctx.quadraticCurveTo(16, -46, 88, 18);
+    ctx.strokeStyle = `rgba(95, 218, 245, ${0.08 + alpha * 0.3})`;
+    ctx.lineWidth = 8;
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(-46, -65);
+    ctx.quadraticCurveTo(18, -43, 88, 18);
+    ctx.strokeStyle = `rgba(244, 252, 255, ${0.16 + alpha * 0.54})`;
+    ctx.lineWidth = 2.5;
+    ctx.stroke();
+    ctx.restore();
+  }
+
   function drawPlayer() {
     if (!art.ready || !state.player) return;
     const p = state.player;
@@ -616,26 +723,44 @@
     let animationName = "idle";
     let animationPhase = "settle";
     let attackProgress = 0;
+    let attackWeapon = null;
 
     if (p.attackTime > 0) {
-      const duration = clip("attack").duration || 0.42;
+      attackWeapon = p.attackWeapon || state.weapon;
+      const duration = weaponProfile(attackWeapon).duration;
       attackProgress = actionProgress(p.attackTime, duration);
-      const phase = phaseAt("attack", attackProgress);
-      animationName = "attack";
-      animationPhase = phase?.name || "action";
-      anchoredFrame = sequenceAt("attack", attackProgress);
-      if (animationPhase === "anticipation") {
-        angle = -0.045 * p.face;
-        offsetX = -2 * p.face;
-      } else if (animationPhase === "action") {
-        angle = 0.075 * p.face;
-        offsetX = 4 * p.face;
-      } else if (animationPhase === "follow-through") {
-        angle = 0.1 * p.face;
-        offsetX = 5 * p.face;
-      } else {
-        angle = 0.025 * p.face;
-        offsetX = 1 * p.face;
+      const activeWindow = weaponProfile(attackWeapon).activeWindow;
+      animationName = `${attackWeapon}-attack`;
+      animationPhase = attackProgress < activeWindow[0]
+        ? "anticipation"
+        : attackProgress <= activeWindow[1] ? "active" : "recovery";
+      anchoredFrame = sequenceAt(animationName, attackProgress);
+      if (attackWeapon === "hammer") {
+        if (attackProgress < 0.38) {
+          angle = -0.035 * p.face;
+          offsetX = -2 * p.face;
+        } else if (attackProgress < 0.62) {
+          const swing = (attackProgress - 0.38) / 0.24;
+          angle = (-0.035 + swing * 0.12) * p.face;
+          offsetX = Math.round(swing * 7) * p.face;
+        } else {
+          const recovery = clamp((attackProgress - 0.62) / 0.38, 0, 1);
+          angle = (0.085 * (1 - recovery)) * p.face;
+          offsetX = Math.round(7 * (1 - recovery)) * p.face;
+        }
+      } else if (attackWeapon === "greatsword") {
+        if (attackProgress < 0.38) {
+          angle = -0.025 * p.face;
+          offsetX = -1 * p.face;
+        } else if (attackProgress < 0.62) {
+          const slash = (attackProgress - 0.38) / 0.24;
+          angle = (-0.025 + slash * 0.105) * p.face;
+          offsetX = Math.round(slash * 6) * p.face;
+        } else {
+          const recovery = clamp((attackProgress - 0.62) / 0.38, 0, 1);
+          angle = (0.065 * (1 - recovery)) * p.face;
+          offsetX = Math.round(5 * (1 - recovery)) * p.face;
+        }
       }
     } else if (p.dashTime > 0) {
       const duration = clip("dash").duration || 0.32;
@@ -719,6 +844,8 @@
     canvas.dataset.animation = animationName;
     canvas.dataset.animationPhase = animationPhase;
     canvas.dataset.animationFrame = String(Math.max(0, (art.actions[animationName] || []).indexOf(anchoredFrame)));
+    if (attackWeapon === "hammer") drawHammerSwingTrail(x + offsetX, bottom + offsetY, p.face, attackProgress);
+    if (attackWeapon === "greatsword") drawGreatswordSlashTrail(x + offsetX, bottom + offsetY, p.face, attackProgress);
     drawAnchoredPose(anchoredFrame, x, bottom, p.face, 1, angle, offsetX, offsetY);
 
     if (animationName === "idle") {
@@ -745,17 +872,6 @@
       ctx.restore();
     }
 
-    const activeWindow = clip("attack").activeWindow || [0.24, 0.68];
-    if (p.attackTime > 0 && attackProgress >= activeWindow[0] && attackProgress <= activeWindow[1]) {
-      ctx.save();
-      ctx.strokeStyle = "rgba(103, 224, 241, .72)";
-      ctx.lineWidth = 3;
-      ctx.beginPath();
-      if (p.face > 0) ctx.arc(x + 25, bottom - 52, 42, -1.2, 0.95);
-      else ctx.arc(x - 25, bottom - 52, 42, 2.2, 4.35);
-      ctx.stroke();
-      ctx.restore();
-    }
   }
 
   function drawExitSignals() {
@@ -790,6 +906,18 @@
     const p = state.player;
     ctx.strokeStyle = "#ff6879";
     ctx.strokeRect(p.x + 0.5, p.y + 0.5, p.w - 1, p.h - 1);
+    if (p.attackTime > 0) {
+      const name = p.attackWeapon || state.weapon;
+      const profile = weaponProfile(name);
+      const progress = actionProgress(p.attackTime, profile.duration);
+      if (progress >= profile.activeWindow[0] && progress <= profile.activeWindow[1]) {
+        const hitbox = profile.hitbox;
+        const originX = p.x + p.w / 2;
+        const hitboxX = p.face > 0 ? originX + hitbox.x : originX - hitbox.x - hitbox.w;
+        ctx.strokeStyle = name === "hammer" ? "#f0bd58" : name === "greatsword" ? "#6deeff" : "#ff9878";
+        ctx.strokeRect(hitboxX + 0.5, p.y + p.h + hitbox.y + 0.5, hitbox.w, hitbox.h);
+      }
+    }
   }
 
   function render() {
@@ -817,13 +945,14 @@
     state.data = await response.json();
     createTabs();
     await loadCharacterArt(state.data.characterAsset);
+    selectWeapon(state.weapon);
     const requested = new URLSearchParams(location.search).get("region");
     const startId = state.data.regions.some((entry) => entry.id === requested) ? requested : state.data.mainRoute[0];
     await switchRegion(startId, previewMotion === "walk-left" ? "right" : "left");
   }
 
   addEventListener("keydown", (event) => {
-    const gameKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "KeyA", "KeyD", "KeyZ", "KeyX", "KeyC", "KeyH"];
+    const gameKeys = ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "KeyA", "KeyD", "KeyZ", "KeyX", "KeyC", "KeyH", "Digit1", "Digit2", "Digit3"];
     if (gameKeys.includes(event.code)) event.preventDefault();
     if (!keys.has(event.code)) pressed.add(event.code);
     keys.add(event.code);
@@ -832,6 +961,12 @@
 
   addEventListener("keyup", (event) => keys.delete(event.code));
   canvas.addEventListener("pointerdown", () => canvas.focus());
+  document.querySelectorAll("#weaponSwitch button[data-weapon]").forEach((button) => {
+    button.addEventListener("click", () => {
+      selectWeapon(button.dataset.weapon);
+      canvas.focus();
+    });
+  });
   document.getElementById("resetButton").addEventListener("click", () => {
     if (!state.region) return;
     state.player = makePlayer("left");

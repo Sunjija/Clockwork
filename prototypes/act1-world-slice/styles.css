@@ -39,6 +39,7 @@ body {
 
 .region-heading,
 .controls,
+.weapon-switch,
 .region-note,
 .gate-note,
 .loading,
@@ -92,6 +93,52 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 4px;
+}
+
+.weapon-switch {
+  top: 52px;
+  right: 18px;
+  display: flex;
+  border: 1px solid rgba(93, 109, 118, .78);
+  background: rgba(7, 11, 15, .86);
+}
+
+.weapon-switch button {
+  display: inline-flex;
+  min-width: 72px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 0;
+  border-right: 1px solid rgba(93, 109, 118, .62);
+  background: transparent;
+  color: #aeb9bf;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.weapon-switch button:last-child {
+  border-right: 0;
+}
+
+.weapon-switch button[aria-pressed="true"] {
+  background: rgba(195, 144, 46, .22);
+  color: #f3d386;
+}
+
+.weapon-switch button:hover,
+.weapon-switch button:focus-visible {
+  background: rgba(95, 214, 232, .12);
+  color: #f1f6f7;
+  outline: none;
+}
+
+.weapon-switch kbd {
+  min-width: 18px;
+  height: 18px;
+  font-size: 9px;
 }
 
 kbd {
@@ -261,6 +308,16 @@ kbd {
 
   .controls {
     max-width: 330px;
+    font-size: 9px;
+  }
+
+  .weapon-switch {
+    top: 76px;
+  }
+
+  .weapon-switch button {
+    min-width: 58px;
+    height: 28px;
     font-size: 9px;
   }
 

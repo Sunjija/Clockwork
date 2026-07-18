@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CLOCKWORK - ACT1 비주얼 월드 슬라이스</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
   <main class="game-shell">
@@ -22,6 +22,12 @@
       <span><kbd>X</kbd> 공격</span>
       <span><kbd>C</kbd> 대시</span>
       <span><kbd>H</kbd> 충돌</span>
+    </div>
+
+    <div class="weapon-switch" id="weaponSwitch" role="group" aria-label="공격 무기 선택">
+      <button type="button" data-weapon="fist" aria-pressed="true"><kbd>1</kbd><span>주먹</span></button>
+      <button type="button" data-weapon="greatsword" aria-pressed="false"><kbd>2</kbd><span>대검</span></button>
+      <button type="button" data-weapon="hammer" aria-pressed="false"><kbd>3</kbd><span>망치</span></button>
     </div>
 
     <div class="region-note" id="regionNote"></div>
@@ -42,6 +48,6 @@
     <button class="icon-button" id="resetButton" type="button" title="현재 지역 다시 시작" aria-label="현재 지역 다시 시작">↺</button>
     <button class="icon-button fullscreen" id="fullscreenButton" type="button" title="전체 화면" aria-label="전체 화면">⛶</button>
   </main>
-  <script src="game.js"></script>
+  <script src="game.js?v=5"></script>
 </body>
 </html>

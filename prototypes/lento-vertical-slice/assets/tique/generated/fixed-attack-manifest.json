@@ -1,0 +1,108 @@
+{
+  "frameSize": [
+    640,
+    512
+  ],
+  "anchor": [
+    320,
+    480
+  ],
+  "sequences": {
+    "fist": {
+      "fps": 22,
+      "scale": 1.25,
+      "sourceGroundY": 482,
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        2,
+        1,
+        7
+      ],
+      "anchor": [
+        320,
+        480
+      ],
+      "frames": [
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/00.png",
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/01.png",
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/02.png",
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/03.png",
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/04.png",
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/05.png",
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/06.png",
+        "lento-vertical-slice/assets/tique/generated/v11-attack-fixes/fist/fixed/frames/07.png"
+      ]
+    },
+    "greatsword": {
+      "fps": 15,
+      "scale": 1.45,
+      "sourceGroundY": [
+        480,
+        477,
+        478,
+        480,
+        484,
+        484,
+        484,
+        488
+      ],
+      "slots": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "anchor": [
+        240,
+        430
+      ],
+      "frames": [
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/00.png",
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/01.png",
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/02.png",
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/03.png",
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/04.png",
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/05.png",
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/06.png",
+        "lento-vertical-slice/assets/tique/generated/v14-greatsword-slash/fixed/frames/07.png"
+      ]
+    },
+    "hammer": {
+      "fps": 13,
+      "scale": 1.45,
+      "sourceGroundY": 473,
+      "slots": [
+        0,
+        2,
+        3,
+        4,
+        4,
+        8,
+        9,
+        0
+      ],
+      "anchor": [
+        320,
+        480
+      ],
+      "frames": [
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/00.png",
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/01.png",
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/02.png",
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/03.png",
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/04.png",
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/05.png",
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/06.png",
+        "lento-vertical-slice/assets/tique/generated/v13-hammer-swing/fixed/frames/07.png"
+      ]
+    }
+  }
+}
