@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Clockwork
 {
-    [RequireComponent(typeof(TiqueMotor))]
+    [RequireComponent(typeof(TiqueMotor), typeof(TiqueInputReader))]
     public sealed class TiqueCombat : MonoBehaviour
     {
         [SerializeField] private AttackDefinition[] attacks;
@@ -10,6 +10,7 @@ namespace Clockwork
         [SerializeField] private LineRenderer trailRenderer;
 
         private TiqueMotor motor;
+        private TiqueInputReader input;
         private int selectedAttack;
         private float attackTimer;
         private bool showHitboxes;
@@ -24,16 +25,17 @@ namespace Clockwork
         private void Awake()
         {
             motor = GetComponent<TiqueMotor>();
+            input = GetComponent<TiqueInputReader>();
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1)) SelectAttack(0);
-            if (Input.GetKeyDown(KeyCode.Alpha2)) SelectAttack(1);
-            if (Input.GetKeyDown(KeyCode.Alpha3)) SelectAttack(2);
-            if (Input.GetKeyDown(KeyCode.H)) showHitboxes = !showHitboxes;
+            if (input.Slot1Pressed) SelectAttack(0);
+            if (input.Slot2Pressed) SelectAttack(1);
+            if (input.Slot3Pressed) SelectAttack(2);
+            if (input.DebugHitboxesPressed) showHitboxes = !showHitboxes;
 
-            if (Input.GetKeyDown(KeyCode.X) && !IsAttacking && !motor.IsDashing && CurrentAttack != null)
+            if (input.AttackPressed && !IsAttacking && !motor.IsDashing && CurrentAttack != null)
             {
                 attackTimer = CurrentAttack.Duration;
             }
@@ -125,4 +127,3 @@ namespace Clockwork
 #endif
     }
 }
-

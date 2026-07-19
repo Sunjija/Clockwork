@@ -1,182 +1,62 @@
-# Clockwork 작업 인수인계
+# CLOCKWORK Handoff
 
-작성일: 2026-07-15 (Asia/Seoul)
+Updated: 2026-07-19 (Asia/Seoul)
 
-## Git 상태
+## Git state
 
-- 현재 브랜치: `main`
-- 추적 브랜치: `origin/main`
-- 이번 인수인계 커밋 직전 상태:
-  - 수정: `prototypes/lento-vertical-slice/game.js`
-  - 수정: `prototypes/lento-vertical-slice/index.html`
-  - 수정: `prototypes/lento-vertical-slice/data/animation-manifest.json`
-  - 신규: `prototypes/lento-vertical-slice/reference/tique-3q-generated-source.png`
-  - 신규: `prototypes/lento-vertical-slice/assets/tique/generated/attack-source.png`
-  - 신규: `prototypes/lento-vertical-slice/assets/tique/generated/jump-source.png`
-  - 신규: `prototypes/lento-vertical-slice/assets/tique/generated/dash-source.png`
-  - 신규: `notes/handoff.md`
-- 최근 커밋(이번 인수인계 커밋 이전): `abe42d09246e69374813d0c554256386413dccbd` (`Add Lento boss fight web prototype`)
-- 이번 작업 커밋 예정 메시지: `Refine Tique action sprites and hitboxes`
+- Branch: `main`
+- Tracking: `origin/main`
+- Base commit: `99cfda9` (`Add Unity prototype and refine ACT1 movement`)
+- Existing untracked experimental sprite directories under
+  `prototypes/lento-vertical-slice/assets/tique/generated/` were not modified or staged.
 
-## Diff 요약
+## Completed
 
-- 티크의 승인된 3/4 외형을 웹 전투 프로토타입의 기본 이미지로 연결했다.
-- 공격, 점프, 대시를 각각 별도의 생성 이미지로 분리했다.
-- 티크 렌더 높이를 `108`에서 `84` 논리 픽셀로 줄였다.
-- 흰색/체크무늬 및 녹색 크로마키 배경을 런타임에서 제거하고 캐릭터 영역을 자동 크롭한다.
-- 공격 방향을 입력 순간에 `horizontal`, `up`, `down` 중 하나로 고정한다.
-- 공격 판정 사각형을 방향별로 분리하고 실제 유효 시간에만 판정/디버그 박스를 활성화한다.
-- 이동용 물리 박스와 피격용 박스를 분리했다. 모든 렌토 공격은 동일한 `playerHurtRect()`를 사용한다.
-- 웹 캐시 버전을 `v=10`으로 올렸다.
+- Installed Unity packages: Input System 1.19.0, Cinemachine 3.1.7, URP 17.5.0,
+  Tilemap Extras 8.0.3, Pixel Perfect 6.0.0, 2D Animation 15.1.0, and Aseprite Importer 5.0.3.
+- Replaced direct legacy keyboard polling with `TiqueInputReader` actions for keyboard and gamepad.
+- Added versioned JSON session data for flags, abilities, room ID, and spawn ID.
+- Added `TIQUE_REPAIRED` progression and connected it to damaged/repaired movement speed.
+- Added a Caligo repair/save workbench. Interact with `W`, Up, or gamepad North.
+- Rebuilt Caligo collision as RuleTile + Tilemap Collider + Composite Collider.
+- Added Cinemachine 3 follow/confiner, 320x180 Pixel Perfect reference, URP 2D renderer,
+  and a global 2D light.
+- Added data-only room gates toward the Limbus bridge and Caligo.
+- Kept the approved Tique animation and attack assets unchanged.
 
-## 완료한 일
+## Missing by design
 
-1. 티크 기본 외형
-   - `reference/tique-3q-generated-source.png`를 기본 포즈로 사용한다.
-   - 원본 비율을 유지하기 위해 좌우 반전, 균일 배율, 회전, 이동만 허용한다.
-   - 캐릭터가 바닥 기준점에 붙도록 하단 중심 피벗을 사용한다.
+- Final industrial 32 PPU RuleTile art
+- Final repair bench and gate visuals
+- Production UI, controller glyphs, SFX, BGM integration, enemies, and boss systems
+- Adjacent Unity room scenes for the Limbus bridge and Caligo
+- Full save-slot UI and save migration beyond schema version 1
 
-2. 동작별 이미지
-   - 공격: `assets/tique/generated/attack-source.png`
-   - 점프: `assets/tique/generated/jump-source.png`
-   - 대시: `assets/tique/generated/dash-source.png`
-   - 각 동작은 서로 다른 포즈 이미지와 타이밍을 사용한다.
+## Test results
 
-3. 히트박스
-   - 정면 공격: 전방 주먹과 맞춘 `36 x 22` 판정
-   - 위 공격: 캐릭터 상단의 `30 x 42` 판정
-   - 아래 공격: 캐릭터 하단의 `30 x 34` 판정
-   - 공격 유효 구간: 남은 공격 시간이 `0.08 < t < 0.19`일 때
-   - 피격 박스: 물리 박스보다 위로 확장한 세로형 중앙 판정
-   - 물기, 꼬리 휩쓸기, 점프 찍기, 돌진, 독 투사체, 음파가 같은 피격 박스를 사용한다.
+- Pass: Unity package resolution and script compilation.
+- Pass: approved prefab and Caligo scene regeneration (`CLOCKWORK_APPROVED_BUILD_OK`).
+- Pass: Windows x64 player build (`CLOCKWORK_WINDOWS_BUILD_OK`).
+- Pass: isolated player runtime smoke (`CLOCKWORK_RUNTIME_SMOKE_OK`, exit code 0).
+- Pass: runtime log contains no warning, exception, or error entries.
+- Pass: runtime physics probe holds Tique at `y=-1.99` with `grounded=True` after 1.5 seconds.
+- Pass: 1280x720 window capture shows the approved Tique sprite, background, HUD, floor, and platforms.
+- Note: Unity logs a non-fatal package-cache assembly validation warning for a missing
+  `Unity.Collections.LowLevel.ILSupport.dll`; compilation and Windows build still complete.
 
-## 남은 일
+## Risks and cautions
 
-1. 공격, 점프, 대시는 현재 각각 한 장의 전용 핵심 포즈와 절차적 타이밍을 사용한다. 실제 제작용 다중 프레임 애니메이션은 아직 필요하다.
-2. 위/아래 공격은 판정과 궤적만 분리되어 있으며 전용 위/아래 공격 포즈는 아직 없다.
-3. 새 피격 박스로 렌토 1~3페이즈 전체를 처음부터 끝까지 플레이해 난이도를 재조정해야 한다.
-4. 녹색 크로마키 에셋은 웹에서 런타임 제거된다. Unity 이전 전에는 투명 PNG로 전처리하고 피벗을 다시 확인해야 한다.
-5. 기존 `assets/tique/animations/` 및 `assets/tique/pixellab/` 파일은 레거시 비교 자료로 남아 있다. 현재 렌더 경로에서는 새 생성 에셋을 우선 사용한다.
+- The current `2.5` unit movement speed preserves prototype camera-scale parity. Re-tune it after
+  final 32 PPU room metrics are locked.
+- `RoomGate` stores validated destination data but does not load missing adjacent scenes yet.
+- Placeholder tile, workbench, and gate visuals are technical markers, not approved game art.
+- Generated `Builds`, `Library`, `Logs`, `Temp`, and `UserSettings` remain excluded from Git.
+- Do not stage the unrelated experimental sprite directories listed in Git status.
 
-## 테스트 결과
+## Next work
 
-- 통과: 브라우저에서 페이지 로드 및 에셋 디코딩
-- 통과: 브라우저 콘솔 오류/경고 없음
-- 통과: 공격, 점프, 지상 대시가 각각 다른 이미지로 전환됨
-- 통과: 대시 잔상 및 바닥 기준점 확인
-- 통과: 히트박스 디버그 모드에서 피격 박스가 머리/코어/몸통 중앙에 정렬됨
-- 통과: 정면 공격 박스가 전방 주먹과 정렬되고 유효 시간에만 표시됨
-- 통과: `data/animation-manifest.json` JSON 파싱
-- 미실행: 위+공격 및 아래+공격을 실제 키 동시 입력으로 시각 캡처
-- 미실행: 렌토 1~3페이즈 전체 회귀 플레이
-- 미실행: 자동화 단위 테스트(현재 별도 테스트 러너 없음)
-- 미실행: Chrome/Firefox/Safari 교차 브라우저 테스트
-- 미실행: Unity 임포트 테스트
-
-## 주의사항
-
-- 논리 렌더 해상도는 `640 x 360`, 출력 캔버스는 `1280 x 720`이다.
-- 티크 이동용 박스(`p.x`, `p.y`, `p.w`, `p.h`)와 피격 박스(`playerHurtRect`)를 다시 합치지 않는다.
-- 공격 방향은 `startAttack()`에서 고정된다. 렌더링과 판정 모두 `p.attackDirection`을 사용해야 한다.
-- 디버그 공격 박스는 `attackIsActive()`와 동일한 조건을 사용해야 실제 판정 시간과 어긋나지 않는다.
-- 생성 원본은 큰 녹색 배경 PNG다. 저장소 용량 최적화가 필요하면 투명화/크롭 후 교체하되 외곽선과 흰색 하이라이트를 보존한다.
-- 로컬 HTTP 서버는 저장소에 포함되지 않는다. 다른 컴퓨터에서 별도로 실행해야 한다.
-- 사용자명, 로컬 절대 경로, 인증 정보, API 키 등 민감한 정보는 이 문서에 포함하지 않았다.
-
-## 다음에 할 일
-
-1. `main`을 pull하고 `prototypes/lento-vertical-slice/`에서 로컬 HTTP 서버를 실행한다.
-2. 히트박스 표시를 켠 뒤 위+공격, 아래+공격을 실제 키보드로 검증한다.
-3. 렌토 1~3페이즈를 전체 플레이하며 새 피격 박스의 체감 난이도를 기록한다.
-4. 공격/점프/대시를 동작별 다중 프레임으로 제작하고 각 프레임의 머리/몸통 비율을 자동 비교한다.
-5. 위/아래 공격 전용 포즈를 추가한 뒤 판정 사각형과 궤적을 다시 맞춘다.
-
----
-
-## 2026-07-17 갱신
-
-### Git 상태
-
-- 현재 브랜치: `main`
-- 추적 브랜치: `origin/main`
-- 작업 시작 시 최근 커밋: `2940fbc` (`Expand map rewards and music planning`)
-- 이번 커밋 예정 메시지: `Refine ACT1 visual slice and Tique animations`
-
-### 완료한 일
-
-- ACT1 메인 9구역과 선택 탐사 3구역의 횡스크롤 배경 및 월드 슬라이스를 추가했다.
-- 맵 노드를 누르면 해당 지역 이미지와 플레이 샘플을 열 수 있도록 맵 뷰어를 연결했다.
-- 티크 동작을 `idle`, `walk`, `jump`, `double-jump`, `dash`, `attack` 폴더로 완전히 분리했다.
-- 걷기 8프레임을 접지, 다운, 통과, 업의 양발 사이클로 교체하고 팔·다리의 교차 방향을 바로잡았다.
-- 대시 4프레임을 준비, 추진, 활성, 회복 포즈로 교체했다.
-- 모든 v3 프레임을 640×512 투명 캔버스와 `y=480` 접지 기준으로 정규화했다.
-- 런타임 에셋 리비전을 9로 올리고 `generated/v3/`만 참조하도록 변경했다.
-- 에셋 리비전 9에서 모든 동작의 머리 폭을 190~192px, 표시 배율을 `0.34`로 고정했다.
-- 공격 6프레임을 짧은 2단 다리 모델로 다시 생성하고 대기 4프레임은 동일 기준 이미지로 통일했다.
-- 대시 복제 잔상을 속도선으로 교체해 캐릭터가 커 보이는 현상을 제거했다.
-
-### 테스트 결과
-
-- 통과: `act1-regions.json` 파싱 및 32개 캐릭터 이미지 참조 존재 여부 검사
-- 통과: 32개 PNG의 640×512 캔버스, 투명 모서리, `y=480` 접지선 검사
-- 통과: 브라우저에서 걷기 8, 공격 6, 대시 4, 더블점프 4프레임 순환 확인
-- 통과: 점프 이륙·정점·낙하·착지 상태 전환 확인
-- 통과: 브라우저 콘솔 오류 없음
-- 통과: 대기→걷기→공격→대시 실플레이 전환에서 크기 변화 및 접지선 확인
-- 통과: 대기·걷기·공격·대시 준비 프레임의 머리 폭 188~194px 자동 검사
-- 통과: 황동 및 시안 팔레트 평균 채널 편차 2 이내 확인
-- 통과: `git diff --check`
-- 미실행: 렌토 1~3페이즈 전체 회귀 플레이
-- 미실행: Unity 임포트 및 픽셀 퍼펙트 카메라 검증
-- 미실행: Chrome/Firefox/Safari 교차 브라우저 테스트
-
-### 남은 일과 주의사항
-
-- 신규 생성 후보 중 비율이 흔들린 점프·더블점프 이미지는 채택하지 않았다. 공격은 `tique-character-model-lock.md` 기준으로 다시 생성했다.
-- 걷기와 대시는 실제 플레이에서 추가 속도 튜닝이 필요할 수 있다. 프레임을 바꾸더라도 640×512 캔버스, `(320, 480)` 소스 피벗, 짧은 다리 비율을 유지한다.
-- 피격, 다운, 기상, 위 공격, 아래 공격 전용 다중 프레임은 아직 제작하지 않았다.
-- 다음 작업은 점프·더블점프도 동일 모델 고정 규칙으로 재검수하는 것이다.
-
----
-
-## 2026-07-19 갱신
-
-### Git 상태
-
-- 현재 브랜치: `main`
-- 추적 브랜치: `origin/main`
-- 작업 시작 시 최근 커밋: `c6c7862` (`Refine Tique animation scale and weapon attacks`)
-- 이번 커밋 대상: ACT1 웹 이동/더블점프 수정과 `unity/ClockworkPrototype` 정식 백업
-
-### 완료한 일
-
-- Unity `6000.5.3f1` 프로젝트와 칼리고 하강 정비축 테스트 씬을 생성했다.
-- 승인된 대기, 걷기, 점프, 더블점프, 대시, 주먹, 대검, 망치 프레임만 Unity 프로젝트에 복사했다.
-- 웹 프로토타입의 이동, 가변 점프, 더블점프, 대시와 세 무기 공격을 Unity 2D 물리로 옮겼다.
-- 공격별 타이밍, 히트박스와 무기 궤적을 `ScriptableObject` 데이터로 분리했다.
-- 더블점프의 발밑 제트 프레임을 런타임 시퀀스에서 제외하고 코어 중심 톱니 공명륜으로 교체했다.
-- 웹 이동속도를 림부스 파손 상태 `215px/s`, 칼리고 이후 정상 상태 `250px/s`로 분리했다.
-- Unity 정상 속도를 `2.5`, 파손 배율을 `0.86`, 지상 반응을 `21`로 설정하고 수리 이벤트 연결용 메서드를 추가했다.
-- Unity 생성 상태, 로그와 Windows 빌드를 제외하는 `.gitignore`를 추가했다.
-
-### 테스트 결과
-
-- 통과: `game.js` 문법 검사
-- 통과: `act1-regions.json` JSON 파싱
-- 통과: 브라우저 더블점프에서 발밑 제트 제거 및 코어 공명륜 표시
-- 통과: 브라우저 콘솔 오류 없음
-- 통과: 브라우저 지역 분기에서 림부스 `215/damaged`, 칼리고 `250/normal` 확인
-- 통과: Unity 승인 프리팹과 칼리고 씬 재생성
-- 통과: Unity Windows 빌드
-- 통과: Windows 빌드 런타임 스모크 테스트 (`CLOCKWORK_RUNTIME_SMOKE_OK`)
-- 미실행: Unity Input System, Cinemachine, URP 2D, Pixel Perfect Camera 통합
-- 미실행: 실제 Tilemap/Composite Collider 기반 방 제작
-- 미실행: 렌토 보스전을 Unity에서 처음부터 끝까지 플레이하는 회귀 테스트
-
-### 주의사항과 다음 작업
-
-- `unity/ClockworkPrototype`은 기능 검증용이다. 정식 32 PPU 프로젝트에서는 픽셀 속도를 월드 단위로 다시 환산해야 한다.
-- `Builds`, `Library`, `Logs`, `Temp`, `UserSettings`는 Git에 포함되지 않는다. 다른 컴퓨터에서 Unity로 다시 생성한다.
-- 실험용 `v5`, `v6`, `v8`, `v10`, `weapons-test` 계열 미추적 폴더는 이번 커밋에 포함하지 않는다.
-- 다음 작업은 Unity 공식 Input System, Cinemachine, URP 2D, Pixel Perfect와 Tilemap Extras를 적용한 칼리고 방 버티컬 슬라이스다.
-- 사용자명, 로컬 경로, 인증 정보와 API 키는 기록하지 않았다.
+1. Replace the placeholder RuleTile sprite with a coherent 32 PPU Caligo/Limbus industrial palette.
+2. Build the Limbus bridge and Caligo as adjacent room scenes and make `RoomGate` load them.
+3. Add health, damage, healing, and checkpoint respawn on top of `GameSession`.
+4. Move approved action frames into Aseprite source files or a 2D Animation workflow for combo expansion.
+5. Re-tune movement from prototype-scale units after final tile and camera metrics are locked.

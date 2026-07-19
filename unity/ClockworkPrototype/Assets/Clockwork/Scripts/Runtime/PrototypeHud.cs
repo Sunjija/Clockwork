@@ -5,6 +5,7 @@ namespace Clockwork
     public sealed class PrototypeHud : MonoBehaviour
     {
         [SerializeField] private TiqueCombat combat;
+        [SerializeField] private RepairSavePoint savePoint;
         private GUIStyle panelStyle;
         private GUIStyle titleStyle;
         private GUIStyle textStyle;
@@ -12,13 +13,17 @@ namespace Clockwork
         private void OnGUI()
         {
             EnsureStyles();
-            Rect panel = new Rect(Screen.width - 310f, 18f, 292f, 142f);
+            Rect panel = new Rect(Screen.width - 330f, 18f, 312f, 166f);
             GUI.Box(panel, GUIContent.none, panelStyle);
-            GUI.Label(new Rect(panel.x + 16f, panel.y + 12f, 260f, 24f), "CLOCKWORK / Unity Prototype", titleStyle);
-            GUI.Label(new Rect(panel.x + 16f, panel.y + 42f, 260f, 74f),
-                "A/D 이동   Z 점프·더블점프\nX 공격   C 대시   H 히트박스\n1 주먹   2 대검   3 망치   R 재시작", textStyle);
+            GUI.Label(new Rect(panel.x + 16f, panel.y + 12f, 280f, 24f), "CLOCKWORK / Unity Foundation", titleStyle);
+            GUI.Label(new Rect(panel.x + 16f, panel.y + 42f, 280f, 76f),
+                "A/D Move   Z Jump / Double Jump\nX Attack   C Dash   W Interact\n1 Fist   2 Greatsword   3 Hammer\nH Hitboxes   R Reload", textStyle);
             string weapon = combat == null ? "-" : combat.SelectedWeaponName;
-            GUI.Label(new Rect(panel.x + 16f, panel.y + 116f, 260f, 20f), $"현재 무기: {weapon}", titleStyle);
+            GUI.Label(new Rect(panel.x + 16f, panel.y + 124f, 280f, 20f), $"Weapon: {weapon}", titleStyle);
+            string state = GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.TiqueRepaired)
+                ? "Tique: repaired" : "Tique: damaged";
+            if (savePoint != null && savePoint.PlayerNearby) state += " / W: repair and save";
+            GUI.Label(new Rect(panel.x + 16f, panel.y + 144f, 280f, 20f), state, textStyle);
         }
 
         private void EnsureStyles()
@@ -41,11 +46,11 @@ namespace Clockwork
         }
 
 #if UNITY_EDITOR
-        public void Configure(TiqueCombat playerCombat)
+        public void Configure(TiqueCombat playerCombat, RepairSavePoint roomSavePoint)
         {
             combat = playerCombat;
+            savePoint = roomSavePoint;
         }
 #endif
     }
 }
-

@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 namespace Clockwork
 {
-    [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
+    [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D), typeof(TiqueInputReader))]
     public sealed class TiqueMotor : MonoBehaviour
     {
         [Header("Web prototype parity")]
@@ -27,6 +27,7 @@ namespace Clockwork
         private readonly RaycastHit2D[] groundHits = new RaycastHit2D[8];
         private Rigidbody2D body;
         private Collider2D bodyCollider;
+        private TiqueInputReader input;
         private ContactFilter2D groundFilter;
         private float moveInput;
         private bool jumpPressed;
@@ -66,6 +67,7 @@ namespace Clockwork
         {
             body = GetComponent<Rigidbody2D>();
             bodyCollider = GetComponent<Collider2D>();
+            input = GetComponent<TiqueInputReader>();
             body.gravityScale = 0f;
             body.freezeRotation = true;
             groundFilter = new ContactFilter2D
@@ -78,18 +80,17 @@ namespace Clockwork
 
         private void Update()
         {
-            moveInput = (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A) ? -1f : 0f)
-                + (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D) ? 1f : 0f);
-            jumpHeld = Input.GetKey(KeyCode.Z);
-            jumpPressed |= Input.GetKeyDown(KeyCode.Z);
-            dashPressed |= Input.GetKeyDown(KeyCode.C);
+            moveInput = input.Move;
+            jumpHeld = input.JumpHeld;
+            jumpPressed |= input.JumpPressed;
+            dashPressed |= input.DashPressed;
 
             if (Mathf.Abs(moveInput) > 0.01f)
             {
                 Facing = moveInput > 0f ? 1 : -1;
             }
 
-            if (Input.GetKeyDown(KeyCode.R))
+            if (input.ReloadPressed)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }

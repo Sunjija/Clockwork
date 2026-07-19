@@ -361,7 +361,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb9097d626618964fa7cfac422256ef0, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueSpriteAnimator
   motor: {fileID: 1298557700848288028}
   combat: {fileID: 9089003832585336234}
@@ -576,7 +576,9 @@ GameObject:
   - component: {fileID: 3155405012736260533}
   - component: {fileID: 4520530023976781248}
   - component: {fileID: 6497967447752449046}
+  - component: {fileID: 3694285177859468801}
   - component: {fileID: 1298557700848288028}
+  - component: {fileID: 3689283017317931843}
   - component: {fileID: 9089003832585336234}
   - component: {fileID: 8149677746774208229}
   m_Layer: 0
@@ -670,6 +672,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.32}
   m_Size: {x: 0.36, y: 0.64}
   m_Direction: 0
+--- !u!114 &3694285177859468801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527064714624658134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4c097b660d5334c8201811b55aa0b4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueInputReader
 --- !u!114 &1298557700848288028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,7 +694,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: daabed06e4b4f5a4ba702177da919f94, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueMotor
   normalMoveSpeed: 2.5
   damagedMoveMultiplier: 0.86
@@ -698,6 +712,18 @@ MonoBehaviour:
   dashDuration: 0.32
   dashCooldownDuration: 0.54
   groundProbeDistance: 0.04
+--- !u!114 &3689283017317931843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527064714624658134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f18833b2538c3840a70ace1a3a8ab35, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueProgression
 --- !u!114 &9089003832585336234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,7 +734,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c210780988b304344876398234c48977, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueCombat
   attacks:
   - {fileID: 11400000, guid: 75615c8c64e22b241835cabe2ba17153, type: 2}
@@ -726,7 +752,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ac5c35cc20914945a0cf22f04c4b5b9, type: 3}
-  m_Name: 
+  m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.DoubleJumpCorePulse
   motor: {fileID: 1298557700848288028}
   outerRing: {fileID: 3848573355679271399}
