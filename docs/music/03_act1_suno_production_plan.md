@@ -1,6 +1,8 @@
 # ACT1 Suno 음악 제작 계획
 
 > 상태: 모든 장르, 악기, 템포와 모티프 처리는 사용자 승인 전까지 후보이다. 지역명과 진행 순서는 ACT1 맵을 따른다.
+>
+> 문서 역할: ACT1의 제작 범위, 순서와 변주 관계를 관리한다. 개별 생성 및 청취 이력은 [02_suno_anchor_experiments.md](02_suno_anchor_experiments.md)에 기록하며, 전 작품 공통 기준은 [04_clockwork_music_production_principles.md](04_clockwork_music_production_principles.md)를 따른다. 아래의 `생성 완료`는 정본 확정을 뜻하지 않는다.
 
 ## 제작 범위
 

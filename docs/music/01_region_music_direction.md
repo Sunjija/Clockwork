@@ -1,6 +1,8 @@
 # CLOCKWORK 지역별 음악 방향 초안
 
 > 상태: **장르·악기·리듬은 전부 [제안]**이다. 지역명, 기능, 진행 순서만 룰북과 맵의 명시 내용을 근거로 한다. 생성 결과는 사용자가 선택하기 전까지 정본이 아니다.
+>
+> 문서 역할: 지역의 정서와 플레이 기능을 음악 언어로 번역하는 방향서다. 실제 생성 결과와 청취 평가는 [02_suno_anchor_experiments.md](02_suno_anchor_experiments.md), ACT1 제작 순서는 [03_act1_suno_production_plan.md](03_act1_suno_production_plan.md), 공통 제작 원칙은 [04_clockwork_music_production_principles.md](04_clockwork_music_production_principles.md)를 따른다.
 
 ## 1. 분류 원칙
 
