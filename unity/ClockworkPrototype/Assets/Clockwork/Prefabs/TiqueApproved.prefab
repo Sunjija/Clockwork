@@ -708,6 +708,7 @@ MonoBehaviour:
   jumpCutGravity: 11.2
   maxFallSpeed: 8.6
   coyoteDuration: 0.11
+  jumpBufferDuration: 0.1
   dashSpeed: 5.3
   dashDuration: 0.32
   dashCooldownDuration: 0.54

@@ -19,10 +19,15 @@ namespace Clockwork
         [SerializeField] private float jumpCutGravity = 11.2f;
         [SerializeField] private float maxFallSpeed = 8.6f;
         [SerializeField] private float coyoteDuration = 0.11f;
+        [SerializeField] private float jumpBufferDuration = 0.1f;
         [SerializeField] private float dashSpeed = 5.3f;
         [SerializeField] private float dashDuration = 0.32f;
         [SerializeField] private float dashCooldownDuration = 0.54f;
         [SerializeField] private float groundProbeDistance = 0.04f;
+
+        private const float TakeoffDuration = 0.14f;
+        private const float LandingDuration = 0.18f;
+        private const float DoubleJumpAnimDuration = 0.34f;
 
         private readonly RaycastHit2D[] groundHits = new RaycastHit2D[8];
         private Rigidbody2D body;
@@ -34,6 +39,7 @@ namespace Clockwork
         private bool dashPressed;
         private bool jumpHeld;
         private float coyoteTimer;
+        private float jumpBufferTimer;
         private float dashTimer;
         private float dashCooldown;
         private float takeoffTimer;
@@ -53,9 +59,9 @@ namespace Clockwork
         public float VerticalSpeed => body == null ? 0f : body.linearVelocity.y;
         public float TravelDistance => travelDistance;
         public float DashProgress => 1f - Mathf.Clamp01(dashTimer / dashDuration);
-        public float DoubleJumpProgress => 1f - Mathf.Clamp01(doubleJumpTimer / 0.34f);
-        public float TakeoffProgress => 1f - Mathf.Clamp01(takeoffTimer / 0.14f);
-        public float LandingProgress => 1f - Mathf.Clamp01(landingTimer / 0.18f);
+        public float DoubleJumpProgress => 1f - Mathf.Clamp01(doubleJumpTimer / DoubleJumpAnimDuration);
+        public float TakeoffProgress => 1f - Mathf.Clamp01(takeoffTimer / TakeoffDuration);
+        public float LandingProgress => 1f - Mathf.Clamp01(landingTimer / LandingDuration);
         public float CurrentMoveSpeed => damaged ? normalMoveSpeed * damagedMoveMultiplier : normalMoveSpeed;
 
         public void SetDamagedState(bool value)
@@ -110,6 +116,15 @@ namespace Clockwork
                 coyoteTimer = Mathf.Max(0f, coyoteTimer - dt);
             }
 
+            if (jumpPressed)
+            {
+                jumpBufferTimer = jumpBufferDuration;
+            }
+            else
+            {
+                jumpBufferTimer = Mathf.Max(0f, jumpBufferTimer - dt);
+            }
+
             dashTimer = Mathf.Max(0f, dashTimer - dt);
             dashCooldown = Mathf.Max(0f, dashCooldown - dt);
             takeoffTimer = Mathf.Max(0f, takeoffTimer - dt);
@@ -125,21 +140,23 @@ namespace Clockwork
                 velocity.y = 0f;
             }
 
-            if (jumpPressed && !IsDashing)
+            if (jumpBufferTimer > 0f && !IsDashing)
             {
                 if (coyoteTimer > 0f)
                 {
                     velocity.y = jumpVelocity;
                     coyoteTimer = 0f;
-                    takeoffTimer = 0.14f;
+                    jumpBufferTimer = 0f;
+                    takeoffTimer = TakeoffDuration;
                     landingTimer = 0f;
                     Grounded = false;
                 }
-                else if (!Grounded && airJumps > 0)
+                else if (!Grounded && jumpPressed && airJumps > 0)
                 {
                     velocity.y = doubleJumpVelocity;
                     airJumps--;
-                    doubleJumpTimer = 0.34f;
+                    jumpBufferTimer = 0f;
+                    doubleJumpTimer = DoubleJumpAnimDuration;
                     takeoffTimer = 0f;
                 }
             }
@@ -168,7 +185,7 @@ namespace Clockwork
             bool landed = !wasGrounded && Grounded;
             if (landed)
             {
-                landingTimer = 0.18f;
+                landingTimer = LandingDuration;
                 takeoffTimer = 0f;
             }
             wasGrounded = Grounded;

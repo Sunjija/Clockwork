@@ -23,7 +23,10 @@ namespace Clockwork
         private void OnTriggerEnter2D(Collider2D other)
         {
             TiqueMotor motor = other.GetComponentInParent<TiqueMotor>();
-            nearbyInput = motor == null ? null : motor.GetComponent<TiqueInputReader>();
+            if (motor != null)
+            {
+                nearbyInput = motor.GetComponent<TiqueInputReader>();
+            }
         }
 
         private void OnTriggerExit2D(Collider2D other)

@@ -1,6 +1,19 @@
 # CLOCKWORK Handoff
 
-Updated: 2026-07-19 (Asia/Seoul)
+Updated: 2026-07-20 (Asia/Seoul)
+
+## 2026-07-20 review fixes
+
+- Fixed `RepairSavePoint` trigger: non-player colliders entering the trigger no longer clear the
+  nearby player reference, so interaction survives future enemies/projectiles overlapping the bench.
+- Added a 0.1s jump buffer to `TiqueMotor` (pairs with the existing coyote time). A jump pressed
+  just before landing now fires on touchdown; double jump still requires a fresh press so a
+  buffered input cannot silently consume the air jump after a dash.
+- Deduplicated takeoff/landing/double-jump animation durations into `TiqueMotor` constants.
+- `GameSession.Load` now backs up a save with a mismatched `schemaVersion` to
+  `clockwork-save-01.json.v{N}.bak` before starting fresh, instead of silently overwriting it later.
+- Moved the scene-reload gamepad binding from Start to Select to avoid accidental resets
+  during pad playtests (keyboard `R` unchanged).
 
 ## Git state
 

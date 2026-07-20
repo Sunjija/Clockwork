@@ -102,6 +102,13 @@ namespace Clockwork
                 {
                     current = loaded;
                 }
+                else if (loaded != null)
+                {
+                    // Preserve the incompatible save so the next SaveAt does not silently destroy it.
+                    File.Copy(SavePath, $"{SavePath}.v{loaded.schemaVersion}.bak", true);
+                    Debug.LogWarning(
+                        $"CLOCKWORK save schema {loaded.schemaVersion} != {current.schemaVersion}; backed up and starting fresh.");
+                }
             }
             catch (Exception exception)
             {

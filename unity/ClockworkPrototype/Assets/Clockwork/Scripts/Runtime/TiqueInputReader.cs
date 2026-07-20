@@ -51,7 +51,7 @@ namespace Clockwork
             slot2 = AddButton("Weapon2", "<Keyboard>/2");
             slot3 = AddButton("Weapon3", "<Keyboard>/3");
             debugHitboxes = AddButton("DebugHitboxes", "<Keyboard>/h");
-            reload = AddButton("Reload", "<Keyboard>/r", "<Gamepad>/start");
+            reload = AddButton("Reload", "<Keyboard>/r", "<Gamepad>/select");
         }
 
         private InputAction AddButton(string name, params string[] bindings)
