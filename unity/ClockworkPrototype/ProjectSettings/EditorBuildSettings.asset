@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Clockwork/Scenes/CaligoDropShaft.unity
     guid: 746b9f0fc56e1954c9cee509ef2a993e
+  - enabled: 1
+    path: Assets/Clockwork/Scenes/GrappleLab.unity
+    guid: 5d93994e02e506b4aab6942f4553f3b0
+  - enabled: 1
+    path: Assets/Clockwork/Scenes/CombatLab.unity
+    guid: f10f36a8c22d9bc40922abec5359f03e
   m_configObjects: {}

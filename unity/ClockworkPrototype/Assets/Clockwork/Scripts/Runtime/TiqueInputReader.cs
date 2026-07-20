@@ -16,6 +16,7 @@ namespace Clockwork
         private InputAction slot3;
         private InputAction debugHitboxes;
         private InputAction reload;
+        private InputAction grapple;
 
         public float Move => move?.ReadValue<float>() ?? 0f;
         public bool JumpHeld => jump?.IsPressed() ?? false;
@@ -28,6 +29,8 @@ namespace Clockwork
         public bool Slot3Pressed => slot3?.WasPressedThisFrame() ?? false;
         public bool DebugHitboxesPressed => debugHitboxes?.WasPressedThisFrame() ?? false;
         public bool ReloadPressed => reload?.WasPressedThisFrame() ?? false;
+        public bool GrapplePressed => grapple?.WasPressedThisFrame() ?? false;
+        public bool GrappleReleased => grapple?.WasReleasedThisFrame() ?? false;
 
         private void Awake()
         {
@@ -52,6 +55,7 @@ namespace Clockwork
             slot3 = AddButton("Weapon3", "<Keyboard>/3");
             debugHitboxes = AddButton("DebugHitboxes", "<Keyboard>/h");
             reload = AddButton("Reload", "<Keyboard>/r", "<Gamepad>/select");
+            grapple = AddButton("Grapple", "<Keyboard>/e", "<Gamepad>/rightShoulder");
         }
 
         private InputAction AddButton(string name, params string[] bindings)

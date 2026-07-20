@@ -22,12 +22,16 @@ namespace ClockworkEditor
         private const string ArtRoot = Root + "/Art/Tique/Approved";
         private const string SequenceRoot = Root + "/Data/Sequences";
         private const string AttackRoot = Root + "/Data/Attacks";
+        private const string ComboRoot = Root + "/Data/Combos";
+        private const string WeaponRoot = Root + "/Data/Weapons";
         private const string ScenePath = Root + "/Scenes/CaligoMaintenanceShaft.unity";
         private const string BridgeScenePath = Root + "/Scenes/LimbusCaligoBridge.unity";
         private const string LimbusScenePath = Root + "/Scenes/Limbus.unity";
         private const string VillageScenePath = Root + "/Scenes/CaligoVillage.unity";
         private const string PlazaScenePath = Root + "/Scenes/CaligoPlaza.unity";
         private const string DropShaftScenePath = Root + "/Scenes/CaligoDropShaft.unity";
+        private const string GrappleLabScenePath = Root + "/Scenes/GrappleLab.unity";
+        private const string CombatLabScenePath = Root + "/Scenes/CombatLab.unity";
         private const string PrefabPath = Root + "/Prefabs/TiqueApproved.prefab";
         private const string RatPrefabPath = Root + "/Prefabs/RatEnemy.prefab";
         private const string BackgroundPath = Root + "/Art/Backgrounds/caligo-maintenance-shaft.png";
@@ -100,10 +104,18 @@ namespace ClockworkEditor
                 "HammerAttack", ArtRoot + "/Hammer", 0.86f, false, 0.36f,
                 0.14f, 0.3f, 0.38f, 0.46f, 0.58f, 0.72f, 0.88f, 1f);
 
-            AttackDefinition fist = CreateAttack(
-                "Fist", "fist", "주먹", fistSequence, 0.36f, 0.3f, 0.56f,
-                new Vector2(0.39f, 0.44f), new Vector2(0.54f, 0.56f),
-                new Color(1f, 0.6f, 0.47f), 1);
+            AttackDefinition fistRight = CreateAttack(
+                "FistRight", "fist-right", "오른손 직선타", fistSequence, 0.24f, 0.3f, 0.52f,
+                new Vector2(0.4f, 0.46f), new Vector2(0.52f, 0.5f),
+                new Color(0.78f, 0.95f, 1f), 1);
+            AttackDefinition fistLeft = CreateAttack(
+                "FistLeft", "fist-left", "왼손 직선타", fistSequence, 0.22f, 0.28f, 0.5f,
+                new Vector2(0.4f, 0.39f), new Vector2(0.52f, 0.5f),
+                new Color(0.78f, 0.95f, 1f), 1);
+            AttackDefinition fistFinisher = CreateAttack(
+                "FistFinisher", "fist-finisher", "양손 마무리", fistSequence, 0.3f, 0.3f, 0.54f,
+                new Vector2(0.45f, 0.44f), new Vector2(0.66f, 0.6f),
+                new Color(1f, 0.7f, 0.22f), 2);
             AttackDefinition greatsword = CreateAttack(
                 "Greatsword", "greatsword", "대검", greatswordSequence, 0.68f, 0.38f, 0.62f,
                 new Vector2(0.75f, 0.46f), new Vector2(1.3f, 1f),
@@ -113,8 +125,35 @@ namespace ClockworkEditor
                 new Vector2(0.76f, 0.49f), new Vector2(1.36f, 1.02f),
                 new Color(0.94f, 0.74f, 0.35f), 3);
 
+            ComboDefinition fistCombo = CreateCombo(
+                "FistCombo", "fist-basic", "주먹", new[] { fistRight, fistLeft, fistFinisher },
+                0.1f, 0.9f, true);
+            ComboDefinition greatswordCombo = CreateCombo(
+                "GreatswordCombo", "greatsword-basic", "대검", new[] { greatsword }, 0.25f, 0.9f);
+            ComboDefinition hammerCombo = CreateCombo(
+                "HammerCombo", "hammer-basic", "망치", new[] { hammer }, 0.25f, 0.9f);
+            ComboDefinition fistToGreatsword = CreateCombo(
+                "FistToGreatsword", "fist-to-greatsword", "주먹→대검",
+                new[] { greatsword }, 0.25f, 0.9f);
+            ComboDefinition fistToHammer = CreateCombo(
+                "FistToHammer", "fist-to-hammer", "주먹→망치",
+                new[] { hammer }, 0.25f, 0.9f);
+
+            WeaponDefinition fistWeapon = CreateWeapon(
+                "Fist", "fist", "주먹", fistCombo,
+                new[] { "greatsword", "hammer" }, new[] { fistToGreatsword, fistToHammer },
+                new[] { 10f, 10f });
+            WeaponDefinition greatswordWeapon = CreateWeapon(
+                "Greatsword", "greatsword", "대검", greatswordCombo,
+                Array.Empty<string>(), Array.Empty<ComboDefinition>(), Array.Empty<float>());
+            WeaponDefinition hammerWeapon = CreateWeapon(
+                "Hammer", "hammer", "망치", hammerCombo,
+                Array.Empty<string>(), Array.Empty<ComboDefinition>(), Array.Empty<float>());
+
             GameObject prefab = BuildPlayerPrefab(
-                new[] { fist, greatsword, hammer },
+                new[] { fistRight, greatsword, hammer },
+                new[] { fistCombo, greatswordCombo, hammerCombo },
+                new[] { fistWeapon, greatswordWeapon, hammerWeapon },
                 idle, walk, jump, doubleJump, dash,
                 lineMaterial);
             GameObject ratPrefab = BuildRatPrefab(ratSprite);
@@ -124,12 +163,14 @@ namespace ClockworkEditor
             BuildVillageScene(prefab, collisionTile, villageRoom);
             BuildPlazaScene(prefab, collisionTile, plazaRoom);
             BuildDropShaftScene(prefab, collisionTile, dropShaftRoom);
+            BuildGrappleLabScene(prefab, collisionTile);
+            BuildCombatLabScene(prefab, collisionTile, ratSprite);
             ConfigureProject();
             ValidateApprovedAssets();
             AssetDatabase.SaveAssets();
             StripGeneratedYamlWhitespace(
                 PrefabPath, ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath,
-                PlazaScenePath, DropShaftScenePath);
+                PlazaScenePath, DropShaftScenePath, GrappleLabScenePath, CombatLabScenePath);
             AssetDatabase.Refresh();
             Debug.Log("CLOCKWORK_APPROVED_BUILD_OK");
         }
@@ -156,7 +197,7 @@ namespace ClockworkEditor
                 scenes = new[]
                 {
                     LimbusScenePath, BridgeScenePath, ScenePath, VillageScenePath,
-                    PlazaScenePath, DropShaftScenePath
+                    PlazaScenePath, DropShaftScenePath, GrappleLabScenePath, CombatLabScenePath
                 },
                 locationPathName = "Builds/Windows/ClockworkPrototype.exe",
                 target = BuildTarget.StandaloneWindows64,
@@ -173,7 +214,7 @@ namespace ClockworkEditor
         {
             foreach (string path in new[]
             {
-                SequenceRoot, AttackRoot, Root + "/Scenes", Root + "/Prefabs", Root + "/Art",
+                SequenceRoot, AttackRoot, ComboRoot, WeaponRoot, Root + "/Scenes", Root + "/Prefabs", Root + "/Art",
                 Root + "/Data/Tiles", Root + "/Data/Rooms", Root + "/Settings"
             })
             {
@@ -296,8 +337,41 @@ namespace ClockworkEditor
             return asset;
         }
 
+        private static ComboDefinition CreateCombo(
+            string assetName,
+            string id,
+            string label,
+            AttackDefinition[] steps,
+            float queueStart,
+            float queueEnd,
+            bool cyclesAcrossInputs = false)
+        {
+            ComboDefinition combo = LoadOrCreate<ComboDefinition>($"{ComboRoot}/{assetName}.asset");
+            combo.Configure(id, label, steps, queueStart, queueEnd, cyclesAcrossInputs);
+            EditorUtility.SetDirty(combo);
+            return combo;
+        }
+
+        private static WeaponDefinition CreateWeapon(
+            string assetName,
+            string id,
+            string label,
+            ComboDefinition basicCombo,
+            string[] transitionTargetIds,
+            ComboDefinition[] transitionCombos,
+            float[] transitionEnergyCosts)
+        {
+            WeaponDefinition weapon = LoadOrCreate<WeaponDefinition>($"{WeaponRoot}/{assetName}.asset");
+            weapon.Configure(
+                id, label, basicCombo, transitionTargetIds, transitionCombos, transitionEnergyCosts);
+            EditorUtility.SetDirty(weapon);
+            return weapon;
+        }
+
         private static GameObject BuildPlayerPrefab(
             AttackDefinition[] attacks,
+            ComboDefinition[] combos,
+            WeaponDefinition[] weapons,
             SpriteSequence idle,
             SpriteSequence walk,
             SpriteSequence jump,
@@ -324,6 +398,7 @@ namespace ClockworkEditor
             root.AddComponent<TiqueHealth>();
             root.AddComponent<TiqueSpawnPlacer>();
             TiqueCombat combat = root.AddComponent<TiqueCombat>();
+            root.AddComponent<TiqueEnergyGauge>();
 
             GameObject visual = new GameObject("ApprovedSprite");
             visual.transform.SetParent(root.transform, false);
@@ -338,12 +413,29 @@ namespace ClockworkEditor
             LineRenderer trail = CreateLine("WeaponTrail", root.transform, lineMaterial, 0.065f, 9);
             trail.numCapVertices = 4;
             trail.numCornerVertices = 4;
-            combat.Configure(attacks, hitbox, trail);
+            combat.Configure(attacks, combos, weapons, hitbox, trail);
+
+            LineRenderer rope = CreateLine("GrappleRope", root.transform, lineMaterial, 0.035f, 25);
+            rope.startColor = new Color(0.78f, 0.82f, 0.76f, 1f);
+            rope.endColor = new Color(0.95f, 0.72f, 0.24f, 1f);
+            TiqueGrapple grapple = root.AddComponent<TiqueGrapple>();
+            grapple.Configure(rope, 5.5f);
+            grapple.enabled = false;
 
             LineRenderer pulseOuter = CreateLine("DoubleJumpCorePulseOuter", root.transform, lineMaterial, 0.025f, 20);
             LineRenderer pulseInner = CreateLine("DoubleJumpCorePulseInner", root.transform, lineMaterial, 0.012f, 19);
             DoubleJumpCorePulse pulse = root.AddComponent<DoubleJumpCorePulse>();
             pulse.Configure(motor, pulseOuter, pulseInner);
+
+            LineRenderer comboOuter = CreateLine("ComboCorePulseOuter", root.transform, lineMaterial, 0.025f, 22);
+            LineRenderer comboInner = CreateLine("ComboCorePulseInner", root.transform, lineMaterial, 0.012f, 21);
+            TiqueComboPulse comboPulse = root.AddComponent<TiqueComboPulse>();
+            comboPulse.Configure(combat, comboOuter, comboInner);
+
+            LineRenderer punchPrimary = CreateLine("PunchImpactPrimary", root.transform, lineMaterial, 0.035f, 24);
+            LineRenderer punchSecondary = CreateLine("PunchImpactSecondary", root.transform, lineMaterial, 0.022f, 23);
+            TiquePunchImpact punchImpact = root.AddComponent<TiquePunchImpact>();
+            punchImpact.Configure(combat, punchPrimary, punchSecondary);
 
             GameObject prefab = PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
             UnityEngine.Object.DestroyImmediate(root);
@@ -539,120 +631,6 @@ namespace ClockworkEditor
             return room;
         }
 
-        private static void BuildLimbusScene(GameObject playerPrefab, TileBase tile, RoomDefinition room)
-        {
-            Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
-            scene.name = "Limbus";
-
-            GameObject bootstrap = new GameObject("PrototypeBootstrap");
-            bootstrap.AddComponent<PrototypeBootstrap>();
-            GameObject session = new GameObject("GameSession");
-            session.AddComponent<GameSession>();
-
-            BuildLimbusTilemap(tile);
-
-            GameObject lightObject = new GameObject("LimbusGlobalLight2D");
-            Light2D light = lightObject.AddComponent<Light2D>();
-            light.lightType = Light2D.LightType.Global;
-            light.color = new Color(0.6f, 0.72f, 0.8f);
-            light.intensity = 0.72f;
-
-            // Disposal chute terminus (EVT-009 / v5.5 C-2): the way Tique arrived, visual marker only.
-            GameObject chute = new GameObject("DisposalChuteTerminus");
-            SpriteRenderer chuteRenderer = chute.AddComponent<SpriteRenderer>();
-            chuteRenderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(TileSpritePath);
-            chuteRenderer.color = new Color(0.16f, 0.2f, 0.27f, 0.85f);
-            chuteRenderer.sortingOrder = -20;
-            chute.transform.position = new Vector3(5.9f, 0.35f, 0f);
-            chute.transform.localScale = new Vector3(4.5f, 18f, 1f);
-
-            GameObject player = PrefabUtility.InstantiatePrefab(playerPrefab) as GameObject;
-            if (player == null) throw new InvalidOperationException("Unable to instantiate approved Tique prefab.");
-            player.transform.position = new Vector3(4.5f, -2f, 0f);
-
-            // Awakening under the chute (east); scrap-mound hops teach movement on the way west.
-            BuildSpawnPoint("start-awakening", new Vector2(4.5f, -2f));
-            BuildSpawnPoint("entry-bridge", new Vector2(-6f, -2f));
-            BuildRoomGate("GateToBridge", new Vector2(-6.65f, -1.25f), "limbus-caligo-bridge", "entry-limbus");
-
-            MysteryPartPickup partPickup = BuildMysteryPart(new Vector2(-3.25f, -1.25f));
-
-            BuildCamera(player.transform, room.CameraBounds);
-
-            GameObject hudObject = new GameObject("PrototypeHUD");
-            PrototypeHud hud = hudObject.AddComponent<PrototypeHud>();
-            hud.Configure(player.GetComponent<TiqueCombat>(), null, player.GetComponent<TiqueHealth>(), partPickup);
-
-            EditorSceneManager.SaveScene(scene, LimbusScenePath);
-        }
-
-        private static void BuildLimbusTilemap(TileBase tile)
-        {
-            GameObject gridObject = new GameObject("LimbusRoomTilemap");
-            Grid grid = gridObject.AddComponent<Grid>();
-            grid.cellSize = new Vector3(0.25f, 0.25f, 1f);
-
-            GameObject collisionObject = new GameObject("Collision");
-            collisionObject.transform.SetParent(gridObject.transform, false);
-            Tilemap tilemap = collisionObject.AddComponent<Tilemap>();
-            TilemapRenderer renderer = collisionObject.AddComponent<TilemapRenderer>();
-            renderer.sortingOrder = 1;
-            Rigidbody2D rigidbody = collisionObject.AddComponent<Rigidbody2D>();
-            rigidbody.bodyType = RigidbodyType2D.Static;
-            CompositeCollider2D composite = collisionObject.AddComponent<CompositeCollider2D>();
-            composite.geometryType = CompositeCollider2D.GeometryType.Polygons;
-            TilemapCollider2D tilemapCollider = collisionObject.AddComponent<TilemapCollider2D>();
-            tilemapCollider.compositeOperation = Collider2D.CompositeOperation.Merge;
-
-            // Scrap plain: combat-free movement tutorial. Mound heights rise westward
-            // (1 -> 2 -> 3 tiles) so single jumps are learned before the bridge.
-            Fill(tilemap, tile, -28, 27, -12, -9);
-            Fill(tilemap, tile, -28, -27, -8, 11);
-            Fill(tilemap, tile, 26, 27, -8, 11);
-            Fill(tilemap, tile, 8, 12, -8, -8);
-            Fill(tilemap, tile, 1, 4, -8, -7);
-            Fill(tilemap, tile, -15, -11, -8, -6);
-            tilemap.CompressBounds();
-            tilemap.RefreshAllTiles();
-            tilemapCollider.ProcessTilemapChanges();
-            composite.GenerateGeometry();
-        }
-
-        private static MysteryPartPickup BuildMysteryPart(Vector2 position)
-        {
-            GameObject root = new GameObject("LimbusMysteryPart");
-            root.transform.position = position;
-            BoxCollider2D trigger = root.AddComponent<BoxCollider2D>();
-            trigger.isTrigger = true;
-            trigger.size = new Vector2(1f, 1.1f);
-            trigger.offset = new Vector2(0f, 0.45f);
-
-            GameObject view = new GameObject("TemporaryPartView");
-            view.transform.SetParent(root.transform, false);
-            view.transform.localPosition = new Vector3(0f, 0.16f, 0f);
-            SpriteRenderer renderer = view.AddComponent<SpriteRenderer>();
-            renderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(TileSpritePath);
-            renderer.color = new Color(0.72f, 0.5f, 0.95f, 0.9f);
-            renderer.sortingOrder = 5;
-            view.transform.localScale = new Vector3(1.1f, 1.1f, 1f);
-
-            MysteryPartPickup pickup = root.AddComponent<MysteryPartPickup>();
-            pickup.Configure(renderer);
-            return pickup;
-        }
-
-        private static RoomDefinition EnsureLimbusRoomDefinition()
-        {
-            RoomDefinition room = LoadOrCreate<RoomDefinition>(LimbusRoomAssetPath);
-            room.Configure(
-                "limbus",
-                "Limbus Scrap Plain",
-                new Rect(-7f, -3f, 14f, 6f),
-                "act1-limbus");
-            EditorUtility.SetDirty(room);
-            return room;
-        }
-
         private static void BuildBridgeTilemap(TileBase tile)
         {
             GameObject gridObject = new GameObject("BridgeRoomTilemap");
@@ -710,11 +688,11 @@ namespace ClockworkEditor
             composite.GenerateGeometry();
         }
 
-        private static void BuildSpawnPoint(string id, Vector2 position)
+        private static void BuildSpawnPoint(string id, Vector2 position, int facing = 0)
         {
             GameObject point = new GameObject($"Spawn_{id}");
             point.transform.position = position;
-            point.AddComponent<SpawnPoint>().Configure(id);
+            point.AddComponent<SpawnPoint>().Configure(id, facing);
         }
 
         private static GameObject BuildRatPrefab(Sprite sprite)
@@ -1043,6 +1021,11 @@ namespace ClockworkEditor
             PlayerSettings.defaultScreenWidth = 1280;
             PlayerSettings.defaultScreenHeight = 720;
             PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
+            PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
+            PlayerSettings.allowedAutorotateToPortrait = false;
+            PlayerSettings.allowedAutorotateToPortraitUpsideDown = false;
+            PlayerSettings.allowedAutorotateToLandscapeLeft = true;
+            PlayerSettings.allowedAutorotateToLandscapeRight = true;
             // Limbus first: the game boots at the canon awakening point (v5.5 A-1).
             EditorBuildSettings.scenes = new[]
             {
@@ -1051,7 +1034,9 @@ namespace ClockworkEditor
                 new EditorBuildSettingsScene(ScenePath, true),
                 new EditorBuildSettingsScene(VillageScenePath, true),
                 new EditorBuildSettingsScene(PlazaScenePath, true),
-                new EditorBuildSettingsScene(DropShaftScenePath, true)
+                new EditorBuildSettingsScene(DropShaftScenePath, true),
+                new EditorBuildSettingsScene(GrappleLabScenePath, true),
+                new EditorBuildSettingsScene(CombatLabScenePath, true)
             };
         }
 
@@ -1084,7 +1069,7 @@ namespace ClockworkEditor
                 new[]
                 {
                     ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath,
-                    PlazaScenePath, DropShaftScenePath
+                    PlazaScenePath, DropShaftScenePath, GrappleLabScenePath, CombatLabScenePath
                 },
                 true);
             foreach (string dependency in dependencies)

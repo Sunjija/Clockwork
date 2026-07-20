@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb3357fe22ef3444896aff6ac4c920c, type: 3}
+  m_Name: Fist
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.WeaponDefinition
+  weaponId: fist
+  displayName: "\uC8FC\uBA39"
+  basicCombo: {fileID: 11400000, guid: 7743648f1a73d6e47bce916b67dd240f, type: 2}
+  transitions:
+  - targetWeaponId: greatsword
+    combo: {fileID: 11400000, guid: f435496919d56ad4baf5bfa8c72b6a6e, type: 2}
+    lentiumCost: 10
+  - targetWeaponId: hammer
+    combo: {fileID: 11400000, guid: a4382a6d6189b1a4ba49a53c8edd5def, type: 2}
+    lentiumCost: 10

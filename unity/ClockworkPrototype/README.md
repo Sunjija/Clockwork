@@ -35,10 +35,17 @@ The approved Tique animation boundary remains Git commit `c6c7862`.
 - Dash: `C` or gamepad East
 - Interact: `W`, Up, or gamepad North
 - Weapons: `1` fist, `2` greatsword, `3` hammer
+- During a fist attack, press `2` or `3` to spend Lentium and chain into that weapon
 - Hitbox overlay: `H`
-- Reset scene: `R` or gamepad Start
+- Reload current scene: `R` or gamepad Start
+- Reset all test progress and return to the opening: `F1` or the HUD button
+- Open the isolated grapple lab: `F2`; attach/release rope with `E`
+- Open the isolated combat lab: `F3`; training targets restore indefinitely
 
 Open `Assets/Clockwork/Scenes/CaligoMaintenanceShaft.unity` and press Play.
+The project targets Standalone/Win64 at 1280x720 landscape. The Device Simulator may draw a
+device frame, but the game orientation remains landscape; use the Game tab for desktop play.
+Editor play and the Windows player reapply the 1280x720 window profile at startup.
 
 ## Placeholder boundary
 
@@ -57,4 +64,4 @@ Re-tune it when the final 32 PPU room metrics and tile dimensions are locked.
 The editor menu `Clockwork > Build Approved Prototype` regenerates the prefab and scene.
 Command-line builds use `ClockworkEditor.ApprovedPrototypeBuilder.BuildWindowsFromCommandLine`.
 The runtime argument `-clockworkSmokeTest` validates the player, approved sprite, Input System,
-Tilemap Collider, session, and repair progression without reading or writing a user save file.
+Tilemap Collider, session, repair progression, and isolated labs without reading or writing a user save file.

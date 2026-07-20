@@ -24,6 +24,7 @@ namespace Clockwork
         [SerializeField] private float dashDuration = 0.32f;
         [SerializeField] private float dashCooldownDuration = 0.54f;
         [SerializeField] private float groundProbeDistance = 0.04f;
+        [SerializeField] private int initialFacing = 1;
 
         private const float TakeoffDuration = 0.14f;
         private const float LandingDuration = 0.18f;
@@ -33,6 +34,7 @@ namespace Clockwork
         private Rigidbody2D body;
         private Collider2D bodyCollider;
         private TiqueInputReader input;
+        private TiqueGrapple grapple;
         private ContactFilter2D groundFilter;
         private float moveInput;
         private bool jumpPressed;
@@ -72,6 +74,12 @@ namespace Clockwork
             damaged = value;
         }
 
+        public void SetFacing(int direction)
+        {
+            initialFacing = direction < 0 ? -1 : 1;
+            Facing = initialFacing;
+        }
+
         public void Stun(float duration)
         {
             stunTimer = Mathf.Max(stunTimer, duration);
@@ -79,9 +87,11 @@ namespace Clockwork
 
         private void Awake()
         {
+            Facing = initialFacing < 0 ? -1 : 1;
             body = GetComponent<Rigidbody2D>();
             bodyCollider = GetComponent<Collider2D>();
             input = GetComponent<TiqueInputReader>();
+            grapple = GetComponent<TiqueGrapple>();
             body.gravityScale = 0f;
             body.freezeRotation = true;
             groundFilter = new ContactFilter2D
@@ -177,9 +187,12 @@ namespace Clockwork
             else
             {
                 // While stunned, input is ignored and knockback decays slowly instead of snapping to input speed.
-                float target = IsStunned ? 0f : moveInput * CurrentMoveSpeed;
-                float response = IsStunned ? 3.5f : Grounded ? groundResponse : airResponse;
-                velocity.x = Mathf.Lerp(velocity.x, target, Mathf.Clamp01(dt * response));
+                if (grapple == null || !grapple.IsTensioned)
+                {
+                    float target = IsStunned ? 0f : moveInput * CurrentMoveSpeed;
+                    float response = IsStunned ? 3.5f : Grounded ? groundResponse : airResponse;
+                    velocity.x = Mathf.Lerp(velocity.x, target, Mathf.Clamp01(dt * response));
+                }
 
                 float gravity = velocity.y > 0f ? ascentGravity : fallGravity;
                 if (!jumpHeld && velocity.y > 1.8f)

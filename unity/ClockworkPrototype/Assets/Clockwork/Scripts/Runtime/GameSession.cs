@@ -36,6 +36,7 @@ namespace Clockwork
         public static GameSession Instance => instance;
         public GameSaveData Current => current;
         public int RuntimeHealth { get; set; } = -1;
+        public float RuntimeEnergy { get; set; } = -1f;
         public string PendingSpawnId { get; private set; }
         public string PendingSceneName { get; private set; }
         public event Action<string, bool> FlagChanged;
@@ -110,6 +111,20 @@ namespace Clockwork
             return true;
         }
 
+        public bool LoadGrappleLab()
+        {
+            if (IsTransitioning) return false;
+            StartCoroutine(TransitionRoutine("GrappleLab", "lab-start"));
+            return true;
+        }
+
+        public bool LoadCombatLab()
+        {
+            if (IsTransitioning) return false;
+            StartCoroutine(TransitionRoutine("CombatLab", "lab-start"));
+            return true;
+        }
+
         private IEnumerator TransitionRoutine(string sceneName, string spawnId)
         {
             IsTransitioning = true;
@@ -129,6 +144,37 @@ namespace Clockwork
             {
                 LoadRoom("limbus", "start-awakening");
             }
+        }
+
+        public bool ResetToOpening()
+        {
+            if (IsTransitioning) return false;
+
+            List<string> clearedFlags = new List<string>(current.flags);
+            current = new GameSaveData();
+            RuntimeHealth = -1;
+            RuntimeEnergy = -1f;
+
+            if (diskAccessEnabled)
+            {
+                try
+                {
+                    if (File.Exists(SavePath)) File.Delete(SavePath);
+                }
+                catch (Exception exception)
+                {
+                    Debug.LogError($"CLOCKWORK save reset failed: {exception.Message}");
+                    return false;
+                }
+            }
+
+            foreach (string flagId in clearedFlags)
+            {
+                FlagChanged?.Invoke(flagId, false);
+            }
+
+            Debug.Log("CLOCKWORK session reset to opening");
+            return LoadRoom("limbus", "start-awakening");
         }
 
         private void Start()

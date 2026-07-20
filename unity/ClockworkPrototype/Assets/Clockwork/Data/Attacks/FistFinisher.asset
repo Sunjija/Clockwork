@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd57194937624f41b4047b03561eb65, type: 3}
+  m_Name: FistFinisher
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.AttackDefinition
+  attackId: fist-finisher
+  displayName: "\uC591\uC190 \uB9C8\uBB34\uB9AC"
+  sequence: {fileID: 11400000, guid: 5acf6be3ba453604dab949c65e7f6de8, type: 2}
+  duration: 0.3
+  activeStart: 0.3
+  activeEnd: 0.54
+  hitboxCenter: {x: 0.45, y: 0.44}
+  hitboxSize: {x: 0.66, y: 0.6}
+  trailColor: {r: 1, g: 0.7, b: 0.22, a: 1}
+  damage: 2

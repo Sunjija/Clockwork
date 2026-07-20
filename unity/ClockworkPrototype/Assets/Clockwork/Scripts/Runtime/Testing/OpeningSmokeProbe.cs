@@ -15,6 +15,7 @@ namespace Clockwork
             TiqueCombat combat = FindAnyObjectByType<TiqueCombat>();
             TiqueSpriteAnimator animator = FindAnyObjectByType<TiqueSpriteAnimator>();
             TiqueInputReader input = FindAnyObjectByType<TiqueInputReader>();
+            DirectionalCameraTarget cameraTarget = FindAnyObjectByType<DirectionalCameraTarget>();
             GameSession session = FindAnyObjectByType<GameSession>();
             MysteryPartPickup partPickup = FindAnyObjectByType<MysteryPartPickup>();
             UnityEngine.Tilemaps.TilemapCollider2D tilemapCollider =
@@ -24,13 +25,83 @@ namespace Clockwork
             yield return new WaitForSecondsRealtime(1.5f);
             Vector3 settledPosition = motor == null ? Vector3.zero : motor.transform.position;
             Debug.Log($"CLOCKWORK_PLAYER_PROBE initial={initialPosition} settled={settledPosition} " +
-                $"grounded={motor != null && motor.Grounded}");
+                $"grounded={motor != null && motor.Grounded} facing={(motor == null ? 0 : motor.Facing)}");
             partPickup?.Collect();
             bool partValid = session != null && session.HasFlag(GameFlagIds.LimbusMysteryPart);
             bool playerValid = motor != null && combat != null && animator != null && input != null
                 && sprite != null && sprite.enabled && sprite.sprite != null && tilemapCollider != null
                 && settledPosition.y > -3.2f && partValid
+                && motor.Facing < 0 && cameraTarget != null
+                && cameraTarget.transform.position.x < motor.transform.position.x
                 && combat.CurrentDamageMultiplier < 1f;
+
+            TiqueEnergyGauge energy = FindAnyObjectByType<TiqueEnergyGauge>();
+            GameObject energyDummy = new GameObject("EnergyProbeDummy");
+            energyDummy.transform.position = motor == null
+                ? Vector3.zero
+                : motor.transform.position + new Vector3(motor.Facing * 0.39f, 0.44f, 0f);
+            BoxCollider2D energyDummyCollider = energyDummy.AddComponent<BoxCollider2D>();
+            energyDummyCollider.size = new Vector2(0.25f, 0.25f);
+            energyDummy.AddComponent<EnemyHealth>();
+
+            bool comboValid = combat != null
+                && combat.CurrentCombo != null
+                && combat.CurrentCombo.ComboId == "fist-basic"
+                && combat.CurrentComboStepCount == 3
+                && combat.TryAttack();
+            if (comboValid)
+            {
+                comboValid &= combat.CurrentComboStepIndex == 0
+                    && combat.CurrentAttack.AttackId == "fist-right"
+                    && !combat.IsAttackQueued
+                    && combat.TryAttack()
+                    && combat.IsAttackQueued;
+                float deadline = Time.realtimeSinceStartup + 0.6f;
+                while (combat.CurrentComboStepIndex != 1
+                    && Time.realtimeSinceStartup < deadline) yield return null;
+                comboValid &= combat.CurrentComboStepIndex == 1
+                    && combat.CurrentAttack.AttackId == "fist-left";
+                deadline = Time.realtimeSinceStartup + 0.6f;
+                while ((combat.IsAttacking || combat.CurrentComboStepIndex != 2)
+                    && Time.realtimeSinceStartup < deadline) yield return null;
+                comboValid &= combat.CurrentComboStepIndex == 2
+                    && combat.CurrentAttack.AttackId == "fist-finisher"
+                    && !combat.IsAttacking;
+                yield return new WaitForSecondsRealtime(0.25f);
+                comboValid &= combat.CurrentComboStepIndex == 2
+                    && combat.TryAttack();
+                comboValid &= !combat.IsWeaponTransitionQueued
+                    && Mathf.Approximately(energy.CurrentEnergy, 15f)
+                    && combat.TrySelectWeapon(2)
+                    && combat.IsWeaponTransitionQueued
+                    && Mathf.Approximately(combat.PendingTransitionEnergyCost, 10f);
+                deadline = Time.realtimeSinceStartup + 0.7f;
+                while (!combat.IsWeaponTransitionActive && Time.realtimeSinceStartup < deadline) yield return null;
+                comboValid &= combat.IsWeaponTransitionActive
+                    && combat.CurrentAttack != null
+                    && combat.CurrentAttack.AttackId == "hammer"
+                    && Mathf.Approximately(energy.CurrentEnergy, 5f);
+                yield return new WaitForSecondsRealtime(0.9f);
+                comboValid &= combat.CurrentWeapon != null
+                    && combat.CurrentWeapon.WeaponId == "hammer"
+                    && combat.CurrentComboStepIndex == 0
+                    && !combat.IsAttacking;
+                combat.SelectAttack(0);
+            }
+            bool energyValid = energy != null && Mathf.Approximately(energy.CurrentEnergy, 5f);
+            Destroy(energyDummy);
+            Debug.Log($"CLOCKWORK_COMBO_PROBE valid={comboValid} "
+                + $"combo={combat?.CurrentCombo?.ComboId} steps={combat?.CurrentComboStepCount} "
+                + $"weapon={combat?.CurrentWeapon?.WeaponId}");
+            Debug.Log($"CLOCKWORK_ENERGY_PROBE valid={energyValid} "
+                + $"energy={(energy == null ? -1f : energy.CurrentEnergy)}");
+
+            float aspect = Screen.height <= 0 ? 0f : Screen.width / (float)Screen.height;
+            bool displayValid = Application.isBatchMode
+                || Screen.width >= Screen.height
+                    && Mathf.Abs(aspect - DesktopDisplayProfile.Aspect) <= 0.05f;
+            Debug.Log($"CLOCKWORK_DISPLAY_PROBE valid={displayValid} size={Screen.width}x{Screen.height} "
+                + $"aspect={aspect:F2} batch={Application.isBatchMode}");
 
             TiqueHealth health = FindAnyObjectByType<TiqueHealth>();
             bool healthValid = health != null
@@ -87,7 +158,8 @@ namespace Clockwork
                     $"hp={(wakeHealth == null ? -1 : wakeHealth.CurrentHealth)}");
             }
 
-            complete(playerValid && healthValid && bridgeValid && collapseValid);
+            complete(playerValid && comboValid && energyValid && displayValid
+                && healthValid && bridgeValid && collapseValid);
         }
     }
 }

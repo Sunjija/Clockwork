@@ -44,6 +44,28 @@ namespace Clockwork
             spriteRenderer.sprite = activeSequence.FrameAt(normalized);
             spriteRenderer.flipX = motor.Facing < 0;
             transform.localScale = Vector3.one * activeSequence.RenderScale;
+            ApplyFistStepPose();
+        }
+
+        private void ApplyFistStepPose()
+        {
+            transform.localPosition = Vector3.zero;
+            transform.localRotation = Quaternion.identity;
+            if (!combat.IsAttacking || combat.CurrentAttack == null
+                || !combat.CurrentAttack.AttackId.StartsWith("fist"))
+            {
+                return;
+            }
+
+            float extension = Mathf.Sin(Mathf.Clamp01(combat.AttackProgress) * Mathf.PI);
+            float handSide = combat.CurrentComboStepIndex == 1 ? -1f : 1f;
+            float finisherScale = combat.CurrentComboStepIndex >= 2 ? 1.45f : 1f;
+            transform.localPosition = new Vector3(
+                motor.Facing * extension * 0.025f * finisherScale,
+                handSide * extension * 0.018f,
+                0f);
+            transform.localRotation = Quaternion.Euler(
+                0f, 0f, -motor.Facing * handSide * extension * 2.8f * finisherScale);
         }
 
         private SpriteSequence ResolveSequence()
@@ -99,4 +121,3 @@ namespace Clockwork
 #endif
     }
 }
-
