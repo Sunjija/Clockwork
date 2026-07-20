@@ -361,7 +361,7 @@ namespace ClockworkEditor
             BuildRoomGates();
             BuildSpawnPoint("entry-limbus", new Vector2(-5.36f, -2f));
             BuildSpawnPoint("caligo-workbench", new Vector2(3.55f, -2f));
-            BuildSpawnPoint("entry-bridge", new Vector2(5.7f, -2f));
+            BuildSpawnPoint("entry-bridge", new Vector2(6f, -2f));
             Camera camera = BuildCamera(player.transform, room.CameraBounds);
 
             GameObject hudObject = new GameObject("PrototypeHUD");
@@ -401,10 +401,14 @@ namespace ClockworkEditor
             // Map orientation: Caligo lies west of the bridge, Limbus east (maps are canon).
             BuildRoomGate("GateToMaintenanceShaft", new Vector2(-6.65f, -1.25f), "caligo-maintenance-shaft", "entry-bridge");
             BuildRoomGate("GateToLimbus", new Vector2(6.65f, -1.25f), "limbus", "entry-bridge-west");
-            BuildSpawnPoint("entry-caligo", new Vector2(-5.6f, -2f));
+            BuildSpawnPoint("entry-caligo", new Vector2(-6f, -2f));
 
-            BuildRat(ratSprite, new Vector2(0.6f, -2f), -1);
-            BuildRat(ratSprite, new Vector2(3.4f, -2f), 1);
+            // Tutorial staging (rulebook §9 four-beat rule, read from the current west entry):
+            // one slow rat alone to teach the swing, then a pair for the low-risk escalation.
+            // Restage east-to-west once the Limbus room makes the canon crossing direction playable.
+            BuildRat(ratSprite, new Vector2(-2.2f, -2f), -1, 0.7f);
+            BuildRat(ratSprite, new Vector2(2.6f, -2f), -1, 0.95f);
+            BuildRat(ratSprite, new Vector2(3.6f, -2f), 1, 0.95f);
 
             BuildCamera(player.transform, room.CameraBounds);
 
@@ -450,7 +454,7 @@ namespace ClockworkEditor
             point.AddComponent<SpawnPoint>().Configure(id);
         }
 
-        private static void BuildRat(Sprite sprite, Vector2 position, int direction)
+        private static void BuildRat(Sprite sprite, Vector2 position, int direction, float speed)
         {
             GameObject rat = new GameObject("RatEnemy");
             rat.transform.position = position;
@@ -470,8 +474,8 @@ namespace ClockworkEditor
             renderer.sprite = sprite;
             renderer.sortingOrder = 6;
 
-            rat.AddComponent<EnemyHealth>().Configure(2);
-            rat.AddComponent<RatEnemy>().Configure(direction);
+            rat.AddComponent<EnemyHealth>().Configure(3);
+            rat.AddComponent<RatEnemy>().Configure(direction, speed);
         }
 
         private static void BuildBackground()

@@ -65,8 +65,8 @@ namespace Clockwork
                 RatEnemy[] rats = FindObjectsByType<RatEnemy>(FindObjectsSortMode.None);
                 yield return new WaitForSecondsRealtime(1f);
                 bridgeValid = bridgeMotor != null && bridgeMotor.Grounded
-                    && Mathf.Abs(bridgeMotor.transform.position.x - -5.6f) < 1.2f
-                    && rats.Length >= 2
+                    && Mathf.Abs(bridgeMotor.transform.position.x - -6f) < 1.2f
+                    && rats.Length >= 3
                     && bridgeHealth != null && bridgeHealth.CurrentHealth == bridgeHealth.MaxHealth - 1;
                 Debug.Log($"CLOCKWORK_BRIDGE_PROBE valid={bridgeValid} rats={rats.Length} " +
                     $"pos={(bridgeMotor == null ? Vector3.zero : bridgeMotor.transform.position)} " +

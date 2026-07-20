@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -98,12 +99,25 @@ namespace Clockwork
             return spawnId;
         }
 
+        public bool IsTransitioning { get; private set; }
+
         public bool LoadRoom(string roomId, string spawnId)
         {
             if (!RoomScenes.TryGetValue(roomId, out string sceneName)) return false;
-            PendingSpawnId = spawnId;
-            SceneManager.LoadScene(sceneName);
+            if (IsTransitioning) return true;
+            StartCoroutine(TransitionRoutine(sceneName, spawnId));
             return true;
+        }
+
+        private IEnumerator TransitionRoutine(string sceneName, string spawnId)
+        {
+            IsTransitioning = true;
+            PendingSpawnId = spawnId;
+            yield return ScreenFader.Instance.FadeRoutine(1f, 0.18f);
+            SceneManager.LoadScene(sceneName);
+            yield return null;
+            yield return ScreenFader.Instance.FadeRoutine(0f, 0.25f);
+            IsTransitioning = false;
         }
 
         public void RespawnAtLastSave()

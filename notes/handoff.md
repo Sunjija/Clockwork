@@ -2,6 +2,19 @@
 
 Updated: 2026-07-20 (Asia/Seoul)
 
+## 2026-07-20 playtest feedback pass: transition dressing, rat staging
+
+- Room loads now fade to black (0.18s) and back in (0.25s) through a persistent `ScreenFader`,
+  Hollow Knight style; death respawn reuses the same fade. Room-per-scene structure stays —
+  transition polish was the missing piece, not a world merge.
+- Entry spawns moved next to their gates (±6.0) so arrivals read as walking through the door
+  while held movement carries momentum into the room.
+- Bridge rats restaged to the rulebook §9 four-beat rule (from the current west entry):
+  one slow solo rat (0.7 speed) teaches the swing, then a pair (0.95) escalates. Rat HP 2 → 3
+  (fist 3 / greatsword 2 / hammer 1 hits). Restage east-to-west when the Limbus room exists.
+- Smoke test updated for the new spawn position and three rats; all probes pass through the
+  fade-based transition.
+
 ## 2026-07-20 opening slice: bridge room, rats, health
 
 - Added `TiqueHealth` (5 HP, 1s i-frames, knockback + hit stun via `TiqueMotor.Stun`,

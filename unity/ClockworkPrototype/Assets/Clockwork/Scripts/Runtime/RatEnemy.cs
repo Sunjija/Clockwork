@@ -101,9 +101,10 @@ namespace Clockwork
         }
 
 #if UNITY_EDITOR
-        public void Configure(int patrolDirection)
+        public void Configure(int patrolDirection, float speed)
         {
             startDirection = patrolDirection;
+            moveSpeed = speed;
         }
 #endif
     }
