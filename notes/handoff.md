@@ -2,6 +2,26 @@
 
 Updated: 2026-07-20 (Asia/Seoul)
 
+## 2026-07-20 opening slice: bridge room, rats, health
+
+- Added `TiqueHealth` (5 HP, 1s i-frames, knockback + hit stun via `TiqueMotor.Stun`,
+  death respawns at the last saved room/spawn). HP persists across room loads through
+  `GameSession.RuntimeHealth`; the repair bench refills it on save.
+- Added `EnemyHealth` and `RatEnemy` (patrol with wall/ledge turnaround, 1 contact damage).
+  Rats have 2 HP; attacks now deal damage (fist 1 / greatsword 2 / hammer 3, once per swing)
+  via `AttackDefinition.Damage` and an overlap check during the active window.
+- `RoomGate` now loads destination scenes on player touch when the destination room exists
+  (`GameSession.LoadRoom` + `SpawnPoint`/`TiqueSpawnPlacer`). Unknown rooms stay data-only.
+- New `LimbusCaligoBridge` scene (RGN-011): flat crossing with two patrolling rats, placeholder
+  light, gates west to the maintenance shaft (functional) and east to Limbus (data-only).
+- Map orientation fix (maps are canon): in the shaft the bridge gate now sits east and the
+  flag-locked Caligo village gate west; previous builds had them swapped.
+- Smoke test now also validates damage + i-frames, the gate transition into the bridge,
+  spawn placement, rat presence, and HP persistence across the load
+  (`CLOCKWORK_HEALTH_PROBE`, `CLOCKWORK_BRIDGE_PROBE`).
+- Still missing by design: bridge sewage-waterfall art (v5.5 B-1), the scripted collapse
+  beat after the bridge tutorial, rat sprite is a generated placeholder, no SFX.
+
 ## 2026-07-20 review fixes
 
 - Fixed `RepairSavePoint` trigger: non-player colliders entering the trigger no longer clear the
@@ -69,7 +89,8 @@ Updated: 2026-07-20 (Asia/Seoul)
 ## Next work
 
 1. Replace the placeholder RuleTile sprite with a coherent 32 PPU Caligo/Limbus industrial palette.
-2. Build the Limbus bridge and Caligo as adjacent room scenes and make `RoomGate` load them.
-3. Add health, damage, healing, and checkpoint respawn on top of `GameSession`.
+2. Build the Caligo village and Limbus rooms as scenes (bridge is done; their gates are data-only).
+3. Replace the generated rat placeholder with approved sprite frames and add death feedback/SFX.
 4. Move approved action frames into Aseprite source files or a 2D Animation workflow for combo expansion.
 5. Re-tune movement from prototype-scale units after final tile and camera metrics are locked.
+6. Decide the scripted collapse beat (bridge tutorial → Morbi rescue) staging once the village scene exists.

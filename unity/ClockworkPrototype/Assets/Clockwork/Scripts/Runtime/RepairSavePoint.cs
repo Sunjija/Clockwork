@@ -42,6 +42,11 @@ namespace Clockwork
             if (GameSession.Instance == null) return;
             GameSession.Instance.SetFlag(GameFlagIds.TiqueRepaired, true);
             GameSession.Instance.SaveAt(roomId, spawnId);
+            if (nearbyInput != null)
+            {
+                TiqueHealth health = nearbyInput.GetComponent<TiqueHealth>();
+                if (health != null) health.HealFull();
+            }
             Activated = true;
             if (indicator != null)
             {

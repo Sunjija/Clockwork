@@ -21,3 +21,4 @@ MonoBehaviour:
   hitboxCenter: {x: 0.39, y: 0.44}
   hitboxSize: {x: 0.54, y: 0.56}
   trailColor: {r: 1, g: 0.6, b: 0.47, a: 1}
+  damage: 1

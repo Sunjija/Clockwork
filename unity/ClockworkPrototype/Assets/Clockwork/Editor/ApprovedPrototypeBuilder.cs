@@ -23,12 +23,15 @@ namespace ClockworkEditor
         private const string SequenceRoot = Root + "/Data/Sequences";
         private const string AttackRoot = Root + "/Data/Attacks";
         private const string ScenePath = Root + "/Scenes/CaligoMaintenanceShaft.unity";
+        private const string BridgeScenePath = Root + "/Scenes/LimbusCaligoBridge.unity";
         private const string PrefabPath = Root + "/Prefabs/TiqueApproved.prefab";
         private const string BackgroundPath = Root + "/Art/Backgrounds/caligo-maintenance-shaft.png";
         private const string PlatformSpritePath = Root + "/Art/platform-debug.png";
         private const string TileSpritePath = Root + "/Art/tile-placeholder-32.png";
+        private const string RatSpritePath = Root + "/Art/rat-placeholder.png";
         private const string TileAssetPath = Root + "/Data/Tiles/CaligoPlaceholder.asset";
         private const string RoomAssetPath = Root + "/Data/Rooms/CaligoMaintenanceShaft.asset";
+        private const string BridgeRoomAssetPath = Root + "/Data/Rooms/LimbusCaligoBridge.asset";
         private const string RendererAssetPath = Root + "/Settings/ClockworkRenderer2D.asset";
         private const string PipelineAssetPath = Root + "/Settings/ClockworkURP.asset";
         private const string LineMaterialPath = Root + "/Art/prototype-lines.mat";
@@ -41,10 +44,12 @@ namespace ClockworkEditor
             AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
             ConfigureApprovedTextures();
             EnsurePlatformSprite();
+            Sprite ratSprite = EnsureRatSprite();
             RuleTile collisionTile = EnsureCollisionTile();
             EnsureUniversalRenderPipeline();
             Material lineMaterial = EnsureLineMaterial();
             RoomDefinition room = EnsureRoomDefinition();
+            RoomDefinition bridgeRoom = EnsureBridgeRoomDefinition();
 
             SpriteSequence idle = CreateSequence(
                 "Idle", ArtRoot + "/Idle", 1.6f, true, 0.3f,
@@ -83,25 +88,26 @@ namespace ClockworkEditor
             AttackDefinition fist = CreateAttack(
                 "Fist", "fist", "주먹", fistSequence, 0.36f, 0.3f, 0.56f,
                 new Vector2(0.39f, 0.44f), new Vector2(0.54f, 0.56f),
-                new Color(1f, 0.6f, 0.47f));
+                new Color(1f, 0.6f, 0.47f), 1);
             AttackDefinition greatsword = CreateAttack(
                 "Greatsword", "greatsword", "대검", greatswordSequence, 0.68f, 0.38f, 0.62f,
                 new Vector2(0.75f, 0.46f), new Vector2(1.3f, 1f),
-                new Color(0.43f, 0.93f, 1f));
+                new Color(0.43f, 0.93f, 1f), 2);
             AttackDefinition hammer = CreateAttack(
                 "Hammer", "hammer", "망치", hammerSequence, 0.86f, 0.38f, 0.58f,
                 new Vector2(0.76f, 0.49f), new Vector2(1.36f, 1.02f),
-                new Color(0.94f, 0.74f, 0.35f));
+                new Color(0.94f, 0.74f, 0.35f), 3);
 
             GameObject prefab = BuildPlayerPrefab(
                 new[] { fist, greatsword, hammer },
                 idle, walk, jump, doubleJump, dash,
                 lineMaterial);
             BuildScene(prefab, collisionTile, room);
+            BuildBridgeScene(prefab, collisionTile, bridgeRoom, ratSprite);
             ConfigureProject();
             ValidateApprovedAssets();
             AssetDatabase.SaveAssets();
-            StripGeneratedYamlWhitespace(PrefabPath, ScenePath);
+            StripGeneratedYamlWhitespace(PrefabPath, ScenePath, BridgeScenePath);
             AssetDatabase.Refresh();
             Debug.Log("CLOCKWORK_APPROVED_BUILD_OK");
         }
@@ -125,7 +131,7 @@ namespace ClockworkEditor
             Directory.CreateDirectory("Builds/Windows");
             BuildReport report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
-                scenes = new[] { ScenePath },
+                scenes = new[] { ScenePath, BridgeScenePath },
                 locationPathName = "Builds/Windows/ClockworkPrototype.exe",
                 target = BuildTarget.StandaloneWindows64,
                 options = BuildOptions.None
@@ -246,10 +252,11 @@ namespace ClockworkEditor
             float activeEnd,
             Vector2 center,
             Vector2 size,
-            Color trailColor)
+            Color trailColor,
+            int damage)
         {
             AttackDefinition attack = LoadOrCreate<AttackDefinition>($"{AttackRoot}/{assetName}.asset");
-            attack.Configure(id, label, sequence, duration, activeStart, activeEnd, center, size, trailColor);
+            attack.Configure(id, label, sequence, duration, activeStart, activeEnd, center, size, trailColor, damage);
             EditorUtility.SetDirty(attack);
             return attack;
         }
@@ -288,6 +295,8 @@ namespace ClockworkEditor
             root.AddComponent<TiqueInputReader>();
             TiqueMotor motor = root.AddComponent<TiqueMotor>();
             root.AddComponent<TiqueProgression>();
+            root.AddComponent<TiqueHealth>();
+            root.AddComponent<TiqueSpawnPlacer>();
             TiqueCombat combat = root.AddComponent<TiqueCombat>();
 
             GameObject visual = new GameObject("ApprovedSprite");
@@ -350,17 +359,119 @@ namespace ClockworkEditor
 
             RepairSavePoint savePoint = BuildRepairSavePoint();
             BuildRoomGates();
+            BuildSpawnPoint("entry-limbus", new Vector2(-5.36f, -2f));
+            BuildSpawnPoint("caligo-workbench", new Vector2(3.55f, -2f));
+            BuildSpawnPoint("entry-bridge", new Vector2(5.7f, -2f));
             Camera camera = BuildCamera(player.transform, room.CameraBounds);
 
             GameObject hudObject = new GameObject("PrototypeHUD");
             PrototypeHud hud = hudObject.AddComponent<PrototypeHud>();
-            hud.Configure(player.GetComponent<TiqueCombat>(), savePoint);
+            hud.Configure(player.GetComponent<TiqueCombat>(), savePoint, player.GetComponent<TiqueHealth>());
 
             EditorSceneManager.SaveScene(scene, ScenePath);
             if (!Application.isBatchMode && SystemInfo.graphicsDeviceType != GraphicsDeviceType.Null)
             {
                 CapturePreview(camera);
             }
+        }
+
+        private static void BuildBridgeScene(GameObject playerPrefab, TileBase tile, RoomDefinition room, Sprite ratSprite)
+        {
+            Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            scene.name = "LimbusCaligoBridge";
+
+            GameObject bootstrap = new GameObject("PrototypeBootstrap");
+            bootstrap.AddComponent<PrototypeBootstrap>();
+            GameObject session = new GameObject("GameSession");
+            session.AddComponent<GameSession>();
+
+            BuildBridgeTilemap(tile);
+
+            // Placeholder mood only — the sewage-waterfall crossing art (v5.5 B-1) is still missing by design.
+            GameObject lightObject = new GameObject("BridgeGlobalLight2D");
+            Light2D light = lightObject.AddComponent<Light2D>();
+            light.lightType = Light2D.LightType.Global;
+            light.color = new Color(0.55f, 0.66f, 0.84f);
+            light.intensity = 0.7f;
+
+            GameObject player = PrefabUtility.InstantiatePrefab(playerPrefab) as GameObject;
+            if (player == null) throw new InvalidOperationException("Unable to instantiate approved Tique prefab.");
+            player.transform.position = new Vector3(-5.36f, -2f, 0f);
+
+            // Map orientation: Caligo lies west of the bridge, Limbus east (maps are canon).
+            BuildRoomGate("GateToMaintenanceShaft", new Vector2(-6.65f, -1.25f), "caligo-maintenance-shaft", "entry-bridge");
+            BuildRoomGate("GateToLimbus", new Vector2(6.65f, -1.25f), "limbus", "entry-bridge-west");
+            BuildSpawnPoint("entry-caligo", new Vector2(-5.6f, -2f));
+
+            BuildRat(ratSprite, new Vector2(0.6f, -2f), -1);
+            BuildRat(ratSprite, new Vector2(3.4f, -2f), 1);
+
+            BuildCamera(player.transform, room.CameraBounds);
+
+            GameObject hudObject = new GameObject("PrototypeHUD");
+            PrototypeHud hud = hudObject.AddComponent<PrototypeHud>();
+            hud.Configure(player.GetComponent<TiqueCombat>(), null, player.GetComponent<TiqueHealth>());
+
+            EditorSceneManager.SaveScene(scene, BridgeScenePath);
+        }
+
+        private static void BuildBridgeTilemap(TileBase tile)
+        {
+            GameObject gridObject = new GameObject("BridgeRoomTilemap");
+            Grid grid = gridObject.AddComponent<Grid>();
+            grid.cellSize = new Vector3(0.25f, 0.25f, 1f);
+
+            GameObject collisionObject = new GameObject("Collision");
+            collisionObject.transform.SetParent(gridObject.transform, false);
+            Tilemap tilemap = collisionObject.AddComponent<Tilemap>();
+            TilemapRenderer renderer = collisionObject.AddComponent<TilemapRenderer>();
+            renderer.sortingOrder = 1;
+            Rigidbody2D rigidbody = collisionObject.AddComponent<Rigidbody2D>();
+            rigidbody.bodyType = RigidbodyType2D.Static;
+            CompositeCollider2D composite = collisionObject.AddComponent<CompositeCollider2D>();
+            composite.geometryType = CompositeCollider2D.GeometryType.Polygons;
+            TilemapCollider2D tilemapCollider = collisionObject.AddComponent<TilemapCollider2D>();
+            tilemapCollider.compositeOperation = Collider2D.CompositeOperation.Merge;
+
+            // Flat crossing with side walls; the rats patrol the deck between the gates.
+            Fill(tilemap, tile, -28, 27, -12, -9);
+            Fill(tilemap, tile, -28, -27, -8, 11);
+            Fill(tilemap, tile, 26, 27, -8, 11);
+            tilemap.CompressBounds();
+            tilemap.RefreshAllTiles();
+            tilemapCollider.ProcessTilemapChanges();
+            composite.GenerateGeometry();
+        }
+
+        private static void BuildSpawnPoint(string id, Vector2 position)
+        {
+            GameObject point = new GameObject($"Spawn_{id}");
+            point.transform.position = position;
+            point.AddComponent<SpawnPoint>().Configure(id);
+        }
+
+        private static void BuildRat(Sprite sprite, Vector2 position, int direction)
+        {
+            GameObject rat = new GameObject("RatEnemy");
+            rat.transform.position = position;
+
+            Rigidbody2D body = rat.AddComponent<Rigidbody2D>();
+            body.bodyType = RigidbodyType2D.Dynamic;
+            body.gravityScale = 0f;
+            body.freezeRotation = true;
+            body.interpolation = RigidbodyInterpolation2D.Interpolate;
+            body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+            BoxCollider2D collider = rat.AddComponent<BoxCollider2D>();
+            collider.size = new Vector2(0.42f, 0.24f);
+            collider.offset = new Vector2(0f, 0.12f);
+
+            SpriteRenderer renderer = rat.AddComponent<SpriteRenderer>();
+            renderer.sprite = sprite;
+            renderer.sortingOrder = 6;
+
+            rat.AddComponent<EnemyHealth>().Configure(2);
+            rat.AddComponent<RatEnemy>().Configure(direction);
         }
 
         private static void BuildBackground()
@@ -502,8 +613,9 @@ namespace ClockworkEditor
 
         private static void BuildRoomGates()
         {
-            BuildRoomGate("GateToLimbus", new Vector2(-6.65f, -1.25f), "limbus-caligo-bridge", "entry-caligo");
-            BuildRoomGate("GateToCaligo", new Vector2(6.65f, -1.25f), "caligo", "entry-maintenance-shaft", GameFlagIds.TiqueRepaired);
+            // Map orientation: the Limbus bridge lies east of the shaft, the Caligo village west (maps are canon).
+            BuildRoomGate("GateToLimbusBridge", new Vector2(6.65f, -1.25f), "limbus-caligo-bridge", "entry-caligo");
+            BuildRoomGate("GateToCaligoVillage", new Vector2(-6.65f, -1.25f), "caligo", "entry-maintenance-shaft", GameFlagIds.TiqueRepaired);
         }
 
         private static void BuildRoomGate(string name, Vector2 position, string destinationRoom, string destinationSpawn, string requiredFlag = "")
@@ -570,6 +682,68 @@ namespace ClockworkEditor
             return room;
         }
 
+        private static RoomDefinition EnsureBridgeRoomDefinition()
+        {
+            RoomDefinition room = LoadOrCreate<RoomDefinition>(BridgeRoomAssetPath);
+            room.Configure(
+                "limbus-caligo-bridge",
+                "Limbus-Caligo Bridge",
+                new Rect(-7f, -3f, 14f, 6f),
+                "act1-limbus-bridge");
+            EditorUtility.SetDirty(room);
+            return room;
+        }
+
+        private static Sprite EnsureRatSprite()
+        {
+            if (!File.Exists(RatSpritePath))
+            {
+                const int width = 16;
+                const int height = 10;
+                Color clear = new Color(0f, 0f, 0f, 0f);
+                Color fur = new Color(0.4f, 0.38f, 0.42f);
+                Color furDark = new Color(0.28f, 0.26f, 0.3f);
+                Color eye = new Color(0.95f, 0.3f, 0.25f);
+
+                Texture2D texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
+                for (int y = 0; y < height; y++)
+                {
+                    for (int x = 0; x < width; x++)
+                    {
+                        texture.SetPixel(x, y, clear);
+                    }
+                }
+
+                // Facing left: rounded body, snout on the left, tail trailing right.
+                for (int x = 2; x <= 12; x++)
+                {
+                    for (int y = 1; y <= 5; y++)
+                    {
+                        bool corner = (x == 2 || x == 12) && (y == 1 || y == 5);
+                        if (!corner) texture.SetPixel(x, y, fur);
+                    }
+                }
+                texture.SetPixel(1, 3, fur);
+                texture.SetPixel(1, 2, fur);
+                texture.SetPixel(0, 2, furDark);
+                texture.SetPixel(4, 6, furDark);
+                texture.SetPixel(10, 6, furDark);
+                for (int x = 13; x <= 15; x++) texture.SetPixel(x, 2 + (x - 13) / 2, furDark);
+                texture.SetPixel(3, 0, furDark);
+                texture.SetPixel(6, 0, furDark);
+                texture.SetPixel(9, 0, furDark);
+                texture.SetPixel(11, 0, furDark);
+                texture.SetPixel(3, 4, eye);
+                texture.Apply();
+                File.WriteAllBytes(RatSpritePath, texture.EncodeToPNG());
+                UnityEngine.Object.DestroyImmediate(texture);
+                AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            }
+
+            ConfigureTexture(RatSpritePath, new Vector2(0.5f, 0f), FilterMode.Point, 32, 32f);
+            return AssetDatabase.LoadAssetAtPath<Sprite>(RatSpritePath);
+        }
+
         private static void EnsureUniversalRenderPipeline()
         {
             Renderer2DData rendererData = AssetDatabase.LoadAssetAtPath<Renderer2DData>(RendererAssetPath);
@@ -598,7 +772,11 @@ namespace ClockworkEditor
             PlayerSettings.defaultScreenWidth = 1280;
             PlayerSettings.defaultScreenHeight = 720;
             PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
-            EditorBuildSettings.scenes = new[] { new EditorBuildSettingsScene(ScenePath, true) };
+            EditorBuildSettings.scenes = new[]
+            {
+                new EditorBuildSettingsScene(ScenePath, true),
+                new EditorBuildSettingsScene(BridgeScenePath, true)
+            };
         }
 
         private static void CapturePreview(Camera camera)
@@ -626,7 +804,7 @@ namespace ClockworkEditor
             {
                 "/v5/", "/v5.1/", "/v6/", "/v8-", "/v10-", "/weapons-test"
             };
-            string[] dependencies = AssetDatabase.GetDependencies(ScenePath, true);
+            string[] dependencies = AssetDatabase.GetDependencies(new[] { ScenePath, BridgeScenePath }, true);
             foreach (string dependency in dependencies)
             {
                 if (forbiddenTokens.Any(token => dependency.Contains(token, StringComparison.OrdinalIgnoreCase)))

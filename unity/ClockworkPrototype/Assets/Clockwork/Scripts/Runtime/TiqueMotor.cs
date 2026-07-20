@@ -40,6 +40,7 @@ namespace Clockwork
         private bool jumpHeld;
         private float coyoteTimer;
         private float jumpBufferTimer;
+        private float stunTimer;
         private float dashTimer;
         private float dashCooldown;
         private float takeoffTimer;
@@ -64,9 +65,16 @@ namespace Clockwork
         public float LandingProgress => 1f - Mathf.Clamp01(landingTimer / LandingDuration);
         public float CurrentMoveSpeed => damaged ? normalMoveSpeed * damagedMoveMultiplier : normalMoveSpeed;
 
+        public bool IsStunned => stunTimer > 0f;
+
         public void SetDamagedState(bool value)
         {
             damaged = value;
+        }
+
+        public void Stun(float duration)
+        {
+            stunTimer = Mathf.Max(stunTimer, duration);
         }
 
         private void Awake()
@@ -125,6 +133,7 @@ namespace Clockwork
                 jumpBufferTimer = Mathf.Max(0f, jumpBufferTimer - dt);
             }
 
+            stunTimer = Mathf.Max(0f, stunTimer - dt);
             dashTimer = Mathf.Max(0f, dashTimer - dt);
             dashCooldown = Mathf.Max(0f, dashCooldown - dt);
             takeoffTimer = Mathf.Max(0f, takeoffTimer - dt);
@@ -133,14 +142,14 @@ namespace Clockwork
 
             Vector2 velocity = body.linearVelocity;
 
-            if (dashPressed && dashCooldown <= 0f)
+            if (dashPressed && dashCooldown <= 0f && !IsStunned)
             {
                 dashTimer = dashDuration;
                 dashCooldown = dashCooldownDuration;
                 velocity.y = 0f;
             }
 
-            if (jumpBufferTimer > 0f && !IsDashing)
+            if (jumpBufferTimer > 0f && !IsDashing && !IsStunned)
             {
                 if (coyoteTimer > 0f)
                 {
@@ -167,8 +176,9 @@ namespace Clockwork
             }
             else
             {
-                float target = moveInput * CurrentMoveSpeed;
-                float response = Grounded ? groundResponse : airResponse;
+                // While stunned, input is ignored and knockback decays slowly instead of snapping to input speed.
+                float target = IsStunned ? 0f : moveInput * CurrentMoveSpeed;
+                float response = IsStunned ? 3.5f : Grounded ? groundResponse : airResponse;
                 velocity.x = Mathf.Lerp(velocity.x, target, Mathf.Clamp01(dt * response));
 
                 float gravity = velocity.y > 0f ? ascentGravity : fallGravity;

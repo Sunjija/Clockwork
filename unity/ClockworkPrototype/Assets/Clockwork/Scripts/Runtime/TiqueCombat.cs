@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Clockwork
@@ -9,8 +10,11 @@ namespace Clockwork
         [SerializeField] private LineRenderer hitboxRenderer;
         [SerializeField] private LineRenderer trailRenderer;
 
+        private readonly HashSet<EnemyHealth> struckEnemies = new HashSet<EnemyHealth>();
+        private readonly Collider2D[] overlapResults = new Collider2D[12];
         private TiqueMotor motor;
         private TiqueInputReader input;
+        private ContactFilter2D hitFilter;
         private int selectedAttack;
         private float attackTimer;
         private bool showHitboxes;
@@ -26,6 +30,12 @@ namespace Clockwork
         {
             motor = GetComponent<TiqueMotor>();
             input = GetComponent<TiqueInputReader>();
+            hitFilter = new ContactFilter2D
+            {
+                useTriggers = false,
+                useLayerMask = true,
+                layerMask = Physics2D.AllLayers
+            };
         }
 
         private void Update()
@@ -35,13 +45,33 @@ namespace Clockwork
             if (input.Slot3Pressed) SelectAttack(2);
             if (input.DebugHitboxesPressed) showHitboxes = !showHitboxes;
 
-            if (input.AttackPressed && !IsAttacking && !motor.IsDashing && CurrentAttack != null)
+            if (input.AttackPressed && !IsAttacking && !motor.IsDashing && !motor.IsStunned && CurrentAttack != null)
             {
                 attackTimer = CurrentAttack.Duration;
+                struckEnemies.Clear();
             }
 
             attackTimer = Mathf.Max(0f, attackTimer - Time.deltaTime);
+            ApplyAttackDamage();
             UpdateDebugRenderers();
+        }
+
+        private void ApplyAttackDamage()
+        {
+            if (!IsAttacking || !CurrentAttack.IsActiveAt(AttackProgress)) return;
+
+            Vector2 offset = CurrentAttack.HitboxCenter;
+            offset.x *= motor.Facing;
+            Vector2 center = (Vector2)transform.position + offset;
+            int count = Physics2D.OverlapBox(center, CurrentAttack.HitboxSize, 0f, hitFilter, overlapResults);
+            for (int i = 0; i < count; i++)
+            {
+                EnemyHealth enemy = overlapResults[i].GetComponentInParent<EnemyHealth>();
+                if (enemy != null && enemy.IsAlive && struckEnemies.Add(enemy))
+                {
+                    enemy.TakeDamage(CurrentAttack.Damage, motor.Facing);
+                }
+            }
         }
 
         public void SelectAttack(int index)

@@ -14,6 +14,7 @@ namespace Clockwork
         [SerializeField] private Vector2 hitboxCenter;
         [SerializeField] private Vector2 hitboxSize = Vector2.one;
         [SerializeField] private Color trailColor = Color.white;
+        [SerializeField] private int damage = 1;
 
         public string AttackId => attackId;
         public string DisplayName => displayName;
@@ -24,6 +25,7 @@ namespace Clockwork
         public Vector2 HitboxCenter => hitboxCenter;
         public Vector2 HitboxSize => hitboxSize;
         public Color TrailColor => trailColor;
+        public int Damage => Mathf.Max(1, damage);
 
         public bool IsActiveAt(float normalizedTime)
         {
@@ -40,7 +42,8 @@ namespace Clockwork
             float windowEnd,
             Vector2 center,
             Vector2 size,
-            Color color)
+            Color color,
+            int attackDamage)
         {
             attackId = id;
             displayName = label;
@@ -51,6 +54,7 @@ namespace Clockwork
             hitboxCenter = center;
             hitboxSize = size;
             trailColor = color;
+            damage = attackDamage;
         }
 #endif
     }

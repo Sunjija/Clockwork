@@ -6,14 +6,19 @@ namespace Clockwork
 {
     public sealed class PrototypeBootstrap : MonoBehaviour
     {
+        private static bool smokeStarted;
+
         private void Awake()
         {
             Application.targetFrameRate = 60;
             QualitySettings.vSyncCount = 0;
             Physics2D.gravity = Vector2.zero;
 
-            if (System.Environment.GetCommandLineArgs().Contains("-clockworkSmokeTest"))
+            // The smoke runner survives room loads; scene copies of this bootstrap must not restart it.
+            if (!smokeStarted && System.Environment.GetCommandLineArgs().Contains("-clockworkSmokeTest"))
             {
+                smokeStarted = true;
+                DontDestroyOnLoad(gameObject);
                 StartCoroutine(RunSmokeTest());
             }
         }
@@ -39,6 +44,36 @@ namespace Clockwork
             bool valid = motor != null && combat != null && animator != null && input != null
                 && sprite != null && sprite.enabled && sprite.sprite != null && tilemapCollider != null
                 && settledPosition.y > -3.2f && progressionValid;
+
+            TiqueHealth health = FindAnyObjectByType<TiqueHealth>();
+            bool healthValid = health != null && health.CurrentHealth == health.MaxHealth;
+            if (healthValid)
+            {
+                health.TakeDamage(1, health.transform.position + Vector3.right);
+                healthValid = health.CurrentHealth == health.MaxHealth - 1;
+                health.TakeDamage(1, health.transform.position + Vector3.right);
+                healthValid &= health.CurrentHealth == health.MaxHealth - 1;
+            }
+            Debug.Log($"CLOCKWORK_HEALTH_PROBE valid={healthValid} hp={(health == null ? -1 : health.CurrentHealth)}");
+
+            bool bridgeValid = false;
+            if (session != null && session.LoadRoom("limbus-caligo-bridge", "entry-caligo"))
+            {
+                yield return new WaitForSecondsRealtime(1f);
+                TiqueMotor bridgeMotor = FindAnyObjectByType<TiqueMotor>();
+                TiqueHealth bridgeHealth = FindAnyObjectByType<TiqueHealth>();
+                RatEnemy[] rats = FindObjectsByType<RatEnemy>(FindObjectsSortMode.None);
+                yield return new WaitForSecondsRealtime(1f);
+                bridgeValid = bridgeMotor != null && bridgeMotor.Grounded
+                    && Mathf.Abs(bridgeMotor.transform.position.x - -5.6f) < 1.2f
+                    && rats.Length >= 2
+                    && bridgeHealth != null && bridgeHealth.CurrentHealth == bridgeHealth.MaxHealth - 1;
+                Debug.Log($"CLOCKWORK_BRIDGE_PROBE valid={bridgeValid} rats={rats.Length} " +
+                    $"pos={(bridgeMotor == null ? Vector3.zero : bridgeMotor.transform.position)} " +
+                    $"hp={(bridgeHealth == null ? -1 : bridgeHealth.CurrentHealth)}");
+            }
+
+            valid = valid && healthValid && bridgeValid;
             Debug.Log(valid ? "CLOCKWORK_RUNTIME_SMOKE_OK" : "CLOCKWORK_RUNTIME_SMOKE_FAILED");
             Application.Quit(valid ? 0 : 2);
         }

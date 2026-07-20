@@ -579,6 +579,8 @@ GameObject:
   - component: {fileID: 3694285177859468801}
   - component: {fileID: 1298557700848288028}
   - component: {fileID: 3689283017317931843}
+  - component: {fileID: 1940898313848858595}
+  - component: {fileID: 6783564853845966513}
   - component: {fileID: 9089003832585336234}
   - component: {fileID: 8149677746774208229}
   m_Layer: 0
@@ -725,6 +727,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f18833b2538c3840a70ace1a3a8ab35, type: 3}
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueProgression
+--- !u!114 &1940898313848858595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527064714624658134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b580dd1fad5cea64d989aefe70f84390, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueHealth
+  maxHealth: 5
+  invulnerabilityDuration: 1
+  knockback: {x: 4.2, y: 3.4}
+  hitStunDuration: 0.24
+  respawnDelay: 0.9
+--- !u!114 &6783564853845966513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527064714624658134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14aa5740eb1020d4a9c93b22d4d24e2f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueSpawnPlacer
 --- !u!114 &9089003832585336234
 MonoBehaviour:
   m_ObjectHideFlags: 0

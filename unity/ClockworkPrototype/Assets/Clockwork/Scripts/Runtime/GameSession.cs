@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Clockwork
 {
@@ -26,12 +27,26 @@ namespace Clockwork
         private const string SaveFileName = "clockwork-save-01.json";
         private static GameSession instance;
 
+        // Rooms that exist as playable Unity scenes; other room ids stay data-only gates.
+        private static readonly Dictionary<string, string> RoomScenes = new Dictionary<string, string>
+        {
+            { "caligo-maintenance-shaft", "CaligoMaintenanceShaft" },
+            { "limbus-caligo-bridge", "LimbusCaligoBridge" }
+        };
+
         [SerializeField] private GameSaveData current = new GameSaveData();
         private bool diskAccessEnabled = true;
 
         public static GameSession Instance => instance;
         public GameSaveData Current => current;
+        public int RuntimeHealth { get; set; } = -1;
+        public string PendingSpawnId { get; private set; }
         public event Action<string, bool> FlagChanged;
+
+        public static bool RoomSceneExists(string roomId)
+        {
+            return roomId != null && RoomScenes.ContainsKey(roomId);
+        }
 
         private string SavePath => Path.Combine(Application.persistentDataPath, SaveFileName);
 
@@ -73,6 +88,30 @@ namespace Clockwork
             if (changed)
             {
                 FlagChanged?.Invoke(flagId, value);
+            }
+        }
+
+        public string ConsumePendingSpawn()
+        {
+            string spawnId = PendingSpawnId;
+            PendingSpawnId = null;
+            return spawnId;
+        }
+
+        public bool LoadRoom(string roomId, string spawnId)
+        {
+            if (!RoomScenes.TryGetValue(roomId, out string sceneName)) return false;
+            PendingSpawnId = spawnId;
+            SceneManager.LoadScene(sceneName);
+            return true;
+        }
+
+        public void RespawnAtLastSave()
+        {
+            RuntimeHealth = -1;
+            if (!LoadRoom(current.roomId, current.spawnId))
+            {
+                LoadRoom("caligo-maintenance-shaft", "entry-limbus");
             }
         }
 
