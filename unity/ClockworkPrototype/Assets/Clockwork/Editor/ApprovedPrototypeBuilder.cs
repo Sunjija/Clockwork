@@ -16,7 +16,7 @@ using UnityEngine.U2D;
 
 namespace ClockworkEditor
 {
-    public static class ApprovedPrototypeBuilder
+    public static partial class ApprovedPrototypeBuilder
     {
         private const string Root = "Assets/Clockwork";
         private const string ArtRoot = Root + "/Art/Tique/Approved";
@@ -26,9 +26,12 @@ namespace ClockworkEditor
         private const string BridgeScenePath = Root + "/Scenes/LimbusCaligoBridge.unity";
         private const string LimbusScenePath = Root + "/Scenes/Limbus.unity";
         private const string VillageScenePath = Root + "/Scenes/CaligoVillage.unity";
+        private const string PlazaScenePath = Root + "/Scenes/CaligoPlaza.unity";
+        private const string DropShaftScenePath = Root + "/Scenes/CaligoDropShaft.unity";
         private const string PrefabPath = Root + "/Prefabs/TiqueApproved.prefab";
         private const string RatPrefabPath = Root + "/Prefabs/RatEnemy.prefab";
         private const string BackgroundPath = Root + "/Art/Backgrounds/caligo-maintenance-shaft.png";
+        private const string PlazaBackgroundPath = Root + "/Art/Backgrounds/caligo-plaza-concept-v1.png";
         private const string PlatformSpritePath = Root + "/Art/platform-debug.png";
         private const string TileSpritePath = Root + "/Art/tile-placeholder-32.png";
         private const string RatSpritePath = Root + "/Art/rat-placeholder.png";
@@ -37,10 +40,13 @@ namespace ClockworkEditor
         private const string BridgeRoomAssetPath = Root + "/Data/Rooms/LimbusCaligoBridge.asset";
         private const string LimbusRoomAssetPath = Root + "/Data/Rooms/Limbus.asset";
         private const string VillageRoomAssetPath = Root + "/Data/Rooms/CaligoVillage.asset";
+        private const string PlazaRoomAssetPath = Root + "/Data/Rooms/CaligoPlaza.asset";
+        private const string DropShaftRoomAssetPath = Root + "/Data/Rooms/CaligoDropShaft.asset";
         private const string RendererAssetPath = Root + "/Settings/ClockworkRenderer2D.asset";
         private const string PipelineAssetPath = Root + "/Settings/ClockworkURP.asset";
         private const string LineMaterialPath = Root + "/Art/prototype-lines.mat";
         private const string PreviewPath = Root + "/QA/caligo-unity-preview.png";
+        private const string PlazaPreviewPath = Root + "/QA/caligo-plaza-art-benchmark.png";
 
         [MenuItem("Clockwork/Build Approved Prototype")]
         public static void BuildApprovedPrototype()
@@ -57,6 +63,8 @@ namespace ClockworkEditor
             RoomDefinition bridgeRoom = EnsureBridgeRoomDefinition();
             RoomDefinition limbusRoom = EnsureLimbusRoomDefinition();
             RoomDefinition villageRoom = EnsureVillageRoomDefinition();
+            RoomDefinition plazaRoom = EnsurePlazaRoomDefinition();
+            RoomDefinition dropShaftRoom = EnsureDropShaftRoomDefinition();
 
             SpriteSequence idle = CreateSequence(
                 "Idle", ArtRoot + "/Idle", 1.6f, true, 0.3f,
@@ -114,10 +122,14 @@ namespace ClockworkEditor
             BuildBridgeScene(prefab, collisionTile, bridgeRoom, ratPrefab);
             BuildLimbusScene(prefab, collisionTile, limbusRoom);
             BuildVillageScene(prefab, collisionTile, villageRoom);
+            BuildPlazaScene(prefab, collisionTile, plazaRoom);
+            BuildDropShaftScene(prefab, collisionTile, dropShaftRoom);
             ConfigureProject();
             ValidateApprovedAssets();
             AssetDatabase.SaveAssets();
-            StripGeneratedYamlWhitespace(PrefabPath, ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath);
+            StripGeneratedYamlWhitespace(
+                PrefabPath, ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath,
+                PlazaScenePath, DropShaftScenePath);
             AssetDatabase.Refresh();
             Debug.Log("CLOCKWORK_APPROVED_BUILD_OK");
         }
@@ -141,7 +153,11 @@ namespace ClockworkEditor
             Directory.CreateDirectory("Builds/Windows");
             BuildReport report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
-                scenes = new[] { LimbusScenePath, BridgeScenePath, ScenePath, VillageScenePath },
+                scenes = new[]
+                {
+                    LimbusScenePath, BridgeScenePath, ScenePath, VillageScenePath,
+                    PlazaScenePath, DropShaftScenePath
+                },
                 locationPathName = "Builds/Windows/ClockworkPrototype.exe",
                 target = BuildTarget.StandaloneWindows64,
                 options = BuildOptions.None
@@ -169,12 +185,12 @@ namespace ClockworkEditor
         {
             string[] texturePaths = Directory.GetFiles(ArtRoot, "*.png", SearchOption.AllDirectories)
                 .Select(ToAssetPath)
-                .Concat(new[] { BackgroundPath })
+                .Concat(new[] { BackgroundPath, PlazaBackgroundPath })
                 .ToArray();
 
             foreach (string path in texturePaths)
             {
-                bool background = path == BackgroundPath;
+                bool background = path == BackgroundPath || path == PlazaBackgroundPath;
                 bool greatsword = path.Contains("/Greatsword/", StringComparison.Ordinal);
                 Vector2 pivot = greatsword
                     ? new Vector2(240f / 640f, (512f - 430f) / 512f)
@@ -460,7 +476,7 @@ namespace ClockworkEditor
             if (player == null) throw new InvalidOperationException("Unable to instantiate approved Tique prefab.");
             player.transform.position = new Vector3(6f, -2f, 0f);
 
-            // Village lies west of the shaft; the plaza continues further west (data-only for now).
+            // Village lies west of the shaft; the plaza continues further west.
             BuildRoomGate("GateToMaintenanceShaft", new Vector2(6.65f, -1.25f), "caligo-maintenance-shaft", "entry-caligo-village");
             BuildRoomGate("GateToPlaza", new Vector2(-6.65f, -1.25f), "caligo-plaza", "entry-workshop");
             BuildSpawnPoint("entry-maintenance-shaft", new Vector2(6f, -2f));
@@ -659,6 +675,35 @@ namespace ClockworkEditor
             Fill(tilemap, tile, -28, 27, -12, -9);
             Fill(tilemap, tile, -28, -27, -8, 11);
             Fill(tilemap, tile, 26, 27, -8, 11);
+            tilemap.CompressBounds();
+            tilemap.RefreshAllTiles();
+            tilemapCollider.ProcessTilemapChanges();
+            composite.GenerateGeometry();
+        }
+
+        private static Tilemap BuildCollisionTilemap(
+            string name, out TilemapCollider2D tilemapCollider, out CompositeCollider2D composite)
+        {
+            GameObject gridObject = new GameObject(name);
+            Grid grid = gridObject.AddComponent<Grid>();
+            grid.cellSize = new Vector3(0.25f, 0.25f, 1f);
+
+            GameObject collisionObject = new GameObject("Collision");
+            collisionObject.transform.SetParent(gridObject.transform, false);
+            Tilemap tilemap = collisionObject.AddComponent<Tilemap>();
+            collisionObject.AddComponent<TilemapRenderer>().sortingOrder = 1;
+            Rigidbody2D rigidbody = collisionObject.AddComponent<Rigidbody2D>();
+            rigidbody.bodyType = RigidbodyType2D.Static;
+            composite = collisionObject.AddComponent<CompositeCollider2D>();
+            composite.geometryType = CompositeCollider2D.GeometryType.Polygons;
+            tilemapCollider = collisionObject.AddComponent<TilemapCollider2D>();
+            tilemapCollider.compositeOperation = Collider2D.CompositeOperation.Merge;
+            return tilemap;
+        }
+
+        private static void FinalizeTilemap(
+            Tilemap tilemap, TilemapCollider2D tilemapCollider, CompositeCollider2D composite)
+        {
             tilemap.CompressBounds();
             tilemap.RefreshAllTiles();
             tilemapCollider.ProcessTilemapChanges();
@@ -1004,13 +1049,15 @@ namespace ClockworkEditor
                 new EditorBuildSettingsScene(LimbusScenePath, true),
                 new EditorBuildSettingsScene(BridgeScenePath, true),
                 new EditorBuildSettingsScene(ScenePath, true),
-                new EditorBuildSettingsScene(VillageScenePath, true)
+                new EditorBuildSettingsScene(VillageScenePath, true),
+                new EditorBuildSettingsScene(PlazaScenePath, true),
+                new EditorBuildSettingsScene(DropShaftScenePath, true)
             };
         }
 
-        private static void CapturePreview(Camera camera)
+        private static void CapturePreview(Camera camera, string outputPath = PreviewPath)
         {
-            Directory.CreateDirectory(Path.GetDirectoryName(PreviewPath) ?? Root);
+            Directory.CreateDirectory(Path.GetDirectoryName(outputPath) ?? Root);
             RenderTexture target = new RenderTexture(1280, 720, 24, RenderTextureFormat.ARGB32);
             Texture2D output = new Texture2D(1280, 720, TextureFormat.RGBA32, false);
             RenderTexture previous = RenderTexture.active;
@@ -1019,12 +1066,12 @@ namespace ClockworkEditor
             RenderTexture.active = target;
             output.ReadPixels(new Rect(0f, 0f, 1280f, 720f), 0, 0);
             output.Apply();
-            File.WriteAllBytes(PreviewPath, output.EncodeToPNG());
+            File.WriteAllBytes(outputPath, output.EncodeToPNG());
             camera.targetTexture = null;
             RenderTexture.active = previous;
             UnityEngine.Object.DestroyImmediate(target);
             UnityEngine.Object.DestroyImmediate(output);
-            AssetDatabase.ImportAsset(PreviewPath, ImportAssetOptions.ForceSynchronousImport);
+            AssetDatabase.ImportAsset(outputPath, ImportAssetOptions.ForceSynchronousImport);
         }
 
         private static void ValidateApprovedAssets()
@@ -1033,7 +1080,13 @@ namespace ClockworkEditor
             {
                 "/v5/", "/v5.1/", "/v6/", "/v8-", "/v10-", "/weapons-test"
             };
-            string[] dependencies = AssetDatabase.GetDependencies(new[] { ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath }, true);
+            string[] dependencies = AssetDatabase.GetDependencies(
+                new[]
+                {
+                    ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath,
+                    PlazaScenePath, DropShaftScenePath
+                },
+                true);
             foreach (string dependency in dependencies)
             {
                 if (forbiddenTokens.Any(token => dependency.Contains(token, StringComparison.OrdinalIgnoreCase)))

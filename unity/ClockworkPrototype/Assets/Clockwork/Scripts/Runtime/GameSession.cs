@@ -30,15 +30,6 @@ namespace Clockwork
         private const string SaveFileName = "clockwork-save-01.json";
         private static GameSession instance;
 
-        // Rooms that exist as playable Unity scenes; other room ids stay data-only gates.
-        private static readonly Dictionary<string, string> RoomScenes = new Dictionary<string, string>
-        {
-            { "limbus", "Limbus" },
-            { "limbus-caligo-bridge", "LimbusCaligoBridge" },
-            { "caligo-maintenance-shaft", "CaligoMaintenanceShaft" },
-            { "caligo", "CaligoVillage" }
-        };
-
         [SerializeField] private GameSaveData current = new GameSaveData();
         private bool diskAccessEnabled = true;
 
@@ -51,7 +42,7 @@ namespace Clockwork
 
         public static bool RoomSceneExists(string roomId)
         {
-            return roomId != null && RoomScenes.ContainsKey(roomId);
+            return RoomSceneRegistry.Contains(roomId);
         }
 
         private string SavePath => Path.Combine(Application.persistentDataPath, SaveFileName);
@@ -113,7 +104,7 @@ namespace Clockwork
 
         public bool LoadRoom(string roomId, string spawnId)
         {
-            if (!RoomScenes.TryGetValue(roomId, out string sceneName)) return false;
+            if (!RoomSceneRegistry.TryGetScene(roomId, out string sceneName)) return false;
             if (IsTransitioning) return true;
             StartCoroutine(TransitionRoutine(sceneName, spawnId));
             return true;
@@ -144,7 +135,7 @@ namespace Clockwork
         {
             // Continue from the saved room when the boot scene is a different room.
             if (!diskAccessEnabled) return;
-            if (!RoomScenes.TryGetValue(current.roomId, out string savedScene)) return;
+            if (!RoomSceneRegistry.TryGetScene(current.roomId, out string savedScene)) return;
             if (SceneManager.GetActiveScene().name != savedScene)
             {
                 LoadRoom(current.roomId, current.spawnId);

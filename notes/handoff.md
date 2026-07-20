@@ -2,6 +2,41 @@
 
 Updated: 2026-07-20 (Asia/Seoul)
 
+> Compact entry point: read `notes/current-state.md`, `notes/next-task.md`, and
+> `notes/verification.md` first. This file is the chronological archive.
+
+## 2026-07-20 implementation structure refactor
+
+- Split plaza/drop scene generation into `Editor/Builders/CaligoPlazaSceneBuilder.cs`.
+- Moved playable room routing into `Runtime/Rooms/RoomSceneRegistry.cs`.
+- Reduced `PrototypeBootstrap` to launch policy and split smoke coverage into opening and
+  Caligo-route probe modules under `Runtime/Testing`.
+- Added compact current/next/verification notes so ordinary changes do not require reading
+  this full archive or the full canon documents.
+
+## 2026-07-20 Caligo plaza and one-way drop shaft
+
+- Added `CaligoPlaza` (`caligo-plaza`, map room 009) west of Morbi's workshop with a
+  working workshop return gate, plaza checkpoint/save point, and a west gate into the
+  drop shaft. Room/spawn routing is registered in `GameSession`.
+- Added `CaligoDropShaft` (`caligo-drop-shaft`, map room 012) as a tall greybox traversal.
+  Its first pass is deliberately one-way: there is no return gate to the plaza. The exit
+  toward `crossing-cavern` (map room 013) is data-only until that scene is implemented.
+  A later hook return remains a proposal and was not implemented.
+- Reused `art/concepts/act1/03-caligo-v1.png` as
+  `Art/Backgrounds/caligo-plaza-concept-v1.png` for a one-screen environment benchmark.
+  This is a `[proposal]` concept candidate, not approved/canon production art. Collision
+  remains an invisible greybox independent of the image.
+- Added `QA/caligo-plaza-art-benchmark.png`. The environment-only capture hides the
+  edit-time player renderer so prefab initialization cannot contaminate the comparison
+  image; runtime player rendering is unchanged.
+- Smoke coverage now has eight probes. `CLOCKWORK_PLAZA_PROBE` validates workshop entry,
+  checkpoint activation, and the drop gate. `CLOCKWORK_DROP_SHAFT_PROBE` validates the
+  fall/landing, absence of a plaza return gate, and the data-only cavern exit.
+- Final Windows x64 build and the full route smoke test pass
+  (`CLOCKWORK_APPROVED_BUILD_OK`, `CLOCKWORK_WINDOWS_BUILD_OK`,
+  `CLOCKWORK_RUNTIME_SMOKE_OK`).
+
 ## 2026-07-20 bridge shutdown revised: finite fight, critically damaged Tique
 
 - Fixed saved-game continuation ordering: a pending spawn is now consumed only by its
@@ -29,7 +64,7 @@ Updated: 2026-07-20 (Asia/Seoul)
 
 - New `CaligoVillage` scene (roomId `caligo`) west of the shaft: Morbi workshop bench
   (repair/save, `caligo/caligo-workshop`), hut silhouettes, warm light (canon §4 tone),
-  west plaza gate left data-only. The shaft's flag-locked west gate is now functional.
+  and a west plaza gate. The shaft's flag-locked west gate is functional.
 - `MorbiNpc`: state-based dry dialogue (canon §8 tone) — greeting/errand when empty-handed,
   the B-3 identification beat when carrying the Limbus part (sets `LIMBUS_MYSTERY_PART_IDENTIFIED`,
   HUD shows "Part: MOD attached"), then the purification-plant quest hook with the
@@ -39,7 +74,7 @@ Updated: 2026-07-20 (Asia/Seoul)
   No code needed yet — pool equals slots until a fourth weapon exists.
 - Smoke test gained a village leg (dialogue-driven identification flag). Full route passes:
   Limbus -> bridge -> shaft -> village.
-- Still deferred: 3-choice part selection, actual MOD gameplay effect, plaza room.
+- Still deferred: 3-choice part selection and the actual MOD gameplay effect.
   (The collapse/rescue staging landed the same day — see the section above.)
 
 ## 2026-07-20 Limbus room: canon opening start
@@ -107,7 +142,7 @@ Updated: 2026-07-20 (Asia/Seoul)
 
 - Branch: `main`
 - Tracking: `origin/main`
-- Base commit: `99cfda9` (`Add Unity prototype and refine ACT1 movement`)
+- Base commit: `88580c3` (`Refine damaged Tique opening shutdown flow`)
 - Existing untracked experimental sprite directories under
   `prototypes/lento-vertical-slice/assets/tique/generated/` were not modified or staged.
 
@@ -122,7 +157,8 @@ Updated: 2026-07-20 (Asia/Seoul)
 - Rebuilt Caligo collision as RuleTile + Tilemap Collider + Composite Collider.
 - Added Cinemachine 3 follow/confiner, 320x180 Pixel Perfect reference, URP 2D renderer,
   and a global 2D light.
-- Added data-only room gates toward the Limbus bridge and Caligo.
+- Added the working Limbus-to-Caligo-to-plaza room route and data-only gates for
+  destinations whose Unity scenes do not exist yet.
 - Kept the approved Tique animation and attack assets unchanged.
 
 ## Missing by design
@@ -130,7 +166,8 @@ Updated: 2026-07-20 (Asia/Seoul)
 - Final industrial 32 PPU RuleTile art
 - Final repair bench and gate visuals
 - Production UI, controller glyphs, SFX, BGM integration, enemies, and boss systems
-- Adjacent Unity room scenes for the Limbus bridge and Caligo
+- Crossing cavern and later ACT1 Unity room scenes
+- Production modular plaza art; the current full-screen concept is a benchmark candidate
 - Full save-slot UI and save migration beyond schema version 1
 
 ## Test results
@@ -141,7 +178,10 @@ Updated: 2026-07-20 (Asia/Seoul)
 - Pass: isolated player runtime smoke (`CLOCKWORK_RUNTIME_SMOKE_OK`, exit code 0).
 - Pass: runtime log contains no warning, exception, or error entries.
 - Pass: runtime physics probe holds Tique at `y=-1.99` with `grounded=True` after 1.5 seconds.
+- Pass: plaza checkpoint and gate route (`CLOCKWORK_PLAZA_PROBE`).
+- Pass: one-way shaft fall and landing at `y=-9.99` (`CLOCKWORK_DROP_SHAFT_PROBE`).
 - Pass: 1280x720 window capture shows the approved Tique sprite, background, HUD, floor, and platforms.
+- Pass: 1280x720 plaza environment benchmark has no collision/debug overlay or capture artifact.
 - Note: Unity logs a non-fatal package-cache assembly validation warning for a missing
   `Unity.Collections.LowLevel.ILSupport.dll`; compilation and Windows build still complete.
 
@@ -149,34 +189,39 @@ Updated: 2026-07-20 (Asia/Seoul)
 
 - The current `2.5` unit movement speed preserves prototype camera-scale parity. Re-tune it after
   final 32 PPU room metrics are locked.
-- `RoomGate` stores validated destination data but does not load missing adjacent scenes yet.
+- `RoomGate` loads registered scenes; unknown destinations such as `crossing-cavern`
+  intentionally remain data-only.
 - Placeholder tile, workbench, and gate visuals are technical markers, not approved game art.
+- The plaza concept image is a proposal benchmark, not a modular gameplay background or
+  a canon art approval. Keep collision authored independently.
 - Generated `Builds`, `Library`, `Logs`, `Temp`, and `UserSettings` remain excluded from Git.
 - Do not stage the unrelated experimental sprite directories listed in Git status.
 
 ## Next work (priority order — pick up from the top)
 
-1. **Shutdown-beat tuning (awaiting designer playtest).** Candidate knobs: starting HP 2/5,
+1. **Plaza/drop playtest and art decision.** Check route direction, checkpoint placement,
+   drop pacing, and whether `caligo-plaza-concept-v1.png` is useful as the visual target.
+   Approval here means target mood/composition only; production art should become a modular
+   32 PPU environment kit after geometry is stable.
+2. **Shutdown-beat tuning (awaiting designer playtest).** Candidate knobs: starting HP 2/5,
    damaged output 0.6x, post-combat shutdown delay 0.9s, 0.5s beat + 1.8s fade timing,
    and blackout log wording (`BridgeCollapseDirector.OnGUI`). The finite-pack/residual-power
    structure is the current designer direction; tune values without reintroducing infinite spawns.
-2. **Plaza room** (`caligo-plaza`, canon CP) west of the workshop, then the **one-way drop
-   shaft** toward the crossing cavern — extends the critical path toward the purification
-   plant. Follow the existing scene pattern in `ApprovedPrototypeBuilder` (room id in
-   `GameSession.RoomScenes`, gates + spawn points, smoke-test leg).
-3. **Healing system** — direction confirmed in `docs/99_master_context.md` §10: kills charge
+3. **Crossing cavern greybox** (`crossing-cavern`, map room 013) after the shaft. Preserve
+   the map route and keep any unconfirmed hook-return details proposal-only.
+4. **Healing system** — direction confirmed in `docs/99_master_context.md` §10: kills charge
    a resource, hold-to-consume heals (Hollow Knight style), ACT1 = low efficiency
    (waste-lentium). Needs resource gauge, hold input in `TiqueInputReader`, HUD display.
    Open numbers (charge per kill, heal cost/time) are designer calls — propose, don't decide.
-4. **Combo matrix, fist axis (8 entries)** — slice combat target, table in
+5. **Combo matrix, fist axis (8 entries)** — slice combat target, table in
    `docs/99_master_context.md` §9. Build on `TiqueCombat`'s 3-slot structure. Note the
    loadout ruling F-1..F-4 (3 slots, per-weapon MOD, fist upgrades occupy a slot).
-5. **32 PPU tile art pass** for Caligo/Limbus industrial palette; after tiles lock,
+6. **32 PPU tile art pass** for Caligo/Limbus industrial palette; after tiles lock,
    re-tune movement from prototype-scale units (see Risks).
-6. **Rat art**: replace the generated placeholder with approved frames; add death
+7. **Rat art**: replace the generated placeholder with approved frames; add death
    feedback/SFX. Rats spawn from `Prefabs/RatEnemy.prefab` (pipeline-built).
-7. **Aseprite/2D Animation workflow** for the approved action frames (combo expansion prep).
-8. Later: loadout swap UI at benches once a fourth weapon exists (until then pool == slots).
+8. **Aseprite/2D Animation workflow** for the approved action frames (combo expansion prep).
+9. Later: loadout swap UI at benches once a fourth weapon exists (until then pool == slots).
 
 > Working agreement: whenever a session ends, update this handoff (done section + this list)
 > so the next agent — Claude Code or Codex — can continue without conversation context.
