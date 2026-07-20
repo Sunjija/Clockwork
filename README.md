@@ -11,7 +11,8 @@
 | 경로 | 내용 |
 |---|---|
 | `docs/00_canon_rules_v5.4.md` | **정본 룰북** — 프로젝트 최상위 정본. 세계관 룰(RUL) · 연표(EVT) · 인물/보스 카드 · 시스템(ABL/WPN/MOD) · 동선 설계 원칙 |
-| `docs/rulebook-v5.5-patch.md` | v5.5 패치 제안 — 맵 설계 세션에서 나온 정정·재정의·신설 제안 (A~E 등급 구분) |
+| `docs/rulebook-v5.5-patch.md` | v5.5 패치 제안 — 맵 설계 세션에서 나온 정정·재정의·신설 제안 (A~F 등급 구분) |
+| `docs/99_master_context.md` | **LLM 이식용 마스터 컨텍스트** — 프로젝트 전체 맥락 한 장 요약, 룰북 갱신 시 함께 동기화 |
 | `docs/reward-system-v0.1.md` | 보상 체계 제안 — 능력·MOD·슬롯·코어 파편·고철 부품·기록의 역할과 맵 데이터 규약 |
 | `docs/music/` | 지역별 음악 방향, Suno 기준 실험, ACT1 생성·선별 기록 |
 | `docs/art/act1-environment-art-bible.md` | ACT1 지역별 환경 콘셉트·전이 규칙·이미지 생성 순서 |
