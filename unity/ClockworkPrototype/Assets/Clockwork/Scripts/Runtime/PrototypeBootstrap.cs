@@ -45,16 +45,20 @@ namespace Clockwork
             bool partValid = session != null && session.HasFlag(GameFlagIds.LimbusMysteryPart);
             bool valid = motor != null && combat != null && animator != null && input != null
                 && sprite != null && sprite.enabled && sprite.sprite != null && tilemapCollider != null
-                && settledPosition.y > -3.2f && partValid;
+                && settledPosition.y > -3.2f && partValid
+                && combat.CurrentDamageMultiplier < 1f;
 
             TiqueHealth health = FindAnyObjectByType<TiqueHealth>();
-            bool healthValid = health != null && health.CurrentHealth == health.MaxHealth;
+            bool healthValid = health != null
+                && health.CurrentHealth == health.DamagedStartingHealth
+                && health.CurrentHealth < health.MaxHealth;
             if (healthValid)
             {
                 health.TakeDamage(1, health.transform.position + Vector3.right);
-                healthValid = health.CurrentHealth == health.MaxHealth - 1;
+                healthValid = health.CurrentHealth == health.DamagedStartingHealth - 1;
                 health.TakeDamage(1, health.transform.position + Vector3.right);
-                healthValid &= health.CurrentHealth == health.MaxHealth - 1;
+                healthValid &= health.CurrentHealth == health.DamagedStartingHealth - 1;
+                health.HealFull();
             }
             Debug.Log($"CLOCKWORK_HEALTH_PROBE valid={healthValid} hp={(health == null ? -1 : health.CurrentHealth)}");
 
@@ -68,26 +72,33 @@ namespace Clockwork
                 yield return new WaitForSecondsRealtime(1f);
                 bridgeValid = bridgeMotor != null && bridgeMotor.Grounded
                     && Mathf.Abs(bridgeMotor.transform.position.x - 6f) < 1.2f
-                    && rats.Length >= 3
-                    && bridgeHealth != null && bridgeHealth.CurrentHealth == bridgeHealth.MaxHealth - 1;
+                    && rats.Length == 3
+                    && bridgeHealth != null && bridgeHealth.CurrentHealth == bridgeHealth.MaxHealth;
                 Debug.Log($"CLOCKWORK_BRIDGE_PROBE valid={bridgeValid} rats={rats.Length} " +
                     $"pos={(bridgeMotor == null ? Vector3.zero : bridgeMotor.transform.position)} " +
                     $"hp={(bridgeHealth == null ? -1 : bridgeHealth.CurrentHealth)}");
             }
 
             bool collapseValid = false;
-            BridgeCollapseDirector director = FindAnyObjectByType<BridgeCollapseDirector>();
-            if (director != null && session != null)
+            if (bridgeValid && session != null)
             {
-                director.TriggerCollapse();
-                yield return new WaitForSecondsRealtime(4.8f);
+                // Simulate a clean tutorial win. The finite pack must stay gone and Tique's
+                // residual power failure must carry him to Morbi without a forced death call.
+                RatEnemy[] rats = FindObjectsByType<RatEnemy>(FindObjectsSortMode.None);
+                foreach (RatEnemy rat in rats)
+                {
+                    if (rat != null) Destroy(rat.gameObject);
+                }
+                yield return new WaitForSecondsRealtime(6.2f);
                 TiqueMotor wakeMotor = FindAnyObjectByType<TiqueMotor>();
                 TiqueHealth wakeHealth = FindAnyObjectByType<TiqueHealth>();
+                TiqueCombat wakeCombat = FindAnyObjectByType<TiqueCombat>();
                 MorbiNpc wakeMorbi = FindAnyObjectByType<MorbiNpc>();
                 collapseValid = session.HasFlag(GameFlagIds.TiqueRepaired)
                     && wakeMotor != null && Mathf.Abs(wakeMotor.transform.position.x - -2f) < 1.2f
                     && wakeMorbi != null
-                    && wakeHealth != null && wakeHealth.CurrentHealth == wakeHealth.MaxHealth;
+                    && wakeHealth != null && wakeHealth.CurrentHealth == wakeHealth.MaxHealth
+                    && wakeCombat != null && Mathf.Approximately(wakeCombat.CurrentDamageMultiplier, 1f);
                 Debug.Log($"CLOCKWORK_COLLAPSE_PROBE valid={collapseValid} " +
                     $"repaired={session.HasFlag(GameFlagIds.TiqueRepaired)} " +
                     $"pos={(wakeMotor == null ? Vector3.zero : wakeMotor.transform.position)} " +

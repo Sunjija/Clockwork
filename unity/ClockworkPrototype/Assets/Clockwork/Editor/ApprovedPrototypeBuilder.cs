@@ -416,8 +416,8 @@ namespace ClockworkEditor
             BuildSpawnPoint("entry-caligo", new Vector2(-6f, -2f));
             BuildSpawnPoint("entry-limbus", new Vector2(6f, -2f));
 
-            // Rats are spawned at runtime by the collapse director: endless pressure before
-            // repair (the swarm cannot be beaten), a static staged pack afterwards.
+            // A finite tutorial pack exhausts the already-crippled Tique before repair.
+            // After repair the same pack is a normal, beatable encounter.
             GameObject directorObject = new GameObject("BridgeCollapseDirector");
             directorObject.transform.position = new Vector3(-5.3f, -1.25f, 0f);
             BoxCollider2D collapseTrigger = directorObject.AddComponent<BoxCollider2D>();

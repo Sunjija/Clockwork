@@ -4,21 +4,17 @@ using UnityEngine;
 
 namespace Clockwork
 {
-    // Scripted opening defeat (canon EVT-010 / v5.5 A-1): before repair the rat swarm
-    // cannot be beaten — rats keep coming and accumulated damage drops Tique either at
-    // 0 HP or at the west end of the bridge. Morbi repairs him during the blackout and
-    // he wakes at the workshop. After repair the bridge holds a static, beatable pack.
+    // Scripted opening shutdown (canon EVT-010 / v5.5 A-1): Tique reaches the bridge
+    // already critically damaged by the fall. A finite rat pack exhausts his remaining
+    // power; even a clean win ends in shutdown. Morbi repairs him during the blackout.
     [RequireComponent(typeof(Collider2D))]
     public sealed class BridgeCollapseDirector : MonoBehaviour
     {
         [SerializeField] private GameObject ratPrefab;
-        [SerializeField] private float respawnDelay = 1.6f;
-        [SerializeField] private int preRepairPackSize = 3;
+        [SerializeField] private float postCombatShutdownDelay = 0.9f;
 
         private readonly List<GameObject> rats = new List<GameObject>();
-        private TiqueHealth playerHealth;
-        private float respawnTimer;
-        private bool spawnFromEast = true;
+        private bool shutdownQueued;
         private bool collapsing;
         private float collapseClock;
         private GUIStyle logStyle;
@@ -34,7 +30,7 @@ namespace Clockwork
 
             if (!Repaired)
             {
-                playerHealth = FindAnyObjectByType<TiqueHealth>();
+                TiqueHealth playerHealth = FindAnyObjectByType<TiqueHealth>();
                 if (playerHealth != null)
                 {
                     playerHealth.DeathOverride = TriggerCollapse;
@@ -44,16 +40,13 @@ namespace Clockwork
 
         private void Update()
         {
-            if (Repaired || collapsing) return;
+            if (Repaired || collapsing || shutdownQueued) return;
 
-            respawnTimer -= Time.deltaTime;
             rats.RemoveAll(rat => rat == null);
-            if (respawnTimer <= 0f && rats.Count < preRepairPackSize)
+            if (rats.Count == 0)
             {
-                Vector2 edge = spawnFromEast ? new Vector2(5.6f, -2f) : new Vector2(-4.6f, -2f);
-                SpawnRat(edge, spawnFromEast ? -1 : 1, 1f);
-                spawnFromEast = !spawnFromEast;
-                respawnTimer = respawnDelay;
+                shutdownQueued = true;
+                StartCoroutine(ShutdownAfterCombat());
             }
         }
 
@@ -64,6 +57,12 @@ namespace Clockwork
             RatEnemy enemy = rat.GetComponent<RatEnemy>();
             if (enemy != null) enemy.Initialize(direction, speed);
             rats.Add(rat);
+        }
+
+        private IEnumerator ShutdownAfterCombat()
+        {
+            yield return new WaitForSeconds(postCombatShutdownDelay);
+            TriggerCollapse();
         }
 
         private void OnTriggerEnter2D(Collider2D other)
@@ -110,7 +109,7 @@ namespace Clockwork
             EnsureStyle();
             GUI.depth = -200;
             string line = collapseClock < 2.4f
-                ? "…구동계 정지. 신호 미약."
+                ? "…잔여 동력 임계치. 구동계 정지."
                 : "…외부 개입 감지. 운반 중.";
             GUI.Label(new Rect(0f, Screen.height * 0.46f, Screen.width, 30f), line, logStyle);
         }

@@ -7,6 +7,7 @@ namespace Clockwork
     public sealed class TiqueHealth : MonoBehaviour
     {
         [SerializeField] private int maxHealth = 5;
+        [SerializeField] private int damagedStartingHealth = 2;
         [SerializeField] private float invulnerabilityDuration = 1f;
         [SerializeField] private Vector2 knockback = new Vector2(4.2f, 3.4f);
         [SerializeField] private float hitStunDuration = 0.24f;
@@ -18,6 +19,7 @@ namespace Clockwork
         private float invulnerabilityTimer;
 
         public int MaxHealth => maxHealth;
+        public int DamagedStartingHealth => Mathf.Clamp(damagedStartingHealth, 1, maxHealth);
         public int CurrentHealth { get; private set; }
         public bool IsRespawning { get; private set; }
 
@@ -39,6 +41,10 @@ namespace Clockwork
             if (session != null && session.RuntimeHealth > 0)
             {
                 CurrentHealth = Mathf.Min(session.RuntimeHealth, maxHealth);
+            }
+            else if (session != null && !session.HasFlag(GameFlagIds.TiqueRepaired))
+            {
+                CurrentHealth = DamagedStartingHealth;
             }
             StoreHealth();
         }

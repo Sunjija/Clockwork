@@ -46,6 +46,7 @@ namespace Clockwork
         public GameSaveData Current => current;
         public int RuntimeHealth { get; set; } = -1;
         public string PendingSpawnId { get; private set; }
+        public string PendingSceneName { get; private set; }
         public event Action<string, bool> FlagChanged;
 
         public static bool RoomSceneExists(string roomId)
@@ -65,7 +66,10 @@ namespace Clockwork
 
             instance = this;
             DontDestroyOnLoad(gameObject);
-            diskAccessEnabled = !Environment.GetCommandLineArgs().Contains("-clockworkSmokeTest");
+            string[] arguments = Environment.GetCommandLineArgs();
+            bool isolatedOpening = arguments.Contains("-clockworkSmokeTest")
+                || arguments.Contains("-clockworkFreshOpening");
+            diskAccessEnabled = !isolatedOpening;
             if (diskAccessEnabled)
             {
                 Load();
@@ -96,10 +100,12 @@ namespace Clockwork
             }
         }
 
-        public string ConsumePendingSpawn()
+        public string ConsumePendingSpawn(string sceneName)
         {
+            if (PendingSceneName != sceneName) return null;
             string spawnId = PendingSpawnId;
             PendingSpawnId = null;
+            PendingSceneName = null;
             return spawnId;
         }
 
@@ -117,6 +123,7 @@ namespace Clockwork
         {
             IsTransitioning = true;
             PendingSpawnId = spawnId;
+            PendingSceneName = sceneName;
             yield return ScreenFader.Instance.FadeRoutine(1f, 0.18f);
             SceneManager.LoadScene(sceneName);
             yield return null;

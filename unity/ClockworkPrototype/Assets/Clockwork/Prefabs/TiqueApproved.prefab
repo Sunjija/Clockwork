@@ -740,6 +740,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueHealth
   maxHealth: 5
+  damagedStartingHealth: 2
   invulnerabilityDuration: 1
   knockback: {x: 4.2, y: 3.4}
   hitStunDuration: 0.24
@@ -774,6 +775,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 45107e953ebc1694ea997355ac785c5b, type: 2}
   hitboxRenderer: {fileID: 8082498334835945420}
   trailRenderer: {fileID: 6464937046340214040}
+  damagedDamageMultiplier: 0.6
 --- !u!114 &8149677746774208229
 MonoBehaviour:
   m_ObjectHideFlags: 0

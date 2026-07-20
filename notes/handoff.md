@@ -2,17 +2,24 @@
 
 Updated: 2026-07-20 (Asia/Seoul)
 
-## 2026-07-20 scripted bridge collapse (canon opening defeat)
+## 2026-07-20 bridge shutdown revised: finite fight, critically damaged Tique
 
-- `BridgeCollapseDirector` stages the intended opening: before repair the rat swarm cannot
-  be beaten — killed rats are replaced every 1.6s from the bridge edges (3 alive cap), and
-  Tique collapses either at 0 HP (via `TiqueHealth.DeathOverride`) or on reaching the west
-  end trigger (accumulated damage per canon A-1), whichever comes first.
+- Fixed saved-game continuation ordering: a pending spawn is now consumed only by its
+  destination scene, so the boot Limbus scene cannot steal a shaft/village spawn before
+  the saved-room transition. `Play CLOCKWORK Fresh Opening.cmd` ignores disk saves for
+  isolated opening playtests while preserving the normal continue save.
+- The bridge does not collapse. Tique reaches it already near functional failure after
+  Malphas's throw and the disposal fall. Fresh/unrepaired runs now start at 2/5 HP,
+  retain the existing damaged movement penalty, and deal reduced weapon damage.
+- `BridgeCollapseDirector` now stages a finite tutorial pack (slow solo rat + pair), with no
+  respawning enemies. Tique shuts down at 0 HP, 0.9s after defeating the pack as residual
+  power runs out, or on reaching the west end without fighting. Player skill is respected
+  while Morbi's rescue remains deterministic.
 - Collapse staging: input lock -> 0.5s beat -> 1.8s slow fade ("eyes closing") -> dry log
-  lines ("…구동계 정지. 신호 미약." / "…외부 개입 감지. 운반 중.") -> wake at Morbi's
+  lines ("…잔여 동력 임계치. 구동계 정지." / "…외부 개입 감지. 운반 중.") -> wake at Morbi's
   workshop bench repaired, full HP, save written to caligo/caligo-workshop.
-- After repair the bridge reverts to the static staged pack (slow solo rat + pair, no
-  respawn) so the once-unbeatable swarm becomes beatable — growth made tangible.
+- After repair the same static pack remains, while full HP, normal movement, and full weapon
+  output make the before/after growth tangible.
 - Rats now spawn from a `RatEnemy.prefab` built by the pipeline; `RatEnemy.Initialize`
   allows runtime direction/speed setup.
 - Smoke test gained `CLOCKWORK_COLLAPSE_PROBE` (repaired flag, workshop wake position,
@@ -149,9 +156,10 @@ Updated: 2026-07-20 (Asia/Seoul)
 
 ## Next work (priority order — pick up from the top)
 
-1. **Collapse-beat tuning (awaiting designer playtest).** Candidate knobs: 0.5s beat + 1.8s fade
-   timing, blackout log wording (`BridgeCollapseDirector.OnGUI`), pre-repair rat pressure
-   (respawn 1.6s / pack of 3). Do not restructure — the flow itself is approved canon.
+1. **Shutdown-beat tuning (awaiting designer playtest).** Candidate knobs: starting HP 2/5,
+   damaged output 0.6x, post-combat shutdown delay 0.9s, 0.5s beat + 1.8s fade timing,
+   and blackout log wording (`BridgeCollapseDirector.OnGUI`). The finite-pack/residual-power
+   structure is the current designer direction; tune values without reintroducing infinite spawns.
 2. **Plaza room** (`caligo-plaza`, canon CP) west of the workshop, then the **one-way drop
    shaft** toward the crossing cavern — extends the critical path toward the purification
    plant. Follow the existing scene pattern in `ApprovedPrototypeBuilder` (room id in

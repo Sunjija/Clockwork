@@ -9,6 +9,7 @@ namespace Clockwork
         [SerializeField] private AttackDefinition[] attacks;
         [SerializeField] private LineRenderer hitboxRenderer;
         [SerializeField] private LineRenderer trailRenderer;
+        [SerializeField] private float damagedDamageMultiplier = 0.6f;
 
         private readonly HashSet<EnemyHealth> struckEnemies = new HashSet<EnemyHealth>();
         private readonly Collider2D[] overlapResults = new Collider2D[12];
@@ -25,6 +26,10 @@ namespace Clockwork
         public bool IsAttacking => attackTimer > 0f && CurrentAttack != null;
         public float AttackProgress => !IsAttacking ? 0f : 1f - Mathf.Clamp01(attackTimer / CurrentAttack.Duration);
         public string SelectedWeaponName => CurrentAttack == null ? "None" : CurrentAttack.DisplayName;
+        public float CurrentDamageMultiplier => GameSession.Instance != null
+            && GameSession.Instance.HasFlag(GameFlagIds.TiqueRepaired)
+                ? 1f
+                : damagedDamageMultiplier;
 
         private void Awake()
         {
@@ -69,7 +74,8 @@ namespace Clockwork
                 EnemyHealth enemy = overlapResults[i].GetComponentInParent<EnemyHealth>();
                 if (enemy != null && enemy.IsAlive && struckEnemies.Add(enemy))
                 {
-                    enemy.TakeDamage(CurrentAttack.Damage, motor.Facing);
+                    int damage = Mathf.Max(1, Mathf.CeilToInt(CurrentAttack.Damage * CurrentDamageMultiplier));
+                    enemy.TakeDamage(damage, motor.Facing);
                 }
             }
         }

@@ -833,8 +833,7 @@ MonoBehaviour:
   m_Name:
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.BridgeCollapseDirector
   ratPrefab: {fileID: 3912923065545729846, guid: 898080313efc75c4d8d886b4ffeb3c4c, type: 3}
-  respawnDelay: 1.6
-  preRepairPackSize: 3
+  postCombatShutdownDelay: 0.9
 --- !u!61 &1759500310
 BoxCollider2D:
   m_ObjectHideFlags: 0
