@@ -42,6 +42,7 @@ namespace Clockwork
         private ComboDefinition queuedTransitionCombo;
         private int pendingWeaponIndex = -1;
         private float pendingTransitionEnergyCost;
+        private bool pendingPlainWeaponSwap;
         private bool showHitboxes;
 
         public WeaponDefinition CurrentWeapon => weapons != null && weapons.Length > 0
@@ -82,6 +83,7 @@ namespace Clockwork
             && CurrentComboStep != null;
         public event Action<CombatHitResult> AttackLanded;
         public event Action<int, int, bool> AttackStepStarted;
+        public event Action<float> WeaponTransitionStarted;
         public float CurrentDamageMultiplier => GameSession.Instance != null
             && GameSession.Instance.HasFlag(GameFlagIds.TiqueRepaired)
                 ? 1f
@@ -157,20 +159,26 @@ namespace Clockwork
             if (queuedTransitionCombo != null && pendingWeaponIndex >= 0)
             {
                 ComboDefinition transition = queuedTransitionCombo;
+                int targetWeaponIndex = pendingWeaponIndex;
+                float energyCost = pendingTransitionEnergyCost;
                 queuedTransitionCombo = null;
-                bool spent = pendingTransitionEnergyCost <= 0f
-                    || energy != null && energy.TrySpend(pendingTransitionEnergyCost);
                 pendingTransitionEnergyCost = 0f;
-                if (spent)
+                if (StartWeaponTransition(targetWeaponIndex, transition, energyCost))
                 {
-                    activeTransitionCombo = transition;
-                    comboStepIndex = 0;
-                    attackQueued = false;
-                    StartAttackStep();
                     return;
                 }
 
                 pendingWeaponIndex = -1;
+            }
+
+            if (pendingPlainWeaponSwap && pendingWeaponIndex >= 0)
+            {
+                selectedAttack = pendingWeaponIndex;
+                pendingWeaponIndex = -1;
+                pendingPlainWeaponSwap = false;
+                comboStepIndex = 0;
+                attackQueued = false;
+                return;
             }
 
             if (attackQueued && CurrentCombo != null
@@ -225,8 +233,20 @@ namespace Clockwork
             int weaponCount = weapons?.Length ?? attacks?.Length ?? 0;
             if (index < 0 || index >= weaponCount || index == selectedAttack) return false;
 
+            ComboDefinition transition = null;
+            float lentiumCost = 0f;
+            bool hasTransition = CurrentWeapon != null
+                && CurrentWeapon.TryGetTransition(
+                    weapons[index].WeaponId, out transition, out lentiumCost);
+            bool canChargeTransition = hasTransition && energy != null && energy.CanSpend(lentiumCost);
+
             if (!IsAttacking)
             {
+                if (canChargeTransition)
+                {
+                    return StartWeaponTransition(index, transition, lentiumCost);
+                }
+
                 selectedAttack = index;
                 comboStepIndex = 0;
                 attackQueued = false;
@@ -234,23 +254,42 @@ namespace Clockwork
                 queuedTransitionCombo = null;
                 pendingWeaponIndex = -1;
                 pendingTransitionEnergyCost = 0f;
+                pendingPlainWeaponSwap = false;
                 return true;
             }
 
-            if (CurrentWeapon == null || activeTransitionCombo != null
-                || CurrentCombo != CurrentWeapon.BasicCombo
-                || CurrentComboStep == null
-                || !CurrentWeapon.TryGetTransition(
-                    weapons[index].WeaponId, out ComboDefinition transition, out float lentiumCost)
-                || energy == null
-                || !energy.CanSpend(lentiumCost))
+            if (activeTransitionCombo != null)
             {
                 return false;
             }
 
-            queuedTransitionCombo = transition;
             pendingWeaponIndex = index;
-            pendingTransitionEnergyCost = lentiumCost;
+            pendingPlainWeaponSwap = !canChargeTransition;
+            queuedTransitionCombo = canChargeTransition ? transition : null;
+            pendingTransitionEnergyCost = canChargeTransition ? lentiumCost : 0f;
+            return true;
+        }
+
+        private bool StartWeaponTransition(
+            int targetWeaponIndex, ComboDefinition transition, float lentiumCost)
+        {
+            if (transition == null || targetWeaponIndex < 0 || targetWeaponIndex >= (weapons?.Length ?? 0))
+            {
+                return false;
+            }
+
+            bool spent = lentiumCost <= 0f || energy != null && energy.TrySpend(lentiumCost);
+            if (!spent) return false;
+
+            pendingWeaponIndex = targetWeaponIndex;
+            pendingPlainWeaponSwap = false;
+            pendingTransitionEnergyCost = 0f;
+            queuedTransitionCombo = null;
+            activeTransitionCombo = transition;
+            comboStepIndex = 0;
+            attackQueued = false;
+            WeaponTransitionStarted?.Invoke(lentiumCost);
+            StartAttackStep();
             return true;
         }
 
@@ -276,7 +315,10 @@ namespace Clockwork
                     && !CurrentAttack.AttackId.StartsWith("fist", StringComparison.Ordinal);
                 if (trailRenderer.enabled)
                 {
-                    DrawTrail(trailRenderer, CurrentAttack.AttackId, CurrentAttack.TrailColor);
+                    Color trailColor = activeTransitionCombo != null
+                        ? new Color(1f, 0.16f, 0.12f, 1f)
+                        : CurrentAttack.TrailColor;
+                    DrawTrail(trailRenderer, CurrentAttack.AttackId, trailColor);
                 }
             }
         }

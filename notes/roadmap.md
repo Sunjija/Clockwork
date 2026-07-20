@@ -24,7 +24,7 @@ the designer accepts them.
 - Keep charge amount, heal cost, cast time, and interruption rules proposal values.
 - Test the damaged opening separately so healing cannot erase its narrative purpose.
 - Hit/defeat events and the segmented Lentium gauge are implemented with proposal tuning;
-  attack-time weapon transitions now spend the shared gauge. Hold-to-heal timing, cost, and
+  charged weapon swaps now spend the shared gauge. Hold-to-heal timing, cost, and
   interruption remain pending.
 
 ## 4. Combat Identity - data foundation implemented
@@ -33,7 +33,7 @@ the designer accepts them.
 - Add hit feedback, enemy death response, and rat presentation alongside combo testing.
 - Keep loadout changes bench-owned when a fourth weapon exists.
 - Basic combo and weapon data are separated. Fist-to-greatsword and fist-to-hammer finishers
-  are playable, Lentium-consuming prototypes that can be queued during any active fist strike;
+  are playable, Lentium-consuming charge attacks triggered directly by swapping with two segments;
   reverse utility transitions still require their bespoke mechanics.
 
 ## 4A. Grapple Lab - isolated prototype

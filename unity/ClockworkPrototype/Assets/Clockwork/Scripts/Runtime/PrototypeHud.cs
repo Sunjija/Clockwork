@@ -48,6 +48,10 @@ namespace Clockwork
             {
                 weapon += $" > {combat.PendingWeaponName} (-{combat.PendingTransitionEnergyCost:0})";
             }
+            else if (combat != null && combat.IsWeaponTransitionActive)
+            {
+                weapon += $" > {combat.PendingWeaponName} CHARGE";
+            }
             GUI.Label(new Rect(panel.x + 16f, panel.y + 144f, 280f, 20f), $"Weapon: {weapon}", titleStyle);
             string state = GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.TiqueRepaired)
                 ? "Tique: repaired" : "Tique: critical damage";

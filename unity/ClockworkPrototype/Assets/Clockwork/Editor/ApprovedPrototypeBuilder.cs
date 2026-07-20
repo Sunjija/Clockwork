@@ -437,6 +437,13 @@ namespace ClockworkEditor
             TiquePunchImpact punchImpact = root.AddComponent<TiquePunchImpact>();
             punchImpact.Configure(combat, punchPrimary, punchSecondary);
 
+            LineRenderer swapWaveOuter = CreateLine(
+                "SwapChargeWaveOuter", root.transform, lineMaterial, 0.045f, 27);
+            LineRenderer swapWaveInner = CreateLine(
+                "SwapChargeWaveInner", root.transform, lineMaterial, 0.024f, 26);
+            TiqueSwapChargeWave swapChargeWave = root.AddComponent<TiqueSwapChargeWave>();
+            swapChargeWave.Configure(combat, swapWaveOuter, swapWaveInner);
+
             GameObject prefab = PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
             UnityEngine.Object.DestroyImmediate(root);
             return prefab;

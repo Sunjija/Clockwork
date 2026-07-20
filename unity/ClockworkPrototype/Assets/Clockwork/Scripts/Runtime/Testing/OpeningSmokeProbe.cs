@@ -68,19 +68,20 @@ namespace Clockwork
                     && combat.CurrentAttack.AttackId == "fist-finisher"
                     && !combat.IsAttacking;
                 yield return new WaitForSecondsRealtime(0.25f);
+                bool chargeStarted = false;
+                Action<float> observeCharge = cost => chargeStarted = Mathf.Approximately(cost, 10f);
+                combat.WeaponTransitionStarted += observeCharge;
                 comboValid &= combat.CurrentComboStepIndex == 2
-                    && combat.TryAttack();
-                comboValid &= !combat.IsWeaponTransitionQueued
+                    && !combat.IsAttacking
                     && Mathf.Approximately(energy.CurrentEnergy, 15f)
                     && combat.TrySelectWeapon(2)
-                    && combat.IsWeaponTransitionQueued
-                    && Mathf.Approximately(combat.PendingTransitionEnergyCost, 10f);
-                deadline = Time.realtimeSinceStartup + 0.7f;
-                while (!combat.IsWeaponTransitionActive && Time.realtimeSinceStartup < deadline) yield return null;
-                comboValid &= combat.IsWeaponTransitionActive
+                    && combat.IsWeaponTransitionActive
+                    && !combat.IsWeaponTransitionQueued
+                    && chargeStarted
                     && combat.CurrentAttack != null
                     && combat.CurrentAttack.AttackId == "hammer"
                     && Mathf.Approximately(energy.CurrentEnergy, 5f);
+                combat.WeaponTransitionStarted -= observeCharge;
                 yield return new WaitForSecondsRealtime(0.9f);
                 comboValid &= combat.CurrentWeapon != null
                     && combat.CurrentWeapon.WeaponId == "hammer"

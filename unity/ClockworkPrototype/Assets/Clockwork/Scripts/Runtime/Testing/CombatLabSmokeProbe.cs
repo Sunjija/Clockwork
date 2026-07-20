@@ -30,11 +30,12 @@ namespace Clockwork
 
             TiqueCombat combat = FindAnyObjectByType<TiqueCombat>();
             TiqueComboPulse pulse = FindAnyObjectByType<TiqueComboPulse>();
+            TiqueSwapChargeWave swapWave = FindAnyObjectByType<TiqueSwapChargeWave>();
             EnemyHealth[] dummies = FindObjectsByType<EnemyHealth>(FindObjectsSortMode.None)
                 .Where(enemy => enemy.name.StartsWith("TrainingDummy", StringComparison.Ordinal))
                 .ToArray();
             bool valid = loaded && SceneManager.GetActiveScene().name == "CombatLab"
-                && combat != null && pulse != null && dummies.Length == 3
+                && combat != null && pulse != null && swapWave != null && dummies.Length == 3
                 && dummies.All(dummy => dummy.Indestructible && dummy.IsAlive);
 
             if (valid)
@@ -47,7 +48,7 @@ namespace Clockwork
             }
 
             Debug.Log($"CLOCKWORK_COMBAT_LAB_PROBE valid={valid} dummies={dummies.Length} "
-                + $"comboPulse={pulse != null}");
+                + $"comboPulse={pulse != null} swapWave={swapWave != null}");
             complete(valid);
         }
     }

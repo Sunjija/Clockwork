@@ -24,10 +24,11 @@ Last pushed base: `8d9de87`
   a gold gear pulse so the finisher and weapon-transition timing are visible without debug hitboxes.
   The HUD only fills executed strikes; alternating impact strokes distinguish the two hands with
   the current approved single-hand animation set.
-- `WeaponDefinition` owns basic and transition combos. Pressing slot `2` or `3` during any fist
-  attack queues a seamless greatsword or hammer finisher after the active strike. The transition
-  spends 10 Lentium when it begins; this cost is proposal tuning. Idle weapon swaps remain free,
-  and reverse utility transitions remain unimplemented.
+- `WeaponDefinition` owns basic and transition combos. With at least 10 Lentium, swapping from
+  fist to slot `2` or `3` immediately spends two segments and launches a red-wave greatsword or
+  hammer charge attack; no attack-button chord is required. A swap during another strike waits
+  for that strike to end. With insufficient energy the same input performs a plain free swap.
+  The 10 cost is proposal tuning, and reverse utility transitions remain unimplemented.
 - Successful hit/defeat events feed a segmented Lentium energy prototype. The current +5 hit,
   +5 defeat bonus, 100 capacity, and 10-cost swap combo are proposal tuning. Transition-combo
   consumption is connected; hold-to-heal consumption remains unimplemented.

@@ -35,7 +35,7 @@ The approved Tique animation boundary remains Git commit `c6c7862`.
 - Dash: `C` or gamepad East
 - Interact: `W`, Up, or gamepad North
 - Weapons: `1` fist, `2` greatsword, `3` hammer
-- During a fist attack, press `2` or `3` to spend Lentium and chain into that weapon
+- With two Lentium segments, swap from fist using `2` or `3` to launch a red charge attack
 - Hitbox overlay: `H`
 - Reload current scene: `R` or gamepad Start
 - Reset all test progress and return to the opening: `F1` or the HUD button
