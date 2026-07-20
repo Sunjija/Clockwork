@@ -7,6 +7,7 @@ namespace Clockwork
         [SerializeField] private TiqueCombat combat;
         [SerializeField] private RepairSavePoint savePoint;
         [SerializeField] private TiqueHealth health;
+        [SerializeField] private MysteryPartPickup partPickup;
         private GUIStyle panelStyle;
         private GUIStyle titleStyle;
         private GUIStyle textStyle;
@@ -27,7 +28,12 @@ namespace Clockwork
             GUI.Label(new Rect(panel.x + 16f, panel.y + 144f, 280f, 20f), $"Weapon: {weapon}", titleStyle);
             string state = GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.TiqueRepaired)
                 ? "Tique: repaired" : "Tique: damaged";
+            if (GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.LimbusMysteryPart))
+            {
+                state += " / Part: unidentified";
+            }
             if (savePoint != null && savePoint.PlayerNearby) state += " / W: repair and save";
+            if (partPickup != null && partPickup.PlayerNearby && !partPickup.Collected) state += " / W: take part";
             GUI.Label(new Rect(panel.x + 16f, panel.y + 164f, 280f, 20f), state, textStyle);
         }
 
@@ -51,11 +57,16 @@ namespace Clockwork
         }
 
 #if UNITY_EDITOR
-        public void Configure(TiqueCombat playerCombat, RepairSavePoint roomSavePoint, TiqueHealth playerHealth)
+        public void Configure(
+            TiqueCombat playerCombat,
+            RepairSavePoint roomSavePoint,
+            TiqueHealth playerHealth,
+            MysteryPartPickup roomPartPickup = null)
         {
             combat = playerCombat;
             savePoint = roomSavePoint;
             health = playerHealth;
+            partPickup = roomPartPickup;
         }
 #endif
     }

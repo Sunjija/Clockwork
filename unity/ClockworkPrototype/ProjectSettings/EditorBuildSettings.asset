@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Clockwork/Scenes/CaligoMaintenanceShaft.unity
-    guid: 49584d0dc503c8542b35a478015da094
+    path: Assets/Clockwork/Scenes/Limbus.unity
+    guid: 415a1fcc56009074eb668663c76e4704
   - enabled: 1
     path: Assets/Clockwork/Scenes/LimbusCaligoBridge.unity
     guid: c0adcb1b298566a4dad3aff16af8ab7e
+  - enabled: 1
+    path: Assets/Clockwork/Scenes/CaligoMaintenanceShaft.unity
+    guid: 49584d0dc503c8542b35a478015da094
   m_configObjects: {}

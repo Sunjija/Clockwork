@@ -12,8 +12,8 @@ namespace Clockwork
     public sealed class GameSaveData
     {
         public int schemaVersion = 1;
-        public string roomId = "caligo-maintenance-shaft";
-        public string spawnId = "entry-limbus";
+        public string roomId = "limbus";
+        public string spawnId = "start-awakening";
         public List<string> flags = new List<string>();
         public List<string> abilities = new List<string>();
     }
@@ -21,6 +21,7 @@ namespace Clockwork
     public static class GameFlagIds
     {
         public const string TiqueRepaired = "TIQUE_REPAIRED";
+        public const string LimbusMysteryPart = "LIMBUS_MYSTERY_PART";
     }
 
     public sealed class GameSession : MonoBehaviour
@@ -31,8 +32,9 @@ namespace Clockwork
         // Rooms that exist as playable Unity scenes; other room ids stay data-only gates.
         private static readonly Dictionary<string, string> RoomScenes = new Dictionary<string, string>
         {
-            { "caligo-maintenance-shaft", "CaligoMaintenanceShaft" },
-            { "limbus-caligo-bridge", "LimbusCaligoBridge" }
+            { "limbus", "Limbus" },
+            { "limbus-caligo-bridge", "LimbusCaligoBridge" },
+            { "caligo-maintenance-shaft", "CaligoMaintenanceShaft" }
         };
 
         [SerializeField] private GameSaveData current = new GameSaveData();
@@ -125,7 +127,18 @@ namespace Clockwork
             RuntimeHealth = -1;
             if (!LoadRoom(current.roomId, current.spawnId))
             {
-                LoadRoom("caligo-maintenance-shaft", "entry-limbus");
+                LoadRoom("limbus", "start-awakening");
+            }
+        }
+
+        private void Start()
+        {
+            // Continue from the saved room when the boot scene is a different room.
+            if (!diskAccessEnabled) return;
+            if (!RoomScenes.TryGetValue(current.roomId, out string savedScene)) return;
+            if (SceneManager.GetActiveScene().name != savedScene)
+            {
+                LoadRoom(current.roomId, current.spawnId);
             }
         }
 

@@ -24,6 +24,7 @@ namespace ClockworkEditor
         private const string AttackRoot = Root + "/Data/Attacks";
         private const string ScenePath = Root + "/Scenes/CaligoMaintenanceShaft.unity";
         private const string BridgeScenePath = Root + "/Scenes/LimbusCaligoBridge.unity";
+        private const string LimbusScenePath = Root + "/Scenes/Limbus.unity";
         private const string PrefabPath = Root + "/Prefabs/TiqueApproved.prefab";
         private const string BackgroundPath = Root + "/Art/Backgrounds/caligo-maintenance-shaft.png";
         private const string PlatformSpritePath = Root + "/Art/platform-debug.png";
@@ -32,6 +33,7 @@ namespace ClockworkEditor
         private const string TileAssetPath = Root + "/Data/Tiles/CaligoPlaceholder.asset";
         private const string RoomAssetPath = Root + "/Data/Rooms/CaligoMaintenanceShaft.asset";
         private const string BridgeRoomAssetPath = Root + "/Data/Rooms/LimbusCaligoBridge.asset";
+        private const string LimbusRoomAssetPath = Root + "/Data/Rooms/Limbus.asset";
         private const string RendererAssetPath = Root + "/Settings/ClockworkRenderer2D.asset";
         private const string PipelineAssetPath = Root + "/Settings/ClockworkURP.asset";
         private const string LineMaterialPath = Root + "/Art/prototype-lines.mat";
@@ -50,6 +52,7 @@ namespace ClockworkEditor
             Material lineMaterial = EnsureLineMaterial();
             RoomDefinition room = EnsureRoomDefinition();
             RoomDefinition bridgeRoom = EnsureBridgeRoomDefinition();
+            RoomDefinition limbusRoom = EnsureLimbusRoomDefinition();
 
             SpriteSequence idle = CreateSequence(
                 "Idle", ArtRoot + "/Idle", 1.6f, true, 0.3f,
@@ -104,10 +107,11 @@ namespace ClockworkEditor
                 lineMaterial);
             BuildScene(prefab, collisionTile, room);
             BuildBridgeScene(prefab, collisionTile, bridgeRoom, ratSprite);
+            BuildLimbusScene(prefab, collisionTile, limbusRoom);
             ConfigureProject();
             ValidateApprovedAssets();
             AssetDatabase.SaveAssets();
-            StripGeneratedYamlWhitespace(PrefabPath, ScenePath, BridgeScenePath);
+            StripGeneratedYamlWhitespace(PrefabPath, ScenePath, BridgeScenePath, LimbusScenePath);
             AssetDatabase.Refresh();
             Debug.Log("CLOCKWORK_APPROVED_BUILD_OK");
         }
@@ -131,7 +135,7 @@ namespace ClockworkEditor
             Directory.CreateDirectory("Builds/Windows");
             BuildReport report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
-                scenes = new[] { ScenePath, BridgeScenePath },
+                scenes = new[] { LimbusScenePath, BridgeScenePath, ScenePath },
                 locationPathName = "Builds/Windows/ClockworkPrototype.exe",
                 target = BuildTarget.StandaloneWindows64,
                 options = BuildOptions.None
@@ -400,15 +404,15 @@ namespace ClockworkEditor
 
             // Map orientation: Caligo lies west of the bridge, Limbus east (maps are canon).
             BuildRoomGate("GateToMaintenanceShaft", new Vector2(-6.65f, -1.25f), "caligo-maintenance-shaft", "entry-bridge");
-            BuildRoomGate("GateToLimbus", new Vector2(6.65f, -1.25f), "limbus", "entry-bridge-west");
+            BuildRoomGate("GateToLimbus", new Vector2(6.65f, -1.25f), "limbus", "entry-bridge");
             BuildSpawnPoint("entry-caligo", new Vector2(-6f, -2f));
+            BuildSpawnPoint("entry-limbus", new Vector2(6f, -2f));
 
-            // Tutorial staging (rulebook §9 four-beat rule, read from the current west entry):
+            // Tutorial staging (rulebook §9 four-beat rule, read from the canon east entry):
             // one slow rat alone to teach the swing, then a pair for the low-risk escalation.
-            // Restage east-to-west once the Limbus room makes the canon crossing direction playable.
-            BuildRat(ratSprite, new Vector2(-2.2f, -2f), -1, 0.7f);
-            BuildRat(ratSprite, new Vector2(2.6f, -2f), -1, 0.95f);
-            BuildRat(ratSprite, new Vector2(3.6f, -2f), 1, 0.95f);
+            BuildRat(ratSprite, new Vector2(2f, -2f), 1, 0.7f);
+            BuildRat(ratSprite, new Vector2(-2.6f, -2f), 1, 0.95f);
+            BuildRat(ratSprite, new Vector2(-3.6f, -2f), -1, 0.95f);
 
             BuildCamera(player.transform, room.CameraBounds);
 
@@ -417,6 +421,120 @@ namespace ClockworkEditor
             hud.Configure(player.GetComponent<TiqueCombat>(), null, player.GetComponent<TiqueHealth>());
 
             EditorSceneManager.SaveScene(scene, BridgeScenePath);
+        }
+
+        private static void BuildLimbusScene(GameObject playerPrefab, TileBase tile, RoomDefinition room)
+        {
+            Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            scene.name = "Limbus";
+
+            GameObject bootstrap = new GameObject("PrototypeBootstrap");
+            bootstrap.AddComponent<PrototypeBootstrap>();
+            GameObject session = new GameObject("GameSession");
+            session.AddComponent<GameSession>();
+
+            BuildLimbusTilemap(tile);
+
+            GameObject lightObject = new GameObject("LimbusGlobalLight2D");
+            Light2D light = lightObject.AddComponent<Light2D>();
+            light.lightType = Light2D.LightType.Global;
+            light.color = new Color(0.6f, 0.72f, 0.8f);
+            light.intensity = 0.72f;
+
+            // Disposal chute terminus (EVT-009 / v5.5 C-2): the way Tique arrived, visual marker only.
+            GameObject chute = new GameObject("DisposalChuteTerminus");
+            SpriteRenderer chuteRenderer = chute.AddComponent<SpriteRenderer>();
+            chuteRenderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(TileSpritePath);
+            chuteRenderer.color = new Color(0.16f, 0.2f, 0.27f, 0.85f);
+            chuteRenderer.sortingOrder = -20;
+            chute.transform.position = new Vector3(5.9f, 0.35f, 0f);
+            chute.transform.localScale = new Vector3(4.5f, 18f, 1f);
+
+            GameObject player = PrefabUtility.InstantiatePrefab(playerPrefab) as GameObject;
+            if (player == null) throw new InvalidOperationException("Unable to instantiate approved Tique prefab.");
+            player.transform.position = new Vector3(4.5f, -2f, 0f);
+
+            // Awakening under the chute (east); scrap-mound hops teach movement on the way west.
+            BuildSpawnPoint("start-awakening", new Vector2(4.5f, -2f));
+            BuildSpawnPoint("entry-bridge", new Vector2(-6f, -2f));
+            BuildRoomGate("GateToBridge", new Vector2(-6.65f, -1.25f), "limbus-caligo-bridge", "entry-limbus");
+
+            MysteryPartPickup partPickup = BuildMysteryPart(new Vector2(-3.25f, -1.25f));
+
+            BuildCamera(player.transform, room.CameraBounds);
+
+            GameObject hudObject = new GameObject("PrototypeHUD");
+            PrototypeHud hud = hudObject.AddComponent<PrototypeHud>();
+            hud.Configure(player.GetComponent<TiqueCombat>(), null, player.GetComponent<TiqueHealth>(), partPickup);
+
+            EditorSceneManager.SaveScene(scene, LimbusScenePath);
+        }
+
+        private static void BuildLimbusTilemap(TileBase tile)
+        {
+            GameObject gridObject = new GameObject("LimbusRoomTilemap");
+            Grid grid = gridObject.AddComponent<Grid>();
+            grid.cellSize = new Vector3(0.25f, 0.25f, 1f);
+
+            GameObject collisionObject = new GameObject("Collision");
+            collisionObject.transform.SetParent(gridObject.transform, false);
+            Tilemap tilemap = collisionObject.AddComponent<Tilemap>();
+            TilemapRenderer renderer = collisionObject.AddComponent<TilemapRenderer>();
+            renderer.sortingOrder = 1;
+            Rigidbody2D rigidbody = collisionObject.AddComponent<Rigidbody2D>();
+            rigidbody.bodyType = RigidbodyType2D.Static;
+            CompositeCollider2D composite = collisionObject.AddComponent<CompositeCollider2D>();
+            composite.geometryType = CompositeCollider2D.GeometryType.Polygons;
+            TilemapCollider2D tilemapCollider = collisionObject.AddComponent<TilemapCollider2D>();
+            tilemapCollider.compositeOperation = Collider2D.CompositeOperation.Merge;
+
+            // Scrap plain: combat-free movement tutorial. Mound heights rise westward
+            // (1 -> 2 -> 3 tiles) so single jumps are learned before the bridge.
+            Fill(tilemap, tile, -28, 27, -12, -9);
+            Fill(tilemap, tile, -28, -27, -8, 11);
+            Fill(tilemap, tile, 26, 27, -8, 11);
+            Fill(tilemap, tile, 8, 12, -8, -8);
+            Fill(tilemap, tile, 1, 4, -8, -7);
+            Fill(tilemap, tile, -15, -11, -8, -6);
+            tilemap.CompressBounds();
+            tilemap.RefreshAllTiles();
+            tilemapCollider.ProcessTilemapChanges();
+            composite.GenerateGeometry();
+        }
+
+        private static MysteryPartPickup BuildMysteryPart(Vector2 position)
+        {
+            GameObject root = new GameObject("LimbusMysteryPart");
+            root.transform.position = position;
+            BoxCollider2D trigger = root.AddComponent<BoxCollider2D>();
+            trigger.isTrigger = true;
+            trigger.size = new Vector2(1f, 1.1f);
+            trigger.offset = new Vector2(0f, 0.45f);
+
+            GameObject view = new GameObject("TemporaryPartView");
+            view.transform.SetParent(root.transform, false);
+            view.transform.localPosition = new Vector3(0f, 0.16f, 0f);
+            SpriteRenderer renderer = view.AddComponent<SpriteRenderer>();
+            renderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(TileSpritePath);
+            renderer.color = new Color(0.72f, 0.5f, 0.95f, 0.9f);
+            renderer.sortingOrder = 5;
+            view.transform.localScale = new Vector3(1.1f, 1.1f, 1f);
+
+            MysteryPartPickup pickup = root.AddComponent<MysteryPartPickup>();
+            pickup.Configure(renderer);
+            return pickup;
+        }
+
+        private static RoomDefinition EnsureLimbusRoomDefinition()
+        {
+            RoomDefinition room = LoadOrCreate<RoomDefinition>(LimbusRoomAssetPath);
+            room.Configure(
+                "limbus",
+                "Limbus Scrap Plain",
+                new Rect(-7f, -3f, 14f, 6f),
+                "act1-limbus");
+            EditorUtility.SetDirty(room);
+            return room;
         }
 
         private static void BuildBridgeTilemap(TileBase tile)
@@ -776,10 +894,12 @@ namespace ClockworkEditor
             PlayerSettings.defaultScreenWidth = 1280;
             PlayerSettings.defaultScreenHeight = 720;
             PlayerSettings.fullScreenMode = FullScreenMode.Windowed;
+            // Limbus first: the game boots at the canon awakening point (v5.5 A-1).
             EditorBuildSettings.scenes = new[]
             {
-                new EditorBuildSettingsScene(ScenePath, true),
-                new EditorBuildSettingsScene(BridgeScenePath, true)
+                new EditorBuildSettingsScene(LimbusScenePath, true),
+                new EditorBuildSettingsScene(BridgeScenePath, true),
+                new EditorBuildSettingsScene(ScenePath, true)
             };
         }
 
@@ -808,7 +928,7 @@ namespace ClockworkEditor
             {
                 "/v5/", "/v5.1/", "/v6/", "/v8-", "/v10-", "/weapons-test"
             };
-            string[] dependencies = AssetDatabase.GetDependencies(new[] { ScenePath, BridgeScenePath }, true);
+            string[] dependencies = AssetDatabase.GetDependencies(new[] { ScenePath, BridgeScenePath, LimbusScenePath }, true);
             foreach (string dependency in dependencies)
             {
                 if (forbiddenTokens.Any(token => dependency.Contains(token, StringComparison.OrdinalIgnoreCase)))

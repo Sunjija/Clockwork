@@ -2,6 +2,21 @@
 
 Updated: 2026-07-20 (Asia/Seoul)
 
+## 2026-07-20 Limbus room: canon opening start
+
+- New `Limbus` scene (RGN-006, roomId `limbus`): the game now boots at the canon awakening
+  point under the disposal-chute terminus (v5.5 A-1/C-2), east side of a combat-free scrap
+  plain whose mound heights rise westward as a single-jump tutorial (rulebook §9).
+- `MysteryPartPickup` (v5.5 B-3 first treasure): W-interact on the westmost mound sets
+  `LIMBUS_MYSTERY_PART`; HUD shows "Part: unidentified". Morbi's identification/MOD attach
+  waits for the Caligo village scene. 3-choice selection is also deferred — single part for now.
+- Bridge rewired for the canon east-to-west crossing: east gate ↔ Limbus, new east spawn,
+  rats restaged so the slow solo rat meets the player entering from Limbus, pair mid-bridge.
+- Fresh saves start at `limbus/start-awakening`; on boot `GameSession` continues into the
+  saved room (fade transition) when it differs from the boot scene. Smoke runs skip this.
+- Smoke test now walks the whole opening route: Limbus checks + part pickup + damage probes
+  → bridge (rats, HP persistence) → shaft (bench repair flag). All probes pass.
+
 ## 2026-07-20 playtest feedback pass: transition dressing, rat staging
 
 - Room loads now fade to black (0.18s) and back in (0.25s) through a persistent `ScreenFader`,
@@ -102,7 +117,8 @@ Updated: 2026-07-20 (Asia/Seoul)
 ## Next work
 
 1. Replace the placeholder RuleTile sprite with a coherent 32 PPU Caligo/Limbus industrial palette.
-2. Build the Caligo village and Limbus rooms as scenes (bridge is done; their gates are data-only).
+2. Build the Caligo village scene (Morbi workshop): collapse/rescue staging, part identification
+   and MOD attach beat, then unlock the flag-locked west gate of the shaft.
 3. Replace the generated rat placeholder with approved sprite frames and add death feedback/SFX.
 4. Move approved action frames into Aseprite source files or a 2D Animation workflow for combo expansion.
 5. Re-tune movement from prototype-scale units after final tile and camera metrics are locked.
