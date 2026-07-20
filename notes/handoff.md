@@ -2,6 +2,39 @@
 
 Updated: 2026-07-20 (Asia/Seoul)
 
+## 2026-07-20 scripted bridge collapse (canon opening defeat)
+
+- `BridgeCollapseDirector` stages the intended opening: before repair the rat swarm cannot
+  be beaten — killed rats are replaced every 1.6s from the bridge edges (3 alive cap), and
+  Tique collapses either at 0 HP (via `TiqueHealth.DeathOverride`) or on reaching the west
+  end trigger (accumulated damage per canon A-1), whichever comes first.
+- Collapse staging: input lock -> 0.5s beat -> 1.8s slow fade ("eyes closing") -> dry log
+  lines ("…구동계 정지. 신호 미약." / "…외부 개입 감지. 운반 중.") -> wake at Morbi's
+  workshop bench repaired, full HP, save written to caligo/caligo-workshop.
+- After repair the bridge reverts to the static staged pack (slow solo rat + pair, no
+  respawn) so the once-unbeatable swarm becomes beatable — growth made tangible.
+- Rats now spawn from a `RatEnemy.prefab` built by the pipeline; `RatEnemy.Initialize`
+  allows runtime direction/speed setup.
+- Smoke test gained `CLOCKWORK_COLLAPSE_PROBE` (repaired flag, workshop wake position,
+  full HP). Full six-probe route passes.
+
+## 2026-07-20 Caligo village: Morbi and part identification
+
+- New `CaligoVillage` scene (roomId `caligo`) west of the shaft: Morbi workshop bench
+  (repair/save, `caligo/caligo-workshop`), hut silhouettes, warm light (canon §4 tone),
+  west plaza gate left data-only. The shaft's flag-locked west gate is now functional.
+- `MorbiNpc`: state-based dry dialogue (canon §8 tone) — greeting/errand when empty-handed,
+  the B-3 identification beat when carrying the Limbus part (sets `LIMBUS_MYSTERY_PART_IDENTIFIED`,
+  HUD shows "Part: MOD attached"), then the purification-plant quest hook with the
+  lock-before-key hint. W begins/advances lines; leaving the trigger closes dialogue.
+- Loadout ruling recorded in docs (v5.5 F-1..F-4, adopted): 3 weapon slots + per-weapon MOD,
+  fist always available but fist upgrades occupy a slot, bench-only loadout swap.
+  No code needed yet — pool equals slots until a fourth weapon exists.
+- Smoke test gained a village leg (dialogue-driven identification flag). Full route passes:
+  Limbus -> bridge -> shaft -> village.
+- Still deferred: 3-choice part selection, actual MOD gameplay effect, plaza room.
+  (The collapse/rescue staging landed the same day — see the section above.)
+
 ## 2026-07-20 Limbus room: canon opening start
 
 - New `Limbus` scene (RGN-006, roomId `limbus`): the game now boots at the canon awakening
@@ -117,8 +150,7 @@ Updated: 2026-07-20 (Asia/Seoul)
 ## Next work
 
 1. Replace the placeholder RuleTile sprite with a coherent 32 PPU Caligo/Limbus industrial palette.
-2. Build the Caligo village scene (Morbi workshop): collapse/rescue staging, part identification
-   and MOD attach beat, then unlock the flag-locked west gate of the shaft.
+2. Build the plaza room with the canon CP, then the drop shaft toward the crossing cavern.
 3. Replace the generated rat placeholder with approved sprite frames and add death feedback/SFX.
 4. Move approved action frames into Aseprite source files or a 2D Animation workflow for combo expansion.
 5. Re-tune movement from prototype-scale units after final tile and camera metrics are locked.

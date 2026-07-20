@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Clockwork/Scenes/CaligoMaintenanceShaft.unity
     guid: 49584d0dc503c8542b35a478015da094
+  - enabled: 1
+    path: Assets/Clockwork/Scenes/CaligoVillage.unity
+    guid: 0ab9929bfcf69174d83147c4faa66290
   m_configObjects: {}

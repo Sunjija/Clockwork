@@ -22,6 +22,7 @@ namespace Clockwork
     {
         public const string TiqueRepaired = "TIQUE_REPAIRED";
         public const string LimbusMysteryPart = "LIMBUS_MYSTERY_PART";
+        public const string MysteryPartIdentified = "LIMBUS_MYSTERY_PART_IDENTIFIED";
     }
 
     public sealed class GameSession : MonoBehaviour
@@ -34,7 +35,8 @@ namespace Clockwork
         {
             { "limbus", "Limbus" },
             { "limbus-caligo-bridge", "LimbusCaligoBridge" },
-            { "caligo-maintenance-shaft", "CaligoMaintenanceShaft" }
+            { "caligo-maintenance-shaft", "CaligoMaintenanceShaft" },
+            { "caligo", "CaligoVillage" }
         };
 
         [SerializeField] private GameSaveData current = new GameSaveData();

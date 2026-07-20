@@ -100,6 +100,13 @@ namespace Clockwork
             return hit.collider != null && !hit.collider.isTrigger;
         }
 
+        public void Initialize(int patrolDirection, float speed)
+        {
+            startDirection = patrolDirection;
+            moveSpeed = speed;
+            direction = patrolDirection >= 0 ? 1 : -1;
+        }
+
 #if UNITY_EDITOR
         public void Configure(int patrolDirection, float speed)
         {

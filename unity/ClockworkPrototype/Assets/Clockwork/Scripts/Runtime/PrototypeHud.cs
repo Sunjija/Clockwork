@@ -28,7 +28,11 @@ namespace Clockwork
             GUI.Label(new Rect(panel.x + 16f, panel.y + 144f, 280f, 20f), $"Weapon: {weapon}", titleStyle);
             string state = GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.TiqueRepaired)
                 ? "Tique: repaired" : "Tique: damaged";
-            if (GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.LimbusMysteryPart))
+            if (GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.MysteryPartIdentified))
+            {
+                state += " / Part: MOD attached";
+            }
+            else if (GameSession.Instance != null && GameSession.Instance.HasFlag(GameFlagIds.LimbusMysteryPart))
             {
                 state += " / Part: unidentified";
             }

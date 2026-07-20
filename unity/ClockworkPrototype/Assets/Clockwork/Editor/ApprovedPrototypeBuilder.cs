@@ -25,7 +25,9 @@ namespace ClockworkEditor
         private const string ScenePath = Root + "/Scenes/CaligoMaintenanceShaft.unity";
         private const string BridgeScenePath = Root + "/Scenes/LimbusCaligoBridge.unity";
         private const string LimbusScenePath = Root + "/Scenes/Limbus.unity";
+        private const string VillageScenePath = Root + "/Scenes/CaligoVillage.unity";
         private const string PrefabPath = Root + "/Prefabs/TiqueApproved.prefab";
+        private const string RatPrefabPath = Root + "/Prefabs/RatEnemy.prefab";
         private const string BackgroundPath = Root + "/Art/Backgrounds/caligo-maintenance-shaft.png";
         private const string PlatformSpritePath = Root + "/Art/platform-debug.png";
         private const string TileSpritePath = Root + "/Art/tile-placeholder-32.png";
@@ -34,6 +36,7 @@ namespace ClockworkEditor
         private const string RoomAssetPath = Root + "/Data/Rooms/CaligoMaintenanceShaft.asset";
         private const string BridgeRoomAssetPath = Root + "/Data/Rooms/LimbusCaligoBridge.asset";
         private const string LimbusRoomAssetPath = Root + "/Data/Rooms/Limbus.asset";
+        private const string VillageRoomAssetPath = Root + "/Data/Rooms/CaligoVillage.asset";
         private const string RendererAssetPath = Root + "/Settings/ClockworkRenderer2D.asset";
         private const string PipelineAssetPath = Root + "/Settings/ClockworkURP.asset";
         private const string LineMaterialPath = Root + "/Art/prototype-lines.mat";
@@ -53,6 +56,7 @@ namespace ClockworkEditor
             RoomDefinition room = EnsureRoomDefinition();
             RoomDefinition bridgeRoom = EnsureBridgeRoomDefinition();
             RoomDefinition limbusRoom = EnsureLimbusRoomDefinition();
+            RoomDefinition villageRoom = EnsureVillageRoomDefinition();
 
             SpriteSequence idle = CreateSequence(
                 "Idle", ArtRoot + "/Idle", 1.6f, true, 0.3f,
@@ -105,13 +109,15 @@ namespace ClockworkEditor
                 new[] { fist, greatsword, hammer },
                 idle, walk, jump, doubleJump, dash,
                 lineMaterial);
+            GameObject ratPrefab = BuildRatPrefab(ratSprite);
             BuildScene(prefab, collisionTile, room);
-            BuildBridgeScene(prefab, collisionTile, bridgeRoom, ratSprite);
+            BuildBridgeScene(prefab, collisionTile, bridgeRoom, ratPrefab);
             BuildLimbusScene(prefab, collisionTile, limbusRoom);
+            BuildVillageScene(prefab, collisionTile, villageRoom);
             ConfigureProject();
             ValidateApprovedAssets();
             AssetDatabase.SaveAssets();
-            StripGeneratedYamlWhitespace(PrefabPath, ScenePath, BridgeScenePath, LimbusScenePath);
+            StripGeneratedYamlWhitespace(PrefabPath, ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath);
             AssetDatabase.Refresh();
             Debug.Log("CLOCKWORK_APPROVED_BUILD_OK");
         }
@@ -135,7 +141,7 @@ namespace ClockworkEditor
             Directory.CreateDirectory("Builds/Windows");
             BuildReport report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
-                scenes = new[] { LimbusScenePath, BridgeScenePath, ScenePath },
+                scenes = new[] { LimbusScenePath, BridgeScenePath, ScenePath, VillageScenePath },
                 locationPathName = "Builds/Windows/ClockworkPrototype.exe",
                 target = BuildTarget.StandaloneWindows64,
                 options = BuildOptions.None
@@ -361,11 +367,13 @@ namespace ClockworkEditor
             if (player == null) throw new InvalidOperationException("Unable to instantiate approved Tique prefab.");
             player.transform.position = new Vector3(-5.36f, -2f, 0f);
 
-            RepairSavePoint savePoint = BuildRepairSavePoint();
+            RepairSavePoint savePoint = BuildRepairSavePoint(
+                "CaligoRepairWorkbench", new Vector2(3.55f, -2f), "caligo-maintenance-shaft", "caligo-workbench");
             BuildRoomGates();
             BuildSpawnPoint("entry-limbus", new Vector2(-5.36f, -2f));
             BuildSpawnPoint("caligo-workbench", new Vector2(3.55f, -2f));
             BuildSpawnPoint("entry-bridge", new Vector2(6f, -2f));
+            BuildSpawnPoint("entry-caligo-village", new Vector2(-6f, -2f));
             Camera camera = BuildCamera(player.transform, room.CameraBounds);
 
             GameObject hudObject = new GameObject("PrototypeHUD");
@@ -379,7 +387,7 @@ namespace ClockworkEditor
             }
         }
 
-        private static void BuildBridgeScene(GameObject playerPrefab, TileBase tile, RoomDefinition room, Sprite ratSprite)
+        private static void BuildBridgeScene(GameObject playerPrefab, TileBase tile, RoomDefinition room, GameObject ratPrefab)
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
             scene.name = "LimbusCaligoBridge";
@@ -408,11 +416,14 @@ namespace ClockworkEditor
             BuildSpawnPoint("entry-caligo", new Vector2(-6f, -2f));
             BuildSpawnPoint("entry-limbus", new Vector2(6f, -2f));
 
-            // Tutorial staging (rulebook §9 four-beat rule, read from the canon east entry):
-            // one slow rat alone to teach the swing, then a pair for the low-risk escalation.
-            BuildRat(ratSprite, new Vector2(2f, -2f), 1, 0.7f);
-            BuildRat(ratSprite, new Vector2(-2.6f, -2f), 1, 0.95f);
-            BuildRat(ratSprite, new Vector2(-3.6f, -2f), -1, 0.95f);
+            // Rats are spawned at runtime by the collapse director: endless pressure before
+            // repair (the swarm cannot be beaten), a static staged pack afterwards.
+            GameObject directorObject = new GameObject("BridgeCollapseDirector");
+            directorObject.transform.position = new Vector3(-5.3f, -1.25f, 0f);
+            BoxCollider2D collapseTrigger = directorObject.AddComponent<BoxCollider2D>();
+            collapseTrigger.isTrigger = true;
+            collapseTrigger.size = new Vector2(0.5f, 2.2f);
+            directorObject.AddComponent<BridgeCollapseDirector>().Configure(ratPrefab);
 
             BuildCamera(player.transform, room.CameraBounds);
 
@@ -421,6 +432,95 @@ namespace ClockworkEditor
             hud.Configure(player.GetComponent<TiqueCombat>(), null, player.GetComponent<TiqueHealth>());
 
             EditorSceneManager.SaveScene(scene, BridgeScenePath);
+        }
+
+        private static void BuildVillageScene(GameObject playerPrefab, TileBase tile, RoomDefinition room)
+        {
+            Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
+            scene.name = "CaligoVillage";
+
+            GameObject bootstrap = new GameObject("PrototypeBootstrap");
+            bootstrap.AddComponent<PrototypeBootstrap>();
+            GameObject session = new GameObject("GameSession");
+            session.AddComponent<GameSession>();
+
+            BuildBridgeTilemap(tile);
+
+            // Caligo: chosen poverty, calm warmth (canon §4). Placeholder dressing only.
+            GameObject lightObject = new GameObject("VillageGlobalLight2D");
+            Light2D light = lightObject.AddComponent<Light2D>();
+            light.lightType = Light2D.LightType.Global;
+            light.color = new Color(0.88f, 0.74f, 0.55f);
+            light.intensity = 0.74f;
+            BuildVillageHut(new Vector2(-4.4f, -0.9f), new Vector2(3.4f, 2.6f));
+            BuildVillageHut(new Vector2(0.6f, -1f), new Vector2(2.6f, 2.2f));
+            BuildVillageHut(new Vector2(4.2f, -0.8f), new Vector2(3f, 2.8f));
+
+            GameObject player = PrefabUtility.InstantiatePrefab(playerPrefab) as GameObject;
+            if (player == null) throw new InvalidOperationException("Unable to instantiate approved Tique prefab.");
+            player.transform.position = new Vector3(6f, -2f, 0f);
+
+            // Village lies west of the shaft; the plaza continues further west (data-only for now).
+            BuildRoomGate("GateToMaintenanceShaft", new Vector2(6.65f, -1.25f), "caligo-maintenance-shaft", "entry-caligo-village");
+            BuildRoomGate("GateToPlaza", new Vector2(-6.65f, -1.25f), "caligo-plaza", "entry-workshop");
+            BuildSpawnPoint("entry-maintenance-shaft", new Vector2(6f, -2f));
+            BuildSpawnPoint("caligo-workshop", new Vector2(-2f, -2f));
+
+            RepairSavePoint savePoint = BuildRepairSavePoint(
+                "MorbiWorkshopBench", new Vector2(-2f, -2f), "caligo", "caligo-workshop");
+            BuildMorbi(new Vector2(-3.4f, -2f));
+
+            BuildCamera(player.transform, room.CameraBounds);
+
+            GameObject hudObject = new GameObject("PrototypeHUD");
+            PrototypeHud hud = hudObject.AddComponent<PrototypeHud>();
+            hud.Configure(player.GetComponent<TiqueCombat>(), savePoint, player.GetComponent<TiqueHealth>());
+
+            EditorSceneManager.SaveScene(scene, VillageScenePath);
+        }
+
+        private static void BuildVillageHut(Vector2 position, Vector2 size)
+        {
+            GameObject hut = new GameObject("VillageHutSilhouette");
+            SpriteRenderer renderer = hut.AddComponent<SpriteRenderer>();
+            renderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(TileSpritePath);
+            renderer.color = new Color(0.2f, 0.16f, 0.13f, 0.9f);
+            renderer.sortingOrder = -30;
+            hut.transform.position = new Vector3(position.x, position.y, 2f);
+            hut.transform.localScale = new Vector3(size.x, size.y, 1f);
+        }
+
+        private static void BuildMorbi(Vector2 position)
+        {
+            GameObject root = new GameObject("MorbiNpc");
+            root.transform.position = position;
+            BoxCollider2D trigger = root.AddComponent<BoxCollider2D>();
+            trigger.isTrigger = true;
+            trigger.size = new Vector2(1.6f, 1.5f);
+            trigger.offset = new Vector2(0f, 0.6f);
+
+            GameObject view = new GameObject("TemporaryMorbiView");
+            view.transform.SetParent(root.transform, false);
+            view.transform.localPosition = new Vector3(0f, 0.62f, 0f);
+            SpriteRenderer renderer = view.AddComponent<SpriteRenderer>();
+            renderer.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(TileSpritePath);
+            renderer.color = new Color(0.62f, 0.44f, 0.3f, 0.95f);
+            renderer.sortingOrder = 6;
+            view.transform.localScale = new Vector3(0.55f, 1.35f, 1f);
+
+            root.AddComponent<MorbiNpc>();
+        }
+
+        private static RoomDefinition EnsureVillageRoomDefinition()
+        {
+            RoomDefinition room = LoadOrCreate<RoomDefinition>(VillageRoomAssetPath);
+            room.Configure(
+                "caligo",
+                "Caligo Village",
+                new Rect(-7f, -3f, 14f, 6f),
+                "act1-caligo");
+            EditorUtility.SetDirty(room);
+            return room;
         }
 
         private static void BuildLimbusScene(GameObject playerPrefab, TileBase tile, RoomDefinition room)
@@ -572,10 +672,9 @@ namespace ClockworkEditor
             point.AddComponent<SpawnPoint>().Configure(id);
         }
 
-        private static void BuildRat(Sprite sprite, Vector2 position, int direction, float speed)
+        private static GameObject BuildRatPrefab(Sprite sprite)
         {
             GameObject rat = new GameObject("RatEnemy");
-            rat.transform.position = position;
 
             Rigidbody2D body = rat.AddComponent<Rigidbody2D>();
             body.bodyType = RigidbodyType2D.Dynamic;
@@ -593,7 +692,11 @@ namespace ClockworkEditor
             renderer.sortingOrder = 6;
 
             rat.AddComponent<EnemyHealth>().Configure(3);
-            rat.AddComponent<RatEnemy>().Configure(direction, speed);
+            rat.AddComponent<RatEnemy>().Configure(-1, 0.95f);
+
+            GameObject prefab = PrefabUtility.SaveAsPrefabAsset(rat, RatPrefabPath);
+            UnityEngine.Object.DestroyImmediate(rat);
+            return prefab;
         }
 
         private static void BuildBackground()
@@ -701,10 +804,11 @@ namespace ClockworkEditor
             return camera;
         }
 
-        private static RepairSavePoint BuildRepairSavePoint()
+        private static RepairSavePoint BuildRepairSavePoint(
+            string name, Vector2 position, string roomId, string spawnId)
         {
-            GameObject root = new GameObject("CaligoRepairWorkbench");
-            root.transform.position = new Vector3(3.55f, -2f, 0f);
+            GameObject root = new GameObject(name);
+            root.transform.position = position;
             BoxCollider2D trigger = root.AddComponent<BoxCollider2D>();
             trigger.isTrigger = true;
             trigger.size = new Vector2(1.25f, 1.35f);
@@ -720,7 +824,7 @@ namespace ClockworkEditor
             view.transform.localScale = new Vector3(2.5f, 3.5f, 1f);
 
             RepairSavePoint savePoint = root.AddComponent<RepairSavePoint>();
-            savePoint.Configure("caligo-maintenance-shaft", "caligo-workbench", renderer);
+            savePoint.Configure(roomId, spawnId, renderer);
             return savePoint;
         }
 
@@ -899,7 +1003,8 @@ namespace ClockworkEditor
             {
                 new EditorBuildSettingsScene(LimbusScenePath, true),
                 new EditorBuildSettingsScene(BridgeScenePath, true),
-                new EditorBuildSettingsScene(ScenePath, true)
+                new EditorBuildSettingsScene(ScenePath, true),
+                new EditorBuildSettingsScene(VillageScenePath, true)
             };
         }
 
@@ -928,7 +1033,7 @@ namespace ClockworkEditor
             {
                 "/v5/", "/v5.1/", "/v6/", "/v8-", "/v10-", "/weapons-test"
             };
-            string[] dependencies = AssetDatabase.GetDependencies(new[] { ScenePath, BridgeScenePath, LimbusScenePath }, true);
+            string[] dependencies = AssetDatabase.GetDependencies(new[] { ScenePath, BridgeScenePath, LimbusScenePath, VillageScenePath }, true);
             foreach (string dependency in dependencies)
             {
                 if (forbiddenTokens.Any(token => dependency.Contains(token, StringComparison.OrdinalIgnoreCase)))

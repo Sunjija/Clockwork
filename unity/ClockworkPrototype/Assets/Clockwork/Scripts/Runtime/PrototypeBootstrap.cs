@@ -75,6 +75,25 @@ namespace Clockwork
                     $"hp={(bridgeHealth == null ? -1 : bridgeHealth.CurrentHealth)}");
             }
 
+            bool collapseValid = false;
+            BridgeCollapseDirector director = FindAnyObjectByType<BridgeCollapseDirector>();
+            if (director != null && session != null)
+            {
+                director.TriggerCollapse();
+                yield return new WaitForSecondsRealtime(4.8f);
+                TiqueMotor wakeMotor = FindAnyObjectByType<TiqueMotor>();
+                TiqueHealth wakeHealth = FindAnyObjectByType<TiqueHealth>();
+                MorbiNpc wakeMorbi = FindAnyObjectByType<MorbiNpc>();
+                collapseValid = session.HasFlag(GameFlagIds.TiqueRepaired)
+                    && wakeMotor != null && Mathf.Abs(wakeMotor.transform.position.x - -2f) < 1.2f
+                    && wakeMorbi != null
+                    && wakeHealth != null && wakeHealth.CurrentHealth == wakeHealth.MaxHealth;
+                Debug.Log($"CLOCKWORK_COLLAPSE_PROBE valid={collapseValid} " +
+                    $"repaired={session.HasFlag(GameFlagIds.TiqueRepaired)} " +
+                    $"pos={(wakeMotor == null ? Vector3.zero : wakeMotor.transform.position)} " +
+                    $"hp={(wakeHealth == null ? -1 : wakeHealth.CurrentHealth)}");
+            }
+
             bool shaftValid = false;
             if (session != null && session.LoadRoom("caligo-maintenance-shaft", "entry-bridge"))
             {
@@ -91,7 +110,27 @@ namespace Clockwork
                     $"repaired={session.HasFlag(GameFlagIds.TiqueRepaired)}");
             }
 
-            valid = valid && healthValid && bridgeValid && shaftValid;
+            bool villageValid = false;
+            if (session != null && session.LoadRoom("caligo", "entry-maintenance-shaft"))
+            {
+                yield return new WaitForSecondsRealtime(1f);
+                TiqueMotor villageMotor = FindAnyObjectByType<TiqueMotor>();
+                MorbiNpc morbi = FindAnyObjectByType<MorbiNpc>();
+                for (int i = 0; morbi != null && i < 8; i++)
+                {
+                    morbi.Interact();
+                }
+                yield return new WaitForSecondsRealtime(0.5f);
+                villageValid = villageMotor != null && villageMotor.Grounded
+                    && Mathf.Abs(villageMotor.transform.position.x - 6f) < 1.2f
+                    && morbi != null
+                    && session.HasFlag(GameFlagIds.MysteryPartIdentified);
+                Debug.Log($"CLOCKWORK_VILLAGE_PROBE valid={villageValid} " +
+                    $"identified={session.HasFlag(GameFlagIds.MysteryPartIdentified)} " +
+                    $"pos={(villageMotor == null ? Vector3.zero : villageMotor.transform.position)}");
+            }
+
+            valid = valid && healthValid && bridgeValid && collapseValid && shaftValid && villageValid;
             Debug.Log(valid ? "CLOCKWORK_RUNTIME_SMOKE_OK" : "CLOCKWORK_RUNTIME_SMOKE_FAILED");
             Application.Quit(valid ? 0 : 2);
         }

@@ -21,6 +21,9 @@ namespace Clockwork
         public int CurrentHealth { get; private set; }
         public bool IsRespawning { get; private set; }
 
+        // When set (e.g. the scripted bridge collapse), it replaces the normal death respawn.
+        public System.Action DeathOverride { get; set; }
+
         private void Awake()
         {
             motor = GetComponent<TiqueMotor>();
@@ -64,7 +67,16 @@ namespace Clockwork
 
             if (CurrentHealth <= 0)
             {
-                StartCoroutine(Respawn());
+                if (DeathOverride != null)
+                {
+                    IsRespawning = true;
+                    motor.Stun(respawnDelay);
+                    DeathOverride();
+                }
+                else
+                {
+                    StartCoroutine(Respawn());
+                }
             }
         }
 
