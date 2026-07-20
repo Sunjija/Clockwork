@@ -16,7 +16,7 @@
 | `docs/music/` | 지역별 음악 방향, Suno 기준 실험, ACT1 생성·선별 기록 |
 | `docs/art/act1-environment-art-bible.md` | ACT1 지역별 환경 콘셉트·전이 규칙·이미지 생성 순서 |
 | `docs/art/tique-character-model-lock.md` | 티크 인게임 외형 고정 규칙 — 짧은 다리, 체형 비율, 피벗, 팔레트 불변 조건 |
-| `maps/act1-underground.html` | ACT1 지하 안드레스 — 룸 단위 상세 맵 (24룸) + 크리티컬 패스 + 게이트/숏컷 설계 |
+| `maps/act1-underground.html` | ACT1 지하 안드레스 — 룸 단위 상세 맵 (49룸, 선택 탐사 지역 포함) + 크리티컬 패스 + 게이트/숏컷 설계 |
 | `maps/act2-surface.html` | ACT2 지상 메티아 — 초안 [전부 제안] |
 | `maps/act3-tower.html` | ACT3 크로노스 타워 — 십자 5탑·회전 가교 초안 [전부 제안] |
 | `maps/world-atlas.html` | **전체 세계 전도** — 옥상~심층 습지 수직 40층 단면, 3막 통합 |
