@@ -1,0 +1,17 @@
+# Keep text files LF in the repo and working tree (Unity and IDEs handle LF fine)
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ttf binary
+*.otf binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.exe binary
+*.dll binary
