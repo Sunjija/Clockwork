@@ -147,11 +147,30 @@ Updated: 2026-07-20 (Asia/Seoul)
 - Generated `Builds`, `Library`, `Logs`, `Temp`, and `UserSettings` remain excluded from Git.
 - Do not stage the unrelated experimental sprite directories listed in Git status.
 
-## Next work
+## Next work (priority order — pick up from the top)
 
-1. Replace the placeholder RuleTile sprite with a coherent 32 PPU Caligo/Limbus industrial palette.
-2. Build the plaza room with the canon CP, then the drop shaft toward the crossing cavern.
-3. Replace the generated rat placeholder with approved sprite frames and add death feedback/SFX.
-4. Move approved action frames into Aseprite source files or a 2D Animation workflow for combo expansion.
-5. Re-tune movement from prototype-scale units after final tile and camera metrics are locked.
-6. Decide the scripted collapse beat (bridge tutorial → Morbi rescue) staging once the village scene exists.
+1. **Collapse-beat tuning (awaiting designer playtest).** Candidate knobs: 0.5s beat + 1.8s fade
+   timing, blackout log wording (`BridgeCollapseDirector.OnGUI`), pre-repair rat pressure
+   (respawn 1.6s / pack of 3). Do not restructure — the flow itself is approved canon.
+2. **Plaza room** (`caligo-plaza`, canon CP) west of the workshop, then the **one-way drop
+   shaft** toward the crossing cavern — extends the critical path toward the purification
+   plant. Follow the existing scene pattern in `ApprovedPrototypeBuilder` (room id in
+   `GameSession.RoomScenes`, gates + spawn points, smoke-test leg).
+3. **Healing system** — direction confirmed in `docs/99_master_context.md` §10: kills charge
+   a resource, hold-to-consume heals (Hollow Knight style), ACT1 = low efficiency
+   (waste-lentium). Needs resource gauge, hold input in `TiqueInputReader`, HUD display.
+   Open numbers (charge per kill, heal cost/time) are designer calls — propose, don't decide.
+4. **Combo matrix, fist axis (8 entries)** — slice combat target, table in
+   `docs/99_master_context.md` §9. Build on `TiqueCombat`'s 3-slot structure. Note the
+   loadout ruling F-1..F-4 (3 slots, per-weapon MOD, fist upgrades occupy a slot).
+5. **32 PPU tile art pass** for Caligo/Limbus industrial palette; after tiles lock,
+   re-tune movement from prototype-scale units (see Risks).
+6. **Rat art**: replace the generated placeholder with approved frames; add death
+   feedback/SFX. Rats spawn from `Prefabs/RatEnemy.prefab` (pipeline-built).
+7. **Aseprite/2D Animation workflow** for the approved action frames (combo expansion prep).
+8. Later: loadout swap UI at benches once a fourth weapon exists (until then pool == slots).
+
+> Working agreement: whenever a session ends, update this handoff (done section + this list)
+> so the next agent — Claude Code or Codex — can continue without conversation context.
+> Canon lives in `docs/00_canon_rules_v5.4.md` + `docs/rulebook-v5.5-patch.md`;
+> `docs/99_master_context.md` is the portable snapshot and must be kept in sync.
