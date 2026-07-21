@@ -36,10 +36,42 @@ namespace ClockworkEditor
         private const string RatPrefabPath = Root + "/Prefabs/RatEnemy.prefab";
         private const string BackgroundPath = Root + "/Art/Backgrounds/caligo-maintenance-shaft.png";
         private const string PlazaBackgroundPath = Root + "/Art/Backgrounds/caligo-plaza-concept-v1.png";
+        private const string CaligoEnvironmentRoot = Root + "/Art/Environment/ACT1OpeningCaligo";
+        private const string CaligoFarPath = CaligoEnvironmentRoot + "/Backgrounds/03-caligo/far.png";
+        private const string CaligoMidPath = CaligoEnvironmentRoot + "/Backgrounds/03-caligo/mid.png";
+        private const string CaligoPlatformRoot = CaligoEnvironmentRoot + "/Platforms/03-caligo";
+        private const string CaligoNpcRoot = Root + "/Art/Characters/CaligoNPCPrototype";
+        private const string CombatLabFarPath = Root + "/Art/Backgrounds/CombatLabParallax/combat-lab-far.png";
+        private const string CombatLabMidPath = Root + "/Art/Backgrounds/CombatLabParallax/combat-lab-mid.png";
+        private const string CombatLabNearPath = Root + "/Art/Backgrounds/CombatLabParallax/combat-lab-near.png";
+        private const string CuratedRoot = Root + "/ThirdParty/Curated";
+        private const string HitVfxPath = CuratedRoot + "/Art/VFX/Combat/Hit-Sheet.png";
+        private const string SparkVfxPath = CuratedRoot + "/Art/VFX/Combat/Blue_Sparks-Sheet.png";
+        private const string ExplosionVfxPath = CuratedRoot + "/Art/VFX/Combat/Explosion-Sheet.png";
+        private const string SlashVfxPath = CuratedRoot + "/Art/VFX/Combat/pixel_art_sword_slash_sprites.png";
+        private const string IndustrialFloorSpritePath = Root + "/Art/Environment/IndustrialRuins/industrial-brick-fill.png";
+        private const string IndustrialTopSpritePath = Root + "/Art/Environment/IndustrialRuins/industrial-brick-top.png";
+        private const string AtomicLocalRoot = Root + "/LocalAssets/AtomicRealm/IndustrialTilesetFree";
+        private const string AtomicSpriteRoot = AtomicLocalRoot + "/Sprites";
+        private const string AtomicTileRoot = AtomicLocalRoot + "/Tiles";
+        private static readonly string[] AtomicFillSpritePaths =
+        {
+            AtomicSpriteRoot + "/fill-0.png",
+            AtomicSpriteRoot + "/fill-1.png",
+            AtomicSpriteRoot + "/fill-2.png"
+        };
+        private static readonly string[] AtomicTopSpritePaths =
+        {
+            AtomicSpriteRoot + "/top-0.png",
+            AtomicSpriteRoot + "/top-1.png",
+            AtomicSpriteRoot + "/top-2.png",
+            AtomicSpriteRoot + "/top-3.png"
+        };
         private const string PlatformSpritePath = Root + "/Art/platform-debug.png";
         private const string TileSpritePath = Root + "/Art/tile-placeholder-32.png";
         private const string RatSpritePath = Root + "/Art/rat-placeholder.png";
         private const string TileAssetPath = Root + "/Data/Tiles/CaligoPlaceholder.asset";
+        private const string IndustrialTopTileAssetPath = Root + "/Data/Tiles/IndustrialTop.asset";
         private const string RoomAssetPath = Root + "/Data/Rooms/CaligoMaintenanceShaft.asset";
         private const string BridgeRoomAssetPath = Root + "/Data/Rooms/LimbusCaligoBridge.asset";
         private const string LimbusRoomAssetPath = Root + "/Data/Rooms/Limbus.asset";
@@ -51,6 +83,7 @@ namespace ClockworkEditor
         private const string LineMaterialPath = Root + "/Art/prototype-lines.mat";
         private const string PreviewPath = Root + "/QA/caligo-unity-preview.png";
         private const string PlazaPreviewPath = Root + "/QA/caligo-plaza-art-benchmark.png";
+        private const float TiqueVisualScaleMultiplier = 0.7f;
 
         [MenuItem("Clockwork/Build Approved Prototype")]
         public static void BuildApprovedPrototype()
@@ -61,6 +94,7 @@ namespace ClockworkEditor
             EnsurePlatformSprite();
             Sprite ratSprite = EnsureRatSprite();
             RuleTile collisionTile = EnsureCollisionTile();
+            Tile industrialTopTile = EnsureIndustrialTopTile();
             EnsureUniversalRenderPipeline();
             Material lineMaterial = EnsureLineMaterial();
             RoomDefinition room = EnsureRoomDefinition();
@@ -164,7 +198,13 @@ namespace ClockworkEditor
             BuildPlazaScene(prefab, collisionTile, plazaRoom);
             BuildDropShaftScene(prefab, collisionTile, dropShaftRoom);
             BuildGrappleLabScene(prefab, collisionTile);
-            BuildCombatLabScene(prefab, collisionTile, ratSprite);
+            EnsureLocalAtomicTiles("Fill", AtomicFillSpritePaths);
+            EnsureLocalAtomicTiles("Top", AtomicTopSpritePaths);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            bool usesLocalAtomicArt = LoadLocalAtomicTiles("Fill", AtomicFillSpritePaths).Length > 0
+                && LoadLocalAtomicTiles("Top", AtomicTopSpritePaths).Length > 0;
+            BuildCombatLabScene(prefab, usesLocalAtomicArt, ratSprite);
             ConfigureProject();
             ValidateApprovedAssets();
             AssetDatabase.SaveAssets();
@@ -226,21 +266,47 @@ namespace ClockworkEditor
         {
             string[] texturePaths = Directory.GetFiles(ArtRoot, "*.png", SearchOption.AllDirectories)
                 .Select(ToAssetPath)
-                .Concat(new[] { BackgroundPath, PlazaBackgroundPath })
+                .Concat(new[]
+                {
+                    BackgroundPath, PlazaBackgroundPath,
+                    CombatLabFarPath, CombatLabMidPath, CombatLabNearPath,
+                    HitVfxPath, SparkVfxPath, ExplosionVfxPath, SlashVfxPath,
+                    IndustrialFloorSpritePath, IndustrialTopSpritePath
+                })
+                .Concat(AtomicFillSpritePaths.Concat(AtomicTopSpritePaths).Where(File.Exists))
                 .ToArray();
 
             foreach (string path in texturePaths)
             {
-                bool background = path == BackgroundPath || path == PlazaBackgroundPath;
+                bool conceptBackground = path == BackgroundPath || path == PlazaBackgroundPath;
+                bool parallax = path == CombatLabFarPath || path == CombatLabMidPath || path == CombatLabNearPath;
+                bool vfx = path == HitVfxPath || path == SparkVfxPath
+                    || path == ExplosionVfxPath || path == SlashVfxPath;
+                bool industrialTile = path == IndustrialFloorSpritePath || path == IndustrialTopSpritePath
+                    || path.StartsWith(AtomicSpriteRoot, StringComparison.Ordinal);
                 bool greatsword = path.Contains("/Greatsword/", StringComparison.Ordinal);
                 Vector2 pivot = greatsword
                     ? new Vector2(240f / 640f, (512f - 430f) / 512f)
-                    : background ? new Vector2(0.5f, 0.5f) : new Vector2(0.5f, (512f - 480f) / 512f);
-                ConfigureTexture(path, pivot, background ? FilterMode.Bilinear : FilterMode.Point, background ? 4096 : 1024, 100f);
+                    : conceptBackground || parallax || vfx || industrialTile
+                        ? new Vector2(0.5f, 0.5f)
+                        : new Vector2(0.5f, (512f - 480f) / 512f);
+                ConfigureTexture(
+                    path,
+                    pivot,
+                    conceptBackground ? FilterMode.Bilinear : FilterMode.Point,
+                    industrialTile ? 32 : conceptBackground || parallax ? 4096 : 1024,
+                    industrialTile ? 128f : vfx ? 64f : 100f,
+                    vfx);
             }
         }
 
-        private static void ConfigureTexture(string path, Vector2 pivot, FilterMode filter, int maxSize, float pixelsPerUnit)
+        private static void ConfigureTexture(
+            string path,
+            Vector2 pivot,
+            FilterMode filter,
+            int maxSize,
+            float pixelsPerUnit,
+            bool readable = false)
         {
             AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceSynchronousImport);
             TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
@@ -255,11 +321,21 @@ namespace ClockworkEditor
             settings.spriteMeshType = SpriteMeshType.FullRect;
             importer.SetTextureSettings(settings);
             importer.alphaIsTransparency = true;
+            importer.isReadable = readable;
             importer.mipmapEnabled = false;
             importer.filterMode = filter;
             importer.textureCompression = TextureImporterCompression.Uncompressed;
             importer.maxTextureSize = maxSize;
             importer.SaveAndReimport();
+        }
+
+        private static AudioClip[] LoadAudioClips(string folder, string pattern)
+        {
+            return Directory.GetFiles(folder, pattern, SearchOption.TopDirectoryOnly)
+                .OrderBy(path => Path.GetFileName(path), StringComparer.Ordinal)
+                .Select(path => AssetDatabase.LoadAssetAtPath<AudioClip>(ToAssetPath(path)))
+                .Where(clip => clip != null)
+                .ToArray();
         }
 
         private static SpriteSequence CreateSequence(
@@ -281,7 +357,7 @@ namespace ClockworkEditor
 
             string assetPath = $"{SequenceRoot}/{name}.asset";
             SpriteSequence sequence = LoadOrCreate<SpriteSequence>(assetPath);
-            sequence.Configure(frames, frameEnds, duration, loop, renderScale);
+            sequence.Configure(frames, frameEnds, duration, loop, renderScale * TiqueVisualScaleMultiplier);
             EditorUtility.SetDirty(sequence);
             return sequence;
         }
@@ -304,7 +380,7 @@ namespace ClockworkEditor
 
             string assetPath = $"{SequenceRoot}/{name}.asset";
             SpriteSequence sequence = LoadOrCreate<SpriteSequence>(assetPath);
-            sequence.Configure(frames, frameEnds, duration, loop, renderScale);
+            sequence.Configure(frames, frameEnds, duration, loop, renderScale * TiqueVisualScaleMultiplier);
             EditorUtility.SetDirty(sequence);
             return sequence;
         }
@@ -443,6 +519,29 @@ namespace ClockworkEditor
                 "SwapChargeWaveInner", root.transform, lineMaterial, 0.024f, 26);
             TiqueSwapChargeWave swapChargeWave = root.AddComponent<TiqueSwapChargeWave>();
             swapChargeWave.Configure(combat, swapWaveOuter, swapWaveInner);
+
+            AudioSource feedbackSource = root.AddComponent<AudioSource>();
+            feedbackSource.playOnAwake = false;
+            feedbackSource.spatialBlend = 0f;
+            feedbackSource.volume = 0.9f;
+            TiqueAudioFeedback audioFeedback = root.AddComponent<TiqueAudioFeedback>();
+            audioFeedback.Configure(
+                combat,
+                feedbackSource,
+                LoadAudioClips(CuratedRoot + "/Audio/Combat/Fist", "impactPunch_medium_*.ogg"),
+                LoadAudioClips(CuratedRoot + "/Audio/Combat/Fist", "impactPunch_heavy_*.ogg"),
+                LoadAudioClips(CuratedRoot + "/Audio/Combat/Greatsword", "*.ogg"),
+                LoadAudioClips(CuratedRoot + "/Audio/Combat/HeavyWeapon", "impactMetal_heavy_*.ogg"),
+                LoadAudioClips(CuratedRoot + "/Audio/Lentium", "forceField_*.ogg"));
+
+            TiqueSpriteVfx spriteVfx = root.AddComponent<TiqueSpriteVfx>();
+            spriteVfx.Configure(
+                combat,
+                motor,
+                AssetDatabase.LoadAssetAtPath<Texture2D>(HitVfxPath),
+                AssetDatabase.LoadAssetAtPath<Texture2D>(SparkVfxPath),
+                AssetDatabase.LoadAssetAtPath<Texture2D>(ExplosionVfxPath),
+                AssetDatabase.LoadAssetAtPath<Texture2D>(SlashVfxPath));
 
             GameObject prefab = PrefabUtility.SaveAsPrefabAsset(root, PrefabPath);
             UnityEngine.Object.DestroyImmediate(root);
@@ -920,10 +1019,57 @@ namespace ClockworkEditor
 
             ConfigureTexture(TileSpritePath, new Vector2(0.5f, 0.5f), FilterMode.Point, 32, 128f);
             RuleTile tile = LoadOrCreate<RuleTile>(TileAssetPath);
-            tile.m_DefaultSprite = AssetDatabase.LoadAssetAtPath<Sprite>(TileSpritePath);
+            tile.m_DefaultSprite = AssetDatabase.LoadAssetAtPath<Sprite>(IndustrialFloorSpritePath);
             tile.m_DefaultColliderType = Tile.ColliderType.Grid;
             EditorUtility.SetDirty(tile);
             return tile;
+        }
+
+        private static Tile EnsureIndustrialTopTile()
+        {
+            Tile tile = LoadOrCreate<Tile>(IndustrialTopTileAssetPath);
+            tile.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(IndustrialTopSpritePath);
+            tile.colliderType = Tile.ColliderType.Grid;
+            EditorUtility.SetDirty(tile);
+            return tile;
+        }
+
+        private static TileBase[] EnsureLocalAtomicTiles(string prefix, string[] spritePaths)
+        {
+            if (spritePaths.Any(path => AssetDatabase.LoadAssetAtPath<Sprite>(path) == null))
+            {
+                return Array.Empty<TileBase>();
+            }
+
+            Directory.CreateDirectory(AtomicTileRoot);
+            for (int i = 0; i < spritePaths.Length; i++)
+            {
+                Tile tile = LoadOrCreate<Tile>($"{AtomicTileRoot}/{prefix}-{i}.asset");
+                tile.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePaths[i]);
+                tile.colliderType = Tile.ColliderType.Grid;
+                EditorUtility.SetDirty(tile);
+            }
+
+            // Creating one local tile can trigger an import that invalidates earlier object handles.
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            TileBase[] tiles = spritePaths
+                .Select((_, index) => AssetDatabase.LoadAssetAtPath<Tile>(
+                    $"{AtomicTileRoot}/{prefix}-{index}.asset"))
+                .Cast<TileBase>()
+                .ToArray();
+            if (tiles.Any(tile => tile == null)) return Array.Empty<TileBase>();
+            return tiles;
+        }
+
+        private static TileBase[] LoadLocalAtomicTiles(string prefix, string[] spritePaths)
+        {
+            TileBase[] tiles = spritePaths
+                .Select((_, index) => AssetDatabase.LoadAssetAtPath<Tile>(
+                    $"{AtomicTileRoot}/{prefix}-{index}.asset"))
+                .Cast<TileBase>()
+                .ToArray();
+            return tiles.Any(tile => tile == null) ? Array.Empty<TileBase>() : tiles;
         }
 
         private static RoomDefinition EnsureRoomDefinition()

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
   m_Name: CaligoPlaceholder
   m_EditorClassIdentifier: Unity.2D.Tilemap.Extras::UnityEngine.RuleTile
-  m_DefaultSprite: {fileID: 21300000, guid: d582ecf1245bea04899ff68b714fc08c, type: 3}
+  m_DefaultSprite: {fileID: 21300000, guid: f72ff127411fa334b975088d94f79d18, type: 3}
   m_DefaultGameObject: {fileID: 0}
   m_DefaultColliderType: 2
   m_TilingRules: []

@@ -60,7 +60,9 @@ namespace Clockwork
             DontDestroyOnLoad(gameObject);
             string[] arguments = Environment.GetCommandLineArgs();
             bool isolatedOpening = arguments.Contains("-clockworkSmokeTest")
-                || arguments.Contains("-clockworkFreshOpening");
+                || arguments.Contains("-clockworkFreshOpening")
+                || arguments.Contains("-clockworkCombatLab")
+                || arguments.Contains("-clockworkCaligoPreview");
             diskAccessEnabled = !isolatedOpening;
             if (diskAccessEnabled)
             {

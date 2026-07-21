@@ -31,11 +31,20 @@ namespace Clockwork
             TiqueCombat combat = FindAnyObjectByType<TiqueCombat>();
             TiqueComboPulse pulse = FindAnyObjectByType<TiqueComboPulse>();
             TiqueSwapChargeWave swapWave = FindAnyObjectByType<TiqueSwapChargeWave>();
+            TiqueAudioFeedback audioFeedback = FindAnyObjectByType<TiqueAudioFeedback>();
+            TiqueSpriteVfx spriteVfx = FindAnyObjectByType<TiqueSpriteVfx>();
+            ParallaxLayer2D[] parallaxLayers = FindObjectsByType<ParallaxLayer2D>(FindObjectsSortMode.None);
             EnemyHealth[] dummies = FindObjectsByType<EnemyHealth>(FindObjectsSortMode.None)
                 .Where(enemy => enemy.name.StartsWith("TrainingDummy", StringComparison.Ordinal))
                 .ToArray();
+            bool fixedMiddleLayer = parallaxLayers.Any(layer => layer.name == "ParallaxMid"
+                && Mathf.Approximately(layer.HorizontalFactor, 0f)
+                && Mathf.Approximately(layer.VerticalFactor, 0f));
             bool valid = loaded && SceneManager.GetActiveScene().name == "CombatLab"
-                && combat != null && pulse != null && swapWave != null && dummies.Length == 3
+                && combat != null && pulse != null && swapWave != null
+                && audioFeedback != null && spriteVfx != null
+                && parallaxLayers.Length == 2 && fixedMiddleLayer
+                && dummies.Length == 3
                 && dummies.All(dummy => dummy.Indestructible && dummy.IsAlive);
 
             if (valid)
@@ -48,7 +57,9 @@ namespace Clockwork
             }
 
             Debug.Log($"CLOCKWORK_COMBAT_LAB_PROBE valid={valid} dummies={dummies.Length} "
-                + $"comboPulse={pulse != null} swapWave={swapWave != null}");
+                + $"comboPulse={pulse != null} swapWave={swapWave != null} "
+                + $"audio={audioFeedback != null} spriteVfx={spriteVfx != null} "
+                + $"parallax={parallaxLayers.Length} fixedMid={fixedMiddleLayer}");
             complete(valid);
         }
     }

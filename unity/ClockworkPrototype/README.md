@@ -23,9 +23,21 @@ The approved Tique animation boundary remains Git commit `c6c7862`.
 - Caligo repair workbench that repairs and saves with `W` / Up
 - RuleTile room collision with Tilemap Collider and Composite Collider
 - Cinemachine 3 follow camera with a 2D confiner
-- 320x180 Pixel Perfect reference rendered at 1280x720
+- Current 320x180 Pixel Perfect prototype reference rendered at 1280x720
+- Locked production target: 640x360, PPU 64, and a 10 x 5.625 world-unit camera
 - URP 2D renderer and global 2D light
 - Data-only room exits for the Limbus bridge and Caligo
+- Two active generated parallax layers in the combat lab, with near foreground reserved per room
+- Curated pixel VFX and impact audio for fists, greatsword, hammer, and Lentium swaps
+- IndustrialRuins brick collision fill and exposed platform-top tiles in the combat lab
+- Proposal Caligo plaza composition with separate far/mid layers, modular platform dressing,
+  and three non-colliding ambient residents
+- Caligo experiment keeps the mid structure and rear NPC activity plane fixed in room space;
+  the rejected continuous rear walkway is removed and only the far background uses parallax
+- Role animation for the plaza mechanic and water attendant, plus a short stop-and-turn patrol
+  for the clean-water carrier
+- Tique's approved sprite presentation reduced to 70% of its previous screen size while gameplay
+  movement and combat metrics remain unchanged
 
 ## Controls
 
@@ -43,6 +55,8 @@ The approved Tique animation boundary remains Git commit `c6c7862`.
 - Open the isolated combat lab: `F3`; training targets restore indefinitely
 
 Open `Assets/Clockwork/Scenes/CaligoMaintenanceShaft.unity` and press Play.
+Run `Play CLOCKWORK Combat Lab.cmd` to open the isolated combat lab directly.
+Run `Play CLOCKWORK Caligo Plaza.cmd` to open the proposal environment and ambient NPC test directly.
 The project targets Standalone/Win64 at 1280x720 landscape. The Device Simulator may draw a
 device frame, but the game orientation remains landscape; use the Game tab for desktop play.
 Editor play and the Windows player reapply the 1280x720 window profile at startup.
@@ -50,14 +64,18 @@ Editor play and the Windows player reapply the 1280x720 window profile at startu
 ## Placeholder boundary
 
 `tile-placeholder-32.png`, the repair workbench block, and gate blocks are temporary technical visuals.
-Replace them with final 32 PPU industrial RuleTile art, UI, and audio without changing collision or progression scripts.
-No external character, enemy, boss, UI, or sound asset has been added.
+Replace them with production PPU 64 industrial RuleTile art and UI without changing collision or progression scripts.
+Curated third-party prototype VFX and sound assets live under `Assets/Clockwork/ThirdParty/Curated` with their licenses.
+
+Production measurements are defined in `docs/art/production-visual-metrics-v1.md`. Current
+32 PPU imports and per-object transform scales remain experiment data until the Caligo benchmark
+room is migrated and verified; do not copy those values into new production rooms.
 
 The web prototype remains the visual reference. Only Tique assets listed in
 `Assets/Clockwork/approved-assets.json` are used by the Unity player prefab.
 
 The current movement speed (`2.5` units/second) preserves prototype camera-scale parity.
-Re-tune it when the final 32 PPU room metrics and tile dimensions are locked.
+Re-tune it during the production-metrics benchmark without changing the approved feel blindly.
 
 ## Build verification
 

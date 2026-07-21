@@ -1,8 +1,8 @@
 # CLOCKWORK Current State
 
-Updated: 2026-07-20
+Updated: 2026-07-22
 Branch: `main`
-Last pushed base: `8d9de87`
+Previous pushed base: `1564452`
 
 ## Playable Route
 
@@ -43,9 +43,23 @@ Last pushed base: `8d9de87`
 ## Art Status
 
 - Approved Tique action assets remain locked.
-- Plaza uses `caligo-plaza-concept-v1.png` as a proposal benchmark only.
+- Production visual metrics are locked in `docs/art/production-visual-metrics-v1.md`:
+  `640x360`, `PPU 64`, a `10 x 5.625` world-unit camera, and a `42-48 px` visible Tique.
+- Approved Tique frames remain unchanged. Their current Unity presentation scale is 70% of the
+  previous prototype value only for comparison against the existing 32 PPU environment.
+- Plaza uses proposal `03-caligo` far/mid layers and modular platform dressing. The previous
+  `caligo-plaza-concept-v1.png` remains a benchmark source but is no longer the generated
+  plaza scene's only background.
+- Current values such as background `0.625`, NPC `0.32`, and Tique `0.21` are proposal
+  experiment values, not production scale locks. New production assets must use the shared
+  PPU and authored dimensions rather than copying these transform scales.
+- The continuous rear walkway experiment was rejected and removed. The mid structures and
+  NPC activity plane are fixed in room space at `y=-1.75`; only the far layer uses parallax.
+- Three proposal background residents occupy work-specific positions: mechanic, water-ration
+  attendant, and clean-water carrier. Only the carrier patrols within a short rear activity route.
 - Plaza collision is invisible greybox data, independent of the concept image.
-- Final modular 32 PPU environment art is not approved or implemented.
+- These modular 32 PPU environment and resident assets are implemented for evaluation but are
+  not approved/canon production art. The first migration target is one Caligo benchmark room.
 
 ## Source Ownership
 

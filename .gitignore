@@ -9,6 +9,10 @@
 /unity/**/Builds/
 /unity/*.log
 
+# Locally installed third-party assets that prohibit redistribution
+/unity/ClockworkPrototype/Assets/Clockwork/LocalAssets/
+/unity/ClockworkPrototype/Assets/Clockwork/LocalAssets.meta
+
 # Local IDE state
 .vs/
 *.csproj

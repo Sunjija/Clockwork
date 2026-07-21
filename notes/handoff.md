@@ -1,9 +1,29 @@
 # CLOCKWORK Handoff
 
-Updated: 2026-07-20 (Asia/Seoul)
+Updated: 2026-07-22 (Asia/Seoul)
 
 > Compact entry point: read `notes/current-state.md`, `notes/next-task.md`, and
 > `notes/verification.md` first. This file is the chronological archive.
+
+## 2026-07-22 Caligo environment and ambient NPC proposal
+
+- Imported the generated ACT1 Caligo far/mid backgrounds, modular platform art, and animated
+  mechanic/ration/carrier NPC frames into Unity. These remain `[proposal]` assets, not canon art.
+- Rebuilt `CaligoPlaza` with separate far/mid backgrounds, grounded platform visuals, three
+  rear-plane ambient NPCs, restrained local work lights, and one short NPC patrol route.
+- Locked future production measurements in `docs/art/production-visual-metrics-v1.md`:
+  `640x360`, `PPU 64`, a `10 x 5.625` camera, and a `42-48 px` visible Tique. Existing
+  background `0.625`, NPC `0.32`, and Tique `0.21` values remain comparison experiments.
+- Rejected and removed the continuous rear walkway. The mid structure and NPC activity plane
+  now stay fixed in room space at `y=-1.75`; only the far background receives parallax.
+- Reduced Tique's rendered scale to 70% of the prior prototype value (`0.30` to `0.21`) without
+  changing movement, collision, or combat metrics.
+- Added `Play CLOCKWORK Caligo Plaza.cmd` and the isolated `-clockworkCaligoPreview` route.
+  The direct preview now survives the scene transition and logs `CLOCKWORK_CALIGO_PREVIEW_READY`.
+- Corrected the generated platform kit's 7 px transparent top padding so visible platform tops
+  align with the collision surface. Runtime reports Tique grounded at `y=-1.99`.
+- Pass: approved scene regeneration, Windows x64 build, and full isolated runtime smoke test
+  (`CLOCKWORK_WINDOWS_BUILD_OK`, `CLOCKWORK_RUNTIME_SMOKE_OK`, plaza residents `3`).
 
 ## 2026-07-20 implementation structure refactor
 

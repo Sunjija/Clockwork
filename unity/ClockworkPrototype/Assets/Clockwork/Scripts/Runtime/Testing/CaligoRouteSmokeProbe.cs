@@ -52,17 +52,43 @@ namespace Clockwork
             {
                 yield return new WaitForSecondsRealtime(1f);
                 TiqueMotor plazaMotor = FindAnyObjectByType<TiqueMotor>();
+                SpriteRenderer tiqueRenderer = plazaMotor == null
+                    ? null
+                    : plazaMotor.GetComponentInChildren<SpriteRenderer>();
+                AmbientNpc2D[] residents = FindObjectsByType<AmbientNpc2D>(FindObjectsSortMode.None);
+                ParallaxLayer2D[] plazaLayers = FindObjectsByType<ParallaxLayer2D>(FindObjectsSortMode.None);
+                SpriteRenderer plazaFloor = GameObject.Find("FloorLeft")?.GetComponent<SpriteRenderer>();
+                Transform plazaMidLayer = GameObject.Find("CaligoMidLayer")?.transform;
+                GameObject rejectedRearWalkway = GameObject.Find("RearWalkway3");
+                Camera plazaCamera = Camera.main;
                 RepairSavePoint plazaCheckpoint = FindAnyObjectByType<RepairSavePoint>();
                 RoomGate[] plazaGates = FindObjectsByType<RoomGate>(FindObjectsSortMode.None);
                 plazaCheckpoint?.Activate();
                 plazaValid = plazaMotor != null && plazaMotor.Grounded
                     && Mathf.Abs(plazaMotor.transform.position.x - 6f) < 1.2f
+                    && tiqueRenderer != null
+                    && Mathf.Abs(Mathf.Abs(tiqueRenderer.transform.localScale.x) - 0.21f) < 0.01f
                     && plazaCheckpoint != null && plazaCheckpoint.Activated
                     && session.Current.roomId == "caligo-plaza"
+                    && residents.Length == 3
+                    && residents.Count(resident => resident.IsPatrolling) == 1
+                    && residents.All(resident => resident.IdleFrameCount >= 4 && resident.RoleFrameCount >= 4)
+                    && residents.All(resident => Mathf.Abs(resident.transform.position.y + 1.75f) < 0.01f)
+                    && plazaLayers.Length >= 2
+                    && plazaMidLayer != null
+                    && Mathf.Abs(plazaMidLayer.localScale.x - 0.625f) < 0.01f
+                    && rejectedRearWalkway == null
                     && plazaGates.Any(gate => gate.DestinationRoomId == "caligo-drop-shaft");
                 Debug.Log($"CLOCKWORK_PLAZA_PROBE valid={plazaValid} " +
                     $"pos={(plazaMotor == null ? Vector3.zero : plazaMotor.transform.position)} " +
-                    $"checkpoint={(plazaCheckpoint != null && plazaCheckpoint.Activated)}");
+                    $"tiqueScale={(tiqueRenderer == null ? 0f : Mathf.Abs(tiqueRenderer.transform.localScale.x))} " +
+                    $"tiqueBounds={(tiqueRenderer == null ? default : tiqueRenderer.bounds)} " +
+                    $"floorBounds={(plazaFloor == null ? default : plazaFloor.bounds)} " +
+                    $"backgroundScale={(plazaMidLayer == null ? 0f : plazaMidLayer.localScale.x)} " +
+                    $"rearWalkwayRemoved={rejectedRearWalkway == null} " +
+                    $"tiqueScreen={(plazaCamera == null || plazaMotor == null ? Vector3.zero : plazaCamera.WorldToScreenPoint(plazaMotor.transform.position))} " +
+                    $"checkpoint={(plazaCheckpoint != null && plazaCheckpoint.Activated)} " +
+                    $"residents={residents.Length} parallax={plazaLayers.Length}");
             }
 
             bool dropShaftValid = false;

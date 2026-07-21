@@ -934,7 +934,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.21000001, y: 0.21000001, z: 0.21000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3155405012736260533}
@@ -1343,6 +1343,9 @@ GameObject:
   - component: {fileID: 6752796675440832060}
   - component: {fileID: 3256604929471440032}
   - component: {fileID: 7256406381249397050}
+  - component: {fileID: 5374328092110939541}
+  - component: {fileID: 8239580913069765605}
+  - component: {fileID: 900630487334941439}
   m_Layer: 0
   m_Name: TiqueApproved
   m_TagString: Untagged
@@ -1661,6 +1664,165 @@ MonoBehaviour:
   duration: 0.42
   centerHeight: 0.42
   waveColor: {r: 1, g: 0.12, b: 0.08, a: 1}
+--- !u!82 &5374328092110939541
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527064714624658134}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.9
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &8239580913069765605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527064714624658134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e1370c998308b4eb192e28792cfce0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueAudioFeedback
+  combat: {fileID: 9089003832585336234}
+  audioSource: {fileID: 5374328092110939541}
+  fistImpacts:
+  - {fileID: 8300000, guid: a954c6b639912de439f4868927c1df24, type: 3}
+  - {fileID: 8300000, guid: 8d578dbeeb5adea4ea4ab60d83c5d53a, type: 3}
+  - {fileID: 8300000, guid: 42687fa53890b12449ca25c67fe3bfa9, type: 3}
+  - {fileID: 8300000, guid: 19318b3017a34574ba38eb18488bdb41, type: 3}
+  - {fileID: 8300000, guid: 38fcc37987e8bec4299d5f7aff7bacdf, type: 3}
+  fistHeavyImpacts:
+  - {fileID: 8300000, guid: be36659a510cfe44ba5298230e8a4539, type: 3}
+  - {fileID: 8300000, guid: e9d71bad0afa2c44da82c34e6b6e7768, type: 3}
+  - {fileID: 8300000, guid: a1a15430df1210d48a10f4313e6f11be, type: 3}
+  - {fileID: 8300000, guid: 91da346d0aedd124ea429c25a254c35c, type: 3}
+  - {fileID: 8300000, guid: af839b9ffd8f5eb4d81e428203d39b50, type: 3}
+  greatswordSwings:
+  - {fileID: 8300000, guid: b1fad71c9b80d7747a9cde1ee491ada0, type: 3}
+  - {fileID: 8300000, guid: f04f0305aeef08a4f8ca1d09d65ce0d1, type: 3}
+  - {fileID: 8300000, guid: 8574c7da3977ff24e9ed3bc60d07058b, type: 3}
+  - {fileID: 8300000, guid: 89fc369de741383439bda099b3d5841d, type: 3}
+  - {fileID: 8300000, guid: edc1ea1f4be80d74cbb4cadacc4a427f, type: 3}
+  hammerImpacts:
+  - {fileID: 8300000, guid: 8080c054a12891e4e9cb0fefe84378ab, type: 3}
+  - {fileID: 8300000, guid: 6878d3dc0622a6849965ffd310881a24, type: 3}
+  - {fileID: 8300000, guid: 93cc53549de5639498f2bfa25d2c23f6, type: 3}
+  - {fileID: 8300000, guid: e1130c15057d74a488e7d620e0164978, type: 3}
+  - {fileID: 8300000, guid: 292680f64aa16954fbbf6e80acee420d, type: 3}
+  lentiumBursts:
+  - {fileID: 8300000, guid: 16f926452ca0734469d44c0d21331332, type: 3}
+  - {fileID: 8300000, guid: b57857e5f96119b43939060f89883e5f, type: 3}
+  - {fileID: 8300000, guid: 50c172899e34a1d468d8e577faedb26b, type: 3}
+  - {fileID: 8300000, guid: 078d9b9b228e50f479031656cafed0ec, type: 3}
+  - {fileID: 8300000, guid: c89e13ad14be40c409ea443ae0bdd817, type: 3}
+--- !u!114 &900630487334941439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527064714624658134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13fadbf53005b74d815b9c91f31c3d0, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Clockwork.TiqueSpriteVfx
+  combat: {fileID: 9089003832585336234}
+  motor: {fileID: 1298557700848288028}
+  hitSheet: {fileID: 2800000, guid: 302184c56ca3c7c4883a1a61d60ff232, type: 3}
+  sparkSheet: {fileID: 2800000, guid: 47055431ca01a694ab5c6669982cb3f5, type: 3}
+  explosionSheet: {fileID: 2800000, guid: 7848bfebb4ec3bb41840cb410d606837, type: 3}
+  slashSheet: {fileID: 2800000, guid: 6690fb0523b626249855a41bb86def71, type: 3}
 --- !u!1 &5783797207248289733
 GameObject:
   m_ObjectHideFlags: 0

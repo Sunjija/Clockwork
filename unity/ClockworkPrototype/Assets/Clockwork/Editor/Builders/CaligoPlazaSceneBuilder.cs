@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Clockwork;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -12,6 +13,14 @@ namespace ClockworkEditor
 {
     public static partial class ApprovedPrototypeBuilder
     {
+        private const float CaligoPlatformTopPadding = 7f / 32f;
+        private const float CaligoBackgroundScale = 0.625f;
+        private const float CaligoFarBackgroundY = 0.94f;
+        private const float CaligoMidBackgroundY = -0.36f;
+        private const float CaligoNpcFootY = -1.75f;
+        private const float CaligoNpcVisualScale = 0.32f;
+        private const float CaligoNpcVisualY = 0.59f;
+
         private static void BuildPlazaScene(GameObject playerPrefab, TileBase tile, RoomDefinition room)
         {
             Scene scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
@@ -20,13 +29,12 @@ namespace ClockworkEditor
             new GameObject("PrototypeBootstrap").AddComponent<PrototypeBootstrap>();
             new GameObject("GameSession").AddComponent<GameSession>();
             BuildPlazaTilemap(tile);
-            BuildPlazaBackground();
 
             GameObject lightObject = new GameObject("PlazaGlobalLight2D");
             Light2D light = lightObject.AddComponent<Light2D>();
             light.lightType = Light2D.LightType.Global;
-            light.color = new Color(0.9f, 0.72f, 0.5f);
-            light.intensity = 0.76f;
+            light.color = new Color(0.96f, 0.84f, 0.7f);
+            light.intensity = 1.02f;
 
             GameObject player = PrefabUtility.InstantiatePrefab(playerPrefab) as GameObject;
             if (player == null) throw new InvalidOperationException("Unable to instantiate approved Tique prefab.");
@@ -43,6 +51,8 @@ namespace ClockworkEditor
             checkpoint.GetComponentInChildren<SpriteRenderer>().enabled = false;
 
             Camera camera = BuildCamera(player.transform, room.CameraBounds);
+            BuildPlazaEnvironment(camera);
+            BuildPlazaNpcLayer();
             PrototypeHud hud = new GameObject("PrototypeHUD").AddComponent<PrototypeHud>();
             hud.Configure(player.GetComponent<TiqueCombat>(), checkpoint, player.GetComponent<TiqueHealth>());
             EditorSceneManager.SaveScene(scene, PlazaScenePath);
@@ -152,22 +162,153 @@ namespace ClockworkEditor
             structure.transform.localScale = new Vector3(size.x, size.y, 1f);
         }
 
-        private static void BuildPlazaBackground()
+        private static void BuildPlazaEnvironment(Camera camera)
         {
-            Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(PlazaBackgroundPath);
-            if (sprite == null) throw new InvalidOperationException("Caligo plaza concept background was not imported.");
+            GameObject root = new GameObject("CaligoPlazaEnvironment");
+            BuildPlazaBackgroundLayer(
+                root.transform, camera, "Far", CaligoFarPath, -120, 0.75f, 0.25f,
+                CaligoFarBackgroundY, new Color(1.35f, 1.35f, 1.35f, 1f));
+            BuildPlazaBackgroundLayer(
+                root.transform, camera, "Mid", CaligoMidPath, -80, 0f, 0f,
+                CaligoMidBackgroundY, new Color(1.2f, 1.2f, 1.2f, 1f));
 
-            GameObject gameObject = new GameObject("CaligoPlazaConceptBackground");
+            BuildGroundedPlazaSprite(root.transform, "FloorLeft", CaligoPlatformRoot + "/strip-4.png", -2.1f, -2f, 1);
+            BuildGroundedPlazaSprite(root.transform, "FloorRight", CaligoPlatformRoot + "/strip-2.png", 4.85f, -2f, 1);
+            BuildGroundedPlazaSprite(root.transform, "WestStep", CaligoPlatformRoot + "/stair-left.png", -1.5f, -1.75f, 1);
+            BuildGroundedPlazaSprite(root.transform, "EastLedge", CaligoPlatformRoot + "/low-ledge.png", 2.65f, -1.75f, 1);
+        }
+
+        private static void BuildPlazaBackgroundLayer(
+            Transform parent,
+            Camera camera,
+            string name,
+            string spritePath,
+            int sortingOrder,
+            float horizontalFactor,
+            float verticalFactor,
+            float verticalPosition,
+            Color color)
+        {
+            Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePath);
+            if (sprite == null) throw new InvalidOperationException($"Missing Caligo background layer: {spritePath}");
+
+            GameObject gameObject = new GameObject($"Caligo{name}Layer");
+            gameObject.transform.SetParent(parent, false);
+            gameObject.transform.position = new Vector3(0f, verticalPosition, 5f);
+            gameObject.transform.localScale = Vector3.one * CaligoBackgroundScale;
+
+            for (int panelIndex = -1; panelIndex <= 1; panelIndex++)
+            {
+                GameObject panel = new GameObject($"Panel{panelIndex + 2}");
+                panel.transform.SetParent(gameObject.transform, false);
+                panel.transform.localPosition = new Vector3(sprite.bounds.size.x * panelIndex, 0f, 0f);
+                SpriteRenderer renderer = panel.AddComponent<SpriteRenderer>();
+                renderer.sprite = sprite;
+                renderer.sortingOrder = sortingOrder;
+                renderer.color = color;
+            }
+
+            ParallaxLayer2D parallax = gameObject.AddComponent<ParallaxLayer2D>();
+            parallax.Configure(camera, horizontalFactor, verticalFactor);
+        }
+
+        private static void BuildGroundedPlazaSprite(
+            Transform parent, string name, string spritePath, float x, float topY, int sortingOrder)
+        {
+            Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(spritePath);
+            if (sprite == null) throw new InvalidOperationException($"Missing Caligo platform sprite: {spritePath}");
+
+            GameObject gameObject = new GameObject(name);
+            gameObject.transform.SetParent(parent, false);
+            gameObject.transform.position = new Vector3(
+                x, topY - sprite.bounds.max.y + CaligoPlatformTopPadding, 0f);
             SpriteRenderer renderer = gameObject.AddComponent<SpriteRenderer>();
             renderer.sprite = sprite;
-            renderer.sortingOrder = -100;
+            renderer.sortingOrder = sortingOrder;
+        }
 
-            float scale = 14f / sprite.bounds.size.x;
-            float height = sprite.bounds.size.y * scale;
-            float sourceGroundFromBottom = (sprite.texture.height - 700f) / 100f * scale;
-            float localGround = sourceGroundFromBottom - height * 0.5f;
-            gameObject.transform.localScale = Vector3.one * scale;
-            gameObject.transform.position = new Vector3(0f, -2f - localGround, 5f);
+        private static void BuildPlazaNpcLayer()
+        {
+            GameObject root = new GameObject("CaligoAmbientResidents");
+            BuildAmbientNpc(
+                root.transform,
+                "PipeMechanic",
+                new Vector2(-4.45f, CaligoNpcFootY),
+                CaligoNpcRoot + "/PipeMechanic/Frames/Idle",
+                CaligoNpcRoot + "/PipeMechanic/Frames/RepairWork",
+                4f, 6f, false, 0f, 0f);
+            BuildAmbientNpc(
+                root.transform,
+                "WaterRationAttendant",
+                new Vector2(0.65f, CaligoNpcFootY),
+                CaligoNpcRoot + "/WaterRationAttendant/Frames/Idle",
+                CaligoNpcRoot + "/WaterRationAttendant/Frames/RationWork",
+                4f, 5f, false, 0f, 0f);
+            BuildAmbientNpc(
+                root.transform,
+                "CleanWaterCarrier",
+                new Vector2(4.25f, CaligoNpcFootY),
+                CaligoNpcRoot + "/CleanWaterCarrier/Frames/Idle",
+                CaligoNpcRoot + "/CleanWaterCarrier/Frames/WalkRight",
+                4f, 8f, true, 0.72f, 0.3f);
+        }
+
+        private static void BuildAmbientNpc(
+            Transform parent,
+            string name,
+            Vector2 footPosition,
+            string idleFolder,
+            string roleFolder,
+            float idleFps,
+            float roleFps,
+            bool patrol,
+            float patrolDistance,
+            float patrolSpeed)
+        {
+            Sprite[] idle = LoadSprites(idleFolder);
+            Sprite[] role = LoadSprites(roleFolder);
+            if (idle.Length == 0 || role.Length == 0)
+            {
+                throw new InvalidOperationException($"Missing animation frames for Caligo NPC {name}.");
+            }
+
+            GameObject npc = new GameObject(name);
+            npc.transform.SetParent(parent, false);
+            npc.transform.position = new Vector3(footPosition.x, footPosition.y, 1f);
+
+            GameObject visual = new GameObject("Visual");
+            visual.transform.SetParent(npc.transform, false);
+            visual.transform.localPosition = new Vector3(0f, CaligoNpcVisualY, 0f);
+            visual.transform.localScale = Vector3.one * CaligoNpcVisualScale;
+            SpriteRenderer renderer = visual.AddComponent<SpriteRenderer>();
+            renderer.sprite = idle[0];
+            renderer.sortingOrder = -40;
+            renderer.color = new Color(0.95f, 0.96f, 1f, 0.98f);
+
+            GameObject workLightObject = new GameObject("WorkLight");
+            workLightObject.transform.SetParent(npc.transform, false);
+            workLightObject.transform.localPosition = new Vector3(0f, 0.52f, 0f);
+            Light2D workLight = workLightObject.AddComponent<Light2D>();
+            workLight.lightType = Light2D.LightType.Point;
+            workLight.color = new Color(1f, 0.72f, 0.42f);
+            workLight.intensity = 0.34f;
+            workLight.pointLightInnerRadius = 0.1f;
+            workLight.pointLightOuterRadius = 0.82f;
+
+            AmbientNpc2D ambient = npc.AddComponent<AmbientNpc2D>();
+            ambient.Configure(
+                renderer, idle, role, idleFps, roleFps, 3.5f, 6f,
+                patrol, patrolDistance, patrolSpeed);
+        }
+
+        private static Sprite[] LoadSprites(string folder)
+        {
+            return AssetDatabase.FindAssets("t:Sprite", new[] { folder })
+                .Select(AssetDatabase.GUIDToAssetPath)
+                .OrderBy(path => path, StringComparer.Ordinal)
+                .Select(path => AssetDatabase.LoadAssetAtPath<Sprite>(path))
+                .Where(sprite => sprite != null)
+                .ToArray();
         }
     }
 }

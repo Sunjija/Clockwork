@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "proposal",
+  "id": "caligo-clean-water-carrier",
+  "display_name": "Clean-water Carrier",
+  "canvas": {
+    "width": 128,
+    "height": 128
+  },
+  "pixels_per_unit": 32,
+  "default_facing": "right",
+  "states": [
+    {
+      "name": "Idle",
+      "source_name": "idle",
+      "fps": 4,
+      "loop": true,
+      "frames": [
+        "Frames/Idle/00.png",
+        "Frames/Idle/01.png",
+        "Frames/Idle/02.png",
+        "Frames/Idle/03.png"
+      ]
+    },
+    {
+      "name": "WalkRight",
+      "source_name": "walk-right",
+      "fps": 8,
+      "loop": true,
+      "frames": [
+        "Frames/WalkRight/00.png",
+        "Frames/WalkRight/01.png",
+        "Frames/WalkRight/02.png",
+        "Frames/WalkRight/03.png",
+        "Frames/WalkRight/04.png",
+        "Frames/WalkRight/05.png"
+      ]
+    }
+  ]
+}

@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clockwork.EnemyHealth
   maxHealth: 3
+  indestructible: 0
   flashDuration: 0.12
   hitKnockback: {x: 2.6, y: 2.2}
 --- !u!114 &8828314578093584476
