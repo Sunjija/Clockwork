@@ -1,0 +1,59 @@
+{
+  "status": "[proposal]",
+  "mapNode": "act1-room-009",
+  "sceneGroup": "CaligoVillageExterior",
+  "sourceStrategy": "single 1880px panorama cropped once to 1280x360",
+  "production": {
+    "canvas": "1280x360",
+    "pixelsPerUnit": 64,
+    "cameraReference": "640x360",
+    "cameraWorldSize": "10x5.625",
+    "cameraCentersWorldX": [
+      -5,
+      5
+    ],
+    "tiqueVisibleHeight": "42-48px"
+  },
+  "zones": [
+    {
+      "name": "village-square-center",
+      "rangeDesignX": [
+        0,
+        640
+      ]
+    },
+    {
+      "name": "east-service-workshop-approach",
+      "rangeDesignX": [
+        640,
+        1280
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "side": "right",
+      "type": "scene",
+      "to": "act1-room-008",
+      "anchor": "GateArch"
+    },
+    {
+      "feature": "workshop-stair",
+      "type": "scene",
+      "to": "act1-room-010",
+      "anchor": "WorkshopStair"
+    }
+  ],
+  "layers": [
+    {
+      "file": "00-plaza-approach-environment.png",
+      "role": "environment",
+      "sorting": -100
+    },
+    {
+      "file": "30-workshop-door.png",
+      "role": "interactable",
+      "sorting": -20
+    }
+  ]
+}

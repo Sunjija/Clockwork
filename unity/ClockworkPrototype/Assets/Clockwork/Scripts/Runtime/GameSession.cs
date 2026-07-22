@@ -62,7 +62,10 @@ namespace Clockwork
             bool isolatedOpening = arguments.Contains("-clockworkSmokeTest")
                 || arguments.Contains("-clockworkFreshOpening")
                 || arguments.Contains("-clockworkCombatLab")
-                || arguments.Contains("-clockworkCaligoPreview");
+                || arguments.Contains("-clockworkCaligoPreview")
+                || arguments.Contains("-clockworkCaligoRoutePreview")
+                || arguments.Contains("-clockworkBridgeGatePreview")
+                || arguments.Contains("-clockworkCaligoRouteSmoke");
             diskAccessEnabled = !isolatedOpening;
             if (diskAccessEnabled)
             {

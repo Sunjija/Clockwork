@@ -1,0 +1,33 @@
+{
+  "status": "proposal",
+  "roomId": "act1-room-003",
+  "mapNode": "scrap-plain",
+  "canvas": [
+    3584,
+    360
+  ],
+  "ppu": 64,
+  "camera": [
+    640,
+    360
+  ],
+  "groundY": 223,
+  "panelWidth": 1280,
+  "overlap": 128,
+  "worldWidth": 56,
+  "layers": [
+    "60-foreground.png",
+    "40-props.png",
+    "30-gameplay.png",
+    "20-rear-structures.png",
+    "10-bg-mid.png",
+    "00-bg-far.png",
+    "80-fx.png"
+  ],
+  "constraints": [
+    "no water",
+    "no enemies",
+    "no underground robots",
+    "no baked characters"
+  ]
+}

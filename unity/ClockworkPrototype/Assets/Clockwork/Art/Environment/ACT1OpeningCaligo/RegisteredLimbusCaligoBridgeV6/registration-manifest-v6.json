@@ -1,0 +1,94 @@
+{
+  "status": "[proposal]",
+  "mapNode": "act1-room-006",
+  "sceneGroup": "LimbusCaligoBridge",
+  "scope": "Shared Caligo gate-to-bridge threshold benchmark; canon encounter remains in the existing scene",
+  "production": {
+    "canvas": "1280x360",
+    "pixelsPerUnit": 64,
+    "cameraWorldSize": "10x5.625",
+    "cameraTravelX": [
+      -5,
+      5
+    ],
+    "gameplayGroundY": 223,
+    "sourceCrop": {
+      "top": 134,
+      "height": 499
+    },
+    "collisionProfile": [
+      [
+        0,
+        223
+      ],
+      [
+        1280,
+        223
+      ]
+    ]
+  },
+  "zoning": [
+    {
+      "range": "x=0..360",
+      "role": "Level shared Caligo gate threshold",
+      "npc": "none",
+      "emotion": "last maintained light before the abandoned crossing"
+    },
+    {
+      "range": "x=360..1280",
+      "role": "neutral bridge crossing",
+      "npc": "none",
+      "enemy": "required in canon opening; not baked into environment art",
+      "emotion": "exposure, dwindling power, and monumental neglect"
+    }
+  ],
+  "boundaries": [
+    {
+      "side": "left",
+      "type": "scene",
+      "to": "act1-room-008",
+      "fromAnchor": "CaligoGateExit",
+      "toAnchor": "BridgeEntry"
+    },
+    {
+      "side": "right",
+      "type": "same-map-node continuation",
+      "to": "act1-room-006 bridge body",
+      "anchor": "LimbusRoute",
+      "status": "unresolved"
+    }
+  ],
+  "layers": [
+    {
+      "file": "00-bg-far.png",
+      "role": "dry far cavern",
+      "sorting": -100
+    },
+    {
+      "file": "10-bg-mid.png",
+      "role": "toxic basin and waterfall",
+      "sorting": -80
+    },
+    {
+      "file": "30-gameplay.png",
+      "role": "fixed gate and bridge structure",
+      "sorting": -40
+    },
+    {
+      "file": "40-props.png",
+      "role": "registered replaceable props",
+      "sorting": -20
+    },
+    {
+      "file": "80-fx.png",
+      "role": "registered toxic-water emissive pulse",
+      "sorting": -10
+    }
+  ],
+  "avoid": [
+    "Tique-like underground robots",
+    "baked NPCs or rats",
+    "water on the gameplay deck",
+    "unexplained unsupported structures"
+  ]
+}

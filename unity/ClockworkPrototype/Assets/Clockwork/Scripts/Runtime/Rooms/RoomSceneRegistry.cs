@@ -13,7 +13,13 @@ namespace Clockwork
             { "caligo-maintenance-shaft", "CaligoMaintenanceShaft" },
             { "caligo", "CaligoVillage" },
             { "caligo-plaza", "CaligoPlaza" },
-            { "caligo-drop-shaft", "CaligoDropShaft" }
+            { "caligo-drop-shaft", "CaligoDropShaft" },
+            { "caligo-village-exterior-registered", "CaligoVillageExteriorRegistered" },
+            { "caligo-gate-watch-registered", "CaligoGateWatchRegistered" },
+            { "limbus-caligo-bridge-registered", "LimbusCaligoBridgeRegistered" },
+            { "limbus-bridge-combat-registered", "LimbusBridgeCombatRegistered" },
+            { "limbus-scrap-plain-registered", "LimbusScrapPlainRegistered" },
+            { "morbi-workshop-registered", "MorbiWorkshopRegistered" }
         };
 
         public static bool Contains(string roomId)

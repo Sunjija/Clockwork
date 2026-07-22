@@ -285,6 +285,11 @@ namespace ClockworkEditor
                 bool industrialTile = path == IndustrialFloorSpritePath || path == IndustrialTopSpritePath
                     || path.StartsWith(AtomicSpriteRoot, StringComparison.Ordinal);
                 bool greatsword = path.Contains("/Greatsword/", StringComparison.Ordinal);
+                // Approved Tique frames are smooth-shaded painted art, not native low-res pixel
+                // art. Point filtering on them at the 42-48px production lock produces aliased,
+                // muddy results (see docs/art/production-visual-metrics-v1.md). Bilinear targets
+                // a softer, painterly small-sprite look instead.
+                bool tiqueApproved = path.StartsWith(ArtRoot, StringComparison.Ordinal);
                 Vector2 pivot = greatsword
                     ? new Vector2(240f / 640f, (512f - 430f) / 512f)
                     : conceptBackground || parallax || vfx || industrialTile
@@ -293,7 +298,7 @@ namespace ClockworkEditor
                 ConfigureTexture(
                     path,
                     pivot,
-                    conceptBackground ? FilterMode.Bilinear : FilterMode.Point,
+                    conceptBackground || tiqueApproved ? FilterMode.Bilinear : FilterMode.Point,
                     industrialTile ? 32 : conceptBackground || parallax ? 4096 : 1024,
                     industrialTile ? 128f : vfx ? 64f : 100f,
                     vfx);

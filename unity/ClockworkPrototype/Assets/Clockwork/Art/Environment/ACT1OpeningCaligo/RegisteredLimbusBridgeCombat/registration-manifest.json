@@ -1,0 +1,26 @@
+{
+  "status": "[proposal]",
+  "mapNode": "act1-room-006",
+  "sceneGroup": "LimbusBridgeCombat",
+  "scope": "central rat-combat subdivision inside the canon bridge node",
+  "canvas": "1280x360",
+  "pixelsPerUnit": 64,
+  "gameplayGroundY": 223,
+  "npc": "none",
+  "enemy": "required: finite three-rat runtime pack; never baked into art",
+  "leftBoundary": "BridgeBodyExit -> CombatEntry",
+  "rightBoundary": "LimbusContinuation unresolved in this benchmark",
+  "layers": [
+    "00-bg-far.png",
+    "10-bg-mid.png",
+    "30-gameplay.png",
+    "40-props.png",
+    "80-fx.png"
+  ],
+  "avoid": [
+    "Tique-like robots",
+    "baked rats",
+    "water on deck",
+    "unsupported bridge"
+  ]
+}

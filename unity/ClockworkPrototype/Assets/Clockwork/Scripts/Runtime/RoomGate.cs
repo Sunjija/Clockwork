@@ -11,6 +11,7 @@ namespace Clockwork
 
         public string GateId => gateId;
         public string DestinationRoomId => destinationRoomId;
+        public string DestinationSpawnId => destinationSpawnId;
         public bool IsOpen => string.IsNullOrEmpty(requiredFlag)
             || (GameSession.Instance != null && GameSession.Instance.HasFlag(requiredFlag));
         public bool IsDestinationBuilt => GameSession.RoomSceneExists(destinationRoomId);

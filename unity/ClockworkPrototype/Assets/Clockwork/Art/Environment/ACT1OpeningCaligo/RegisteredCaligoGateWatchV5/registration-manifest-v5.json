@@ -1,0 +1,39 @@
+{
+  "status": "[proposal]",
+  "mapNode": "act1-room-008",
+  "sceneGroup": "CaligoGateWatch",
+  "production": {
+    "canvas": "640x360",
+    "pixelsPerUnit": 64,
+    "cameraWorldSize": "10x5.625"
+  },
+  "boundaries": [
+    {
+      "side": "left",
+      "type": "scene",
+      "to": "act1-room-009",
+      "anchor": "VillageArch"
+    },
+    {
+      "side": "right",
+      "type": "scene",
+      "to": "act1-room-006",
+      "anchor": "BridgeEntry",
+      "status": "unresolved"
+    },
+    {
+      "side": "lower",
+      "type": "scene",
+      "to": "act1-room-012",
+      "anchor": "DropShaftGate",
+      "status": "unresolved"
+    }
+  ],
+  "layers": [
+    {
+      "file": "00-gate-watch-environment.png",
+      "role": "environment",
+      "sorting": -100
+    }
+  ]
+}

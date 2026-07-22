@@ -12,6 +12,9 @@ namespace Clockwork
     {
         [SerializeField] private GameObject ratPrefab;
         [SerializeField] private float postCombatShutdownDelay = 0.9f;
+        [SerializeField] private float ratSpawnY = -2f;
+        [SerializeField] private string rescueRoomId = "caligo";
+        [SerializeField] private string rescueSpawnId = "caligo-workshop";
 
         private readonly List<GameObject> rats = new List<GameObject>();
         private bool shutdownQueued;
@@ -24,9 +27,9 @@ namespace Clockwork
 
         private void Start()
         {
-            SpawnRat(new Vector2(2f, -2f), 1, 0.7f);
-            SpawnRat(new Vector2(-2.6f, -2f), 1, 0.95f);
-            SpawnRat(new Vector2(-3.6f, -2f), -1, 0.95f);
+            SpawnRat(new Vector2(2f, ratSpawnY), 1, 0.7f);
+            SpawnRat(new Vector2(-2.6f, ratSpawnY), 1, 0.95f);
+            SpawnRat(new Vector2(-3.6f, ratSpawnY), -1, 0.95f);
 
             if (!Repaired)
             {
@@ -97,8 +100,8 @@ namespace Clockwork
                 // Morbi repairs Tique during the blackout (canon: rescue -> workshop repair).
                 session.SetFlag(GameFlagIds.TiqueRepaired, true);
                 session.RuntimeHealth = -1;
-                session.SaveAt("caligo", "caligo-workshop");
-                session.LoadRoom("caligo", "caligo-workshop");
+                session.SaveAt(rescueRoomId, rescueSpawnId);
+                session.LoadRoom(rescueRoomId, rescueSpawnId);
             }
         }
 
@@ -129,6 +132,15 @@ namespace Clockwork
         public void Configure(GameObject prefab)
         {
             ratPrefab = prefab;
+        }
+
+        public void Configure(
+            GameObject prefab, float spawnY, string destinationRoom, string destinationSpawn)
+        {
+            ratPrefab = prefab;
+            ratSpawnY = spawnY;
+            rescueRoomId = destinationRoom;
+            rescueSpawnId = destinationSpawn;
         }
 #endif
     }

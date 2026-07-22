@@ -10,6 +10,8 @@ namespace Clockwork
         private static bool smokeStarted;
         private static bool combatLabStarted;
         private static bool caligoPreviewStarted;
+        private static bool bridgeGatePreviewStarted;
+        private static bool scrapPlainPreviewStarted;
 
         private void Awake()
         {
@@ -37,6 +39,22 @@ namespace Clockwork
                 caligoPreviewStarted = true;
                 DontDestroyOnLoad(gameObject);
                 StartCoroutine(OpenCaligoPreview());
+            }
+
+            if (!bridgeGatePreviewStarted
+                && System.Environment.GetCommandLineArgs().Contains("-clockworkBridgeGatePreview"))
+            {
+                bridgeGatePreviewStarted = true;
+                DontDestroyOnLoad(gameObject);
+                StartCoroutine(OpenBridgeGatePreview());
+            }
+
+            if (!scrapPlainPreviewStarted
+                && System.Environment.GetCommandLineArgs().Contains("-clockworkScrapPlainPreview"))
+            {
+                scrapPlainPreviewStarted = true;
+                DontDestroyOnLoad(gameObject);
+                StartCoroutine(OpenScrapPlainPreview());
             }
         }
 
@@ -88,6 +106,34 @@ namespace Clockwork
                 $"tiqueBounds={(tique == null ? default : tique.bounds)} " +
                 $"floorBounds={(floor == null ? default : floor.bounds)} " +
                 $"tiqueScreen={(camera == null || motor == null ? Vector3.zero : camera.WorldToScreenPoint(motor.transform.position))}");
+        }
+
+        private static IEnumerator OpenBridgeGatePreview()
+        {
+            yield return null;
+            if (SceneManager.GetActiveScene().name == "LimbusCaligoBridgeRegistered") yield break;
+
+            float deadline = Time.realtimeSinceStartup + 2f;
+            while (GameSession.Instance == null && Time.realtimeSinceStartup < deadline)
+            {
+                yield return null;
+            }
+            GameSession.Instance?.LoadRoom(
+                "limbus-caligo-bridge-registered", "CaligoGateExit");
+        }
+
+        private static IEnumerator OpenScrapPlainPreview()
+        {
+            yield return null;
+            if (SceneManager.GetActiveScene().name == "LimbusScrapPlainRegistered") yield break;
+
+            float deadline = Time.realtimeSinceStartup + 2f;
+            while (GameSession.Instance == null && Time.realtimeSinceStartup < deadline)
+            {
+                yield return null;
+            }
+            GameSession.Instance?.LoadRoom(
+                "limbus-scrap-plain-registered", "BridgeEntry");
         }
     }
 }

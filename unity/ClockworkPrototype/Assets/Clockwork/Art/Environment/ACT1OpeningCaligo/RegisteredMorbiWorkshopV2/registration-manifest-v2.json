@@ -1,0 +1,26 @@
+{
+  "status": "proposal",
+  "version": 2,
+  "roomId": "act1-room-010",
+  "referenceResolution": [
+    640,
+    360
+  ],
+  "pixelsPerUnit": 64,
+  "cameraUnits": [
+    10,
+    5.625
+  ],
+  "layers": [
+    "00-environment.png",
+    "30-shared-door.png",
+    "40-morbi.png"
+  ],
+  "parallax": "deferred; integrated master retained for visual coherence",
+  "sharedDoorModule": "SharedCaligoRouteV2/shared-doorway-assembly.png",
+  "sharedDoorAssemblyPixels": [
+    80,
+    96
+  ],
+  "sharedDoorVisibleHeight": 88
+}

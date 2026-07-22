@@ -16,11 +16,26 @@ namespace Clockwork.Editor
             }
 
             var importer = (TextureImporter)assetImporter;
+            bool usesProductionMetrics =
+                assetPath.Contains("/RegisteredWaterStorage/")
+                || assetPath.Contains("/RegisteredCaligoVillageExterior/")
+                || assetPath.Contains("/RegisteredMorbiWorkshop/")
+                || assetPath.Contains("/RegisteredCaligoVillageExteriorV2/")
+                || assetPath.Contains("/RegisteredCaligoVillageExteriorV3/")
+                || assetPath.Contains("/RegisteredCaligoVillageExteriorV4/")
+                || assetPath.Contains("/RegisteredCaligoVillagePlazaV5/")
+                || assetPath.Contains("/RegisteredCaligoGateWatchV5/")
+                || assetPath.Contains("/RegisteredLimbusCaligoBridgeV6/")
+                || assetPath.Contains("/RegisteredLimbusBridgeCombat/")
+                || assetPath.Contains("/RegisteredLimbusScrapPlainGreybox/")
+                || assetPath.Contains("/RegisteredLimbusScrapPlain/")
+                || assetPath.Contains("/RegisteredMorbiWorkshopV2/")
+                || assetPath.Contains("/SharedCaligoRouteV2/");
             bool usesGroundPivot =
                 assetPath.Contains("/Platforms/") || assetPath.Contains("/Props/");
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Single;
-            importer.spritePixelsPerUnit = 32f;
+            importer.spritePixelsPerUnit = usesProductionMetrics ? 64f : 32f;
             importer.spritePivot = usesGroundPivot
                 ? new Vector2(0.5f, 0f)
                 : new Vector2(0.5f, 0.5f);
