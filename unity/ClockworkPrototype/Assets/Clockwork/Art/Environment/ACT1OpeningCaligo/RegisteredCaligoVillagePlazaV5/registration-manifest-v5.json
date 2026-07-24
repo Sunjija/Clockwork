@@ -6,6 +6,7 @@
   "production": {
     "canvas": "1280x360",
     "pixelsPerUnit": 64,
+    "sharpnessProfile": "crisp-v1",
     "cameraReference": "640x360",
     "cameraWorldSize": "10x5.625",
     "cameraCentersWorldX": [
@@ -51,9 +52,16 @@
       "sorting": -100
     },
     {
-      "file": "30-workshop-door.png",
+      "file": "../SharedCaligoRouteV2/shared-morbi-wood-door.png",
       "role": "interactable",
-      "sorting": -20
+      "sorting": -20,
+      "dimensions": "52x72",
+      "pivot": "bottom-center",
+      "filter": "Point",
+      "worldPosition": [
+        7.4765625,
+        -1.984375
+      ]
     }
   ]
 }

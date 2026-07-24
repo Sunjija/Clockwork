@@ -7,6 +7,7 @@
     360
   ],
   "ppu": 64,
+  "sharpnessProfile": "crisp-v1",
   "camera": [
     640,
     360

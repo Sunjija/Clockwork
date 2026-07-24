@@ -1,0 +1,35 @@
+{
+  "status": "[proposal] runtime-passed",
+  "asset": "shared-morbi-wood-door.png",
+  "role": "shared interactable door module",
+  "rooms": [
+    "act1-room-009",
+    "act1-room-010"
+  ],
+  "dimensions": [
+    52,
+    72
+  ],
+  "pixelsPerUnit": 64,
+  "pivot": "bottom-center",
+  "filter": "Point",
+  "materials": {
+    "leaf": "dark walnut vertical planks",
+    "frame": "blackened riveted iron",
+    "threshold": "restrained warm amber"
+  },
+  "source": {
+    "method": "built-in imagegen plus chroma-key removal and production downscale",
+    "workingRecord": "clockwork-art-team/work/golden-room-polish-v1",
+    "promptIntent": "compact human-scale Morbi workshop door shared identically inside and outside"
+  },
+  "renderingDirection": "downscaled painterly hybrid; no mixed native-pixel and raw-concept presentation",
+  "verification": {
+    "reference": "640x360",
+    "outputs": [
+      "1280x720",
+      "1920x1080"
+    ],
+    "portableSmoke": "pass"
+  }
+}

@@ -901,6 +901,34 @@ body.map-viewer-ready .flow {
   }
 }
 
+.chip.level {
+  border: 1px solid color-mix(in srgb, var(--copper, #b0713f) 72%, var(--sub));
+  background: color-mix(in srgb, var(--copper, #b0713f) 16%, var(--bg));
+  color: color-mix(in srgb, var(--copper, #b0713f) 72%, var(--txt));
+}
+
+.room[data-elevation="semi-basement"] {
+  box-shadow: inset 0 3px 0 rgba(176, 113, 63, 0.24);
+}
+
+.room[data-elevation="lower-service"] {
+  border-top-style: dashed;
+  box-shadow: inset 0 3px 0 rgba(176, 113, 63, 0.14);
+}
+
+.d.stair {
+  border-color: var(--copper, #b0713f);
+  box-shadow: 0 0 0 2px rgba(176, 113, 63, 0.2);
+}
+
+.d[data-transition="scene"] {
+  box-shadow: 0 0 0 2px rgba(63, 210, 199, 0.24);
+}
+
+.d.stair[data-transition="scene"] {
+  box-shadow: 0 0 0 2px rgba(176, 113, 63, 0.22), 0 0 0 4px rgba(63, 210, 199, 0.14);
+}
+
 @media print {
   @page {
     size: A3 portrait;

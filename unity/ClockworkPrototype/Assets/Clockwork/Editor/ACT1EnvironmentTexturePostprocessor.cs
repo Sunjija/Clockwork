@@ -32,7 +32,10 @@ namespace Clockwork.Editor
                 || assetPath.Contains("/RegisteredMorbiWorkshopV2/")
                 || assetPath.Contains("/SharedCaligoRouteV2/");
             bool usesGroundPivot =
-                assetPath.Contains("/Platforms/") || assetPath.Contains("/Props/");
+                assetPath.Contains("/Platforms/")
+                || assetPath.Contains("/Props/")
+                || assetPath.EndsWith(
+                    "/shared-morbi-wood-door.png", System.StringComparison.Ordinal);
             importer.textureType = TextureImporterType.Sprite;
             importer.spriteImportMode = SpriteImportMode.Single;
             importer.spritePixelsPerUnit = usesProductionMetrics ? 64f : 32f;

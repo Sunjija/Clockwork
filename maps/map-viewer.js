@@ -107,9 +107,10 @@
       room.dataset.nodeName = name;
       room.dataset.tags = tags.join(" ");
       const rewardSearch = [room.dataset.rewardType, room.dataset.rewardTier, room.dataset.firstClearReward, room.dataset.repeatableReward, room.dataset.choiceGroup].filter(Boolean).join(" ");
+      const spatialSearch = [room.dataset.zone, room.dataset.elevation, room.dataset.sceneGroup, room.dataset.note].filter(Boolean).join(" ");
       const art = regionArt.get(room.id);
       if (art) room.dataset.artRegion = art.id;
-      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")} ${rewardSearch} ${art?.title || ""}`.toLocaleLowerCase("ko");
+      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")} ${rewardSearch} ${spatialSearch} ${art?.title || ""}`.toLocaleLowerCase("ko");
       room.tabIndex = 0;
       room.setAttribute("role", "button");
       room.setAttribute("aria-label", `${name} 상세 보기`);
@@ -328,6 +329,10 @@
     updateInspectorArt(regionArt.get(room.id));
     inspector.querySelector(".map-node-inspector__meta").innerHTML = [
       ...room.dataset.tags.split(" ").filter(Boolean),
+      room.dataset.zone ? `구획 ${room.dataset.zone}` : "",
+      room.dataset.elevation ? `고도 ${room.dataset.elevation}` : "",
+      room.dataset.sceneGroup ? `씬 ${room.dataset.sceneGroup}` : "",
+      room.dataset.note ? `공간 메모 ${room.dataset.note}` : "",
       room.dataset.requires ? `필요 ${room.dataset.requires}` : "",
       room.dataset.triggerRequires ? `발동 ${room.dataset.triggerRequires}` : "",
       room.dataset.reward ? `보상 ${room.dataset.reward}` : "",
@@ -467,6 +472,10 @@
         name: roomName(room),
         tags: room.dataset.tags.split(" ").filter(Boolean),
         coordinates: coordinates(room),
+        zone: room.dataset.zone || null,
+        elevation: room.dataset.elevation || null,
+        sceneGroup: room.dataset.sceneGroup || null,
+        note: room.dataset.note || null,
         requires: room.dataset.requires || null,
         triggerRequires: room.dataset.triggerRequires || null,
         reward: room.dataset.reward || null,
@@ -498,10 +507,13 @@
         from: connection.dataset.from || null,
         to: connection.dataset.to || null,
         direction: connection.dataset.direction || null,
+        transition: connection.dataset.transition || null,
+        fromAnchor: connection.dataset.fromAnchor || null,
+        toAnchor: connection.dataset.toAnchor || null,
         requires: connection.dataset.requires || null,
         unlocks: connection.dataset.unlocks || null,
         oneWay: connection.classList.contains("oneway"),
-        label: connection.textContent.replace(/\s+/g, " ").trim() || null
+        label: connection.textContent.replace(/\s+/g, " ").trim() || connection.getAttribute("aria-label") || null
       }))
     };
   }

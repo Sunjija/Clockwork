@@ -18,6 +18,8 @@ namespace ClockworkEditor
             Root + "/Art/Environment/ACT1OpeningCaligo/RegisteredCaligoGateWatchV5";
         private const string RegisteredWorkshopArtRoot =
             Root + "/Art/Environment/ACT1OpeningCaligo/RegisteredMorbiWorkshopV2";
+        private const string RegisteredSharedArtRoot =
+            Root + "/Art/Environment/ACT1OpeningCaligo/SharedCaligoRouteV2";
         private const string RegisteredExteriorScenePath =
             Root + "/Scenes/CaligoVillageExteriorRegistered.unity";
         private const string RegisteredGateWatchScenePath =
@@ -31,30 +33,48 @@ namespace ClockworkEditor
         private readonly struct RouteLayerSpec
         {
             public RouteLayerSpec(string objectName, string fileName, int sortingOrder)
-                : this(objectName, fileName, sortingOrder, Vector2.zero)
+                : this(objectName, fileName, sortingOrder, Vector2.zero, null, false)
             {
             }
 
             public RouteLayerSpec(
                 string objectName, string fileName, int sortingOrder, Vector2 localPosition)
+                : this(objectName, fileName, sortingOrder, localPosition, null, false)
+            {
+            }
+
+            public RouteLayerSpec(
+                string objectName, string fileName, int sortingOrder, Vector2 localPosition,
+                string artRootOverride, bool groundPivot)
             {
                 ObjectName = objectName;
                 FileName = fileName;
                 SortingOrder = sortingOrder;
                 LocalPosition = localPosition;
+                ArtRootOverride = artRootOverride;
+                GroundPivot = groundPivot;
             }
 
             public string ObjectName { get; }
             public string FileName { get; }
             public int SortingOrder { get; }
             public Vector2 LocalPosition { get; }
+            public string ArtRootOverride { get; }
+            public bool GroundPivot { get; }
+
+            public string ResolvePath(string defaultArtRoot)
+            {
+                return $"{(string.IsNullOrEmpty(ArtRootOverride) ? defaultArtRoot : ArtRootOverride)}/{FileName}";
+            }
         }
 
         private static readonly RouteLayerSpec[] RegisteredExteriorLayers =
         {
             new RouteLayerSpec(
                 "Layer_00_PlazaApproachEnvironment", "00-plaza-approach-environment.png", -100),
-            new RouteLayerSpec("Layer_30_WorkshopDoor", "30-workshop-door.png", -20)
+            new RouteLayerSpec(
+                "Layer_30_SharedWoodDoor", "shared-morbi-wood-door.png", -20,
+                new Vector2(7.4765625f, -1.984375f), RegisteredSharedArtRoot, true)
         };
 
         private static readonly RouteLayerSpec[] RegisteredGateWatchLayers =
@@ -66,7 +86,9 @@ namespace ClockworkEditor
         private static readonly RouteLayerSpec[] RegisteredWorkshopLayers =
         {
             new RouteLayerSpec("Layer_00_Environment", "00-environment.png", -100),
-            new RouteLayerSpec("Layer_30_SharedDoor", "30-shared-door.png", -20),
+            new RouteLayerSpec(
+                "Layer_30_SharedWoodDoor", "shared-morbi-wood-door.png", -20,
+                new Vector2(-4.015625f, -1.40625f), RegisteredSharedArtRoot, true),
             new RouteLayerSpec("Layer_40_Morbi", "40-morbi.png", -5)
         };
 
@@ -286,13 +308,18 @@ namespace ClockworkEditor
         {
             foreach (RouteLayerSpec layer in layerSpecs)
             {
-                string path = $"{artRoot}/{layer.FileName}";
+                string path = layer.ResolvePath(artRoot);
                 if (AssetDatabase.LoadAssetAtPath<Texture2D>(path) == null)
                 {
                     throw new FileNotFoundException($"Missing Caligo route layer: {path}");
                 }
 
-                ConfigureTexture(path, new Vector2(0.5f, 0.5f), FilterMode.Point, maxSize, 64f);
+                ConfigureTexture(
+                    path,
+                    layer.GroundPivot ? new Vector2(0.5f, 0f) : new Vector2(0.5f, 0.5f),
+                    FilterMode.Point,
+                    maxSize,
+                    64f);
             }
         }
 
@@ -302,7 +329,7 @@ namespace ClockworkEditor
             GameObject root = new GameObject(rootName);
             foreach (RouteLayerSpec layer in layerSpecs)
             {
-                string path = $"{artRoot}/{layer.FileName}";
+                string path = layer.ResolvePath(artRoot);
                 Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
                 if (sprite == null) throw new InvalidOperationException($"Unable to load route layer: {path}");
 

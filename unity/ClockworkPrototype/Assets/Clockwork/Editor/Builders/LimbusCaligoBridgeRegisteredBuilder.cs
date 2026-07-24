@@ -29,7 +29,7 @@ namespace ClockworkEditor
             new RouteLayerSpec("Layer_10_BgMid", "10-bg-mid.png", -80),
             new RouteLayerSpec("Layer_30_Gameplay", "30-gameplay.png", -40),
             new RouteLayerSpec("Layer_40_Props", "40-props.png", -20),
-            new RouteLayerSpec("Layer_80_ToxicFx", "80-fx.png", -10)
+            new RouteLayerSpec("Layer_80_ToxicFx", "80-fx.png", -60)
         };
 
         private static readonly RouteLayerSpec[] RegisteredBridgeCombatLayers =
@@ -38,7 +38,7 @@ namespace ClockworkEditor
             new RouteLayerSpec("Layer_10_BgMid", "10-bg-mid.png", -80),
             new RouteLayerSpec("Layer_30_Gameplay", "30-gameplay.png", -40),
             new RouteLayerSpec("Layer_40_Props", "40-props.png", -20),
-            new RouteLayerSpec("Layer_80_ToxicFx", "80-fx.png", -10)
+            new RouteLayerSpec("Layer_80_ToxicFx", "80-fx.png", -60)
         };
 
         private static void BuildLimbusCaligoBridgeRegisteredScene(

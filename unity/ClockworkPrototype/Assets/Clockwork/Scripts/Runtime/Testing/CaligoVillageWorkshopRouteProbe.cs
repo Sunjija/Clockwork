@@ -14,7 +14,7 @@ namespace Clockwork
         private static readonly string[] PlazaLayerNames =
         {
             "Layer_00_PlazaApproachEnvironment",
-            "Layer_30_WorkshopDoor"
+            "Layer_30_SharedWoodDoor"
         };
 
         private static readonly string[] GateWatchLayerNames =
@@ -45,7 +45,7 @@ namespace Clockwork
         private static readonly string[] WorkshopLayerNames =
         {
             "Layer_00_Environment",
-            "Layer_30_SharedDoor",
+            "Layer_30_SharedWoodDoor",
             "Layer_40_Morbi"
         };
 
@@ -634,6 +634,7 @@ namespace Clockwork
                 "RegisteredBridgeLayers_1280x360_PPU64")?.transform;
             ValidateRegistration(
                 root, Camera.main, BridgeLayerNames, 1280, 360, failures, "bridge");
+            ValidateToxicFxBehindGameplay(root, failures, "bridge");
             TiqueMotor player = FindAnyObjectByType<TiqueMotor>();
             ValidatePlayerAt(player, expectedSpawn, failures, "bridge");
 
@@ -692,6 +693,7 @@ namespace Clockwork
             ValidateRegistration(
                 root, Camera.main, BridgeLayerNames, 1280, 360,
                 failures, "bridge-combat");
+            ValidateToxicFxBehindGameplay(root, failures, "bridge-combat");
             ValidatePlayerAt(
                 FindAnyObjectByType<TiqueMotor>(), expectedSpawn,
                 failures, "bridge-combat");
@@ -798,15 +800,33 @@ namespace Clockwork
                 }
 
                 Transform layer = renderer.transform;
-                if (layer.localPosition.sqrMagnitude > 0.000001f)
+                bool sharedDoor = layerName == "Layer_30_SharedWoodDoor";
+                Vector2 expectedPosition = sharedDoor
+                    ? prefix == "plaza"
+                        ? new Vector2(7.4765625f, -1.984375f)
+                        : new Vector2(-4.015625f, -1.40625f)
+                    : Vector2.zero;
+                if (Vector2.Distance(layer.localPosition, expectedPosition) > 0.0001f)
                     failures.Add($"{prefix}-position-{layerName}");
                 if ((layer.localScale - Vector3.one).sqrMagnitude > 0.000001f)
                     failures.Add($"{prefix}-scale");
                 Sprite sprite = renderer.sprite;
-                if (sprite == null || sprite.texture.width != expectedWidth
-                    || sprite.texture.height != expectedHeight)
+                int layerWidth = sharedDoor ? 52 : expectedWidth;
+                int layerHeight = sharedDoor ? 72 : expectedHeight;
+                if (sprite == null || sprite.texture.width != layerWidth
+                    || sprite.texture.height != layerHeight)
                 {
                     failures.Add($"{prefix}-canvas");
+                }
+                else if (sharedDoor
+                    && (Mathf.Abs(sprite.pivot.x - 26f) > 0.01f
+                        || Mathf.Abs(sprite.pivot.y) > 0.01f))
+                {
+                    failures.Add($"{prefix}-shared-door-pivot");
+                }
+                else if (renderer.sprite.texture.filterMode != FilterMode.Point)
+                {
+                    failures.Add($"{prefix}-painterly-filter");
                 }
                 else if (Mathf.Abs(sprite.pixelsPerUnit - 64f) > 0.001f)
                 {
@@ -859,6 +879,22 @@ namespace Clockwork
         {
             return FindObjectsByType<RoomGate>(FindObjectsSortMode.None)
                 .FirstOrDefault(gate => gate.GateId == id);
+        }
+
+        private static void ValidateToxicFxBehindGameplay(
+            Transform root, List<string> failures, string prefix)
+        {
+            SpriteRenderer gameplay = root == null
+                ? null
+                : root.Find("Layer_30_Gameplay")?.GetComponent<SpriteRenderer>();
+            SpriteRenderer toxicFx = root == null
+                ? null
+                : root.Find("Layer_80_ToxicFx")?.GetComponent<SpriteRenderer>();
+            if (gameplay == null || toxicFx == null
+                || toxicFx.sortingOrder >= gameplay.sortingOrder)
+            {
+                failures.Add($"{prefix}-toxic-fx-occludes-gameplay");
+            }
         }
 
         private static bool EnterGate(TiqueMotor player, RoomGate gate)

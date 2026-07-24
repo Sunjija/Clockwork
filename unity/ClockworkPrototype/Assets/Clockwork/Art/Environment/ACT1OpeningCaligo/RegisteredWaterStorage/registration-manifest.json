@@ -1,0 +1,26 @@
+{
+  "status": "experiment",
+  "platformProposalStatus": "proposal",
+  "roomId": "act1-room-011",
+  "scene": "CaligoWaterStorageRegistered",
+  "canvas": [800, 450],
+  "safeFrame": [80, 45, 640, 360],
+  "pixelsPerUnit": 64,
+  "pivot": [0.5, 0.5],
+  "groundLineOverscanY": 320,
+  "groundLineSafeFrameY": 275,
+  "layerLocalPosition": [0, 0, 0],
+  "layerLocalScale": [1, 1, 1],
+  "activeGameplayLayer": "30-gameplay-platform-v2.png",
+  "preservedGameplayLayer": "30-gameplay.png",
+  "registeredLayers": [
+    "00-bg-far.png",
+    "10-bg-mid.png",
+    "18-bg-near-foundation.png",
+    "20-bg-near.png",
+    "30-gameplay-platform-v2.png",
+    "40-props.png",
+    "70-fg-occlusion.png",
+    "80-fx.png"
+  ]
+}

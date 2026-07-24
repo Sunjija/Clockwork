@@ -187,7 +187,7 @@
 </style>
 <link rel="stylesheet" href="./map-viewer.css">
 </head>
-<body data-map-id="act1" data-map-version="15">
+<body data-map-id="act1" data-map-version="17">
 <div class="wrap">
 
   <header>
@@ -251,9 +251,9 @@
       <div class="nm">회수 승강기</div>
       <div class="ic"><span class="chip trs">고정 MOD</span><span class="chip salvage">고철 부품</span><span style="color:var(--sub)">입구 숏컷 복구</span></div>
     </div>
-    <div id="act1-room-004" class="room caligo compact optional" data-node-type="room" data-route="optional" data-requires="morbi_repair_complete" data-reward="salvage_parts_large" data-reward-type="currency" data-reward-tier="minor" data-first-clear-reward="salvage_parts_large" data-repeatable-reward="none" data-event="morbi_salvage_presented" style="--x:2;--y:4;--w:2;--h:1">
+    <div id="act1-room-004" class="room caligo compact optional" data-node-type="room" data-region="caligo" data-zone="workshop-storage" data-elevation="lower-service" data-scene-group="CaligoWaterService" data-route="optional" data-requires="morbi_repair_complete" data-reward="salvage_parts_large" data-reward-type="currency" data-reward-tier="minor" data-first-clear-reward="salvage_parts_large" data-repeatable-reward="none" data-event="morbi_salvage_presented" style="--x:2;--y:4;--w:2;--h:1">
       <div class="nm">공방 부품고 A</div>
-      <div class="ic"><span class="chip opt">선택</span><span class="chip salvage">고철 부품</span></div>
+      <div class="ic"><span class="chip level">공방 하부</span><span class="chip opt">선택</span><span class="chip salvage">고철 부품</span></div>
     </div>
     <div id="act1-room-005" class="room term optional" data-node-type="room" data-route="optional" data-reward="module_slot_plus_1" data-reward-type="slot" data-reward-tier="major" data-first-clear-reward="module_slot_plus_1" data-repeatable-reward="none" data-requires="terminus_guardian_defeated ability_double_jump_unlocked" style="--x:2;--y:1;--w:1;--h:1">
       <div class="nm">상단 정비 선반</div>
@@ -261,29 +261,29 @@
     </div>
 
     <!-- ══ 다리 ══ -->
-    <div id="act1-room-006" class="room limbus compact" data-node-type="room" data-event="pre_repair_collapse morbi_rescue_triggered" style="--x:7;--y:2;--w:12;--h:1;--rc:#7a828f">
+    <div id="act1-room-006" class="room limbus compact" data-node-type="room" data-region="limbus-caligo-bridge" data-zone="bridge-crossing" data-elevation="street" data-scene-group="LimbusCaligoBridge" data-event="pre_repair_collapse morbi_rescue_triggered" style="--x:7;--y:2;--w:12;--h:1;--rc:#7a828f">
       <span class="step">2</span>
       <div class="nm">림부스-칼리고 교량 <span style="color:var(--sub);font-family:var(--mono);font-size:8.5px;font-weight:400">RGN-011</span></div>
       <div class="ic"><span style="color:var(--sub)">회피·긴급 밀치기 → 쥐떼 추격 → 파손 누적 → 각본상 쓰러짐 → 모르비 구조</span></div>
     </div>
 
     <!-- ══ 칼리고 ══ -->
-    <div id="act1-room-008" class="room caligo" data-node-type="room" style="--x:6;--y:2;--w:1;--h:2">
+    <div id="act1-room-008" class="room caligo" data-node-type="room" data-region="caligo" data-zone="gate-watch" data-elevation="street" data-scene-group="CaligoGateWatch" style="--x:6;--y:2;--w:1;--h:2">
       <div class="nm">망루<br>·<br>정문</div>
     </div>
-    <div id="act1-room-009" class="room caligo" data-node-type="room" style="--x:3;--y:2;--w:3;--h:1">
+    <div id="act1-room-009" class="room caligo" data-node-type="room" data-region="caligo" data-zone="village-square" data-elevation="street" data-scene-group="CaligoVillageExterior" style="--x:3;--y:2;--w:3;--h:1">
       <div class="nm">마을 광장</div>
-      <div class="ic"><span class="chip cp">CP</span></div>
+      <div class="ic"><span class="chip level">거리층</span><span class="chip cp">CP</span></div>
     </div>
-    <div id="act1-room-010" class="room caligo" data-node-type="room" data-event="morbi_repair_complete" style="--x:4;--y:3;--w:2;--h:1">
+    <div id="act1-room-010" class="room caligo" data-node-type="room" data-region="caligo" data-zone="morbi-workshop" data-elevation="semi-basement" data-scene-group="MorbiWorkshop" data-note="광장에서 짧은 계단으로 내려감 · 수리 후 눈뜸 · 의뢰 · 개조 제작" data-event="morbi_repair_complete" style="--x:4;--y:3;--w:2;--h:1">
       <span class="step">3</span>
       <div class="nm">모르비 공방</div>
-      <div class="ic"><span style="color:var(--sub)">수리 후 눈뜸 · 의뢰 · 개조 제작</span></div>
+      <div class="ic"><span class="chip level">반지하 ↓</span></div>
     </div>
-    <div id="act1-room-011" class="room caligo" data-node-type="room" style="--x:3;--y:3;--w:1;--h:1">
+    <div id="act1-room-011" class="room caligo" data-node-type="room" data-region="caligo" data-zone="water-storage" data-elevation="semi-basement" data-scene-group="CaligoWaterService" data-note="광장에서 서비스 계단으로 내려가는 공용 급수 설비" style="--x:3;--y:3;--w:1;--h:1">
       <div class="nm">정화수<br>저장소</div>
     </div>
-    <div id="act1-room-012" class="room caligo" data-node-type="room" style="--x:7;--y:3;--w:1;--h:3">
+    <div id="act1-room-012" class="room caligo" data-node-type="room" data-region="caligo-maintenance-shaft" data-zone="village-descent" data-elevation="vertical-shaft" data-scene-group="CaligoDropShaft" style="--x:7;--y:3;--w:1;--h:3">
       <div class="nm">낙하<br>샤프트</div>
       <div class="ic"><span class="chip drop">▼</span><span class="chip lockG">G↑</span></div>
     </div>
@@ -312,7 +312,7 @@
     </div>
 
     <!-- ══ 교차로 ══ -->
-    <div id="act1-room-013" class="room cross" data-node-type="room" style="--x:7;--y:6;--w:3;--h:2">
+    <div id="act1-room-013" class="room cross" data-node-type="room" data-region="crossroads-cavern" data-scene-group="Act1Crossroads" style="--x:7;--y:6;--w:3;--h:2">
       <span class="step two">4·7</span>
       <div class="nm">교차로 대공동</div>
       <div class="ic"><span class="chip cp">CP</span> <span style="color:var(--sub)">허브 · 오수 폭포 저수 공동</span></div>
@@ -446,16 +446,16 @@
     <!-- 림부스/다리 -->
     <i id="act1-door-001" class="d h" data-node-type="door" style="--dx:21;--dy:2.5"></i>
     <i id="act1-door-059" class="d h" data-node-type="door" data-from="act1-room-002" data-to="act1-room-052" style="--dx:23;--dy:2.5" aria-label="추락 지점에서 초반 림부스 부품 더미로 진입"></i>
-    <i id="act1-door-002" class="d v gate" data-node-type="door" data-from="act1-room-011" data-to="act1-room-004" data-requires="morbi_repair_complete" style="--dx:3.5;--dy:4" aria-label="모르비의 수리 완료 후 정화수 저장소 아래 공방 부품고 개방"></i>
+    <i id="act1-door-002" class="d v gate stair" data-node-type="door" data-from="act1-room-011" data-to="act1-room-004" data-direction="down" data-transition="camera-zone" data-from-anchor="StorageLowerStair" data-to-anchor="PartsStorageUpperEntry" data-requires="morbi_repair_complete" style="--dx:3.5;--dy:4" aria-label="모르비의 수리 완료 후 정화수 저장소에서 아래 공방 부품고로 내려가는 잠긴 정비 계단 개방"></i>
     <i id="act1-door-003" class="d h" data-node-type="door" style="--dx:19;--dy:2.5"></i>
     <!-- 칼리고 -->
-    <i id="act1-door-006" class="d h" data-node-type="door" style="--dx:7;--dy:2.5"></i>
-    <i id="act1-door-007" class="d h" data-node-type="door" style="--dx:6;--dy:2.5"></i>
-    <i id="act1-door-008" class="d v" data-node-type="door" style="--dx:5;--dy:3"></i>
-    <i id="act1-door-009" class="d v" data-node-type="door" style="--dx:3.5;--dy:3"></i>
-    <i id="act1-door-010" class="d h" data-node-type="door" style="--dx:7;--dy:3.5"></i>
+    <i id="act1-door-006" class="d h" data-node-type="door" data-from="act1-room-006" data-to="act1-room-008" data-transition="scene" data-from-anchor="CaligoGateExit" data-to-anchor="BridgeEntry" style="--dx:7;--dy:2.5" aria-label="림부스-칼리고 교량에서 칼리고 망루와 정문으로 진입"></i>
+    <i id="act1-door-007" class="d h" data-node-type="door" data-from="act1-room-008" data-to="act1-room-009" data-transition="scene" data-from-anchor="VillageArchExit" data-to-anchor="GateArchExit" style="--dx:6;--dy:2.5" aria-label="칼리고 망루와 정문에서 아치 통로를 지나 마을 광장으로 진입"></i>
+    <i id="act1-door-008" class="d v stair" data-node-type="door" data-from="act1-room-009" data-to="act1-room-010" data-direction="down" data-transition="scene" data-from-anchor="WorkshopStair" data-to-anchor="PlazaEntry" style="--dx:5;--dy:3" aria-label="마을 광장에서 짧은 계단을 내려가 반지하 모르비 공방으로 진입"></i>
+    <i id="act1-door-009" class="d v stair" data-node-type="door" data-from="act1-room-009" data-to="act1-room-011" data-direction="down" data-transition="scene" data-from-anchor="WaterServiceStair" data-to-anchor="PlazaEntry" style="--dx:3.5;--dy:3" aria-label="마을 광장에서 서비스 계단을 내려가 정화수 저장소로 진입"></i>
+    <i id="act1-door-010" class="d h" data-node-type="door" data-from="act1-room-008" data-to="act1-room-012" data-transition="scene" data-from-anchor="DropShaftGate" data-to-anchor="VillageEntry" style="--dx:7;--dy:3.5" aria-label="망루와 정문 하부 통로에서 낙하 샤프트로 진입"></i>
     <!-- 낙하 샤프트 → 교차로 -->
-    <i id="act1-door-011" class="d v" data-node-type="door" style="--dx:7.5;--dy:6"></i>
+    <i id="act1-door-011" class="d v" data-node-type="door" data-from="act1-room-012" data-to="act1-room-013" data-transition="scene" data-from-anchor="CrossroadsExit" data-to-anchor="ShaftLanding" style="--dx:7.5;--dy:6" aria-label="칼리고 낙하 샤프트에서 교차로 대공동으로 하강"></i>
     <!-- 교차로 -->
     <i id="act1-door-012" class="d h gate" data-node-type="door" data-from="act1-room-013" data-to="act1-room-014" data-requires="water_treatment_restarted" style="--dx:10;--dy:7.5" aria-label="렌토 격파 후 수위가 내려가면 교차로 대공동 오른쪽의 심층 문 전실 개방"></i>
     <i id="act1-door-013" class="d h" data-node-type="door" style="--dx:7;--dy:7.5"></i>
@@ -554,6 +554,19 @@
         → 상부 등반<i>(거미떼 2파·붕괴 발판·거미줄)</i> → 정상부 <b>거대 거미</b> → 상단 승강문 개방 → <b>서부 내벽 화물 승강장</b>
       </div>
       <p class="dim">보스 직전마다 체크포인트 1개, 능력 획득 직후 30초 안에 그 능력을 쓰는 주동선(상부 상승로, 폐쇄 인양로·배수 점검 갱도)을 배치한다. 취수구와 정비실은 능력을 더 사용하면 보상을 얻는 선택 심화 구간이다.</p>
+    </div>
+
+    <div class="sec">
+      <h2>A-2. 칼리고 공간 구획 <span class="tag p">[production lock]</span></h2>
+      <div class="kv">
+        <div class="row"><div class="k">거리층</div><div class="v">림부스-칼리고 교량 → 망루·정문 → 마을 광장. 주민 이동과 마을의 첫 인상을 담당하는 공용 생활면.</div></div>
+        <div class="row"><div class="k">반지하 생활층</div><div class="v">광장에서 짧은 계단으로 내려가 모르비 공방과 정화수 저장소에 각각 진입한다. 두 노드는 같은 높이의 이웃 시설이지만 내부 직통문은 두지 않는다.</div></div>
+        <div class="row"><div class="k">하부 저장층</div><div class="v">정화수 저장소의 잠긴 정비 계단 아래에 공방 부품고 A가 놓인다. 모르비 수리 완료 후 열리는 선택 탐사 공간.</div></div>
+        <div class="row"><div class="k">하강 동선</div><div class="v">망루·정문 하부 통로에서 낙하 샤프트로 들어가 교차로 대공동으로 내려간다. 공방과 저장소는 이 주동선의 생활·보급 측면 분기다.</div></div>
+        <div class="row"><div class="k">송수관</div><div class="v">B23 펌프실과 정화수 저장소를 잇는 비통행 설비 연결. 렌토 격파 후 소리·진동·압력계 변화만 전달하며 출입구로 취급하지 않는다.</div></div>
+        <div class="row"><div class="k">Unity 씬 그룹</div><div class="v"><code>LimbusCaligoBridge</code> / <code>CaligoGateWatch</code> / <code>CaligoVillageExterior</code> / <code>MorbiWorkshop</code> / <code>CaligoWaterService</code> / <code>CaligoDropShaft</code>. 맵 노드와 Unity 씬을 1:1로 강제하지 않고 조명·카메라·게임플레이 성격이 같은 노드를 묶는다. 망루와 광장은 아치 기반 양방향 씬 전환으로 분리한다.</div></div>
+        <div class="row"><div class="k">전환 계약</div><div class="v">광장↔망루는 아치 기반 양방향 씬 전환, 저장소↔부품고는 같은 씬의 카메라 구획 이동, 나머지 경계는 이름 있는 양쪽 스폰 앵커를 사용하는 씬 전환으로 구현한다.</div></div>
+      </div>
     </div>
 
     <div class="sec">

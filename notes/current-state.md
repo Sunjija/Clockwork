@@ -45,6 +45,13 @@ Previous pushed base: `1564452`
 - Approved Tique action assets remain locked.
 - Production visual metrics are locked in `docs/art/production-visual-metrics-v1.md`:
   `640x360`, `PPU 64`, a `10 x 5.625` world-unit camera, and a `42-48 px` visible Tique.
+- All 54 approved Tique sprite imports (`Assets/Clockwork/Art/Tique/Approved/`) were switched
+  from Point to Bilinear filtering (2026-07-22). The approved frames are smooth-shaded painted
+  art, not native low-res pixel art, and downscaling them to the `42-48 px` lock with Point
+  filtering produced aliased/muddy results. This is a deliberate style choice (soft small
+  sprite, closer to Hollow Knight than flat-palette pixel art) documented in
+  `production-visual-metrics-v1.md`. Tile/environment art is unaffected and still defaults to
+  Point filtering.
 - Approved Tique frames remain unchanged. Their current Unity presentation scale is 70% of the
   previous prototype value only for comparison against the existing 32 PPU environment.
 - Plaza uses proposal `03-caligo` far/mid layers and modular platform dressing. The previous

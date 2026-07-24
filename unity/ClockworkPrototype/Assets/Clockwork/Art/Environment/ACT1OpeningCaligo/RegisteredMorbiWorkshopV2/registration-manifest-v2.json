@@ -1,5 +1,5 @@
 {
-  "status": "proposal",
+  "status": "[proposal] runtime-passed",
   "version": 2,
   "roomId": "act1-room-010",
   "referenceResolution": [
@@ -13,14 +13,36 @@
   ],
   "layers": [
     "00-environment.png",
-    "30-shared-door.png",
+    "../SharedCaligoRouteV2/shared-morbi-wood-door.png",
     "40-morbi.png"
   ],
   "parallax": "deferred; integrated master retained for visual coherence",
-  "sharedDoorModule": "SharedCaligoRouteV2/shared-doorway-assembly.png",
+  "sharedDoorModule": "SharedCaligoRouteV2/shared-morbi-wood-door.png",
   "sharedDoorAssemblyPixels": [
-    80,
-    96
+    52,
+    72
   ],
-  "sharedDoorVisibleHeight": 88
+  "sharedDoorVisibleHeight": 72,
+  "sharedDoorWorldPosition": [
+    -4.015625,
+    -1.40625
+  ],
+  "polishPass": {
+    "workbenchWidthPixels": 73,
+    "materialRule": "wood door leaf, blackened riveted iron frame",
+    "lightingRule": "cool ceiling lights with one restrained warm task light",
+    "renderingRule": "crisp painterly hybrid authored at reference scale with Point output",
+    "sharpnessProfile": "crisp-v1",
+    "verification": [
+      "1280x720",
+      "1920x1080",
+      "portable Windows smoke"
+    ]
+  },
+  "ambientMotionDecision": {
+    "status": "[rejected]",
+    "removedFromRuntime": true,
+    "reason": "post-authored light, gauge, steam, and whole-sprite overlays did not share the source painting's material language or animation design",
+    "replacementRule": "[proposal] identify animated objects during room concepting and author their base, occlusion matte, loop frames, and resting frame together with the environment asset"
+  }
 }

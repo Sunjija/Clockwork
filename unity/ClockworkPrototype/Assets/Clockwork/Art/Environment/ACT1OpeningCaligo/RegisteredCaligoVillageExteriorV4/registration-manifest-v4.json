@@ -1,0 +1,53 @@
+{
+  "status": "[proposal]",
+  "supersedes": "caligo-village-gate-route-v3 [rejected: hard vertical image seam]",
+  "mapNodes": [
+    "act1-room-009",
+    "act1-room-008"
+  ],
+  "sceneGroup": "CaligoVillageExterior",
+  "production": {
+    "referenceCanvas": "640x360",
+    "pixelsPerUnit": 64,
+    "sharpnessProfile": "crisp-v1",
+    "cameraWorldSize": "10x5.625",
+    "sectionCentersWorldX": [
+      0,
+      5,
+      10
+    ]
+  },
+  "join": {
+    "strategy": "overlapping authored transition frame",
+    "transitionCenterWorldX": 5,
+    "transitionFeatherPixels": 96,
+    "walkableGroundDesignY": 223
+  },
+  "layers": [
+    {
+      "file": "00-approach-environment.png",
+      "worldX": 0,
+      "sorting": -100
+    },
+    {
+      "file": "10-gate-watch-environment.png",
+      "worldX": 10,
+      "sorting": -100
+    },
+    {
+      "file": "15-seam-transition.png",
+      "worldX": 5,
+      "sorting": -90
+    },
+    {
+      "file": "20-approach-catwalk.png",
+      "worldX": 0,
+      "sorting": -10
+    },
+    {
+      "file": "30-approach-door.png",
+      "worldX": 0,
+      "sorting": -20
+    }
+  ]
+}

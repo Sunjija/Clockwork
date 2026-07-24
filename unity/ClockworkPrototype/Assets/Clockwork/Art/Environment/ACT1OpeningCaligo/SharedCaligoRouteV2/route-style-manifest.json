@@ -1,0 +1,22 @@
+{
+  "status": "[proposal] runtime-validation-required",
+  "scope": "ACT1 opening through Caligo art test",
+  "direction": "downscaled painterly hybrid",
+  "rules": {
+    "referenceResolution": "640x360",
+    "pixelsPerUnit": 64,
+    "environmentFilter": "Point at integer output scales",
+    "tiqueFilter": "Bilinear",
+    "nativePixelArtMixing": "not allowed within the same route",
+    "rawConceptPresentation": "not allowed in runtime",
+    "gameplayEdge": "clear value edge at the fixed collision baseline",
+    "textureFrequency": "large and medium forms first; suppress isolated high-frequency tile noise",
+    "materials": "wood, blackened iron, masonry and toxic liquid must remain visually distinct",
+    "lighting": "cool ambient structure with restrained warm practical lamps"
+  },
+  "reauthoredLayers": [
+    "RegisteredLimbusCaligoBridgeV6/30-gameplay.png",
+    "RegisteredLimbusBridgeCombat/30-gameplay.png"
+  ],
+  "note": "Perceptual consistency is achieved in source art, not by blurring mixed styles at import."
+}

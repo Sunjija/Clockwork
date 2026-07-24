@@ -34,6 +34,29 @@ The reference image must scale by whole numbers at the primary output resolution
 Production sprite import defaults are Point filtering, no mipmaps, and no lossy compression.
 Pivots may be custom, but every frame in an animation must share the same grounded foot line.
 
+## Background Sharpness Lock
+
+- Environment art at every depth plane must retain crisp source edges at the reference
+  resolution. Do not use blur, soft focus, or bilinear filtering as the default depth cue.
+- Separate depth through value range, saturation, detail density, overlap, and parallax while
+  preserving readable pixel boundaries in far, mid, gameplay, and foreground layers.
+- Downscaled painterly sources must receive a reference-scale sharpening and pixel-cleanup pass
+  before Unity import. The current deterministic baseline is the `crisp-v1` profile in
+  `tools/art/crisp_environment.py`.
+- Any later use of blur is a per-room proposal that requires a direct sharp-versus-blurred
+  runtime comparison. The sharp version remains the production source until that comparison is
+  approved.
+
+**Exception — character sprites (Tique):** approved Tique frames are smooth-shaded painted
+art (PixelLab-generated), not authored on a native low-resolution pixel grid. Displaying them
+with Point filtering at the `42-48 px` locked height produces aliased, muddy results without a
+dedicated re-authoring/quantization pass. Until that pass happens, Tique's import `filterMode`
+is set to Bilinear instead of Point (all 54 approved frames under
+`Assets/Clockwork/Art/Tique/Approved/`, changed 2026-07-22). This intentionally targets a
+softer, painterly small-sprite look (closer to Hollow Knight than to flat-palette retro pixel
+art) rather than genuine pixel art for the character. Point filtering remains the default for
+tile/environment art unless a matching decision is made for that art separately.
+
 ## Character Size Guidance
 
 Tique's `42-48 px` visible height is locked. Until character lineups are approved, these
