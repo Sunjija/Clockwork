@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="CLOCKWORK 원본 맵 구조도를 소개서에서 바로 보는 화면">
+  <title>CLOCKWORK | Original Map Structure</title>
+  <style>
+    :root { --ink:#080b0d; --panel:#111619; --line:#394247; --paper:#edf1ed; --muted:#a9b2b2; --cyan:#53dce6; --nav-h:58px; }
+    * { box-sizing:border-box; letter-spacing:0; }
+    html, body { width:100%; height:100%; margin:0; overflow:hidden; background:var(--ink); color:var(--paper); font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,sans-serif; }
+    .topbar { position:fixed; z-index:10; inset:0 0 auto; height:var(--nav-h); display:flex; align-items:center; border-bottom:1px solid rgba(237,241,237,.14); background:#080b0d; }
+    .topbar-inner { width:calc(100% - 40px); margin:0 auto; display:flex; align-items:center; gap:20px; }
+    .brand { color:var(--paper); text-decoration:none; font-size:1rem; font-weight:900; }
+    .document-tabs { display:flex; align-items:center; gap:2px; padding:3px; border:1px solid var(--line); border-radius:5px; background:#0c1012; }
+    .document-tabs a { padding:5px 10px; border-radius:3px; color:var(--muted); text-decoration:none; font-size:.72rem; font-weight:800; white-space:nowrap; }
+    .document-tabs a.active { background:var(--panel); color:var(--paper); }
+    .document-tabs a:hover { color:var(--cyan); }
+    .map-label { margin-left:auto; color:var(--muted); font-size:.72rem; font-weight:800; }
+    .map-frame { position:fixed; inset:var(--nav-h) 0 0; }
+    iframe { display:block; width:100%; height:100%; border:0; background:#0a0d11; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="CLOCKWORK-game-overview.html">CLOCKWORK</a>
+      <nav class="document-tabs" aria-label="소개서 보기">
+        <a href="CLOCKWORK-game-overview.html">게임 소개</a>
+        <a class="active" href="CLOCKWORK-map-overview.html" aria-current="page">맵 구조도</a>
+      </nav>
+      <span class="map-label">ORIGINAL MAP STRUCTURE</span>
+    </div>
+  </header>
+  <main class="map-frame">
+    <iframe src="../maps/world-atlas.html?embed=presentation" title="CLOCKWORK 원본 맵 구조도"></iframe>
+  </main>
+</body>
+</html>
