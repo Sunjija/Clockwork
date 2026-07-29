@@ -1,0 +1,72 @@
+{
+  "ok": true,
+  "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\final\\spritesheet.webp",
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1024,
+  "height": 256,
+  "errors": [],
+  "warnings": [],
+  "chroma_key_leaks": {
+    "exact": 0,
+    "near": 0
+  },
+  "cells": [
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 0,
+      "used": true,
+      "nontransparent_pixels": 16821
+    },
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 1,
+      "used": true,
+      "nontransparent_pixels": 15494
+    },
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 2,
+      "used": true,
+      "nontransparent_pixels": 12791
+    },
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 3,
+      "used": true,
+      "nontransparent_pixels": 10028
+    },
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 4,
+      "used": true,
+      "nontransparent_pixels": 9989
+    },
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 5,
+      "used": true,
+      "nontransparent_pixels": 13864
+    },
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 6,
+      "used": true,
+      "nontransparent_pixels": 13115
+    },
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "column": 7,
+      "used": true,
+      "nontransparent_pixels": 16770
+    }
+  ]
+}

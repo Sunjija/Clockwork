@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\final\\spritesheet.webp",
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1280,
+  "height": 256,
+  "errors": [],
+  "warnings": [],
+  "chroma_key_leaks": {
+    "exact": 0,
+    "near": 0
+  },
+  "cells": [
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 0,
+      "used": true,
+      "nontransparent_pixels": 6380
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 1,
+      "used": true,
+      "nontransparent_pixels": 6605
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 2,
+      "used": true,
+      "nontransparent_pixels": 7438
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 3,
+      "used": true,
+      "nontransparent_pixels": 7367
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 4,
+      "used": true,
+      "nontransparent_pixels": 5048
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 5,
+      "used": true,
+      "nontransparent_pixels": 5267
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 6,
+      "used": true,
+      "nontransparent_pixels": 6709
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 7,
+      "used": true,
+      "nontransparent_pixels": 7423
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 8,
+      "used": true,
+      "nontransparent_pixels": 9131
+    },
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "column": 9,
+      "used": true,
+      "nontransparent_pixels": 7062
+    }
+  ]
+}

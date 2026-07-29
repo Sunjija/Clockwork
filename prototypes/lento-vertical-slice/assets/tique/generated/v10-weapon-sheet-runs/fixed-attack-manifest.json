@@ -1,0 +1,95 @@
+{
+  "frameSize": [
+    640,
+    512
+  ],
+  "anchor": [
+    320,
+    480
+  ],
+  "sequences": {
+    "fist": {
+      "fps": 22,
+      "scale": 1.2,
+      "sourceGroundY": 480,
+      "slots": [
+        7,
+        1,
+        2,
+        3,
+        4,
+        6,
+        6,
+        7
+      ],
+      "frames": [
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/00.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/01.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/02.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/03.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/04.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/05.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/06.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/fist/fixed/frames/07.png"
+      ]
+    },
+    "greatsword": {
+      "fps": 17,
+      "scale": 2.0,
+      "sourceGroundY": 493,
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "frames": [
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/00.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/01.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/02.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/03.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/04.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/05.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/06.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/07.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/08.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/greatsword/fixed/frames/09.png"
+      ]
+    },
+    "hammer": {
+      "fps": 14,
+      "scale": 1.5,
+      "sourceGroundY": 506,
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "frames": [
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/00.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/01.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/02.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/03.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/04.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/05.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/06.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/07.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/08.png",
+        "lento-vertical-slice/assets/tique/generated/v10-weapon-sheet-runs/hammer/fixed/frames/09.png"
+      ]
+    }
+  }
+}

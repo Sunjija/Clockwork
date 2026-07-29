@@ -1,0 +1,26 @@
+{
+  "status": "[experiment] greybox",
+  "mapNode": "act1-room-003",
+  "sceneGroup": "LimbusScrapPlain",
+  "canvas": [
+    3584,
+    360
+  ],
+  "pixelsPerUnit": 64,
+  "camera": [
+    640,
+    360
+  ],
+  "cameraWidths": 5.6,
+  "groundY": 223,
+  "enemy": "none",
+  "zones": [
+    "1 BRIDGE APPROACH",
+    "2 EXPOSED PLAIN",
+    "3 SCRAP CANYON",
+    "4 COMPRESSION FIELD",
+    "5 CRASH THRESHOLD"
+  ],
+  "leftBoundary": "BridgeEntry -> act1-room-006 LimbusContinuation",
+  "rightBoundary": "CrashApproach -> act1-room-002 unresolved"
+}

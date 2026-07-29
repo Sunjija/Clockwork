@@ -1,0 +1,41 @@
+{
+  "status": "experiment",
+  "artStatus": "proposal",
+  "roomId": "act1-room-009",
+  "scene": "CaligoVillageExteriorRegistered",
+  "canvas": [
+    800,
+    450
+  ],
+  "safeFrame": [
+    80,
+    45,
+    640,
+    360
+  ],
+  "pixelsPerUnit": 64,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "registration": {
+    "localPosition": [
+      0,
+      0,
+      0
+    ],
+    "localScale": [
+      1,
+      1,
+      1
+    ],
+    "parallaxReady": false,
+    "note": "Fixed registered split preserves the master exactly; depth repaint remains a later production pass."
+  },
+  "layers": [
+    "00-architecture.png",
+    "30-gameplay-foundation.png",
+    "70-foreground-overscan.png"
+  ],
+  "sourcePrompt": "caligo-village-exterior-prompt.txt"
+}

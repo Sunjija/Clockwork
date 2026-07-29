@@ -12,8 +12,8 @@ Do not read `handoff.md` from top to bottom for ordinary changes. It is the chro
 archive. Search it only when a current note points to an older decision.
 
 Do not read the full canon documents unless a task requires a story or rules decision.
-Search the relevant heading in `docs/00_canon_rules_v5.4.md` and
-`docs/rulebook-v5.5-patch.md`, then preserve canon/proposal/rejected status explicitly.
+Search the relevant heading in `docs/00_canon_rules_v5.5.1.md` and
+`docs/rulebook-v5.5.1-patch.md`, then preserve canon/proposal/rejected status explicitly.
 
 ## Code Ownership
 

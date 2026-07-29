@@ -13,8 +13,25 @@
     { id: "memory", label: "기억" },
     { id: "save", label: "세이브" },
     { id: "treasure", label: "보상" },
-    { id: "gate", label: "잠금" }
+    { id: "gate", label: "잠금" },
+    { id: "optional", label: "선택 지역" }
   ];
+
+  const TAG_LABELS = {
+    boss: "보스",
+    memory: "기억",
+    save: "세이브",
+    treasure: "보상",
+    gate: "진입 조건",
+    optional: "선택 지역",
+    critical: "필수 동선"
+  };
+
+  const FLOW_GROUP_LABELS = {
+    ACT1: "ACT1 · 지하 안드레스",
+    ACT2: "ACT2 · 지상 메티아",
+    ACT3: "ACT3 · 크로노스 타워"
+  };
 
   const body = document.body;
   const root = document.documentElement;
@@ -26,8 +43,8 @@
   if (!wrap || !header || !scroller || !canvas) return;
 
   const currentMap = body.dataset.mapId || inferMapId();
+  const isPresentationEmbed = new URLSearchParams(location.search).get("embed") === "presentation";
   const rooms = [...canvas.querySelectorAll(".room")];
-  const regionArt = buildRegionArtIndex();
   const activeFilters = new Set();
   const initialUnit = numberFromCss("--u", 56);
   const canvasColumns = Math.max(1, canvas.getBoundingClientRect().width / initialUnit);
@@ -36,16 +53,17 @@
   let toastTimer = 0;
 
   body.classList.add("map-viewer-ready");
+  if (isPresentationEmbed) body.classList.add("map-viewer-embed");
+  normalizeVisibleCopy();
   enrichRooms();
-  const tools = buildTools();
   const criticalFlow = buildCriticalFlow();
+  const tools = buildTools(Boolean(criticalFlow));
   const inspector = buildInspector();
   const dialog = buildNodeDialog();
-  const artDialog = buildArtDialog();
   const toast = buildToast();
   header.insertAdjacentElement("afterend", tools);
   if (criticalFlow) tools.insertAdjacentElement("afterend", criticalFlow);
-  wrap.append(inspector, dialog, artDialog, toast);
+  wrap.append(inspector, dialog, toast);
   addSkipLink();
   bindRoomInteractions();
   updateFilterState();
@@ -72,31 +90,58 @@
     return room.querySelector(".nm")?.textContent.replace(/\s+/g, " ").trim() || room.id;
   }
 
+  function normalizeVisibleCopy() {
+    const technicalId = /\b(?:RUL|RGN|GAT|EDG|ABL|EVT|FSH)-\d+[a-z]?(?:[·/]\d+[a-z]?)*\b/gi;
+    const walker = document.createTreeWalker(wrap, NodeFilter.SHOW_TEXT);
+    const textNodes = [];
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+
+    textNodes.forEach((node) => {
+      const parent = node.parentElement;
+      if (!parent || parent.closest("script, style")) return;
+      let visibleCopy = node.nodeValue
+        .replace(technicalId, "")
+        .replace(/\(\s*\)/g, "")
+        .replace(/\[\s*\]/g, "")
+        .replace(/\s+([),.:])/g, "$1")
+        .replace(/([\[(])\s+/g, "$1")
+        .replace(/\s*·\s*(?=·|[,.)\]]|$)/g, "")
+        .replace(/(^|\s)=\s*/g, "$1")
+        .replace(/[ \t]{2,}/g, " ");
+      if (isPresentationEmbed) {
+        visibleCopy = visibleCopy
+          .replace(/\[[^\]]*(?:제안|확정|production lock)[^\]]*\]/gi, "")
+          .replace(/[ \t]{2,}/g, " ");
+      }
+      node.nodeValue = visibleCopy;
+    });
+
+    wrap.querySelectorAll(".chip.boss").forEach((chip) => {
+      if (chip.textContent.trim().toUpperCase() === "BOSS") chip.textContent = "보스";
+    });
+    wrap.querySelectorAll(".chip.cp").forEach((chip) => {
+      if (chip.textContent.trim().toUpperCase() === "CP") chip.textContent = "세이브";
+    });
+    wrap.querySelectorAll(".chip.lockG").forEach((chip) => {
+      chip.title = "갈고리 필요";
+      chip.setAttribute("aria-label", "갈고리 필요");
+    });
+    wrap.querySelectorAll(".chip.lockD").forEach((chip) => {
+      chip.title = "더블 점프 필요";
+      chip.setAttribute("aria-label", "더블 점프 필요");
+    });
+  }
+
   function collectTags(room) {
     const tags = new Set();
-    const classNames = [...room.classList];
-    classNames.filter((name) => name !== "room").forEach((name) => tags.add(name));
     if (room.querySelector(".chip.boss")) tags.add("boss");
     if (room.querySelector(".chip.mem, .chip.echo")) tags.add("memory");
     if (room.querySelector(".chip.cp")) tags.add("save");
     if (room.dataset.reward || room.querySelector(".chip.trs, .chip.key, .chip.slot, .chip.abl, .chip.auth, .chip.restore, .chip.hp, .chip.energy, .chip.salvage, .chip.record")) tags.add("treasure");
     if (room.dataset.requires || room.querySelector(".chip.lock, .chip.lockG, .chip.lockD, .chip.unk")) tags.add("gate");
+    if (room.classList.contains("optional") || room.dataset.route === "optional") tags.add("optional");
+    if (room.dataset.flowOrder) tags.add("critical");
     return [...tags];
-  }
-
-  function buildRegionArtIndex() {
-    const index = new Map();
-    const catalogue = window.CLOCKWORK_MAP_ART || {};
-    const entries = currentMap === "world-atlas"
-      ? Object.values(catalogue).flat()
-      : catalogue[currentMap] || [];
-    entries.forEach((entry) => {
-      entry.roomIds.forEach((roomId) => index.set(roomId, entry));
-      rooms
-        .filter((room) => room.dataset.region === entry.id)
-        .forEach((room) => index.set(room.id, entry));
-    });
-    return index;
   }
 
   function enrichRooms() {
@@ -108,42 +153,39 @@
       room.dataset.tags = tags.join(" ");
       const rewardSearch = [room.dataset.rewardType, room.dataset.rewardTier, room.dataset.firstClearReward, room.dataset.repeatableReward, room.dataset.choiceGroup].filter(Boolean).join(" ");
       const spatialSearch = [room.dataset.zone, room.dataset.elevation, room.dataset.sceneGroup, room.dataset.note].filter(Boolean).join(" ");
-      const art = regionArt.get(room.id);
-      if (art) room.dataset.artRegion = art.id;
-      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")} ${rewardSearch} ${spatialSearch} ${art?.title || ""}`.toLocaleLowerCase("ko");
+      room.dataset.search = `${name} ${room.textContent} ${room.id} ${tags.join(" ")} ${rewardSearch} ${spatialSearch}`.toLocaleLowerCase("ko");
       room.tabIndex = 0;
       room.setAttribute("role", "button");
       room.setAttribute("aria-label", `${name} 상세 보기`);
     });
   }
 
-  function buildTools() {
+  function buildTools(hasCriticalFlow) {
     const tools = document.createElement("section");
     tools.className = "map-viewer-tools";
     tools.setAttribute("aria-label", "맵 도구");
     tools.innerHTML = `
       <div class="map-viewer-tools__top">
         <nav class="map-viewer-nav" aria-label="맵 전환">
-          ${MAPS.map((map) => `<a href="${map.href}"${map.id === currentMap ? ' aria-current="page"' : ""}>${map.label}</a>`).join("")}
+          ${MAPS.map((map) => `<a href="${map.href}${isPresentationEmbed ? "?embed=presentation" : ""}"${map.id === currentMap ? ' aria-current="page"' : ""}>${map.label}</a>`).join("")}
         </nav>
         <div class="map-viewer-controls" aria-label="보기 제어">
           <button class="map-viewer-action" type="button" data-action="zoom-out" title="축소" aria-label="축소">−</button>
           <button class="map-viewer-action" type="button" data-action="zoom-in" title="확대" aria-label="확대">＋</button>
           <button class="map-viewer-action" type="button" data-action="fit" title="화면 너비에 맞추기" aria-label="화면 너비에 맞추기">↔</button>
           <button class="map-viewer-action" type="button" data-action="reset" title="보기 초기화" aria-label="보기 초기화">↺</button>
-          <button class="map-viewer-action map-viewer-action--wide" type="button" data-action="list" title="노드 목록 열기">노드</button>
-          <button class="map-viewer-action map-viewer-action--wide" type="button" data-action="export" title="맵 데이터를 JSON으로 내보내기">JSON</button>
-          <button class="map-viewer-action" type="button" data-action="print" title="인쇄" aria-label="인쇄">⎙</button>
         </div>
       </div>
       <div class="map-viewer-tools__bottom">
         <label class="map-viewer-search">
           <span class="sr-only" hidden>방 검색</span>
-          <input type="search" autocomplete="off" placeholder="방·지역·ID 검색" aria-label="방·지역·ID 검색">
+          <input type="search" autocomplete="off" placeholder="방·지역 검색" aria-label="방·지역 검색">
           <button class="map-viewer-search__clear" type="button" title="검색 지우기" aria-label="검색 지우기">×</button>
         </label>
-        <div class="map-viewer-filters" aria-label="노드 필터">
-          ${FILTERS.map((filter) => `<button class="map-viewer-filter" type="button" data-filter="${filter.id}" aria-pressed="false">${filter.label}</button>`).join("")}
+        <div class="map-viewer-filter-strip" aria-label="노드 필터">
+          ${FILTERS.filter((filter) => filter.id !== "optional").map((filter) => `<button class="map-viewer-filter" type="button" data-filter="${filter.id}" aria-pressed="false">${filter.label}</button>`).join("")}
+          ${hasCriticalFlow ? `<button class="map-viewer-filter map-viewer-filter--route" type="button" data-action="flow" aria-expanded="false" aria-controls="${currentMap}-critical-flow" title="필수 플레이 동선 보기">필수 동선</button>` : ""}
+          ${FILTERS.filter((filter) => filter.id === "optional").map((filter) => `<button class="map-viewer-filter" type="button" data-filter="${filter.id}" aria-pressed="false">${filter.label}</button>`).join("")}
         </div>
         <output class="map-viewer-status" aria-live="polite"></output>
       </div>`;
@@ -173,9 +215,7 @@
         "zoom-in": () => setZoom(zoom + 0.1),
         fit: fitToWidth,
         reset: resetView,
-        list: () => dialog.showModal(),
-        export: downloadJson,
-        print: () => window.print()
+        flow: () => toggleCriticalFlow(button)
       };
       actions[button.dataset.action]?.();
     });
@@ -190,70 +230,74 @@
     panel.setAttribute("aria-live", "polite");
     panel.innerHTML = `
       <div class="map-node-inspector__head">
-        <div><h2></h2><div class="map-node-inspector__id"></div></div>
+        <h2></h2>
         <button class="map-node-inspector__close" type="button" title="닫기" aria-label="상세 닫기">×</button>
       </div>
-      <figure class="map-node-inspector__art" hidden>
-        <button type="button" class="map-node-inspector__art-open" title="지역 이미지 크게 보기">
-          <img alt="" loading="eager">
-        </button>
-        <figcaption>
-          <strong></strong>
-          <span class="map-node-inspector__art-status"></span>
-          <p></p>
-          <a class="map-node-inspector__prototype" hidden>플레이 샘플 열기</a>
-        </figcaption>
-      </figure>
       <div class="map-node-inspector__meta"></div>
       <div class="map-node-inspector__text"></div>`;
     panel.querySelector("button").addEventListener("click", closeInspector);
-    panel.querySelector(".map-node-inspector__art-open").addEventListener("click", openSelectedArt);
     return panel;
-  }
-
-  function buildArtDialog() {
-    const modal = document.createElement("dialog");
-    modal.className = "map-art-dialog";
-    modal.innerHTML = `
-      <div class="map-art-dialog__head">
-        <div><h2></h2><p></p></div>
-        <button class="map-node-dialog__close" type="button" title="닫기" aria-label="지역 이미지 닫기">×</button>
-      </div>
-      <img alt="">`;
-    modal.querySelector("button").addEventListener("click", () => modal.close());
-    modal.addEventListener("click", (event) => {
-      if (event.target === modal) modal.close();
-    });
-    return modal;
   }
 
   function buildCriticalFlow() {
     const flowRooms = rooms
       .filter((room) => room.dataset.flowOrder)
-      .sort((a, b) => Number(a.dataset.flowOrder) - Number(b.dataset.flowOrder));
+      .sort((a, b) => {
+        const groupDifference = flowGroupRank(a.dataset.flowGroup) - flowGroupRank(b.dataset.flowGroup);
+        return groupDifference || Number(a.dataset.flowOrder) - Number(b.dataset.flowOrder);
+      });
     if (!flowRooms.length) return null;
+
+    const groups = new Map();
+    flowRooms.forEach((room) => {
+      const group = room.dataset.flowGroup || currentMap.toUpperCase();
+      if (!groups.has(group)) groups.set(group, []);
+      groups.get(group).push(room);
+    });
 
     const section = document.createElement("section");
     section.className = "map-critical-flow";
+    section.id = `${currentMap}-critical-flow`;
+    section.hidden = true;
     section.setAttribute("aria-label", "플레이어 필수 진행 흐름");
     section.innerHTML = `
       <div class="map-critical-flow__head">
-        <strong>필수 진행 흐름</strong>
-        <span>노드를 누르면 맵에서 위치를 확인합니다</span>
+        <strong>필수 플레이 동선</strong>
+        <span>왼쪽부터 순서대로 읽고, 항목을 누르면 맵의 위치로 이동합니다</span>
       </div>
-      <div class="map-critical-flow__rail">
-        ${flowRooms.map((room) => `
-          <button type="button" data-room-id="${escapeHtml(room.id)}" data-group="${escapeHtml(room.dataset.flowGroup || currentMap.toUpperCase())}" title="${escapeHtml(roomName(room))}로 이동">
-            <span class="map-critical-flow__index">${escapeHtml(room.dataset.flowOrder)}</span>
-            <span class="map-critical-flow__label">${escapeHtml(room.dataset.flowLabel || roomName(room))}</span>
-            ${room.dataset.flowNote ? `<small>${escapeHtml(room.dataset.flowNote)}</small>` : ""}
-          </button>`).join("")}
+      <div class="map-critical-flow__groups">
+        ${[...groups].map(([group, groupRooms]) => `
+          <section class="map-critical-flow__group" aria-label="${escapeHtml(FLOW_GROUP_LABELS[group] || group)}">
+            ${groups.size > 1 ? `<h3>${escapeHtml(FLOW_GROUP_LABELS[group] || group)}</h3>` : ""}
+            <div class="map-critical-flow__rail">
+              ${groupRooms.map((room) => `
+                <button type="button" data-room-id="${escapeHtml(room.id)}" data-group="${escapeHtml(group)}" title="${escapeHtml(roomName(room))}로 이동">
+                  <span class="map-critical-flow__index">${escapeHtml(room.dataset.flowOrder)}</span>
+                  <span class="map-critical-flow__label">${escapeHtml(room.dataset.flowLabel || roomName(room))}</span>
+                  ${room.dataset.flowNote ? `<small>${escapeHtml(room.dataset.flowNote)}</small>` : ""}
+                </button>`).join("")}
+            </div>
+          </section>`).join("")}
       </div>`;
     section.addEventListener("click", (event) => {
       const button = event.target.closest("[data-room-id]");
       if (button) focusRoom(button.dataset.roomId);
     });
     return section;
+  }
+
+  function flowGroupRank(group) {
+    const index = ["ACT1", "ACT2", "ACT3"].indexOf(group);
+    return index === -1 ? 99 : index;
+  }
+
+  function toggleCriticalFlow(button) {
+    if (!criticalFlow) return;
+    const willOpen = criticalFlow.hidden;
+    criticalFlow.hidden = !willOpen;
+    button.setAttribute("aria-expanded", String(willOpen));
+    button.classList.toggle("is-active", willOpen);
+    body.classList.toggle("is-critical-flow-open", willOpen);
   }
 
   function buildNodeDialog() {
@@ -323,65 +367,13 @@
     selectedRoom?.classList.remove("is-selected");
     selectedRoom = room;
     room.classList.add("is-selected");
-    const point = coordinates(room);
     inspector.querySelector("h2").textContent = roomName(room);
-    inspector.querySelector(".map-node-inspector__id").textContent = room.id;
-    updateInspectorArt(regionArt.get(room.id));
     inspector.querySelector(".map-node-inspector__meta").innerHTML = [
-      ...room.dataset.tags.split(" ").filter(Boolean),
-      room.dataset.zone ? `구획 ${room.dataset.zone}` : "",
-      room.dataset.elevation ? `고도 ${room.dataset.elevation}` : "",
-      room.dataset.sceneGroup ? `씬 ${room.dataset.sceneGroup}` : "",
-      room.dataset.note ? `공간 메모 ${room.dataset.note}` : "",
-      room.dataset.requires ? `필요 ${room.dataset.requires}` : "",
-      room.dataset.triggerRequires ? `발동 ${room.dataset.triggerRequires}` : "",
-      room.dataset.reward ? `보상 ${room.dataset.reward}` : "",
-      room.dataset.rewardType ? `보상 유형 ${room.dataset.rewardType}` : "",
-      room.dataset.rewardTier ? `보상 등급 ${room.dataset.rewardTier}` : "",
-      room.dataset.firstClearReward ? `최초 획득 ${room.dataset.firstClearReward}` : "",
-      room.dataset.repeatableReward && room.dataset.repeatableReward !== "none" ? `반복 획득 ${room.dataset.repeatableReward}` : "",
-      room.dataset.choiceGroup ? `선택 그룹 ${room.dataset.choiceGroup}` : "",
-      room.dataset.rewardState ? `보상 상태 ${room.dataset.rewardState}` : "",
-      room.dataset.event ? `이벤트 ${room.dataset.event}` : "",
-      `x ${point.x}`,
-      `y ${point.y}`,
-      `w ${point.w}`,
-      `h ${point.h}`
+      ...room.dataset.tags.split(" ").filter((tag) => tag && tag !== "critical").map((tag) => TAG_LABELS[tag]).filter(Boolean),
+      room.dataset.flowOrder ? `필수 동선 ${room.dataset.flowOrder}단계` : ""
     ].filter(Boolean).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("");
     inspector.querySelector(".map-node-inspector__text").textContent = room.textContent.replace(/\s+/g, " ").trim();
     inspector.hidden = false;
-  }
-
-  function updateInspectorArt(art) {
-    const figure = inspector.querySelector(".map-node-inspector__art");
-    if (!art) {
-      figure.hidden = true;
-      return;
-    }
-    const image = figure.querySelector("img");
-    image.src = art.image;
-    image.alt = `${art.title} 횡스크롤 환경 콘셉트`;
-    image.onerror = () => figure.classList.add("is-missing");
-    image.onload = () => figure.classList.remove("is-missing");
-    figure.querySelector("strong").textContent = art.title;
-    figure.querySelector(".map-node-inspector__art-status").textContent = art.status;
-    figure.querySelector("p").textContent = art.description;
-    const prototypeLink = figure.querySelector(".map-node-inspector__prototype");
-    prototypeLink.hidden = !art.prototype;
-    if (art.prototype) prototypeLink.href = art.prototype;
-    figure.hidden = false;
-  }
-
-  function openSelectedArt() {
-    if (!selectedRoom) return;
-    const art = regionArt.get(selectedRoom.id);
-    if (!art) return;
-    artDialog.querySelector("h2").textContent = art.title;
-    artDialog.querySelector("p").textContent = art.description;
-    const image = artDialog.querySelector("img");
-    image.src = art.image;
-    image.alt = `${art.title} 횡스크롤 환경 콘셉트`;
-    artDialog.showModal();
   }
 
   function closeInspector() {
@@ -448,6 +440,11 @@
     activeFilters.clear();
     tools.querySelectorAll("[data-filter]").forEach((button) => button.setAttribute("aria-pressed", "false"));
     tools.querySelector("input[type='search']").value = "";
+    if (criticalFlow) criticalFlow.hidden = true;
+    const flowButton = tools.querySelector("[data-action='flow']");
+    flowButton?.setAttribute("aria-expanded", "false");
+    flowButton?.classList.remove("is-active");
+    body.classList.remove("is-critical-flow-open");
     closeInspector();
     updateFilterState();
   }
@@ -488,13 +485,6 @@
           state: room.dataset.rewardState || null
         },
         event: room.dataset.event || null,
-        environmentArt: regionArt.get(room.id) ? {
-          id: regionArt.get(room.id).id,
-          title: regionArt.get(room.id).title,
-          image: regionArt.get(room.id).image,
-          status: regionArt.get(room.id).status,
-          prototype: regionArt.get(room.id).prototype || null
-        } : null,
         text: room.textContent.replace(/\s+/g, " ").trim()
       })),
       connections: [...canvas.querySelectorAll(".d, .lk")].map((connection, index) => ({

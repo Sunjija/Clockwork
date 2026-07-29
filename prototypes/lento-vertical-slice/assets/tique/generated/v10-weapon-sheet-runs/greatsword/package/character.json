@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "tique-greatsword",
+  "display_name": "Tique Greatsword Attack",
+  "description": "A configurable 2D game character sprite: Tique, a compact warm brass wind-up robot with a large round head, short thin segmented arms, very short legs, cyan oval eyes and cyan heart core. No rear wind-up key. Two-handed greatsword attack.",
+  "spritesheet": "tique-greatsword.webp",
+  "atlas": {
+    "columns": 10,
+    "rows": 1,
+    "cell_width": 128,
+    "cell_height": 256,
+    "width": 1280,
+    "height": 256
+  },
+  "animations": [
+    {
+      "name": "greatsword-attack",
+      "row": 0,
+      "frames": 10,
+      "action": "two-handed guard, weight shift, deep wind-up, loaded anticipation, fast slash smear, blade contact, hit freeze, weighted follow-through, overshoot, return to guard",
+      "fps": 18
+    }
+  ],
+  "style_preset": "metroidvania",
+  "style_notes": "polished hand-painted pixel art, strict CLOCKWORK palette and proportions, preserve exact greatsword design, weapon weight carried by torso and short legs",
+  "view": "side-facing 3/4 view facing right",
+  "chroma_key": {
+    "hex": "#FF00FF",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "name": "user-selected",
+    "selection": "manual"
+  },
+  "notes": "Tique, a compact warm brass wind-up robot with a large round head, short thin segmented arms, very short legs, cyan oval eyes and cyan heart core. No rear wind-up key. Two-handed greatsword attack."
+}

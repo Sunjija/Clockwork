@@ -1,0 +1,32 @@
+{
+  "status": "proposal",
+  "version": 3,
+  "mapNodes": [
+    "act1-room-009",
+    "act1-room-008"
+  ],
+  "sceneGroup": "CaligoVillageExterior",
+  "referenceResolution": [
+    640,
+    360
+  ],
+  "sectionCount": 2,
+  "sectionCentersWorldX": [
+    0,
+    10
+  ],
+  "pixelsPerUnit": 64,
+  "cameraUnits": [
+    10,
+    5.625
+  ],
+  "upperGroundDesignY": 223,
+  "workshopLowerGroundDesignY": 306,
+  "joinStrategy": "separate 640x360 sections, structural seam pier, modular catwalk",
+  "layers": [
+    "00-approach-environment.png",
+    "10-gate-watch-environment.png",
+    "20-approach-catwalk.png",
+    "30-approach-door.png"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "proposal",
+  "roomId": "act1-room-010",
+  "scene": "MorbiWorkshopRegistered",
+  "canvas": [
+    800,
+    450
+  ],
+  "safeFrame": [
+    80,
+    45,
+    720,
+    405
+  ],
+  "pixelsPerUnit": 64,
+  "pivot": [
+    0.5,
+    0.5
+  ],
+  "parallaxReady": false,
+  "layers": [
+    "00-bg-shell.png",
+    "20-fixtures.png",
+    "30-gameplay.png",
+    "40-props.png",
+    "70-fg-occlusion.png",
+    "80-fx.png"
+  ],
+  "rejectedLayersPreserved": [
+    "00-architecture.png",
+    "30-gameplay-foundation.png",
+    "70-foreground-overscan.png"
+  ]
+}

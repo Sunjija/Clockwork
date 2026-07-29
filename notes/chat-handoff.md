@@ -13,8 +13,8 @@
 
 - 저장소: https://github.com/Sunjija/Clockwork
 - **프로젝트 전체 요약 1장 (먼저 읽기)**: https://raw.githubusercontent.com/Sunjija/Clockwork/main/docs/99_master_context.md
-- 정본 룰북 v5.4: https://raw.githubusercontent.com/Sunjija/Clockwork/main/docs/00_canon_rules_v5.4.md
-- v5.5 패치(정정·확정 반영): https://raw.githubusercontent.com/Sunjija/Clockwork/main/docs/rulebook-v5.5-patch.md
+- 정본 룰북 v5.5.1: https://raw.githubusercontent.com/Sunjija/Clockwork/main/docs/00_canon_rules_v5.5.1.md
+- v5.5.1 정합 패치: https://raw.githubusercontent.com/Sunjija/Clockwork/main/docs/rulebook-v5.5.1-patch.md
 - 개발 현재 상태: https://raw.githubusercontent.com/Sunjija/Clockwork/main/notes/current-state.md
 - 아트 영입 브리프: https://raw.githubusercontent.com/Sunjija/Clockwork/main/docs/art/art-recruitment-brief.md
 

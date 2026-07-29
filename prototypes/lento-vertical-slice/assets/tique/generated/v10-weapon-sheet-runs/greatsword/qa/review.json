@@ -1,0 +1,172 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames",
+  "cell_width": 128,
+  "cell_height": 256,
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "greatsword-attack",
+      "row": 0,
+      "expected_frames": 10,
+      "actual_frames": 10,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\00.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 6380,
+          "bbox": [
+            4,
+            80,
+            124,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\01.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 6605,
+          "bbox": [
+            4,
+            79,
+            124,
+            176
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\02.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 7438,
+          "bbox": [
+            4,
+            71,
+            124,
+            184
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\03.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 7367,
+          "bbox": [
+            4,
+            78,
+            124,
+            177
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\04.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 5048,
+          "bbox": [
+            4,
+            87,
+            124,
+            168
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 9
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\05.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 5267,
+          "bbox": [
+            4,
+            86,
+            124,
+            170
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 6
+        },
+        {
+          "index": 6,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\06.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 6709,
+          "bbox": [
+            4,
+            81,
+            124,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\07.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 7423,
+          "bbox": [
+            4,
+            73,
+            124,
+            182
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 8,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\08.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 9131,
+          "bbox": [
+            4,
+            58,
+            124,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 9,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\frames\\greatsword-attack\\09.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 7062,
+          "bbox": [
+            4,
+            78,
+            124,
+            177
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    }
+  ]
+}

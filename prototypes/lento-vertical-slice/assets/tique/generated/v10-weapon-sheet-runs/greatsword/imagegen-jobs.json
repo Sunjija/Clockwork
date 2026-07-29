@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-07-18T09:01:52.314616+00:00",
+  "run_dir": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword",
+  "primary_generation_skill": "$imagegen",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "base-character",
+      "status": "complete",
+      "prompt_file": "prompts/base-character.md",
+      "input_images": [
+        {
+          "path": "references\\reference-01.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-02.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-03.png",
+          "role": "character reference"
+        }
+      ],
+      "output_path": "decoded/base.png",
+      "depends_on": [],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "recording_owner": "parent",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v7\\master\\tique-master.png",
+      "source_provenance": "built-in-imagegen-or-manual",
+      "source_sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+      "output_sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+      "completed_at": "2026-07-18T09:02:14.308345+00:00",
+      "metadata": {
+        "width": 640,
+        "height": 512,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "canonical_reference_path": "references\\canonical-base.png"
+    },
+    {
+      "id": "greatsword-attack",
+      "kind": "animation-strip",
+      "status": "complete",
+      "prompt_file": "prompts/animations/greatsword-attack.md",
+      "input_images": [
+        {
+          "path": "references\\reference-01.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-02.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-03.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references/layout-guides/greatsword-attack.png",
+          "role": "layout guide for 10 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base character"
+        }
+      ],
+      "output_path": "decoded/greatsword-attack.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "animation": {
+        "name": "greatsword-attack",
+        "row": 0,
+        "frames": 10,
+        "fps": 18,
+        "action": "two-handed guard, weight shift, deep wind-up, loaded anticipation, fast slash smear, blade contact, hit freeze, weighted follow-through, overshoot, return to guard"
+      },
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\greatsword\\normalized\\greatsword-attack.png",
+      "source_provenance": "normalized-run-source",
+      "source_sha256": "f27802a2297c0c2a5b66815c9c97e3ab6a380a426dee2e47d300418f63d7d628",
+      "output_sha256": "f27802a2297c0c2a5b66815c9c97e3ab6a380a426dee2e47d300418f63d7d628",
+      "completed_at": "2026-07-18T09:23:05.653041+00:00",
+      "metadata": {
+        "width": 1983,
+        "height": 793,
+        "mode": "RGBA",
+        "format": "PNG"
+      }
+    }
+  ],
+  "canonical_identity_reference": {
+    "path": "references\\canonical-base.png",
+    "source_job": "base",
+    "sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+    "metadata": {
+      "width": 640,
+      "height": 512,
+      "mode": "RGBA",
+      "format": "PNG"
+    }
+  }
+}

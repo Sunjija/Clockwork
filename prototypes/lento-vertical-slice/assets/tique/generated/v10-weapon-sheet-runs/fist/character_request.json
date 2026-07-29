@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "character_id": "tique-fist",
+  "display_name": "Tique Fist Attack",
+  "description": "A configurable 2D game character sprite: Tique, a compact warm brass wind-up robot with a large round head, short thin segmented arms, very short legs, cyan oval eyes and a cyan heart core. No rear wind-up key. Fast bare-fist basic attack.",
+  "created_at": "2026-07-18T09:01:52.159763+00:00",
+  "atlas": {
+    "columns": 8,
+    "rows": 1,
+    "cell_width": 128,
+    "cell_height": 256,
+    "width": 1024,
+    "height": 256
+  },
+  "animations": [
+    {
+      "name": "fist-attack",
+      "row": 0,
+      "frames": 8,
+      "action": "guard, coil, jab acceleration, punch contact, hit freeze, follow-through, recoil, return to guard",
+      "fps": 24
+    }
+  ],
+  "layout_guides": [
+    {
+      "animation": "fist-attack",
+      "path": "references\\layout-guides\\fist-attack.png",
+      "width": 1024,
+      "height": 256,
+      "frames": 8,
+      "cell_width": 128,
+      "cell_height": 256,
+      "safe_margin_x": 12,
+      "safe_margin_y": 24,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    }
+  ],
+  "references": [
+    {
+      "path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\references\\reference-01.png",
+      "width": 640,
+      "height": 512,
+      "mode": "RGBA",
+      "format": "PNG",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v7\\master\\tique-master.png",
+      "copied_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\references\\reference-01.png"
+    },
+    {
+      "path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\references\\reference-02.png",
+      "width": 3840,
+      "height": 2160,
+      "mode": "RGB",
+      "format": "PNG",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Desktop\\CLOCKWORK\\\uce90\ub9ad\ud130 \uc2dc\ud2b8\\\ud2f0\ud06c \uce90\ub9ad\ud130\uc2dc\ud2b8.png",
+      "copied_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\references\\reference-02.png"
+    }
+  ],
+  "chroma_key": {
+    "hex": "#FF00FF",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "name": "user-selected",
+    "selection": "manual"
+  },
+  "character_notes": "Tique, a compact warm brass wind-up robot with a large round head, short thin segmented arms, very short legs, cyan oval eyes and a cyan heart core. No rear wind-up key. Fast bare-fist basic attack.",
+  "style_preset": "metroidvania",
+  "style_notes": "polished hand-painted pixel art, strict CLOCKWORK palette and proportions, same side-facing 3/4 view in every frame",
+  "style_contract": "side-view action platformer sprite style, slightly heroic proportions, strong silhouette, limited palette, crisp outline, animation-ready limb shapes, readable weapon/accessory forms. Additional user style notes: polished hand-painted pixel art, strict CLOCKWORK palette and proportions, same side-facing 3/4 view in every frame",
+  "view": "side-facing 3/4 view facing right",
+  "mirror_pairs": {},
+  "primary_generation_skill": "$imagegen",
+  "canonical_identity_reference": {
+    "path": "references\\canonical-base.png",
+    "source_job": "base",
+    "sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+    "metadata": {
+      "width": 640,
+      "height": 512,
+      "mode": "RGBA",
+      "format": "PNG"
+    }
+  }
+}

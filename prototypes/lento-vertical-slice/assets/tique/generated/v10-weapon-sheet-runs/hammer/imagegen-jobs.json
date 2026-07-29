@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-07-18T09:01:52.466923+00:00",
+  "run_dir": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer",
+  "primary_generation_skill": "$imagegen",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "base-character",
+      "status": "complete",
+      "prompt_file": "prompts/base-character.md",
+      "input_images": [
+        {
+          "path": "references\\reference-01.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-02.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-03.png",
+          "role": "character reference"
+        }
+      ],
+      "output_path": "decoded/base.png",
+      "depends_on": [],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "recording_owner": "parent",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v7\\master\\tique-master.png",
+      "source_provenance": "built-in-imagegen-or-manual",
+      "source_sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+      "output_sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+      "completed_at": "2026-07-18T09:02:14.510669+00:00",
+      "metadata": {
+        "width": 640,
+        "height": 512,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "canonical_reference_path": "references\\canonical-base.png"
+    },
+    {
+      "id": "hammer-attack",
+      "kind": "animation-strip",
+      "status": "complete",
+      "prompt_file": "prompts/animations/hammer-attack.md",
+      "input_images": [
+        {
+          "path": "references\\reference-01.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-02.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-03.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references/layout-guides/hammer-attack.png",
+          "role": "layout guide for 10 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base character"
+        }
+      ],
+      "output_path": "decoded/hammer-attack.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "animation": {
+        "name": "hammer-attack",
+        "row": 0,
+        "frames": 10,
+        "fps": 14,
+        "action": "low guard, first lift, overhead raise, compressed anticipation, downward acceleration, fast downward smear, ground impact, impact freeze, rebound and settle, return to guard"
+      },
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\normalized\\hammer-attack.png",
+      "source_provenance": "normalized-run-source",
+      "source_sha256": "dd12734ecef9777c31482424bf5f6484be92d4d99bb18b185743d36b12a75656",
+      "output_sha256": "dd12734ecef9777c31482424bf5f6484be92d4d99bb18b185743d36b12a75656",
+      "completed_at": "2026-07-18T09:22:35.765920+00:00",
+      "metadata": {
+        "width": 1983,
+        "height": 793,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "chroma_background_audit": {
+        "ok": true,
+        "total_edge_pixel_count": 87808,
+        "edge_pixel_count": 0,
+        "transparent_edge_count": 87808,
+        "transparent_edge_ratio": 1.0,
+        "warnings": []
+      }
+    }
+  ],
+  "canonical_identity_reference": {
+    "path": "references\\canonical-base.png",
+    "source_job": "base",
+    "sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+    "metadata": {
+      "width": 640,
+      "height": 512,
+      "mode": "RGBA",
+      "format": "PNG"
+    }
+  }
+}

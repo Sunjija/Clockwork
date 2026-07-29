@@ -245,5 +245,5 @@ Updated: 2026-07-22 (Asia/Seoul)
 
 > Working agreement: whenever a session ends, update this handoff (done section + this list)
 > so the next agent — Claude Code or Codex — can continue without conversation context.
-> Canon lives in `docs/00_canon_rules_v5.4.md` + `docs/rulebook-v5.5-patch.md`;
+> Canon lives in `docs/00_canon_rules_v5.5.1.md` + `docs/rulebook-v5.5.1-patch.md`;
 > `docs/99_master_context.md` is the portable snapshot and must be kept in sync.

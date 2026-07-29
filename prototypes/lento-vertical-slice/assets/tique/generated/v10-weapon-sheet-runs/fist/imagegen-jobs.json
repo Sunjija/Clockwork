@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-07-18T09:01:52.162274+00:00",
+  "run_dir": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist",
+  "primary_generation_skill": "$imagegen",
+  "jobs": [
+    {
+      "id": "base",
+      "kind": "base-character",
+      "status": "complete",
+      "prompt_file": "prompts/base-character.md",
+      "input_images": [
+        {
+          "path": "references\\reference-01.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-02.png",
+          "role": "character reference"
+        }
+      ],
+      "output_path": "decoded/base.png",
+      "depends_on": [],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "recording_owner": "parent",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v7\\master\\tique-master.png",
+      "source_provenance": "built-in-imagegen-or-manual",
+      "source_sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+      "output_sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+      "completed_at": "2026-07-18T09:02:14.084700+00:00",
+      "metadata": {
+        "width": 640,
+        "height": 512,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "canonical_reference_path": "references\\canonical-base.png"
+    },
+    {
+      "id": "fist-attack",
+      "kind": "animation-strip",
+      "status": "complete",
+      "prompt_file": "prompts/animations/fist-attack.md",
+      "input_images": [
+        {
+          "path": "references\\reference-01.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references\\reference-02.png",
+          "role": "character reference"
+        },
+        {
+          "path": "references/layout-guides/fist-attack.png",
+          "role": "layout guide for 8 frame slots; use for spacing only, do not copy guide lines"
+        },
+        {
+          "path": "references/canonical-base.png",
+          "role": "canonical identity reference"
+        },
+        {
+          "path": "decoded/base.png",
+          "role": "approved base character"
+        }
+      ],
+      "output_path": "decoded/fist-attack.png",
+      "depends_on": [
+        "base"
+      ],
+      "generation_skill": "$imagegen",
+      "requires_grounded_generation": true,
+      "allow_prompt_only_generation": false,
+      "identity_reference_paths": [
+        "references/canonical-base.png",
+        "decoded/base.png"
+      ],
+      "animation": {
+        "name": "fist-attack",
+        "row": 0,
+        "frames": 8,
+        "fps": 24,
+        "action": "guard, coil, jab acceleration, punch contact, hit freeze, follow-through, recoil, return to guard"
+      },
+      "mirror_policy": {},
+      "recording_owner": "parent",
+      "source_path": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\normalized\\fist-attack.png",
+      "source_provenance": "normalized-run-source",
+      "source_sha256": "917f820bbddcb6b6b7ab7633d6c897e260f1e7b04fa3aab07c96ddf44fe5f4cc",
+      "output_sha256": "917f820bbddcb6b6b7ab7633d6c897e260f1e7b04fa3aab07c96ddf44fe5f4cc",
+      "completed_at": "2026-07-18T09:22:34.951262+00:00",
+      "metadata": {
+        "width": 2172,
+        "height": 724,
+        "mode": "RGBA",
+        "format": "PNG"
+      },
+      "chroma_background_audit": {
+        "ok": true,
+        "total_edge_pixel_count": 91648,
+        "edge_pixel_count": 0,
+        "transparent_edge_count": 91648,
+        "transparent_edge_ratio": 1.0,
+        "warnings": []
+      }
+    }
+  ],
+  "canonical_identity_reference": {
+    "path": "references\\canonical-base.png",
+    "source_job": "base",
+    "sha256": "5b7b8259380a00ed3132b4b6ce4c474a901a8ca0f3b971f72ccfa2d801505c91",
+    "metadata": {
+      "width": 640,
+      "height": 512,
+      "mode": "RGBA",
+      "format": "PNG"
+    }
+  }
+}

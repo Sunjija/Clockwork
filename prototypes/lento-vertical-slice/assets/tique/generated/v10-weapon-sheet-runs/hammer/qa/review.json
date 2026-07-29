@@ -1,0 +1,172 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames",
+  "cell_width": 128,
+  "cell_height": 256,
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "hammer-attack",
+      "row": 0,
+      "expected_frames": 10,
+      "actual_frames": 10,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\00.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 12102,
+          "bbox": [
+            4,
+            55,
+            124,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\01.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 11181,
+          "bbox": [
+            4,
+            55,
+            124,
+            200
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\02.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 8478,
+          "bbox": [
+            4,
+            70,
+            124,
+            185
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\03.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 11023,
+          "bbox": [
+            4,
+            69,
+            124,
+            186
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\04.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 12517,
+          "bbox": [
+            4,
+            62,
+            124,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\05.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 10678,
+          "bbox": [
+            4,
+            56,
+            124,
+            199
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 5
+        },
+        {
+          "index": 6,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\06.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 7516,
+          "bbox": [
+            4,
+            81,
+            124,
+            175
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 5
+        },
+        {
+          "index": 7,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\07.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 6957,
+          "bbox": [
+            4,
+            84,
+            124,
+            172
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 7
+        },
+        {
+          "index": 8,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\08.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 11370,
+          "bbox": [
+            4,
+            64,
+            124,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 9,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\hammer\\frames\\hammer-attack\\09.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 12285,
+          "bbox": [
+            4,
+            57,
+            124,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    }
+  ]
+}

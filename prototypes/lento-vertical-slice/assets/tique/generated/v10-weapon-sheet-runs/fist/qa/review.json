@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames",
+  "cell_width": 128,
+  "cell_height": 256,
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "fist-attack",
+      "row": 0,
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\00.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 16821,
+          "bbox": [
+            4,
+            34,
+            124,
+            221
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\01.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 15494,
+          "bbox": [
+            4,
+            42,
+            124,
+            214
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\02.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 12791,
+          "bbox": [
+            4,
+            52,
+            124,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\03.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 10028,
+          "bbox": [
+            4,
+            60,
+            124,
+            195
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\04.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 9989,
+          "bbox": [
+            4,
+            60,
+            124,
+            195
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 3
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\05.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 13864,
+          "bbox": [
+            4,
+            46,
+            124,
+            210
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\06.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 13115,
+          "bbox": [
+            4,
+            48,
+            124,
+            208
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 2
+        },
+        {
+          "index": 7,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-07-14\\sunjija-clockwork-https-github-com-sunjija\\work\\Clockwork-repo\\prototypes\\lento-vertical-slice\\assets\\tique\\generated\\v10-weapon-sheet-runs\\fist\\frames\\fist-attack\\07.png",
+          "width": 128,
+          "height": 256,
+          "nontransparent_pixels": 16770,
+          "bbox": [
+            4,
+            35,
+            124,
+            221
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        }
+      ]
+    }
+  ]
+}
