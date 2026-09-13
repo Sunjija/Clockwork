@@ -1,0 +1,77 @@
+{
+  "file": "tique-walk.aseprite",
+  "layer": "Tique Walk",
+  "tag": "walk-right",
+  "frames": [
+    {
+      "frame": 0,
+      "duration_ms": 60,
+      "rgba_sha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc"
+    },
+    {
+      "frame": 1,
+      "duration_ms": 40,
+      "rgba_sha256": "3f696545a5679c86ac527d5405040b4acb6f3c0b63946fb7fd5408c43d8343fc"
+    },
+    {
+      "frame": 2,
+      "duration_ms": 80,
+      "rgba_sha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c"
+    },
+    {
+      "frame": 3,
+      "duration_ms": 60,
+      "rgba_sha256": "ca0d14ba49e7dcb58d1061a849334435de2cd3dfa4a1b9886fb1ee2c2138cc70"
+    },
+    {
+      "frame": 4,
+      "duration_ms": 40,
+      "rgba_sha256": "5a33393809abb020b62dd3ffd568d792e62e1f382fa5d8afec1adfcbef3b0f9b"
+    },
+    {
+      "frame": 5,
+      "duration_ms": 40,
+      "rgba_sha256": "48cda201cf469921a781daf3b6b49437621c5c2fda7e5c005e35cd96059e47dd"
+    },
+    {
+      "frame": 6,
+      "duration_ms": 60,
+      "rgba_sha256": "a58309f473bfcfd9a8c2877735e8e6c16641f44f983f40307222f0cbeee9f5fb"
+    },
+    {
+      "frame": 7,
+      "duration_ms": 100,
+      "rgba_sha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0"
+    },
+    {
+      "frame": 8,
+      "duration_ms": 40,
+      "rgba_sha256": "b081fd537fc7cc1d3a6a27e9c920ea38c8fe22a043e64eaab3befb45a0468904"
+    },
+    {
+      "frame": 9,
+      "duration_ms": 60,
+      "rgba_sha256": "311093d01f74184c0f0f37c3a9ad5029296755e0e9007469eb4b53c27f4cf7e9"
+    },
+    {
+      "frame": 10,
+      "duration_ms": 60,
+      "rgba_sha256": "1b8dbde9c82edb2eb50d327ae764768735188a53cdfc40711b7a764de17d04af"
+    },
+    {
+      "frame": 11,
+      "duration_ms": 40,
+      "rgba_sha256": "23ffd3f45b8a7f9f9d2512d9aeec53af3947d3f0a15f78c7c878488fbaecbd0d"
+    },
+    {
+      "frame": 12,
+      "duration_ms": 40,
+      "rgba_sha256": "50474508f122d8255b10ec8e82ec186c58a24c07ec3d44358a1e75931cfa0c82"
+    },
+    {
+      "frame": 13,
+      "duration_ms": 40,
+      "rgba_sha256": "60cc73dbe2eb24cd25872cdddb0b79c1110f2837a3ee5c45813c46d2496a6d57"
+    }
+  ]
+}

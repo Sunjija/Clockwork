@@ -1,0 +1,14 @@
+[
+  {
+    "source": "work\\Clockwork\\art\\concepts\\act1\\01-limbus-background-v1.png",
+    "output": "Scene/limbus.png",
+    "sha256": "e81a9061b4327320673aba6b6e91a56ccba0fe9101759e97bb28f14ebfabbcf8",
+    "operation": "byte-exact copy; displayed by Canvas"
+  },
+  {
+    "source": "work\\Clockwork\\unity\\ClockworkPrototype\\Assets\\Clockwork\\Art\\Environment\\IndustrialRuins\\industrial-brick-fill.png",
+    "output": "Scene/platform-fill.png",
+    "sha256": "fe883354b8ba8b6bae1ecfd2a0594098c8a96d6dd02e03e37a5ad90d8bd67d96",
+    "operation": "byte-exact copy; displayed by Canvas"
+  }
+]

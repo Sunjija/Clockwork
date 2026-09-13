@@ -1,0 +1,66 @@
+{
+  "tests": 11,
+  "passed": 11,
+  "settings": {
+    "width": 640,
+    "height": 360,
+    "spawnX": 106,
+    "spawnY": 252,
+    "walkSpeed": 42,
+    "jumpSpeed": 220,
+    "doubleJumpSpeed": 205,
+    "gravity": 800,
+    "dashSpeed": 260,
+    "dashActiveMs": 160,
+    "dashCooldownMs": 300,
+    "coyoteMs": 120,
+    "jumpBufferMs": 100,
+    "footHalfWidth": 7
+  },
+  "checks": [
+    {
+      "name": "left/right travel, world bounds and static original idle",
+      "passed": true
+    },
+    {
+      "name": "walk-off + 80 ms: coyote first jump retains double jump, third jump denied",
+      "passed": true
+    },
+    {
+      "name": "walk-off + 140 ms: grace expires and only airborne jump remains",
+      "passed": true
+    },
+    {
+      "name": "jump buffer within 100 ms is consumed once on landing",
+      "passed": true
+    },
+    {
+      "name": "expired jump buffer does not cause an unrequested bounce",
+      "passed": true
+    },
+    {
+      "name": "dash off ledge falls instead of snapping back; air dash cannot repeat",
+      "passed": true
+    },
+    {
+      "name": "fast fall lands on a thin platform without collision tunneling",
+      "passed": true
+    },
+    {
+      "name": "air attack preserves gravity; ground attack keeps feet planted",
+      "passed": true
+    },
+    {
+      "name": "key assignments, repeat suppression, opposite arrows and focus cleanup",
+      "passed": true
+    },
+    {
+      "name": "30/60/144 Hz renders give the same trajectory and position",
+      "passed": true
+    },
+    {
+      "name": "every animation pose stays within its authored frame range",
+      "passed": true
+    }
+  ]
+}

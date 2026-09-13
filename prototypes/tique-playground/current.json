@@ -1,0 +1,8 @@
+{
+  "revision": "10",
+  "data": "Revisions/10/data.json",
+  "preview": "index.html",
+  "status": "experiment-pending-user-review",
+  "interaction": "Scene/play-controller.js",
+  "scene": "limbus-play-01"
+}

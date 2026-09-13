@@ -1,0 +1,945 @@
+{
+  "revision": "10",
+  "cell": [
+    64,
+    64
+  ],
+  "anchor": [
+    32,
+    56
+  ],
+  "source": "walk49",
+  "status": "experiment-pending-user-review",
+  "physics": {
+    "jumpSpeed": 220,
+    "gravity": 800,
+    "doubleJumpSpeed": 205,
+    "walkSpeed": 25,
+    "dashSpeed": 260,
+    "dashActiveMs": 160,
+    "dashRecoverMs": 180
+  },
+  "clips": {
+    "Idle": {
+      "frames": [
+        "Revisions/10/Idle/Frames/00.png"
+      ],
+      "durations": [
+        1000
+      ],
+      "names": [
+        "원래 기본 자세"
+      ],
+      "duration_ms": 1000,
+      "loop": true,
+      "sheet": "Revisions/10/Idle/sheet.png",
+      "native": "Revisions/10/Idle/native.apng",
+      "donors": [
+        "Source/OriginalIdle/original-base.png"
+      ],
+      "states": [
+        [
+          "original-static-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ]
+      ]
+    },
+    "Attack": {
+      "frames": [
+        "Revisions/10/Attack/Frames/00.png",
+        "Revisions/10/Attack/Frames/01.png",
+        "Revisions/10/Attack/Frames/02.png",
+        "Revisions/10/Attack/Frames/03.png",
+        "Revisions/10/Attack/Frames/04.png",
+        "Revisions/10/Attack/Frames/05.png",
+        "Revisions/10/Attack/Frames/06.png",
+        "Revisions/10/Attack/Frames/07.png",
+        "Revisions/10/Attack/Frames/08.png",
+        "Revisions/10/Attack/Frames/09.png",
+        "Revisions/10/Attack/Frames/10.png",
+        "Revisions/10/Attack/Frames/11.png"
+      ],
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "names": [
+        "준비",
+        "손 모음",
+        "발로 버팀",
+        "빠른 전진",
+        "타격",
+        "힘 유지",
+        "팔 회수",
+        "상체 복귀",
+        "짧은 반동",
+        "중심 회복",
+        "손 내려감",
+        "기준 복귀"
+      ],
+      "duration_ms": 460,
+      "loop": false,
+      "sheet": "Revisions/10/Attack/sheet.png",
+      "native": "Revisions/10/Attack/native.apng",
+      "donors": [
+        "Source/approved-walk0.png",
+        "Revisions/04/Attack/Frames/01.png",
+        "Source/ReferencePass/wind.png",
+        "Revisions/04/Attack/Frames/03.png",
+        "Source/ReferencePass/punch.png",
+        "Source/ReferencePass/punch.png",
+        "Revisions/04/Attack/Frames/06.png",
+        "Revisions/04/Attack/Frames/07.png",
+        "Source/ReferencePass/wind.png",
+        "Revisions/04/Attack/Frames/09.png",
+        "Revisions/04/Attack/Frames/10.png",
+        "Source/approved-walk0.png"
+      ],
+      "states": [
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ]
+      ]
+    },
+    "Jump": {
+      "frames": [
+        "Revisions/10/Jump/Frames/00.png",
+        "Revisions/10/Jump/Frames/01.png",
+        "Revisions/10/Jump/Frames/02.png",
+        "Revisions/10/Jump/Frames/03.png",
+        "Revisions/10/Jump/Frames/04.png",
+        "Revisions/10/Jump/Frames/05.png",
+        "Revisions/10/Jump/Frames/06.png",
+        "Revisions/10/Jump/Frames/07.png",
+        "Revisions/10/Jump/Frames/08.png",
+        "Revisions/10/Jump/Frames/09.png",
+        "Revisions/10/Jump/Frames/10.png",
+        "Revisions/10/Jump/Frames/11.png",
+        "Revisions/10/Jump/Frames/12.png",
+        "Revisions/10/Jump/Frames/13.png",
+        "Revisions/10/Jump/Frames/14.png"
+      ],
+      "durations": [
+        60,
+        30,
+        40,
+        40,
+        90,
+        70,
+        60,
+        40,
+        70,
+        60,
+        35,
+        35,
+        45,
+        45,
+        80
+      ],
+      "names": [
+        "기준",
+        "짧은 압축",
+        "차기 준비",
+        "이륙",
+        "발 모아 상승",
+        "상승 끝",
+        "정점",
+        "팔 방향 전환",
+        "팔 들고 하강",
+        "착지 준비",
+        "발로 받기",
+        "몸 압축",
+        "머리 후행",
+        "몸 회복",
+        "기준 복귀"
+      ],
+      "duration_ms": 800,
+      "loop": false,
+      "sheet": "Revisions/10/Jump/sheet.png",
+      "native": "Revisions/10/Jump/native.apng",
+      "donors": [
+        "Revisions/04/Jump/Frames/00.png",
+        "Revisions/04/Jump/Frames/01.png",
+        "Revisions/04/Jump/Frames/02.png",
+        "Revisions/04/Jump/Frames/03.png",
+        "Source/ReferencePass/tuck.png",
+        "Source/ReferencePass/tuck.png",
+        "Source/ReferencePass/tuck.png",
+        "Revisions/04/Jump/Frames/07.png",
+        "Source/ReferencePass/fall.png",
+        "Source/ReferencePass/fall.png",
+        "Source/ReferencePass/brake.png",
+        "Revisions/04/Jump/Frames/11.png",
+        "Revisions/04/Jump/Frames/12.png",
+        "Revisions/04/Jump/Frames/13.png",
+        "Revisions/04/Jump/Frames/14.png"
+      ],
+      "states": [
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ]
+      ]
+    },
+    "DoubleJump": {
+      "frames": [
+        "Revisions/10/DoubleJump/Frames/00.png",
+        "Revisions/10/DoubleJump/Frames/01.png",
+        "Revisions/10/DoubleJump/Frames/02.png",
+        "Revisions/10/DoubleJump/Frames/03.png",
+        "Revisions/10/DoubleJump/Frames/04.png",
+        "Revisions/10/DoubleJump/Frames/05.png",
+        "Revisions/10/DoubleJump/Frames/06.png",
+        "Revisions/10/DoubleJump/Frames/07.png",
+        "Revisions/10/DoubleJump/Frames/08.png",
+        "Revisions/10/DoubleJump/Frames/09.png",
+        "Revisions/10/DoubleJump/Frames/10.png",
+        "Revisions/10/DoubleJump/Frames/11.png",
+        "Revisions/10/DoubleJump/Frames/12.png"
+      ],
+      "durations": [
+        50,
+        30,
+        45,
+        45,
+        90,
+        60,
+        40,
+        70,
+        70,
+        35,
+        45,
+        50,
+        80
+      ],
+      "names": [
+        "첫 상승",
+        "공중 준비",
+        "비대칭 차기",
+        "재도약 힘 유지",
+        "발 회수",
+        "두 번째 정점",
+        "팔 방향 전환",
+        "하강",
+        "착지 준비",
+        "받기",
+        "충격 흡수",
+        "머리 복귀",
+        "기준 복귀"
+      ],
+      "duration_ms": 710,
+      "loop": false,
+      "sheet": "Revisions/10/DoubleJump/sheet.png",
+      "native": "Revisions/10/DoubleJump/native.apng",
+      "donors": [
+        "Source/ReferencePass/tuck.png",
+        "Source/ReferencePass/tuck.png",
+        "Source/ReferencePass/double-kick.png",
+        "Source/ReferencePass/double-kick.png",
+        "Source/ReferencePass/tuck.png",
+        "Source/ReferencePass/tuck.png",
+        "Revisions/04/DoubleJump/Frames/06.png",
+        "Source/ReferencePass/fall.png",
+        "Source/ReferencePass/fall.png",
+        "Source/ReferencePass/brake.png",
+        "Revisions/04/DoubleJump/Frames/10.png",
+        "Revisions/04/DoubleJump/Frames/11.png",
+        "Revisions/04/DoubleJump/Frames/12.png"
+      ],
+      "states": [
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ]
+      ]
+    },
+    "Dash": {
+      "frames": [
+        "Revisions/10/Dash/Frames/00.png",
+        "Revisions/10/Dash/Frames/01.png",
+        "Revisions/10/Dash/Frames/02.png",
+        "Revisions/10/Dash/Frames/03.png",
+        "Revisions/10/Dash/Frames/04.png",
+        "Revisions/10/Dash/Frames/05.png",
+        "Revisions/10/Dash/Frames/06.png",
+        "Revisions/10/Dash/Frames/07.png",
+        "Revisions/10/Dash/Frames/08.png",
+        "Revisions/10/Dash/Frames/09.png",
+        "Revisions/10/Dash/Frames/10.png",
+        "Revisions/10/Dash/Frames/11.png"
+      ],
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "names": [
+        "기준",
+        "작은 압축",
+        "전진 준비",
+        "몸이 먼저 나감",
+        "가속",
+        "낮은 전진",
+        "발 후행",
+        "앞발 제동",
+        "몸 뒤로 받기",
+        "중심 복귀",
+        "머리 복귀",
+        "기준 복귀"
+      ],
+      "duration_ms": 440,
+      "loop": false,
+      "sheet": "Revisions/10/Dash/sheet.png",
+      "native": "Revisions/10/Dash/native.apng",
+      "donors": [
+        "Source/approved-walk0.png",
+        "Source/ReferencePass/wind.png",
+        "Revisions/04/Dash/Frames/02.png",
+        "Source/ReferencePass/dash.png",
+        "Source/ReferencePass/dash.png",
+        "Source/ReferencePass/dash.png",
+        "Source/ReferencePass/dash.png",
+        "Source/ReferencePass/brake.png",
+        "Source/ReferencePass/brake.png",
+        "Revisions/04/Dash/Frames/09.png",
+        "Revisions/04/Dash/Frames/10.png",
+        "Source/approved-walk0.png"
+      ],
+      "states": [
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          false
+        ]
+      ]
+    },
+    "Walk": {
+      "frames": [
+        "Revisions/10/Walk/Frames/00.png",
+        "Revisions/10/Walk/Frames/01.png",
+        "Revisions/10/Walk/Frames/02.png",
+        "Revisions/10/Walk/Frames/03.png",
+        "Revisions/10/Walk/Frames/04.png",
+        "Revisions/10/Walk/Frames/05.png",
+        "Revisions/10/Walk/Frames/06.png",
+        "Revisions/10/Walk/Frames/07.png",
+        "Revisions/10/Walk/Frames/08.png",
+        "Revisions/10/Walk/Frames/09.png",
+        "Revisions/10/Walk/Frames/10.png",
+        "Revisions/10/Walk/Frames/11.png",
+        "Revisions/10/Walk/Frames/12.png",
+        "Revisions/10/Walk/Frames/13.png"
+      ],
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "names": [
+        "오른발 접지",
+        "다운",
+        "지지",
+        "통과",
+        "업",
+        "교차",
+        "다음 접지 준비",
+        "왼발 접지",
+        "다운",
+        "지지",
+        "통과",
+        "업",
+        "교차",
+        "다음 접지 준비"
+      ],
+      "duration_ms": 760,
+      "loop": true,
+      "sheet": "Revisions/10/Walk/sheet.png",
+      "native": "Revisions/10/Walk/native.apng",
+      "donors": [
+        "Source/Walk49/00.png",
+        "Source/Walk49/01.png",
+        "Source/Walk49/02.png",
+        "Source/Walk49/03.png",
+        "Source/Walk49/04.png",
+        "Source/Walk49/05.png",
+        "Source/Walk49/06.png",
+        "Source/Walk49/07.png",
+        "Source/Walk49/08.png",
+        "Source/Walk49/09.png",
+        "Source/Walk49/10.png",
+        "Source/Walk49/11.png",
+        "Source/Walk49/12.png",
+        "Source/Walk49/13.png"
+      ],
+      "states": [
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ],
+        [
+          "authored-source",
+          0,
+          0,
+          0,
+          0,
+          true
+        ]
+      ]
+    }
+  },
+  "walkDurations": [
+    60,
+    40,
+    80,
+    60,
+    40,
+    40,
+    60,
+    100,
+    40,
+    60,
+    60,
+    40,
+    40,
+    40
+  ],
+  "reference_pass": true,
+  "idle_design": "original-neutral-base-static",
+  "idle_static": true,
+  "attack_design": "restored-rear-arm",
+  "attack_selection": "user-selected-existing-rear-arm"
+}

@@ -1,0 +1,67 @@
+{
+  "file": "tique-dash.aseprite",
+  "layer": "Tique Dash",
+  "tag": "dash-right",
+  "frames": [
+    {
+      "frame": 0,
+      "duration_ms": 40,
+      "rgba_sha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc"
+    },
+    {
+      "frame": 1,
+      "duration_ms": 30,
+      "rgba_sha256": "257e74e3a6fb3b6654cb1742206099e44947ac9631ead847d9f353d749e75370"
+    },
+    {
+      "frame": 2,
+      "duration_ms": 30,
+      "rgba_sha256": "7e449e945a7338c85fc1fb47d9798f1230ff933f56b83fd7c29d8f212eb33466"
+    },
+    {
+      "frame": 3,
+      "duration_ms": 30,
+      "rgba_sha256": "646395536d59f869b51426383d5445dcd407855443596859523058b497de886c"
+    },
+    {
+      "frame": 4,
+      "duration_ms": 40,
+      "rgba_sha256": "646395536d59f869b51426383d5445dcd407855443596859523058b497de886c"
+    },
+    {
+      "frame": 5,
+      "duration_ms": 50,
+      "rgba_sha256": "646395536d59f869b51426383d5445dcd407855443596859523058b497de886c"
+    },
+    {
+      "frame": 6,
+      "duration_ms": 40,
+      "rgba_sha256": "646395536d59f869b51426383d5445dcd407855443596859523058b497de886c"
+    },
+    {
+      "frame": 7,
+      "duration_ms": 35,
+      "rgba_sha256": "63001dbc21e8769158f3c47a3835036c527694906b4f9fb2b7fae7aea4b6f009"
+    },
+    {
+      "frame": 8,
+      "duration_ms": 35,
+      "rgba_sha256": "63001dbc21e8769158f3c47a3835036c527694906b4f9fb2b7fae7aea4b6f009"
+    },
+    {
+      "frame": 9,
+      "duration_ms": 35,
+      "rgba_sha256": "7cf9cc9a7a462497d479ce9c673c06b16a6fa37ab8902f3f1d27e61f8af3395a"
+    },
+    {
+      "frame": 10,
+      "duration_ms": 35,
+      "rgba_sha256": "c77f645d82f487acbd20bd51e985ff7dd53864d5524917a7c7af8e79e09a6d64"
+    },
+    {
+      "frame": 11,
+      "duration_ms": 40,
+      "rgba_sha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc"
+    }
+  ]
+}

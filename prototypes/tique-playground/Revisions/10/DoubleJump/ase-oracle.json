@@ -1,0 +1,72 @@
+{
+  "file": "tique-doublejump.aseprite",
+  "layer": "Tique DoubleJump",
+  "tag": "doublejump-right",
+  "frames": [
+    {
+      "frame": 0,
+      "duration_ms": 50,
+      "rgba_sha256": "bfaea80f1d88465b58c8c0734177762a136d4740257b0f7aae48e17f520cd9ec"
+    },
+    {
+      "frame": 1,
+      "duration_ms": 30,
+      "rgba_sha256": "bfaea80f1d88465b58c8c0734177762a136d4740257b0f7aae48e17f520cd9ec"
+    },
+    {
+      "frame": 2,
+      "duration_ms": 45,
+      "rgba_sha256": "3a2a17ab92e42cb9cd6bf19539d2dcf2dedc1ce505138c7d9b49358e11fdda63"
+    },
+    {
+      "frame": 3,
+      "duration_ms": 45,
+      "rgba_sha256": "3a2a17ab92e42cb9cd6bf19539d2dcf2dedc1ce505138c7d9b49358e11fdda63"
+    },
+    {
+      "frame": 4,
+      "duration_ms": 90,
+      "rgba_sha256": "bfaea80f1d88465b58c8c0734177762a136d4740257b0f7aae48e17f520cd9ec"
+    },
+    {
+      "frame": 5,
+      "duration_ms": 60,
+      "rgba_sha256": "bfaea80f1d88465b58c8c0734177762a136d4740257b0f7aae48e17f520cd9ec"
+    },
+    {
+      "frame": 6,
+      "duration_ms": 40,
+      "rgba_sha256": "01091b9506384ce6cf08d62723844720bed1948a27d9e56d77dd6af36b14c65d"
+    },
+    {
+      "frame": 7,
+      "duration_ms": 70,
+      "rgba_sha256": "a4d732617c50f0aa3d1815018f8fb1586b17662b2347c5a97b7bf46614dabacf"
+    },
+    {
+      "frame": 8,
+      "duration_ms": 70,
+      "rgba_sha256": "a4d732617c50f0aa3d1815018f8fb1586b17662b2347c5a97b7bf46614dabacf"
+    },
+    {
+      "frame": 9,
+      "duration_ms": 35,
+      "rgba_sha256": "63001dbc21e8769158f3c47a3835036c527694906b4f9fb2b7fae7aea4b6f009"
+    },
+    {
+      "frame": 10,
+      "duration_ms": 45,
+      "rgba_sha256": "0cad585d37bba13d6b0b18fd5659ace70b0933c14a627f3b4bd45f394501e451"
+    },
+    {
+      "frame": 11,
+      "duration_ms": 50,
+      "rgba_sha256": "c77f645d82f487acbd20bd51e985ff7dd53864d5524917a7c7af8e79e09a6d64"
+    },
+    {
+      "frame": 12,
+      "duration_ms": 80,
+      "rgba_sha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "file": "tique-idle.aseprite",
+  "layer": "Tique Idle",
+  "tag": "idle-right",
+  "frames": [
+    {
+      "frame": 0,
+      "duration_ms": 1000,
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872"
+    }
+  ]
+}

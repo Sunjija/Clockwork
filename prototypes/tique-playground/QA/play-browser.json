@@ -1,0 +1,21 @@
+{
+  "page": "티크-동작실험실.html",
+  "spriteRevision": "10",
+  "scene": "limbus-play-01",
+  "viewports": [
+    {"width":1280,"height":800,"documentWidth":1280,"documentHeight":800,"overflow":false},
+    {"width":390,"height":844,"documentWidth":390,"documentHeight":844,"overflow":false,"touchButtonMinimum":[48,44]}
+  ],
+  "actualBrowserInputs": {
+    "Space":"jump; paused snapshot after key press",
+    "J":"Attack frame 0; gravity retained while airborne",
+    "ShiftLeft":"Dash frame 3; x advanced from 106 to 110.33",
+    "Escape":"pause and resume work",
+    "resetButton":"returns to original idle at x=106,y=252"
+  },
+  "continuousArrowMotion":"verified in controller tests; instantaneous automation press was too short to provide browser motion evidence",
+  "consoleErrorsAndWarnings":[],
+  "visualFixes":["viewport height fit","continuous platform top at collision surface","separate filled-tile URL avoids stale cached top tile"],
+  "temporaryViewportOverride":"reset",
+  "artReview":"user review pending; sprites unchanged"
+}
