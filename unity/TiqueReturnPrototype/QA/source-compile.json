@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "unityVersion": "6000.5.3f1",
+  "scope": "Roslyn compiles runtime and editor assemblies against installed Unity managed references. Does not run Unity, import assets or build a player.",
+  "unityRuntimeVerified": false
+}

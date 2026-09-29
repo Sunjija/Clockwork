@@ -1,0 +1,383 @@
+{
+  "status": "prototype",
+  "artMethod": "Original native pixel props hand-authored through integer drawing commands, as explicitly authorized by user. No AI generation used.",
+  "palette": [
+    "#10191e",
+    "#1b292e",
+    "#293c42",
+    "#3d5359",
+    "#657c7d",
+    "#a3b1a0",
+    "#3b312b",
+    "#69533b",
+    "#a88454",
+    "#d2b777",
+    "#e5d7a0",
+    "#2e7b83",
+    "#64d4ca",
+    "#c0fff0",
+    "#793a38",
+    "#da6657"
+  ],
+  "tique": "revision 10 frames copied byte-exact",
+  "background": "Existing Clockwork Limbus concept nearest resized to 640x360 and quantized to 64 colors",
+  "audio": "Original synthesized cues",
+  "files": [
+    {
+      "path": "Assets/Resources/Return/Art/arm-link.png",
+      "sha256": "312235e25ae32d2213d60883281c40e1d6374049a147b8b0b487827408647b20"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/console.png",
+      "sha256": "91e08e46f74246f383ebb4b235a331dbfb8154460112e6a88c5d4dac51a8cd97"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/fist.png",
+      "sha256": "09a18d427f7222959a6001f0be4caccff44d3b6fba334ec3f8bf304c429b4129"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/gate.png",
+      "sha256": "bb7dffee33252678515118b84a0b7d243265604b6912718118c23a3fd5b9aa98"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/guardian.png",
+      "sha256": "f84ea1473364863030053b2e8a19d362cbddeab44633fa1939225dcad7a08f58"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/inspection.png",
+      "sha256": "2940bbcde69f6decfa5c88cd7f52be52c31ec16da57da1da2d81e7ef8dd8c02c"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/limbus.png",
+      "sha256": "4aaa17c699ca7e903e0588ba7012a40fe8cec68dcc07d89d846c828d7ddab097"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/magnet.png",
+      "sha256": "289f5760aa2a9bb5a7f38c45c52eaaaa9ec457a5c6c63068865f821b8981a485"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/platform.png",
+      "sha256": "4227a2dbc430d61e03d8ca7f038d893fb5f2254e777f036536a6c3b7a8da5048"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/practice.png",
+      "sha256": "bd40d1b6f9552ee8a830465d2d1566e8dfd93f08cead96accbca8d3c47fc0cb6"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/pressure.png",
+      "sha256": "a901e0e91e3e095663b8b93929011610d1da713961d2ef93cc350775a0ac3b5c"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/rail-handle.png",
+      "sha256": "ccd699c480d64b28bb66fdb0f5b812d5cbd4c49437af5982fb40a0fb91bf4743"
+    },
+    {
+      "path": "Assets/Resources/Return/Art/weight.png",
+      "sha256": "e8971678f0e82dad5f1d474ee951e1d40e79bbcc4847cfb5f1043a1cf3d1688d"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/dash.wav",
+      "sha256": "294812e5b42635cc31912f2b61aa2a34d5fc84a778ffd77fc46317cc26384781"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/hit.wav",
+      "sha256": "19d4815fea6469bb01d5fa1e796b5e8ca58ac96a5813a09d504ae18cf2a5fdee"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/hurt.wav",
+      "sha256": "4aa3e55e499b8062d803b053804913623de86bd5f82f7cb3d52ea49219574943"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/jump.wav",
+      "sha256": "cd9b3f8646cd851e423a28c726f1bef560483eb7905fe9395cd9882d67c20424"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/land.wav",
+      "sha256": "ef8d24b242cd631b5cbc415a6bbb3f37d0c2772de561900337657c1d0282f4fb"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/success.wav",
+      "sha256": "3316372108a1338b1b0e2267b0024ac97df33f8d3f76e2751de9177f346d4749"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/switch.wav",
+      "sha256": "b84b447f3cfd93b18fa6bea33e9d51e748179667f6b2a71a02f0340fab3063e3"
+    },
+    {
+      "path": "Assets/Resources/Return/Audio/warning.wav",
+      "sha256": "2d284187c7d5f52e521a59cb4970f4597e4ba252a59e85ad102249441dbc1850"
+    },
+    {
+      "path": "Assets/Resources/Return/clips.json",
+      "sha256": "99adadb28b2f27501da2718420bc9695735f07992dd6129175c6f91a57693a0a"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/00.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/01.png",
+      "sha256": "69f872b6ab5c30af37b7920e21377be0610ffce975c41601867617e98f13a4c8"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/02.png",
+      "sha256": "4ceb6cdea0639c7d6e6ec57f2566a4f4593a0d2cf22ec59790cb96e69d328b48"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/03.png",
+      "sha256": "6f4067838043bf8eb73a39220c1f4f0be819a214ee697905e728fb144380a04e"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/04.png",
+      "sha256": "eb463d94cfe3600edfcbef2da7119bed0168d852a9bdf2e3a8e3c34addef81fe"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/05.png",
+      "sha256": "eb463d94cfe3600edfcbef2da7119bed0168d852a9bdf2e3a8e3c34addef81fe"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/06.png",
+      "sha256": "862fd2f1d531c1765dea3e51441a3b36b9a856ae06138f6298648add78485bea"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/07.png",
+      "sha256": "a8f931a88f51785cabf7f1b5382f05f00094d90bb3a0b8511356fd468b8e0a82"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/08.png",
+      "sha256": "4ceb6cdea0639c7d6e6ec57f2566a4f4593a0d2cf22ec59790cb96e69d328b48"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/09.png",
+      "sha256": "9a1358e79d1906d142f283e0e6ee38109492c22c9db78cc13a789377b80c47d8"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/10.png",
+      "sha256": "19a8538c5dc906ce6bf83d1d7a890889854ebe1cef0016feee2d7608fbe757d7"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Attack/11.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/00.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/01.png",
+      "sha256": "4ceb6cdea0639c7d6e6ec57f2566a4f4593a0d2cf22ec59790cb96e69d328b48"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/02.png",
+      "sha256": "e817edcf7a0e94ade9d83d5f5334cbdabab4e6de6b09a4bda37d80d36d519d2a"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/03.png",
+      "sha256": "6aa41ed3a168f26b05ca029f3aefd3bc6f1ecd7203db30de2ede120ec487519d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/04.png",
+      "sha256": "6aa41ed3a168f26b05ca029f3aefd3bc6f1ecd7203db30de2ede120ec487519d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/05.png",
+      "sha256": "6aa41ed3a168f26b05ca029f3aefd3bc6f1ecd7203db30de2ede120ec487519d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/06.png",
+      "sha256": "6aa41ed3a168f26b05ca029f3aefd3bc6f1ecd7203db30de2ede120ec487519d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/07.png",
+      "sha256": "ed3f8675bcbeb4a5a9a59a04ab2299e6e611ca6fed76954291ec7f2a5cf3a7de"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/08.png",
+      "sha256": "ed3f8675bcbeb4a5a9a59a04ab2299e6e611ca6fed76954291ec7f2a5cf3a7de"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/09.png",
+      "sha256": "e9a5f2d2ea067ed766ec4977ce33c4d95750f2a6e192a2cde6570316bcd3a735"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/10.png",
+      "sha256": "09aa0ad38b4b7171e241c0973c00cdcbccb07666b6cf114d9be5dc1e3d50e7ea"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Dash/11.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/00.png",
+      "sha256": "e8ac196ffd351684b6ac18a6ab64f39984bec00e626aa2d76188dbaca546353d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/01.png",
+      "sha256": "e8ac196ffd351684b6ac18a6ab64f39984bec00e626aa2d76188dbaca546353d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/02.png",
+      "sha256": "75765c737c197fb4dd30b1b96cfec5a76c49df5348fdc5002f6cbf7e44c03397"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/03.png",
+      "sha256": "75765c737c197fb4dd30b1b96cfec5a76c49df5348fdc5002f6cbf7e44c03397"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/04.png",
+      "sha256": "e8ac196ffd351684b6ac18a6ab64f39984bec00e626aa2d76188dbaca546353d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/05.png",
+      "sha256": "e8ac196ffd351684b6ac18a6ab64f39984bec00e626aa2d76188dbaca546353d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/06.png",
+      "sha256": "1f884b8b6705255ad09fe5fc1bf909c2bacb3be26907952ba2f1ec74a63b92d5"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/07.png",
+      "sha256": "d486cfcbcbfe3776593bd6999b13ae25030c085449305a16395da9da3afc3b01"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/08.png",
+      "sha256": "d486cfcbcbfe3776593bd6999b13ae25030c085449305a16395da9da3afc3b01"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/09.png",
+      "sha256": "ed3f8675bcbeb4a5a9a59a04ab2299e6e611ca6fed76954291ec7f2a5cf3a7de"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/10.png",
+      "sha256": "d3d3b4f3c9fd6c5030144b0d775f94f03e100fdb4ad378eee286997657622250"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/11.png",
+      "sha256": "09aa0ad38b4b7171e241c0973c00cdcbccb07666b6cf114d9be5dc1e3d50e7ea"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/DoubleJump/12.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Idle/00.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/00.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/01.png",
+      "sha256": "3df61d33409e63005aa8ee5e3778b35c256d5e22ff141ac2ad6824e0cc60e0a3"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/02.png",
+      "sha256": "d3d3b4f3c9fd6c5030144b0d775f94f03e100fdb4ad378eee286997657622250"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/03.png",
+      "sha256": "18854c872d22dd62522f3319a04294de94f7e5b190b40ff1f426a70af7b0e169"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/04.png",
+      "sha256": "e8ac196ffd351684b6ac18a6ab64f39984bec00e626aa2d76188dbaca546353d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/05.png",
+      "sha256": "e8ac196ffd351684b6ac18a6ab64f39984bec00e626aa2d76188dbaca546353d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/06.png",
+      "sha256": "e8ac196ffd351684b6ac18a6ab64f39984bec00e626aa2d76188dbaca546353d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/07.png",
+      "sha256": "1f884b8b6705255ad09fe5fc1bf909c2bacb3be26907952ba2f1ec74a63b92d5"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/08.png",
+      "sha256": "d486cfcbcbfe3776593bd6999b13ae25030c085449305a16395da9da3afc3b01"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/09.png",
+      "sha256": "d486cfcbcbfe3776593bd6999b13ae25030c085449305a16395da9da3afc3b01"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/10.png",
+      "sha256": "ed3f8675bcbeb4a5a9a59a04ab2299e6e611ca6fed76954291ec7f2a5cf3a7de"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/11.png",
+      "sha256": "d3d3b4f3c9fd6c5030144b0d775f94f03e100fdb4ad378eee286997657622250"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/12.png",
+      "sha256": "09aa0ad38b4b7171e241c0973c00cdcbccb07666b6cf114d9be5dc1e3d50e7ea"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/13.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Jump/14.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/00.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/01.png",
+      "sha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/02.png",
+      "sha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/03.png",
+      "sha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/04.png",
+      "sha256": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/05.png",
+      "sha256": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/06.png",
+      "sha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/07.png",
+      "sha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/08.png",
+      "sha256": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/09.png",
+      "sha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/10.png",
+      "sha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/11.png",
+      "sha256": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/12.png",
+      "sha256": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9"
+    },
+    {
+      "path": "Assets/Resources/Return/Tique/Walk/13.png",
+      "sha256": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48"
+    }
+  ]
+}

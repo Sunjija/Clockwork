@@ -1,0 +1,11 @@
+{
+  "unityVersion": "6000.5.3f1",
+  "unityEditorImport": "NOT_RUN",
+  "unityPlayerBuild": "BLOCKED",
+  "unityRuntimeSmoke": "NOT_RUN",
+  "blocker": "Unity exited with code 198: No valid Unity Editor license found. User cannot activate currently.",
+  "sourceCompile": "PASS; see source-compile.json",
+  "productionModel": "PASS; see model-checks.json",
+  "screenshots": "None from Unity. layout-study.png is an offline layout study only.",
+  "readyForExhibition": false
+}

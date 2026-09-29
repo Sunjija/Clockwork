@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "tiqueFrames": 67,
+  "tiqueNativeSize": [
+    64,
+    64
+  ],
+  "groundPivotY": 56,
+  "authoredProps": 11,
+  "backgrounds": 2,
+  "audioCues": 8,
+  "assetGuids": 110,
+  "checks": [
+    "SHA-256 matches asset provenance",
+    "frame counts and positive timings",
+    "binary character alpha",
+    "grounded foot baseline",
+    "native prop palette and binary alpha",
+    "background resolution",
+    "decodable audio",
+    "unique GUIDs and scene references",
+    "Point/no mipmap/no compression import settings"
+  ],
+  "scope": "Filesystem integrity and offline layout only; no Unity import/render validation"
+}

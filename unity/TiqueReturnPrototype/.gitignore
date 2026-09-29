@@ -1,0 +1,13 @@
+/Library/
+/Temp/
+/Logs/
+/UserSettings/
+/Builds/
+/QA/*.log
+*.csproj
+*.sln
+*.slnx
+!Tools/ModelChecks/*.csproj
+/Tools/ModelChecks/bin/
+/Tools/ModelChecks/obj/
+/QA/StaticCompile/
