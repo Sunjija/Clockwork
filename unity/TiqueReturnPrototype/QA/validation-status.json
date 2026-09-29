@@ -1,11 +1,24 @@
 {
   "unityVersion": "6000.5.3f1",
-  "unityEditorImport": "NOT_RUN",
-  "unityPlayerBuild": "BLOCKED",
-  "unityRuntimeSmoke": "NOT_RUN",
-  "blocker": "Unity exited with code 198: No valid Unity Editor license found. User cannot activate currently.",
+  "unityLicense": "Personal confirmed by editor",
+  "unityEditorImport": "PASS",
+  "unityPlayerBuild": "PASS",
+  "unityRuntimeSmoke": "PASS: 1280x720 visible window, normal command inputs, Ending, HP 4/4, magnet capture",
+  "blocker": null,
   "sourceCompile": "PASS; see source-compile.json",
   "productionModel": "PASS; see model-checks.json",
-  "screenshots": "None from Unity. layout-study.png is an offline layout study only.",
+  "unityImportChecks": "PASS; see unity-import-checks.json",
+  "screenshots": "7 actual Unity player screenshots in QA/Runtime720Visible; layout-study.png remains offline-only",
+  "notYetVerified": [
+    "Editor Play mode",
+    "Human keyboard interaction and feel",
+    "Audio listening",
+    "1920x1080 and resize UI",
+    "Five-minute first-time experience"
+  ],
+  "knownIssues": [
+    "Small objective text has tight vertical padding",
+    "Smoke screenshot capture requires a visible window"
+  ],
   "readyForExhibition": false
 }

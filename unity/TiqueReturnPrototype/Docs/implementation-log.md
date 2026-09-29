@@ -1,6 +1,6 @@
 # 구현 기록 — 티크: 귀환 v0.1
 
-작성: 2026-09-30 / 상태: 소스 검증 완료, Unity 실행 검증 보류
+작성: 2026-09-30 / 갱신: 같은 날 라이선스 활성화 후 Windows 빌드·720p 자동 실행 검증 완료. 아래 1~8절은 초기 구현 당시 기록이며 후속 결과는 9절에 기록했다.
 
 ## 1. 요청과 범위
 
@@ -80,3 +80,13 @@ Exit code: 198
 - 기획 기준: `Docs/design-v0.1.md`.
 - Unity 명령행: https://docs.unity.com/en-us/engine/6000.0/manual/unity-editor/command-line-arguments/editor
 - OS 글꼴 API: https://docs.unity.com/en-us/engine/6000.5/script-reference/unityengine/font/createdynamicfontfromosfont
+
+## 9. 라이선스 활성화 후 실제 실행 확인
+
+사용자가 Unity Hub에 로그인했다고 알려준 뒤 다시 빌드했다. Unity가 Personal 라이선스를 정상 확인하고 프로젝트를 임포트했다. 에디터 내 모델·프레임 검사 13개가 통과했고 Windows 플레이어 빌드가 성공했다. 실행 파일은 `Builds/Windows/TiqueReturn.exe`다. 최초 임포트 시 Unity가 만든 기본 ProjectSettings와 패키지 잠금 파일도 저장했다.
+
+처음 숨긴 창으로 자동 검사를 시도했을 때 화면 캡처가 null을 반환했다. 해당 검사 프로세스만 종료하고, 화면이 표시되는 게임 창에서 같은 빌드를 다시 검사했다. 일반 입력 드라이버를 이용한 퍼즐 → 공격 연습 → 문지기 전투 → 자석 포획 → 재검사 → 엔딩이 체력 4/4로 통과했다. 프로세스 종료 코드는 0, `runtime-result.json`의 `passed`는 true다. 숨긴 창의 캡처 실패는 플레이 기능 성공으로 취급하지 않는다.
+
+`QA/Runtime720Visible/`에 실제 게임 캡처 7장, 이벤트 기록, 자동 검사 결과를 보관했다. 1280×720 시작 화면, 퍼즐 조작, 자석 포획, 엔딩을 이미지로 확인했고 한국어가 표시된다. 이후 자동화 옵션 없이 게임을 실행해 사용자가 직접 플레이할 수 있는 시작 화면을 열었다.
+
+남은 확인은 사람의 실제 키 입력 감각, 음향 청취, 에디터 Play 모드, 1080p와 창 크기 변경 화면, 첫 플레이 기준 5분 분량이다. 기본 자동 진행 통과가 전시용 최종 품질 승인을 뜻하지는 않는다. 상단의 작은 목표 문구는 하단 여백이 좁아 후속 UI 조정 대상으로 기록한다.

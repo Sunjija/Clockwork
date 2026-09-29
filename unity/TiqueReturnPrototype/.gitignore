@@ -4,6 +4,8 @@
 /UserSettings/
 /Builds/
 /QA/*.log
+/QA/Runtime*/player.log
+/QA/Runtime*/process-id.txt
 *.csproj
 *.sln
 *.slnx

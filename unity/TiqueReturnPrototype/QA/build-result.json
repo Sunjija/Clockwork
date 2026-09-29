@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "unityVersion": "6000.5.3f1",
+  "target": "StandaloneWindows64",
+  "backend": "Mono",
+  "result": "Succeeded",
+  "reportedTotalBytes": 95848550,
+  "executable": "Builds/Windows/TiqueReturn.exe",
+  "sha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4",
+  "runtimeEvidence": "QA/Runtime720Visible/runtime-result.json"
+}
