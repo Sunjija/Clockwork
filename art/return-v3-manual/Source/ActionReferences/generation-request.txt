@@ -1,0 +1,10 @@
+Tool: built-in image_gen (one call per action; no animation-strip generation)
+Canonical reference: art/return-v2/iron-warden/decoded/base.png
+transparent_background: false
+
+Each prompt uses the pose text in prompts.json in the [POSE] position:
+
+Create ONE standalone action KEY-POSE concept illustration of the exact Iron Maw machine in the attached canonical image. [POSE] Preserve exact slate-blue armor, silver jaw plates, red furnace, four thick attached legs, all proportions and left-facing side-view identity. Whole body centered on plain pale gray background, plenty of margin. Clean flat cel shading. IMPORTANT: a single pose only, NOT an animation, NOT a sprite sheet, NOT multiple frames, no sequence, no labels. This image is only a visual drawing reference: the actual animation will later be pixel-authored manually from one locked base, so do not provide in-between poses or motion blur.
+
+The four generated images were visually inspected before authoring animation pixels.
+They are references only and are not read by tools/art/author_iron_maw_pixels.py.

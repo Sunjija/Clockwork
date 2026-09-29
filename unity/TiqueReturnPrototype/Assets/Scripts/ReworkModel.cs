@@ -23,6 +23,7 @@ namespace TiqueReturn
         public readonly float[] pylons={140,500};
         public Journey phase=Journey.Title;
         public IronMove bossMove=IronMove.Rest;
+        public string bossSequence="charge";
         public CorePuzzle puzzle;
         public int roomIndex,hintLevel,health=5,bossHealth=9,breaks,openHits,pattern,deaths,charged=-1;
         public int bossFacing=-1,hitSerial=-1,totalMoves,totalPushes;
@@ -54,7 +55,14 @@ namespace TiqueReturn
             Say("귀환 전력 복구. 그러나 폐기 집행 장치가 길을 막습니다.",4);Event("arena-arrival");
         }
         public void Retry(){if(phase!=Journey.Dead)return;BeginArena();Event("checkpoint-retry");}
-        void Next(IronMove move){bossMove=move;bossAge=0;Event("boss-"+move);}
+        void Next(IronMove move)
+        {
+            if(move==IronMove.ChargeAim)bossSequence="charge";
+            if(move==IronMove.WaveAim)bossSequence="attack";
+            if(move==IronMove.SlamAim)bossSequence="slam";
+            if(move==IronMove.Open)bossSequence="stagger";
+            bossMove=move;bossAge=0;Event("boss-"+move);
+        }
         public void Tick(float dt,ReworkCommand c)
         {
             if(paused)return;
@@ -192,7 +200,8 @@ namespace TiqueReturn
                     if(bossAge>(Rage>=2?2:1.1f))Next(IronMove.Recover);break;
                 case IronMove.SlamAim:
                     if(bossAge<.45f)aimX=M.Clamp(hero.x,85,555);
-                    bossY=Floor-M.Min(70,bossAge*120);
+                    // First three authored exposures brace on the floor (130ms).
+                    bossY=Floor-M.Min(70,M.Max(0,bossAge-.13f)*120);
                     if(bossAge>warn+.2f)Next(IronMove.Slam);break;
                 case IronMove.Slam:
                     bossX=M.MoveTowards(bossX,aimX,dt*900);bossY=M.MoveTowards(bossY,Floor,dt*230);

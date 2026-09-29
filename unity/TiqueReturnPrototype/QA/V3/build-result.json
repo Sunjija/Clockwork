@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "unityVersion": "6000.5.3f1",
+  "target": "StandaloneWindows64",
+  "path": "Builds/WindowsV3/TiqueReturn.exe",
+  "buildReportedBytes": 104630224,
+  "executableSha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4",
+  "logEvidence": "RETURN_V2_BUILD Succeeded bytes=104630224",
+  "runtimeResult": "Runtime720/result.json",
+  "screenshots": 14
+}

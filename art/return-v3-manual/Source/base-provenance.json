@@ -1,0 +1,17 @@
+{
+  "source": "art/return-v2/iron-warden/decoded/base.png",
+  "role": "single canonical concept, never an animation strip",
+  "nativeSize": [
+    192,
+    144
+  ],
+  "visibleBounds": [
+    28,
+    45,
+    164,
+    132
+  ],
+  "footY": 132,
+  "colors": 32,
+  "sha256": "033a995eeb472387e504553c7c894ec9f964703ccf7ac993af9b251e9dd7994c"
+}

@@ -62,3 +62,36 @@ Assert(v2.phase==Journey.Ending,"V2 input-only playthrough ended in "+v2.phase+"
 Assert(v2.breaks>=3,"At least three armor breaks required");
 Assert(v2.events.Any(e=>e.EndsWith(":wave-release"))&&v2.events.Any(e=>e.EndsWith(":boss-Slam")),"All boss patterns exercised");
 Console.WriteLine($"V2 PASS {v2Checks.Count} checks + complete input playthrough; HP {v2.health}/5, time {v2.playTime:F2}s.");
+
+var authored=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenAuthored/clips.json")),jsonOptions);
+var bossTimes=authored.clips.ToDictionary(c=>"iron-"+c.name,c=>c.durations);
+var visual=new ReworkModel(book);
+int selections=0;
+foreach(bool assist in new[]{false,true})
+foreach(IronMove move in Enum.GetValues<IronMove>())
+foreach(string sequence in new[]{"attack","charge","slam","stagger"})
+{
+    visual.assisted=assist;visual.bossMove=move;visual.bossSequence=sequence;visual.bossHealth=3;
+    for(int i=0;i<1200;i++)
+    {
+        visual.bossAge=i/120f;int frame=WardenAnimation.Select(visual,bossTimes,out string clip);
+        Assert(frame>=0&&frame<bossTimes[clip].Length,"Guardian frame outside clip");selections++;
+    }
+}
+visual.bossMove=IronMove.Wave;visual.bossAge=0;
+Assert(WardenAnimation.Select(visual,bossTimes,out var waveClip)==4&&waveClip=="iron-attack","Wave release must show bite impact");
+visual.bossAge=1.1f;Assert(WardenAnimation.Select(visual,bossTimes,out _) ==4,"Second wave must show second bite");
+visual.bossMove=IronMove.Recover;visual.bossSequence="slam";visual.bossAge=0;
+Assert(WardenAnimation.Select(visual,bossTimes,out var slamClip)==10&&slamClip=="iron-slam","Ground contact must show landing pose");
+visual.bossAge=.84f;Assert(WardenAnimation.Select(visual,bossTimes,out _)==14,"Landing returns to exact base");
+visual.bossMove=IronMove.Open;visual.bossAge=3;
+Assert(WardenAnimation.Select(visual,bossTimes,out _)==6,"Exposed armor holds open, does not close mid-window");
+visual.bossMove=IronMove.Rest;Assert(WardenAnimation.Select(visual,bossTimes,out _)==0,"Idle holds canonical base");
+var lift=new ReworkModel(book);lift.BeginArena();lift.phase=Journey.Combat;lift.bossMove=IronMove.SlamAim;
+for(int i=0;i<12;i++)lift.Tick(1f/120,ReworkCommand.Empty);
+Assert(lift.bossY==ReworkModel.Floor,"Landing attack must brace before leaving floor");
+for(int i=0;i<12;i++)lift.Tick(1f/120,ReworkCommand.Empty);
+Assert(lift.bossY<ReworkModel.Floor,"Lift follows the 130ms brace exposures");
+Directory.CreateDirectory(Path.Combine(qa,"V3"));
+File.WriteAllText(Path.Combine(qa,"V3/animation-model-checks.json"),JsonSerializer.Serialize(new{passed=true,selections,frames=authored.clips.Sum(c=>c.durations.Length),waveReleaseFrame=4,landingFrame=10,exposedHoldFrame=6,braceMs=130,scope="Pure C# frame selection; subjective motion quality is not certified"},jsonOptions));
+Console.WriteLine($"PASS guardian authored clips: {selections} state/time selections, wave impact, landing, open hold, static idle and grounded brace.");

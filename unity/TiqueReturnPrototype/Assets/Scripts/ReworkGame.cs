@@ -34,10 +34,12 @@ namespace TiqueReturn
                 for(int i=0;i<frames.Length;i++)frames[i]=Load("Return/Tique/"+c.name+"/"+i.ToString("00"));animations[c.name]=frames;
             }
             foreach(string name in new[]{"workshop","arena","floor","wall","battery","orb","amber-socket","cyan-socket","pylon","gear"})art[name]=Load("ReturnV2/Art/"+name);
-            foreach(string clip in new[]{"idle","attack","stagger"})
+            var warden=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/WardenAuthored/clips").text);
+            foreach(var clip in warden.clips)
             {
-                int count=clip=="attack"?6:4;var frames=new Sprite[count];
-                for(int i=0;i<count;i++)frames[i]=Load("ReturnV2/Art/Warden/"+clip+"/"+i.ToString("00"));animations["iron-"+clip]=frames;
+                var frames=new Sprite[clip.durations.Length];durations["iron-"+clip.name]=clip.durations;
+                for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/WardenAuthored/"+clip.name+"/"+i.ToString("00"));
+                animations["iron-"+clip.name]=frames;
             }
             foreach(string name in new[]{"jump","dash","land","hit","hurt","success","switch","warning"})audio[name]=Resources.Load<AudioClip>("Return/Audio/"+name);
             var tex=new Texture2D(1,1);tex.SetPixel(0,0,Color.white);tex.Apply();pixel=Sprite.Create(tex,new Rect(0,0,1,1),Vector2.one*.5f,64);
@@ -144,12 +146,8 @@ namespace TiqueReturn
                     Prop("pylon"+i,"pylon",m.pylons[i]-17,230,5,m.charged==i?Color.white:new Color(.36f,.49f,.54f));
                     if(m.charged==i){Bar("power"+i,m.pylons[i]-19,285,38*m.chargeLife/16,2,cyan,6);Bar("charge-beam"+i,m.pylons[i]-1,207,2,20,cyan,4);}
                 }
-                string bossClip="idle";float idle=m.clock%1.44f;int bossFrame=idle<.4f?0:idle<.54f?1:idle<.84f?2:3;
-                if(m.bossMove==IronMove.ChargeAim||m.bossMove==IronMove.WaveAim||m.bossMove==IronMove.SlamAim){bossClip="attack";bossFrame=m.bossAge<.55f?0:1;}
-                if(m.bossMove==IronMove.Charge||m.bossMove==IronMove.Slam){bossClip="attack";bossFrame=m.bossAge<.1f?2:3;}
-                if(m.bossMove==IronMove.Recover){bossClip="attack";bossFrame=m.bossAge<.3f?4:5;}
-                if(m.bossMove==IronMove.Open||m.bossMove==IronMove.Down){bossClip="stagger";bossFrame=m.bossMove==IronMove.Down?3:Mathf.Min(3,(int)(m.bossAge*6));}
-                Draw("iron-maw",animations["iron-"+bossClip][bossFrame],m.bossX-96,m.bossY-132,10,m.bossMove==IronMove.Down?new Color(.4f,.47f,.53f):Color.white,m.bossFacing>0);
+                int bossFrame=WardenAnimation.Select(m,durations,out string bossClip);
+                Draw("iron-maw",animations[bossClip][bossFrame],m.bossX-96,m.bossY-132,10,m.bossMove==IronMove.Down?new Color(.4f,.47f,.53f):Color.white,m.bossFacing>0);
                 if(m.Vulnerable)
                 {
                     Prop("exposed-core","gear",m.WeakX-12,250,11,m.flash>0?new Color(1,.9f,.7f):Color.white);
@@ -283,6 +281,10 @@ namespace TiqueReturn
                 if(Model.bossMove==IronMove.Open)yield return Capture(folder,"05-armor-open");
                 if(Model.bossMove==IronMove.Wave)yield return Capture(folder,"06-wave");
                 if(Model.bossMove==IronMove.SlamAim)yield return Capture(folder,"07-slam");
+                if(Model.bossMove==IronMove.ChargeAim&&Model.bossAge>.2f)yield return Capture(folder,"09-authored-charge-brace");
+                if(Model.bossMove==IronMove.Open&&Model.bossAge>.3f)yield return Capture(folder,"10-authored-open-hold");
+                if(Model.bossMove==IronMove.SlamAim&&Model.bossAge>.4f)yield return Capture(folder,"11-authored-air-tuck");
+                if(Model.bossMove==IronMove.Recover&&Model.bossSequence=="slam"&&Model.bossAge<.06f)yield return Capture(folder,"12-authored-landing");
                 yield return null;
             }
             bool pass=Model.phase==Journey.Ending&&Model.breaks>=3;yield return Capture(folder,pass?"08-ending":"failure");

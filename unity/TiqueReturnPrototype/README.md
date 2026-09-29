@@ -1,10 +1,10 @@
-# 티크: 귀환 회로 — Unity 프로토타입 v0.2
+# 티크: 귀환 회로 — Unity 프로토타입 v0.3
 
 세 공간 퍼즐과 새 철갑 문지기로 개편한 독립 Unity 프로젝트입니다. Unity **6000.5.3f1**, Windows 64비트, 추가 외부 Unity 패키지 없이 동작합니다.
 
 ## 실행
 
-이 PC에서는 **Play.cmd** 또는 **Builds/WindowsV2/TiqueReturn.exe**를 실행하세요. GitHub에는 소스·생성 원본·게임 에셋·검증 자료가 포함되며 빌드 산출물은 제외됩니다. 실행 파일을 다른 PC에 전달할 때는 WindowsV2 폴더 전체가 필요합니다.
+이 PC에서는 **Play.cmd** 또는 **Builds/WindowsV3/TiqueReturn.exe**를 실행하세요. GitHub에는 소스·생성 원본·게임 에셋·검증 자료가 포함되며 빌드 산출물은 제외됩니다. 실행 파일을 다른 PC에 전달할 때는 WindowsV3 폴더 전체가 필요합니다.
 
 소스에서 실행할 때는 Unity Hub에 이 폴더를 추가하고 `Assets/Scenes/TiqueReturnV2.unity`를 여세요. 에디터 메뉴는 **Tique Return → Open Reworked Prototype**입니다. 에디터를 닫고 PowerShell에서 빌드할 수도 있습니다.
 
@@ -44,20 +44,27 @@ Unity 설치 경로가 다르면 `-Editor '설치 경로/Unity.exe'`를 지정�
 
 최신 선택본인 티크 revision 10의 **67프레임과 타이밍을 그대로 사용**합니다. 최초 기본형 대기와 사용자가 선택한 뒤쪽 팔 공격을 유지했습니다.
 
-문지기는 얼굴 없는 각진 철제 압착부와 네 다리를 갖춘 별도 디자인입니다. 새 배경·문지기·소품은 모두 **컨셉 이미지 생성 → 프레임/소품 추출 → 네이티브 도트 변환** 순서로 만들었습니다. 어두운 밤의 폐공장 배경은 640×360·48색, 문지기는 공통 32색과 발 기준선, 모든 스프라이트는 이진 알파를 사용합니다. 640×360 렌더링을 Point 필터로 확대합니다.
+문지기는 얼굴 없는 각진 철제 압착부와 네 다리를 갖춘 별도 디자인입니다. v0.3에서 제작 방식을 바로잡았습니다. **동작별 단일 참고 이미지 생성 → 기준 도트 고정 → 픽셀 좌표 편집으로 동작 프레임 제작** 순서입니다. 생성한 애니메이션 시트를 잘라 쓴 v0.2 문지기 프레임은 현재 재생 경로에서 제외했습니다.
+
+대기 1·물기 12·돌진 12·점프/낙하 15·경직 12, 총 52프레임입니다. 티크의 대응 동작과 프레임별 시간을 동일하게 사용합니다. 기준 픽셀 덩어리를 정수 좌표로 옮기고 피스톤·턱 연결부를 다시 찍은 작업이며, Piskel에서 마우스로 전 프레임을 그렸다는 뜻은 아닙니다. 편집 가능한 Piskel·PNG·APNG·픽셀 변경 좌표·타이밍 JSON을 함께 제공합니다.
+
+어두운 밤의 폐공장 배경은 기존 컨셉 이미지에서 변환한 640×360·48색을 유지합니다. 문지기는 192×144·공유 32색·이진 알파입니다. 접지 프레임의 발 기준선은 132px, 공중 자세에서만 발을 모읍니다. 640×360 렌더링을 Point 필터로 확대합니다.
 
 ## 검증과 기록
 
 - [기획과 레퍼런스](Docs/V2/design-and-references.md)
-- [아트·구현 과정](Docs/V2/art-and-process.md)
-- [최종 검증 범위](Docs/V2/validation.md)
+- [현재 도트 제작 과정과 검증](Docs/V3/pixel-authored-process.md)
+- [v0.2 아트·구현 과정 — 문지기 애니메이션 방식은 교체됨](Docs/V2/art-and-process.md)
+- [v0.2 검증 범위](Docs/V2/validation.md)
 - `QA/V2/model-result.json`: 실제 C# 모델의 검사와 일반 입력 자동 진행.
 - `QA/V2/Runtime720`, `QA/V2/Runtime1080`: 실제 실행 파일의 캡처와 이벤트.
+- `QA/V3`: 현재 52프레임의 픽셀 변경 재현·타이밍 검사와 실제 수정본 실행 캡처.
 - [v0.1 기록](Docs/README-v0.1.md): 이전 구현과 검증. 현재 v0.2의 설명으로 읽지 마세요.
 
 ```powershell
 ./Tools/Check-Source.ps1
-./Builds/WindowsV2/TiqueReturn.exe --return-v2-smoke --qa-dir ./QA/V2/Runtime720 -screen-width 1280 -screen-height 720 -screen-fullscreen 0
+python Tools/Review-Authored.py
+./Builds/WindowsV3/TiqueReturn.exe --return-v2-smoke --qa-dir ./QA/V3/Runtime720 -screen-width 1280 -screen-height 720 -screen-fullscreen 0
 ```
 
 자동 실행은 일반 입력 경로를 사용하며 체력 변경이나 순간이동을 하지 않습니다. 렌더 검사는 보이는 창에서 실행해야 합니다. 기술 검사 통과는 사람의 조작감, 첫 플레이 난이도·소요 시간, 최종 아트 승인을 대체하지 않습니다.

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "bite",
+    "pose": "The two steel crusher jaws are completely closed in a hard bite impact pose, the four feet firmly braced. Compact mechanical force; no stretching of body. This is the attack IMPACT reference.",
+    "file": "bite.png",
+    "purpose": "Single action reference only, never raster input to runtime animation"
+  },
+  {
+    "name": "charge",
+    "pose": "A low compressed anticipation pose before a leftward charge. Leg pistons bend slightly, chassis lowers, jaws nearly closed, four feet rooted. This is the DASH crouch key-pose reference.",
+    "file": "charge.png",
+    "purpose": "Single action reference only, never raster input to runtime animation"
+  },
+  {
+    "name": "slam",
+    "pose": "The same machine in one mid-air tucked landing-preparation pose: all four short legs folded close under the same chassis, jaws open slightly. No floor, no takeoff effect. This is the JUMP/SLAM tuck key-pose reference.",
+    "file": "slam.png",
+    "purpose": "Single action reference only, never raster input to runtime animation"
+  },
+  {
+    "name": "stagger",
+    "pose": "The same machine recoils as an overloaded clamp: four feet stay braced, front housing tilts upward only slightly, red inner furnace bright but no floating light effects. This is the STAGGER impact key-pose reference.",
+    "file": "stagger.png",
+    "purpose": "Single action reference only, never raster input to runtime animation"
+  }
+]

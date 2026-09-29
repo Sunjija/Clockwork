@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "selections": 96000,
+  "frames": 52,
+  "waveReleaseFrame": 4,
+  "landingFrame": 10,
+  "exposedHoldFrame": 6,
+  "braceMs": 130,
+  "scope": "Pure C# frame selection; subjective motion quality is not certified"
+}
