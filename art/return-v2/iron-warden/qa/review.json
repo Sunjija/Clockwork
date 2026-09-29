@@ -1,0 +1,256 @@
+{
+  "ok": true,
+  "frames_root": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames",
+  "cell_width": 192,
+  "cell_height": 192,
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "idle",
+      "row": 0,
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\00.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 16375,
+          "bbox": [
+            5,
+            33,
+            187,
+            159
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\01.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 16183,
+          "bbox": [
+            5,
+            35,
+            187,
+            157
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\02.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 16326,
+          "bbox": [
+            5,
+            33,
+            187,
+            159
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\03.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 17286,
+          "bbox": [
+            5,
+            29,
+            187,
+            163
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        }
+      ]
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\00.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 17112,
+          "bbox": [
+            5,
+            28,
+            187,
+            164
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\01.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 15078,
+          "bbox": [
+            5,
+            37,
+            187,
+            154
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\02.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 11328,
+          "bbox": [
+            5,
+            42,
+            187,
+            149
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\03.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 15461,
+          "bbox": [
+            5,
+            36,
+            187,
+            155
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 4,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\04.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 17225,
+          "bbox": [
+            5,
+            27,
+            187,
+            164
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 2
+        },
+        {
+          "index": 5,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\05.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 17461,
+          "bbox": [
+            5,
+            27,
+            187,
+            164
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\00.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 16732,
+          "bbox": [
+            5,
+            31,
+            187,
+            160
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 1,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\01.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 16531,
+          "bbox": [
+            5,
+            21,
+            187,
+            171
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 2,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\02.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 16932,
+          "bbox": [
+            5,
+            30,
+            187,
+            162
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        },
+        {
+          "index": 3,
+          "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\03.png",
+          "width": 192,
+          "height": 192,
+          "nontransparent_pixels": 17624,
+          "bbox": [
+            5,
+            29,
+            187,
+            163
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 1
+        }
+      ]
+    }
+  ]
+}

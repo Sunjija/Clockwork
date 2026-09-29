@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "frames_root": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames",
+  "cell_width": 192,
+  "cell_height": 192,
+  "chroma_key": {
+    "hex": "#FF00FF",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "name": "magenta",
+    "selection": "fallback"
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "row": 0,
+      "frames": 4,
+      "action": "subtle hydraulic settle 1-2 pixel body height, feet planted, tiny furnace pulse, identical silhouette",
+      "fps": 12
+    },
+    {
+      "name": "attack",
+      "row": 1,
+      "frames": 6,
+      "action": "compress leg pistons and pull clamp back, coil anticipation, low forward lunge with clamp open, clamp slams shut, heavy recoil, settle; whole poses, four thick attached legs, same body size and foot baseline",
+      "fps": 12
+    },
+    {
+      "name": "stagger",
+      "row": 2,
+      "frames": 4,
+      "action": "armor shutters slightly open showing red furnace between angular plates, whole body recoils with legs braced then settles; same proportions and feet baseline",
+      "fps": 12
+    }
+  ],
+  "rows": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frames": 4,
+      "method": "components",
+      "strip": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\decoded\\idle.png",
+      "outputs": [
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\00.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\01.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\02.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\idle\\03.png"
+      ]
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "frames": 6,
+      "method": "components",
+      "strip": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\decoded\\attack.png",
+      "outputs": [
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\00.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\01.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\02.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\03.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\04.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\attack\\05.png"
+      ]
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "frames": 4,
+      "method": "components",
+      "strip": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\decoded\\stagger.png",
+      "outputs": [
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\00.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\01.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\02.png",
+        "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\frames\\stagger\\03.png"
+      ]
+    }
+  ]
+}

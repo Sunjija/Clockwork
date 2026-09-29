@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-30",
+  "passed": true,
+  "unity": "6000.5.3f1",
+  "buildVerified": true,
+  "sourceCompileVerified": true,
+  "legacyChecks": 14,
+  "v2Checks": 8,
+  "executableSha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4",
+  "runs": {
+    "Runtime720": {
+      "result": {
+        "passed": true,
+        "phase": "Ending",
+        "health": 2,
+        "breaks": 3,
+        "playSeconds": 53.46
+      },
+      "screenshots": 10,
+      "size": [
+        1280,
+        720
+      ]
+    },
+    "Runtime1080": {
+      "result": {
+        "passed": true,
+        "phase": "Ending",
+        "health": 2,
+        "breaks": 3,
+        "playSeconds": 53.46
+      },
+      "screenshots": 10,
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  },
+  "humanPlaytestComplete": false,
+  "notes": "Normal input driver; technical end-to-end checks do not certify fun, first-play duration or user visual approval."
+}

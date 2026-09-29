@@ -6,7 +6,7 @@ public sealed class ReturnTextureImporter : AssetPostprocessor
 {
     void OnPreprocessTexture()
     {
-        if(!assetPath.StartsWith("Assets/Resources/Return/"))return;
+        if(!assetPath.StartsWith("Assets/Resources/Return/")&&!assetPath.StartsWith("Assets/Resources/ReturnV2/"))return;
         var importer=(TextureImporter)assetImporter;
         importer.textureType=TextureImporterType.Default;
         importer.filterMode=FilterMode.Point;

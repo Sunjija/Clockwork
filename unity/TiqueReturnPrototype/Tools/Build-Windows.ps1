@@ -1,11 +1,12 @@
-param([string]$Editor = 'C:\Program Files\Unity\Hub\Editor\6000.5.3f1\Editor\Unity.exe')
+param([string]$Editor = 'C:\Program Files\Unity\Hub\Editor\6000.5.3f1\Editor\Unity.exe', [switch]$Legacy)
 $ErrorActionPreference = 'Stop'
 $project = Split-Path $PSScriptRoot -Parent
 if (!(Test-Path -LiteralPath $Editor)) { throw 'Unity 6000.5.3f1 not found. Pass -Editor with your Unity.exe path.' }
 New-Item -ItemType Directory -Path (Join-Path $project 'QA') -Force | Out-Null
-$log = Join-Path $project 'QA/build.log'
-$destination = Join-Path $project 'Builds/Windows/TiqueReturn.exe'
-$arguments = @('-batchmode','-quit','-projectPath',('"'+$project+'"'),'-executeMethod','ReturnBuild.Build','-logFile',('"'+$log+'"'),'--return-output',('"'+$destination+'"'))
+$log = Join-Path $project $(if ($Legacy) {'QA/build.log'} else {'QA/build-v2.log'})
+$destination = Join-Path $project $(if ($Legacy) {'Builds/Windows/TiqueReturn.exe'} else {'Builds/WindowsV2/TiqueReturn.exe'})
+$method = if ($Legacy) {'ReturnBuild.Build'} else {'ReworkBuild.Build'}
+$arguments = @('-batchmode','-quit','-projectPath',('"'+$project+'"'),'-executeMethod',$method,'-logFile',('"'+$log+'"'),'--return-output',('"'+$destination+'"'))
 $build = Start-Process -FilePath $Editor -ArgumentList $arguments -WindowStyle Hidden -Wait -PassThru
 if ($build.ExitCode -ne 0) {
     if ((Test-Path -LiteralPath $log) -and (Select-String -LiteralPath $log -Pattern 'No valid Unity Editor license' -Quiet)) {

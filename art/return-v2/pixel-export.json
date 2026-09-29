@@ -1,0 +1,242 @@
+[
+  {
+    "file": "amber-socket.png",
+    "size": [
+      36,
+      36
+    ],
+    "colors": 49,
+    "sha256": "8d5f765b622bcd8371efb6116bc8bb7e5e2b216c3f6544ddc9fc3e9572eeaf6a",
+    "binary_alpha": true
+  },
+  {
+    "file": "arena.png",
+    "size": [
+      640,
+      360
+    ],
+    "colors": 48,
+    "sha256": "d2b6e05954d720294847e8d32e0411b5957c5a698ce620d8c18f89411e1f4998",
+    "binary_alpha": true
+  },
+  {
+    "file": "battery.png",
+    "size": [
+      30,
+      32
+    ],
+    "colors": 52,
+    "sha256": "9bdf4626ff5e4234824fbb698870a9719516befcb5b2dcf127eb658393951a5c",
+    "binary_alpha": true
+  },
+  {
+    "file": "cyan-socket.png",
+    "size": [
+      36,
+      36
+    ],
+    "colors": 51,
+    "sha256": "27e182e70e919c4b5542d691a3de0c035c8de4ad0687a8521174cfa5e1c78045",
+    "binary_alpha": true
+  },
+  {
+    "file": "floor.png",
+    "size": [
+      36,
+      36
+    ],
+    "colors": 43,
+    "sha256": "38ccb193d00e3f007c5ac04959d6a469dac83424789a52f12fe491cdef69bb68",
+    "binary_alpha": true
+  },
+  {
+    "file": "gear.png",
+    "size": [
+      24,
+      24
+    ],
+    "colors": 49,
+    "sha256": "00ce4c1b8e3044bf1da17a04031d1c05235e25434f3f37ac0c35dd273f8fd471",
+    "binary_alpha": true
+  },
+  {
+    "file": "orb.png",
+    "size": [
+      26,
+      26
+    ],
+    "colors": 55,
+    "sha256": "088befdb06ed65bde9257b8c5ca4f2e72323758d0f87e84e363c715b87e86f9e",
+    "binary_alpha": true
+  },
+  {
+    "file": "pylon.png",
+    "size": [
+      34,
+      52
+    ],
+    "colors": 55,
+    "sha256": "a6d11b82fd0fca068f26dc3f2c6aeee34d95f972159c1abc9c9b096910952778",
+    "binary_alpha": true
+  },
+  {
+    "file": "wall.png",
+    "size": [
+      36,
+      38
+    ],
+    "colors": 46,
+    "sha256": "5a7af394826ff8be8222c7fcfe48bf3f542159b263067936c3e1591d3e232738",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/attack/00.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 41,
+    "sha256": "099fbe809edef05cb28df4eb7db40d11f0b36b1a6570f50608b8922b9384ab47",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/attack/01.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 41,
+    "sha256": "c56031c440ad35777c5f541923002d43aa907de3cd3601100657a3bb4211d4ae",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/attack/02.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 40,
+    "sha256": "1789015a25d53ce29972ae81d52936aff38527504539388a9d796e33d50a8ff3",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/attack/03.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 40,
+    "sha256": "faaea7d047ace41d787c5a1deb53c886934de0087bd54ace08642af200dd14bd",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/attack/04.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 43,
+    "sha256": "cd86d044dd746d061b49e4537891429cdf9a7f5352ae78d4b47e70882627d9a7",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/attack/05.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 42,
+    "sha256": "b7339da09fec49909ba176395ee85b0e0cd05998d7ee18d8613dec989433b58f",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/idle/00.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 40,
+    "sha256": "7a6f599ce84a5b68c4d50963f09b3af4bbaa0ba4f83c0a490c0e4768f26bfa13",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/idle/01.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 40,
+    "sha256": "fa635863b830be93cd5bf564d53fb2e64c2cbd99d8c313f9dd7388e152662c85",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/idle/02.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 40,
+    "sha256": "bf4a302583b9c373c34ec5227d3353efdb3cea8fd64b2035821a2699fe30baa8",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/idle/03.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 40,
+    "sha256": "7a6f599ce84a5b68c4d50963f09b3af4bbaa0ba4f83c0a490c0e4768f26bfa13",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/stagger/00.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 39,
+    "sha256": "fc7f967b4eb7b1833df4670dc3727b353802cd3fbdf212dd77267cf7564198fc",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/stagger/01.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 40,
+    "sha256": "45cf0424559878755c4c219e2c2f4de8bcbbf7899f31cf0c23e90fae6c7acfd6",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/stagger/02.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 39,
+    "sha256": "2605e4997ac21e6e415b8e2f0206e1fbb02502fcc5711a694c2f1891f69ec255",
+    "binary_alpha": true
+  },
+  {
+    "file": "Warden/stagger/03.png",
+    "size": [
+      192,
+      144
+    ],
+    "colors": 39,
+    "sha256": "402a998ebd396001ed19a9ff17f483c8a4aec55447eeb6b91fa7a6949528c684",
+    "binary_alpha": true
+  },
+  {
+    "file": "workshop.png",
+    "size": [
+      640,
+      360
+    ],
+    "colors": 48,
+    "sha256": "632f7fcf084da2032360193f57b3ef75d6458631e5bda44d7e27c29bafbb3440",
+    "binary_alpha": true
+  }
+]

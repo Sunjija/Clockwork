@@ -1,0 +1,142 @@
+{
+  "ok": true,
+  "file": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v2\\iron-warden\\final\\spritesheet.webp",
+  "format": "WEBP",
+  "mode": "RGBA",
+  "width": 1152,
+  "height": 576,
+  "errors": [],
+  "warnings": [],
+  "chroma_key_leaks": {
+    "exact": 0,
+    "near": 0
+  },
+  "cells": [
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 0,
+      "used": true,
+      "nontransparent_pixels": 16375
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 1,
+      "used": true,
+      "nontransparent_pixels": 16183
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 2,
+      "used": true,
+      "nontransparent_pixels": 16326
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 3,
+      "used": true,
+      "nontransparent_pixels": 17286
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 4,
+      "used": false,
+      "nontransparent_pixels": 0
+    },
+    {
+      "state": "idle",
+      "row": 0,
+      "column": 5,
+      "used": false,
+      "nontransparent_pixels": 0
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "column": 0,
+      "used": true,
+      "nontransparent_pixels": 17112
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "column": 1,
+      "used": true,
+      "nontransparent_pixels": 15078
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "column": 2,
+      "used": true,
+      "nontransparent_pixels": 11328
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "column": 3,
+      "used": true,
+      "nontransparent_pixels": 15461
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "column": 4,
+      "used": true,
+      "nontransparent_pixels": 17225
+    },
+    {
+      "state": "attack",
+      "row": 1,
+      "column": 5,
+      "used": true,
+      "nontransparent_pixels": 17461
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "column": 0,
+      "used": true,
+      "nontransparent_pixels": 16732
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "column": 1,
+      "used": true,
+      "nontransparent_pixels": 16531
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "column": 2,
+      "used": true,
+      "nontransparent_pixels": 16932
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "column": 3,
+      "used": true,
+      "nontransparent_pixels": 17624
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "column": 4,
+      "used": false,
+      "nontransparent_pixels": 0
+    },
+    {
+      "state": "stagger",
+      "row": 2,
+      "column": 5,
+      "used": false,
+      "nontransparent_pixels": 0
+    }
+  ]
+}

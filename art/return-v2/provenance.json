@@ -1,0 +1,23 @@
+{
+  "method": "Built-in image generation concept first; deterministic palette/native pixel conversion second",
+  "concepts": [
+    {
+      "path": "art/return-v2/concepts/arena.png",
+      "sha256": "2efaed5f54c6240b00f0a79434add349fd94b6e776d37362b57b029ec938b8d7"
+    },
+    {
+      "path": "art/return-v2/concepts/props.png",
+      "sha256": "bafff1d9dd7f026e623031886538cb201c518675b989e365445a523a9be60c62"
+    },
+    {
+      "path": "art/return-v2/concepts/workshop.png",
+      "sha256": "c925d612fb9ac2d99696dd7db9ac5d6c7841f123c2675ff2f9c5cde787420d64"
+    }
+  ],
+  "warden": "iron-warden/imagegen-jobs.json and prompts/animations/* retain selected generation and refinement provenance",
+  "nativeExporter": "tools/art/pixelize_return_v2.py",
+  "tique": "Existing approved revision 10 unchanged; 67 PNG hashes and duration arrays verified",
+  "rejectedConcept": "Round brass cyclops guardian rejected after user said it resembled Tique; not used in game",
+  "backgroundRevision": "Warm workshop and vault concepts edited into nighttime abandoned factory using the original composition as reference",
+  "review": "Native contact sheet caught neighbor-pose contamination; fixed with connected-component-only copying. Idle fourth narrowing frame replaced with first whole pose."
+}

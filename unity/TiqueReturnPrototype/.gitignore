@@ -13,3 +13,4 @@
 /Tools/ModelChecks/bin/
 /Tools/ModelChecks/obj/
 /QA/StaticCompile/
+/QA/V2/**/player.log

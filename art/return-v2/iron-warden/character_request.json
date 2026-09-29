@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "character_id": "iron-maw",
+  "display_name": "Iron Maw",
+  "description": "A configurable 2D game character sprite: Faceless industrial quadruped crusher guardian. No head, no eyes, no humanoid arms, no brass round belly. Broad angular dark slate armored press housing, red furnace cracks inside clamp mouth at LEFT, four thick articulated steel legs with wide feet. Menacing low insect stance. All limbs attached. Original CLOCKWORK enemy clearly unlike cute round hero Tique.",
+  "created_at": "2026-09-29T22:01:38.966036+00:00",
+  "atlas": {
+    "columns": 6,
+    "rows": 3,
+    "cell_width": 192,
+    "cell_height": 192,
+    "width": 1152,
+    "height": 576
+  },
+  "animations": [
+    {
+      "name": "idle",
+      "row": 0,
+      "frames": 4,
+      "action": "subtle hydraulic settle 1-2 pixel body height, feet planted, tiny furnace pulse, identical silhouette",
+      "fps": 12
+    },
+    {
+      "name": "attack",
+      "row": 1,
+      "frames": 6,
+      "action": "compress leg pistons and pull clamp back, coil anticipation, low forward lunge with clamp open, clamp slams shut, heavy recoil, settle; whole poses, four thick attached legs, same body size and foot baseline",
+      "fps": 12
+    },
+    {
+      "name": "stagger",
+      "row": 2,
+      "frames": 4,
+      "action": "armor shutters slightly open showing red furnace between angular plates, whole body recoils with legs braced then settles; same proportions and feet baseline",
+      "fps": 12
+    }
+  ],
+  "layout_guides": [
+    {
+      "animation": "idle",
+      "path": "references\\layout-guides\\idle.png",
+      "width": 768,
+      "height": 192,
+      "frames": 4,
+      "cell_width": 192,
+      "cell_height": 192,
+      "safe_margin_x": 19,
+      "safe_margin_y": 19,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "animation": "attack",
+      "path": "references\\layout-guides\\attack.png",
+      "width": 1152,
+      "height": 192,
+      "frames": 6,
+      "cell_width": 192,
+      "cell_height": 192,
+      "safe_margin_x": 19,
+      "safe_margin_y": 19,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    },
+    {
+      "animation": "stagger",
+      "path": "references\\layout-guides\\stagger.png",
+      "width": 768,
+      "height": 192,
+      "frames": 4,
+      "cell_width": 192,
+      "cell_height": 192,
+      "safe_margin_x": 19,
+      "safe_margin_y": 19,
+      "usage": "layout guide input only; do not copy visible guide lines into generated sprite strips"
+    }
+  ],
+  "references": [],
+  "chroma_key": {
+    "hex": "#FF00FF",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "name": "magenta",
+    "selection": "fallback"
+  },
+  "character_notes": "Faceless industrial quadruped crusher guardian. No head, no eyes, no humanoid arms, no brass round belly. Broad angular dark slate armored press housing, red furnace cracks inside clamp mouth at LEFT, four thick articulated steel legs with wide feet. Menacing low insect stance. All limbs attached. Original CLOCKWORK enemy clearly unlike cute round hero Tique.",
+  "style_preset": "cartoon-hd",
+  "style_notes": "Flat concept illustration BEFORE native pixel conversion. 3-tone clusters, clean strong outlines, dark blue iron with silver edge highlights and red slit. Pure #FF00FF background. NO shadows or floor. Consistent side-view left, same size and baseline across frames.",
+  "style_contract": "clean 2D cartoon game sprite style, vector-clean edges but raster output, bold outline, flat cel shading, readable full-body poses, no 3D render, no glossy app icon lighting. Additional user style notes: Flat concept illustration BEFORE native pixel conversion. 3-tone clusters, clean strong outlines, dark blue iron with silver edge highlights and red slit. Pure #FF00FF background. NO shadows or floor. Consistent side-view left, same size and baseline across frames.",
+  "view": "side-view facing left",
+  "mirror_pairs": {},
+  "primary_generation_skill": "$imagegen",
+  "canonical_identity_reference": {
+    "path": "references\\canonical-base.png",
+    "source_job": "base",
+    "sha256": "625c8140e1a63a7db1dda2087116bf401aa47057deb7dcc01a219c596657a6c8",
+    "metadata": {
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "format": "PNG"
+    }
+  }
+}

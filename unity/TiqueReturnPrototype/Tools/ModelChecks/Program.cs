@@ -51,3 +51,14 @@ File.WriteAllText(Path.Combine(qa,"model-checks.json"),JsonSerializer.Serialize(
     passed=true, count=passed.Count, scope="Same C# model used by Unity; renderer, assets and input devices excluded", checks=passed
 },jsonOptions));
 Console.WriteLine($"PASS {passed.Count} checks; input-only playthrough {m.playTime:F2}s, HP {m.hp}/4. Unity runtime still unverified.");
+
+var book=JsonSerializer.Deserialize<PuzzleBook>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/puzzles.json")),jsonOptions);
+var v2Checks=ReworkChecks.Run(book,Console.WriteLine);
+var v2=new ReworkModel(book);var v2Pilot=new ReworkPilot();
+for(int n=0;n<120*210&&v2.phase!=Journey.Ending&&v2.phase!=Journey.Dead;n++)v2.Tick(1f/120,v2Pilot.Next(v2));
+Directory.CreateDirectory(Path.Combine(qa,"V2"));
+File.WriteAllText(Path.Combine(qa,"V2/model-result.json"),JsonSerializer.Serialize(new{passed=v2.phase==Journey.Ending,phase=v2.phase.ToString(),v2.health,v2.bossHealth,v2.breaks,v2.playTime,checks=v2Checks,events=v2.events},jsonOptions));
+Assert(v2.phase==Journey.Ending,"V2 input-only playthrough ended in "+v2.phase+" hp="+v2.health+" boss="+v2.bossHealth);
+Assert(v2.breaks>=3,"At least three armor breaks required");
+Assert(v2.events.Any(e=>e.EndsWith(":wave-release"))&&v2.events.Any(e=>e.EndsWith(":boss-Slam")),"All boss patterns exercised");
+Console.WriteLine($"V2 PASS {v2Checks.Count} checks + complete input playthrough; HP {v2.health}/5, time {v2.playTime:F2}s.");
