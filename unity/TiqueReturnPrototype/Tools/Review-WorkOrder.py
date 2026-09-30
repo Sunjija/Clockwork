@@ -28,11 +28,17 @@ def connected(im):
                     p=(x+dx,y+dy)
                     if p in remaining:remaining.remove(p);todo.append(p)
     return count
+# v6 push frames: approved Attack/05 arms on armless Walk bodies. Head rows and feet
+# rows must equal Walk except where the recorded arm mask (new arms + erased swing
+# arms) says a pixel belongs to an arm.
+armMasks=json.loads((artRoot/'polish-v6-arm-masks.json').read_text(encoding='utf-8'))
 for name in ['push-side','push-up','push-down']:
     for i in range(14):
         im=Image.open(F/name/f'{i:02}.png').convert('RGBA');base=Image.open(P/f'Assets/Resources/Return/Tique/Walk/{i:02}.png').convert('RGBA')
-        assert im.crop((0,0,64,33)).tobytes()==base.crop((0,0,64,33)).tobytes(),(name,i,'head changed')
-        assert im.crop((0,48,64,64)).tobytes()==base.crop((0,48,64,64)).tobytes(),(name,i,'feet changed')
+        arm={tuple(p) for p in armMasks[name][i]}
+        for y in list(range(0,33))+list(range(48,64)):
+            for x in range(64):
+                if (x,y) not in arm:assert im.getpixel((x,y))==base.getpixel((x,y)),(name,i,x,y,'head or feet changed outside the arm mask')
         assert connected(im)==1,(name,i,'detached pixel component')
 for c in clips:
     assert len(c['durations'])==len(list((F/c['name']).glob('*.png')))

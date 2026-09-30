@@ -1,10 +1,10 @@
-# 티크: 귀환 회로 — Unity 프로토타입 v0.4
+# 티크: 귀환 회로 — Unity 프로토타입 v0.5
 
 세 공간 퍼즐과 새 철갑 문지기로 개편한 독립 Unity 프로젝트입니다. Unity **6000.5.3f1**, Windows 64비트, 추가 외부 Unity 패키지 없이 동작합니다.
 
 ## 실행
 
-이 PC에서는 **Play.cmd** 또는 **Builds/WindowsV4/TiqueReturn.exe**를 실행하세요. GitHub에는 소스·생성 원본·게임 에셋·검증 자료가 포함되며 빌드 산출물은 제외됩니다. 실행 파일을 다른 PC에 전달할 때는 WindowsV4 폴더 전체가 필요합니다.
+빌드한 PC에서는 **Play.cmd** 또는 **Builds/WindowsV5/TiqueReturn.exe**를 실행하세요. GitHub에는 소스·생성 원본·게임 에셋·검증 자료가 포함되며 빌드 산출물은 제외됩니다. 다른 PC에서는 먼저 아래 빌드 명령을 실행하고, 실행 파일을 전달할 때는 WindowsV5 폴더 전체가 필요합니다.
 
 소스에서 실행할 때는 Unity Hub에 이 폴더를 추가하고 `Assets/Scenes/TiqueReturnV2.unity`를 여세요. 에디터 메뉴는 **Tique Return → Open Reworked Prototype**입니다. 에디터를 닫고 PowerShell에서 빌드할 수도 있습니다.
 
@@ -28,12 +28,13 @@ Unity 설치 경로가 다르면 `-Editor '설치 경로/Unity.exe'`를 지정�
 
 | 키 | 퍼즐 | 전투 |
 | --- | --- | --- |
-| 방향키 / WASD | 네 방향 이동·밀기 | ← → / A D 이동 |
-| Space / ↑ | ↑는 위로 이동 | 점프·더블점프 |
-| Shift | — | 대시, 대시 중 무적 |
-| J | — | 기존 뒤쪽 팔 공격 |
-| E / Enter | 방 완료 후 진행 | E 충전·최종 문 조작 |
-| Z / Backspace | 한 수 되돌리기 | — |
+| 방향키 / WASD | 네 방향 이동·밀기 | ← → 이동 |
+| Z / Space / ↑ | Z는 한 수 되돌리기, ↑는 위로 이동 | 점프·더블점프 |
+| X | — | 뒤쪽 팔 짧은 주먹 |
+| C | — | 대시, 대시 중 무적 |
+| E | — | 기둥 충전·최종 문 조작 |
+| Enter | 시작·오프닝 건너뛰기·방 완료 후 진행 | 문지기 안내 확인 후 전투 시작 |
+| Backspace | 한 수 되돌리기 | — |
 | R | 현재 방 초기화 | — |
 | H | 단계별 힌트 | — |
 | Esc / M / F11 | 일시정지 / 소리 / 전체화면 | 동일 |
@@ -52,6 +53,8 @@ Unity 설치 경로가 다르면 `-Editor '설치 경로/Unity.exe'`를 지정�
 
 v0.4는 **소품·장치·배경의 상태별 도트**를 추가했습니다. 추·구슬의 이동/연결, 소켓의 비어 있음/오류/연결, 기둥의 충전/만료/방전/냉각, 노심의 피격/정지, 문지기의 전원 차단, 문 개방, 공격 예고와 전력 복구 배경을 실제 게임 상태에 연결합니다. 상태 참고 이미지 8장을 먼저 만들고, 고정된 기준 도트에서 총 37개 상태·전환 클립(187 PNG)을 편집했습니다. 소품은 47색, 조명이 추가된 배경은 64색 이하입니다. [제작 과정과 상태 목록](Docs/V4/asset-states.md).
 
+v0.5(작업 지시 v0.1 + v6 다듬기)는 낙하 오프닝, 픽셀 HUD·글꼴·효과, 티크 밀기 자세, **부위 리그로 다시 만든 문지기 동작 7종**을 더했습니다. 문지기 v0.3 프레임은 비교용으로 `Resources/ReturnV2/WardenAuthored`에 남아 있고, 게임은 `Resources/ReturnV2/WardenRig`를 읽습니다. [v6 다듬기 기록](Docs/WorkOrderV01/polish-v6.md).
+
 ## 검증과 기록
 
 - [기획과 레퍼런스](Docs/V2/design-and-references.md)
@@ -69,7 +72,8 @@ v0.4는 **소품·장치·배경의 상태별 도트**를 추가했습니다. �
 ./Tools/Check-Source.ps1
 python Tools/Review-Authored.py
 python Tools/Review-State-Art.py
-./Builds/WindowsV4/TiqueReturn.exe --return-v2-smoke --qa-dir ./QA/V4/Runtime720 -screen-width 1280 -screen-height 720 -screen-fullscreen 0
+python Tools/Review-WorkOrder.py
+./Builds/WindowsV5/TiqueReturn.exe --return-v2-smoke --qa-dir ./QA/V5/Runtime720 -screen-width 1280 -screen-height 720 -screen-fullscreen 0
 ```
 
 자동 실행은 일반 입력 경로를 사용하며 체력 변경이나 순간이동을 하지 않습니다. 렌더 검사는 보이는 창에서 실행해야 합니다. 기술 검사 통과는 사람의 조작감, 첫 플레이 난이도·소요 시간, 최종 아트 승인을 대체하지 않습니다.

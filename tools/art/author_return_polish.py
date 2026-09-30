@@ -711,7 +711,179 @@ def icons():
     export('protect', [protect_ring()], [1000], 'broken ring; v5 was four faint corner ticks')
 
 
-STAGES = [hud_cells, effects, icons]
+# ---------------------------------------------------------------- Tique contact poses
+# Built only from approved Tique pixels: Walk/Idle bodies with their swinging arms
+# removed, plus the forward arm of Attack/05 so the fist stops on the pushed
+# object's face. Up/down pushes rotate that same arm
+# with RotSprite about the shoulder. The far arm is the same arm one shade darker.
+import numpy as np
+
+OUTLINE = (0x2b, 0x1b, 0x24, 255)
+DARKER = {(0xf4, 0xcb, 0x70): (0xdd, 0xa1, 0x4b), (0xff, 0xe7, 0xa3): (0xf4, 0xcb, 0x70),
+          (0xdd, 0xa1, 0x4b): (0xbc, 0x78, 0x3b), (0xbc, 0x78, 0x3b): (0x9c, 0x59, 0x38),
+          (0x9c, 0x59, 0x38): (0x75, 0x40, 0x32), (0x75, 0x40, 0x32): (0x52, 0x30, 0x28),
+          (0x52, 0x30, 0x28): (0x2b, 0x1b, 0x24)}
+TORSO = (24, 40)          # idle torso columns; arms live outside them
+ARM_ROWS = (34, 48)       # rows where the idle arms hang
+SHOULDER = (40, 39)       # idle-space shoulder the arm attaches to
+
+
+def load_np(path):
+    return np.array(Image.open(path).convert('RGBA'))
+
+
+IDLE = load_np(TIQUE / 'Idle/00.png')
+TIQUE_PALETTE = np.array(sorted({tuple(p) for p in IDLE.reshape(-1, 4) if p[3]}), dtype=np.int32)
+
+
+def body_offset(frame):
+    """Integer (dx, dy) of this frame's head relative to Idle (Walk bobs by 0-1px)."""
+    for dy in range(-3, 4):
+        for dx in range(-3, 4):
+            if (np.roll(np.roll(IDLE, dy, 0), dx, 1)[4:30, 8:56] == frame[4:30, 8:56]).all():
+                return dx, dy
+    raise ValueError('head does not match Idle')
+
+
+def armless(frame, offset=None):
+    dx, dy = offset or body_offset(frame)
+    out = frame.copy()
+    y0, y1 = ARM_ROWS[0] + dy, ARM_ROWS[1] + dy
+    x0, x1 = TORSO[0] + dx, TORSO[1] + dx
+    out[y0:y1, :x0] = 0
+    out[y0:y1, x1 + 1:] = 0
+    a = out[..., 3] > 0
+    for y in range(y0, y1):          # close the torso sides where the arms were
+        for x in (x0, x1):
+            if a[y, x] and (not a[y, x - 1] or not a[y, x + 1]):
+                out[y, x] = OUTLINE
+    return out, (dx, dy)
+
+
+def forward_arm(cut=3):
+    """Attack/05 arm (x>=46), with `cut` forearm columns removed."""
+    atk = load_np(TIQUE / 'Attack/05.png')
+    arm = np.zeros_like(atk)
+    arm[38:47, 46:] = atk[38:47, 46:]
+    short = np.zeros_like(arm)
+    short[:, :48] = arm[:, :48]
+    short[:, 48:64 - cut] = arm[:, 48 + cut:64]
+    # Attack/05's body sits 3 rows lower than Idle and its shoulder at x 46.
+    return np.roll(np.roll(short, -3, 0), SHOULDER[0] - 46, 1)
+
+
+def darker(img):
+    out = img.copy()
+    for src, dst in DARKER.items():
+        m = np.all(img[..., :3] == src, axis=-1) & (img[..., 3] > 0)
+        out[m, :3] = dst
+    return out
+
+
+def rot_arm(arm, deg):
+    if not deg:
+        return arm.copy()
+    big = arm
+    for _ in range(3):
+        big = np.array(scale2x_img(Image.fromarray(big)))
+    s = 8
+    r = np.array(Image.fromarray(big).rotate(-deg, resample=Image.NEAREST,
+                                               center=(SHOULDER[0] * s + s / 2, SHOULDER[1] * s + s / 2)))
+    r = r[s // 2::s, s // 2::s][:64, :64].copy()
+    a = r[..., 3] > 127
+    flat = r[a][:, :3].astype(np.int32)
+    d = ((flat[:, None, :] - TIQUE_PALETTE[None, :, :3]) ** 2).sum(-1)
+    out = np.zeros_like(r)
+    out[a] = TIQUE_PALETTE[d.argmin(1)].astype(np.uint8)
+    return out
+
+
+def scale2x_img(im):
+    a = np.array(im.convert('RGBA'))
+    h, w = a.shape[:2]
+    p = np.pad(a, ((1, 1), (1, 1), (0, 0)), mode='edge')
+    E, B, D, F, Hh = p[1:-1, 1:-1], p[:-2, 1:-1], p[1:-1, :-2], p[1:-1, 2:], p[2:, 1:-1]
+    eq = lambda x, y: np.all(x == y, axis=-1)
+    c = (~eq(B, Hh)) & (~eq(D, F))
+    out = np.zeros((h * 2, w * 2, 4), a.dtype)
+    out[0::2, 0::2] = np.where((c & eq(D, B))[..., None], D, E)
+    out[0::2, 1::2] = np.where((c & eq(B, F))[..., None], F, E)
+    out[1::2, 0::2] = np.where((c & eq(D, Hh))[..., None], D, E)
+    out[1::2, 1::2] = np.where((c & eq(Hh, F))[..., None], F, E)
+    return Image.fromarray(out)
+
+
+# Full-length arm: with the shoulder on the torso edge the fist ends at x 52, one
+# pixel short of the pushed weight's face (tile centre + 21).
+ARM = forward_arm(0)
+ARM_LONG = ARM
+ARM_ANGLE = {'side': 0, 'up': -45, 'down': 55}
+
+
+def shifted(img, dx, dy):
+    return np.roll(np.roll(img, dy, 0), dx, 1)
+
+
+def push_frame(body_src, direction, offset=None):
+    """Both hands on the pushed object: the near arm plus the far arm one shade darker
+    and a little lower so both fists show. Up/down tilt the same arms up-forward or
+    down-forward, the approved stand-in for back/front views Tique does not have."""
+    body, (dx, dy) = armless(body_src, offset)
+    arm = ARM_LONG if direction == 'up' else ARM
+    near = shifted(rot_arm(arm, ARM_ANGLE[direction]), dx, dy)
+    if direction == 'up':
+        # Both hands raised up-forward to the block above; far arm lower, one shade darker.
+        far = darker(shifted(rot_arm(arm, ARM_ANGLE[direction] + 10), dx, dy + 3))
+    else:
+        far = darker(shifted(rot_arm(ARM, ARM_ANGLE[direction] + (4 if direction == 'down' else 0)), dx, dy + 4))
+    out = np.zeros_like(body)
+    for part in (far, body, near):
+        m = part[..., 3] > 0
+        out[m] = part[m]
+    # Pixels the pose may change: new arms plus the swinging arms that were erased.
+    changed = (near[..., 3] > 0) | (far[..., 3] > 0) | np.any(out != body_src, axis=-1)
+    return Image.fromarray(out), sorted((int(x), int(y)) for y, x in zip(*np.where(changed)))
+
+
+def hurt_frames():
+    # Flinch away from the hit (faces +x): whole approved body steps back 1-2px, the
+    # eyes squeeze using the approved blink frames, the front arm rises to the face.
+    blink_half = load_np(OUT / 'blink-half/00.png'); blink_closed = load_np(OUT / 'blink-closed/00.png')
+    frames = []
+    for eyes, back, up, arm in [(blink_half, 1, 0, -70), (blink_closed, 2, 1, -80), (blink_half, 1, 0, -45)]:
+        base = IDLE.copy(); base[10:30] = eyes[10:30]
+        body, _ = armless(base, (0, 0))
+        near = rot_arm(ARM, arm)
+        out = np.zeros_like(body)
+        for part in (body, near):
+            m = part[..., 3] > 0
+            out[m] = part[m]
+        out = np.roll(np.roll(out, -up, 0), -back, 1)
+        out[64 - up:] = 0
+        frames.append(Image.fromarray(out))
+    return frames
+
+
+def tique_poses():
+    walk = [load_np(TIQUE / 'Walk' / f'{i:02d}.png') for i in range(14)]
+    walk_times = json.loads((R / 'unity/TiqueReturnPrototype/Assets/Resources/Return/clips.json').read_text())
+    walk_times = next(c['durations'] for c in walk_times['clips'] if c['name'] == 'Walk')
+    masks = {}
+    for direction in ('side', 'up', 'down'):
+        frames, arm = zip(*(push_frame(w, direction) for w in walk))
+        masks['push-' + direction] = list(arm)
+        export('push-' + direction, list(frames), walk_times,
+               'approved Attack/05 arm on armless Walk frames' +
+               ('' if direction == 'side' else f', arm rotated {ARM_ANGLE[direction]} deg with RotSprite') +
+               '; v5 arms were flat double bars')
+        brace, arm = push_frame(IDLE, direction)
+        masks['push-brace-' + direction] = [arm]
+        export('push-brace-' + direction, [brace], [1000], 'blocked push: same arms on the planted Idle body')
+    export('hurt-pose', hurt_frames(), [40, 50, 60], 'flinch: step back, squeezed eyes, arm up; v5 matched Idle')
+    (ART / 'polish-v6-arm-masks.json').write_text(json.dumps(masks, separators=(',', ':')))
+
+
+STAGES = [hud_cells, effects, icons, tique_poses]
 
 if __name__ == '__main__':
     for stage in STAGES:

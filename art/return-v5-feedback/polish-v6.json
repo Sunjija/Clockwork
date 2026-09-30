@@ -437,6 +437,131 @@
         1000
       ],
       "why": "broken ring; v5 was four faint corner ticks"
+    },
+    {
+      "clip": "push-side",
+      "frames": 14,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "why": "approved Attack/05 arm on armless Walk frames; v5 arms were flat double bars"
+    },
+    {
+      "clip": "push-brace-side",
+      "frames": 1,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "blocked push: same arms on the planted Idle body"
+    },
+    {
+      "clip": "push-up",
+      "frames": 14,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "why": "approved Attack/05 arm on armless Walk frames, arm rotated -45 deg with RotSprite; v5 arms were flat double bars"
+    },
+    {
+      "clip": "push-brace-up",
+      "frames": 1,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "blocked push: same arms on the planted Idle body"
+    },
+    {
+      "clip": "push-down",
+      "frames": 14,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "why": "approved Attack/05 arm on armless Walk frames, arm rotated 55 deg with RotSprite; v5 arms were flat double bars"
+    },
+    {
+      "clip": "push-brace-down",
+      "frames": 1,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "blocked push: same arms on the planted Idle body"
+    },
+    {
+      "clip": "hurt-pose",
+      "frames": 3,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        40,
+        50,
+        60
+      ],
+      "why": "flinch: step back, squeezed eyes, arm up; v5 matched Idle"
     }
   ]
 }
