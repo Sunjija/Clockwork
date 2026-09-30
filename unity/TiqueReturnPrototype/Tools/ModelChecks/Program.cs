@@ -63,8 +63,12 @@ Assert(v2.breaks>=3,"At least three armor breaks required");
 Assert(v2.events.Any(e=>e.EndsWith(":wave-release"))&&v2.events.Any(e=>e.EndsWith(":boss-Slam")),"All boss patterns exercised");
 Console.WriteLine($"V2 PASS {v2Checks.Count} checks + complete input playthrough; HP {v2.health}/5, time {v2.playTime:F2}s.");
 
-var authored=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenAuthored/clips.json")),jsonOptions);
+var v03=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenAuthored/clips.json")),jsonOptions);
+var authored=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenRig/clips.json")),jsonOptions);
 var bossTimes=authored.clips.ToDictionary(c=>"iron-"+c.name,c=>c.durations);
+// The v6 rig replaces pictures only: every gameplay clip keeps the v0.3/Tique exposure times.
+foreach(var old in v03.clips)Assert(bossTimes["iron-"+old.name].SequenceEqual(old.durations),"Rig clip timing changed: "+old.name);
+Assert(bossTimes["iron-boot"].Sum()==2400&&bossTimes["iron-shutdown"].Sum()==240,"Boot/shutdown keep the 2.4s arrival and 240ms power-down");
 var visual=new ReworkModel(book);
 int selections=0;
 foreach(bool assist in new[]{false,true})

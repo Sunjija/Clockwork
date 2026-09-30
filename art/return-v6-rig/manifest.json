@@ -1,0 +1,632 @@
+{
+  "source": "art/return-v3-manual/Source/base-native.png",
+  "palette": 31,
+  "baselineRow": 132,
+  "method": "part rig: trunk/head/jaw/4 legs, integer placement + RotSprite, base palette snap, planted feet flat",
+  "clips": [
+    {
+      "name": "idle",
+      "durations": [
+        1000
+      ],
+      "names": [
+        "base"
+      ],
+      "frames": 1,
+      "durationMs": 1000,
+      "loop": true,
+      "audit": [
+        {
+          "frame": 0,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        }
+      ]
+    },
+    {
+      "name": "attack",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "names": [
+        "base",
+        "coil",
+        "brace",
+        "snap",
+        "impact",
+        "hold",
+        "release",
+        "return",
+        "recoil",
+        "settle",
+        "jaw rest",
+        "base"
+      ],
+      "frames": 12,
+      "durationMs": 460,
+      "loop": false,
+      "audit": [
+        {
+          "frame": 0,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        },
+        {
+          "frame": 1,
+          "name": "coil",
+          "changedPixels": 8062,
+          "bottom": 131,
+          "sha256": "fcdf81ef19f727dc1f99614e1a4b82b78393493134220425c314567fb380f641"
+        },
+        {
+          "frame": 2,
+          "name": "brace",
+          "changedPixels": 8954,
+          "bottom": 131,
+          "sha256": "c3610b1e73d96121f48a3d885e724400ef8a69a1148a5511d1b48719df268237"
+        },
+        {
+          "frame": 3,
+          "name": "snap",
+          "changedPixels": 7535,
+          "bottom": 131,
+          "sha256": "10ce32ead53c87e3184b00dd4a81b1605fab079768d36f442cade873a1cc0ca6"
+        },
+        {
+          "frame": 4,
+          "name": "impact",
+          "changedPixels": 8533,
+          "bottom": 131,
+          "sha256": "afcbe251018f9bfe87e6d6deed15e0c0d82a9f71716529a6d11f169bce27343a"
+        },
+        {
+          "frame": 5,
+          "name": "hold",
+          "changedPixels": 8511,
+          "bottom": 131,
+          "sha256": "d05d27975095f4db64946abc855548fc755aa5224c8b8bdc74dcfcfc2a1aec55"
+        },
+        {
+          "frame": 6,
+          "name": "release",
+          "changedPixels": 8189,
+          "bottom": 131,
+          "sha256": "45f210f9e5d802a02e1ee81e25d73d1f6b3a0ae5e8b6cf23b4f1e59d7db42346"
+        },
+        {
+          "frame": 7,
+          "name": "return",
+          "changedPixels": 7432,
+          "bottom": 131,
+          "sha256": "87d179adfd6fe5bdda0776bbcc0e2e41c152ac73465aca015d2e9b88f22e0414"
+        },
+        {
+          "frame": 8,
+          "name": "recoil",
+          "changedPixels": 6121,
+          "bottom": 131,
+          "sha256": "2cc4c964c811d57c66e6d817ca0ea4e611749a7db2806915fe120ecaade3958e"
+        },
+        {
+          "frame": 9,
+          "name": "settle",
+          "changedPixels": 5237,
+          "bottom": 131,
+          "sha256": "8f81aff392ef40e08c3e10bd9df9da294e7dddd2f7eb3ad4ef65608bc806919e"
+        },
+        {
+          "frame": 10,
+          "name": "jaw rest",
+          "changedPixels": 1054,
+          "bottom": 131,
+          "sha256": "b7fc2343f35bc663f68cd5c8f857afccfb70275faeb2001b47ad082c6fc454fa"
+        },
+        {
+          "frame": 11,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        }
+      ]
+    },
+    {
+      "name": "charge",
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "names": [
+        "base",
+        "lower",
+        "brace",
+        "launch",
+        "drive A",
+        "drive B",
+        "drive A",
+        "brake",
+        "absorb",
+        "settle",
+        "jaw rest",
+        "base"
+      ],
+      "frames": 12,
+      "durationMs": 440,
+      "loop": false,
+      "audit": [
+        {
+          "frame": 0,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        },
+        {
+          "frame": 1,
+          "name": "lower",
+          "changedPixels": 8143,
+          "bottom": 131,
+          "sha256": "cc2e6bafeec8bea309cdf569f2d08fe132c4de37aac9a4b165d1c89a691aeedf"
+        },
+        {
+          "frame": 2,
+          "name": "brace",
+          "changedPixels": 8755,
+          "bottom": 131,
+          "sha256": "1e4eb158ad3b28fe11e6efdf526d8d2916f3615bd3dc7a6db1133c4486fc15b9"
+        },
+        {
+          "frame": 3,
+          "name": "launch",
+          "changedPixels": 8616,
+          "bottom": 131,
+          "sha256": "c8dd6ebf2f1188fb3a43a46a5cc6d71a03e6e0e9a5402900ed11a49bf2ca80f4"
+        },
+        {
+          "frame": 4,
+          "name": "drive A",
+          "changedPixels": 8256,
+          "bottom": 131,
+          "sha256": "6cc6115d0fb434e6211af2e2cb055b7f52d44a169531f6aaa5c2b8c397ed9306"
+        },
+        {
+          "frame": 5,
+          "name": "drive B",
+          "changedPixels": 8029,
+          "bottom": 131,
+          "sha256": "9befe061f5727f7a954d41df4902f48687d81299a71651a6a980df0f90e105cf"
+        },
+        {
+          "frame": 6,
+          "name": "drive A",
+          "changedPixels": 8256,
+          "bottom": 131,
+          "sha256": "6cc6115d0fb434e6211af2e2cb055b7f52d44a169531f6aaa5c2b8c397ed9306"
+        },
+        {
+          "frame": 7,
+          "name": "brake",
+          "changedPixels": 8562,
+          "bottom": 131,
+          "sha256": "f4065c33ecbfccd77cf941d9c6adacb90cb0e7668f9fff4d1b1c65edab20948e"
+        },
+        {
+          "frame": 8,
+          "name": "absorb",
+          "changedPixels": 7812,
+          "bottom": 131,
+          "sha256": "f6468193b5683312268afff22d1bf06d7dca76c63477e53ffbb553d8cdefb2ee"
+        },
+        {
+          "frame": 9,
+          "name": "settle",
+          "changedPixels": 7093,
+          "bottom": 131,
+          "sha256": "de84e91f5e25e56ec2d5d96b8db37bcfdbc6a4aa1930da2f33f6870c5450fde4"
+        },
+        {
+          "frame": 10,
+          "name": "jaw rest",
+          "changedPixels": 5519,
+          "bottom": 131,
+          "sha256": "b5004a202b7c77f27c3e55438fee6c27116360e10413cb302154e27b5bf132e9"
+        },
+        {
+          "frame": 11,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        }
+      ]
+    },
+    {
+      "name": "slam",
+      "durations": [
+        60,
+        30,
+        40,
+        40,
+        90,
+        70,
+        60,
+        40,
+        70,
+        60,
+        35,
+        35,
+        45,
+        45,
+        80
+      ],
+      "names": [
+        "base",
+        "compress",
+        "brace",
+        "lift",
+        "tuck",
+        "apex in",
+        "apex",
+        "unfold",
+        "fall",
+        "reach",
+        "contact",
+        "absorb",
+        "head follows",
+        "recover",
+        "base"
+      ],
+      "frames": 15,
+      "durationMs": 800,
+      "loop": false,
+      "audit": [
+        {
+          "frame": 0,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        },
+        {
+          "frame": 1,
+          "name": "compress",
+          "changedPixels": 7873,
+          "bottom": 131,
+          "sha256": "cb117adaf6e02eada5eac7466e114a8d4c3b085caba3bf05c76a200698a36473"
+        },
+        {
+          "frame": 2,
+          "name": "brace",
+          "changedPixels": 8348,
+          "bottom": 131,
+          "sha256": "8305fd042158c11a0b53cc0670666b78414d6371cb7054f055f1765e59f9e911"
+        },
+        {
+          "frame": 3,
+          "name": "lift",
+          "changedPixels": 9332,
+          "bottom": 131,
+          "sha256": "20d22fc6da1add7b929ae430722053c40eb00cc91cd4faad88c3534299653145"
+        },
+        {
+          "frame": 4,
+          "name": "tuck",
+          "changedPixels": 9209,
+          "bottom": 119,
+          "sha256": "20d4ef439872984aca9279aaf45e11aa5c9f94f018e29b514981bd4c43c847ba"
+        },
+        {
+          "frame": 5,
+          "name": "apex in",
+          "changedPixels": 8848,
+          "bottom": 114,
+          "sha256": "6e5509d91bcb930ce4225156cd79abf030382bc6b89b54ed432f2a56afd1a168"
+        },
+        {
+          "frame": 6,
+          "name": "apex",
+          "changedPixels": 8562,
+          "bottom": 116,
+          "sha256": "6f4275c89957e73a0e047e63c679a28c7eaf1da9dede518020f1597cfcdd1994"
+        },
+        {
+          "frame": 7,
+          "name": "unfold",
+          "changedPixels": 7630,
+          "bottom": 124,
+          "sha256": "47cc13e036c977367adc482380f72ae50949faf32df84534872aab1bca0f89ed"
+        },
+        {
+          "frame": 8,
+          "name": "fall",
+          "changedPixels": 8443,
+          "bottom": 131,
+          "sha256": "b8bef2b2027205bee6765f6138b40a97fbf353d95bee1220a27def986bee20e8"
+        },
+        {
+          "frame": 9,
+          "name": "reach",
+          "changedPixels": 8573,
+          "bottom": 131,
+          "sha256": "faf72f04fb2a8a7616cc6705e483593cb3892406e673a3ca44459336180ffbed"
+        },
+        {
+          "frame": 10,
+          "name": "contact",
+          "changedPixels": 8542,
+          "bottom": 131,
+          "sha256": "7084946ac004b12245e97e0fb944461905a16f2507af398bbc271649e9fc176f"
+        },
+        {
+          "frame": 11,
+          "name": "absorb",
+          "changedPixels": 8465,
+          "bottom": 131,
+          "sha256": "208a50a52139139c835dfa2d2f29888e0bbee4995699cd1515ef2dd33df170cb"
+        },
+        {
+          "frame": 12,
+          "name": "head follows",
+          "changedPixels": 8080,
+          "bottom": 131,
+          "sha256": "e94d743976203789873d75e06aa283a39091b00bfc458582aebdde9c6072e191"
+        },
+        {
+          "frame": 13,
+          "name": "recover",
+          "changedPixels": 6499,
+          "bottom": 131,
+          "sha256": "4fd9a6d77a2f223d7f44fd1b1c19340a292e187e38d5095067a5d5f532b0d73b"
+        },
+        {
+          "frame": 14,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        }
+      ]
+    },
+    {
+      "name": "stagger",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "names": [
+        "base",
+        "collision",
+        "recoil",
+        "rise",
+        "overload",
+        "hold",
+        "open",
+        "settle",
+        "release",
+        "return",
+        "rest",
+        "base"
+      ],
+      "frames": 12,
+      "durationMs": 460,
+      "loop": false,
+      "audit": [
+        {
+          "frame": 0,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        },
+        {
+          "frame": 1,
+          "name": "collision",
+          "changedPixels": 7921,
+          "bottom": 131,
+          "sha256": "57a666d9806c6433da6ce19d392ce440f6c386c2e98fd465330eb2b7a07d4706"
+        },
+        {
+          "frame": 2,
+          "name": "recoil",
+          "changedPixels": 8158,
+          "bottom": 131,
+          "sha256": "a2e370953ba3c0d58d2c7f48f4a35994ca459d43acf814de37a640fb2355316f"
+        },
+        {
+          "frame": 3,
+          "name": "rise",
+          "changedPixels": 7820,
+          "bottom": 131,
+          "sha256": "97f06876569e553f6c9ca4f889a0c0a92807fece264f42e40c5306a6804c87ed"
+        },
+        {
+          "frame": 4,
+          "name": "overload",
+          "changedPixels": 8060,
+          "bottom": 131,
+          "sha256": "b9b2ceec9466d8d0f934196251574f3ff1a5c1f8c6c00262275565a89e7da222"
+        },
+        {
+          "frame": 5,
+          "name": "hold",
+          "changedPixels": 8167,
+          "bottom": 131,
+          "sha256": "e8b6ccc623aa958082a8462b51830748cef37144ffd57f56d62b7e4ae097fbf6"
+        },
+        {
+          "frame": 6,
+          "name": "open",
+          "changedPixels": 8108,
+          "bottom": 131,
+          "sha256": "258de760e3d050302005e5500d0b0a114b076107492503d3e45b5ef4335314d8"
+        },
+        {
+          "frame": 7,
+          "name": "settle",
+          "changedPixels": 8221,
+          "bottom": 131,
+          "sha256": "ec55881ea2857a8bec9e1bee7a03283f959b2d20eb89dccf0dc2f9bdefd428c1"
+        },
+        {
+          "frame": 8,
+          "name": "release",
+          "changedPixels": 8075,
+          "bottom": 131,
+          "sha256": "c478480b458e7ca3d0470db156c31013cac7e3b74721531ee53489d49ed67a9e"
+        },
+        {
+          "frame": 9,
+          "name": "return",
+          "changedPixels": 7015,
+          "bottom": 131,
+          "sha256": "7ebdbf99560ba90f69411527c5eb76625ffa53314595ebff1cbd54a03f90e14f"
+        },
+        {
+          "frame": 10,
+          "name": "rest",
+          "changedPixels": 5494,
+          "bottom": 131,
+          "sha256": "4324de01b58120a6629c9e670165a54346bfb314b72104812d57d60079965ef4"
+        },
+        {
+          "frame": 11,
+          "name": "base",
+          "changedPixels": 0,
+          "bottom": 131,
+          "sha256": "86982cdbc7f5bdfb3e40bd5a783c88bb71b8df6d2a15a611982e73d192cb68a1"
+        }
+      ]
+    },
+    {
+      "name": "boot",
+      "durations": [
+        600,
+        600,
+        600,
+        600
+      ],
+      "names": [
+        "dark slump",
+        "head lifts",
+        "rising",
+        "awake"
+      ],
+      "frames": 4,
+      "durationMs": 2400,
+      "loop": false,
+      "audit": [
+        {
+          "frame": 0,
+          "name": "dark slump",
+          "changedPixels": 8103,
+          "bottom": 131,
+          "sha256": "469223e7a1691d14ba96018f722e5c99ce6cfee51c4d1c900745e6d045117aed"
+        },
+        {
+          "frame": 1,
+          "name": "head lifts",
+          "changedPixels": 8285,
+          "bottom": 131,
+          "sha256": "d0c56f359e9d184a25f38b3f893a0845e2956659dd0f066023a0e93bd145d166"
+        },
+        {
+          "frame": 2,
+          "name": "rising",
+          "changedPixels": 7529,
+          "bottom": 131,
+          "sha256": "a7d44c5b6772cb264b32c5e9924b3e8ed51ee1a3d86d92895e9539eb5d70276a"
+        },
+        {
+          "frame": 3,
+          "name": "awake",
+          "changedPixels": 6850,
+          "bottom": 131,
+          "sha256": "11218347827e065fd614de58f019594e1527bb76b7a603094d0c95b6c5a16ded"
+        }
+      ]
+    },
+    {
+      "name": "shutdown",
+      "durations": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "names": [
+        "power drop",
+        "buckle",
+        "fall",
+        "off"
+      ],
+      "frames": 4,
+      "durationMs": 240,
+      "loop": false,
+      "audit": [
+        {
+          "frame": 0,
+          "name": "power drop",
+          "changedPixels": 7483,
+          "bottom": 131,
+          "sha256": "10aaaf1fa1dc0f8b8ca37f67b69afeb7b40766b4da92bde1db23209e64bd305f"
+        },
+        {
+          "frame": 1,
+          "name": "buckle",
+          "changedPixels": 8097,
+          "bottom": 131,
+          "sha256": "dbd832ea61578b8e7cff09d68b0c36bdbaf19b28a28d52a8ad3e822449f8c7c3"
+        },
+        {
+          "frame": 2,
+          "name": "fall",
+          "changedPixels": 8109,
+          "bottom": 131,
+          "sha256": "1db31efcade8598331e4beb83529929180e2f9e584018ae7121be92c66e8bb63"
+        },
+        {
+          "frame": 3,
+          "name": "off",
+          "changedPixels": 8103,
+          "bottom": 131,
+          "sha256": "469223e7a1691d14ba96018f722e5c99ce6cfee51c4d1c900745e6d045117aed"
+        }
+      ]
+    }
+  ]
+}

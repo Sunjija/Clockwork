@@ -1,7 +1,7 @@
 {
   "passed": true,
   "selections": 96000,
-  "frames": 52,
+  "frames": 60,
   "waveReleaseFrame": 4,
   "landingFrame": 10,
   "exposedHoldFrame": 6,

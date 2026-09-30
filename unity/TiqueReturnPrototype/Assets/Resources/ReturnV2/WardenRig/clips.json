@@ -1,0 +1,194 @@
+{
+  "clips": [
+    {
+      "name": "idle",
+      "durations": [
+        1000
+      ],
+      "names": [
+        "base"
+      ],
+      "frames": 1,
+      "durationMs": 1000,
+      "loop": true
+    },
+    {
+      "name": "attack",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "names": [
+        "base",
+        "coil",
+        "brace",
+        "snap",
+        "impact",
+        "hold",
+        "release",
+        "return",
+        "recoil",
+        "settle",
+        "jaw rest",
+        "base"
+      ],
+      "frames": 12,
+      "durationMs": 460,
+      "loop": false
+    },
+    {
+      "name": "charge",
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "names": [
+        "base",
+        "lower",
+        "brace",
+        "launch",
+        "drive A",
+        "drive B",
+        "drive A",
+        "brake",
+        "absorb",
+        "settle",
+        "jaw rest",
+        "base"
+      ],
+      "frames": 12,
+      "durationMs": 440,
+      "loop": false
+    },
+    {
+      "name": "slam",
+      "durations": [
+        60,
+        30,
+        40,
+        40,
+        90,
+        70,
+        60,
+        40,
+        70,
+        60,
+        35,
+        35,
+        45,
+        45,
+        80
+      ],
+      "names": [
+        "base",
+        "compress",
+        "brace",
+        "lift",
+        "tuck",
+        "apex in",
+        "apex",
+        "unfold",
+        "fall",
+        "reach",
+        "contact",
+        "absorb",
+        "head follows",
+        "recover",
+        "base"
+      ],
+      "frames": 15,
+      "durationMs": 800,
+      "loop": false
+    },
+    {
+      "name": "stagger",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "names": [
+        "base",
+        "collision",
+        "recoil",
+        "rise",
+        "overload",
+        "hold",
+        "open",
+        "settle",
+        "release",
+        "return",
+        "rest",
+        "base"
+      ],
+      "frames": 12,
+      "durationMs": 460,
+      "loop": false
+    },
+    {
+      "name": "boot",
+      "durations": [
+        600,
+        600,
+        600,
+        600
+      ],
+      "names": [
+        "dark slump",
+        "head lifts",
+        "rising",
+        "awake"
+      ],
+      "frames": 4,
+      "durationMs": 2400,
+      "loop": false
+    },
+    {
+      "name": "shutdown",
+      "durations": [
+        60,
+        60,
+        60,
+        60
+      ],
+      "names": [
+        "power drop",
+        "buckle",
+        "fall",
+        "off"
+      ],
+      "frames": 4,
+      "durationMs": 240,
+      "loop": false
+    }
+  ]
+}

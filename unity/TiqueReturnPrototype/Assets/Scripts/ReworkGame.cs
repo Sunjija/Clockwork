@@ -39,11 +39,12 @@ namespace TiqueReturn
                 for(int i=0;i<frames.Length;i++)frames[i]=Load("Return/Tique/"+c.name+"/"+i.ToString("00"));animations[c.name]=frames;
             }
             foreach(string name in new[]{"floor","wall"})art[name]=Load("ReturnV2/Art/"+name);
-            var warden=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/WardenAuthored/clips").text);
+            // v6 part-rig poses; the v0.3 WardenAuthored frames stay in the project for comparison.
+            var warden=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/WardenRig/clips").text);
             foreach(var clip in warden.clips)
             {
                 var frames=new Sprite[clip.durations.Length];durations["iron-"+clip.name]=clip.durations;
-                for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/WardenAuthored/"+clip.name+"/"+i.ToString("00"));
+                for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/WardenRig/"+clip.name+"/"+i.ToString("00"));
                 animations["iron-"+clip.name]=frames;
             }
             var states=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/StateArt/clips").text);
@@ -192,10 +193,10 @@ namespace TiqueReturn
                     if(m.charged==i)Bar("power"+i,m.pylons[i]-19,285,38*m.chargeLife/16,2,cyan,6);
                 }
                 int bossFrame=WardenAnimation.Select(m,durations,out string bossClip);
-                if(m.phase==Journey.Arrival)StateFeedback("warden-boot",Mathf.Min(2.399f,m.age),m.bossX-96,m.bossY-132,10,m.bossFacing>0);
-                else if(m.bossMove==IronMove.Down&&m.age<.24f)StateFeedback("warden-shutdown",m.age,m.bossX-96,m.bossY-132,10,m.bossFacing>0);
-                else if(m.bossMove==IronMove.Down)StateProp("iron-maw","warden-powered-down",0,m.bossX-96,m.bossY-132,10,false,m.bossFacing>0);
-                else Draw("iron-maw",animations[bossClip][bossFrame],m.bossX-96,m.bossY-132,10,Color.white,m.bossFacing>0);
+                // Boot rises out of the dark slump; shutdown falls back into it and holds the last frame.
+                if(m.phase==Journey.Arrival){bossClip="iron-boot";bossFrame=WardenAnimation.FrameAt(durations[bossClip],Mathf.Min(2.399f,m.age));}
+                else if(m.bossMove==IronMove.Down){bossClip="iron-shutdown";bossFrame=WardenAnimation.FrameAt(durations[bossClip],m.age);}
+                Draw("iron-maw",animations[bossClip][bossFrame],m.bossX-96,m.bossY-132,10,Color.white,m.bossFacing>0);
                 if(m.Vulnerable||m.bossMove==IronMove.Down)
                 {
                     string core=WorldArtState.Core(m,out float coreAge);
