@@ -17,7 +17,7 @@ public static class ReworkBuild
         ReworkChecks.Run(book,s=>Debug.Log(s));
         EnsureScene();
         string[] args=Environment.GetCommandLineArgs();int n=Array.IndexOf(args,"--return-output");
-        string output=n>=0&&n+1<args.Length?args[n+1]:"Builds/WindowsV3/TiqueReturn.exe";
+        string output=n>=0&&n+1<args.Length?args[n+1]:"Builds/WindowsV4/TiqueReturn.exe";
         Directory.CreateDirectory(Path.GetDirectoryName(output));
         var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{Scene},locationPathName=output,target=BuildTarget.StandaloneWindows64,options=BuildOptions.None});
         Debug.Log("RETURN_V2_BUILD "+report.summary.result+" bytes="+report.summary.totalSize);

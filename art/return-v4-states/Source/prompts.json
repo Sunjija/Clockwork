@@ -1,0 +1,44 @@
+[
+  {
+    "name": "pylon-armed",
+    "ref": "art/return-v4-states/Source/Existing/pylon.png",
+    "prompt": "Show the same brass charging pylon in the FULLY CHARGED / ARMED state. Preserve U-shaped horns, teal glass piston cylinder and square brass foot. The cyan sphere is brighter with two sharp tiny electric arcs bridging the horn tips; 3 charge windows on the cylinder fully lit. Add two deployed short diagonal brass grounding fins near the base. Whole object, no ground shadow, exact same view. One static state illustration, not multiple frames. Clean painted game concept art first; native pixel conversion and all intermediate state frames will be authored separately. Preserve the supplied design. Transparent outside object.",
+    "alpha": true
+  },
+  {
+    "name": "pylon-spent",
+    "ref": "art/return-v4-states/Source/Existing/pylon.png",
+    "prompt": "Show the same brass charging pylon immediately AFTER DISCHARGE: intact but exhausted. The top sphere is smoky dark turquoise, 3 charge windows dark; a small mechanical shutter has slid over the front cylinder. Horns and silhouette unchanged, no destruction, no smoke particles. Whole object, no ground shadow, exact same view. One static state illustration. Clean painted game concept art first; native pixel conversion and all intermediate state frames will be authored separately. Preserve the supplied design. Transparent outside object.",
+    "alpha": true
+  },
+  {
+    "name": "socket-connected",
+    "ref": "art/return-v4-states/Source/Existing/amber-socket.png",
+    "prompt": "Same brass square socket plate in its successfully CONNECTED state, with no object on top so the plate is readable. Four small brass corner locking tabs are extended inward; four distinct amber edge circuit tracks lit. Preserve the diamond recess, shape, dark teal inset and warm brass material. Whole object exact same camera. One static state design; no text. Clean painted game concept art first; native pixel conversion and all intermediate state frames will be authored separately. Preserve the supplied design. Transparent outside object.",
+    "alpha": true
+  },
+  {
+    "name": "battery-connected",
+    "ref": "art/return-v4-states/Source/Existing/battery.png",
+    "prompt": "Same compact brass weight battery in its CONNECTED power state. Preserve exact cubic silhouette, teal inset, front amber spherical core and corner brackets. An amber circuit line connects core to the two bottom brass feet, a mechanical top latch is pressed flush and a small diamond-shaped indicator is filled with light. Whole object exact same camera. One static state design; no animation, no extra effects. Clean painted game concept art first; native pixel conversion and all intermediate state frames will be authored separately. Preserve the supplied design. Transparent outside object.",
+    "alpha": true
+  },
+  {
+    "name": "core-exposed",
+    "ref": "art/return-v4-states/Source/Existing/gear.png",
+    "prompt": "Create one small EXPOSED REACTOR CORE for the interior of a slate-blue steel machine. Reuse the referenced brass mechanical ring material language, but remove every outward spike. Make a compact circular brass bearing with four mounting bolts and a filled glowing red-orange furnace crystal at its center. Two short steel mounting brackets flank it. It must read as a vulnerable core, not a projectile. One static isolated side-view object, front facing, no text. Clean painted game concept art first; native pixel conversion and all intermediate state frames will be authored separately. Preserve the supplied design. Transparent outside object.",
+    "alpha": true
+  },
+  {
+    "name": "exit-closed",
+    "ref": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/Art/arena.png",
+    "prompt": "Create one isolated vertical CLOSED RETURN EXIT DOOR for this dark clockwork factory. Rectangular side-view 2D game modular prop, straight front view, solid black-blue double sliding metal panels, heavy brass jambs, small cyan diamond lamp above, heavy rivets, short stone threshold. Height-to-width ratio 1.7. Whole door and frame, no surrounding room, no perspective floor, no labels. Clear simple planes suited to a native 64x96 pixel sprite. One static closed state. Clean painted game concept art first; native pixel conversion and all intermediate state frames will be authored separately. Preserve the supplied design. Transparent outside object.",
+    "alpha": true
+  },
+  {
+    "name": "arena-restored",
+    "ref": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/Art/arena.png",
+    "prompt": "State reference for the exact factory room AFTER POWER RESTORATION. Keep all architecture, camera, floor height, pipes and mechanisms perfectly fixed, preserve dark blue mood. Only the existing wall lamps switch to warm amber, the central distant arch cyan circuit lights turn on, and three short floor conduits have cyan light. No new objects, no hero, no door relocation, no daylight. One background state reference; no animation. Clean painted game concept art first; native pixel conversion and all intermediate state frames will be authored separately. Preserve the supplied design. Transparent outside object. For this background keep full opaque room.",
+    "alpha": false
+  }
+]

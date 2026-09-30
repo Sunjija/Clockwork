@@ -1,0 +1,561 @@
+{
+  "clips": [
+    {
+      "name": "battery-idle",
+      "durations": [
+        1000
+      ],
+      "width": 30,
+      "height": 32,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "orb-idle",
+      "durations": [
+        1000
+      ],
+      "width": 26,
+      "height": 26,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "battery-moving",
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "width": 30,
+      "height": 32,
+      "loop": true,
+      "tiqueTiming": "Dash",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "orb-moving",
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "width": 26,
+      "height": 26,
+      "loop": true,
+      "tiqueTiming": "Walk",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "battery-docked",
+      "durations": [
+        1000
+      ],
+      "width": 30,
+      "height": 32,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "orb-docked",
+      "durations": [
+        1000
+      ],
+      "width": 26,
+      "height": 26,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "amber-slot-empty",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "amber-slot-filled",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "amber-slot-wrong",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "amber-slot-connect",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": "Attack",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "cyan-slot-empty",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "cyan-slot-filled",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "cyan-slot-wrong",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "cyan-slot-connect",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": "Attack",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "pylon-idle",
+      "durations": [
+        1000
+      ],
+      "width": 42,
+      "height": 60,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "pylon-armed",
+      "durations": [
+        1000
+      ],
+      "width": 42,
+      "height": 60,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "pylon-cooldown",
+      "durations": [
+        1000
+      ],
+      "width": 42,
+      "height": 60,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "pylon-charging",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 42,
+      "height": 60,
+      "loop": false,
+      "tiqueTiming": "Attack",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "pylon-expiring",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 42,
+      "height": 60,
+      "loop": true,
+      "tiqueTiming": "Attack",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "pylon-discharge",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 42,
+      "height": 60,
+      "loop": false,
+      "tiqueTiming": "Attack",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "core-exposed",
+      "durations": [
+        1000
+      ],
+      "width": 32,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "single generated core -> native base"
+    },
+    {
+      "name": "core-off",
+      "durations": [
+        1000
+      ],
+      "width": 32,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "core-hit",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 32,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": "Attack",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "warden-powered-down",
+      "durations": [
+        1000
+      ],
+      "width": 192,
+      "height": 144,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "unchanged v3 stagger 06 geometry; furnace/vent pixels extinguished using its own 32-color palette"
+    },
+    {
+      "name": "wave-spin",
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "width": 24,
+      "height": 24,
+      "loop": true,
+      "tiqueTiming": "Walk",
+      "source": "existing gear, exact 90-degree integer pixel permutations"
+    },
+    {
+      "name": "exit-locked",
+      "durations": [
+        1000
+      ],
+      "width": 64,
+      "height": 96,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "single closed gate concept -> locked native base"
+    },
+    {
+      "name": "exit-open",
+      "durations": [
+        1000
+      ],
+      "width": 64,
+      "height": 96,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "exit-opening",
+      "durations": [
+        60,
+        30,
+        40,
+        40,
+        90,
+        70,
+        60,
+        40,
+        70,
+        60,
+        35,
+        35,
+        45,
+        45,
+        80
+      ],
+      "width": 64,
+      "height": 96,
+      "loop": false,
+      "tiqueTiming": "Jump",
+      "source": "existing native prop + pixel edits"
+    },
+    {
+      "name": "warning-charge",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 32,
+      "height": 8,
+      "loop": true,
+      "tiqueTiming": "Attack",
+      "source": "pixel-authored danger marks using generated red gear / power circuit motifs"
+    },
+    {
+      "name": "warning-wave",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 24,
+      "height": 8,
+      "loop": true,
+      "tiqueTiming": "Attack",
+      "source": "pixel-authored danger marks using generated red gear / power circuit motifs"
+    },
+    {
+      "name": "warning-slam",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 136,
+      "height": 16,
+      "loop": true,
+      "tiqueTiming": "Attack",
+      "source": "pixel-authored danger marks using generated red gear / power circuit motifs"
+    },
+    {
+      "name": "workshop-power-0",
+      "durations": [
+        1000
+      ],
+      "width": 640,
+      "height": 360,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "original workshop native + fixed relay indicators"
+    },
+    {
+      "name": "workshop-power-1",
+      "durations": [
+        1000
+      ],
+      "width": 640,
+      "height": 360,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "original workshop native + fixed relay indicators"
+    },
+    {
+      "name": "workshop-power-2",
+      "durations": [
+        1000
+      ],
+      "width": 640,
+      "height": 360,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "original workshop native + fixed relay indicators"
+    },
+    {
+      "name": "workshop-power-3",
+      "durations": [
+        1000
+      ],
+      "width": 640,
+      "height": 360,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "original workshop native + fixed relay indicators"
+    },
+    {
+      "name": "arena-dark",
+      "durations": [
+        1000
+      ],
+      "width": 640,
+      "height": 360,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "unchanged original native arena"
+    },
+    {
+      "name": "arena-restored",
+      "durations": [
+        1000
+      ],
+      "width": 640,
+      "height": 360,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "generated restored room reference -> local lamp/conduit pixel edits on unchanged geometry"
+    }
+  ]
+}

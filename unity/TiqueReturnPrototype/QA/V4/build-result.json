@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "unity": "6000.5.3f1",
+  "target": "StandaloneWindows64",
+  "buildReportBytes": 110230768,
+  "executable": "Builds/WindowsV4/TiqueReturn.exe",
+  "executableSha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4",
+  "rawLog": "QA/build-v4.log (local, ignored)"
+}

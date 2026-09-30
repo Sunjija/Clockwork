@@ -21,6 +21,9 @@ namespace TiqueReturn
         public readonly List<string> events=new List<string>();
         public readonly List<RingWave> waves=new List<RingWave>();
         public readonly float[] pylons={140,500};
+        public readonly float[] pylonChargedAt={-100,-100};
+        public int lastDischargedPylon=-1;
+        public float dischargedAt=-100,lastCoreHitAt=-100,restoredAt=-100;
         public Journey phase=Journey.Title;
         public IronMove bossMove=IronMove.Rest;
         public string bossSequence="charge";
@@ -52,6 +55,7 @@ namespace TiqueReturn
         {
             phase=Journey.Arrival;age=0;ResetHero();health=5;bossHealth=9;breaks=openHits=pattern=0;
             bossX=490;bossY=Floor;bossFacing=-1;charged=-1;chargeLife=chargeCooldown=0;waves.Clear();Next(IronMove.Rest);
+            pylonChargedAt[0]=pylonChargedAt[1]=-100;lastDischargedPylon=-1;dischargedAt=lastCoreHitAt=restoredAt=-100;
             Say("귀환 전력 복구. 그러나 폐기 집행 장치가 길을 막습니다.",4);Event("arena-arrival");
         }
         public void Retry(){if(phase!=Journey.Dead)return;BeginArena();Event("checkpoint-retry");}
@@ -74,7 +78,7 @@ namespace TiqueReturn
             if(phase==Journey.Ending)return;
             if(phase==Journey.Puzzle)
             {
-                stepLock=M.Max(0,stepLock-dt);puzzle.motion=M.Max(0,puzzle.motion-dt);
+                stepLock=M.Max(0,stepLock-dt);puzzle.AdvanceVisual(dt);
                 if(c.undo){puzzle.Undo();stepLock=0;Event("undo");}
                 else if(c.restart){puzzle.Reset();stepLock=0;Event("room-reset");}
                 else if(c.hint){hintLevel=Math.Min(3,hintLevel+1);Event("hint");}
@@ -88,8 +92,8 @@ namespace TiqueReturn
             }
             if(phase==Journey.RoomClear)
             {
-                puzzle.motion=M.Max(0,puzzle.motion-dt);
-                if(c.interact&&age>.5f)
+                puzzle.AdvanceVisual(dt);
+                if(c.interact&&age>.8f)
                 {if(roomIndex==book.levels.Length-1)BeginArena();else{LoadRoom(roomIndex+1);phase=Journey.Puzzle;age=0;noticeLeft=0;}}
                 return;
             }
@@ -99,17 +103,17 @@ namespace TiqueReturn
                 return;
             }
             MoveHero(dt,c);
-            if(phase==Journey.Restored)
-            {
-                if(hero.x>594&&c.interact){phase=Journey.Ending;age=0;Event("ending");Sound?.Invoke("success");}
-                return;
-            }
             chargeLife-=dt;chargeCooldown-=dt;
             if(chargeLife<=0)charged=-1;
+            if(phase==Journey.Restored)
+            {
+                if(hero.x>594&&c.interact&&clock-restoredAt>=.8f){phase=Journey.Ending;age=0;Event("ending");Sound?.Invoke("success");}
+                return;
+            }
             if(c.interact&&hero.grounded&&chargeCooldown<=0)
             {
                 for(int i=0;i<pylons.Length;i++)if(M.Abs(hero.x-pylons[i])<36)
-                {charged=i;chargeLife=16;chargeCooldown=.25f;Event("pylon-charge-"+i);Sound?.Invoke("switch");Say("충전 완료. 문지기와 이 기둥 사이에 서지 말고, 기둥 뒤로 유도하세요.",3);break;}
+                {charged=i;pylonChargedAt[i]=clock;chargeLife=16;chargeCooldown=.25f;Event("pylon-charge-"+i);Sound?.Invoke("switch");Say("충전 완료. 문지기와 이 기둥 사이에 서지 말고, 기둥 뒤로 유도하세요.",3);break;}
             }
             BossTick(dt);
             if(phase!=Journey.Combat)return;
@@ -124,9 +128,9 @@ namespace TiqueReturn
                 float hand=hero.x+hero.facing*22;
                 if(Vulnerable&&M.Abs(hand-WeakX)<31&&hero.y>Floor-25)
                 {
-                    hitSerial=hero.attackSerial;bossHealth--;openHits++;flash=.12f;shake=.1f;hitStop=.045f;
+                    hitSerial=hero.attackSerial;bossHealth--;openHits++;lastCoreHitAt=clock;flash=.12f;shake=.1f;hitStop=.045f;
                     Event("boss-hit");Sound?.Invoke("hit");
-                    if(bossHealth<=0){phase=Journey.Restored;age=0;Next(IronMove.Down);waves.Clear();Event("guardian-stopped");Say("폐기 명령을 해제했습니다. 오른쪽 문에서 E로 귀환 기록을 확인하세요.",8);}
+                    if(bossHealth<=0){phase=Journey.Restored;age=0;restoredAt=clock;Next(IronMove.Down);waves.Clear();Event("guardian-stopped");Say("폐기 명령을 해제했습니다. 오른쪽 문에서 E로 귀환 기록을 확인하세요.",8);}
                     else if(openHits>=3){Next(IronMove.Recover);Say("장갑 재결합. 다음 충전 기둥으로 이동하세요.",3);}
                 }
             }
@@ -188,7 +192,7 @@ namespace TiqueReturn
                     float old=bossX;bossX+=bossFacing*dt*(assisted?230:280+Rage*18);
                     if(charged>=0&&(old+bossFacing*49-pylons[charged])*bossFacing<0&&(bossX+bossFacing*49-pylons[charged])*bossFacing>=0)
                     {
-                        bossX=pylons[charged]-bossFacing*49;charged=-1;chargeLife=0;chargeCooldown=2;
+                        bossX=pylons[charged]-bossFacing*49;lastDischargedPylon=charged;dischargedAt=clock;charged=-1;chargeLife=0;chargeCooldown=2;
                         breaks++;openHits=0;waves.Clear();Next(IronMove.Open);shake=.3f;Sound?.Invoke("hit");Event("armor-break");Say("장갑이 열렸어요! 기둥 쪽 붉은 틈을 J로 세 번 공격하세요.",4);break;
                     }
                     if(M.Abs(hero.x-bossX)<61&&hero.y>Floor-58)Damage("charge");

@@ -1,0 +1,7 @@
+Tool: built-in image_gen. transparent_background: true
+Reference: Concepts/exit-closed.png
+
+Show exactly this return gate in its FULLY OPEN state. Keep the complete heavy brass/blue frame, rivets, threshold and diamond lamp unchanged. Retract the two solid door panels into the left and right frame, leaving a dark teal passage with slim cyan illumination along its inner edges. Transparent outside the frame; opaque dark passage inside. Same straight-on view and framing. Single static open-state reference ONLY, no multiple frames, no labels, no animation. We will pixel-author the intermediate opening frames separately.
+
+The open image is a visual reference. Final opening frames use one locked native
+closed door, integer panel translations and redrawn interior pixels. No AI animation strip.

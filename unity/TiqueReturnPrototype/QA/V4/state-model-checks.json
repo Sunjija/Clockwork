@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "move/contact/connect/filled sequence, undo and reset match the board",
+    "mismatched sockets use error-state sprites",
+    "orb travel timing and docked state agree",
+    "pylon charge, arm, expiry, impact discharge, cooldown and retry",
+    "core hit/off and locked/opening/open exit with interaction guard",
+    "all 37 state clip timelines sampled 44400 times within bounds"
+  ],
+  "states": 37,
+  "frames": 187
+}

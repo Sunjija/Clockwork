@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "stateClips": 37,
+  "pngExposures": 187,
+  "generatedSingleStateReferences": 8,
+  "runtime": [
+    {
+      "folder": "Runtime720",
+      "resolution": [
+        1280,
+        720
+      ],
+      "screenshots": 25,
+      "result": {
+        "passed": true,
+        "phase": "Ending",
+        "health": 2,
+        "breaks": 3,
+        "playSeconds": 53.46
+      },
+      "observedStates": 34,
+      "notObserved": [
+        "amber-slot-wrong",
+        "cyan-slot-wrong",
+        "pylon-expiring"
+      ]
+    },
+    {
+      "folder": "Runtime1080",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "screenshots": 25,
+      "result": {
+        "passed": true,
+        "phase": "Ending",
+        "health": 2,
+        "breaks": 3,
+        "playSeconds": 53.46
+      },
+      "observedStates": 34,
+      "notObserved": [
+        "amber-slot-wrong",
+        "cyan-slot-wrong",
+        "pylon-expiring"
+      ]
+    }
+  ],
+  "modelChecks": "state-model-checks.json",
+  "artChecks": "state-art-checks.json",
+  "visuallyReviewed": [
+    "Runtime720/21-exit-open-restored.png",
+    "Runtime1080/13-connected-room-3.png",
+    "Runtime720/17-pylon-discharge.png",
+    "../../../../art/return-v4-states/QA/state-contact.png"
+  ],
+  "limitations": [
+    "Automated input pilot duration is not an estimate of first-time human playtime.",
+    "Wrong sockets and pylon expiry are covered by model checks and the art contact sheet, not these successful runtime routes.",
+    "Art is implemented for user review; technical checks are not subjective user approval."
+  ]
+}

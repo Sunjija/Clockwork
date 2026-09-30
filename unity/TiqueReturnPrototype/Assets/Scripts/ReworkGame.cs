@@ -20,6 +20,7 @@ namespace TiqueReturn
         ReworkCommand pending=ReworkCommand.Empty;
         bool smoke;float smokeStart;readonly ReworkPilot pilot=new ReworkPilot();
         readonly HashSet<string> screenshots=new HashSet<string>();
+        readonly HashSet<string> seenArtStates=new HashSet<string>();
         readonly Color cyan=new Color(.39f,.89f,.87f),gold=new Color(.95f,.73f,.36f),red=new Color(1,.36f,.28f);
         readonly Color ink=new Color(.91f,.95f,.95f),dim=new Color(.60f,.70f,.75f),panel=new Color(.026f,.05f,.075f,.95f);
         void Awake()
@@ -33,13 +34,20 @@ namespace TiqueReturn
                 durations[c.name]=c.durations;Sprite[] frames=new Sprite[c.durations.Length];
                 for(int i=0;i<frames.Length;i++)frames[i]=Load("Return/Tique/"+c.name+"/"+i.ToString("00"));animations[c.name]=frames;
             }
-            foreach(string name in new[]{"workshop","arena","floor","wall","battery","orb","amber-socket","cyan-socket","pylon","gear"})art[name]=Load("ReturnV2/Art/"+name);
+            foreach(string name in new[]{"floor","wall"})art[name]=Load("ReturnV2/Art/"+name);
             var warden=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/WardenAuthored/clips").text);
             foreach(var clip in warden.clips)
             {
                 var frames=new Sprite[clip.durations.Length];durations["iron-"+clip.name]=clip.durations;
                 for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/WardenAuthored/"+clip.name+"/"+i.ToString("00"));
                 animations["iron-"+clip.name]=frames;
+            }
+            var states=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/StateArt/clips").text);
+            foreach(var clip in states.clips)
+            {
+                var frames=new Sprite[clip.durations.Length];durations["state-"+clip.name]=clip.durations;
+                for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/StateArt/"+clip.name+"/"+i.ToString("00"));
+                animations["state-"+clip.name]=frames;
             }
             foreach(string name in new[]{"jump","dash","land","hit","hurt","success","switch","warning"})audio[name]=Resources.Load<AudioClip>("Return/Audio/"+name);
             var tex=new Texture2D(1,1);tex.SetPixel(0,0,Color.white);tex.Apply();pixel=Sprite.Create(tex,new Rect(0,0,1,1),Vector2.one*.5f,64);
@@ -102,6 +110,12 @@ namespace TiqueReturn
             r.transform.localScale=new Vector3(w/sprite.rect.width,h/sprite.rect.height,1);
         }
         void Prop(string id,string sprite,float x,float y,int layer=4,Color? tint=null){Draw(id,art[sprite],x,y,layer,tint);}
+        void StateProp(string id,string state,float age,float x,float y,int layer=4,bool loop=false,bool flip=false)
+        {
+            if(smoke)seenArtStates.Add(state);
+            string key="state-"+state;int frame=WardenAnimation.FrameAt(durations[key],age,loop:loop);
+            Draw(id,animations[key][frame],x,y,layer,Color.white,flip);
+        }
         void Bar(string id,float x,float y,float w,float h,Color color,int layer=3){Draw(id,pixel,x,y,layer,color,false,Mathf.Max(1,w),Mathf.Max(1,h));}
         void Tique(float x,float y,string clip,int frame,int layer=1000,bool flip=false)
         {
@@ -111,13 +125,13 @@ namespace TiqueReturn
         void DrawWorld()
         {
             foreach(var r in pool.Values)r.enabled=false;var m=Model;
-            Prop("bg",m.InArena?"arena":"workshop",0,0,0);
+            StateProp("bg",m.InArena?(m.phase==Journey.Restored||m.phase==Journey.Ending?"arena-restored":"arena-dark"):
+                "workshop-power-"+WorldArtState.WorkshopPower(m),0,0,0,0);
             cameraWorld.transform.position=new Vector3((320+(m.shake>0?Mathf.Round(Mathf.Sin(m.clock*90)*2):0))/64,180f/64,-10);
             if(!m.InArena)
             {
                 const float bx=194,by=64,cell=36;
-                var p=m.puzzle;float duration=.15f;
-                for(int i=0;i<p.boxes.Length;i++)if(Mathf.Abs(p.boxes[i]%7-p.previousBoxes[i]%7)+Mathf.Abs(p.boxes[i]/7-p.previousBoxes[i]/7)>1)duration=.27f;
+                var p=m.puzzle;float duration=p.motionDuration;
                 float t=1-Mathf.Clamp01(p.motion/duration);t=t*t*(3-2*t);
                 for(int pos=0;pos<49;pos++)
                 {
@@ -126,12 +140,14 @@ namespace TiqueReturn
                 }
                 for(int i=0;i<p.room.goals.Length;i++)
                 {
-                    int pos=p.room.goals[i];Prop("goal"+i,p.room.types[i]==0?"amber-socket":"cyan-socket",bx+pos%7*cell,by+pos/7*cell,2,p.GoalFilled(i)?Color.white:new Color(.8f,.9f,.95f));
+                    int pos=p.room.goals[i];string socket=WorldArtState.Socket(p,i,out float socketAge);
+                    StateProp("goal"+i,socket,socketAge,bx+pos%7*cell,by+pos/7*cell,2);
                 }
                 for(int i=0;i<p.boxes.Length;i++)
                 {
                     float x=Mathf.Lerp(p.previousBoxes[i]%7,p.boxes[i]%7,t),y=Mathf.Lerp(p.previousBoxes[i]/7,p.boxes[i]/7,t);
-                    bool orb=p.room.types[i]==1;Prop("box"+i,orb?"orb":"battery",bx+x*cell+(orb?5:3),by+y*cell+(orb?6:2),15+Mathf.RoundToInt(y*20));
+                    bool orb=p.room.types[i]==1;string box=WorldArtState.Box(p,i,out float boxAge);
+                    StateProp("box"+i,box,boxAge,bx+x*cell+(orb?5:3),by+y*cell+(orb?6:2),15+Mathf.RoundToInt(y*20),true);
                 }
                 float px=Mathf.Lerp(p.previousPlayer%7,p.player%7,t),py=Mathf.Lerp(p.previousPlayer/7,p.player/7,t);
                 string clip=p.motion>0?"Walk":"Idle";int frame=p.motion>0?(int)(m.clock*14)%animations["Walk"].Length:0;
@@ -141,32 +157,34 @@ namespace TiqueReturn
             {
                 Bar("floor",0,282,640,1,new Color(.4f,.47f,.52f),3);
                 Draw("ledge-l",art["floor"],44,236,3,Color.white,false,48,6);Draw("ledge-r",art["floor"],548,236,3,Color.white,false,48,6);
+                string exit=WorldArtState.Exit(m,out float exitAge);StateProp("exit-door",exit,exitAge,576,186,3);
                 for(int i=0;i<2;i++)
                 {
-                    Prop("pylon"+i,"pylon",m.pylons[i]-17,230,5,m.charged==i?Color.white:new Color(.36f,.49f,.54f));
-                    if(m.charged==i){Bar("power"+i,m.pylons[i]-19,285,38*m.chargeLife/16,2,cyan,6);Bar("charge-beam"+i,m.pylons[i]-1,207,2,20,cyan,4);}
+                    string pylon=WorldArtState.Pylon(m,i,out float pylonAge);
+                    StateProp("pylon"+i,pylon,pylonAge,m.pylons[i]-21,222,5,pylon=="pylon-expiring");
+                    if(m.charged==i)Bar("power"+i,m.pylons[i]-19,285,38*m.chargeLife/16,2,cyan,6);
                 }
                 int bossFrame=WardenAnimation.Select(m,durations,out string bossClip);
-                Draw("iron-maw",animations[bossClip][bossFrame],m.bossX-96,m.bossY-132,10,m.bossMove==IronMove.Down?new Color(.4f,.47f,.53f):Color.white,m.bossFacing>0);
-                if(m.Vulnerable)
+                if(m.bossMove==IronMove.Down)StateProp("iron-maw","warden-powered-down",0,m.bossX-96,m.bossY-132,10,false,m.bossFacing>0);
+                else Draw("iron-maw",animations[bossClip][bossFrame],m.bossX-96,m.bossY-132,10,Color.white,m.bossFacing>0);
+                if(m.Vulnerable||m.bossMove==IronMove.Down)
                 {
-                    Prop("exposed-core","gear",m.WeakX-12,250,11,m.flash>0?new Color(1,.9f,.7f):Color.white);
-                    Bar("open-time",m.bossX-42,m.bossY-112,84*(1-Mathf.Clamp01(m.bossAge/(m.assisted?7:5.2f))),2,gold,12);
+                    string core=WorldArtState.Core(m,out float coreAge);
+                    StateProp("exposed-core",core,coreAge,m.WeakX-16,246,11);
+                    if(m.Vulnerable)Bar("open-time",m.bossX-42,m.bossY-112,84*(1-Mathf.Clamp01(m.bossAge/(m.assisted?7:5.2f))),2,gold,12);
                 }
                 if(m.bossMove==IronMove.ChargeAim)
                 {
                     float start=m.bossFacing<0?24:m.bossX,end=m.bossFacing<0?m.bossX:616;
-                    Bar("charge-track",start,280,end-start,2,red,12);
-                    for(int i=0;i<5;i++)Bar("charge-tick"+i,start+(end-start)*(i+1)/6,274,3,7,red,12);
+                    for(int i=0;start+i*32+32<=end;i++)StateProp("charge-tick"+i,"warning-charge",m.bossAge,start+i*32,274,12,true,m.bossFacing<0);
                 }
                 if(m.bossMove==IronMove.SlamAim||m.bossMove==IronMove.Slam)
                 {
-                    Bar("slam-area",m.aimX-68,280,136,3,red,12);Bar("slam-l",m.aimX-68,261,2,20,red,12);Bar("slam-r",m.aimX+66,261,2,20,red,12);
+                    StateProp("slam-area","warning-slam",m.bossAge,m.aimX-68,266,12,true);
                 }
-                if(m.bossMove==IronMove.WaveAim)for(int i=0;i<15;i++)Bar("wave-warn"+i,20+i*41,279,18,3,gold,12);
-                for(int i=0;i<m.waves.Count;i++)Prop("wave"+i,"gear",m.waves[i].x-12,260,12);
+                if(m.bossMove==IronMove.WaveAim)for(int i=0;i<15;i++)StateProp("wave-warn"+i,"warning-wave",m.bossAge,20+i*41,274,12,true);
+                for(int i=0;i<m.waves.Count;i++)StateProp("wave"+i,"wave-spin",m.clock,m.waves[i].x-12,260,12,true,m.waves[i].direction<0);
                 string pose=m.hero.Pose(durations,out int f);Tique(m.hero.x,m.hero.y,pose,f,20,m.hero.facing<0);
-                if(m.phase==Journey.Restored||m.phase==Journey.Ending)Bar("exit",608,188,9,94,new Color(.45f,.9f,.9f,.65f),4);
             }
         }
         void Styles()
@@ -220,14 +238,14 @@ namespace TiqueReturn
                 Text(843,26,220,31,"티크",small);for(int i=0;i<5;i++)Panel(911+i*26,35,18,14,i<m.health?cyan:new Color(.16f,.23f,.29f));
                 Panel(398,114,484,52);Text(415,119,216,35,"철갑 문지기",small);
                 for(int i=0;i<9;i++)Panel(624+i*26,131,20,10,i<m.bossHealth?red:new Color(.18f,.23f,.28f));
-                string state=m.Vulnerable?"노심 노출  ·  J 공격":m.bossMove==IronMove.ChargeAim?"돌진 준비  ·  기둥 뒤로 유도":m.bossMove==IronMove.WaveAim?"충격파 준비  ·  점프":m.bossMove==IronMove.SlamAim?"낙하 조준  ·  붉은 구역에서 대시":"충전  →  유도  →  반격";
+                string state=m.phase==Journey.Restored||m.phase==Journey.Ending?"폐기 명령 해제  ·  귀환문으로 이동":m.Vulnerable?"노심 노출  ·  J 공격":m.bossMove==IronMove.ChargeAim?"돌진 준비  ·  기둥 뒤로 유도":m.bossMove==IronMove.WaveAim?"충격파 준비  ·  점프":m.bossMove==IronMove.SlamAim?"낙하 조준  ·  붉은 구역에서 대시":"충전  →  유도  →  반격";
                 Text(400,177,600,44,state,normal,m.Vulnerable?cyan:gold);
-                for(int i=0;i<2;i++)Text(m.pylons[i]*2-64,583,170,33,m.charged==i?"충전  "+Mathf.CeilToInt(m.chargeLife)+"초":"E  충전",small,m.charged==i?cyan:dim);
+                for(int i=0;i<2;i++)Text(m.pylons[i]*2-64,583,170,33,m.phase==Journey.Restored||m.phase==Journey.Ending?"전원 복구":m.charged==i?"충전  "+Mathf.CeilToInt(m.chargeLife)+"초":m.chargeCooldown>.25f?"냉각 중":"E  충전",small,m.charged==i?cyan:dim);
                 if(m.noticeLeft>0){Panel(98,606,1084,48);Text(116,614,1050,38,m.notice,small);}
             }
             Panel(0,660,1280,60);Text(25,676,1078,34,m.InArena?"← → 이동    Space / ↑ 점프·더블점프    Shift 대시    J 공격    E 충전":"방향키 / WASD 이동    Z 되돌리기    R 방 초기화    H 단계별 힌트",small);
             if(Button(1137,669,120,42,"Esc  정지"))m.paused=true;
-            if(m.phase==Journey.RoomClear)
+            if(m.phase==Journey.RoomClear&&m.age>.8f)
             {
                 Overlay();Text(210,170,1000,80,"회로 "+(m.roomIndex+1)+" 연결 완료",title);
                 Text(215,287,860,94,m.roomIndex==2?"귀환 전력을 복구했어요.\n출구를 막은 폐기 집행 장치가 깨어납니다.":"멈췄던 공장에 작은 불빛이 돌아옵니다.\n다음 방에서는 움직임의 규칙이 달라져요.");
@@ -246,7 +264,7 @@ namespace TiqueReturn
                 if(Button(236,388,515,60,"다시 도전  ·  Enter"))pending.interact=true;
                 if(Button(236,470,515,55,m.assisted?"도움 켜짐 · 예고와 반격 시간 확대":"도움 모드 켜기"))m.assisted=!m.assisted;
             }
-            if(m.phase==Journey.Restored)Text(986,375,260,73,"귀환 기록\n오른쪽 문에서 E",normal,cyan);
+            if(m.phase==Journey.Restored)Text(986,375,260,73,m.clock-m.restoredAt<.8f?"귀환문 개방 중":"귀환 기록\n오른쪽 문에서 E",normal,cyan);
             if(m.phase==Journey.Ending)
             {
                 Overlay();Text(180,135,1000,86,"돌아갈 곳이 있어.",title);
@@ -285,10 +303,32 @@ namespace TiqueReturn
                 if(Model.bossMove==IronMove.Open&&Model.bossAge>.3f)yield return Capture(folder,"10-authored-open-hold");
                 if(Model.bossMove==IronMove.SlamAim&&Model.bossAge>.4f)yield return Capture(folder,"11-authored-air-tuck");
                 if(Model.bossMove==IronMove.Recover&&Model.bossSequence=="slam"&&Model.bossAge<.06f)yield return Capture(folder,"12-authored-landing");
+                if(Model.phase==Journey.RoomClear&&Model.age>.66f&&Model.age<.8f)yield return Capture(folder,"13-connected-room-"+(Model.roomIndex+1));
+                if(Model.phase==Journey.Puzzle&&Model.puzzle.motion>0&&Model.roomIndex>0)
+                    for(int i=0;i<Model.puzzle.boxes.Length;i++)if(Model.puzzle.room.types[i]==1&&Model.puzzle.boxes[i]!=Model.puzzle.previousBoxes[i])yield return Capture(folder,"14-orb-sliding");
+                if(Model.phase==Journey.Combat)
+                {
+                    for(int i=0;i<2;i++)
+                    {
+                        string state=WorldArtState.Pylon(Model,i,out float stateAge);
+                        if(state=="pylon-charging"&&stateAge>.12f)yield return Capture(folder,"15-pylon-charging");
+                        if(state=="pylon-armed")yield return Capture(folder,"16-pylon-armed");
+                        if(state=="pylon-discharge"&&stateAge>.08f)yield return Capture(folder,"17-pylon-discharge");
+                        if(state=="pylon-cooldown")yield return Capture(folder,"18-pylon-cooldown");
+                    }
+                    if(Model.Vulnerable&&Model.clock-Model.lastCoreHitAt<.2f)yield return Capture(folder,"19-core-hit");
+                }
+                if(Model.phase==Journey.Restored)
+                {
+                    float exitAge=Model.clock-Model.restoredAt;
+                    if(exitAge>.18f&&exitAge<.8f)yield return Capture(folder,"20-exit-opening");
+                    if(exitAge>=.8f)yield return Capture(folder,"21-exit-open-restored");
+                }
                 yield return null;
             }
             bool pass=Model.phase==Journey.Ending&&Model.breaks>=3;yield return Capture(folder,pass?"08-ending":"failure");
             File.WriteAllText(Path.Combine(folder,"result.json"),"{\"passed\":"+pass.ToString().ToLowerInvariant()+",\"phase\":\""+Model.phase+"\",\"health\":"+Model.health+",\"breaks\":"+Model.breaks+",\"playSeconds\":"+Model.playTime.ToString("F2",System.Globalization.CultureInfo.InvariantCulture)+"}");
+            var observed=new List<string>(seenArtStates);observed.Sort();File.WriteAllLines(Path.Combine(folder,"observed-art-states.txt"),observed);
             File.WriteAllLines(Path.Combine(folder,"events.txt"),Model.events);Debug.Log("RETURN_V2_SMOKE "+(pass?"PASS":"FAIL"));Application.Quit(pass?0:2);
         }
         void OnDestroy(){if(target!=null){target.Release();Destroy(target);}}

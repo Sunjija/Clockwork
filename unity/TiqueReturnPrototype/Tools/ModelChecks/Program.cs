@@ -95,3 +95,9 @@ Assert(lift.bossY<ReworkModel.Floor,"Lift follows the 130ms brace exposures");
 Directory.CreateDirectory(Path.Combine(qa,"V3"));
 File.WriteAllText(Path.Combine(qa,"V3/animation-model-checks.json"),JsonSerializer.Serialize(new{passed=true,selections,frames=authored.clips.Sum(c=>c.durations.Length),waveReleaseFrame=4,landingFrame=10,exposedHoldFrame=6,braceMs=130,scope="Pure C# frame selection; subjective motion quality is not certified"},jsonOptions));
 Console.WriteLine($"PASS guardian authored clips: {selections} state/time selections, wave impact, landing, open hold, static idle and grounded brace.");
+
+var states=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/StateArt/clips.json")),jsonOptions);
+var stateChecks=WorldArtChecks.Run(book,states);
+Directory.CreateDirectory(Path.Combine(qa,"V4"));
+File.WriteAllText(Path.Combine(qa,"V4/state-model-checks.json"),JsonSerializer.Serialize(new{passed=true,checks=stateChecks,states=states.clips.Length,frames=states.clips.Sum(c=>c.durations.Length)},jsonOptions));
+foreach(string check in stateChecks)Console.WriteLine("STATE PASS "+check);
