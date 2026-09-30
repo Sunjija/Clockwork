@@ -1,0 +1,150 @@
+{
+  "clips": [
+    {
+      "name": "idle",
+      "durations": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110
+      ]
+    },
+    {
+      "name": "walk",
+      "durations": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ]
+    },
+    {
+      "name": "charge-aim",
+      "durations": [
+        90,
+        170,
+        1000
+      ]
+    },
+    {
+      "name": "charge-roll",
+      "durations": [
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "name": "charge-crash",
+      "durations": [
+        90,
+        120,
+        120,
+        110,
+        110,
+        100,
+        100
+      ]
+    },
+    {
+      "name": "stagger-open",
+      "durations": [
+        70,
+        90,
+        110,
+        1000
+      ]
+    },
+    {
+      "name": "stagger-close",
+      "durations": [
+        120,
+        120,
+        120,
+        120
+      ]
+    },
+    {
+      "name": "wave-aim",
+      "durations": [
+        60,
+        110,
+        1000,
+        30
+      ]
+    },
+    {
+      "name": "wave-strike",
+      "durations": [
+        120,
+        120,
+        200,
+        310
+      ]
+    },
+    {
+      "name": "slam-rise",
+      "durations": [
+        50,
+        80,
+        170,
+        150,
+        1000
+      ]
+    },
+    {
+      "name": "slam-fall",
+      "durations": [
+        90,
+        1000
+      ]
+    },
+    {
+      "name": "slam-land",
+      "durations": [
+        220,
+        250,
+        110
+      ]
+    },
+    {
+      "name": "defeat",
+      "durations": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        1000
+      ]
+    },
+    {
+      "name": "boot",
+      "durations": [
+        500,
+        300,
+        250,
+        250,
+        250,
+        250,
+        300,
+        300
+      ]
+    },
+    {
+      "name": "core-flash",
+      "durations": [
+        60,
+        80
+      ]
+    }
+  ]
+}

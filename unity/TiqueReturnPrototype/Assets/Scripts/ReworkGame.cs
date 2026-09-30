@@ -39,12 +39,12 @@ namespace TiqueReturn
                 for(int i=0;i<frames.Length;i++)frames[i]=Load("Return/Tique/"+c.name+"/"+i.ToString("00"));animations[c.name]=frames;
             }
             foreach(string name in new[]{"floor","wall"})art[name]=Load("ReturnV2/Art/"+name);
-            // v6 part-rig poses; the v0.3 WardenAuthored frames stay in the project for comparison.
-            var warden=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/WardenRig/clips").text);
+            // v7: dotified guardian motion images. v0.3 WardenAuthored and v6 WardenRig stay for comparison.
+            var warden=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/WardenV7/clips").text);
             foreach(var clip in warden.clips)
             {
                 var frames=new Sprite[clip.durations.Length];durations["iron-"+clip.name]=clip.durations;
-                for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/WardenRig/"+clip.name+"/"+i.ToString("00"));
+                for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/WardenV7/"+clip.name+"/"+i.ToString("00"));
                 animations["iron-"+clip.name]=frames;
             }
             var states=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/StateArt/clips").text);
@@ -192,15 +192,13 @@ namespace TiqueReturn
                     StateProp("pylon"+i,pylon,pylonAge,m.pylons[i]-21,222,5,pylon=="pylon-expiring");
                 }
                 int bossFrame=WardenAnimation.Select(m,durations,out string bossClip);
-                // Boot rises out of the dark slump; shutdown falls back into it and holds the last frame.
+                // Boot plays the collapse backwards while the lights come on.
                 if(m.phase==Journey.Arrival){bossClip="iron-boot";bossFrame=WardenAnimation.FrameAt(durations[bossClip],Mathf.Min(2.399f,m.age));}
-                else if(m.bossMove==IronMove.Down){bossClip="iron-shutdown";bossFrame=WardenAnimation.FrameAt(durations[bossClip],m.age);}
-                Draw("iron-maw",animations[bossClip][bossFrame],m.bossX-96,m.bossY-132,10,Color.white,m.bossFacing>0);
-                if(m.Vulnerable||m.bossMove==IronMove.Down)
-                {
-                    string core=WorldArtState.Core(m,out float coreAge);
-                    StateProp("exposed-core",core,coreAge,m.WeakX-16,m.WeakY-18,11);
-                }
+                float bossLeft=m.bossX-WardenAnimation.CanvasWidth/2,bossTop=m.bossY-WardenAnimation.Baseline;
+                Draw("iron-maw",animations[bossClip][bossFrame],bossLeft,bossTop,10,Color.white,m.bossFacing>0);
+                // The core is painted into the held Open pose; a hit flashes just those pixels.
+                if(m.Vulnerable&&m.clock-m.lastCoreHitAt<.14f)
+                    Draw("core-flash",animations["iron-core-flash"][WardenAnimation.FrameAt(durations["iron-core-flash"],m.clock-m.lastCoreHitAt)],bossLeft,bossTop,11,Color.white,m.bossFacing>0);
                 if(m.bossMove==IronMove.ChargeAim)
                 {
                     float start=m.bossFacing<0?24:m.bossX,end=m.bossFacing<0?m.bossX:616;

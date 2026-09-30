@@ -44,8 +44,9 @@ namespace TiqueReturn
         public bool InArena => phase==Journey.Arrival||phase==Journey.Combat||phase==Journey.Restored||phase==Journey.Ending||phase==Journey.Dead;
         public bool Vulnerable => phase==Journey.Combat&&bossMove==IronMove.Open;
         public int Rage => Math.Min(2,(9-bossHealth)/3);
-        public float WeakX => bossX+bossFacing*48;
-        public float WeakY => bossY-20;
+        // Centre of the core painted into the held v7 Open pose (canvas 69,124; body centre 96, feet 164).
+        public float WeakX => bossX+bossFacing*27;
+        public float WeakY => bossY-40;
         public bool CanControl => phase==Journey.Combat||phase==Journey.Restored;
         public ReworkModel(PuzzleBook book) {this.book=book;hero.phase=Phase.Combat;ResetHero();LoadRoom(0);}
         void ResetHero()

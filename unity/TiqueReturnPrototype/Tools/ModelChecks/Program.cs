@@ -63,12 +63,9 @@ Assert(v2.breaks>=3,"At least three armor breaks required");
 Assert(v2.events.Any(e=>e.EndsWith(":wave-release"))&&v2.events.Any(e=>e.EndsWith(":boss-Slam")),"All boss patterns exercised");
 Console.WriteLine($"V2 PASS {v2Checks.Count} checks + complete input playthrough; HP {v2.health}/5, time {v2.playTime:F2}s.");
 
-var v03=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenAuthored/clips.json")),jsonOptions);
-var authored=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenRig/clips.json")),jsonOptions);
+var authored=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenV7/clips.json")),jsonOptions);
 var bossTimes=authored.clips.ToDictionary(c=>"iron-"+c.name,c=>c.durations);
-// The v6 rig replaces pictures only: every gameplay clip keeps the v0.3/Tique exposure times.
-foreach(var old in v03.clips)Assert(bossTimes["iron-"+old.name].SequenceEqual(old.durations),"Rig clip timing changed: "+old.name);
-Assert(bossTimes["iron-boot"].Sum()==2400&&bossTimes["iron-shutdown"].Sum()==240,"Boot/shutdown keep the 2.4s arrival and 240ms power-down");
+Assert(bossTimes["iron-boot"].Sum()==2400,"Boot keeps the 2.4s arrival");
 var visual=new ReworkModel(book);
 int selections=0;
 foreach(bool assist in new[]{false,true})
@@ -78,27 +75,44 @@ foreach(string sequence in new[]{"attack","charge","slam","stagger"})
     visual.assisted=assist;visual.bossMove=move;visual.bossSequence=sequence;visual.bossHealth=3;
     for(int i=0;i<1200;i++)
     {
-        visual.bossAge=i/120f;int frame=WardenAnimation.Select(visual,bossTimes,out string clip);
-        Assert(frame>=0&&frame<bossTimes[clip].Length,"Guardian frame outside clip");selections++;
+        visual.bossAge=visual.age=visual.clock=i/120f;int frame=WardenAnimation.Select(visual,bossTimes,out string clip);
+        Assert(frame>=0&&frame<bossTimes[clip].Length,"Guardian frame outside clip "+clip);selections++;
     }
 }
-visual.bossMove=IronMove.Wave;visual.bossAge=0;
-Assert(WardenAnimation.Select(visual,bossTimes,out var waveClip)==4&&waveClip=="iron-attack","Wave release must show bite impact");
-visual.bossAge=1.1f;Assert(WardenAnimation.Select(visual,bossTimes,out _) ==4,"Second wave must show second bite");
-visual.bossMove=IronMove.Recover;visual.bossSequence="slam";visual.bossAge=0;
-Assert(WardenAnimation.Select(visual,bossTimes,out var slamClip)==10&&slamClip=="iron-slam","Ground contact must show landing pose");
-visual.bossAge=.84f;Assert(WardenAnimation.Select(visual,bossTimes,out _)==14,"Landing returns to exact base");
-visual.bossMove=IronMove.Open;visual.bossAge=3;
-Assert(WardenAnimation.Select(visual,bossTimes,out _)==6,"Exposed armor holds open, does not close mid-window");
-visual.bossMove=IronMove.Rest;Assert(WardenAnimation.Select(visual,bossTimes,out _)==0,"Idle holds canonical base");
+visual.assisted=false;visual.bossHealth=9;
+int Pick(IronMove move,float age,string sequence,out string clip){visual.bossMove=move;visual.bossSequence=sequence;visual.bossAge=visual.age=age;return WardenAnimation.Select(visual,bossTimes,out clip);}
+Assert(Pick(IronMove.Wave,0,"attack",out var waveClip)==0&&waveClip=="iron-wave-strike","Wave release shows the jaw hitting the floor");
+visual.bossHealth=3;Assert(Pick(IronMove.Wave,1.1f,"attack",out _)==0,"Second phase-three wave shows a second jaw strike");visual.bossHealth=9;
+Assert(Pick(IronMove.WaveAim,.6f,"attack",out _)==2&&Pick(IronMove.WaveAim,1.03f,"attack",out _)==3,"Wave telegraph holds the rear-up, swings down in the last 30ms");
+Assert(Pick(IronMove.ChargeAim,1.2f,"charge",out var aimClip)==2&&aimClip=="iron-charge-aim","Charge telegraph holds the curled ball");
+Assert(Pick(IronMove.SlamAim,.12f,"slam",out _)<=1,"Slam stays on the grounded crouch for the 130ms brace");
+Assert(Pick(IronMove.Recover,0,"slam",out var slamClip)==0&&slamClip=="iron-slam-land","Ground contact shows the sprawl");
+Assert(Pick(IronMove.Recover,.84f,"slam",out _)==2,"Landing ends on the idle stance");
+Assert(Pick(IronMove.Open,3,"stagger",out var openClip)==3&&openClip=="iron-stagger-open","Exposed core pose holds for the whole window");
+Assert(Pick(IronMove.Recover,0,"charge",out var crashClip)==0&&crashClip=="iron-charge-crash","Plain wall crash recoils");
+Assert(Pick(IronMove.Down,2,"stagger",out _)==bossTimes["iron-defeat"].Length-1,"Defeat holds the collapsed frame");
+visual.clock=.5f;Assert(Pick(IronMove.Rest,0,"charge",out var idleClip)>=0&&idleClip=="iron-idle","Rest breathes on the idle loop");
 var lift=new ReworkModel(book);lift.BeginArena();lift.phase=Journey.Combat;lift.bossMove=IronMove.SlamAim;
 for(int i=0;i<12;i++)lift.Tick(1f/120,ReworkCommand.Empty);
 Assert(lift.bossY==ReworkModel.Floor,"Landing attack must brace before leaving floor");
 for(int i=0;i<12;i++)lift.Tick(1f/120,ReworkCommand.Empty);
 Assert(lift.bossY<ReworkModel.Floor,"Lift follows the 130ms brace exposures");
-Directory.CreateDirectory(Path.Combine(qa,"V3"));
-File.WriteAllText(Path.Combine(qa,"V3/animation-model-checks.json"),JsonSerializer.Serialize(new{passed=true,selections,frames=authored.clips.Sum(c=>c.durations.Length),waveReleaseFrame=4,landingFrame=10,exposedHoldFrame=6,braceMs=130,scope="Pure C# frame selection; subjective motion quality is not certified"},jsonOptions));
-Console.WriteLine($"PASS guardian authored clips: {selections} state/time selections, wave impact, landing, open hold, static idle and grounded brace.");
+Directory.CreateDirectory(Path.Combine(qa,"V7"));
+File.WriteAllText(Path.Combine(qa,"V7/animation-model-checks.json"),JsonSerializer.Serialize(new{passed=true,selections,clips=authored.clips.Length,frames=authored.clips.Sum(c=>c.durations.Length),scope="Pure C# frame selection over WardenV7; subjective motion quality is not certified"},jsonOptions));
+// Trace one input-only fight for the offline preview (tools render it with the real frames).
+var trace=new ReworkModel(book);var tracePilot=new ReworkPilot();var rows=new List<object>();
+for(int n=0;n<120*240&&trace.phase!=Journey.Ending;n++)
+{
+    trace.Tick(1f/120,tracePilot.Next(trace));
+    if(!trace.InArena||n%4!=0)continue;
+    string clip;int frame;
+    if(trace.phase==Journey.Arrival){clip="iron-boot";frame=WardenAnimation.FrameAt(bossTimes[clip],Math.Min(2.399f,trace.age));}
+    else frame=WardenAnimation.Select(trace,bossTimes,out clip);
+    rows.Add(new{t=Math.Round(trace.clock,3),phase=trace.phase.ToString(),move=trace.bossMove.ToString(),clip,frame,bx=Math.Round(trace.bossX,1),by=Math.Round(trace.bossY,1),face=trace.bossFacing,
+        hx=Math.Round(trace.hero.x,1),hy=Math.Round(trace.hero.y,1),hf=trace.hero.facing,flash=trace.Vulnerable&&trace.clock-trace.lastCoreHitAt<.14f,waves=trace.waves.Select(w=>Math.Round(w.x)).ToArray()});
+}
+File.WriteAllText(Path.Combine(qa,"V7/fight-trace.json"),JsonSerializer.Serialize(rows));
+Console.WriteLine($"PASS guardian v7 clips: {selections} state/time selections, wave impact, telegraph holds, slam brace/landing, core hold, crash, defeat, idle; trace {rows.Count} rows.");
 
 var states=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/StateArt/clips.json")),jsonOptions);
 var stateChecks=WorldArtChecks.Run(book,states);
