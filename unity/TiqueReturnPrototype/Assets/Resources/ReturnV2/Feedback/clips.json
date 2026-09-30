@@ -27,8 +27,8 @@
       "name": "armor",
       "durations": [
         40,
-        45,
-        55
+        50,
+        50
       ],
       "width": 20,
       "height": 16
@@ -46,10 +46,10 @@
     {
       "name": "boost",
       "durations": [
-        35,
+        30,
         40,
         45,
-        50
+        55
       ],
       "width": 24,
       "height": 24
@@ -57,11 +57,11 @@
     {
       "name": "pylon-impact",
       "durations": [
-        20,
         25,
         30,
-        35,
-        40
+        30,
+        30,
+        35
       ],
       "width": 24,
       "height": 24
@@ -69,11 +69,11 @@
     {
       "name": "dust",
       "durations": [
+        30,
         40,
         40,
-        40,
-        40,
-        40
+        45,
+        45
       ],
       "width": 32,
       "height": 16
@@ -81,12 +81,12 @@
     {
       "name": "slam-dust",
       "durations": [
+        35,
+        35,
         40,
         40,
-        40,
-        40,
-        40,
-        40
+        45,
+        45
       ],
       "width": 96,
       "height": 24
@@ -470,8 +470,8 @@
       "name": "bridge",
       "durations": [
         30,
-        35,
-        35
+        30,
+        40
       ],
       "width": 32,
       "height": 32
@@ -480,8 +480,8 @@
       "name": "orb-stop",
       "durations": [
         40,
-        45,
-        55
+        50,
+        50
       ],
       "width": 24,
       "height": 16
@@ -490,8 +490,8 @@
       "name": "orb-release",
       "durations": [
         40,
-        45,
-        55
+        50,
+        50
       ],
       "width": 24,
       "height": 16
@@ -499,9 +499,9 @@
     {
       "name": "weight-settle",
       "durations": [
-        40,
         45,
-        55
+        45,
+        50
       ],
       "width": 32,
       "height": 16

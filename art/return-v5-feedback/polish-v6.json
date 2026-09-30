@@ -73,6 +73,250 @@
         1000
       ],
       "why": "dim afterimage"
+    },
+    {
+      "clip": "hit",
+      "frames": 5,
+      "size": [
+        24,
+        24
+      ],
+      "durations": [
+        25,
+        30,
+        35,
+        40,
+        40
+      ],
+      "why": "white contact core -> warm star -> streaks -> falling embers; no grid dissolve"
+    },
+    {
+      "clip": "hurt",
+      "frames": 4,
+      "size": [
+        24,
+        24
+      ],
+      "durations": [
+        30,
+        40,
+        45,
+        55
+      ],
+      "why": "cold jagged break, distinct from the warm core hit"
+    },
+    {
+      "clip": "armor",
+      "frames": 3,
+      "size": [
+        20,
+        16
+      ],
+      "durations": [
+        40,
+        50,
+        50
+      ],
+      "why": "v5 chips were dark brown and vanished on the dark arena"
+    },
+    {
+      "clip": "air",
+      "frames": 3,
+      "size": [
+        20,
+        16
+      ],
+      "durations": [
+        30,
+        40,
+        40
+      ],
+      "why": "short arc limited to the fist reach"
+    },
+    {
+      "clip": "boost",
+      "frames": 4,
+      "size": [
+        24,
+        24
+      ],
+      "durations": [
+        30,
+        40,
+        45,
+        55
+      ],
+      "why": "flat ring pushed down from the feet"
+    },
+    {
+      "clip": "pylon-impact",
+      "frames": 5,
+      "size": [
+        24,
+        24
+      ],
+      "durations": [
+        25,
+        30,
+        30,
+        30,
+        35
+      ],
+      "why": "electric arcs + gold sparks; v5 reused the hit star in orange"
+    },
+    {
+      "clip": "dust",
+      "frames": 5,
+      "size": [
+        32,
+        16
+      ],
+      "durations": [
+        30,
+        40,
+        40,
+        45,
+        45
+      ],
+      "why": "shaded puffs spreading and shrinking; v5 ended in vertical bars"
+    },
+    {
+      "clip": "slam-dust",
+      "frames": 6,
+      "size": [
+        96,
+        24
+      ],
+      "durations": [
+        35,
+        35,
+        40,
+        40,
+        45,
+        45
+      ],
+      "why": "low shock line, dust walls, debris arcs; v5 ended in a dotted grid"
+    },
+    {
+      "clip": "friction",
+      "frames": 4,
+      "size": [
+        32,
+        16
+      ],
+      "durations": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "why": "low scrape trail; v5 was identical to wall-brake"
+    },
+    {
+      "clip": "wall-brake",
+      "frames": 4,
+      "size": [
+        32,
+        16
+      ],
+      "durations": [
+        40,
+        40,
+        40,
+        40
+      ],
+      "why": "heavy chips + dust; separate from puzzle friction"
+    },
+    {
+      "clip": "weight-settle",
+      "frames": 3,
+      "size": [
+        32,
+        16
+      ],
+      "durations": [
+        45,
+        45,
+        50
+      ],
+      "why": "two small corner puffs"
+    },
+    {
+      "clip": "orb-release",
+      "frames": 3,
+      "size": [
+        24,
+        16
+      ],
+      "durations": [
+        40,
+        50,
+        50
+      ],
+      "why": "push lines behind the orb; v5 was identical to orb-stop"
+    },
+    {
+      "clip": "orb-stop",
+      "frames": 3,
+      "size": [
+        24,
+        16
+      ],
+      "durations": [
+        40,
+        50,
+        50
+      ],
+      "why": "symmetric contact ring; v5 was identical to orb-release"
+    },
+    {
+      "clip": "bridge",
+      "frames": 3,
+      "size": [
+        32,
+        32
+      ],
+      "durations": [
+        30,
+        30,
+        40
+      ],
+      "why": "electric star at the pylon coil"
+    },
+    {
+      "clip": "dash-ghost",
+      "frames": 12,
+      "size": [
+        64,
+        64
+      ],
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "why": "outline echo instead of a solid teal body"
+    },
+    {
+      "clip": "chute",
+      "frames": 1,
+      "size": [
+        48,
+        40
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "v5 chute was a faint brown outline; now a riveted hatch with a hanging flap"
     }
   ]
 }
