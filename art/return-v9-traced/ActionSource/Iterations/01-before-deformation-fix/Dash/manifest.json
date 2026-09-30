@@ -1,0 +1,787 @@
+{
+  "clip": "Dash",
+  "frame_size": [
+    64,
+    64
+  ],
+  "pixel_pivot": [
+    32,
+    56
+  ],
+  "durations_ms": [
+    40,
+    30,
+    30,
+    30,
+    40,
+    50,
+    40,
+    35,
+    35,
+    35,
+    35,
+    40
+  ],
+  "frame_count": 12,
+  "neutral_endpoints_match_original": true,
+  "source_method": "complete single generated body key trace + local native exposure pixels",
+  "all_hands_visible_and_connected": true,
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "duration_ms": 40,
+      "source_key": "neutral",
+      "pixel_edits": [],
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "duration_ms": 30,
+      "source_key": "dash-preload",
+      "pixel_edits": [
+        [
+          22,
+          49,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          23,
+          49,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          24,
+          49,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ],
+        [
+          33,
+          50,
+          [
+            156,
+            89,
+            56,
+            255
+          ]
+        ],
+        [
+          34,
+          50,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "015ade15058a11726b696323956e8290c2fd37c7731410c4431f49f496e9a3af",
+      "alpha_bounds": [
+        14,
+        12,
+        48,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1019
+      ],
+      "hands": [
+        {
+          "box": [
+            14,
+            42,
+            18,
+            47
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "duration_ms": 30,
+      "source_key": "dash-preload",
+      "pixel_edits": [],
+      "rgba_sha256": "8d3ddaf403a51ec44641fe9a5d40d73947a8b0b7efa0e8eebcea068ed9f02af3",
+      "alpha_bounds": [
+        14,
+        12,
+        48,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1019
+      ],
+      "hands": [
+        {
+          "box": [
+            14,
+            42,
+            18,
+            47
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "duration_ms": 30,
+      "source_key": "dash-travel-a",
+      "pixel_edits": [],
+      "rgba_sha256": "fd61338cd0a63df37d682b00252f49f665fa3cd07a325e7991fe2e63c41c44e2",
+      "alpha_bounds": [
+        15,
+        10,
+        49,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1027
+      ],
+      "hands": [
+        {
+          "box": [
+            15,
+            38,
+            19,
+            43
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            45,
+            41,
+            49,
+            46
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "duration_ms": 40,
+      "source_key": "dash-travel-a",
+      "pixel_edits": [
+        [
+          23,
+          51,
+          [
+            244,
+            203,
+            112,
+            255
+          ]
+        ],
+        [
+          24,
+          51,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          25,
+          51,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          26,
+          51,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ],
+        [
+          37,
+          50,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "d14f28289d9c827a1782de600857a3cb01d4e339552aa7866d43b1b211a78c4b",
+      "alpha_bounds": [
+        15,
+        10,
+        49,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1029
+      ],
+      "hands": [
+        {
+          "box": [
+            15,
+            38,
+            19,
+            43
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            45,
+            41,
+            49,
+            46
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "duration_ms": 50,
+      "source_key": "dash-travel-b",
+      "pixel_edits": [],
+      "rgba_sha256": "a8524315ce6c54427974a054f5a6f2d0387ef9799ce382852dc27a70052824ea",
+      "alpha_bounds": [
+        18,
+        10,
+        49,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        976
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            39,
+            22,
+            44
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            42,
+            40,
+            46,
+            45
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "duration_ms": 40,
+      "source_key": "dash-travel-b",
+      "pixel_edits": [
+        [
+          34,
+          51,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          35,
+          51,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          36,
+          51,
+          [
+            244,
+            203,
+            112,
+            255
+          ]
+        ],
+        [
+          24,
+          48,
+          [
+            156,
+            89,
+            56,
+            255
+          ]
+        ],
+        [
+          25,
+          48,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "634bb3f8e340be35c371a7fd0d849a56eb91609956ef824ae6d7a7f2094aedbd",
+      "alpha_bounds": [
+        18,
+        10,
+        49,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        976
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            39,
+            22,
+            44
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            42,
+            40,
+            46,
+            45
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "duration_ms": 35,
+      "source_key": "dash-travel-a",
+      "pixel_edits": [
+        [
+          25,
+          51,
+          [
+            244,
+            203,
+            112,
+            255
+          ]
+        ],
+        [
+          26,
+          51,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          27,
+          51,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          37,
+          50,
+          [
+            244,
+            203,
+            112,
+            255
+          ]
+        ],
+        [
+          38,
+          50,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "d27eadfd9960730f190cf60a4eb03e44f6c27cebd1248fcf570bcbd4ba41bbcf",
+      "alpha_bounds": [
+        15,
+        10,
+        49,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1030
+      ],
+      "hands": [
+        {
+          "box": [
+            15,
+            38,
+            19,
+            43
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            45,
+            41,
+            49,
+            46
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "duration_ms": 35,
+      "source_key": "dash-braking",
+      "pixel_edits": [],
+      "rgba_sha256": "783466fc961ba187f15b7f39bec5dcad49c3fc7d276a9bbfbb03d88afeb47aa3",
+      "alpha_bounds": [
+        12,
+        10,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1054
+      ],
+      "hands": [
+        {
+          "box": [
+            12,
+            39,
+            16,
+            44
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            44,
+            47,
+            49
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "duration_ms": 35,
+      "source_key": "dash-braking",
+      "pixel_edits": [
+        [
+          23,
+          48,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          24,
+          48,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          25,
+          49,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ],
+        [
+          37,
+          50,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          38,
+          50,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "763d159538970a8f3c71af0aca7d44d227779b99ef6bef7b5443f87496384ccf",
+      "alpha_bounds": [
+        12,
+        10,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1054
+      ],
+      "hands": [
+        {
+          "box": [
+            12,
+            39,
+            16,
+            44
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            44,
+            47,
+            49
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "duration_ms": 35,
+      "source_key": "neutral",
+      "pixel_edits": [
+        [
+          27,
+          49,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          28,
+          49,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "d186fe4594538a371bb188d5c2074d9af8a0ec709e2c7a5e852da2002411785a",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "duration_ms": 40,
+      "source_key": "neutral",
+      "pixel_edits": [],
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true
+        }
+      ]
+    }
+  ]
+}

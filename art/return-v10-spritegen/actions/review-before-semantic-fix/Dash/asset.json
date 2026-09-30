@@ -1,0 +1,58 @@
+{
+  "kind": "sprite-gen-asset",
+  "version": 1,
+  "anchor": [
+    32,
+    56
+  ],
+  "frames": [
+    {
+      "file": "00.png",
+      "duration": 0.04
+    },
+    {
+      "file": "01.png",
+      "duration": 0.03
+    },
+    {
+      "file": "02.png",
+      "duration": 0.03
+    },
+    {
+      "file": "03.png",
+      "duration": 0.03
+    },
+    {
+      "file": "04.png",
+      "duration": 0.04
+    },
+    {
+      "file": "05.png",
+      "duration": 0.05
+    },
+    {
+      "file": "06.png",
+      "duration": 0.04
+    },
+    {
+      "file": "07.png",
+      "duration": 0.035
+    },
+    {
+      "file": "08.png",
+      "duration": 0.035
+    },
+    {
+      "file": "09.png",
+      "duration": 0.035
+    },
+    {
+      "file": "10.png",
+      "duration": 0.035
+    },
+    {
+      "file": "11.png",
+      "duration": 0.04
+    }
+  ]
+}

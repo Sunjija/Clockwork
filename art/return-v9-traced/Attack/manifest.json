@@ -1,0 +1,979 @@
+{
+  "clip": "Attack",
+  "frame_size": [
+    64,
+    64
+  ],
+  "pixel_pivot": [
+    32,
+    56
+  ],
+  "durations_ms": [
+    20,
+    30,
+    40,
+    30,
+    70,
+    30,
+    40,
+    40,
+    30,
+    30,
+    40,
+    60
+  ],
+  "frame_count": 12,
+  "neutral_endpoints_match_original": true,
+  "source_method": "complete generated body action guide + source limb native tracing + explicit original head/body/core identity pixel correction + fingerless round hands",
+  "all_hands_visible_and_connected": true,
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "duration_ms": 20,
+      "source_key": "neutral",
+      "pixel_edits": [],
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true,
+          "shape": "original neutral",
+          "colors": null
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true,
+          "shape": "original neutral",
+          "colors": null
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            16,
+            8,
+            47,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            23,
+            34,
+            44,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            30,
+            37,
+            43,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "duration_ms": 30,
+      "source_key": "attack-windup",
+      "pixel_edits": [],
+      "rgba_sha256": "20ab1081409ca086cbc912bbaea96bb5f08b2767ecc5bde43ea3efa9c7a63178",
+      "alpha_bounds": [
+        14,
+        8,
+        48,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1109
+      ],
+      "hands": [
+        {
+          "box": [
+            14,
+            35,
+            18,
+            39
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            44,
+            38,
+            48,
+            42
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            16,
+            8,
+            47,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            23,
+            34,
+            44,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            30,
+            37,
+            43,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "duration_ms": 40,
+      "source_key": "attack-windup",
+      "pixel_edits": [],
+      "rgba_sha256": "20ab1081409ca086cbc912bbaea96bb5f08b2767ecc5bde43ea3efa9c7a63178",
+      "alpha_bounds": [
+        14,
+        8,
+        48,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1109
+      ],
+      "hands": [
+        {
+          "box": [
+            14,
+            35,
+            18,
+            39
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            44,
+            38,
+            48,
+            42
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            16,
+            8,
+            47,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            23,
+            34,
+            44,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            30,
+            37,
+            43,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "duration_ms": 30,
+      "source_key": "attack-extension",
+      "pixel_edits": [],
+      "rgba_sha256": "d7ea688fef2388819af936167427ed505c003a348fcba90c6922dc4eb5e6102d",
+      "alpha_bounds": [
+        17,
+        8,
+        53,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1093
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            40,
+            22,
+            44
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            49,
+            35,
+            53,
+            39
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            17,
+            8,
+            48,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            24,
+            34,
+            45,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            31,
+            37,
+            44,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "duration_ms": 70,
+      "source_key": "attack-impact",
+      "pixel_edits": [],
+      "rgba_sha256": "8335552711ae443ccee7d9ccd5997c3e7de86ab2e0187c9ec6aa333c417a6fe9",
+      "alpha_bounds": [
+        18,
+        8,
+        58,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1123
+      ],
+      "hands": [
+        {
+          "box": [
+            19,
+            38,
+            23,
+            42
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            54,
+            35,
+            58,
+            39
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            18,
+            8,
+            49,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            25,
+            34,
+            46,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            32,
+            37,
+            45,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "duration_ms": 30,
+      "source_key": "attack-impact",
+      "pixel_edits": [],
+      "rgba_sha256": "8335552711ae443ccee7d9ccd5997c3e7de86ab2e0187c9ec6aa333c417a6fe9",
+      "alpha_bounds": [
+        18,
+        8,
+        58,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1123
+      ],
+      "hands": [
+        {
+          "box": [
+            19,
+            38,
+            23,
+            42
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            54,
+            35,
+            58,
+            39
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            18,
+            8,
+            49,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            25,
+            34,
+            46,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            32,
+            37,
+            45,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "duration_ms": 40,
+      "source_key": "attack-impact",
+      "pixel_edits": [],
+      "rgba_sha256": "8335552711ae443ccee7d9ccd5997c3e7de86ab2e0187c9ec6aa333c417a6fe9",
+      "alpha_bounds": [
+        18,
+        8,
+        58,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1123
+      ],
+      "hands": [
+        {
+          "box": [
+            19,
+            38,
+            23,
+            42
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            54,
+            35,
+            58,
+            39
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            18,
+            8,
+            49,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            25,
+            34,
+            46,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            32,
+            37,
+            45,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "duration_ms": 40,
+      "source_key": "attack-recoil",
+      "pixel_edits": [],
+      "rgba_sha256": "5a06701db8d6cc1214a699558b385bbb7184eb017cddaa464ae83f14e4f9235c",
+      "alpha_bounds": [
+        17,
+        8,
+        49,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1079
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            42,
+            22,
+            46
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            45,
+            41,
+            49,
+            45
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            17,
+            8,
+            48,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            24,
+            34,
+            45,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            31,
+            37,
+            44,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "duration_ms": 30,
+      "source_key": "attack-recoil",
+      "pixel_edits": [],
+      "rgba_sha256": "5a06701db8d6cc1214a699558b385bbb7184eb017cddaa464ae83f14e4f9235c",
+      "alpha_bounds": [
+        17,
+        8,
+        49,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1079
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            42,
+            22,
+            46
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            45,
+            41,
+            49,
+            45
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            17,
+            8,
+            48,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            24,
+            34,
+            45,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            31,
+            37,
+            44,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "duration_ms": 30,
+      "source_key": "attack-recoil",
+      "pixel_edits": [],
+      "rgba_sha256": "5a06701db8d6cc1214a699558b385bbb7184eb017cddaa464ae83f14e4f9235c",
+      "alpha_bounds": [
+        17,
+        8,
+        49,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1079
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            42,
+            22,
+            46
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        },
+        {
+          "box": [
+            45,
+            41,
+            49,
+            45
+          ],
+          "opaque_pixels": 12,
+          "connected_to_body": true,
+          "shape": "fingerless round ball 2/4/4/2",
+          "colors": 2
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            17,
+            8,
+            48,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            24,
+            34,
+            45,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            31,
+            37,
+            44,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "duration_ms": 40,
+      "source_key": "neutral",
+      "pixel_edits": [],
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true,
+          "shape": "original neutral",
+          "colors": null
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true,
+          "shape": "original neutral",
+          "colors": null
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            16,
+            8,
+            47,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            23,
+            34,
+            44,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            30,
+            37,
+            43,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "duration_ms": 60,
+      "source_key": "neutral",
+      "pixel_edits": [],
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true,
+          "shape": "original neutral",
+          "colors": null
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true,
+          "shape": "original neutral",
+          "colors": null
+        }
+      ],
+      "identity": {
+        "head": {
+          "box": [
+            16,
+            8,
+            47,
+            35
+          ],
+          "rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "reference_rgba_sha256": "bab656eba30a1a7a30943fbf4a48d6d16a3381232ee9aa27a0aeea73271fca40",
+          "exact": true
+        },
+        "body": {
+          "box": [
+            23,
+            34,
+            44,
+            50
+          ],
+          "rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "reference_rgba_sha256": "e162c28b5820ace3ffeeddc481ec936bcfc971405dc6957e9e899b8015187d40",
+          "exact": true
+        },
+        "heart": {
+          "box": [
+            30,
+            37,
+            43,
+            47
+          ],
+          "rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "reference_rgba_sha256": "99e666768eb49956e78c1dd291bcdf0fa470f9c0ecacd135656d1714c54afe97",
+          "exact": true
+        }
+      }
+    }
+  ]
+}

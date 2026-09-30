@@ -1,0 +1,541 @@
+{
+  "clip": "Attack",
+  "frame_count": 12,
+  "frame_size": [
+    64,
+    64
+  ],
+  "pixel_pivot": [
+    32,
+    56
+  ],
+  "durations_ms": [
+    20,
+    30,
+    40,
+    30,
+    70,
+    30,
+    40,
+    40,
+    30,
+    30,
+    40,
+    60
+  ],
+  "duration_ms": 460,
+  "gif_durations_ms": [
+    20,
+    30,
+    40,
+    30,
+    70,
+    30,
+    40,
+    40,
+    30,
+    30,
+    40,
+    60
+  ],
+  "palette": [
+    [
+      43,
+      27,
+      36,
+      255
+    ],
+    [
+      188,
+      120,
+      59,
+      255
+    ],
+    [
+      221,
+      161,
+      75,
+      255
+    ],
+    [
+      117,
+      64,
+      50,
+      255
+    ],
+    [
+      244,
+      203,
+      112,
+      255
+    ],
+    [
+      156,
+      89,
+      56,
+      255
+    ],
+    [
+      255,
+      231,
+      163,
+      255
+    ],
+    [
+      19,
+      220,
+      232,
+      255
+    ],
+    [
+      19,
+      52,
+      69,
+      255
+    ],
+    [
+      165,
+      252,
+      241,
+      255
+    ],
+    [
+      11,
+      147,
+      177,
+      255
+    ],
+    [
+      9,
+      86,
+      107,
+      255
+    ],
+    [
+      82,
+      48,
+      40,
+      255
+    ]
+  ],
+  "binary_alpha": true,
+  "neutral_endpoints_original_bytes": true,
+  "method": "single whole-body images; real sprite-gen extraction/pixel-unfake; recorded native pose/hand contour tracing",
+  "motion_review": "PNG/contact and decoded GIF exposure review; actual runtime naturalness remains independent review",
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "duration_ms": 20,
+      "source_key": "original",
+      "pose": "original-neutral",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "hands": [],
+      "components4": [
+        1092
+      ],
+      "motionAnnotation": "approved original, byte-identical endpoint"
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "duration_ms": 30,
+      "source_key": "windup",
+      "pose": "windup-begin",
+      "sha256": "34d59c32bb448301767a4f7d1489051c8d3ad43e4a1b006fae3f0387af3d28e2",
+      "bounds": [
+        15,
+        6,
+        49,
+        56
+      ],
+      "hands": [
+        [
+          19,
+          38
+        ],
+        [
+          44,
+          42
+        ]
+      ],
+      "components4": [
+        1128
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              19,
+              38
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            24,
+            38
+          ],
+          [
+            24,
+            39
+          ],
+          [
+            25,
+            39
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "duration_ms": 40,
+      "source_key": "windup",
+      "pose": "windup",
+      "sha256": "23aca7e0d49533509e1d1ad86a89e941257c73663c3c01cea0382a4b74f93a2f",
+      "bounds": [
+        15,
+        6,
+        49,
+        56
+      ],
+      "hands": [
+        [
+          19,
+          36
+        ],
+        [
+          44,
+          42
+        ]
+      ],
+      "components4": [
+        1127
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "duration_ms": 30,
+      "source_key": "extension",
+      "pose": "extension",
+      "sha256": "3f4f88a1cf0892b3baad53cd9cb474a7fbd9ece3509839cf249c373cf53a38a2",
+      "bounds": [
+        16,
+        7,
+        48,
+        56
+      ],
+      "hands": [
+        [
+          34,
+          34
+        ],
+        [
+          43,
+          43
+        ]
+      ],
+      "components4": [
+        1033
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "duration_ms": 70,
+      "source_key": "strike",
+      "pose": "strike",
+      "sha256": "294dbc76d37d8bea618627351420aed3c25485909dce0f4f7ef01dd71e44cd1a",
+      "bounds": [
+        14,
+        5,
+        51,
+        56
+      ],
+      "hands": [
+        [
+          46,
+          32
+        ],
+        [
+          43,
+          42
+        ]
+      ],
+      "components4": [
+        1148
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "duration_ms": 30,
+      "source_key": "strike",
+      "pose": "strike-follow-through",
+      "sha256": "b3b672cbb9cde3c124701167ef7836f214dcb0c8333c6de27f04de918910b542",
+      "bounds": [
+        14,
+        5,
+        52,
+        56
+      ],
+      "hands": [
+        [
+          47,
+          33
+        ],
+        [
+          43,
+          42
+        ]
+      ],
+      "components4": [
+        1151
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              47,
+              33
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            46,
+            34
+          ],
+          [
+            46,
+            35
+          ],
+          [
+            46,
+            36
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "duration_ms": 40,
+      "source_key": "extension",
+      "pose": "early-withdrawal",
+      "sha256": "848da37d6ea7f64b66fb2dcb8de1b0989da9a08fc62f9a03213fc935723855da",
+      "bounds": [
+        16,
+        7,
+        48,
+        56
+      ],
+      "hands": [
+        [
+          35,
+          35
+        ],
+        [
+          43,
+          43
+        ]
+      ],
+      "components4": [
+        1030
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              35,
+              35
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            33,
+            36
+          ],
+          [
+            34,
+            36
+          ],
+          [
+            34,
+            37
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "duration_ms": 40,
+      "source_key": "withdraw",
+      "pose": "withdraw",
+      "sha256": "968481eaddcff9079e68914a1bff73a37fbca6af4c55d807a503c8ace502ce8d",
+      "bounds": [
+        16,
+        8,
+        48,
+        56
+      ],
+      "hands": [
+        [
+          26,
+          38
+        ],
+        [
+          43,
+          45
+        ]
+      ],
+      "components4": [
+        1018
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "duration_ms": 30,
+      "source_key": "recoil",
+      "pose": "recoil",
+      "sha256": "d17de0534f1a53ef13d0223aeaaf60878fdf9a52bea4627efd6e2b317a7e0fc9",
+      "bounds": [
+        17,
+        8,
+        49,
+        56
+      ],
+      "hands": [
+        [
+          22,
+          40
+        ],
+        [
+          44,
+          43
+        ]
+      ],
+      "components4": [
+        1060
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "duration_ms": 30,
+      "source_key": "recoil",
+      "pose": "recoil-settle",
+      "sha256": "2484a8ec380a7be6b7dded7956ec642330b1a6598e08d840d06d109899ec7097",
+      "bounds": [
+        17,
+        8,
+        49,
+        56
+      ],
+      "hands": [
+        [
+          21,
+          41
+        ],
+        [
+          44,
+          43
+        ]
+      ],
+      "components4": [
+        1059
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              21,
+              41
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            22,
+            40
+          ],
+          [
+            23,
+            40
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "duration_ms": 40,
+      "source_key": "original",
+      "pose": "recovery-near-neutral",
+      "sha256": "3547e8f63fa41dc602d3bcf5b1f138b57244d5dfaa31bd6082bc88739bf9be81",
+      "bounds": [
+        16,
+        8,
+        48,
+        56
+      ],
+      "hands": [
+        [
+          17,
+          42
+        ],
+        [
+          43,
+          42
+        ]
+      ],
+      "components4": [
+        1086
+      ],
+      "motionAnnotation": "original full stance; relaxed hands finish a one-pixel return"
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "duration_ms": 60,
+      "source_key": "original",
+      "pose": "original-neutral",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "hands": [],
+      "components4": [
+        1092
+      ],
+      "motionAnnotation": "approved original, byte-identical endpoint"
+    }
+  ]
+}

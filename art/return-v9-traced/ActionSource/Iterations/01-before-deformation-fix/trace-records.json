@@ -1,0 +1,458 @@
+[
+  {
+    "key": "attack-windup",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-windup.png",
+    "source_sha256": "5f04fffda2ea79f1ccead1a8fae96a7cb14a8a1d0717bbfabee0bbb837e1822e",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-windup.png",
+    "trace_landmarks": {
+      "head": [
+        364,
+        208,
+        965,
+        723
+      ],
+      "bottom": 1076,
+      "at": [
+        16,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "270b5e711bdabef82a51943924b1f747515324d0e6dba8e68201330cf184c55a",
+    "cleanup_pixels": 58,
+    "hand_contours": [
+      {
+        "raw_box": [
+          13,
+          30,
+          20,
+          36
+        ],
+        "native_box": [
+          14,
+          31,
+          18,
+          36
+        ]
+      },
+      {
+        "raw_box": [
+          43,
+          36,
+          48,
+          45
+        ],
+        "native_box": [
+          44,
+          38,
+          48,
+          43
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  },
+  {
+    "key": "attack-impact",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-impact.png",
+    "source_sha256": "287c5d411e5646b5738a218ae2c22cc591c297d2d588c3f68188f1b0176d9d0a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-impact.png",
+    "trace_landmarks": {
+      "head": [
+        318,
+        171,
+        945,
+        717
+      ],
+      "bottom": 1092,
+      "at": [
+        18,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "44f7bb4cbd15e25597e6dc2b55d3921fe533bbd10204286ed9a42b357cd010c5",
+    "cleanup_pixels": 59,
+    "hand_contours": [
+      {
+        "raw_box": [
+          18,
+          37,
+          24,
+          43
+        ],
+        "native_box": [
+          19,
+          38,
+          23,
+          43
+        ]
+      },
+      {
+        "raw_box": [
+          53,
+          29,
+          59,
+          37
+        ],
+        "native_box": [
+          54,
+          30,
+          58,
+          35
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  },
+  {
+    "key": "attack-recoil",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-recoil.png",
+    "source_sha256": "19e96f75599bcf8b219d3b1d635f4ed914dddae0bafbe8baebf1a4ef292f3be9",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-recoil.png",
+    "trace_landmarks": {
+      "head": [
+        316,
+        166,
+        950,
+        696
+      ],
+      "bottom": 1093,
+      "at": [
+        17,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "23e14e3646f1573c1c638e4ffee92290b4f23c593562a8fd1b72a7b18a7f2eb1",
+    "cleanup_pixels": 44,
+    "hand_contours": [
+      {
+        "raw_box": [
+          17,
+          42,
+          23,
+          48
+        ],
+        "native_box": [
+          18,
+          42,
+          22,
+          47
+        ]
+      },
+      {
+        "raw_box": [
+          40,
+          40,
+          46,
+          46
+        ],
+        "native_box": [
+          41,
+          41,
+          45,
+          46
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  },
+  {
+    "key": "dash-preload",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-preload.png",
+    "source_sha256": "0feb9f0ead4b65c0423293e113c1827eb1c19cc4666d6f9263fca4a0358f53f0",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-preload.png",
+    "trace_landmarks": {
+      "head": [
+        376,
+        228,
+        1019,
+        766
+      ],
+      "bottom": 1073,
+      "at": [
+        17,
+        12
+      ],
+      "body_h": 17
+    },
+    "native_rgba_sha256": "8d3ddaf403a51ec44641fe9a5d40d73947a8b0b7efa0e8eebcea068ed9f02af3",
+    "cleanup_pixels": 47,
+    "hand_contours": [
+      {
+        "raw_box": [
+          13,
+          41,
+          19,
+          47
+        ],
+        "native_box": [
+          14,
+          42,
+          18,
+          47
+        ]
+      },
+      {
+        "raw_box": [
+          42,
+          42,
+          47,
+          49
+        ],
+        "native_box": [
+          43,
+          43,
+          47,
+          48
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  },
+  {
+    "key": "dash-travel-a",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-travel-a.png",
+    "source_sha256": "0c179ce21aeaaabb861972b7fe45ef2f3f0fa455aef3ed69f45b9271ef274703",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-travel-a.png",
+    "trace_landmarks": {
+      "head": [
+        377,
+        183,
+        992,
+        710
+      ],
+      "bottom": 1079,
+      "at": [
+        18,
+        10
+      ],
+      "body_h": 19
+    },
+    "native_rgba_sha256": "fd61338cd0a63df37d682b00252f49f665fa3cd07a325e7991fe2e63c41c44e2",
+    "cleanup_pixels": 43,
+    "hand_contours": [
+      {
+        "raw_box": [
+          14,
+          38,
+          20,
+          44
+        ],
+        "native_box": [
+          15,
+          38,
+          19,
+          43
+        ]
+      },
+      {
+        "raw_box": [
+          43,
+          40,
+          50,
+          46
+        ],
+        "native_box": [
+          45,
+          41,
+          49,
+          46
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  },
+  {
+    "key": "dash-travel-b",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-travel-b.png",
+    "source_sha256": "4fe7972f86112c027ed3ffd0972e31c6d5d7851ac4474caff998e8e2b31a2b10",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-travel-b.png",
+    "trace_landmarks": {
+      "head": [
+        363,
+        177,
+        991,
+        713
+      ],
+      "bottom": 1092,
+      "at": [
+        18,
+        10
+      ],
+      "body_h": 19
+    },
+    "native_rgba_sha256": "a8524315ce6c54427974a054f5a6f2d0387ef9799ce382852dc27a70052824ea",
+    "cleanup_pixels": 29,
+    "hand_contours": [
+      {
+        "raw_box": [
+          18,
+          39,
+          23,
+          44
+        ],
+        "native_box": [
+          18,
+          39,
+          22,
+          44
+        ]
+      },
+      {
+        "raw_box": [
+          42,
+          40,
+          46,
+          46
+        ],
+        "native_box": [
+          42,
+          40,
+          46,
+          45
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  },
+  {
+    "key": "dash-braking",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-braking.png",
+    "source_sha256": "0cc41b7b018d37e7db4578b055d581ea51b2b872c636c7d2c05b95daecf07df5",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-braking.png",
+    "trace_landmarks": {
+      "head": [
+        366,
+        206,
+        981,
+        741
+      ],
+      "bottom": 1084,
+      "at": [
+        16,
+        10
+      ],
+      "body_h": 19
+    },
+    "native_rgba_sha256": "783466fc961ba187f15b7f39bec5dcad49c3fc7d276a9bbfbb03d88afeb47aa3",
+    "cleanup_pixels": 53,
+    "hand_contours": [
+      {
+        "raw_box": [
+          11,
+          39,
+          18,
+          45
+        ],
+        "native_box": [
+          12,
+          39,
+          16,
+          44
+        ]
+      },
+      {
+        "raw_box": [
+          41,
+          43,
+          47,
+          49
+        ],
+        "native_box": [
+          43,
+          44,
+          47,
+          49
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  },
+  {
+    "key": "attack-extension",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-extension.png",
+    "source_sha256": "56d78dd715201ca54258e4554a5b57694bba4ea93b7545af897bee2e76ff4286",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-extension.png",
+    "trace_landmarks": {
+      "head": [
+        305,
+        160,
+        942,
+        691
+      ],
+      "bottom": 1094,
+      "at": [
+        17,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "3fd8cb40065ef4d33c1fcc0ee0a57133b1aae4b9519738051ab9d7950cad2680",
+    "cleanup_pixels": 58,
+    "hand_contours": [
+      {
+        "raw_box": [
+          17,
+          40,
+          23,
+          46
+        ],
+        "native_box": [
+          18,
+          40,
+          22,
+          45
+        ]
+      },
+      {
+        "raw_box": [
+          45,
+          31,
+          51,
+          39
+        ],
+        "native_box": [
+          46,
+          32,
+          50,
+          37
+        ]
+      }
+    ],
+    "method": "complete-body alpha silhouette and dominant palette clusters, head footprint normalized 31x27; explicit native contour cleanup"
+  }
+]

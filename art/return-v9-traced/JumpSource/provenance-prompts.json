@@ -1,0 +1,75 @@
+[
+  {
+    "name": "01-preload",
+    "prompt": "Use case: identity-preserve. Asset type: a SINGLE whole-character jumping PRELOAD pose reference for native 64x64 pixel tracing, NOT a sprite sheet. Input image is the identity reference of Tique, an original bronze robot in a 3/4 front-right view. Retain the EXACT very large round head, compact short torso, two vertical cyan eyes and cyan heart, short slender articulated arms and short legs, dark wine outline and original brass palette. Create exactly ONE isolated complete character, transparent background, filling a square canvas with 12% margins. Pose: deep but modest jump anticipation, both knees bend, torso/head lower about 5 native pixels, feet flat, elbows pull behind and outward, small bronze mitten hands CLEARLY visible to left and right OUTSIDE head and torso silhouettes, below head edge. Both arms visibly connect shoulder-elbow-hand; both feet and both hands unmistakable. Head remains the same huge size and angle, NEVER shrink it; torso stays compact, NEVER add bulky boots or large gloves. Clean bold pixel art with rectilinear pixels, no effects, no blur, no glows, no floor, no shadow, no text, no grid. Full silhouette and full interior body details; not a parts study. Keep cyan eyes and heart equally visible.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-9488361a-26c7-4180-bf3e-40f761972906.png",
+    "acceptedForTrace": false,
+    "rejection": "left arm too long and straight in complete source silhouette",
+    "savedFile": "01-preload-rejected-long-arms.png"
+  },
+  {
+    "name": "02-extension",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character pose reference for native pixel tracing, never a sheet. Input image defines Tique, an original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge spherical head dominates the character (head 27 native px high and torso plus legs only21px total), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass 13-color palette. Tiny mitten hands (only3x4 native pixels) MUST be visible OUTSIDE both left and right head/torso silhouettes with connected arms. Hands must never hide behind the head. No long legs, no bulky gloves, no boots. One isolated full body with transparent background, 12% canvas margins. Clean bold square pixel art, no AA, no gradients, no blur, no effects, no shadow, no grid, no text. Keep original head exactly round at same scale. Pose: jump takeoff extension: both knees unfold, feet point down, body nearly neutral height, arms sweep downward and outward in a low V; both tiny hands at hip-height beyond the torso. Head upright, subtle chest lift.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-628568b8-1074-4317-834c-77e51889e777.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "03-ascent",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character pose reference for native pixel tracing, never a sheet. Input image defines Tique, an original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge spherical head dominates the character (head 27 native px high and torso plus legs only21px total), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass 13-color palette. Tiny mitten hands (only3x4 native pixels) MUST be visible OUTSIDE both left and right head/torso silhouettes with connected arms. Hands must never hide behind the head. No long legs, no bulky gloves, no boots. One isolated full body with transparent background, 12% canvas margins. Clean bold square pixel art, no AA, no gradients, no blur, no effects, no shadow, no grid, no text. Keep original head exactly round at same scale. Pose: rising jump: both knees fold up under the compact body, feet angled backward, arms bend gently outward at waist with tiny fists at each far side below the huge head, preserve connected shoulder-elbow-hand. Head upright, cyan heart unobstructed.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-165b3117-0124-45f0-aa59-21a7b3ce9190.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "04-apex",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character pose reference for native pixel tracing, never a sheet. Input image defines Tique, an original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge spherical head dominates the character (head 27 native px high and torso plus legs only21px total), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass 13-color palette. Tiny mitten hands (only3x4 native pixels) MUST be visible OUTSIDE both left and right head/torso silhouettes with connected arms. Hands must never hide behind the head. No long legs, no bulky gloves, no boots. One isolated full body with transparent background, 12% canvas margins. Clean bold square pixel art, no AA, no gradients, no blur, no effects, no shadow, no grid, no text. Keep original head exactly round at same scale. Pose: jump apex relaxed airborne: bent short knees under body with toes hanging, elbows spread outward and small hands open slightly outside torso and below head, shoulders relaxed; huge head stays upright. Keep hands low enough to be entirely clear of head.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-5d07281e-7850-4779-8878-64be7557a50f.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "05-descent",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character pose reference for native pixel tracing, never a sheet. Input image defines Tique, original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge round head dominates character (head27px high and torso plus legs only21px total at native size), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass13-color palette. Small rounded bronze hands (4x5 native pixels) MUST be visible OUTSIDE both left and right head/torso silhouettes with connected arms. Hands must never hide behind head. No long legs, no bulky gloves, no bulky boots. One isolated full body with transparent background and12% canvas margins. Clean bold square pixel art, no AA, gradients, blur, effects, shadow, grid or text. Keep original head exactly round at same scale. Pose: falling jump before landing: short legs extend down together preparing feet for ground, soles level with each other; elbows softly bend outward, small hands swing outward/down at mid torso height so separated from torso. Head upright, slight body anticipation.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-043cded7-b66e-4a58-9580-b21a1a8602e3.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "06-impact",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character pose reference for native pixel tracing, never a sheet. Input image defines Tique, original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge round head dominates character (head27px high and torso plus legs only21px total at native size), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass13-color palette. Small rounded bronze hands (4x5 native pixels) MUST be visible OUTSIDE both left and right head/torso silhouettes with connected arms. Hands must never hide behind head. No long legs, no bulky gloves, no bulky boots. One isolated full body with transparent background and12% canvas margins. Clean bold square pixel art, no AA, gradients, blur, effects, shadow, grid or text. Keep original head exactly round at same scale. Pose: landing impact: deep bent short knees and feet firmly flat, head and torso compress vertically by about5native pixels without scaling the huge round head; both arms swing out horizontally a little below the bottom of the head, both small hands clear of head and chest. Head slightly forward, heart unobstructed.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-e422c049-92c4-452c-a9f5-1d1b696ee0a7.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "07-recovery",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character pose reference for native pixel tracing, never a sheet. Input image defines Tique, original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge round head dominates character (head27px high and torso plus legs only21px total at native size), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass13-color palette. Small rounded bronze hands (4x5 native pixels) MUST be visible OUTSIDE both left and right head/torso silhouettes with connected arms. Hands must never hide behind head. No long legs, no bulky gloves, no bulky boots. One isolated full body with transparent background and12% canvas margins. Clean bold square pixel art, no AA, gradients, blur, effects, shadow, grid or text. Keep original head exactly round at same scale. Pose: landing recovery half risen: short knees partly unfolded, feet flat, compact torso rising, both arms slowly return toward hanging position but hands still outside torso at hip height. Do not enlarge legs. Head returns upright, eyes and heart clear.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-f7266ba5-f204-4369-be13-2759910ba39a.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "08-double-tuck",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character double-jump pose reference for native pixel tracing, never a sheet. Input image defines Tique, original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge round head dominates character(head27nativepx high, lowerbody21px), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass13-color palette. Small rounded bronze mitten hands(4x5nativepx) MUST be clearly visible OUTSIDE both left and right head/torso silhouettes and arms connected shoulder-elbow-hand. Hands NEVER hidden by head. No long legs, bulky gloves or boots. One isolated full body, transparent background,12% margins. Clean bold square pixel art, no AA, gradients, blur, effects, shadow, grid, text. Keep huge head same scale. Pose: SECOND jump compact mid-air boost anticipation: short knees pull tightly toward sides of lower belly, feet tuck outward, elbows draw outward behind torso then tiny fists point upward beside WAIST not beside head. Head pitches forward just slightly, cyan eyes and heart clear. Both hands at waist outside torso, connected bent arms. Make stronger knee fold than ordinary jump.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-4387f10d-5ca8-4ed9-88e7-1415eab18b7d.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "09-double-release",
+    "prompt": "Use case: identity-preserve. Asset type: SINGLE complete whole-character double-jump pose reference for native pixel tracing, never a sheet. Input image defines Tique, original tiny bronze robot, same 3/4 front-right view. Preserve EXACT identity: huge round head dominates character(head27nativepx high, lowerbody21px), compact torso, two narrow vertical cyan eyes, cyan heart, short articulated limbs, dark wine outline, brass13-color palette. Small rounded bronze mitten hands(4x5nativepx) MUST be clearly visible OUTSIDE both left and right head/torso silhouettes and arms connected shoulder-elbow-hand. Hands NEVER hidden by head. No long legs, bulky gloves or boots. One isolated full body, transparent background,12% margins. Clean bold square pixel art, no AA, gradients, blur, effects, shadow, grid, text. Keep huge head same scale. Pose: SECOND jump boost release: compact torso extended slightly, short bent legs kick backward apart, forearms sweep outward to a low diagonal V with tiny bronze hands at extreme left/right but BELOW head baseline, clearly visible. Head pitches upward slightly, huge spherical size unchanged, cyan eyes and heart clear.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-c767092e-b2e0-42de-8542-011d3616c1da.png",
+    "acceptedForTrace": true
+  },
+  {
+    "name": "01-preload-v2",
+    "savedFile": "01-preload.png",
+    "prompt": "Use case: identity-preserve. Asset type: exactly ONE SINGLE COMPLETE whole-character jump preload pose reference for 64x64 native pixel tracing. Reference image defines the exact original Tique bronze robot. Same 3/4 front-right view, HUGE round head (27 native pixels), compact body plus short legs (21 native pixels), two vertical cyan eyes and cyan heart, short articulated bronze limbs, dark wine outline and warm brass palette. Pose: shallow compact crouch before a jump. Keep both feet flat; short knees bend. Both elbows bend down very close to body sides, short upper arms slope down alongside chest; small 4x5-pixel bronze mitten hands hang beside HIP outside torso, under head, clearly visible with complete shoulder-elbow-hand connections. LEFT hand must lie only1-2native pixels left of original head's left silhouette, never reach far outward; RIGHT hand only1-2native pixels right of torso silhouette. Arms are short and bent, never extended horizontally like rails. Character width remains nearly original head width plus only2px each side. Head keeps exact large round original shape and original eyes; no change of face, no bulky boots, no extra parts, no long limbs. ONE isolated full body at generous12% margins, transparent background. Crisp square pixel art, no antialiasing, blur, glow, effects, shadows, floor, grids, text, extra characters, parts sheet or multiple poses.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-ef129dd1-f8ac-4bd4-a48a-d1ced6447869.png",
+    "acceptedForTrace": true
+  }
+]

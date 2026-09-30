@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "kind": "sprite-gen-request",
+  "engine": "component-row",
+  "character": {
+    "id": "tique-v10-support",
+    "description": "",
+    "base_image": "base-source.png"
+  },
+  "cell": {
+    "shape": "square",
+    "width": 64,
+    "height": 64,
+    "safe_margin_x": 4,
+    "safe_margin_y": 8
+  },
+  "chroma_key": {
+    "name": "magenta",
+    "hex": "#FF00FF",
+    "rgb": [
+      255,
+      0,
+      255
+    ],
+    "selection": "auto",
+    "score": 239.38,
+    "min_subject_distance": 239.38,
+    "background": {
+      "mode": "transparent",
+      "opaque_border_fraction": 0.0,
+      "subject_pixels": 16048
+    },
+    "candidates": [
+      {
+        "name": "magenta",
+        "hex": "#FF00FF",
+        "score": 239.38,
+        "min_subject_distance": 239.38,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "green",
+        "hex": "#00FF00",
+        "score": 207.64,
+        "min_subject_distance": 200.23,
+        "clears_erase_radius": true
+      },
+      {
+        "name": "cyan",
+        "hex": "#00FFFF",
+        "score": 45.99,
+        "min_subject_distance": 45.99,
+        "clears_erase_radius": false
+      },
+      {
+        "name": "blue",
+        "hex": "#004DFF",
+        "score": 105.38,
+        "min_subject_distance": 105.38,
+        "clears_erase_radius": true
+      }
+    ],
+    "selection_reason": "highest 1st-percentile subject distance among the 3 candidate(s) clearing the 96 erase radius"
+  },
+  "states": {
+    "pushside": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: push an unseen box to the right with BOTH hands at its left face, elbows softly bent and palms at lower chest and waist height. Slight forward lean and short planted steps. No box drawn. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "pushup": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: back view pushing an unseen box upward away from camera with BOTH round hands above the shoulders. Use the same shell, ear caps and compact proportions viewed from behind. Two feet grounded. No box drawn. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "pushdown": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: facing camera and pushing an unseen box downward toward camera. BOTH round hands rest in front at hip height with compact bent elbows. Knees slightly bent; both feet visible at sides. No box drawn. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "hurt": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: a small hit recoil. Solid upper body tilts backward slightly, both round hands loosen beside the hips, one foot bracing backward. Both arms attached and visible. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "pushup-high": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushup-high ONE fullbody still, original compact round hands and identity"
+    },
+    "pushdown-crouch": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushdown-crouch ONE fullbody still, original compact round hands and identity"
+    },
+    "hurt-settle": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "hurt-settle ONE fullbody still, original compact round hands and identity"
+    },
+    "pushup-contact": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushup-contact; only one complete pose. Original sprite identity unchanged."
+    },
+    "pushdown-contact": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushdown-contact; only one complete pose. Original sprite identity unchanged."
+    },
+    "pushdown-depth": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE whole still: compact crouch, short bent arms, both round palms forward toward camera below shoe soles through perspective depth."
+    },
+    "pushside-contact": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE whole still: same forward plane for both round fingerless palms, compact short bent arms and original proportions."
+    }
+  },
+  "style": "match the attached base/anchor reference image EXACTLY: same pixel density (logical pixel block size), same body proportions, same outline weight, same palette, same shading style, same level of detail. Do not restyle, do not change proportions, do not add or remove detail density.",
+  "layout": "taxonomy/v1",
+  "fit": {
+    "pixel_unfake": true,
+    "logical_height": 64,
+    "palette_size": 13,
+    "align_x": "alpha-centroid",
+    "align_y": "bottom",
+    "ground_frames": false,
+    "detail_bias": true,
+    "outline": false
+  },
+  "chroma": {
+    "mode": "rgb",
+    "unmix_reach": 4,
+    "spill_max_fraction": 0.005
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 13,
+  "duration_seconds": 0.7100000000000001,
+  "size": [
+    64,
+    64
+  ],
+  "anchor_px": [
+    32.0,
+    56.0
+  ],
+  "facing": null,
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 1,
+    "adjacent_exact": 0,
+    "exact_silhouette": 1,
+    "near_silhouette": 4
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 12,
+    "silhouette_changed_transitions": 12,
+    "silhouette_change_per_second": 1.4396154326828592
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.05,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        15.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.59065934065934,
+        30.924908424908423
+      ],
+      "opaque_pixels": 1092,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.05,
+      "duration_seconds": 0.03,
+      "bbox": [
+        16,
+        8,
+        48,
+        55
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        16.0,
+        -1.0
+      ],
+      "centroid_px": [
+        31.73512195121951,
+        29.778048780487804
+      ],
+      "opaque_pixels": 1025,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.08,
+      "duration_seconds": 0.045,
+      "bbox": [
+        15,
+        8,
+        49,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -17.0,
+        -48.0,
+        17.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.84296365330848,
+        30.45619757688723
+      ],
+      "opaque_pixels": 1073,
+      "edge_sides": []
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.125,
+      "duration_seconds": 0.045,
+      "bbox": [
+        15,
+        8,
+        49,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -17.0,
+        -48.0,
+        17.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.848513011152416,
+        30.524163568773233
+      ],
+      "opaque_pixels": 1076,
+      "edge_sides": []
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.16999999999999998,
+      "duration_seconds": 0.09,
+      "bbox": [
+        16,
+        8,
+        47,
+        58
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        15.0,
+        2.0
+      ],
+      "centroid_px": [
+        31.274436090225564,
+        30.896616541353385
+      ],
+      "opaque_pixels": 1064,
+      "edge_sides": []
+    },
+    {
+      "frame": 5,
+      "time_seconds": 0.26,
+      "duration_seconds": 0.06,
+      "bbox": [
+        16,
+        8,
+        47,
+        57
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        15.0,
+        1.0
+      ],
+      "centroid_px": [
+        31.277255639097746,
+        30.894736842105264
+      ],
+      "opaque_pixels": 1064,
+      "edge_sides": []
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.32,
+      "duration_seconds": 0.04,
+      "bbox": [
+        16,
+        8,
+        48,
+        55
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        16.0,
+        -1.0
+      ],
+      "centroid_px": [
+        31.7336265884653,
+        29.7297165200391
+      ],
+      "opaque_pixels": 1023,
+      "edge_sides": []
+    },
+    {
+      "frame": 7,
+      "time_seconds": 0.36,
+      "duration_seconds": 0.07,
+      "bbox": [
+        16,
+        8,
+        48,
+        57
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        16.0,
+        1.0
+      ],
+      "centroid_px": [
+        31.808056872037916,
+        30.499052132701422
+      ],
+      "opaque_pixels": 1055,
+      "edge_sides": []
+    },
+    {
+      "frame": 8,
+      "time_seconds": 0.43,
+      "duration_seconds": 0.07,
+      "bbox": [
+        16,
+        8,
+        48,
+        57
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        16.0,
+        1.0
+      ],
+      "centroid_px": [
+        31.808781869688385,
+        30.597261567516526
+      ],
+      "opaque_pixels": 1059,
+      "edge_sides": []
+    },
+    {
+      "frame": 9,
+      "time_seconds": 0.5,
+      "duration_seconds": 0.035,
+      "bbox": [
+        16,
+        10,
+        48,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -46.0,
+        16.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.71577946768061,
+        32.305133079847906
+      ],
+      "opaque_pixels": 1052,
+      "edge_sides": []
+    },
+    {
+      "frame": 10,
+      "time_seconds": 0.535,
+      "duration_seconds": 0.045,
+      "bbox": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -47.0,
+        16.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.73352165725047,
+        31.53295668549906
+      ],
+      "opaque_pixels": 1062,
+      "edge_sides": []
+    },
+    {
+      "frame": 11,
+      "time_seconds": 0.5800000000000001,
+      "duration_seconds": 0.05,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        15.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.62384473197782,
+        30.895563770794823
+      ],
+      "opaque_pixels": 1082,
+      "edge_sides": []
+    },
+    {
+      "frame": 12,
+      "time_seconds": 0.6300000000000001,
+      "duration_seconds": 0.08,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        15.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.59065934065934,
+        30.924908424908423
+      ],
+      "opaque_pixels": 1092,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      15,
+      8,
+      49,
+      58
+    ],
+    "width_range": [
+      31,
+      34
+    ],
+    "height_range": [
+      46,
+      50
+    ],
+    "bottom_range": [
+      55,
+      58
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 13,
+    "size": [
+      64,
+      64
+    ],
+    "anchor_px": [
+      32.0,
+      56.0
+    ],
+    "durations_seconds": [
+      0.05,
+      0.03,
+      0.045,
+      0.045,
+      0.09,
+      0.06,
+      0.04,
+      0.07,
+      0.07,
+      0.035,
+      0.045,
+      0.05,
+      0.08
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\asset.json": "c9acebfe020fad3d9765e85f11e47a880fa5a34f14835d01022c086c762f7a23",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\00.png": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\01.png": "c433da6dd3a9d3d017379c7dc9fb3821cb213f2f56d35f3421c80d115efeebaf",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\02.png": "35c1db4a64d7185165358223fa9477042725e3de518e4c4e14f44cc22d21ae95",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\03.png": "2ab7a27d748164a127847f12ddde51a0d7644cba2f20aedfe9e7cd220491562b",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\04.png": "d92066583e3fac1fdd5fe4076b3a2dffc2410d99077ce9a0cdc04bf22456cfc6",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\05.png": "05001b330dda2f6eb97f243f52275038dfd3be37d766f030a4c32e415ce842a1",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\06.png": "9bb183b0792b7793a0076aa40b0395d22122dd9ed100d169f56a59fba5b75c48",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\07.png": "f5cdab03cfc027bbea44b645f05ba7862f3d10b87cd7ffb661f63f7de518f881",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\08.png": "b11d6297cc99f8e1ae2b97669d0699c95c0f6795b128d74a93a0192ea40e06b3",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\09.png": "07ba85172b4e1329b7d26aefc46c6567bf89fb9141fb779aa7af14d0f0287608",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\10.png": "e832b0d8e6fd395f273dbdd6d87732732ca8c6c90a51cba599c0db43c3f2f9f2",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\11.png": "5ac0636a524e8431cd7846801a5202264facb4bd2ddc4840dfe29800e1724d02",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\12.png": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot.",
+    "Repeated poses retain all source frame durations; no frames were removed."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\asset.json",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\00.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\01.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\02.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\03.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\04.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\05.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\06.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\07.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\08.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\09.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\10.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\11.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\12.png"
+  ],
+  "source": "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\DoubleJump\\asset.json"
+}

@@ -1,0 +1,74 @@
+{
+  "cell": {
+    "width": 64,
+    "height": 64,
+    "safe_margin_x": 4,
+    "safe_margin_y": 8
+  },
+  "states": {
+    "windup": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: windup for a rear-arm punch to the right. Rotate the waist and rear shoulder slightly away, draw the rear hand back close to the hip, keep the front hand low. Feet planted; connected compact arms. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "strike": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: rear-arm punch to the right with a small waist rotation driving the shoulder. The rear hand extends forward at lower chest height, front hand stays near the opposite hip. Keep the reach plausible for the original short arms; no added boxing gloves. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "recoil": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: pulling the rear fist back after a punch. Waist and shoulder settle halfway toward the original neutral pose, elbows bent, two hands present, soles planted. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "dashload": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: a restrained rightward dash preparation. Slight knee bend, head and chest lean forward together, both small hands tucked close to the sides, stable original proportions. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "dashtravel": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: rightward dash travel. The solid upper body leans gently forward, rear arm trails bent beside the hip, front arm bent low, one foot reaching slightly forward and the other trailing. Keep original short limbs. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "dashbrake": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: rightward dash braking. Front foot planted under the body, rear foot catching up, two hands relax beside the hips, upper body returning upright. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "extension": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE whole still: rear elbow still bent, rear hand halfway across lower chest in a rightward punch, other hand low."
+    },
+    "withdraw": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE whole still: same rear arm just starting withdrawal from a rightward punch across chest, other hand low."
+    },
+    "dashalternate": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE whole still: rightward dash travel with rear short foot forward and front short foot bent back, solid head and chest leaning together."
+    }
+  },
+  "fit": {
+    "pixel_unfake": true,
+    "logical_height": 64,
+    "palette_size": 13,
+    "align_x": "alpha-centroid",
+    "align_y": "bottom",
+    "ground_frames": false,
+    "detail_bias": true,
+    "outline": false
+  }
+}

@@ -1,0 +1,3523 @@
+[
+  {
+    "file": "FinalWorldCameraV2/idle-0000-Idle-00.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "606601781b01e9123baf3f30c309d857a01835b8cdbd8d90a58b6db3b6ba9e38"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0001-Idle-01.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "ea12b873a56f89908cf04bcd2a8c51399b11b270130b3a7996b71f2f89abafd4"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0002-Idle-02.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 2,
+    "sha256": "773fe04bc9fa404e37f07d9c04118c6c34282b21470b22d4d10fab8d097739d6"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0003-Idle-03.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 3,
+    "sha256": "e138bfb0ca50c7fdddccc771c2876a3e7fdeeed4cb9640085095353d0ff178e7"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0004-Idle-04.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 4,
+    "sha256": "a32a558280fe5ae9631cff8345743fa1790685504b49348baf5c468037af2c0b"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0005-Idle-05.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 5,
+    "sha256": "83baf8421feb750f06c9aeb77da95cf4b855bc9e9c4a3e6e8d6fd3bf4d03fe3b"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0006-Idle-06.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 6,
+    "sha256": "0fca6d052272641cd2ade395726550e7cb6fdb844cf4cfb097b698031dbd2613"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0007-Idle-07.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "606601781b01e9123baf3f30c309d857a01835b8cdbd8d90a58b6db3b6ba9e38"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0008-Idle-00.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "ea12b873a56f89908cf04bcd2a8c51399b11b270130b3a7996b71f2f89abafd4"
+  },
+  {
+    "file": "FinalWorldCameraV2/idle-0009-Idle-01.png",
+    "scenario": "idle",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "773fe04bc9fa404e37f07d9c04118c6c34282b21470b22d4d10fab8d097739d6"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0010-Walk-00.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "68011778c94f64355d03171f7076ea928a3d03c19407453a7dd5654320d13c09"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0011-Walk-01.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "f331f8c62218fa28e8a8da96d51eb43e8798a85e03a684df4be1d812edd395d3"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0012-Walk-01.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "9fff66c43ef70e75edccfd762dcd69de7fee0882aacbdaa5c110e67eb18bd91e"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0013-Walk-02.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "a7c0712c81559c94e2486e0f5aeda41bc822eeb3c9bf762ce191256d2c0e4914"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0014-Walk-02.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "7142ab859e77bf84c743bacd18512e8978206d815ab7781353b23b88fb281f01"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0015-Walk-03.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "90d2b6d7c359519c308ec47cc2d66e89d2e6b23bb6df9ffdfcc72bbe59cb3938"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0016-Walk-03.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "da56710103a92e07557292f5afebd0a9d30f0f73a83c75a4ed81f1b10a8b49e5"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0017-Walk-04.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "9f79b9727615b9216b69db0fb4b36671b2b61fdd94d35d5f46a495e82444753d"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0018-Walk-05.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "3a6b11450fff9ff7ba1aa5855f47a47d72eebc19ce09652dade5a55fb3fde215"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0019-Walk-06.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "b20bc8becb890c8244b995d9e2485f29d3aaf2599b8b4817113a192dbb6e4f9f"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0020-Walk-06.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "4bbc5843429309ba7161d436bc592e6066bc39ecebe4808194e1a66025843339"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0021-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "261d707577ed348693c96964cca90b5bc26dfec44ac6b131421fb17002171003"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0022-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "12e128cd544dcccd0993f204a5497711bb7b83dbd847809acf10511d039acbe7"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0023-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "7548dd27bf38fece631d59779185ddc3e2815f12a2dfedcf5abc82deac733deb"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0024-Walk-08.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 8,
+    "sha256": "26b0f10cdb58f09ed22c8983738c5f8b2850794a6ef432b40d99920195cdedd6"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0025-Walk-09.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "ac1a82d8613a9e957ad4f60fa06c8e8fd78fbebef48abdabe10648ddf899d6b3"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0026-Walk-09.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "106d7eecfa0750e8b83d565cfc4b5b8e0bca44fa939736c70bf4667e9bcdbd45"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0027-Walk-10.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "d845e41b022d838af03f6e482b2c74ee526e0a3c10a349d4999311ba09b7366f"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0028-Walk-10.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "dbbe7ab6c709040398b7610b7a2ae57c3043191305e9630a73562dc5d63c75b8"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0029-Walk-11.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "2fb3e1d701fe3ac99a16d323ff3a43867f33e4d4b55d8f62a5343d43ceeeb7ee"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0030-Walk-12.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "4f3eaa0646e28ac993a6d648229ea2c792149d8349ce81e44056f2966526edbc"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0031-Walk-12.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "220428b0cb491feca5d14e0b7897abb15190ce1fbdfdb99d46b6f53949e393ee"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0032-Walk-13.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 13,
+    "sha256": "3e68bc5d8541b5bd9f23011df8f04148844d49f7ebc13afb22947c1a504b7bc0"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0033-Walk-00.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "8c80e8250997e6ef924d24e82574c0f6c1fba9a200f5f728c0a30ce2bc923efc"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0034-Walk-00.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "150f2d215e7ff9de7801dbc3efe4b3374e4145129b81f35973b92f5b07024e83"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0035-Walk-01.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "5ab8982fd3bb28b8740c04625ec7efd1a5453dbc4a59701c642e263ec89f875d"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0036-Walk-02.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "0b00e474b8adfe15973f8a08d6e23eaca2267362caa48c6e6a9ec5f342d68809"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0037-Walk-02.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "27f3f396b52dc8db4fe7bec11262ee79618a32dd09fa5463031f50c7791f7907"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0038-Walk-03.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "fd8c165c8bb144570ffde4560391adcacb3bd2be2c6cfd6856ba44e4b2f87d1b"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0039-Walk-03.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "15773bfe0e9c8cfe5eb3441c674b0f9f9bc3af1cf2f81ed12f00dfa48809072c"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0040-Walk-04.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "6525aa3d6109f3184d410e0c4351898dbdaf4d56cf641ca4a41a17e5c432e138"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0041-Walk-05.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "78a768aba8eecedcb3630f01796778edc2b759dc6625635cefeb291d61b7ca81"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0042-Walk-05.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "c84e3283ed6adb8daf2df80b0b5b9523a5788328bb7543771d9b4a3d6cec40e7"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0043-Walk-06.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "4b8cd411922ffbfd3e87732a831ca68df76810493d89f0c8dc5ec9084377d276"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0044-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "c8d3868e9bf2d2800f6e1aba2f2decd9b694884ca25c2943d9d086cf4a52c2be"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0045-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "6359ed7584d91da378e751d5bdf69f72fa223c93c9f01c98d7d5d660411b3765"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0046-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "7ec34bf1d2376650b5c52066146e0f626f611aaab38f65d40215dfae181a1c04"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0047-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "0a7b961915ae60031dfc20ab937f2bd454eae3ebdf3248046e5dde9d5dd16f23"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0048-Walk-08.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 8,
+    "sha256": "18e1b230f2e810433a153f336e7b112bc0ad60d8d96bd281e2d099cd595b3242"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0049-Walk-09.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "9440ff2e14dd3778372f1c09ef054b9f9d594511450361da8b91db6dea5d3121"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0050-Walk-09.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "f3784a7ca4eb690565d6a617391e57d56522ad37944c1d4fb4c508b196711660"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0051-Walk-10.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "38065c94556522e28daf6f1a1f07bcbbfe7dac365c4cd0b7fd4f4dbd92ebcdd1"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0052-Walk-11.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "b9e8b392a4f4c4030243d5e6060939bf325d10b43c924fda35dd72001be3af14"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0053-Walk-11.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "c9569771043078230fffa3220352f285e364d21357ea7e9997add809dae0e853"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0054-Walk-12.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "61cf2600096ce54c588063a9b1ad032af59dacb7d917dd92a3e1fd59283d6a1f"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0055-Walk-13.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 13,
+    "sha256": "ccc0ba0c4c95707b56c01cd25ea7b3d0c36a9ac1a44636d14e572472945ad04d"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0056-Walk-00.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "36895b53d85a338b8854f2e0b292bbc4888aa4fe9a90b20a61ba42cc5a50b30e"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0057-Walk-00.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "6a57e0c00d87d8fce06e207b093870ba24125539fb0b21b7b07283f3f89318e0"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0058-Walk-01.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "8e2695cbcf779279f2c81fdfac39f1388e944d58e2f3551c235a530aef2974c0"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0059-Walk-02.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "bc41cfbc2ab896ef428e2c404681a85c573bdf3904c19dfadb762040010952fc"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0060-Walk-02.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "248847aed6f2acd93f4735cef1e1ee74a1b46752fb9a893fc5abe6ff7dff9073"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0061-Walk-02.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "d36adb205f91709b1a84a6ff75a3e9c7c7cac2501dcc149bfd7155cf1ac3109c"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0062-Walk-03.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "d894cc92bbea64ad3f3178918f10796d230bfd4c5cabbe9f20f156cfa35dfa6b"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0063-Walk-04.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "5b9d988b1c542db29977d0025c9ac85b4565b6624b7b1fcd7e7989e76ec0977c"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0064-Walk-04.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "be203c49d279421acb7e00f8754f86f5481334c83b836388e6fb6059617e8ea9"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0065-Walk-05.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "dec27967c8b8968e1c2e834496255c82f521ffc41435a62ba881867c85ed2cb1"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0066-Walk-06.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "dda0f69724e2cf3b9ca14b8ff2d4699c12320d4b6bf57d5196088ac15704dcc8"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0067-Walk-06.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "cfc1e0390b831aaba07c182bb7342ea92d66737ae2082db24ad5cc14119139b7"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0068-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "4580d9d8b8f5cceede4a94f12fa46229793c9f8d67809313cc2257f968836221"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0069-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "840dd23a8def3f84648ee396e629bada07d5a36ceca37c98130e48cad580a248"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0070-Walk-07.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "6b8848fa2346aa111f8df3a1da8ae4945d78b2056b849f6f21ac33c054b684fa"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0071-Walk-08.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 8,
+    "sha256": "209ac4a756bb580cfad28d94de91b1ad3bb076ed9bb368810c49271d6e6c3323"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0072-Walk-09.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "be0fd6231722fbc4f979c5e406442d318d34821ced9f79ac930bc1687d8ae2c2"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0073-Walk-09.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "ed1e79b22972277a673a1666d4e015e414f79932ef61b2d706f04facbd0f7e5e"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0074-Walk-10.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "117022470e2781007c3d4c1f6d945aa4cb273bd5f7fba358bfd8b5718c239f1e"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0075-Walk-10.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "de116e01e98eb4ba72bf2d9825027b8c169a932113e18d172fa699b48c60e9e1"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0076-Walk-11.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "fa2bf32e798c8db6f70de3d70b52b07b27146640aeac44824bfc1138476532c7"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0077-Walk-12.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "feefaadee793e14a8411eddb9969116ee9cbcf2291381be7034013b6ad051e59"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0078-Walk-13.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 13,
+    "sha256": "b3a78a4e56e767b9c832a4f3948898ed72a0c51829a0ef3328f532582521e7a0"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0079-Walk-00.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "f891e06b724ea946fc84925b02a3543fa3ca38e84f88c97e56a999b8fd1db61e"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0080-Walk-00.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "025d02f67379dbc12605c14568a3cfaa96a42e7bc515e81b7d6b8c063e69fcd9"
+  },
+  {
+    "file": "FinalWorldCameraV2/walk-0081-Walk-01.png",
+    "scenario": "walk",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "b0036e48233f8d8c9825bae5cd75fc17ac652f8b7f2e1bcd3fb5d16f2a2d7b60"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0082-Jump-03.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "bdf6e58e93f6336240716d52051de19f29af152deba59334904ac223178ffb2d"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0083-Jump-03.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "7161485dc53fca942760622c71e9cef25aeb916df521ff24fe484578809c3099"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0084-Jump-04.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "89005ce38b7822da48d2e427b724ff0929df0cd7b9af92fb5f2444ae21aeefb1"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0085-Jump-04.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "116d527736ab4977ff569fa2896247f5de457b9624c4f3aba217555ac9028b8e"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0086-Jump-04.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "9a85e6fdcf1f998bd9dcdb0659ee8e4633d35d937211181a822f89eb541d6f11"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0087-Jump-04.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "513c4916603ea62807000c7f740c7cd0dee05c0f67b3b541434076f936663560"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0088-Jump-04.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "e7c7ff133afb33e4235c61e86cccd99059ab5713f38139a0f84c9b55c5d950b3"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0089-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "4a4356d4b6953820588fbb7a5ce65f2ceee078353b482c60349fbd34c96fa6f3"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0090-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "3fe93cccae8b53ced2cd7ba343a62db645f29f39576b18a3e9ac2052197c6276"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0091-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "c433eb6f950378b3cd835e15138b6787c38689226985f7e8a24ed1b12d5b19de"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0092-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "95ccbc2d66fbdda32ee561b21c5e2f424997500cd072d087387b78106e48c5e8"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0093-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "63024abb63c432d881d5fc4290ce816fcb8041680bd3372c3dce23debdcd66e5"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0094-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "2a0e4521b76d438feeed5bd91e64c0cbc20167d895d322ea7541e70127f48bf2"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0095-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "a36b30812bb84aa12b89065087ddd494444d59c380cc44fc6855bcef2b38d23c"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0096-Jump-05.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "5b3a0c0cb6df8286833c538dcb049daa203ae2a344f7d822dba66b61c8b5fb14"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0097-Jump-06.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 6,
+    "sha256": "3ec594859325ef77f5ac5baeae77de1dc333952fb70c0fced8c0be4fea099f22"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0098-Jump-06.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 6,
+    "sha256": "3ec594859325ef77f5ac5baeae77de1dc333952fb70c0fced8c0be4fea099f22"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0099-Jump-06.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 6,
+    "sha256": "3ec594859325ef77f5ac5baeae77de1dc333952fb70c0fced8c0be4fea099f22"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0100-Jump-07.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "c08193c598b03289502d089aeb527d85960808919d7d797f436a66be02037248"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0101-Jump-07.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "b793bf7e2dc19d396dd361a5fff63fcd69678495dcc830a9f86c386b0b5e51b5"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0102-Jump-07.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "b793bf7e2dc19d396dd361a5fff63fcd69678495dcc830a9f86c386b0b5e51b5"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0103-Jump-08.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "ffa0c03ffebf3f8861ce3faf630f2e28cce6cab718ee63c25d2cab2e736610f7"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0104-Jump-08.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "774aa158f49d000fc1eeecd57c00394880a73e167deefc9eff33f3ef4ea1d6d0"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0105-Jump-08.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "0ac2d6249e50abd2a4ef2cb87d076fa07bac739a37a703e7fa5f789f086e5700"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0106-Jump-08.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "8e948693b1e35353521f0795493c2a9ab9c7994a08ec44c763cb1c432f84635f"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0107-Jump-08.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "f48e58e5c9fe160896708692dc9f74bce0b803682d7d1df01a13c4c6509fb1c4"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0108-Jump-08.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "ff371031952f5038b1739df48f0b7cdd86bd199146a232719be0b0d2fa7b1971"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0109-Jump-08.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "69ea882613c76d03e73e388aad3eb4e7d661cbb2f04886c5c2463be9b2dafb62"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0110-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "aa0b55d32f6d09ec3ef34a465251ac1e9eba8228ee94570366538af0f6078370"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0111-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "633bef2c743fb0de12c1705d2c4aa75b7e1ec9c045f81f5befacdd39d3a22e31"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0112-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "7e0b1c7fc5735f5b55fae924574e502bb15205883289f7f854b2a0fabb170fd8"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0113-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "71d7aafcd99a78d7b4404f43f84af5c04b97f36feffacd9849c240ed1c414f92"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0114-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "7ca8a23726f21ffa396492a2e579e22a05051e360d869f04377f36847a94ad1d"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0115-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "48387b68d01c90fd803eac37f95088ee33edb044629bfda8b19079a7e7092bcd"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0116-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "c1511f049a03a8b0b704b0cc2c4257793bddaffa0a2ecbcaac202b59864cd806"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0117-Jump-09.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "0924ce0ffa7a8fb0b50f09ad8c7272128734ef3dc35ac0b3ceeef8766b1af938"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0118-Jump-10.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 10,
+    "sha256": "837340d35fc7a4100c1f6d2a2d2994c0760dc8d361adc277e51d0a01db393118"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0119-Jump-11.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 11,
+    "sha256": "f8cc0dd55046e38ee271938587f591b7e7a521a85ef769da3760d194807a37fc"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0120-Jump-12.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 12,
+    "sha256": "c137b3718ba9008fa7ba9a8441d57c84a1959b1fb223f918ab06ea61bee5cebc"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0121-Jump-13.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 13,
+    "sha256": "c5dd1bbf604f6e508608d1034f132a3aea6bf76b4838312eae8fa4089dc2ae1e"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0122-Jump-14.png",
+    "scenario": "jump",
+    "clip": "Jump",
+    "frame": 14,
+    "sha256": "8f423f253c3c9cc52cef62a762eb5fe4fa1e85029dea30ba8a649a79afb15e04"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0123-Idle-05.png",
+    "scenario": "jump",
+    "clip": "Idle",
+    "frame": 5,
+    "sha256": "1c4d1ec289fb55d77aa8e003de7a8babea93011003424d50c12f0e73b8c5fd55"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0124-Idle-06.png",
+    "scenario": "jump",
+    "clip": "Idle",
+    "frame": 6,
+    "sha256": "1c4d1ec289fb55d77aa8e003de7a8babea93011003424d50c12f0e73b8c5fd55"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0125-Idle-07.png",
+    "scenario": "jump",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "606601781b01e9123baf3f30c309d857a01835b8cdbd8d90a58b6db3b6ba9e38"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0126-Idle-00.png",
+    "scenario": "jump",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "ea12b873a56f89908cf04bcd2a8c51399b11b270130b3a7996b71f2f89abafd4"
+  },
+  {
+    "file": "FinalWorldCameraV2/jump-0127-Idle-01.png",
+    "scenario": "jump",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "773fe04bc9fa404e37f07d9c04118c6c34282b21470b22d4d10fab8d097739d6"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0128-Jump-03.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "bdf6e58e93f6336240716d52051de19f29af152deba59334904ac223178ffb2d"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0129-Jump-03.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "7161485dc53fca942760622c71e9cef25aeb916df521ff24fe484578809c3099"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0130-Jump-04.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "89005ce38b7822da48d2e427b724ff0929df0cd7b9af92fb5f2444ae21aeefb1"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0131-Jump-04.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "116d527736ab4977ff569fa2896247f5de457b9624c4f3aba217555ac9028b8e"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0132-Jump-04.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "9a85e6fdcf1f998bd9dcdb0659ee8e4633d35d937211181a822f89eb541d6f11"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0133-Jump-04.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "513c4916603ea62807000c7f740c7cd0dee05c0f67b3b541434076f936663560"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0134-Jump-04.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "e7c7ff133afb33e4235c61e86cccd99059ab5713f38139a0f84c9b55c5d950b3"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0135-Jump-05.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "4a4356d4b6953820588fbb7a5ce65f2ceee078353b482c60349fbd34c96fa6f3"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0136-Jump-05.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "3fe93cccae8b53ced2cd7ba343a62db645f29f39576b18a3e9ac2052197c6276"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0137-Jump-05.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "c433eb6f950378b3cd835e15138b6787c38689226985f7e8a24ed1b12d5b19de"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0138-Jump-05.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "95ccbc2d66fbdda32ee561b21c5e2f424997500cd072d087387b78106e48c5e8"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0139-Jump-05.png",
+    "scenario": "double-jump",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "63024abb63c432d881d5fc4290ce816fcb8041680bd3372c3dce23debdcd66e5"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0140-DoubleJump-03.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 3,
+    "sha256": "f19513ad77a3e81f9e81457803dc1dbf0b4f735e368581460b26001a0e946f61"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0141-DoubleJump-03.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 3,
+    "sha256": "342ac188d0f5078d054b4b93905c244b3b461818c6d92b0edf6b0415cd3091a8"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0142-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "4200b5362ee4a209196b8c0baf2c2abd1f0e51bec04f967d5c0f20b6d50a3818"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0143-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "84e5e5a68afa77bc8811793655f26db512d8cf4d72be1dc09b324762cf1b103a"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0144-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "33c245b0cdc5a17eae5dcafc993efe439e30f4ac9d191315f537a634c2fb9f36"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0145-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "6ac16ecda5f0a8636602271e14fc7aceb29cc312a3ea0eb9f8e70fbe7f2188e4"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0146-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "a016323d2e9bad0020272dc8819491f30a2d0f6b818098684b528c83087cfe6e"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0147-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "c20958d5a64b67e86fc56c80c431c523c259cc3de0b2c0c7124b302a632cc8e3"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0148-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "c52b229044688854110c42c83b29980eb3ca6db6f61b88418c200710b2c7f895"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0149-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "eb0c23111ca67726860347ff1426159325bb558cdca1c7a02792c4be27bacb75"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0150-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "7b15c83ffc28f2b814c5a5dd0443047fbcf53ae69e63c8daf8a68bcd3319c4f6"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0151-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "966577878680abb076fdbe9521ac47b28cd16585f25604560a592be2e738dc4a"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0152-DoubleJump-04.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 4,
+    "sha256": "4dcd2f91b736bdaa0f14d325dc36d02cbecd66098dc37d5d163950f2db027242"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0153-DoubleJump-05.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 5,
+    "sha256": "cf449b5f11a81ef3825adef048d1070d53b256a794fe28272cdbc1060451d40e"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0154-DoubleJump-05.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 5,
+    "sha256": "698fca4082dbe01407d9053577d23bf246cfb4159f575750372b31845da791ab"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0155-DoubleJump-05.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 5,
+    "sha256": "698fca4082dbe01407d9053577d23bf246cfb4159f575750372b31845da791ab"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0156-DoubleJump-06.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 6,
+    "sha256": "099d96c13c8b9a15a69a380cf398ae292f4decd09e2f263ef93a0205a094c592"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0157-DoubleJump-06.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 6,
+    "sha256": "099d96c13c8b9a15a69a380cf398ae292f4decd09e2f263ef93a0205a094c592"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0158-DoubleJump-06.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 6,
+    "sha256": "099d96c13c8b9a15a69a380cf398ae292f4decd09e2f263ef93a0205a094c592"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0159-DoubleJump-07.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 7,
+    "sha256": "4e7881b2879a4f71437e505df34ffcc640d94c6d0ab506d75f1425a1b1f866b4"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0160-DoubleJump-07.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 7,
+    "sha256": "0db5b42f6d63686e5c4a6b1678ecb22c13dc9c38cab35c88718088f328488477"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0161-DoubleJump-07.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 7,
+    "sha256": "272092674283d71c0dcd9ea56764ae104a3a4419c121ce92bc9fadd4451753f5"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0162-DoubleJump-07.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 7,
+    "sha256": "dbd4aeb56438fff760c7073daed4cffdcd6d8d259cb7cab2198dfaf7dc12f8b2"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0163-DoubleJump-07.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 7,
+    "sha256": "2144bec389959c52f4ad069bbe90688fb410ff33c3c1e637430dd1c912f3e1d8"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0164-DoubleJump-07.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 7,
+    "sha256": "5ff57ec111b610ae6c92a76bbec33b5597eb940ea5dd8b5e7e51b2d75ff4944f"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0165-DoubleJump-07.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 7,
+    "sha256": "e825b5036d6932e5a12b4b4d1e71675ed0cd5c3448c152a4d23383216fe2015c"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0166-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "f0e3e5ea66b53b27d4f1a164babeee53af46e5e15d58699031b8eb0f5c5acea9"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0167-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "968f9bd5fe79c1a7e4ac6d114f26a55a8c14f180b3d7ee9d496c183ab90ca2e2"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0168-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "aaa441705536064e3ac7f2f01043aaa842de6463f9f2a4f96cdc796c2d2c5359"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0169-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "dbb5beafdf23fedb1465ca4b08e7e594d3a51fd143969b78e6bb98d166dafb67"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0170-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "8e92f3036719dc2888c5abd2c63988be97ccf12d06fdaa0d77d2c23a7ce1b872"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0171-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "3c37f2eb56997039dbc64aa96a7b820ee3488514a8473e9df24a856d92847915"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0172-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "f331c5ab898e0b039cf0e2c54b30b1ab3817a03996e107651250ddafe597e382"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0173-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "392ed670131923e2a1e2e0c432af9e6a0a6fcd78997aac4d0a22d50aaa3ddef2"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0174-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "383e3595b8551de69d71d291d302c9f8989aba261f02940e06ae92f411b36e36"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0175-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "cceb3f70a7437ab74ea27acebcdffdf28198228c40ba9684714422ae6b51c239"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0176-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "55b279690e55ce763b3dea8aad73729fed0e97ec55ec7eba2acd76c967295331"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0177-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "4bea329acc71c5a9502df0e326d538091383b6bf25dfc700df1ed43409726c45"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0178-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "00391284faf3942643454f4d81366251eb9e783b2bdc8c9cdc70177132e9396c"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0179-DoubleJump-08.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 8,
+    "sha256": "3d94657def97ff4e5532f2c7daa6260ab1e441eea71521399fc260201be314b6"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0180-DoubleJump-09.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 9,
+    "sha256": "53ecf926c84c73727e8508b08e23cadfd0def8c15c7c1c6b60da3c72daba7301"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0181-DoubleJump-10.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 10,
+    "sha256": "b0b3b7179ea9b97adbcc67b93d3750790f8c0066ff50e07ab7dc210dd045d3ef"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0182-DoubleJump-11.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 11,
+    "sha256": "399a760aef8e315cc9c8a8f8c254a9b0086a1b2bd492d8da9921e0d4a20356eb"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0183-DoubleJump-12.png",
+    "scenario": "double-jump",
+    "clip": "DoubleJump",
+    "frame": 12,
+    "sha256": "970249c6b21273bef7ec763b0867ba47291c47a3d4c1aa7c58e3d4ebf5db10ea"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0184-Idle-07.png",
+    "scenario": "double-jump",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "f5acf4730189ecf77de9d5d3ff0e90e3f23356abee923af61e2a7eb83bac5db6"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0185-Idle-00.png",
+    "scenario": "double-jump",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "f5acf4730189ecf77de9d5d3ff0e90e3f23356abee923af61e2a7eb83bac5db6"
+  },
+  {
+    "file": "FinalWorldCameraV2/double-jump-0186-Idle-01.png",
+    "scenario": "double-jump",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "773fe04bc9fa404e37f07d9c04118c6c34282b21470b22d4d10fab8d097739d6"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0187-Jump-03.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "750af7e50fc332704857fa051f0f9836a7cbbc241db39f3cc771c1e0e845dc4f"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0188-Jump-03.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "6500612f31e9990eb7a7d8e5ec1cd4544d3ddaeb7c92c66dd98dbc008bd1cdc4"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0189-Jump-04.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "b6a379a46527b0e3f1d089af67d793d37508f43b9287606023407b2dc8b95e18"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0190-Jump-04.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "9228cac4088cf87ab5e7f87784a587364e105da856aa3e43e6990c88f443b6f5"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0191-Jump-04.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "589b0305a9c6d3728f123ae1fc67d2994f07bf0aba5ca1a519a6f01df762f17f"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0192-Jump-04.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "d5a01e21acf5e098a5939fcc788afd0d39f9d788528ffb0db9dc704d9c500785"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0193-Jump-04.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "832102071924a684f7bff60f0fa5e781149d1a4970c222132eb03698f2f9ed51"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0194-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "b49106cdc7955ccf43a37d2488af0beaa8817caad5091c63da1d93ed91c16b2f"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0195-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "b4301d36af62acec194b970d0ff60f5035eca41069ae85db071973f583d77a27"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0196-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "ad6c6ff9e2910654a483a360f84a51024407cdef4a301e0d0b894476ac803491"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0197-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "d99ff92f0dc4119506fc32a0778884aa196f76245c54a67d7aed052e0439fa22"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0198-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "67de994097994f3b2df9cc754ef5927f9d9da23596a2a002092eae719fc5e0ac"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0199-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "3802cd55daf95dbac52da54ed696f924049304ee7951991619b745cd388eed0b"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0200-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "8ff43b10e93f96e95753a637e61ed628c4549f9708b9d0570295ad9d1348bb90"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0201-Jump-05.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "8f462a1a5a4a65d5fd14320e07d3d3b0eb02626af238d2b0133cffedea276f02"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0202-Jump-06.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 6,
+    "sha256": "ebf1fb2fd6a4ce200b9a9ab09e6de3d6e1195c53b6048dd7b058a746c6cd3efb"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0203-Jump-06.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 6,
+    "sha256": "621ea1bb75af1ff3b687947392ea55aa2872f1be7525d0348b5a34294a9a786a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0204-Jump-06.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 6,
+    "sha256": "09da177c584c15e594f04f5ac823e8d1fb950aeb8028d73307022c1333285c10"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0205-Jump-07.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "7e3ac6911ae9d699439c0da30cfc3dcb2b79efaed5ce889d2f98ddc159a3dff3"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0206-Jump-07.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "8eee27dc002ec5c002be28f40f9e2c9fd7329c95e6a85d3deaf409096196568a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0207-Jump-07.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "9ba5d5a41657d0e7e7d6744eee045b52a0b3c4fdc4c4a7c8b96d3e9bbe9fda5e"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0208-Jump-08.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "6b1fd5f608fdf9867a24ab419597543a2a7264dfb94db28aa25b7e5fede76aa0"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0209-Jump-08.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "bd689048b96793499de55f1862133be969517dcd58b1585066f690242d7894b0"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0210-Jump-08.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "e675018e8ca8ce0081944ecce4ceb54a0e12b4503f8504afbf2309cb1662b5d8"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0211-Jump-08.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "cf38fa3d55585735504d5bf3454567b7dd7b3de5772ff0b486594c4118f91fca"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0212-Jump-08.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "3a757a71f51d711feb3f603a148ea8a0cd97e6b471a633fb9e97030e8eab080c"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0213-Jump-08.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "5dafb71ec7f9454b1884a977e0ffd041bdc47c19c07ff32d98e6a617965a70c8"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0214-Jump-08.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "04399855123c07379348967fe9ea1ebaee4fc34ffd3311a36b6365786f31082e"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0215-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "8ac35514a40181c22d8beb03d63d9a89b9b7a4ddc651140533469ec31286c070"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0216-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "b49ab44175ceb126c224042f4404cdd40d6f431040b9feb37e9aef90ec16c79c"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0217-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "71e5cbfc0cda4631ddd6373b6037ddc7cb15ca32016165aa2613da3949a2203a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0218-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "4f96790b961caa5439c62eefac8863d1071f2c49b7bc159748305b7192bffd2b"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0219-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "dbab062b14e42d36da9ec99e2ddb0418d2a75a9daf27c62a9bcbe84ee27643a0"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0220-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "27d3138092c182f97b87ee190e0516a887bc744c0a381c779fe4fc6fa69bd0ae"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0221-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "bcb05066e85c363d5964f67f4b037e79956edb956a59212064a643b74db7c3c5"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0222-Jump-09.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "63c49d3ff154a0518cd61d17a8a8bac27ac1d3fa09bc47caa90b9cbb6f3e73cf"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0223-Jump-10.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 10,
+    "sha256": "8413632ef66740c4889a2a03b6d80e12575a448925fac8775026e3ff0da2aba3"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0224-Jump-11.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 11,
+    "sha256": "09e74a9600bf2acc0af871cc26aa30082138e28ab81f7d1e3b91a2840ffbf93b"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0225-Jump-12.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 12,
+    "sha256": "6fd51ff46ba00009e164add33eb6bd13be513b0ddf7dd3820e36f6724bd631ff"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0226-Jump-13.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 13,
+    "sha256": "6a79530e65205365f9db0abfe21b752d3c85f0d25fce89f29e53a370b4604669"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0227-Jump-13.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 13,
+    "sha256": "329f6e9e27aec0b240189e258aba9ed7467d179217a678bb1d151f5eda3a0fd8"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0228-Jump-14.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 14,
+    "sha256": "8627847065eea0f1a86337fa1c6acb3d96bc86dca5a987a2a4a1f1616b9c9b95"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0229-Jump-14.png",
+    "scenario": "moving-landing",
+    "clip": "Jump",
+    "frame": 14,
+    "sha256": "87bb05e8a158b521c5d3854b1243f79184d685f051b113bff32d7864b708d377"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0230-Walk-04.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "d6559d6959c45f3539dd45ba789b9f7f0f7bbc94a2396326e643df6d4c75ea0b"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0231-Walk-04.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "6149b2a46bffe310377cbe5c48792e548423f6174a508ab4c24f858c98a290eb"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0232-Walk-05.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "b7b04d3aa3d184293171dbb19f47873fd8192507ff0b64fd1173be3988014063"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0233-Walk-06.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "ff2a316461a7aec879ed5101c9ccf2dd8cacfb57204e56c71104ed7ca46a95f2"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0234-Walk-06.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "0695d3d34f8590ba3a76af170a0210dfb4a0e2ece7205bcae4d9f06e0c829d6e"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0235-Walk-07.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "2ee9089bde61fec842d8172a46b150e1754907dda6b3bf03d9964f3b759311db"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0236-Walk-07.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "b1e2e6cbd23e2a8aea5474a8154beac4079e838a6b1d690db28373a756f8699d"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0237-Walk-07.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "ae126145df933edbb3871e1d4cfb3d63c1afd1ad42ab778326ff54480d3d2cd4"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0238-Walk-08.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 8,
+    "sha256": "5d8a6be6e06c2bf1636de88cd4c6d3b0a4a21397bb1f681c0b6d6ff3578a3f37"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0239-Walk-09.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "c8b8a6ccdb5d06a9353ead1da71fffbc73084358c1129a17ef526096585517da"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0240-Walk-09.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "c02db129f0786cbe777e4a343bfa3fac3f78f024f5d9ef00c27813929bcd040c"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0241-Walk-10.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "e1f55725fabcd525b336e03d527a2e30272f54cf597128efb92683aef15bc804"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0242-Walk-10.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "fd5ac7290041945e07dd5d993fc616c7a0663a49942e94518f9568fd26a87138"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0243-Walk-11.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "8209a73a5cf5cfb0e53db593ac55beb6e600352fcd0f80f796967628aa5c623d"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0244-Walk-12.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "419b17d9b02d16d0a0de34490f93394fd2aa3fa61c689d53faf38f836b59d602"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0245-Walk-13.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 13,
+    "sha256": "1b8e8064fe765f0cf945cbb317b3a874a83b4c2885fab78bbd0219bd9224408c"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0246-Walk-00.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "fa28c80945c2a4606b4aff3ad5cda9507a7bd44606b269aca81c52a6fc02ba6d"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0247-Walk-00.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "b76fa1eb7b3622f11ddae08a183f73cee9c21c8343fcb0fb51a2fd670555b787"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0248-Walk-01.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "e6e69397c4b75f028c2e82f4e0c3b6f21a2314bef07812fc9aec49c257377470"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0249-Walk-02.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "1c62d58f05e262032995167b94bd6d2aa7ae4f47858cf36d87dbb6fe2f43eb4a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0250-Walk-02.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "fb03f5ac289f9a4c1e46d480715c1d44430e08c79d07bf74629290bb73cdcc7a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0251-Walk-02.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "5772e19c66c5e94430870cbb81ce338620cde4c1af3b2e73d271019cb054dc9a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0252-Walk-03.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "27adf4a6729afddaf11e1c8f5177bb88f240a029c2a5b3ce9e3f0a94efa7df58"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0253-Walk-03.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "a21016c4c941db98cdf84e3e1fa6d2ae43bc251c5cea4e2e4848d72724f417f1"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0254-Walk-04.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "2d22b42e97e6e1b0505a56c2c76eee377d646fb74dd8d82bcdfa0524decf917a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0255-Walk-05.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "261c861a7fc8110af6c12475a1447956343dc14e246892f816ae154719b6e776"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0256-Walk-06.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "a314af550faae0274cec882c470fc19eefb5a0d625821c8f49153cf1bad49294"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0257-Walk-06.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "3ea124cc322e140204de3a4736623873174f26bc00569beee323809708f81308"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-landing-0258-Walk-07.png",
+    "scenario": "moving-landing",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "520256b984dd5a6628991406e8b8b245d6e8b02a6e36a00253e5301ce0bbd515"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0259-Dash-00.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 0,
+    "sha256": "d62390e5a4bce108b29030d9e24dad13a343d50104f7f5a6f1cb891fb26e39b8"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0260-Dash-01.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 1,
+    "sha256": "978393f84015a19bf1ed6ac4d47723beab4321b1034021944cca61268bfeabfc"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0261-Dash-02.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 2,
+    "sha256": "887df7d302fd6fbd35cde60b720d3dc8041d8f89db81c8ab523902e3f3eb64a5"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0262-Dash-03.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 3,
+    "sha256": "3bf5d2f76d41a4d5b44836d9ebe40f01f9ee2050e93070834bc7995f6bef0485"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0263-Dash-04.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 4,
+    "sha256": "0fa51155bf83bb6a3d2a899f3447deec4166f899a056e323cc64aa88022dd9d8"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0264-Dash-04.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 4,
+    "sha256": "83f0f52ec8df92a2de206bd38ca00834b7ab6e119f993be559841c5a8acd3518"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0265-Dash-05.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 5,
+    "sha256": "b2721f9b75e97fabb611881251b08dfcefbea63075ce8277f1cd35f295916450"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0266-Dash-05.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 5,
+    "sha256": "aac9e0e7f68d3b961c790431fa15517435be67a5059675811d659e46cbab06bc"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0267-Dash-06.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 6,
+    "sha256": "522f2fe682ddd2f8c0be244781035df4d2d81cacdd344a884619687f720d8bfb"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0268-Dash-07.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 7,
+    "sha256": "d420015f3fa00ffee384b99f086d5cceb967c65b91a59230c1b6a0bcc7ed7459"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0269-Dash-08.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 8,
+    "sha256": "d2ae1af94ce76f197dcc3c75e1a4a7db5b4515ffb59dff4b9aff592ee2c126ce"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0270-Dash-09.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 9,
+    "sha256": "13c270bc0fd0284323ffe2fc97e6ad4b68613a04af6ff7ddcfb03ff2ed90e93e"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0271-Dash-10.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 10,
+    "sha256": "d880fc948324afbb1b7727d41155286b7f86d4468e7977cb8853127d17e46176"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0272-Dash-11.png",
+    "scenario": "dash",
+    "clip": "Dash",
+    "frame": 11,
+    "sha256": "08324b3e9ccde7152790d510acddc1357043613f613303cf34c3dfd8495c2907"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0273-Idle-02.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 2,
+    "sha256": "e215122c1e77b13f8e482783161ebbadc6b077478af5563ae7b4783c38c4de93"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0274-Idle-03.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 3,
+    "sha256": "e215122c1e77b13f8e482783161ebbadc6b077478af5563ae7b4783c38c4de93"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0275-Idle-04.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 4,
+    "sha256": "6a25549f995165d742cc6f21881d1e2f86507a052e4b11dedda677c7696aa53e"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0276-Idle-05.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 5,
+    "sha256": "5ad03399667c41b177ae1a787e6855648c9cda4db137314b68dbbd5ef30f9485"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0277-Idle-06.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 6,
+    "sha256": "86bc19050b76a76645b6299bf351c540d2e2da8a4ce337b1a270bb01f5ba5224"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0278-Idle-07.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "bf8b49e0b73cdf1a634420afb88683aa6496702d6f485f609609dae715210877"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0279-Idle-00.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "49b5d0e17b44b33ad9ddd9469fba79d4cfef769d8ba0fad0ece153e8f5798553"
+  },
+  {
+    "file": "FinalWorldCameraV2/dash-0280-Idle-01.png",
+    "scenario": "dash",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "08324b3e9ccde7152790d510acddc1357043613f613303cf34c3dfd8495c2907"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0281-Dash-00.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 0,
+    "sha256": "d62390e5a4bce108b29030d9e24dad13a343d50104f7f5a6f1cb891fb26e39b8"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0282-Dash-01.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 1,
+    "sha256": "978393f84015a19bf1ed6ac4d47723beab4321b1034021944cca61268bfeabfc"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0283-Dash-02.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 2,
+    "sha256": "887df7d302fd6fbd35cde60b720d3dc8041d8f89db81c8ab523902e3f3eb64a5"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0284-Dash-03.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 3,
+    "sha256": "3bf5d2f76d41a4d5b44836d9ebe40f01f9ee2050e93070834bc7995f6bef0485"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0285-Dash-04.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 4,
+    "sha256": "0fa51155bf83bb6a3d2a899f3447deec4166f899a056e323cc64aa88022dd9d8"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0286-Dash-04.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 4,
+    "sha256": "83f0f52ec8df92a2de206bd38ca00834b7ab6e119f993be559841c5a8acd3518"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0287-Dash-05.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 5,
+    "sha256": "b2721f9b75e97fabb611881251b08dfcefbea63075ce8277f1cd35f295916450"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0288-Dash-05.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 5,
+    "sha256": "aac9e0e7f68d3b961c790431fa15517435be67a5059675811d659e46cbab06bc"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0289-Dash-06.png",
+    "scenario": "moving-dash",
+    "clip": "Dash",
+    "frame": 6,
+    "sha256": "522f2fe682ddd2f8c0be244781035df4d2d81cacdd344a884619687f720d8bfb"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0290-Walk-00.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "e3857f679843528c130694cee05509a2e60136c41dbfe9224b2124cb2d2d6e6a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0291-Walk-00.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "a79d95ca5e9031e93273260d7e35a99aaa70b612f58e993e080a44c12fe01cae"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0292-Walk-01.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "0502f25a78eabb685ce5185937ec159c3b9a9c845da25722bc6eed035e465c46"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0293-Walk-01.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "e7efd64e5b620fd0cd8700fe41f9d53f506efdf4eeb4c110157a10c35ef10997"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0294-Walk-02.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "4b8499ae9346607538b2b8ab8b66246acac70690e207dae5b912366e0ba13e51"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0295-Walk-02.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "345b445be6650ef92d2ad9fdf10b03c5ef848b9ace90358d016c503978178e72"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0296-Walk-03.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "45191003424bf76d0f62ce0a58f21f30c7d3848bfb3cfd0f712e31545df9e5f8"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0297-Walk-03.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "ae24f724a3d0c20ecbcd91cb5216ba71a6316c1db4381b8c4510c6a90f84a177"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0298-Walk-04.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "5f89cfa66eb72ffd002e96054a49ba4c6e6af316773fcef89279c33a29a8c2f2"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0299-Walk-05.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "39d92c0554ed3b5acdc78e00a588d54de604e1f03de1ded95254a9d513428110"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0300-Walk-06.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "222485358a1c6a43250727dbae41e5585b69ef43284eb25ded69bfa51434a9ee"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0301-Walk-06.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "8c894cc4e7f9bd7a6456ebf90bca4b7205c85f39511c13c1693bc4c0f1b241d9"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0302-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "5b991d044b247162e4415998e0fdedbbb314fb8c0cd3bd63761842a0619fe264"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0303-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "6897a1c95628731bfa5851823aabff6c89be1cc80337d957098ebaec25f9a105"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0304-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "434b6de6ea5088ded2530286c2f827f1ea42356e2a362dfce2624d248966e0bf"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0305-Walk-08.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 8,
+    "sha256": "b22b66adcfed685cf6cce7edf1b5e6f6f828bc050b81a895c85501ce11febf25"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0306-Walk-09.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "357d195b265052e5961bff6b9db70e6df9be191ccf597cc45790180c364cfff4"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0307-Walk-09.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "7fd4659f780316713aac7691e70fa4d55e77db39d4707be62320a12d282448f0"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0308-Walk-10.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "7ee59d32c5e748eb44b4ef8dd9a8a52befc3c2719f78c0d9cfd5d1db529fbb33"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0309-Walk-10.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "483d1d918f3ecc86d75ee4d8bcf28571f784e7255de523b79bbfdb93945766b4"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0310-Walk-11.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "aefe3a679359933e37d174e14d344611579e1805b3ac4830dfb5aad1b91312c3"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0311-Walk-12.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "5b04ae66fa7a321b1acfdd5fa5a26b444e3000d0e271e91dd0ae23147f02fcb6"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0312-Walk-12.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "99edcbdb71beadea30d5f2327aaeae1e89f853721e5e2c94c9d9ff49c48b04aa"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0313-Walk-13.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 13,
+    "sha256": "6ff4156957b467a20722199ef2c0ffe87b2565df407ba2d5dd23c27cfac90f49"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0314-Walk-00.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "c18af1ed2d62b43ca5af50c9567ad493feca0487e4391f221ccbb315dd870d02"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0315-Walk-00.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "f49231a72fd2ab96e32a42a458d819d67c07572c2c43612d8e064b0c5cc904bc"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0316-Walk-01.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "b56c1bc48ee138748abdaa9d2ebff0d4693a2c37413555b72c89dec643904706"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0317-Walk-02.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "68b79e017980a7e9bd571b0eaff813c1608045d82cc6cd5050552d7176215c10"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0318-Walk-02.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "5fd303f3489f1bfe79333715360dfa3fd36f7bb7c612d9f34ad1782a869f2ac2"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0319-Walk-03.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "32e01269911618f1e5c17ce1d5acc165f9cf5ea40754a4139d0ddb1c210dd03a"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0320-Walk-03.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "23f81417bd62cdf5475ea28d094725d3f930175c0059068791457773c5d54fcd"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0321-Walk-04.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "03e8748bf08be108298693b07a50f1fc537493a03cf0e416bac7009b0e94b314"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0322-Walk-05.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "ed5457522059bcbaab6ed1443492dc5203dc32c8eb66e14e65da6dbada0ad5ef"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0323-Walk-05.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "be5123cdf20179d24a130dc00914298817e2edef277cb6dedb64a180ac3ab351"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0324-Walk-06.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "797b337ef4137fbe48fd93a6c3acb5b904f3c3d3edc55be82e16095770566ed1"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0325-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "875b68f81f801ebd71562ed072b062c93e953170c3d17cb28af81fc1a7575723"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0326-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "68b16d1ccbfc3c3c8f5fea2b7437578da8d87484744f2b67e5fcf0bca0153b38"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0327-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "98b48b6a92160d1dcad4f3551b37fbc4da9df2b22289d786a30b62b9102a4b97"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0328-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "52374674fcd776a593ff800b6018018acf44212b2dc24ae82d3028d7bbcd8d99"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0329-Walk-08.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 8,
+    "sha256": "4c353be53b1fbfe42cd711d888a0c6ddb2ca24c8fd8cf9cc4b4e670bb6f0f88d"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0330-Walk-09.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "0932ca32ed966b81b13a8dee415adfa11ba7b9fa494e91d5b2b5ee3de1b40f76"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0331-Walk-09.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 9,
+    "sha256": "3525512ac54db2eb31dd9e0dfa8f863bb0bef91b5a1ef502ab83cca2560db216"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0332-Walk-10.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 10,
+    "sha256": "ad3118c0741ddb10cfa9f1b7b089bd1535d14d5004db1412a02522657129e180"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0333-Walk-11.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "29e5bfb007cf812ef44694666a2d5086d97bebf9374599606c3b5ea50481613e"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0334-Walk-11.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 11,
+    "sha256": "ae295712a1e660c4c962f34acce972f44ebe8dbb2e4a6a11129784ef7f40d152"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0335-Walk-12.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 12,
+    "sha256": "2018c2d8638fb895d469b0592608620a601c1dcc557fc10d376556779c20c52c"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0336-Walk-13.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 13,
+    "sha256": "b7c3df122b294782379ebeb548e17dd2e55d01614a1965a8b89305895408995e"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0337-Walk-00.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "7cc1e258c0e30945b68e1400d70786bd8a565b1e24f090359a4ff0bff4d270b9"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0338-Walk-00.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 0,
+    "sha256": "19b88c939f7bc4269e5de0be1c8f107243bc7fb54ca47d48b49ccb483c5f75ae"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0339-Walk-01.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 1,
+    "sha256": "515138198b4f622c53f2a8d8e29d8d4745cf75ae43a62608e03a4987a81237d9"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0340-Walk-02.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "9ae09e5798ae2ad67a3d0e065bbe14747b25879af151cce6054d923240c1a805"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0341-Walk-02.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "0a0e2e1100b54fc139e40984ef60edb9151c869a72d41880e1a4c171fb6e2bac"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0342-Walk-02.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 2,
+    "sha256": "bf552242a00f19370c878f9f9ad3e7054c16c95ce6b328661bbaa3f87ed6f605"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0343-Walk-03.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 3,
+    "sha256": "a069e27ef68b46d2817b9a5528e59b35f2de51f6b80993b0b3ec9df88fcd95fa"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0344-Walk-04.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "761c3546d9e65d4a6192179f5aa5d5403b1b14c9795e922657d3e9978895cb8e"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0345-Walk-04.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 4,
+    "sha256": "750826d89ef9b20d98698044492cc0243ed85100263a128833b39a0486ebcc14"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0346-Walk-05.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 5,
+    "sha256": "af78249dfc1b6dc53cf7ef42d6518a39fef4db567bfbd1ee43a80812299ac9aa"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0347-Walk-06.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "8032cb16f8c8d49a075653f7fd4d33c79b9a2e9bee2243ccbdb00f3ac8438349"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0348-Walk-06.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 6,
+    "sha256": "b8cf9891dae2d6974880e55a403433408e15327a20a153f9d047c6f6d2ab4c69"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0349-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "7d2acec8e8b72489a80bcd965b0296be37ab1e41ef065569cf12fa9816b6b493"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0350-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "6207c5fc8eafe6983b9acdbbd676a1b47fe5737b7170b7e29c158a4a44221938"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0351-Walk-07.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 7,
+    "sha256": "b44c5361cc5a1f8a82b2434c97b4155c50df8f76d208a746f161e882953fbf4d"
+  },
+  {
+    "file": "FinalWorldCameraV2/moving-dash-0352-Walk-08.png",
+    "scenario": "moving-dash",
+    "clip": "Walk",
+    "frame": 8,
+    "sha256": "4b181d75ad4b3b20df3f03aa976b526a69c5005f549f09df4293b9d4de838352"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0353-Jump-03.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "bdf6e58e93f6336240716d52051de19f29af152deba59334904ac223178ffb2d"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0354-Jump-03.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "7161485dc53fca942760622c71e9cef25aeb916df521ff24fe484578809c3099"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0355-Jump-04.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "89005ce38b7822da48d2e427b724ff0929df0cd7b9af92fb5f2444ae21aeefb1"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0356-Jump-04.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "116d527736ab4977ff569fa2896247f5de457b9624c4f3aba217555ac9028b8e"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0357-Jump-04.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "9a85e6fdcf1f998bd9dcdb0659ee8e4633d35d937211181a822f89eb541d6f11"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0358-Jump-04.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "513c4916603ea62807000c7f740c7cd0dee05c0f67b3b541434076f936663560"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0359-Jump-04.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "e7c7ff133afb33e4235c61e86cccd99059ab5713f38139a0f84c9b55c5d950b3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0360-Jump-05.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "4a4356d4b6953820588fbb7a5ce65f2ceee078353b482c60349fbd34c96fa6f3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0361-Jump-05.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "3fe93cccae8b53ced2cd7ba343a62db645f29f39576b18a3e9ac2052197c6276"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0362-Jump-05.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "c433eb6f950378b3cd835e15138b6787c38689226985f7e8a24ed1b12d5b19de"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0363-Dash-00.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 0,
+    "sha256": "34a6da5e22c00c3e1fedd3ffe72bdabb1ada82c9c8de914994d322f23367345f"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0364-Dash-01.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 1,
+    "sha256": "f6226ea933142045e3ac75f3d18f08c2327911d6a03826a13f6c1cdf0e4d5d0d"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0365-Dash-02.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 2,
+    "sha256": "df2ea74609941f49a921314312042de99a1aecf9e27fdc1bc1ce95fc059f066e"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0366-Dash-03.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 3,
+    "sha256": "745d8b6a65b37142e29f18868cd9ca25b3f3a99cce672bde8fd2d37b2612ec58"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0367-Dash-04.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 4,
+    "sha256": "76f6c4128becb5a0c6717173303b825ff09ed4f76deb07cd8b52d8d40e48b528"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0368-Dash-04.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 4,
+    "sha256": "3288a231eae9e9c15ed7440c02cf87ef9cbcdb2c4d5c56baf9b4dec1c357ead8"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0369-Dash-05.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 5,
+    "sha256": "eb18459d60e5d16e44952fbf59da90f85e0d97843f02d1c92454773bbedae2fe"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0370-Dash-05.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 5,
+    "sha256": "b11b005427994fb366445aee1d4f780c09fbe5c5efed5e6a6f58c40a4d7668b1"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0371-Dash-06.png",
+    "scenario": "air-dash",
+    "clip": "Dash",
+    "frame": 6,
+    "sha256": "337e590b1713f5ec4ff652d0ed96d18240773b3b84e5d94c53b98eae9b47ef18"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0372-Jump-07.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "7f3ee9bfa79fb35ac2fb63ad91cea88b1df8a58bc1e238641f2655c227703a5f"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0373-Jump-07.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "7f3ee9bfa79fb35ac2fb63ad91cea88b1df8a58bc1e238641f2655c227703a5f"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0374-Jump-07.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 7,
+    "sha256": "4765771aec5ed73dac2950474f8878d52eabd17c3f0c25fd1c9272c385d1658e"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0375-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "a3694f465db522d90d323fc94bc16501b61e287cbb5b1f54b6335cd85745ac2b"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0376-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "99603fa468f90440af972681d979c7d39577aee1830aebc14fb70ff51fb8a324"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0377-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "06a71a2f184b782661e1d78cb82285d27cf09b63d826fa49f1c4369ae3a26152"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0378-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "083c0b33e0e968a0deb55d8b50156150b6ff403cf983ee3161c44c4f4884d2b5"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0379-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "eea95b1d4b3f8be7b69dfee8f52b6dc8272cc744f9c483c590224711a77d9031"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0380-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "824802b35fb3470260355d4d47acc7babe5c18d62322ea5b0cfd498d504542b1"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0381-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "2b8ed68b5468f26072ef327173c322f83cf5f168174f0bc0f1a1e85cd59a34f6"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0382-Jump-08.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 8,
+    "sha256": "ef3cdb1674d2df4dbadb162c257c9851066ea88acfdb4a62938936884e00f335"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0383-Jump-09.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "366cce85149ca52cb2dc1eca45f2cef5ce3496a339f7a3747b163b438a9261d2"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0384-Jump-09.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "a534e245b89707820f86f58984b5fa17183daaa7f60e461ff415c30d395f0402"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0385-Jump-09.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "f273004b2965cf26b7576fb9a29ed9e3332b43f44dc776cb674f03affead46a1"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0386-Jump-09.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "c512286b7ca13993e929833eec7661b8c9fd6c98c94e5cbf7ada6ddc89ab69f3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0387-Jump-09.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "f7eed0b6ac041e3fcdfd9b96bb8b14352b9be4b72359d3357fd551bce0fb9594"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0388-Jump-09.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 9,
+    "sha256": "1b8dc59c413e1bb48ff6608c10037563d4cf01c944d45f5567734616301bedcf"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0389-Jump-10.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 10,
+    "sha256": "8413632ef66740c4889a2a03b6d80e12575a448925fac8775026e3ff0da2aba3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0390-Jump-11.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 11,
+    "sha256": "fa0ff790627ab5cf956307d499d9ad277d05868436d83f7127dfa4a19ad76e2b"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0391-Jump-12.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 12,
+    "sha256": "8fbf1c31e212dec8a94462c263004c9688fc978cc7e5ae5aedaef5a899e96b79"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0392-Jump-13.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 13,
+    "sha256": "99b2deba4be9f630586d54f6e46f07e5d350a891316140bcc73590b10cc0174d"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0393-Jump-14.png",
+    "scenario": "air-dash",
+    "clip": "Jump",
+    "frame": 14,
+    "sha256": "ddc976fe709b0e87c5625b725e6bf6ac47f4f9e5550d1d6a637412b8787ebb4c"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0394-Idle-05.png",
+    "scenario": "air-dash",
+    "clip": "Idle",
+    "frame": 5,
+    "sha256": "6e4b4fbf2d08fd4aaf935bcb02e841835f9e706c7bc79ca94224bc334ae82369"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0395-Idle-06.png",
+    "scenario": "air-dash",
+    "clip": "Idle",
+    "frame": 6,
+    "sha256": "203e7524e554feac924cba5636ce910989f7665e6008e197ca0544b8d6aadfe4"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0396-Idle-07.png",
+    "scenario": "air-dash",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "bf8b49e0b73cdf1a634420afb88683aa6496702d6f485f609609dae715210877"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0397-Idle-00.png",
+    "scenario": "air-dash",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "49b5d0e17b44b33ad9ddd9469fba79d4cfef769d8ba0fad0ece153e8f5798553"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-dash-0398-Idle-01.png",
+    "scenario": "air-dash",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "08324b3e9ccde7152790d510acddc1357043613f613303cf34c3dfd8495c2907"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0399-Jump-03.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "bdf6e58e93f6336240716d52051de19f29af152deba59334904ac223178ffb2d"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0400-Jump-03.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 3,
+    "sha256": "7161485dc53fca942760622c71e9cef25aeb916df521ff24fe484578809c3099"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0401-Jump-04.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "89005ce38b7822da48d2e427b724ff0929df0cd7b9af92fb5f2444ae21aeefb1"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0402-Jump-04.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "116d527736ab4977ff569fa2896247f5de457b9624c4f3aba217555ac9028b8e"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0403-Jump-04.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "9a85e6fdcf1f998bd9dcdb0659ee8e4633d35d937211181a822f89eb541d6f11"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0404-Jump-04.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "513c4916603ea62807000c7f740c7cd0dee05c0f67b3b541434076f936663560"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0405-Jump-04.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 4,
+    "sha256": "e7c7ff133afb33e4235c61e86cccd99059ab5713f38139a0f84c9b55c5d950b3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0406-Jump-05.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "4a4356d4b6953820588fbb7a5ce65f2ceee078353b482c60349fbd34c96fa6f3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0407-Jump-05.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "3fe93cccae8b53ced2cd7ba343a62db645f29f39576b18a3e9ac2052197c6276"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0408-Jump-05.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 5,
+    "sha256": "c433eb6f950378b3cd835e15138b6787c38689226985f7e8a24ed1b12d5b19de"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0409-Attack-00.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 0,
+    "sha256": "7074f190f66e9ef202f247589c5c19ee2759a6b90f0767b37dd4d8bf8d057bb3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0410-Attack-01.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 1,
+    "sha256": "fe6e1ce5cff69979edd78f63841b4738b2d7aca9ad6a0679c9b9efe84a882e29"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0411-Attack-02.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 2,
+    "sha256": "99e8870aa134aa5a932606f80e2ec88d7aa03cc1d606c4dbba2516add56d6999"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0412-Attack-02.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 2,
+    "sha256": "783ee12d8ce2019ef8824acbaed35bd85bbabf862bd9d00484fc1e60232169f1"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0413-Attack-02.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 2,
+    "sha256": "76c327a49bceed9032d17f9d6da267ef6a2724d195d27e23e1ed4ea8f37f4309"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0414-Attack-03.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 3,
+    "sha256": "3148dfa2a255633ffb0bbbb048ff68fb20862c51271e42e864257b523763545b"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0415-Attack-03.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 3,
+    "sha256": "3148dfa2a255633ffb0bbbb048ff68fb20862c51271e42e864257b523763545b"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0416-Attack-04.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 4,
+    "sha256": "5cc361cfd9cd7daf16ab9024a8d83cae00c2bf0de6272f528a574ad248706fb9"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0417-Attack-04.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 4,
+    "sha256": "5cc361cfd9cd7daf16ab9024a8d83cae00c2bf0de6272f528a574ad248706fb9"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0418-Attack-04.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 4,
+    "sha256": "ffc27e33dc1ebddef8032b7077689fee6ea109be2b8ffd349d6cef94b1307a0a"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0419-Attack-04.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 4,
+    "sha256": "ffc27e33dc1ebddef8032b7077689fee6ea109be2b8ffd349d6cef94b1307a0a"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0420-Attack-05.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 5,
+    "sha256": "74cd20d58403cf16b46c67332b0a00020e23c1658ec28d7d9a23bcf50588a814"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0421-Attack-05.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 5,
+    "sha256": "4a293a6139de697664625efe1a4e4845976fe3670c69b0ecc4815c62e5d748a5"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0422-Attack-06.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 6,
+    "sha256": "a1a6314627b14a018e617d1a6db7b7853f537c43bffc35c3641214a518713d7c"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0423-Attack-06.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 6,
+    "sha256": "ca3420839504ddbc8cb310da5b6622eee913576904c1171ecd5545bdfcf0e2af"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0424-Attack-07.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 7,
+    "sha256": "186aef4fe1967f26978ef338e7bca78a05d1864fd345140cd3ca303c24a6797f"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0425-Attack-07.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 7,
+    "sha256": "b97d2d29c208f1f0b7fd6517c49123a3a2ae5702eb13492abf5614e942ec0228"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0426-Attack-08.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 8,
+    "sha256": "954dbd48149384c33efb7fcfb51d88d54eb57ce21fa9f390bcf85e52cadf31ca"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0427-Attack-08.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 8,
+    "sha256": "3af0f4fb112f2eda05cf6c110ff9c4377ad112ce4e6ebd93a8a38ee442b5fac0"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0428-Attack-09.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 9,
+    "sha256": "4b1159837efa79376a5df55ee1a1036166c397cfdf1f84ba5280fb928743f693"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0429-Attack-09.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 9,
+    "sha256": "7a1501bc3e37854d38c60d32499a14ab2bc93b87f254a5af9b984cfb5d6b9b96"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0430-Attack-10.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 10,
+    "sha256": "2efd06a964e9b63bb9d462b344083d3f9ae3a0ad3eb81b0abf8ef57fff3566dc"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0431-Attack-10.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 10,
+    "sha256": "2bd970d3fca4103d24496118a873fa7fd271f3e61dfb041fcc30f13664dbc1b3"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0432-Attack-10.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 10,
+    "sha256": "20002181cb86625b42334f798cfac7ec73fcedf91e888297658571979f2aed40"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0433-Attack-11.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 11,
+    "sha256": "d091f45140d735b02489d261da62979ec7099ea463a4b941b6f975397c75393c"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0434-Attack-11.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 11,
+    "sha256": "03686d407396a00069cd027d99c230394d885302a95f17f7b8b1ceac39db3e0e"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0435-Attack-11.png",
+    "scenario": "air-attack",
+    "clip": "Attack",
+    "frame": 11,
+    "sha256": "296e057f38a6623cf6252231f12236e59e22180aba42131a723ca05f20d3a7ea"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0436-Jump-11.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 11,
+    "sha256": "f8cc0dd55046e38ee271938587f591b7e7a521a85ef769da3760d194807a37fc"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0437-Jump-12.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 12,
+    "sha256": "c137b3718ba9008fa7ba9a8441d57c84a1959b1fb223f918ab06ea61bee5cebc"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0438-Jump-13.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 13,
+    "sha256": "c5dd1bbf604f6e508608d1034f132a3aea6bf76b4838312eae8fa4089dc2ae1e"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0439-Jump-14.png",
+    "scenario": "air-attack",
+    "clip": "Jump",
+    "frame": 14,
+    "sha256": "8f423f253c3c9cc52cef62a762eb5fe4fa1e85029dea30ba8a649a79afb15e04"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0440-Idle-05.png",
+    "scenario": "air-attack",
+    "clip": "Idle",
+    "frame": 5,
+    "sha256": "1c4d1ec289fb55d77aa8e003de7a8babea93011003424d50c12f0e73b8c5fd55"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0441-Idle-06.png",
+    "scenario": "air-attack",
+    "clip": "Idle",
+    "frame": 6,
+    "sha256": "1c4d1ec289fb55d77aa8e003de7a8babea93011003424d50c12f0e73b8c5fd55"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0442-Idle-07.png",
+    "scenario": "air-attack",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "606601781b01e9123baf3f30c309d857a01835b8cdbd8d90a58b6db3b6ba9e38"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0443-Idle-00.png",
+    "scenario": "air-attack",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "ea12b873a56f89908cf04bcd2a8c51399b11b270130b3a7996b71f2f89abafd4"
+  },
+  {
+    "file": "FinalWorldCameraV2/air-attack-0444-Idle-01.png",
+    "scenario": "air-attack",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "773fe04bc9fa404e37f07d9c04118c6c34282b21470b22d4d10fab8d097739d6"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0445-Attack-00.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 0,
+    "sha256": "606601781b01e9123baf3f30c309d857a01835b8cdbd8d90a58b6db3b6ba9e38"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0446-Attack-01.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 1,
+    "sha256": "5e99ca4ab9a6dbc59a690a8889a13c29d9fd5a735d7f7bf325116819b65192eb"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0447-Attack-02.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 2,
+    "sha256": "3135fc0c45c99d49df8179ef09d80c1ece1d8f3ab055ce243b2507e81a102658"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0448-Attack-03.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 3,
+    "sha256": "47da9772a014f73bc78a27e957ba7db1a6fe3196a44ccd026973892975ffb81d"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0449-Attack-04.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 4,
+    "sha256": "b12de91e4b0029f8391d7f2c22d6d901c02a990b92447d03bd4dc9a168376db8"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0450-Attack-05.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 5,
+    "sha256": "3e843534b00dd3f0bb914cc3331f7b1c9c75040f405a0522a66ebd27e035fdae"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0451-Attack-06.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 6,
+    "sha256": "09851d54e41e0a7231d88d1d61c8a3f72b119640bceedb07fcc81e627ae0bace"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0452-Attack-07.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 7,
+    "sha256": "22b5fd3ea15537de131b3d03ecd8ae7f6482f825cbafa2feff00869abe146cea"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0453-Attack-08.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 8,
+    "sha256": "551c6e2be7ebc85fc222876e8a62338c7e9e98d22af7962ed971c950755e7d37"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0454-Attack-09.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 9,
+    "sha256": "3b0f43908c36bedcd1c28daec71e97155c9dff009e285d8903b3f009b10aa759"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0455-Attack-10.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 10,
+    "sha256": "446731f0d24f6c0b30c878ffe25421be5d62b47821e905caff3105f82b179c86"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0456-Attack-11.png",
+    "scenario": "attack",
+    "clip": "Attack",
+    "frame": 11,
+    "sha256": "e138bfb0ca50c7fdddccc771c2876a3e7fdeeed4cb9640085095353d0ff178e7"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0457-Idle-03.png",
+    "scenario": "attack",
+    "clip": "Idle",
+    "frame": 3,
+    "sha256": "a32a558280fe5ae9631cff8345743fa1790685504b49348baf5c468037af2c0b"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0458-Idle-04.png",
+    "scenario": "attack",
+    "clip": "Idle",
+    "frame": 4,
+    "sha256": "a32a558280fe5ae9631cff8345743fa1790685504b49348baf5c468037af2c0b"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0459-Idle-05.png",
+    "scenario": "attack",
+    "clip": "Idle",
+    "frame": 5,
+    "sha256": "83baf8421feb750f06c9aeb77da95cf4b855bc9e9c4a3e6e8d6fd3bf4d03fe3b"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0460-Idle-06.png",
+    "scenario": "attack",
+    "clip": "Idle",
+    "frame": 6,
+    "sha256": "0fca6d052272641cd2ade395726550e7cb6fdb844cf4cfb097b698031dbd2613"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0461-Idle-07.png",
+    "scenario": "attack",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "606601781b01e9123baf3f30c309d857a01835b8cdbd8d90a58b6db3b6ba9e38"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0462-Idle-00.png",
+    "scenario": "attack",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "ea12b873a56f89908cf04bcd2a8c51399b11b270130b3a7996b71f2f89abafd4"
+  },
+  {
+    "file": "FinalWorldCameraV2/attack-0463-Idle-01.png",
+    "scenario": "attack",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "773fe04bc9fa404e37f07d9c04118c6c34282b21470b22d4d10fab8d097739d6"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0464-Idle-00.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "606601781b01e9123baf3f30c309d857a01835b8cdbd8d90a58b6db3b6ba9e38"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0465-fx-hurt-pose-00.png",
+    "scenario": "hurt",
+    "clip": "fx-hurt-pose",
+    "frame": 0,
+    "sha256": "ffc7ff936ee6531b215d0bbd7fdce99b42d23252c138cc970b9f0b6541e5e7b6"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0466-fx-hurt-pose-01.png",
+    "scenario": "hurt",
+    "clip": "fx-hurt-pose",
+    "frame": 1,
+    "sha256": "6664aeb07976b6d0604d482a945bbfa705b08061e6d7ff671b7d9d57ffddac0d"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0467-fx-hurt-pose-02.png",
+    "scenario": "hurt",
+    "clip": "fx-hurt-pose",
+    "frame": 2,
+    "sha256": "ec938813e257615111c716cb5061e298bb019818e51c90829866a0e14f5e275f"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0468-Idle-02.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 2,
+    "sha256": "69f26a6b6104bfb40d0e10e25ec79ba249bbd5fdddc060c0bc25c15c866a6ad9"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0469-Idle-03.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 3,
+    "sha256": "b1d02095223aecbafb5bd7516da85fcd8526faa9e4b99ea8f239b2c8ffd0f98a"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0470-Idle-04.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 4,
+    "sha256": "c0655cc61ef32360534caafa0f890046bb8c825e1d6eeba70e81bb98ab42d1aa"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0471-Idle-05.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 5,
+    "sha256": "f127376f9a8398b40a90ba47da409f9526d3d95d91eb609ec47635e645393cf8"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0472-Idle-06.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 6,
+    "sha256": "cf025c7dd3470623cec6ae52af62e03e02f565dea40b8cad9fb0ceee918e9eba"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0473-Idle-07.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 7,
+    "sha256": "95bca1d0cd34d6240a5f05183e0b6c8b06846b7cb120bef283ac041eb3505437"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0474-Idle-00.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 0,
+    "sha256": "ea12b873a56f89908cf04bcd2a8c51399b11b270130b3a7996b71f2f89abafd4"
+  },
+  {
+    "file": "FinalWorldCameraV2/hurt-0475-Idle-01.png",
+    "scenario": "hurt",
+    "clip": "Idle",
+    "frame": 1,
+    "sha256": "773fe04bc9fa404e37f07d9c04118c6c34282b21470b22d4d10fab8d097739d6"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0476-fx-push-side-02.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 2,
+    "sha256": "a5a1fea15ef8513e54c8365786307d023c3e5e3eff20d0433264829c9a7363fd"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0477-fx-push-side-02.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 2,
+    "sha256": "5ec78e37ca853ec5befd5f502559874302081eed1d536337bbc090d91672607b"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0478-fx-push-side-04.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 4,
+    "sha256": "52f6e1938b13d7e250e89b78538632d10734ce242421d41ee29d23acba2bdcd1"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0479-fx-push-side-07.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 7,
+    "sha256": "e067e54f722a5b36931038302a22dce5df34c724d1a4d3035be33be0c34ffb42"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0480-fx-push-side-09.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 9,
+    "sha256": "ffca289948a0f22849e794dc4fcaf6f40dd56000e1fde3f1f14ef6716489bd15"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0481-fx-push-side-11.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 11,
+    "sha256": "5c186e4a26a2387be6c139ad9395efc3671ec6918d6583f13969041d28c629ac"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0482-fx-push-side-00.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 0,
+    "sha256": "5c4aa21e420b2ec6b5c80863e5147f3114374748228dd885135bf86854bfba1a"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0483-fx-push-side-02.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 2,
+    "sha256": "4bf7c7eb453e4cb3c1086d5e4f0489efb24066f5d8d8ffef64c6601a7003e98d"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-side-0484-fx-push-side-02.png",
+    "scenario": "push-side",
+    "clip": "fx-push-side",
+    "frame": 2,
+    "sha256": "a3fae3675b0520977a22d3235fd5430147a7349382b5cf6034f70d38374e9cb1"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0485-fx-push-up-07.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 7,
+    "sha256": "129f892f3d7e0c94d9e8e2c33f69b8b4e4159435d714ee146f36f3202298b32e"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0486-fx-push-up-08.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 8,
+    "sha256": "9db71c17b7e0724b4b5e8bb05423d7bc133e6b684075411aa890f6b3aa3a697a"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0487-fx-push-up-10.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 10,
+    "sha256": "b3fdca9b047eee76bd69e56db59a83d434ef3439d9979545de2eecfef4ecbc10"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0488-fx-push-up-12.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 12,
+    "sha256": "95e936a8c62850091e0a0a98a776ea258a7373b9c772952d6726f476933497d9"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0489-fx-push-up-01.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 1,
+    "sha256": "06e9fec23af0e37d7c89b2326f0abfa29ca471f05240ac50d87775dfcb220220"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0490-fx-push-up-03.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 3,
+    "sha256": "db6503b9dbd89da582993cbcc030fdc5584269f251aae6f59b946d3d44a2a064"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0491-fx-push-up-06.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 6,
+    "sha256": "d8b677c689d44d08a9a7456ecfa8ea9d77838ac1e71e0bb5616f627f88e46877"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0492-fx-push-up-07.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 7,
+    "sha256": "00ac55994060d3a53d2e8027996efe6135759c2bb26ae1692b30408371f68d9f"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-up-0493-fx-push-up-07.png",
+    "scenario": "push-up",
+    "clip": "fx-push-up",
+    "frame": 7,
+    "sha256": "2318406f3b7d9324cf3dabb593c52ac65555085dbff2851e3d8577981f0844cb"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0494-fx-push-down-04.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 4,
+    "sha256": "6355225ea6c2b8ba19942af76d491843b6ac351c41b43325f9f044998bb16fcb"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0495-fx-push-down-05.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 5,
+    "sha256": "e7c1badce63566795821f7446e669ce351f7a42da141ce876250e26ce86d0c42"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0496-fx-push-down-07.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 7,
+    "sha256": "4c4948080b7f8f2825889f93177411cbc8d43ba476b6978552f8ff31cce8a226"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0497-fx-push-down-08.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 8,
+    "sha256": "d3553962d783c9b0b69c89d189d8cf23f089a69c051244ca53ef7cec20d20ea3"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0498-fx-push-down-11.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 11,
+    "sha256": "f3aa2ce5f506a643abd29b1e1298162b0a05ec4cdb7ff76c8280621d716a0ea3"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0499-fx-push-down-00.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 0,
+    "sha256": "3e6592a894e01240ae903c9f5c6014fa2e68088ee4181c1d545a62ec690a354f"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0500-fx-push-down-02.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 2,
+    "sha256": "386e3becb5211e4841d183d8ace0e0f05eec5bea4ac915a647aa8bcb44a77ab9"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0501-fx-push-down-03.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 3,
+    "sha256": "784218d2a1eb7f4eb5a0c0d4126b4d2fcccd0441a530fbf4f5a13692569fc655"
+  },
+  {
+    "file": "FinalWorldCameraV2/push-down-0502-fx-push-down-04.png",
+    "scenario": "push-down",
+    "clip": "fx-push-down",
+    "frame": 4,
+    "sha256": "0851b3e95d8a0a20227250fc5f61721ad1babb5cf1a9a7f6c949cdbd98b765cc"
+  }
+]

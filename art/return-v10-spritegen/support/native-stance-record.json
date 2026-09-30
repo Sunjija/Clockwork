@@ -1,0 +1,640 @@
+[
+  {
+    "stance": 0,
+    "wholePoseSource": "side",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": []
+  },
+  {
+    "stance": 1,
+    "wholePoseSource": "side",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          22,
+          51
+        ],
+        "from": [
+          156,
+          89,
+          56,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          23,
+          51
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          156,
+          89,
+          56,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "stance": 2,
+    "wholePoseSource": "side",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          39,
+          51
+        ],
+        "from": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "to": [
+          188,
+          120,
+          59,
+          255
+        ]
+      },
+      {
+        "xy": [
+          40,
+          51
+        ],
+        "from": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "to": [
+          156,
+          89,
+          56,
+          255
+        ]
+      },
+      {
+        "xy": [
+          40,
+          52
+        ],
+        "from": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "to": [
+          244,
+          203,
+          112,
+          255
+        ]
+      },
+      {
+        "xy": [
+          41,
+          52
+        ],
+        "from": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "stance": 3,
+    "wholePoseSource": "side",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          22,
+          51
+        ],
+        "from": [
+          156,
+          89,
+          56,
+          255
+        ],
+        "to": [
+          188,
+          120,
+          59,
+          255
+        ]
+      },
+      {
+        "xy": [
+          23,
+          51
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          39,
+          52
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          244,
+          203,
+          112,
+          255
+        ]
+      },
+      {
+        "xy": [
+          40,
+          52
+        ],
+        "from": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          23,
+          54
+        ],
+        "from": [
+          221,
+          161,
+          75,
+          255
+        ],
+        "to": [
+          188,
+          120,
+          59,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "stance": 0,
+    "wholePoseSource": "down",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": []
+  },
+  {
+    "stance": 1,
+    "wholePoseSource": "down",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": []
+  },
+  {
+    "stance": 2,
+    "wholePoseSource": "down",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          34,
+          53
+        ],
+        "from": [
+          255,
+          231,
+          163,
+          255
+        ],
+        "to": [
+          244,
+          203,
+          112,
+          255
+        ]
+      },
+      {
+        "xy": [
+          35,
+          53
+        ],
+        "from": [
+          244,
+          203,
+          112,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          20,
+          54
+        ],
+        "from": [
+          244,
+          203,
+          112,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "stance": 3,
+    "wholePoseSource": "down",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          20,
+          53
+        ],
+        "from": [
+          244,
+          203,
+          112,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          21,
+          53
+        ],
+        "from": [
+          221,
+          161,
+          75,
+          255
+        ],
+        "to": [
+          244,
+          203,
+          112,
+          255
+        ]
+      },
+      {
+        "xy": [
+          35,
+          54
+        ],
+        "from": [
+          221,
+          161,
+          75,
+          255
+        ],
+        "to": [
+          117,
+          64,
+          50,
+          255
+        ]
+      },
+      {
+        "xy": [
+          36,
+          54
+        ],
+        "from": [
+          117,
+          64,
+          50,
+          255
+        ],
+        "to": [
+          188,
+          120,
+          59,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "stance": 0,
+    "wholePoseSource": "up",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": []
+  },
+  {
+    "stance": 1,
+    "wholePoseSource": "up",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          23,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          188,
+          120,
+          59,
+          255
+        ]
+      },
+      {
+        "xy": [
+          24,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          25,
+          51
+        ],
+        "from": [
+          255,
+          231,
+          163,
+          255
+        ],
+        "to": [
+          244,
+          203,
+          112,
+          255
+        ]
+      },
+      {
+        "xy": [
+          28,
+          54
+        ],
+        "from": [
+          117,
+          64,
+          50,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "stance": 2,
+    "wholePoseSource": "up",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          39,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          188,
+          120,
+          59,
+          255
+        ]
+      },
+      {
+        "xy": [
+          40,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          41,
+          51
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          244,
+          203,
+          112,
+          255
+        ]
+      },
+      {
+        "xy": [
+          42,
+          51
+        ],
+        "from": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          43,
+          54
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      }
+    ]
+  },
+  {
+    "stance": 3,
+    "wholePoseSource": "up",
+    "method": "explicit complete-native knee/heel pixel drawing; no translated foot pieces",
+    "pixelDelta": [
+      {
+        "xy": [
+          24,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          25,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          156,
+          89,
+          56,
+          255
+        ]
+      },
+      {
+        "xy": [
+          40,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          221,
+          161,
+          75,
+          255
+        ]
+      },
+      {
+        "xy": [
+          41,
+          50
+        ],
+        "from": [
+          43,
+          27,
+          36,
+          255
+        ],
+        "to": [
+          156,
+          89,
+          56,
+          255
+        ]
+      }
+    ]
+  }
+]

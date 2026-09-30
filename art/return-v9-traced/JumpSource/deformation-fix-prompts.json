@@ -1,0 +1,42 @@
+[
+  {
+    "name": "10-near-neutral",
+    "prompt": "Use case: identity-preserve. SINGLE complete whole-character animation pose reference for a 64x64 native pixel trace, NEVER a sheet. Input reference is the exact original Tique. MUST preserve the same huge ROUND31x27 head, exact face/two vertical cyan eyes, compact rounded BRONZE torso21x15, cyan HEART core12x10 of exactly the original shape, very short jointed legs6px maximum, original short articulated arms. Keep torso/core dimensions SAME as reference; do not squash, stretch or tilt torso, do not enlarge heart. Bronze palette, dark wine outline, no new details. Whole subject upright3/4 front-right. TWO tiny4x5 bronze hands CLEAR outside sides of torso BELOW head; connected short shoulder-elbow-wrist anatomy, never extended long or straight, no bulky gloves/boots. Transparent background,12% margin. Crisp discrete square pixel clusters, no texture/dither/blur/AA/gradient/effects/floor/shadow/text. ONE pose: very slight pre-jump knee bend/landing settle. Head and chest remain upright and completely rigid, lowered onlyONE nativepixel. Feet flat; short arms bent a little beside torso, hands at hip height, almost the exact original idle. Face, heart and torso proportions exact.",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-c4a5f6df-db08-4d74-bc15-de4789e18216.png",
+    "tool": "built-in image_gen",
+    "roundHandInstruction": false,
+    "sourceShapeManualCleanup": "fingerless bronze ball hands and rigid shell proportions are native tracing invariants"
+  },
+  {
+    "name": "11-half-fold",
+    "prompt": "Use case: identity-preserve. SINGLE complete whole-character animation pose reference for a 64x64 native pixel trace, NEVER a sheet. Input reference is the exact original Tique. MUST preserve the same huge ROUND31x27 head, exact face/two vertical cyan eyes, compact rounded BRONZE torso21x15, cyan HEART core12x10 of exactly the original shape, very short jointed legs6px maximum, original short articulated arms. Keep torso/core dimensions SAME as reference; do not squash, stretch or tilt torso, do not enlarge heart. Bronze palette, dark wine outline, no new details. Whole subject upright3/4 front-right. TWO tiny4x5 bronze hands CLEAR outside sides of torso BELOW head; connected short shoulder-elbow-wrist anatomy, never extended long or straight, no bulky gloves/boots. Transparent background,12% margin. Crisp discrete square pixel clusters, no texture/dither/blur/AA/gradient/effects/floor/shadow/text. ONE pose: early ascending jump between straight takeoff and full knee tuck. Head/chest upright and unchanged. Two short knees bend halfway, feet hanging close under hips, each foot at slightlydifferent angle. Short arms gently bend outward with small hands below head at waist height. Only limbs change; torso and heart are rigid original shape.",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-5aa256d4-d899-4d24-a820-08cc2331f4c7.png",
+    "tool": "built-in image_gen",
+    "roundHandInstruction": false,
+    "sourceShapeManualCleanup": "fingerless bronze ball hands and rigid shell proportions are native tracing invariants"
+  },
+  {
+    "name": "12-half-open",
+    "prompt": "Use case: identity-preserve. SINGLE complete whole-character animation pose reference for a 64x64 native pixel trace, NEVER a sheet. Input reference is the exact original Tique. MUST preserve the same huge ROUND31x27 head, exact face/two vertical cyan eyes, compact rounded BRONZE torso21x15, cyan HEART core12x10 of exactly the original shape, very short jointed legs6px maximum, original short articulated arms. Keep torso/core dimensions SAME as reference; do not squash, stretch or tilt torso, do not enlarge heart. Bronze palette, dark wine outline, no new details. Whole subject upright3/4 front-right. TWO tiny4x5 bronze hands CLEAR outside sides of torso BELOW head; connected short shoulder-elbow-wrist anatomy, never extended long or straight, no bulky gloves/boots. Transparent background,12% margin. Crisp discrete square pixel clusters, no texture/dither/blur/AA/gradient/effects/floor/shadow/text. ONE pose: early falling jump as knees relax from tuck toward straight descent. Head/chest remain completely rigid upright. One knee halfway unfurls while the other short foot points down, feet barely under body. Hands softly open down and outward beside hips, short elbows bent. Heart/torso/head original exact proportions.",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-a9b5a271-7d93-4466-bf5e-723e615755fe.png",
+    "tool": "built-in image_gen",
+    "roundHandInstruction": false,
+    "sourceShapeManualCleanup": "fingerless bronze ball hands and rigid shell proportions are native tracing invariants"
+  },
+  {
+    "name": "13-land-rise",
+    "prompt": "Use case: identity-preserve. EXACTLY ONE single COMPLETE Tique character pose reference, not a sheet. Input is exact original Tique: huge31x27 round bronze head, two vertical cyan eyes, compact rounded bronze torso21x15, cyan heart core of EXACT same size and shape, tiny articulated short arms and legs. Do not deform head/torso/core; mechanical rigid shells retain dimensions. Tique has ABSOLUTELY NO FINGERS OR THUMBS. BOTH HANDS ARE PERFECT SMALL ROUND BRONZE BALLS, like tiny spherical endcaps, no mittens or grip/finger gaps, no points or projections, simple two-tone bronze. Hands4x4nativepixel approximately. Both must remain outside torso BELOW head with connected short wrists; arms never stretched long. Same3/4 front-right view, transparent background with12% margin, clean square pixel clusters, no texture/dither/blur/AA/glow/shadow/text/floor. ONE pose: half recovery after landing: short knees still slightly bent, soles planted flat, head/chest upright and unchanged rigid shape, head sits2nativepx lower than original idle. Short arms relax down beside torso, round ball hands visible just outside hip contour. Torso/core unchanged size.",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-cebc2445-d6b8-42ef-912a-eda115cc2ce2.png",
+    "tool": "built-in image_gen",
+    "roundHandInstruction": true,
+    "sourceShapeManualCleanup": "fingerless bronze ball hands and rigid shell proportions are native tracing invariants"
+  },
+  {
+    "name": "14-boost-settle",
+    "prompt": "Use case: identity-preserve. EXACTLY ONE single COMPLETE Tique character pose reference, not a sheet. Input is exact original Tique: huge31x27 round bronze head, two vertical cyan eyes, compact rounded bronze torso21x15, cyan heart core of EXACT same size and shape, tiny articulated short arms and legs. Do not deform head/torso/core; mechanical rigid shells retain dimensions. Tique has ABSOLUTELY NO FINGERS OR THUMBS. BOTH HANDS ARE PERFECT SMALL ROUND BRONZE BALLS, like tiny spherical endcaps, no mittens or grip/finger gaps, no points or projections, simple two-tone bronze. Hands4x4nativepixel approximately. Both must remain outside torso BELOW head with connected short wrists; arms never stretched long. Same3/4 front-right view, transparent background with12% margin, clean square pixel clusters, no texture/dither/blur/AA/glow/shadow/text/floor. ONE pose: after second jump release: knees bent moderately backward, both feet close under torso, arms relax into compact sideward bend at low chest/waist height, both spherical bronze hands fully visible beside chest below head. Head/chest upright, huge round original shape, exactly original heart size. No stretch, torso unchanged, only articulated limbs differ.",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-6fd8ede0-01d5-4013-8b7a-6171d4e710ec.png",
+    "tool": "built-in image_gen",
+    "roundHandInstruction": true,
+    "sourceShapeManualCleanup": "fingerless bronze ball hands and rigid shell proportions are native tracing invariants"
+  }
+]

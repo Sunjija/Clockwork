@@ -1,0 +1,422 @@
+[
+  {
+    "key": "01-preload",
+    "componentSizes": [
+      1027
+    ],
+    "hands": [
+      {
+        "box": [
+          19,
+          45,
+          23,
+          49
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          46,
+          48,
+          50
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "02-extension",
+    "componentSizes": [
+      1053
+    ],
+    "hands": [
+      {
+        "box": [
+          16,
+          44,
+          20,
+          48
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          44,
+          48,
+          48
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "03-ascent",
+    "componentSizes": [
+      1017
+    ],
+    "hands": [
+      {
+        "box": [
+          17,
+          38,
+          21,
+          42
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          38,
+          48,
+          42
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "04-apex",
+    "componentSizes": [
+      1024
+    ],
+    "hands": [
+      {
+        "box": [
+          17,
+          41,
+          21,
+          45
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          41,
+          48,
+          45
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "05-descent",
+    "componentSizes": [
+      1055
+    ],
+    "hands": [
+      {
+        "box": [
+          17,
+          42,
+          21,
+          46
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          45,
+          43,
+          49,
+          47
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "07-recovery",
+    "componentSizes": [
+      1056
+    ],
+    "hands": [
+      {
+        "box": [
+          18,
+          46,
+          22,
+          50
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          45,
+          48,
+          49
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "08-double-tuck",
+    "componentSizes": [
+      1002
+    ],
+    "hands": [
+      {
+        "box": [
+          18,
+          38,
+          22,
+          42
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          39,
+          48,
+          43
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "09-double-release",
+    "componentSizes": [
+      1054
+    ],
+    "hands": [
+      {
+        "box": [
+          15,
+          39,
+          19,
+          43
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          48,
+          41,
+          52,
+          45
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "10-near-neutral",
+    "componentSizes": [
+      1049
+    ],
+    "hands": [
+      {
+        "box": [
+          19,
+          44,
+          23,
+          48
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          44,
+          48,
+          48
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "11-half-fold",
+    "componentSizes": [
+      1037
+    ],
+    "hands": [
+      {
+        "box": [
+          17,
+          41,
+          21,
+          45
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          41,
+          48,
+          45
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "12-half-open",
+    "componentSizes": [
+      1049
+    ],
+    "hands": [
+      {
+        "box": [
+          17,
+          44,
+          21,
+          48
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          44,
+          48,
+          48
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "13-land-rise",
+    "componentSizes": [
+      1051
+    ],
+    "hands": [
+      {
+        "box": [
+          19,
+          46,
+          23,
+          50
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          46,
+          48,
+          50
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "14-boost-settle",
+    "componentSizes": [
+      1043
+    ],
+    "hands": [
+      {
+        "box": [
+          18,
+          41,
+          22,
+          45
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          41,
+          48,
+          45
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  },
+  {
+    "key": "15-land-impact",
+    "componentSizes": [
+      1029
+    ],
+    "hands": [
+      {
+        "box": [
+          19,
+          46,
+          23,
+          50
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      },
+      {
+        "box": [
+          44,
+          46,
+          48,
+          50
+        ],
+        "metalInteriorPixels": 4,
+        "connectedToBody": true,
+        "shape": "fingerless 4x4 sphere, 2/4/4/2"
+      }
+    ]
+  }
+]

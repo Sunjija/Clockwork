@@ -1,0 +1,21 @@
+{
+  "name": "push-down",
+  "frameCount": 14,
+  "durations": [
+    60,
+    40,
+    80,
+    60,
+    40,
+    40,
+    60,
+    100,
+    40,
+    60,
+    60,
+    40,
+    40,
+    40
+  ],
+  "totalDurationMs": 760
+}

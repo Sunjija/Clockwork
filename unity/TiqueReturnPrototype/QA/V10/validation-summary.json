@@ -1,0 +1,147 @@
+{
+  "recordedAtUtc": "2026-09-30T15:21:01.711514+00:00",
+  "status": "implemented, built and scripted world-camera verified; physical keys and user quality approval unverified",
+  "reference": {
+    "repository": "https://github.com/aldegad/sprite-gen",
+    "commit": "bc64939c6e46a9679bb6569f40524d8a84c88160",
+    "skillVersion": "2.11.0"
+  },
+  "actualSinglePoseGenerations": 33,
+  "selectedWholePoseKeys": 22,
+  "native": {
+    "passed": true,
+    "originalAssetsPreserved": 309,
+    "nativeFrames": 139,
+    "clips": 17,
+    "checks": 1062,
+    "scope": "Real native files, palette, alpha, silhouette connectivity, phase distinction, Walk preservation and packaging; natural motion and physical inputs excluded"
+  },
+  "selector": {
+    "passed": true,
+    "count": 45,
+    "selections": 3505,
+    "idleFrames": 8,
+    "scope": "Production C# Tique selector and model; rendered art, physical inputs and subjective motion quality excluded",
+    "checks": [
+      "first jump immediately rises in takeoff, never a grounded preload",
+      "double jump impulse immediately shows release, never grounded crouch",
+      "first jump moves from release into rising without grounded preload drawings",
+      "first jump holds its falling pose instead of replaying takeoff",
+      "first landing keeps precedence over held direction and dash recovery",
+      "first jump landing exposes its entire suffix inside 120ms",
+      "held movement resumes immediately after the existing landing presentation",
+      "an airborne pose ignores stale landing time",
+      "double jump moves from release into rising without grounded preload drawings",
+      "double jump holds its falling pose instead of replaying takeoff",
+      "double landing keeps precedence over held direction and dash recovery",
+      "double jump landing exposes its entire suffix inside 120ms",
+      "held movement resumes immediately after the existing landing presentation",
+      "an airborne pose ignores stale landing time",
+      "active dash remains selected throughout its existing movement window",
+      "160ms dash exposes preparation and all four active silhouettes at 120Hz",
+      "stationary grounded recovery exposes all five recovery frames",
+      "resumed movement immediately overrides residual dash recovery",
+      "airborne dash ending returns to falling physics rather than ground recovery",
+      "active dash precedes attack and airborne posture",
+      "airborne attack stays valid and precedes the ordinary air pose",
+      "ongoing attack keeps its pose when physics reaches the floor",
+      "460ms attack exposes all twelve poses",
+      "existing 120ms contact begins on the punch impact pose",
+      "attack ends at its unchanged 460ms boundary",
+      "first jump visibly starts in release and rising at 60Hz without an airborne crouch",
+      "first jump landing visibly exposes every suffix pose at 60Hz",
+      "double jump visibly starts in release and rising at 60Hz without an airborne crouch",
+      "double jump landing visibly exposes every suffix pose at 60Hz",
+      "60Hz dash visibly exposes all preparation/active poses without delaying movement",
+      "60Hz stationary dash visibly exposes every recovery pose",
+      "60Hz attack visibly exposes all twelve existing timed poses",
+      "calm idle exposes every authored subtle frame",
+      "idle loops with the manifest period",
+      "stationary initial hurt remains visible during an otherwise hidden blink phase",
+      "airborne moving initial hurt remains visible",
+      "body blinking resumes after hurt without extending protection",
+      "reduced effects retain a continuously visible body",
+      "a newly requested dash can replace hurt visually",
+      "death is never hidden by a stale protection or hurt timer",
+      "puzzle feet advance with eased visible distance during acceleration",
+      "puzzle feet advance with eased visible distance during settling",
+      "a completed puzzle step keeps its original 36px distance and lock duration",
+      "settled puzzle feet stop advancing",
+      "movement, dash, coyote and buffer constants remain unchanged"
+    ]
+  },
+  "actualGpuReview": {
+    "passed": true,
+    "artRoot": "ReturnV2/TiqueV10/",
+    "scenarios": 14,
+    "observations": 503,
+    "scope": "Scripted production-input fixture and actual Unity world-camera RenderTexture GPU captures. IMGUI, desktop presentation, physical keys and human motion approval excluded.",
+    "report": "FinalWorldCameraV2/result.json",
+    "allPngFingerprints": "capture-fingerprints.json"
+  },
+  "actualGpuFlow": {
+    "passed": true,
+    "phase": "Ending",
+    "health": 2,
+    "breaks": 3,
+    "playSeconds": 68.38,
+    "scope": "Scripted production-input fixture and actual Unity world-camera RenderTexture GPU captures. IMGUI, desktop presentation, physical keys and human motion approval excluded.",
+    "report": "FinalFlowWorldCameraV2/result.json"
+  },
+  "physicalInputs": {
+    "status": "not-verified",
+    "scope": "V10 physical operating-system keyboard input and desktop presentation",
+    "reason": "Computer Use reported that the user stopped it with the physical Escape key. No further Computer Use calls or desktop inputs were issued in this turn.",
+    "separateVerification": "File checks, C# model tests, batch build and explicitly labelled GPU RenderTexture tests are independent of physical keyboard input.",
+    "v9InputEvidenceIsNotV10Evidence": true,
+    "userMotionQualityApproval": "not-requested-or-claimed"
+  },
+  "renderFindings": [
+    "Original four-native-pixel UP hand-to-crate gap corrected using actual 30x32 crate and top20/inward palm caps; final GPU contact inspected.",
+    "Jump/DoubleJump ascent, apex, fall and land retain connected round hands in actual world-camera frames.",
+    "Side crossed-arm length impression and low-contrast down contact remain subjective review items."
+  ],
+  "buildAndSourceFingerprints": [
+    {
+      "file": "unity/TiqueReturnPrototype/Builds/WindowsV10/TiqueReturn.exe",
+      "bytes": 667648,
+      "sha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4"
+    },
+    {
+      "file": "unity/TiqueReturnPrototype/Builds/WindowsV10/TiqueReturn_Data/resources.assets",
+      "bytes": 223944,
+      "sha256": "434f29060822d61706781caa13edfb373d2ddfa64789215e85aa6db226b32a5f"
+    },
+    {
+      "file": "unity/TiqueReturnPrototype/Builds/WindowsV10/TiqueReturn_Data/resources.assets.resS",
+      "bytes": 42311072,
+      "sha256": "b3a0730a7b220c9e68c349614d93d161106ed88545c349379b88089136198bd9"
+    },
+    {
+      "file": "unity/TiqueReturnPrototype/Builds/WindowsV10/TiqueReturn_Data/Managed/Assembly-CSharp.dll",
+      "bytes": 107520,
+      "sha256": "506507ec3273a94368024f4a1c49dbe8004d942281d9a05aa781c232ac3049c8"
+    },
+    {
+      "file": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/clips.json",
+      "bytes": 3092,
+      "sha256": "c96152e6f485ccbe9b683e1780cb94ec47ae1821686076efc8eb0c5cb9b81086"
+    },
+    {
+      "file": "unity/TiqueReturnPrototype/Assets/Scripts/ReworkGame.cs",
+      "bytes": 28747,
+      "sha256": "548118b9ee009159883e0b688036336bf813e80ae41e482bc010b3c98dc3e11f"
+    },
+    {
+      "file": "unity/TiqueReturnPrototype/Assets/Scripts/TiqueAnimation.cs",
+      "bytes": 3608,
+      "sha256": "83c178bf3882ef0fdb0f8f3ef57d4712ea836466e94b5c0fe4d68c0722a546fe"
+    },
+    {
+      "file": "unity/TiqueReturnPrototype/Assets/Scripts/ReworkTiqueReview.cs",
+      "bytes": 7773,
+      "sha256": "f7642b9340032516274662d19651d743c8a5e31844d7a9d96a5b5e92268e1b59"
+    }
+  ],
+  "distribution": "Local Windows executable and data are build products, ignored by Git; authored sources, assets, tests and evidence are versioned."
+}

@@ -1,0 +1,10 @@
+{
+  "name": "hurt-pose",
+  "frameCount": 3,
+  "durations": [
+    40,
+    50,
+    60
+  ],
+  "totalDurationMs": 150
+}

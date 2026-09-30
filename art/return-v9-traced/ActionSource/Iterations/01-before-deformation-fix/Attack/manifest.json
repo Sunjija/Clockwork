@@ -1,0 +1,787 @@
+{
+  "clip": "Attack",
+  "frame_size": [
+    64,
+    64
+  ],
+  "pixel_pivot": [
+    32,
+    56
+  ],
+  "durations_ms": [
+    20,
+    30,
+    40,
+    30,
+    70,
+    30,
+    40,
+    40,
+    30,
+    30,
+    40,
+    60
+  ],
+  "frame_count": 12,
+  "neutral_endpoints_match_original": true,
+  "source_method": "complete single generated body key trace + local native exposure pixels",
+  "all_hands_visible_and_connected": true,
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "duration_ms": 20,
+      "source_key": "neutral",
+      "pixel_edits": [],
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "duration_ms": 30,
+      "source_key": "attack-windup",
+      "pixel_edits": [
+        [
+          23,
+          47,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          24,
+          48,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          26,
+          48,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ],
+        [
+          21,
+          36,
+          [
+            244,
+            203,
+            112,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "55a28899061ae4df1c923043d8d2ccb0e7a776e9eb21fb18a452b13a38517ed1",
+      "alpha_bounds": [
+        14,
+        8,
+        48,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1096
+      ],
+      "hands": [
+        {
+          "box": [
+            14,
+            31,
+            18,
+            36
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            44,
+            38,
+            48,
+            43
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "duration_ms": 40,
+      "source_key": "attack-windup",
+      "pixel_edits": [],
+      "rgba_sha256": "270b5e711bdabef82a51943924b1f747515324d0e6dba8e68201330cf184c55a",
+      "alpha_bounds": [
+        14,
+        8,
+        48,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1096
+      ],
+      "hands": [
+        {
+          "box": [
+            14,
+            31,
+            18,
+            36
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            44,
+            38,
+            48,
+            43
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "duration_ms": 30,
+      "source_key": "attack-extension",
+      "pixel_edits": [],
+      "rgba_sha256": "3fd8cb40065ef4d33c1fcc0ee0a57133b1aae4b9519738051ab9d7950cad2680",
+      "alpha_bounds": [
+        17,
+        8,
+        50,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1048
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            40,
+            22,
+            45
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            46,
+            32,
+            50,
+            37
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "duration_ms": 70,
+      "source_key": "attack-impact",
+      "pixel_edits": [],
+      "rgba_sha256": "44f7bb4cbd15e25597e6dc2b55d3921fe533bbd10204286ed9a42b357cd010c5",
+      "alpha_bounds": [
+        18,
+        8,
+        58,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1106
+      ],
+      "hands": [
+        {
+          "box": [
+            19,
+            38,
+            23,
+            43
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            54,
+            30,
+            58,
+            35
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "duration_ms": 30,
+      "source_key": "attack-impact",
+      "pixel_edits": [
+        [
+          49,
+          34,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          50,
+          34,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          51,
+          34,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          27,
+          46,
+          [
+            156,
+            89,
+            56,
+            255
+          ]
+        ],
+        [
+          28,
+          47,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "a7980c7b03ee48dd7528c5b1ed78188800383526153b487574caeda6e52b7fe9",
+      "alpha_bounds": [
+        18,
+        8,
+        58,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1106
+      ],
+      "hands": [
+        {
+          "box": [
+            19,
+            38,
+            23,
+            43
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            54,
+            30,
+            58,
+            35
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "duration_ms": 40,
+      "source_key": "attack-impact",
+      "pixel_edits": [
+        [
+          48,
+          34,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          49,
+          34,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          50,
+          34,
+          [
+            156,
+            89,
+            56,
+            255
+          ]
+        ],
+        [
+          27,
+          47,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ],
+        [
+          28,
+          47,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ],
+        [
+          38,
+          49,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "864cfab0d40ad71396efbf968d069864a1d07f79ed17739d4dacee805563a8cd",
+      "alpha_bounds": [
+        18,
+        8,
+        58,
+        56
+      ],
+      "palette_colors": 12,
+      "foreground_components_4_connected": [
+        1106
+      ],
+      "hands": [
+        {
+          "box": [
+            19,
+            38,
+            23,
+            43
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            54,
+            30,
+            58,
+            35
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "duration_ms": 40,
+      "source_key": "attack-recoil",
+      "pixel_edits": [],
+      "rgba_sha256": "23e14e3646f1573c1c638e4ffee92290b4f23c593562a8fd1b72a7b18a7f2eb1",
+      "alpha_bounds": [
+        17,
+        8,
+        48,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1041
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            42,
+            22,
+            47
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            41,
+            41,
+            45,
+            46
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "duration_ms": 30,
+      "source_key": "attack-recoil",
+      "pixel_edits": [
+        [
+          24,
+          47,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          25,
+          47,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          26,
+          48,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ],
+        [
+          36,
+          47,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          37,
+          47,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "cfad8927732105ecc33e21ea22e6e4aa28cc79256027b7084d719722e63c1aad",
+      "alpha_bounds": [
+        17,
+        8,
+        48,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1042
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            42,
+            22,
+            47
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            41,
+            41,
+            45,
+            46
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "duration_ms": 30,
+      "source_key": "attack-recoil",
+      "pixel_edits": [
+        [
+          23,
+          49,
+          [
+            244,
+            203,
+            112,
+            255
+          ]
+        ],
+        [
+          24,
+          49,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          25,
+          49,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ],
+        [
+          34,
+          49,
+          [
+            156,
+            89,
+            56,
+            255
+          ]
+        ],
+        [
+          35,
+          49,
+          [
+            117,
+            64,
+            50,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "77f016f2f102ab0a1839c7a6bb5dd951a9b59279ebec17436ce1e2d97a16dbc0",
+      "alpha_bounds": [
+        17,
+        8,
+        48,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1043
+      ],
+      "hands": [
+        {
+          "box": [
+            18,
+            42,
+            22,
+            47
+          ],
+          "opaque_pixels": 17,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            41,
+            41,
+            45,
+            46
+          ],
+          "opaque_pixels": 16,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "duration_ms": 40,
+      "source_key": "neutral",
+      "pixel_edits": [
+        [
+          27,
+          49,
+          [
+            221,
+            161,
+            75,
+            255
+          ]
+        ],
+        [
+          28,
+          49,
+          [
+            188,
+            120,
+            59,
+            255
+          ]
+        ]
+      ],
+      "rgba_sha256": "d186fe4594538a371bb188d5c2074d9af8a0ec709e2c7a5e852da2002411785a",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "duration_ms": 60,
+      "source_key": "neutral",
+      "pixel_edits": [],
+      "rgba_sha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "alpha_bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "palette_colors": 13,
+      "foreground_components_4_connected": [
+        1092
+      ],
+      "hands": [
+        {
+          "box": [
+            17,
+            43,
+            21,
+            48
+          ],
+          "opaque_pixels": 15,
+          "connected_to_body": true
+        },
+        {
+          "box": [
+            43,
+            43,
+            47,
+            48
+          ],
+          "opaque_pixels": 14,
+          "connected_to_body": true
+        }
+      ]
+    }
+  ]
+}

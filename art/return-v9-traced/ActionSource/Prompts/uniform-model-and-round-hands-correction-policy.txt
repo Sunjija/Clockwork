@@ -1,0 +1,5 @@
+Latest user correction overrides prior source acceptance: use the ORIGINAL Tique model as one fixed character identity in every complete-body pose. Reference generated images describe the action only.
+The exact original native head is31x27 at reference(16,8)-(47,35), torso/chest21x16 at(23,34)-(44,50), heart+rim13x10 at(30,37)-(43,47). Preserve every internal face/eye/ear/highlight/core pixel and model proportions; move the whole head/chest together with stance. Do not squash or stretch bands.
+New action hands MUST be tiny ROUND BALLS, no fingers, no thumb, no split fingertips, no knuckles. Native4x4 silhouette2/4/4/2, only dark INK outline and GOLD face. Wrist may join one side. No giant fists.
+The already generated source poses and their exact historic prompts are preserved unchanged. Their different faces/chests and thumb-like hand chips are rejected as model identity, then corrected through explicit per-pixel native delta files.
+Neutral/Idle endpoints retain exact original RGBA because original tiny hands have no actual fingers.

@@ -1,0 +1,138 @@
+[
+  {
+    "key": "attack-windup",
+    "source": "Generated/attack-windup.png",
+    "prompt": "Prompts/attack-windup.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-1cd77024-425f-4a6c-80f6-dfb6bb9b4f97.png",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "5f04fffda2ea79f1ccead1a8fae96a7cb14a8a1d0717bbfabee0bbb837e1822e",
+    "nativeRGBAsha256": "270b5e711bdabef82a51943924b1f747515324d0e6dba8e68201330cf184c55a"
+  },
+  {
+    "key": "attack-impact",
+    "source": "Generated/attack-impact.png",
+    "prompt": "Prompts/attack-impact.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-523d9c03-9b25-426f-be52-e52b6132e6d1.png",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "287c5d411e5646b5738a218ae2c22cc591c297d2d588c3f68188f1b0176d9d0a",
+    "nativeRGBAsha256": "44f7bb4cbd15e25597e6dc2b55d3921fe533bbd10204286ed9a42b357cd010c5"
+  },
+  {
+    "key": "attack-recoil",
+    "source": "Generated/attack-recoil.png",
+    "prompt": "Prompts/attack-recoil.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-a1923bf0-739c-4152-a423-bf78e6c2f180.png",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "19e96f75599bcf8b219d3b1d635f4ed914dddae0bafbe8baebf1a4ef292f3be9",
+    "nativeRGBAsha256": "23e14e3646f1573c1c638e4ffee92290b4f23c593562a8fd1b72a7b18a7f2eb1"
+  },
+  {
+    "key": "dash-preload",
+    "source": "Generated/dash-preload.png",
+    "prompt": "Prompts/dash-preload.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-d778cfa1-a44e-48bb-af4f-114cbb44ca52.png",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "0feb9f0ead4b65c0423293e113c1827eb1c19cc4666d6f9263fca4a0358f53f0",
+    "nativeRGBAsha256": "8d3ddaf403a51ec44641fe9a5d40d73947a8b0b7efa0e8eebcea068ed9f02af3"
+  },
+  {
+    "key": "dash-travel-a",
+    "source": "Generated/dash-travel-a.png",
+    "prompt": "Prompts/dash-travel-a.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-3681412b-9664-4af8-8273-51530c4180e6.png",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "0c179ce21aeaaabb861972b7fe45ef2f3f0fa455aef3ed69f45b9271ef274703",
+    "nativeRGBAsha256": "fd61338cd0a63df37d682b00252f49f665fa3cd07a325e7991fe2e63c41c44e2"
+  },
+  {
+    "key": "dash-travel-b",
+    "source": "Generated/dash-travel-b.png",
+    "prompt": "Prompts/dash-travel-b.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-69f1a4da-ea80-4e31-a1a9-633cf98b683d.png",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "4fe7972f86112c027ed3ffd0972e31c6d5d7851ac4474caff998e8e2b31a2b10",
+    "nativeRGBAsha256": "a8524315ce6c54427974a054f5a6f2d0387ef9799ce382852dc27a70052824ea"
+  },
+  {
+    "key": "dash-braking",
+    "source": "Generated/dash-braking.png",
+    "prompt": "Prompts/dash-braking.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-299778be-7b2c-4998-af9a-71e12d7fd82d.png",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "0cc41b7b018d37e7db4578b055d581ea51b2b872c636c7d2c05b95daecf07df5",
+    "nativeRGBAsha256": "783466fc961ba187f15b7f39bec5dcad49c3fc7d276a9bbfbb03d88afeb47aa3"
+  },
+  {
+    "key": "attack-extension",
+    "source": "Generated/attack-extension.png",
+    "prompt": "Prompts/attack-extension.txt",
+    "status": "accepted-generated-complete-body-and-native-trace",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "56d78dd715201ca54258e4554a5b57694bba4ea93b7545af897bee2e76ff4286",
+    "nativeRGBAsha256": "3fd8cb40065ef4d33c1fcc0ee0a57133b1aae4b9519738051ab9d7950cad2680",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-d3e59f34-8a66-4945-abb8-c8d6b8d4894d.png"
+  }
+]

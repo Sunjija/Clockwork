@@ -1,0 +1,6 @@
+{
+  "size": [5, 5],
+  "rows": [".000.", "06440", "04210", "02110", ".000."],
+  "paletteOrder": ["INK", "BRASS", "GOLD", "SHADE", "LIGHT", "MID", "WHITE"],
+  "source": "Original Idle left-hand envelope is five native pixels wide. Shared compact fingerless circle stays in that envelope. No fingers or thumb; transparent corners; shoulder/forearm source determines wrist contact. Original approved Idle/Walk stay byte-identical."
+}

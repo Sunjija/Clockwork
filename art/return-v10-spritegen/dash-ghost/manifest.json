@@ -1,0 +1,112 @@
+{
+  "frame_count": 12,
+  "frame_size": [
+    64,
+    64
+  ],
+  "pixel_pivot": [
+    32,
+    56
+  ],
+  "durations_ms": [
+    40,
+    30,
+    30,
+    30,
+    40,
+    50,
+    40,
+    35,
+    35,
+    35,
+    35,
+    40
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "duration_ms": 40,
+      "sha256": "4090a30a6518672156314bb764bb641213d7699319e6a43a1e85ed723e923318",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "duration_ms": 30,
+      "sha256": "e21ebf70ce78d2ce5c4e72c940321e5b47c5cbd74cad1f8b98f15f7d0ccf2659",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "duration_ms": 30,
+      "sha256": "6db7548b5e10020ee2555d6857fa87bc54fb66a66f5b138c7a364841e491f56c",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "duration_ms": 30,
+      "sha256": "0d870832fcc12379813a1c343f08a551390731c444bbd7cf64b13c2508424873",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "duration_ms": 40,
+      "sha256": "141b01e970547ae012eb58802931171353ec60e729f7feadad335dd118baaf97",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "duration_ms": 50,
+      "sha256": "511a980c58675ae5f46659a9997f17502b0ef47c058132c4c50df2372f962f55",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "duration_ms": 40,
+      "sha256": "bc7b911dadc85ea4f2735eb6d865c09fba31cab08d8b5d46a3751ac24e86fc4c",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "duration_ms": 35,
+      "sha256": "93c171dab33e4ee11532768d73ea5abe1927d303b68d55d2d0817aace4e47ffa",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "duration_ms": 35,
+      "sha256": "56e1dd844db42b034ec855c74e341c5084051a4a35ebd6faf3494f3c8c3ef6a8",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "duration_ms": 35,
+      "sha256": "84c9351accb96e97f177eb677ceba538ddb4047e0e0ba1cc31c0c8a6547bbe93",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "duration_ms": 35,
+      "sha256": "719b283ee0690e619a01de196ae19a5e3fd83c8ec1708519e705ca0f70158446",
+      "alpha_matches_dash": true
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "duration_ms": 40,
+      "sha256": "4090a30a6518672156314bb764bb641213d7699319e6a43a1e85ed723e923318",
+      "alpha_matches_dash": true
+    }
+  ],
+  "method": "Dash silhouette byte-exact alpha; cyan recolor only"
+}

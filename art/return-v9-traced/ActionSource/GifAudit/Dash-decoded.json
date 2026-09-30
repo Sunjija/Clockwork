@@ -1,0 +1,134 @@
+[
+  {
+    "index": 0,
+    "duration": 40,
+    "bbox": [
+      128,
+      64,
+      376,
+      448
+    ],
+    "colors": 14
+  },
+  {
+    "index": 1,
+    "duration": 30,
+    "bbox": [
+      112,
+      96,
+      384,
+      448
+    ],
+    "colors": 13
+  },
+  {
+    "index": 2,
+    "duration": 30,
+    "bbox": [
+      112,
+      96,
+      384,
+      448
+    ],
+    "colors": 13
+  },
+  {
+    "index": 3,
+    "duration": 30,
+    "bbox": [
+      120,
+      80,
+      392,
+      448
+    ],
+    "colors": 13
+  },
+  {
+    "index": 4,
+    "duration": 40,
+    "bbox": [
+      120,
+      80,
+      392,
+      448
+    ],
+    "colors": 13
+  },
+  {
+    "index": 5,
+    "duration": 50,
+    "bbox": [
+      144,
+      80,
+      392,
+      448
+    ],
+    "colors": 13
+  },
+  {
+    "index": 6,
+    "duration": 40,
+    "bbox": [
+      144,
+      80,
+      392,
+      448
+    ],
+    "colors": 13
+  },
+  {
+    "index": 7,
+    "duration": 30,
+    "bbox": [
+      120,
+      80,
+      392,
+      448
+    ],
+    "colors": 13
+  },
+  {
+    "index": 8,
+    "duration": 30,
+    "bbox": [
+      96,
+      80,
+      376,
+      448
+    ],
+    "colors": 14
+  },
+  {
+    "index": 9,
+    "duration": 30,
+    "bbox": [
+      96,
+      80,
+      376,
+      448
+    ],
+    "colors": 14
+  },
+  {
+    "index": 10,
+    "duration": 30,
+    "bbox": [
+      128,
+      64,
+      376,
+      448
+    ],
+    "colors": 14
+  },
+  {
+    "index": 11,
+    "duration": 40,
+    "bbox": [
+      128,
+      64,
+      376,
+      448
+    ],
+    "colors": 14
+  }
+]

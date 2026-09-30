@@ -1,0 +1,1088 @@
+{
+  "revision": "V9",
+  "method": "independent complete-character single pose images, native whole-body traces, deliberate contour/exposure edits",
+  "sourcePolicy": "No generated animation sheet/video; original neutral and approved Walk retained",
+  "canvas": [
+    64,
+    64
+  ],
+  "footPivot": [
+    32,
+    56
+  ],
+  "frames": [
+    {
+      "clip": "Idle",
+      "index": 0,
+      "source": "art/return-v9-traced/Idle/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/00.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Idle",
+      "index": 1,
+      "source": "art/return-v9-traced/Idle/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/01.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Idle",
+      "index": 2,
+      "source": "art/return-v9-traced/Idle/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/02.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Idle",
+      "index": 3,
+      "source": "art/return-v9-traced/Idle/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/03.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Idle",
+      "index": 4,
+      "source": "art/return-v9-traced/Idle/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/04.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Idle",
+      "index": 5,
+      "source": "art/return-v9-traced/Idle/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/05.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Idle",
+      "index": 6,
+      "source": "art/return-v9-traced/Idle/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/06.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Idle",
+      "index": 7,
+      "source": "art/return-v9-traced/Idle/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Idle/07.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 125
+    },
+    {
+      "clip": "Attack",
+      "index": 0,
+      "source": "art/return-v9-traced/Attack/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/00.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 20
+    },
+    {
+      "clip": "Attack",
+      "index": 1,
+      "source": "art/return-v9-traced/Attack/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/01.png",
+      "sha256": "2a6686d893f5c605138e6f22bc4d2ea63603626a5c87ae2d0e784352065321f8",
+      "duration": 30
+    },
+    {
+      "clip": "Attack",
+      "index": 2,
+      "source": "art/return-v9-traced/Attack/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/02.png",
+      "sha256": "2a6686d893f5c605138e6f22bc4d2ea63603626a5c87ae2d0e784352065321f8",
+      "duration": 40
+    },
+    {
+      "clip": "Attack",
+      "index": 3,
+      "source": "art/return-v9-traced/Attack/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/03.png",
+      "sha256": "4fb032a7c2684fbc48167cfab55cfa0af38eb40d2c1715744de161e5945a248e",
+      "duration": 30
+    },
+    {
+      "clip": "Attack",
+      "index": 4,
+      "source": "art/return-v9-traced/Attack/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/04.png",
+      "sha256": "ac2227119a2f07589297014e8a566a3ed2ae04c1e5d70edfff2236b25f043c39",
+      "duration": 70
+    },
+    {
+      "clip": "Attack",
+      "index": 5,
+      "source": "art/return-v9-traced/Attack/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/05.png",
+      "sha256": "ac2227119a2f07589297014e8a566a3ed2ae04c1e5d70edfff2236b25f043c39",
+      "duration": 30
+    },
+    {
+      "clip": "Attack",
+      "index": 6,
+      "source": "art/return-v9-traced/Attack/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/06.png",
+      "sha256": "ac2227119a2f07589297014e8a566a3ed2ae04c1e5d70edfff2236b25f043c39",
+      "duration": 40
+    },
+    {
+      "clip": "Attack",
+      "index": 7,
+      "source": "art/return-v9-traced/Attack/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/07.png",
+      "sha256": "5adbdf8923a63dba331e541781bfa0d70df28c76e688a810c78ca8cf8c8a8137",
+      "duration": 40
+    },
+    {
+      "clip": "Attack",
+      "index": 8,
+      "source": "art/return-v9-traced/Attack/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/08.png",
+      "sha256": "5adbdf8923a63dba331e541781bfa0d70df28c76e688a810c78ca8cf8c8a8137",
+      "duration": 30
+    },
+    {
+      "clip": "Attack",
+      "index": 9,
+      "source": "art/return-v9-traced/Attack/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/09.png",
+      "sha256": "5adbdf8923a63dba331e541781bfa0d70df28c76e688a810c78ca8cf8c8a8137",
+      "duration": 30
+    },
+    {
+      "clip": "Attack",
+      "index": 10,
+      "source": "art/return-v9-traced/Attack/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/10.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 40
+    },
+    {
+      "clip": "Attack",
+      "index": 11,
+      "source": "art/return-v9-traced/Attack/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Attack/11.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 60
+    },
+    {
+      "clip": "Jump",
+      "index": 0,
+      "source": "art/return-v9-traced/Jump/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/00.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 60
+    },
+    {
+      "clip": "Jump",
+      "index": 1,
+      "source": "art/return-v9-traced/Jump/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/01.png",
+      "sha256": "419b58041ef467d1c88a1f024bba6a327f2af36c0efa387b5cc3f5f5605e0632",
+      "duration": 30
+    },
+    {
+      "clip": "Jump",
+      "index": 2,
+      "source": "art/return-v9-traced/Jump/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/02.png",
+      "sha256": "b090228a587b3c43cd35b91afc5e3aa9c4230762a05f49b47e13401e93ff5c50",
+      "duration": 40
+    },
+    {
+      "clip": "Jump",
+      "index": 3,
+      "source": "art/return-v9-traced/Jump/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/03.png",
+      "sha256": "d0700decb1682ab8d14e4f702632182ba829f2a7f0d6be0742a36d766e59628f",
+      "duration": 40
+    },
+    {
+      "clip": "Jump",
+      "index": 4,
+      "source": "art/return-v9-traced/Jump/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/04.png",
+      "sha256": "ebdbc1e93dbc67a71e2d48d26136a6f12c1481f0267f076fdcfce45fe75efd73",
+      "duration": 90
+    },
+    {
+      "clip": "Jump",
+      "index": 5,
+      "source": "art/return-v9-traced/Jump/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/05.png",
+      "sha256": "0b0ccf12e3c61be4263c7913cf0f04e67f83288e16b563c3aedf2c7cd19372d6",
+      "duration": 70
+    },
+    {
+      "clip": "Jump",
+      "index": 6,
+      "source": "art/return-v9-traced/Jump/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/06.png",
+      "sha256": "51696f7b68e7d0e50721970f7f1451bc897a9bbee28ddfe3b59ab706fa0e226c",
+      "duration": 60
+    },
+    {
+      "clip": "Jump",
+      "index": 7,
+      "source": "art/return-v9-traced/Jump/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/07.png",
+      "sha256": "6e2bbfe72bd1e3565525bf4811566bbe929171648cb0465a427b088792d73540",
+      "duration": 40
+    },
+    {
+      "clip": "Jump",
+      "index": 8,
+      "source": "art/return-v9-traced/Jump/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/08.png",
+      "sha256": "55b9172763e60783be423db7801a715a8bcff43c6e0a7ff1fec18203fbda33c2",
+      "duration": 70
+    },
+    {
+      "clip": "Jump",
+      "index": 9,
+      "source": "art/return-v9-traced/Jump/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/09.png",
+      "sha256": "55b9172763e60783be423db7801a715a8bcff43c6e0a7ff1fec18203fbda33c2",
+      "duration": 60
+    },
+    {
+      "clip": "Jump",
+      "index": 10,
+      "source": "art/return-v9-traced/Jump/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/10.png",
+      "sha256": "ad9b09cc0edba681c81182abef67254c2a442110444d5f36a9caff06a7361482",
+      "duration": 35
+    },
+    {
+      "clip": "Jump",
+      "index": 11,
+      "source": "art/return-v9-traced/Jump/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/11.png",
+      "sha256": "9ebd9d7b900d369c5dda053c733e1de4fa139f5543a4759ea70cbe9931e704e4",
+      "duration": 35
+    },
+    {
+      "clip": "Jump",
+      "index": 12,
+      "source": "art/return-v9-traced/Jump/12.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/12.png",
+      "sha256": "dc59dfe597abfb4cf3fee6f42b2e999492773ad3b879a81c46ce5bb88d6a8029",
+      "duration": 45
+    },
+    {
+      "clip": "Jump",
+      "index": 13,
+      "source": "art/return-v9-traced/Jump/13.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/13.png",
+      "sha256": "419b58041ef467d1c88a1f024bba6a327f2af36c0efa387b5cc3f5f5605e0632",
+      "duration": 45
+    },
+    {
+      "clip": "Jump",
+      "index": 14,
+      "source": "art/return-v9-traced/Jump/14.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Jump/14.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 80
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 0,
+      "source": "art/return-v9-traced/DoubleJump/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/00.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 50
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 1,
+      "source": "art/return-v9-traced/DoubleJump/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/01.png",
+      "sha256": "ebdbc1e93dbc67a71e2d48d26136a6f12c1481f0267f076fdcfce45fe75efd73",
+      "duration": 30
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 2,
+      "source": "art/return-v9-traced/DoubleJump/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/02.png",
+      "sha256": "50fddabbb4c712aa8b97b93e0f932adc58304380ed88981978bdf4f5a8c23031",
+      "duration": 45
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 3,
+      "source": "art/return-v9-traced/DoubleJump/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/03.png",
+      "sha256": "33d8f91649b89ba76132b418c17e0c5b86591b3f6bd727c70d47a210614924bc",
+      "duration": 45
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 4,
+      "source": "art/return-v9-traced/DoubleJump/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/04.png",
+      "sha256": "712ffd8099eacb85da26e2122e076772d3f1b47d0a0751ac99dd03319ea0dd94",
+      "duration": 90
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 5,
+      "source": "art/return-v9-traced/DoubleJump/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/05.png",
+      "sha256": "0b0ccf12e3c61be4263c7913cf0f04e67f83288e16b563c3aedf2c7cd19372d6",
+      "duration": 60
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 6,
+      "source": "art/return-v9-traced/DoubleJump/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/06.png",
+      "sha256": "51696f7b68e7d0e50721970f7f1451bc897a9bbee28ddfe3b59ab706fa0e226c",
+      "duration": 40
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 7,
+      "source": "art/return-v9-traced/DoubleJump/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/07.png",
+      "sha256": "6e2bbfe72bd1e3565525bf4811566bbe929171648cb0465a427b088792d73540",
+      "duration": 70
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 8,
+      "source": "art/return-v9-traced/DoubleJump/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/08.png",
+      "sha256": "55b9172763e60783be423db7801a715a8bcff43c6e0a7ff1fec18203fbda33c2",
+      "duration": 70
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 9,
+      "source": "art/return-v9-traced/DoubleJump/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/09.png",
+      "sha256": "ad9b09cc0edba681c81182abef67254c2a442110444d5f36a9caff06a7361482",
+      "duration": 35
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 10,
+      "source": "art/return-v9-traced/DoubleJump/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/10.png",
+      "sha256": "9ebd9d7b900d369c5dda053c733e1de4fa139f5543a4759ea70cbe9931e704e4",
+      "duration": 45
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 11,
+      "source": "art/return-v9-traced/DoubleJump/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/11.png",
+      "sha256": "419b58041ef467d1c88a1f024bba6a327f2af36c0efa387b5cc3f5f5605e0632",
+      "duration": 50
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 12,
+      "source": "art/return-v9-traced/DoubleJump/12.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/DoubleJump/12.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 80
+    },
+    {
+      "clip": "Dash",
+      "index": 0,
+      "source": "art/return-v9-traced/Dash/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/00.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 40
+    },
+    {
+      "clip": "Dash",
+      "index": 1,
+      "source": "art/return-v9-traced/Dash/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/01.png",
+      "sha256": "9d98fb78a0564cc12ee789289ab6c5c96202c2987b2d093f89bc39c5eb64383d",
+      "duration": 30
+    },
+    {
+      "clip": "Dash",
+      "index": 2,
+      "source": "art/return-v9-traced/Dash/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/02.png",
+      "sha256": "9d98fb78a0564cc12ee789289ab6c5c96202c2987b2d093f89bc39c5eb64383d",
+      "duration": 30
+    },
+    {
+      "clip": "Dash",
+      "index": 3,
+      "source": "art/return-v9-traced/Dash/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/03.png",
+      "sha256": "0c3489e94ff7b228fb8bb494310fddbcaee4d1125272377c03abf2be6aea9374",
+      "duration": 30
+    },
+    {
+      "clip": "Dash",
+      "index": 4,
+      "source": "art/return-v9-traced/Dash/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/04.png",
+      "sha256": "aa3182279f363f6663f4bbf3d4f1dfd08b06f7f99ab09c44f74cb4ce192b2ac1",
+      "duration": 40
+    },
+    {
+      "clip": "Dash",
+      "index": 5,
+      "source": "art/return-v9-traced/Dash/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/05.png",
+      "sha256": "306c8be4e0d0d7917e9ce5ed4139d4e089a1d2654ce4aa3518da9cbcf857525c",
+      "duration": 50
+    },
+    {
+      "clip": "Dash",
+      "index": 6,
+      "source": "art/return-v9-traced/Dash/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/06.png",
+      "sha256": "306c8be4e0d0d7917e9ce5ed4139d4e089a1d2654ce4aa3518da9cbcf857525c",
+      "duration": 40
+    },
+    {
+      "clip": "Dash",
+      "index": 7,
+      "source": "art/return-v9-traced/Dash/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/07.png",
+      "sha256": "0c3489e94ff7b228fb8bb494310fddbcaee4d1125272377c03abf2be6aea9374",
+      "duration": 35
+    },
+    {
+      "clip": "Dash",
+      "index": 8,
+      "source": "art/return-v9-traced/Dash/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/08.png",
+      "sha256": "f974c4ea0872bd5ba482da5b8067447323fd36999906544c471d12661263b76e",
+      "duration": 35
+    },
+    {
+      "clip": "Dash",
+      "index": 9,
+      "source": "art/return-v9-traced/Dash/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/09.png",
+      "sha256": "f974c4ea0872bd5ba482da5b8067447323fd36999906544c471d12661263b76e",
+      "duration": 35
+    },
+    {
+      "clip": "Dash",
+      "index": 10,
+      "source": "art/return-v9-traced/Dash/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/10.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 35
+    },
+    {
+      "clip": "Dash",
+      "index": 11,
+      "source": "art/return-v9-traced/Dash/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Dash/11.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 40
+    },
+    {
+      "clip": "Walk",
+      "index": 0,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/00.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb",
+      "duration": 60
+    },
+    {
+      "clip": "Walk",
+      "index": 1,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/01.png",
+      "sha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46",
+      "duration": 40
+    },
+    {
+      "clip": "Walk",
+      "index": 2,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/02.png",
+      "sha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+      "duration": 80
+    },
+    {
+      "clip": "Walk",
+      "index": 3,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/03.png",
+      "sha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2",
+      "duration": 60
+    },
+    {
+      "clip": "Walk",
+      "index": 4,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/04.png",
+      "sha256": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da",
+      "duration": 40
+    },
+    {
+      "clip": "Walk",
+      "index": 5,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/05.png",
+      "sha256": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f",
+      "duration": 40
+    },
+    {
+      "clip": "Walk",
+      "index": 6,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/06.png",
+      "sha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9",
+      "duration": 60
+    },
+    {
+      "clip": "Walk",
+      "index": 7,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/07.png",
+      "sha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+      "duration": 100
+    },
+    {
+      "clip": "Walk",
+      "index": 8,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/08.png",
+      "sha256": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d",
+      "duration": 40
+    },
+    {
+      "clip": "Walk",
+      "index": 9,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/09.png",
+      "sha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9",
+      "duration": 60
+    },
+    {
+      "clip": "Walk",
+      "index": 10,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/10.png",
+      "sha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be",
+      "duration": 60
+    },
+    {
+      "clip": "Walk",
+      "index": 11,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/11.png",
+      "sha256": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9",
+      "duration": 40
+    },
+    {
+      "clip": "Walk",
+      "index": 12,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/12.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/12.png",
+      "sha256": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9",
+      "duration": 40
+    },
+    {
+      "clip": "Walk",
+      "index": 13,
+      "source": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Walk/13.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/Walk/13.png",
+      "sha256": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48",
+      "duration": 40
+    },
+    {
+      "clip": "hurt-pose",
+      "index": 0,
+      "source": "art/return-v9-traced/hurt-pose/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/hurt-pose/00.png",
+      "sha256": "c772cfb455db33679d547d9823d5994bdadf4d979fccec2b479ce0f16a99732b",
+      "duration": 40
+    },
+    {
+      "clip": "hurt-pose",
+      "index": 1,
+      "source": "art/return-v9-traced/hurt-pose/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/hurt-pose/01.png",
+      "sha256": "1277b3716c71bd9dd5adbc932597ca67006dda4b0c7783ba6685cc6b07b317b5",
+      "duration": 50
+    },
+    {
+      "clip": "hurt-pose",
+      "index": 2,
+      "source": "art/return-v9-traced/hurt-pose/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/hurt-pose/02.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "duration": 60
+    },
+    {
+      "clip": "push-side",
+      "index": 0,
+      "source": "art/return-v9-traced/push-side/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/00.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 60
+    },
+    {
+      "clip": "push-side",
+      "index": 1,
+      "source": "art/return-v9-traced/push-side/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/01.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 40
+    },
+    {
+      "clip": "push-side",
+      "index": 2,
+      "source": "art/return-v9-traced/push-side/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/02.png",
+      "sha256": "09c697ec7b8aa81598382f2dd4a51231c89f17eeceefcf9dead4ad3b2e680734",
+      "duration": 80
+    },
+    {
+      "clip": "push-side",
+      "index": 3,
+      "source": "art/return-v9-traced/push-side/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/03.png",
+      "sha256": "09c697ec7b8aa81598382f2dd4a51231c89f17eeceefcf9dead4ad3b2e680734",
+      "duration": 60
+    },
+    {
+      "clip": "push-side",
+      "index": 4,
+      "source": "art/return-v9-traced/push-side/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/04.png",
+      "sha256": "09c697ec7b8aa81598382f2dd4a51231c89f17eeceefcf9dead4ad3b2e680734",
+      "duration": 40
+    },
+    {
+      "clip": "push-side",
+      "index": 5,
+      "source": "art/return-v9-traced/push-side/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/05.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 40
+    },
+    {
+      "clip": "push-side",
+      "index": 6,
+      "source": "art/return-v9-traced/push-side/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/06.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 60
+    },
+    {
+      "clip": "push-side",
+      "index": 7,
+      "source": "art/return-v9-traced/push-side/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/07.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 100
+    },
+    {
+      "clip": "push-side",
+      "index": 8,
+      "source": "art/return-v9-traced/push-side/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/08.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 40
+    },
+    {
+      "clip": "push-side",
+      "index": 9,
+      "source": "art/return-v9-traced/push-side/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/09.png",
+      "sha256": "1b2fb39ef8e391a0d7b8138b410b496f1b881b891d5234b110cef84c5ac4bd72",
+      "duration": 60
+    },
+    {
+      "clip": "push-side",
+      "index": 10,
+      "source": "art/return-v9-traced/push-side/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/10.png",
+      "sha256": "1b2fb39ef8e391a0d7b8138b410b496f1b881b891d5234b110cef84c5ac4bd72",
+      "duration": 60
+    },
+    {
+      "clip": "push-side",
+      "index": 11,
+      "source": "art/return-v9-traced/push-side/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/11.png",
+      "sha256": "1b2fb39ef8e391a0d7b8138b410b496f1b881b891d5234b110cef84c5ac4bd72",
+      "duration": 40
+    },
+    {
+      "clip": "push-side",
+      "index": 12,
+      "source": "art/return-v9-traced/push-side/12.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/12.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 40
+    },
+    {
+      "clip": "push-side",
+      "index": 13,
+      "source": "art/return-v9-traced/push-side/13.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-side/13.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 40
+    },
+    {
+      "clip": "push-brace-side",
+      "index": 0,
+      "source": "art/return-v9-traced/push-brace-side/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-brace-side/00.png",
+      "sha256": "7b07261aafd50721946d7dfa89f376ee959e606fda9700c38bd2320377fb5bef",
+      "duration": 1000
+    },
+    {
+      "clip": "push-up",
+      "index": 0,
+      "source": "art/return-v9-traced/push-up/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/00.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 60
+    },
+    {
+      "clip": "push-up",
+      "index": 1,
+      "source": "art/return-v9-traced/push-up/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/01.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 40
+    },
+    {
+      "clip": "push-up",
+      "index": 2,
+      "source": "art/return-v9-traced/push-up/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/02.png",
+      "sha256": "94507c236e444c2aff323e6ba9929d7c9c2e6074ab9c3292b290e81f57efd9f7",
+      "duration": 80
+    },
+    {
+      "clip": "push-up",
+      "index": 3,
+      "source": "art/return-v9-traced/push-up/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/03.png",
+      "sha256": "94507c236e444c2aff323e6ba9929d7c9c2e6074ab9c3292b290e81f57efd9f7",
+      "duration": 60
+    },
+    {
+      "clip": "push-up",
+      "index": 4,
+      "source": "art/return-v9-traced/push-up/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/04.png",
+      "sha256": "94507c236e444c2aff323e6ba9929d7c9c2e6074ab9c3292b290e81f57efd9f7",
+      "duration": 40
+    },
+    {
+      "clip": "push-up",
+      "index": 5,
+      "source": "art/return-v9-traced/push-up/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/05.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 40
+    },
+    {
+      "clip": "push-up",
+      "index": 6,
+      "source": "art/return-v9-traced/push-up/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/06.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 60
+    },
+    {
+      "clip": "push-up",
+      "index": 7,
+      "source": "art/return-v9-traced/push-up/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/07.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 100
+    },
+    {
+      "clip": "push-up",
+      "index": 8,
+      "source": "art/return-v9-traced/push-up/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/08.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 40
+    },
+    {
+      "clip": "push-up",
+      "index": 9,
+      "source": "art/return-v9-traced/push-up/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/09.png",
+      "sha256": "d12795546e257bc794dadcbf3d3bf1c3aec18353ddc063d3f48e7b0ea9267df5",
+      "duration": 60
+    },
+    {
+      "clip": "push-up",
+      "index": 10,
+      "source": "art/return-v9-traced/push-up/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/10.png",
+      "sha256": "d12795546e257bc794dadcbf3d3bf1c3aec18353ddc063d3f48e7b0ea9267df5",
+      "duration": 60
+    },
+    {
+      "clip": "push-up",
+      "index": 11,
+      "source": "art/return-v9-traced/push-up/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/11.png",
+      "sha256": "d12795546e257bc794dadcbf3d3bf1c3aec18353ddc063d3f48e7b0ea9267df5",
+      "duration": 40
+    },
+    {
+      "clip": "push-up",
+      "index": 12,
+      "source": "art/return-v9-traced/push-up/12.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/12.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 40
+    },
+    {
+      "clip": "push-up",
+      "index": 13,
+      "source": "art/return-v9-traced/push-up/13.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-up/13.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 40
+    },
+    {
+      "clip": "push-brace-up",
+      "index": 0,
+      "source": "art/return-v9-traced/push-brace-up/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-brace-up/00.png",
+      "sha256": "8ce8d0a40acd4bcba857866450e1bfb90e9b32e7407a089dd13595a9f09b4a75",
+      "duration": 1000
+    },
+    {
+      "clip": "push-down",
+      "index": 0,
+      "source": "art/return-v9-traced/push-down/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/00.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 60
+    },
+    {
+      "clip": "push-down",
+      "index": 1,
+      "source": "art/return-v9-traced/push-down/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/01.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 40
+    },
+    {
+      "clip": "push-down",
+      "index": 2,
+      "source": "art/return-v9-traced/push-down/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/02.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 80
+    },
+    {
+      "clip": "push-down",
+      "index": 3,
+      "source": "art/return-v9-traced/push-down/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/03.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 60
+    },
+    {
+      "clip": "push-down",
+      "index": 4,
+      "source": "art/return-v9-traced/push-down/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/04.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 40
+    },
+    {
+      "clip": "push-down",
+      "index": 5,
+      "source": "art/return-v9-traced/push-down/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/05.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 40
+    },
+    {
+      "clip": "push-down",
+      "index": 6,
+      "source": "art/return-v9-traced/push-down/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/06.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 60
+    },
+    {
+      "clip": "push-down",
+      "index": 7,
+      "source": "art/return-v9-traced/push-down/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/07.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 100
+    },
+    {
+      "clip": "push-down",
+      "index": 8,
+      "source": "art/return-v9-traced/push-down/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/08.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 40
+    },
+    {
+      "clip": "push-down",
+      "index": 9,
+      "source": "art/return-v9-traced/push-down/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/09.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 60
+    },
+    {
+      "clip": "push-down",
+      "index": 10,
+      "source": "art/return-v9-traced/push-down/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/10.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 60
+    },
+    {
+      "clip": "push-down",
+      "index": 11,
+      "source": "art/return-v9-traced/push-down/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/11.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 40
+    },
+    {
+      "clip": "push-down",
+      "index": 12,
+      "source": "art/return-v9-traced/push-down/12.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/12.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 40
+    },
+    {
+      "clip": "push-down",
+      "index": 13,
+      "source": "art/return-v9-traced/push-down/13.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-down/13.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 40
+    },
+    {
+      "clip": "push-brace-down",
+      "index": 0,
+      "source": "art/return-v9-traced/push-brace-down/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/push-brace-down/00.png",
+      "sha256": "b978ce8254a7b4458f4c56b27b5c39e791ff253e37d3d3675cf1fdabef8011f5",
+      "duration": 1000
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 0,
+      "source": "art/return-v9-traced/dash-ghost/00.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/00.png",
+      "sha256": "ff5f5304e15f08fe023c1a0af5e2c214f810a36250bafd7f2cd01b0f818d0ff5",
+      "duration": 40
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 1,
+      "source": "art/return-v9-traced/dash-ghost/01.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/01.png",
+      "sha256": "8b403769a8c14009725f709425696f96990d5e3851bb3be3799491df26c63f71",
+      "duration": 30
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 2,
+      "source": "art/return-v9-traced/dash-ghost/02.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/02.png",
+      "sha256": "8b403769a8c14009725f709425696f96990d5e3851bb3be3799491df26c63f71",
+      "duration": 30
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 3,
+      "source": "art/return-v9-traced/dash-ghost/03.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/03.png",
+      "sha256": "84387ea08a90f7900eef788c68c9f02f7eb5ca702c730c91f78b401916e3d033",
+      "duration": 30
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 4,
+      "source": "art/return-v9-traced/dash-ghost/04.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/04.png",
+      "sha256": "2b81997e3024a4ab6939a433f62cba42308dac25d65081f224535f3539b29707",
+      "duration": 40
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 5,
+      "source": "art/return-v9-traced/dash-ghost/05.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/05.png",
+      "sha256": "f0932bcc0f7161cf111d56e9d5c31e0caccb4e27e21c97dc00a7eff9eee18a8c",
+      "duration": 50
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 6,
+      "source": "art/return-v9-traced/dash-ghost/06.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/06.png",
+      "sha256": "f0932bcc0f7161cf111d56e9d5c31e0caccb4e27e21c97dc00a7eff9eee18a8c",
+      "duration": 40
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 7,
+      "source": "art/return-v9-traced/dash-ghost/07.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/07.png",
+      "sha256": "84387ea08a90f7900eef788c68c9f02f7eb5ca702c730c91f78b401916e3d033",
+      "duration": 35
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 8,
+      "source": "art/return-v9-traced/dash-ghost/08.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/08.png",
+      "sha256": "fbcd7b966d1b49ef57332a44f793dc750a668e58ed9a338fe907fddaf6d34a68",
+      "duration": 35
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 9,
+      "source": "art/return-v9-traced/dash-ghost/09.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/09.png",
+      "sha256": "fbcd7b966d1b49ef57332a44f793dc750a668e58ed9a338fe907fddaf6d34a68",
+      "duration": 35
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 10,
+      "source": "art/return-v9-traced/dash-ghost/10.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/10.png",
+      "sha256": "ff5f5304e15f08fe023c1a0af5e2c214f810a36250bafd7f2cd01b0f818d0ff5",
+      "duration": 35
+    },
+    {
+      "clip": "dash-ghost",
+      "index": 11,
+      "source": "art/return-v9-traced/dash-ghost/11.png",
+      "runtime": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV9/dash-ghost/11.png",
+      "sha256": "ff5f5304e15f08fe023c1a0af5e2c214f810a36250bafd7f2cd01b0f818d0ff5",
+      "duration": 40
+    }
+  ],
+  "validationScope": "Packaging and APNG roundtrip only; visual/runtime review recorded separately"
+}

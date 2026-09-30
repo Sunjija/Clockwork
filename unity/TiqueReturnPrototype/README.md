@@ -1,10 +1,10 @@
-# 티크: 귀환 회로 — Unity 프로토타입 v0.5
+# 티크: 귀환 회로 — Unity 프로토타입 / 티크 모션 V10
 
 세 공간 퍼즐과 새 철갑 문지기로 개편한 독립 Unity 프로젝트입니다. Unity **6000.5.3f1**, Windows 64비트, 추가 외부 Unity 패키지 없이 동작합니다.
 
 ## 실행
 
-빌드한 PC에서는 **Play.cmd** 또는 **Builds/WindowsV5/TiqueReturn.exe**를 실행하세요. GitHub에는 소스·생성 원본·게임 에셋·검증 자료가 포함되며 빌드 산출물은 제외됩니다. 다른 PC에서는 먼저 아래 빌드 명령을 실행하고, 실행 파일을 전달할 때는 WindowsV5 폴더 전체가 필요합니다.
+빌드한 PC에서는 **Play.cmd** 또는 **Builds/WindowsV10/TiqueReturn.exe**를 실행하세요. GitHub에는 소스·생성 원본·게임 에셋·검증 자료가 포함되며 빌드 산출물은 제외됩니다. 다른 PC에서는 먼저 아래 빌드 명령을 실행하고, 실행 파일을 전달할 때는 WindowsV10 폴더 전체가 필요합니다.
 
 소스에서 실행할 때는 Unity Hub에 이 폴더를 추가하고 `Assets/Scenes/TiqueReturnV2.unity`를 여세요. 에디터 메뉴는 **Tique Return → Open Reworked Prototype**입니다. 에디터를 닫고 PowerShell에서 빌드할 수도 있습니다.
 
@@ -43,7 +43,7 @@ Unity 설치 경로가 다르면 `-Editor '설치 경로/Unity.exe'`를 지정�
 
 ## 아트
 
-최신 선택본인 티크 revision 10의 **67프레임과 타이밍을 그대로 사용**합니다. 최초 기본형 대기와 사용자가 선택한 뒤쪽 팔 공격을 유지했습니다.
+티크는 **TiqueV10의17클립·139PNG**를 사용합니다. 승인된 최초 기본형 대기와 걷기14장은 원본 바이트를 유지하고, 점프·더블점프·뒤쪽 팔 공격·대시·양손 밀기·피격은 단일 전신 이미지와 네이티브 픽셀 수정으로 다시 제작했습니다. [sprite-gen 적용 과정과 최종 검증](Docs/WorkOrderV01/tique-v10-spritegen.md). 이전 V8/V9는 사용자에게 거절된 시안이며 보존된 기술 검사 결과가 아트 승인을 뜻하지 않습니다.
 
 문지기는 얼굴 없는 각진 철제 압착부와 네 다리를 갖춘 별도 디자인입니다. v0.3에서 제작 방식을 바로잡았습니다. **동작별 단일 참고 이미지 생성 → 기준 도트 고정 → 픽셀 좌표 편집으로 동작 프레임 제작** 순서입니다. 생성한 애니메이션 시트를 잘라 쓴 v0.2 문지기 프레임은 현재 재생 경로에서 제외했습니다.
 
@@ -59,6 +59,8 @@ v0.5(작업 지시 v0.1 + v6 다듬기)는 낙하 오프닝, 픽셀 HUD·글꼴�
 
 ## 검증과 기록
 
+- [티크 V10 제작·검증·남은 판단](Docs/WorkOrderV01/tique-v10-spritegen.md)
+- [최종 빌드 및 GPU 캡처 종합 기록](QA/V10/validation-summary.json)
 - [기획과 레퍼런스](Docs/V2/design-and-references.md)
 - [현재 도트 제작 과정과 검증](Docs/V3/pixel-authored-process.md)
 - [v0.4 소품·배경 상태별 도트와 검증](Docs/V4/asset-states.md)
@@ -75,7 +77,8 @@ v0.5(작업 지시 v0.1 + v6 다듬기)는 낙하 오프닝, 픽셀 HUD·글꼴�
 python Tools/Review-Authored.py
 python Tools/Review-State-Art.py
 python Tools/Review-WorkOrder.py
-./Builds/WindowsV5/TiqueReturn.exe --return-v2-smoke --qa-dir ./QA/V5/Runtime720 -screen-width 1280 -screen-height 720 -screen-fullscreen 0
+python Tools/Review-TiqueV10.py
+./Builds/WindowsV10/TiqueReturn.exe --return-v2-smoke --qa-dir ./QA/V10/VisibleFlow -screen-width 1280 -screen-height 720 -screen-fullscreen 0
 ```
 
-자동 실행은 일반 입력 경로를 사용하며 체력 변경이나 순간이동을 하지 않습니다. 렌더 검사는 보이는 창에서 실행해야 합니다. 기술 검사 통과는 사람의 조작감, 첫 플레이 난이도·소요 시간, 최종 아트 승인을 대체하지 않습니다.
+`--return-v2-smoke`는 일반 입력 경로로 게임 흐름을 진행합니다. `--return-tique-review`는 재현 가능한 정해진 상태에서 모션을 수집하는 별도 fixture입니다. 전체 창/IMGUI 캡처는 보이는 창에서 확인해야 합니다. `-batchmode --return-offscreen-capture`를 함께 쓰면 실제 게임 카메라의 GPU RenderTexture만 수집하며 IMGUI·데스크톱 창·물리 키를 검증하지 않습니다. V10은 이 범위의14시퀀스503관찰과 Ending까지 자동 흐름을 검증했습니다. 사용자 Escape로 Computer Use가 중단되어 V10 직접 키 입력은 미검증입니다. 기술 검사 통과는 사람의 조작감, 첫 플레이 난이도·소요 시간, 최종 아트 승인을 대체하지 않습니다.

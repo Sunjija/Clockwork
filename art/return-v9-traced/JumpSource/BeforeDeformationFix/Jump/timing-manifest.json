@@ -1,0 +1,338 @@
+{
+  "clip": "Jump",
+  "frameCount": 15,
+  "durationsMs": [
+    60,
+    30,
+    40,
+    40,
+    90,
+    70,
+    60,
+    40,
+    70,
+    60,
+    35,
+    35,
+    45,
+    45,
+    80
+  ],
+  "durationMs": 800,
+  "cell": [
+    64,
+    64
+  ],
+  "pivotPixels": [
+    32,
+    56
+  ],
+  "palette": [
+    [
+      43,
+      27,
+      36,
+      255
+    ],
+    [
+      188,
+      120,
+      59,
+      255
+    ],
+    [
+      221,
+      161,
+      75,
+      255
+    ],
+    [
+      117,
+      64,
+      50,
+      255
+    ],
+    [
+      244,
+      203,
+      112,
+      255
+    ],
+    [
+      156,
+      89,
+      56,
+      255
+    ],
+    [
+      255,
+      231,
+      163,
+      255
+    ],
+    [
+      19,
+      220,
+      232,
+      255
+    ],
+    [
+      19,
+      52,
+      69,
+      255
+    ],
+    [
+      165,
+      252,
+      241,
+      255
+    ],
+    [
+      11,
+      147,
+      177,
+      255
+    ],
+    [
+      9,
+      86,
+      107,
+      255
+    ],
+    [
+      82,
+      48,
+      40,
+      255
+    ]
+  ],
+  "alpha": "binary",
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "durationMs": 60,
+      "sourceKey": "idle",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "opaquePixels": 1092,
+      "colors": 13
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "durationMs": 30,
+      "sourceKey": "07-recovery",
+      "sha256": "3f7a11fa43f1b3705bde3c4547b2c1ada0f1f7ac42f33f59c63ce8fe9a418a71",
+      "bounds": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "opaquePixels": 1075,
+      "colors": 13
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "durationMs": 40,
+      "sourceKey": "01-preload",
+      "sha256": "ef30de5867229ddb9497d8a2def473adc8a15127c8936cea6a8db3a8383a419c",
+      "bounds": [
+        16,
+        11,
+        47,
+        56
+      ],
+      "opaquePixels": 993,
+      "colors": 13
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "durationMs": 40,
+      "sourceKey": "02-extension",
+      "sha256": "2a02e14265ffc32ab56ca4fc56cfedff438db772cd1a2719d422507f6d95c13e",
+      "bounds": [
+        15,
+        8,
+        49,
+        56
+      ],
+      "opaquePixels": 1043,
+      "colors": 13
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "durationMs": 90,
+      "sourceKey": "03-ascent",
+      "sha256": "36e4e7e2cabeab54b59de733c6c967c52411198f4b72d013c395983dc480278e",
+      "bounds": [
+        16,
+        8,
+        48,
+        53
+      ],
+      "opaquePixels": 1004,
+      "colors": 13
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "durationMs": 70,
+      "sourceKey": "04-apex",
+      "sha256": "65652e4b9a51d4a41b1c92c236de12c6acda9931506fbb44d09aebcebb9a7718",
+      "bounds": [
+        16,
+        8,
+        48,
+        54
+      ],
+      "opaquePixels": 1003,
+      "colors": 13
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "durationMs": 60,
+      "sourceKey": "04-apex",
+      "sha256": "65652e4b9a51d4a41b1c92c236de12c6acda9931506fbb44d09aebcebb9a7718",
+      "bounds": [
+        16,
+        8,
+        48,
+        54
+      ],
+      "opaquePixels": 1003,
+      "colors": 13
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "durationMs": 40,
+      "sourceKey": "05-descent",
+      "sha256": "439c95d8badb0a7cc1d62c57a5532b97ebcd68c026d1fb2d0f4a6fcb8694582a",
+      "bounds": [
+        16,
+        8,
+        49,
+        56
+      ],
+      "opaquePixels": 1073,
+      "colors": 13
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "durationMs": 70,
+      "sourceKey": "05-descent",
+      "sha256": "439c95d8badb0a7cc1d62c57a5532b97ebcd68c026d1fb2d0f4a6fcb8694582a",
+      "bounds": [
+        16,
+        8,
+        49,
+        56
+      ],
+      "opaquePixels": 1073,
+      "colors": 13
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "durationMs": 60,
+      "sourceKey": "05-descent",
+      "sha256": "439c95d8badb0a7cc1d62c57a5532b97ebcd68c026d1fb2d0f4a6fcb8694582a",
+      "bounds": [
+        16,
+        8,
+        49,
+        56
+      ],
+      "opaquePixels": 1073,
+      "colors": 13
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "durationMs": 35,
+      "sourceKey": "06-impact",
+      "sha256": "9aa49679b2407aab5c4fdc26b6d347fbbc3bac65cdf7be1a39717e42e1309ab3",
+      "bounds": [
+        13,
+        11,
+        49,
+        56
+      ],
+      "opaquePixels": 1041,
+      "colors": 13
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "durationMs": 35,
+      "sourceKey": "07-recovery",
+      "sha256": "3f7a11fa43f1b3705bde3c4547b2c1ada0f1f7ac42f33f59c63ce8fe9a418a71",
+      "bounds": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "opaquePixels": 1075,
+      "colors": 13
+    },
+    {
+      "index": 12,
+      "file": "12.png",
+      "durationMs": 45,
+      "sourceKey": "07-recovery",
+      "sha256": "3f7a11fa43f1b3705bde3c4547b2c1ada0f1f7ac42f33f59c63ce8fe9a418a71",
+      "bounds": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "opaquePixels": 1075,
+      "colors": 13
+    },
+    {
+      "index": 13,
+      "file": "13.png",
+      "durationMs": 45,
+      "sourceKey": "07-recovery",
+      "sha256": "3f7a11fa43f1b3705bde3c4547b2c1ada0f1f7ac42f33f59c63ce8fe9a418a71",
+      "bounds": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "opaquePixels": 1075,
+      "colors": 13
+    },
+    {
+      "index": 14,
+      "file": "14.png",
+      "durationMs": 80,
+      "sourceKey": "idle",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "opaquePixels": 1092,
+      "colors": 13
+    }
+  ]
+}

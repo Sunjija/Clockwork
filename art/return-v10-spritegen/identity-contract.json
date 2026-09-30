@@ -1,0 +1,21 @@
+{
+  "reference": "unity/TiqueReturnPrototype/Assets/Resources/Return/Tique/Idle/00.png",
+  "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+  "canvas": [
+    64,
+    64
+  ],
+  "groundPivot": [
+    32,
+    56
+  ],
+  "identity": "The approved native original is the only identity/style source. No generated high-resolution pose may become a replacement identity anchor.",
+  "hands": "Original compact round fingerless hands. No fingers, thumb, mitten spur, glove enlargement or disappearing hands.",
+  "conversion": "sprite-gen canonical component extraction and pixel-unfake, one complete single-pose source per state; native trace cleanup recorded separately. No region-specific rescale or rectangular head/chest patch overwrite.",
+  "preserved": [
+    "original relaxed Idle",
+    "approved Walk 14 frames",
+    "all V8/V9 history"
+  ],
+  "motionGate": "Review complete native frames and actual runtime movement. Clean alpha/identity alone cannot certify natural motion."
+}

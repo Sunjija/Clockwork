@@ -1,0 +1,15 @@
+# Tique V10 Jump / DoubleJump offline review
+
+Status: **offline candidate, runtime and user acceptance pending**. V8 and V9 were rejected by the user. Technical cleanliness is not a natural-motion verdict.
+
+Ten real built-in image-generation single stills were produced, including the first apex produced by the root worker. Eight whole-body sources were selected. The initial preload shrank the chest/heart; the initial boost changed the crown and enlarged one boot. Both rejected raw files and decoded previews remain preserved. Exact prompts, original generated output paths and raw SHA values are in `generation-provenance.json`.
+
+Every selected source was run through the real sprite-gen `extract` CLI with the pinned original thirteen-color palette. The extracted files in `frames/<state>/frame-0.png` remain unchanged. This is a whole-source grid recovery, followed by recorded native pixel cleanup. It is not a generic image downsample, part-specific rescale, original rectangular head/chest replacement, or translated limb rig.
+
+New hand terminals use the shared five-pixel circle from `../round-hand.json`; the original neutral endpoints keep the original hands. Small eye and heart cyan clusters were corrected to the original semantic geometry. Every native source edit is enumerated in `native-cleanup.json`. Six whole-native contour variants bridge preparation, release, apex, unfolding and recovery; their source anchors and deltas are in `native-intermediates.json`. Recovery moves the complete source image one pixel and draws the compact soles back to the ground baseline.
+
+Jump retains fifteen frames and 800ms. DoubleJump retains thirteen frames and 710ms. `timing-manifest.json` records all original durations and source mappings. Neutral start/end PNG bytes are exactly original. Walk and Idle were not edited. All twenty-eight exported PNGs are native64x64, binary alpha, in the canonical palette, one connected silhouette, and have the original registered31x27 head envelope. Eye/heart cyan clusters remain consistent. Ground soles remain at56. These assertions are recorded in `native-checks.json`.
+
+The actual still sources and complete native contacts were visually inspected. Both compact round hands and both shoes remain present. The extra early-rise full-body source reduces the visible hand-location jump between takeoff and relaxed rise. Jump03 begins takeoff,04 early rise,05 rise,06 apex,07 unfolding,08 early fall,09 fall; landing begins10. Double03 releases the boost,04 rises,05 approaches apex,06 apex,07 early fall,08 fall; landing begins09.
+
+Remaining judgment: independent sources retain about one pixel of lower-jaw/top-shading variation, and the rise's trailing toe extends two pixels lower relative to the head than neutral. Runtime velocity-phase selection, actual landing transitions and the user's assessment must decide whether this movement is acceptable. Forced airborne preload after the physical impulse would make the preparation look late; the runtime owner is addressing that selector. No naturalness certification or live human-play claim is made here.

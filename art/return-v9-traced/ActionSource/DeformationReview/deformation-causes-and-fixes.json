@@ -1,0 +1,82 @@
+{
+  "prior_drift": [
+    {
+      "key": "attack-windup",
+      "prior_head_pixel_differences": 346,
+      "corrected_head_pixel_differences": 0
+    },
+    {
+      "key": "attack-impact",
+      "prior_head_pixel_differences": 216,
+      "corrected_head_pixel_differences": 0
+    },
+    {
+      "key": "attack-recoil",
+      "prior_head_pixel_differences": 289,
+      "corrected_head_pixel_differences": 0
+    },
+    {
+      "key": "attack-extension",
+      "prior_head_pixel_differences": 203,
+      "corrected_head_pixel_differences": 0
+    },
+    {
+      "key": "dash-preload",
+      "prior_head_pixel_differences": 241,
+      "corrected_head_pixel_differences": 0
+    },
+    {
+      "key": "dash-travel-a",
+      "prior_head_pixel_differences": 295,
+      "corrected_head_pixel_differences": 0
+    },
+    {
+      "key": "dash-travel-b",
+      "prior_head_pixel_differences": 150,
+      "corrected_head_pixel_differences": 0
+    },
+    {
+      "key": "dash-braking",
+      "prior_head_pixel_differences": 238,
+      "corrected_head_pixel_differences": 0
+    }
+  ],
+  "canonical_reference": {
+    "head": [
+      16,
+      8,
+      47,
+      35
+    ],
+    "body": [
+      23,
+      34,
+      44,
+      50
+    ],
+    "heart": [
+      30,
+      37,
+      43,
+      47
+    ]
+  },
+  "causes": [
+    "Independently generated source faces differed in eye height/width, cheek contour, ear placement and highlight clusters. Size-only31x27 normalization retained those identitychanges.",
+    "Source torso/core were admitted at17/19/21 lower-body projection bands. The chest and cyan heart therefore changed width/height across phases.",
+    "Former source hands had thumb-like or segmented contour chips; rectangle4x5 cleanup was not a round ball."
+  ],
+  "fixes": [
+    "Full original head, body/chest and heart native RGBA restored at alignedoriginalmodel coordinates through explicit per-key pixel deltas.",
+    "Generated full-body sources now guide limb action only; no generated alternate face/chest accepted.",
+    "New action hands use4x4 round2/4/4/2 INK+GOLD balls, with continuous wrist/forearm volumes and no fingers.",
+    "All frames retain one 4-connected foreground body with both visible hands; a3pixel native bridge underDashA hips reconnects the original-sized chest to generated short stride leg."
+  ],
+  "pngs_inspected": 24,
+  "gif_actual_exposures_inspected": {
+    "Attack": 6,
+    "Dash": 8
+  },
+  "endpoint_rgba_original_exact": true,
+  "runtime_durations_original_exact": true
+}

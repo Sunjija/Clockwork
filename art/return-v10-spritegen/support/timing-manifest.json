@@ -1,0 +1,99 @@
+{
+  "push-side": {
+    "name": "push-side",
+    "frameCount": 14,
+    "durations": [
+      60,
+      40,
+      80,
+      60,
+      40,
+      40,
+      60,
+      100,
+      40,
+      60,
+      60,
+      40,
+      40,
+      40
+    ],
+    "totalDurationMs": 760
+  },
+  "push-brace-side": {
+    "name": "push-brace-side",
+    "frameCount": 1,
+    "durations": [
+      1000
+    ],
+    "totalDurationMs": 1000
+  },
+  "push-up": {
+    "name": "push-up",
+    "frameCount": 14,
+    "durations": [
+      60,
+      40,
+      80,
+      60,
+      40,
+      40,
+      60,
+      100,
+      40,
+      60,
+      60,
+      40,
+      40,
+      40
+    ],
+    "totalDurationMs": 760
+  },
+  "push-brace-up": {
+    "name": "push-brace-up",
+    "frameCount": 1,
+    "durations": [
+      1000
+    ],
+    "totalDurationMs": 1000
+  },
+  "push-down": {
+    "name": "push-down",
+    "frameCount": 14,
+    "durations": [
+      60,
+      40,
+      80,
+      60,
+      40,
+      40,
+      60,
+      100,
+      40,
+      60,
+      60,
+      40,
+      40,
+      40
+    ],
+    "totalDurationMs": 760
+  },
+  "push-brace-down": {
+    "name": "push-brace-down",
+    "frameCount": 1,
+    "durations": [
+      1000
+    ],
+    "totalDurationMs": 1000
+  },
+  "hurt-pose": {
+    "name": "hurt-pose",
+    "frameCount": 3,
+    "durations": [
+      40,
+      50,
+      60
+    ],
+    "totalDurationMs": 150
+  }
+}

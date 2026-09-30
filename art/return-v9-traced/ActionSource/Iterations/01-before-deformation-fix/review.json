@@ -1,0 +1,36 @@
+{
+  "scope": "Attack and Dash single-pose sources, native keys and final frame contacts",
+  "tool": "built-in image_gen.imagegen",
+  "generated_complete_character_keys": 8,
+  "accepted_source_keys": [
+    "attack-windup",
+    "attack-impact",
+    "attack-recoil",
+    "dash-preload",
+    "dash-travel-a",
+    "dash-travel-b",
+    "dash-braking",
+    "attack-extension"
+  ],
+  "rejected_source_keys": [],
+  "inspected_native_key_zooms": "Native/*-8x.png",
+  "inspected_contacts": [
+    "native-keys-contact-3x.png",
+    "../Attack/contact-3x.png",
+    "../Dash/contact-3x.png",
+    "../dash-ghost/contact-3x.png"
+  ],
+  "findings_and_repairs": [
+    "Full source body and generated silhouette were traced; original torso/head/limb donors were not used in action keys.",
+    "Source hand contours needed 4x5 native normalization after tracing; explicit local contour cleanup was applied.",
+    "Native hand cleanup temporarily disconnected four wrists; continuous bronze forearm volume was restored and every final frame has one 4-connected body component.",
+    "Both final hands are visible separately outside head/chest and retain cyan core visibility.",
+    "13-color original palette only, alpha 0/255, native integer pixels, fixed 64x64 canvas and pivot32,56.",
+    "Attack and Dash original durations retained; first and last frames equal original Idle pixels.",
+    "All12 ghost alpha silhouettes exactly match their corresponding Dash frame.",
+    "One additional generated complete-body intermediate-extension key replaces Attack03; impact04-06 unchanged and all29 Dash/Ghost files retain previous byte hashes."
+  ],
+  "static_visual_review": "passed",
+  "runtime_playback_review": false,
+  "limitations": "Visual review covers still source/key/frame contacts; it does not certify Unity or browser playback timing."
+}

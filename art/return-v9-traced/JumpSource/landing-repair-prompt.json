@@ -1,0 +1,7 @@
+{
+  "name": "15-land-impact",
+  "prompt": "Use case: identity-preserve. EXACTLY ONE isolated complete Tique robot LANDING pose, not a sheet. Grounding reference image is the exact character identity. Keep original huge ROUND31x27 head, two original narrow cyan eyes, original compact torso21x16 and heart13x10 RIGID unchanged; no torso compression, no head shrinking, no heart scaling. Only the tiny short knees bend to absorb landing, feet flat only3nativepixels below lower torso. Original short arms bend down beside chest, small ROUND BRONZE BALL hands at HIP height just outside left/right torso, fully below head bottom, never up behind head. NO FINGERS, NO THUMBS, NO MITTENS, no projections: both hands are perfectly spherical small4x4nativepixel bronze endcaps, dark outline plus one gold face, attached through short wrists. Hands never enlarge, arms never stretch, no bulky boots. Head/chest upright same3/4front-right view, overall silhouette only3nativepixels shorter than original because knees fold; body shell remains unchanged. Transparent background,12% margins, clean discrete pixel clusters, no AA, blur, dithering, glow, shadow, text, floor, other characters.",
+  "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-f76bfd05-ed74-48e4-9275-08f7670bddc2.png",
+  "tool": "built-in image_gen",
+  "replaces": "06-impact (arms too high behind head after rigid-shell correction)"
+}

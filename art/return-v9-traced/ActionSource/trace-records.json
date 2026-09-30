@@ -1,0 +1,874 @@
+[
+  {
+    "key": "attack-windup",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-windup.png",
+    "source_sha256": "5f04fffda2ea79f1ccead1a8fae96a7cb14a8a1d0717bbfabee0bbb837e1822e",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-windup.png",
+    "trace_landmarks": {
+      "head": [
+        364,
+        208,
+        965,
+        723
+      ],
+      "bottom": 1076,
+      "at": [
+        16,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "20ab1081409ca086cbc912bbaea96bb5f08b2767ecc5bde43ea3efa9c7a63178",
+    "cleanup_pixels": 635,
+    "source_hand_regions": [
+      [
+        13,
+        30,
+        20,
+        36
+      ],
+      [
+        43,
+        36,
+        48,
+        45
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          14,
+          35,
+          18,
+          39
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          44,
+          38,
+          48,
+          42
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          16,
+          8,
+          47,
+          35
+        ],
+        [
+          23,
+          34,
+          44,
+          50
+        ],
+        [
+          30,
+          37,
+          43,
+          47
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  },
+  {
+    "key": "attack-impact",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-impact.png",
+    "source_sha256": "287c5d411e5646b5738a218ae2c22cc591c297d2d588c3f68188f1b0176d9d0a",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-impact.png",
+    "trace_landmarks": {
+      "head": [
+        318,
+        171,
+        945,
+        717
+      ],
+      "bottom": 1092,
+      "at": [
+        18,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "8335552711ae443ccee7d9ccd5997c3e7de86ab2e0187c9ec6aa333c417a6fe9",
+    "cleanup_pixels": 601,
+    "source_hand_regions": [
+      [
+        18,
+        37,
+        24,
+        43
+      ],
+      [
+        53,
+        29,
+        59,
+        37
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          19,
+          38,
+          23,
+          42
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          54,
+          35,
+          58,
+          39
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          18,
+          8,
+          49,
+          35
+        ],
+        [
+          25,
+          34,
+          46,
+          50
+        ],
+        [
+          32,
+          37,
+          45,
+          47
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  },
+  {
+    "key": "attack-recoil",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-recoil.png",
+    "source_sha256": "19e96f75599bcf8b219d3b1d635f4ed914dddae0bafbe8baebf1a4ef292f3be9",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-recoil.png",
+    "trace_landmarks": {
+      "head": [
+        316,
+        166,
+        950,
+        696
+      ],
+      "bottom": 1093,
+      "at": [
+        17,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "5a06701db8d6cc1214a699558b385bbb7184eb017cddaa464ae83f14e4f9235c",
+    "cleanup_pixels": 526,
+    "source_hand_regions": [
+      [
+        17,
+        42,
+        23,
+        48
+      ],
+      [
+        40,
+        40,
+        46,
+        46
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          18,
+          42,
+          22,
+          46
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          45,
+          41,
+          49,
+          45
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          17,
+          8,
+          48,
+          35
+        ],
+        [
+          24,
+          34,
+          45,
+          50
+        ],
+        [
+          31,
+          37,
+          44,
+          47
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  },
+  {
+    "key": "attack-extension",
+    "source": "art/return-v9-traced/ActionSource/Generated/attack-extension.png",
+    "source_sha256": "56d78dd715201ca54258e4554a5b57694bba4ea93b7545af897bee2e76ff4286",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/attack-extension.png",
+    "trace_landmarks": {
+      "head": [
+        305,
+        160,
+        942,
+        691
+      ],
+      "bottom": 1094,
+      "at": [
+        17,
+        8
+      ],
+      "body_h": 21
+    },
+    "native_rgba_sha256": "d7ea688fef2388819af936167427ed505c003a348fcba90c6922dc4eb5e6102d",
+    "cleanup_pixels": 510,
+    "source_hand_regions": [
+      [
+        17,
+        40,
+        23,
+        46
+      ],
+      [
+        45,
+        31,
+        51,
+        39
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          18,
+          40,
+          22,
+          44
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          49,
+          35,
+          53,
+          39
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          17,
+          8,
+          48,
+          35
+        ],
+        [
+          24,
+          34,
+          45,
+          50
+        ],
+        [
+          31,
+          37,
+          44,
+          47
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  },
+  {
+    "key": "dash-preload",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-preload.png",
+    "source_sha256": "0feb9f0ead4b65c0423293e113c1827eb1c19cc4666d6f9263fca4a0358f53f0",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-preload.png",
+    "trace_landmarks": {
+      "head": [
+        376,
+        228,
+        1019,
+        766
+      ],
+      "bottom": 1073,
+      "at": [
+        17,
+        12
+      ],
+      "body_h": 17
+    },
+    "native_rgba_sha256": "4aeb6344d072ae3cabe21b7485305e40d0ffb5a735b851432cd0259f69369b02",
+    "cleanup_pixels": 788,
+    "source_hand_regions": [
+      [
+        13,
+        41,
+        19,
+        47
+      ],
+      [
+        42,
+        42,
+        47,
+        49
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          14,
+          42,
+          18,
+          46
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          46,
+          43,
+          50,
+          47
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          17,
+          10,
+          48,
+          37
+        ],
+        [
+          24,
+          36,
+          45,
+          52
+        ],
+        [
+          31,
+          39,
+          44,
+          49
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  },
+  {
+    "key": "dash-travel-a",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-travel-a.png",
+    "source_sha256": "0c179ce21aeaaabb861972b7fe45ef2f3f0fa455aef3ed69f45b9271ef274703",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-travel-a.png",
+    "trace_landmarks": {
+      "head": [
+        377,
+        183,
+        992,
+        710
+      ],
+      "bottom": 1079,
+      "at": [
+        18,
+        10
+      ],
+      "body_h": 19
+    },
+    "native_rgba_sha256": "d257008ef08e8b7ac2bffd27d10da0295f729f7618ac3862d3785e2b57b4c8d1",
+    "cleanup_pixels": 609,
+    "source_hand_regions": [
+      [
+        14,
+        38,
+        20,
+        44
+      ],
+      [
+        43,
+        40,
+        50,
+        46
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          15,
+          39,
+          19,
+          43
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          47,
+          41,
+          51,
+          45
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          18,
+          10,
+          49,
+          37
+        ],
+        [
+          25,
+          36,
+          46,
+          52
+        ],
+        [
+          32,
+          39,
+          45,
+          49
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  },
+  {
+    "key": "dash-travel-b",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-travel-b.png",
+    "source_sha256": "4fe7972f86112c027ed3ffd0972e31c6d5d7851ac4474caff998e8e2b31a2b10",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-travel-b.png",
+    "trace_landmarks": {
+      "head": [
+        363,
+        177,
+        991,
+        713
+      ],
+      "bottom": 1092,
+      "at": [
+        18,
+        10
+      ],
+      "body_h": 19
+    },
+    "native_rgba_sha256": "053d28e469f1b551eb80380280353a48386d54896ac9ebcfe2e9732bc27a3978",
+    "cleanup_pixels": 433,
+    "source_hand_regions": [
+      [
+        18,
+        39,
+        23,
+        44
+      ],
+      [
+        42,
+        40,
+        46,
+        46
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          18,
+          39,
+          22,
+          43
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          47,
+          40,
+          51,
+          44
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          18,
+          10,
+          49,
+          37
+        ],
+        [
+          25,
+          36,
+          46,
+          52
+        ],
+        [
+          32,
+          39,
+          45,
+          49
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  },
+  {
+    "key": "dash-braking",
+    "source": "art/return-v9-traced/ActionSource/Generated/dash-braking.png",
+    "source_sha256": "0cc41b7b018d37e7db4578b055d581ea51b2b872c636c7d2c05b95daecf07df5",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "native": "art/return-v9-traced/ActionSource/Native/dash-braking.png",
+    "trace_landmarks": {
+      "head": [
+        366,
+        206,
+        981,
+        741
+      ],
+      "bottom": 1084,
+      "at": [
+        16,
+        10
+      ],
+      "body_h": 19
+    },
+    "native_rgba_sha256": "fa79d0ee23396864a3d9f9dad2fb7a425591a847f9c49f03298fe3932c5e4812",
+    "cleanup_pixels": 529,
+    "source_hand_regions": [
+      [
+        11,
+        39,
+        18,
+        45
+      ],
+      [
+        41,
+        43,
+        47,
+        49
+      ]
+    ],
+    "hand_contours": [
+      {
+        "native_box": [
+          12,
+          39,
+          16,
+          43
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      },
+      {
+        "native_box": [
+          45,
+          44,
+          49,
+          48
+        ],
+        "shape": "fingerless round ball 2/4/4/2",
+        "colors": [
+          "INK",
+          "GOLD"
+        ]
+      }
+    ],
+    "canonical_identity": {
+      "reference_head": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "reference_body": [
+        23,
+        34,
+        44,
+        50
+      ],
+      "reference_core": [
+        30,
+        37,
+        43,
+        47
+      ],
+      "target_boxes": [
+        [
+          16,
+          10,
+          47,
+          37
+        ],
+        [
+          23,
+          36,
+          44,
+          52
+        ],
+        [
+          30,
+          39,
+          43,
+          49
+        ]
+      ]
+    },
+    "method": "complete-body source pose trace, then original head/body/core restored by explicit native per-pixel correction and fingerless 4x4 hand contours"
+  }
+]

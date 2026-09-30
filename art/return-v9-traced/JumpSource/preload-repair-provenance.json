@@ -1,0 +1,19 @@
+{
+  "rejected": {
+    "name": "01-preload",
+    "prompt": "Use case: identity-preserve. Asset type: a SINGLE whole-character jumping PRELOAD pose reference for native 64x64 pixel tracing, NOT a sprite sheet. Input image is the identity reference of Tique, an original bronze robot in a 3/4 front-right view. Retain the EXACT very large round head, compact short torso, two vertical cyan eyes and cyan heart, short slender articulated arms and short legs, dark wine outline and original brass palette. Create exactly ONE isolated complete character, transparent background, filling a square canvas with 12% margins. Pose: deep but modest jump anticipation, both knees bend, torso/head lower about 5 native pixels, feet flat, elbows pull behind and outward, small bronze mitten hands CLEARLY visible to left and right OUTSIDE head and torso silhouettes, below head edge. Both arms visibly connect shoulder-elbow-hand; both feet and both hands unmistakable. Head remains the same huge size and angle, NEVER shrink it; torso stays compact, NEVER add bulky boots or large gloves. Clean bold pixel art with rectilinear pixels, no effects, no blur, no glows, no floor, no shadow, no text, no grid. Full silhouette and full interior body details; not a parts study. Keep cyan eyes and heart equally visible.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-9488361a-26c7-4180-bf3e-40f761972906.png",
+    "acceptedForTrace": false,
+    "rejection": "left arm too long and straight in complete source silhouette",
+    "savedFile": "01-preload-rejected-long-arms.png"
+  },
+  "replacement": {
+    "name": "01-preload-v2",
+    "savedFile": "01-preload.png",
+    "prompt": "Use case: identity-preserve. Asset type: exactly ONE SINGLE COMPLETE whole-character jump preload pose reference for 64x64 native pixel tracing. Reference image defines the exact original Tique bronze robot. Same 3/4 front-right view, HUGE round head (27 native pixels), compact body plus short legs (21 native pixels), two vertical cyan eyes and cyan heart, short articulated bronze limbs, dark wine outline and warm brass palette. Pose: shallow compact crouch before a jump. Keep both feet flat; short knees bend. Both elbows bend down very close to body sides, short upper arms slope down alongside chest; small 4x5-pixel bronze mitten hands hang beside HIP outside torso, under head, clearly visible with complete shoulder-elbow-hand connections. LEFT hand must lie only1-2native pixels left of original head's left silhouette, never reach far outward; RIGHT hand only1-2native pixels right of torso silhouette. Arms are short and bent, never extended horizontally like rails. Character width remains nearly original head width plus only2px each side. Head keeps exact large round original shape and original eyes; no change of face, no bulky boots, no extra parts, no long limbs. ONE isolated full body at generous12% margins, transparent background. Crisp square pixel art, no antialiasing, blur, glow, effects, shadows, floor, grids, text, extra characters, parts sheet or multiple poses.",
+    "tool": "built-in image_gen",
+    "generatedPath": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1fe-d120-7211-8781-2defc51a9b66\\exec-ef129dd1-f8ac-4bd4-a48a-d1ced6447869.png",
+    "acceptedForTrace": true
+  }
+}

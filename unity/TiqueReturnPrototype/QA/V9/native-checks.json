@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "originalAssetsPreserved": 309,
+  "nativeFrames": 134,
+  "clips": 14,
+  "checks": 1034,
+  "scope": "Real native files, palette, alpha, silhouette connectivity, phase distinction, Walk preservation and packaging; natural motion and physical inputs excluded"
+}

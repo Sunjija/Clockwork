@@ -1,0 +1,8 @@
+{
+  "status": "not-verified",
+  "scope": "V10 physical operating-system keyboard input and desktop presentation",
+  "reason": "Computer Use reported that the user stopped it with the physical Escape key. No further Computer Use calls or desktop inputs were issued in this turn.",
+  "separateVerification": "File checks, C# model tests, batch build and explicitly labelled GPU RenderTexture tests are independent of physical keyboard input.",
+  "v9InputEvidenceIsNotV10Evidence": true,
+  "userMotionQualityApproval": "not-requested-or-claimed"
+}

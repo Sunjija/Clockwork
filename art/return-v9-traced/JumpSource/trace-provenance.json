@@ -1,0 +1,869 @@
+{
+  "sources": [
+    {
+      "name": "01-preload",
+      "source": "art/return-v9-traced/JumpSource/01-preload.png",
+      "sourceSha256": "32e47d817c0f28f9791ee0f409ed0e7910b306115c9eea42cc58299993e512ed",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        334,
+        254,
+        944,
+        786
+      ],
+      "sourceSole": 1062,
+      "nativeHeadBounds": [
+        16,
+        11,
+        47,
+        38
+      ],
+      "nativeBodyRows": 18,
+      "nativeSole": 56,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 970,
+      "handBounds": [
+        [
+          19,
+          45,
+          23,
+          49
+        ],
+        [
+          44,
+          46,
+          48,
+          50
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          436,
+          887
+        ],
+        [
+          840,
+          904
+        ]
+      ],
+      "nativeRepairChangedPixels": 399,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "soles fixed at56",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "02-extension",
+      "source": "art/return-v9-traced/JumpSource/02-extension.png",
+      "sourceSha256": "d88669dae878bc70678948910cf0d04db8ee5d68b29b4909ad7e4de47e8a0ccb",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        323,
+        129,
+        936,
+        649
+      ],
+      "sourceSole": 1098,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 21,
+      "nativeSole": 56,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 925,
+      "handBounds": [
+        [
+          16,
+          44,
+          20,
+          48
+        ],
+        [
+          44,
+          44,
+          48,
+          48
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          353,
+          835
+        ],
+        [
+          910,
+          835
+        ]
+      ],
+      "nativeRepairChangedPixels": 163,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "soles fixed at56",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "03-ascent",
+      "source": "art/return-v9-traced/JumpSource/03-ascent.png",
+      "sourceSha256": "f2aef804447042525701758d56cb85d6ad9e63b05d34673c26c05d1ca1240944",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        311,
+        155,
+        922,
+        681
+      ],
+      "sourceSole": 1087,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 18,
+      "nativeSole": 53,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 950,
+      "handBounds": [
+        [
+          17,
+          38,
+          21,
+          42
+        ],
+        [
+          44,
+          38,
+          48,
+          42
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          355,
+          770
+        ],
+        [
+          900,
+          770
+        ]
+      ],
+      "nativeRepairChangedPixels": 182,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "04-apex",
+      "source": "art/return-v9-traced/JumpSource/04-apex.png",
+      "sourceSha256": "00b11f4cea0f0db0403aa46dd47f79fb2bcb911abbb26f5cfa63b7b6d438bb11",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        321,
+        158,
+        923,
+        680
+      ],
+      "sourceSole": 1049,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 19,
+      "nativeSole": 54,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 923,
+      "handBounds": [
+        [
+          17,
+          41,
+          21,
+          45
+        ],
+        [
+          44,
+          41,
+          48,
+          45
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          371,
+          805
+        ],
+        [
+          885,
+          805
+        ]
+      ],
+      "nativeRepairChangedPixels": 191,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "05-descent",
+      "source": "art/return-v9-traced/JumpSource/05-descent.png",
+      "sourceSha256": "e2692ee6bdca334bf63d54253dfbfb53958ffe854c5d4108d818182c3034d5ce",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        323,
+        167,
+        897,
+        678
+      ],
+      "sourceSole": 1050,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 21,
+      "nativeSole": 56,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 934,
+      "handBounds": [
+        [
+          17,
+          42,
+          21,
+          46
+        ],
+        [
+          45,
+          43,
+          49,
+          47
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          372,
+          827
+        ],
+        [
+          881,
+          848
+        ]
+      ],
+      "nativeRepairChangedPixels": 395,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "07-recovery",
+      "source": "art/return-v9-traced/JumpSource/07-recovery.png",
+      "sourceSha256": "1db6379d753c770c4ec667b30530800532100148a55a8e8350619a3cd203d87b",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        313,
+        160,
+        921,
+        685
+      ],
+      "sourceSole": 1093,
+      "nativeHeadBounds": [
+        16,
+        9,
+        47,
+        36
+      ],
+      "nativeBodyRows": 20,
+      "nativeSole": 56,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 976,
+      "handBounds": [
+        [
+          18,
+          46,
+          22,
+          50
+        ],
+        [
+          44,
+          45,
+          48,
+          49
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          383,
+          904
+        ],
+        [
+          879,
+          897
+        ]
+      ],
+      "nativeRepairChangedPixels": 103,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "soles fixed at56",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "08-double-tuck",
+      "source": "art/return-v9-traced/JumpSource/08-double-tuck.png",
+      "sourceSha256": "29de39bf917b2bd40afb69788b73d4c657c198746c882c7ead2f3cdd1dc89a85",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        295,
+        155,
+        990,
+        697
+      ],
+      "sourceSole": 1055,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 17,
+      "nativeSole": 52,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 950,
+      "handBounds": [
+        [
+          18,
+          38,
+          22,
+          42
+        ],
+        [
+          44,
+          39,
+          48,
+          43
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          383,
+          780
+        ],
+        [
+          894,
+          790
+        ]
+      ],
+      "nativeRepairChangedPixels": 558,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "09-double-release",
+      "source": "art/return-v9-traced/JumpSource/09-double-release.png",
+      "sourceSha256": "e12e54a1b2facd8e8fea957e5575aad10eb17ea7cda3576913b9532179a410ff",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        317,
+        156,
+        936,
+        693
+      ],
+      "sourceSole": 1074,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 19,
+      "nativeSole": 54,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 958,
+      "handBounds": [
+        [
+          15,
+          39,
+          19,
+          43
+        ],
+        [
+          48,
+          41,
+          52,
+          45
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          321,
+          798
+        ],
+        [
+          987,
+          822
+        ]
+      ],
+      "nativeRepairChangedPixels": 683,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "10-near-neutral",
+      "source": "art/return-v9-traced/JumpSource/10-near-neutral.png",
+      "sourceSha256": "f525c5028ebdaf2a5a4b8f36dd63626156f80b32a703105dadbb72a996fd9da2",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        318,
+        191,
+        921,
+        715
+      ],
+      "sourceSole": 1090,
+      "nativeHeadBounds": [
+        16,
+        9,
+        47,
+        36
+      ],
+      "nativeBodyRows": 20,
+      "nativeSole": 56,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 996,
+      "handBounds": [
+        [
+          19,
+          44,
+          23,
+          48
+        ],
+        [
+          44,
+          44,
+          48,
+          48
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          399,
+          888
+        ],
+        [
+          874,
+          898
+        ]
+      ],
+      "nativeRepairChangedPixels": 67,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "soles fixed at56",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "11-half-fold",
+      "source": "art/return-v9-traced/JumpSource/11-half-fold.png",
+      "sourceSha256": "dd1917a909c846083634f034487604449c3cd17d7c9c223bb9989fd1825eb767",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        315,
+        162,
+        924,
+        680
+      ],
+      "sourceSole": 1068,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 19,
+      "nativeSole": 54,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 941,
+      "handBounds": [
+        [
+          17,
+          41,
+          21,
+          45
+        ],
+        [
+          44,
+          41,
+          48,
+          45
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          373,
+          817
+        ],
+        [
+          885,
+          819
+        ]
+      ],
+      "nativeRepairChangedPixels": 116,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "12-half-open",
+      "source": "art/return-v9-traced/JumpSource/12-half-open.png",
+      "sourceSha256": "ce4b028bb57d6771f2971aa18fc126d34360194250f549837ebb054f9b45b352",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        313,
+        156,
+        922,
+        684
+      ],
+      "sourceSole": 1106,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 20,
+      "nativeSole": 55,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 976,
+      "handBounds": [
+        [
+          17,
+          44,
+          21,
+          48
+        ],
+        [
+          44,
+          44,
+          48,
+          48
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          360,
+          883
+        ],
+        [
+          900,
+          881
+        ]
+      ],
+      "nativeRepairChangedPixels": 73,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "13-land-rise",
+      "source": "art/return-v9-traced/JumpSource/13-land-rise.png",
+      "sourceSha256": "0b538939ba06f41bb8a71be5578e5b9a491fad3777b38d4fcb6d7e546b715bcb",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        314,
+        176,
+        928,
+        705
+      ],
+      "sourceSole": 1093,
+      "nativeHeadBounds": [
+        16,
+        10,
+        47,
+        37
+      ],
+      "nativeBodyRows": 19,
+      "nativeSole": 56,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 973,
+      "handBounds": [
+        [
+          19,
+          46,
+          23,
+          50
+        ],
+        [
+          44,
+          46,
+          48,
+          50
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          394,
+          893
+        ],
+        [
+          865,
+          893
+        ]
+      ],
+      "nativeRepairChangedPixels": 94,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "soles fixed at56",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "14-boost-settle",
+      "source": "art/return-v9-traced/JumpSource/14-boost-settle.png",
+      "sourceSha256": "0e0ac2ff8348bef7e2febfcf20ac8f236ac9ba2fb1369bcf7a242d43917b1f68",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        332,
+        179,
+        914,
+        680
+      ],
+      "sourceSole": 1083,
+      "nativeHeadBounds": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "nativeBodyRows": 19,
+      "nativeSole": 54,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 947,
+      "handBounds": [
+        [
+          18,
+          41,
+          22,
+          45
+        ],
+        [
+          44,
+          41,
+          48,
+          45
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          397,
+          812
+        ],
+        [
+          895,
+          808
+        ]
+      ],
+      "nativeRepairChangedPixels": 82,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "head top8 and folded feet above pivot",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    },
+    {
+      "name": "15-land-impact",
+      "source": "art/return-v9-traced/JumpSource/15-land-impact.png",
+      "sourceSha256": "6d747b2a946404936f4ae1c05cc8872101c27d4b3e3978100d610071eba72e55",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "sourceHeadBounds": [
+        318,
+        245,
+        920,
+        764
+      ],
+      "sourceSole": 1045,
+      "nativeHeadBounds": [
+        16,
+        11,
+        47,
+        38
+      ],
+      "nativeBodyRows": 18,
+      "nativeSole": 56,
+      "pivotPixels": [
+        32,
+        56
+      ],
+      "sourceWaist": 975,
+      "handBounds": [
+        [
+          19,
+          46,
+          23,
+          50
+        ],
+        [
+          44,
+          46,
+          48,
+          50
+        ]
+      ],
+      "sourceHandCenters": [
+        [
+          469,
+          896
+        ],
+        [
+          825,
+          896
+        ]
+      ],
+      "nativeRepairChangedPixels": 211,
+      "canonicalHeadChangedPixels": 0,
+      "canonicalChestChangedPixels": 0,
+      "canonicalHeartChangedPixels": 0,
+      "registration": "soles fixed at56",
+      "method": "complete source pose traced on head/waist/sole landmarks; per-native-pixel canonical head/chest/core repair; source limbs retained without duplicate arm lines; fingerless round hand contour repair"
+    }
+  ],
+  "rejectedSources": [
+    {
+      "file": "01-preload-rejected-long-arms.png",
+      "reason": "left arm read as an extended rail; replaced with independently generated compact bent-arm preload"
+    },
+    {
+      "file": "06-impact.png",
+      "reason": "source arms sit too high around head; independently regenerated compact landing with rigid torso and low round hands"
+    }
+  ],
+  "userAuthorization": "whole pose references for motion; original Tique identity fixed per latest user correction; no fingers, only small round ball hands",
+  "generatedSingleImages": 16,
+  "activeFullPoseKeys": 14,
+  "newImagesForDeformationFix": 6,
+  "canonicalRanges": {
+    "head": [
+      0,
+      8,
+      64,
+      35
+    ],
+    "chest": [
+      23,
+      34,
+      44,
+      50
+    ],
+    "heart": [
+      30,
+      37,
+      43,
+      47
+    ]
+  },
+  "handModel": "4x4 2/4/4/2 silhouette; INK outline plus GOLD face; wrist only, no thumb or fingers",
+  "repairMethod": "whole-pose native trace followed by explicit original-reference pixel corrections; no limb cut-and-paste, no stretched arm, no added parallel arm rig",
+  "beforeSnapshot": "JumpSource/BeforeDeformationFix",
+  "neutralEndpoint": "exact original Idle/00.png",
+  "neutralSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+}

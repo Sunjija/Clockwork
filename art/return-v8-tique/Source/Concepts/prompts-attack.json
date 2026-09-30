@@ -1,0 +1,58 @@
+{
+  "version": "return-v8-tique-single-pose-attack-references",
+  "tool": "built-in image_gen.imagegen",
+  "intent": "Two independent SINGLE POSE reference edits, not an animation sheet or AI video. Native pixel clips must be authored separately from these static pose references.",
+  "canonicalInput": "art/return-v5-feedback/Source/Native/tique-idle-8x.png",
+  "poses": [
+    {
+      "id": "attack-anticipate",
+      "output": "art/return-v8-tique/Source/Concepts/attack-anticipate.png",
+      "generatedSource": "C:/Users/은찬/.codex/generated_images/01a0f1c9-0be5-7731-913e-f6825e0cfc78/exec-5aab299e-1b58-4d11-8674-14958ac90e56.png",
+      "prompt": "Use case: precise-object-edit. Asset: Tique single attack anticipation pose reference for later manual native-pixel animation. Edit the attached canonical Tique image into ONE single full-body attack wind-up pose, facing screen-right in the SAME mild three-quarter side view. Preserve the character identity exactly: very large cute round spherical copper/gold head, same head dimensions and face, two small cyan glowing rectangular eyes, tiny smile, compact round torso, same cyan heart on chest, very short connected two-jointed legs, tiny mitten hands, same bronze/gold palette. The rear/far-side arm draws just slightly backward, with a bent connected elbow and tiny fist of about four native pixels. The nearer arm rests tucked beside chest rather than striking. Shift hips/torso weight slightly rearward by only one or two native pixel equivalents, knees modestly soft, both feet firmly grounded on the same baseline, no large stance. Keep shoulders visibly attached, head above neck and centered close to torso, preserve overall height and limb lengths. Clean flat game concept art faithful to these pixel shapes, suitable to convert back to a 64x64 pixel sprite. ONE character, ONE pose, no other poses, no strip, no sheet, no duplicate limbs, no action trails, no effects, no props, no text, no watermark, no shadow, no floor/background. Actual transparent background. Keep comfortable empty margin all sides.",
+      "review": {
+        "identity": "Large round head, compact torso, cyan eyes and heart, tiny mittens retained as reference.",
+        "pose": "Rear-side wind-up and modest grounded weight shift visible.",
+        "limitations": "Use original head and torso proportions as native-pixel locks; generated image has more elaborate shoulder shaping and alpha edge softness than native sprite."
+      }
+    },
+    {
+      "id": "attack-impact",
+      "output": "art/return-v8-tique/Source/Concepts/attack-impact.png",
+      "generatedSource": "C:/Users/은찬/.codex/generated_images/01a0f1c9-0be5-7731-913e-f6825e0cfc78/exec-1eb7198c-3f46-4741-bf0f-3dc604735851.png",
+      "prompt": "Use case: precise-object-edit. Single attack-impact pose reference. Based on the canonical Tique image, create ONE full-body tiny robot pose on transparent background facing RIGHT. Preserve exactly the canonical giant round copper/gold cute head and two cyan eyes, tiny smile, compact torso, cyan heart, very short legs, tiny mittens, same original proportions and palette. CRITICAL POSE: the REAR arm originates at the shoulder on the SCREEN-LEFT side of the torso (behind him). It rotates forward FROM THAT LEFT/REAR SHOULDER and crosses diagonally across the lower chest to a tiny fist pointing screen-right. You should visibly be able to trace one continuous connected upper arm from left rear shoulder, bent elbow in front of abdomen, and short forearm reaching right. The OTHER/front arm originates at SCREEN-RIGHT shoulder and remains bent tucked close to that shoulder beside the chest, not extended; no second punching arm. The chest/waist rotates with this rear punch slightly; the cyan heart moves just a little to the right but stays recognizable, never hidden completely. Tiny connected mitten fist of about four native-pixel equivalents, not large boxing gloves. Only short reach, modest forward lean 3 native pixels, no stretched limb, no wide stance. Both very short feet on one flat grounded baseline, rear foot subtly pivots, same total height. Head remains same original size and shape upright. Clean flat reference faithful to blocky pixel shapes for later 64x64 native-pixel conversion. Full body with empty margin. EXACTLY ONE character, ONE pose, no sheet/strip/multiple poses, no text, no extra arms/legs, no effects, no floor/shadow/background. Actual transparent background.",
+      "review": {
+        "identity": "Large round head, compact torso, cyan eyes and heart, tiny mittens retained as reference.",
+        "pose": "Rear screen-left shoulder crossing the lower chest is clearer; opposite shoulder remains tucked.",
+        "limitations": "Fist ends close to torso. Treat this as rear-arm crossing pose geometry; native impact should be compared with canonical hand reach and stay within short-arm proportions. Alpha edges need native cleanup."
+      },
+      "rejectedCandidate": {
+        "generatedSource": "C:/Users/은찬/.codex/generated_images/01a0f1c9-0be5-7731-913e-f6825e0cfc78/exec-9afb011e-2dc6-472c-895f-0be97262d366.png",
+        "prompt": "Use case: precise-object-edit. Asset: Tique single short rear-arm punch impact reference for manual native-pixel animation. Edit the attached canonical Tique into ONE single full-body attack impact pose facing screen-right in the SAME mild three-quarter side view. Strictly preserve exactly the original cute oversized spherical copper/gold head, same head size/shape/face proportions, two cyan rectangular eyes and tiny smile, compact short torso, same cyan heart, original very short two-jointed legs and tiny mitten hands, original palette. A SHORT rear/far-side arm punch goes forward toward screen-right at lower chest height, driven by a small natural waist/hip rotation. Rear shoulder connects clearly to upper arm, bent elbow remains distinct, fist is TINY rounded mitten about four native pixels, no boxing glove or fingers. The fist ends only modestly in front of the torso. Near/other arm is tucked by the side and is not punching. Small forward torso lean (maximum three or four native pixel equivalents); rear heel pivots just a little while both feet remain on the same grounded horizontal baseline, no wide stance, no long legs. Head is upright and its size is unchanged, never stretched, never detached. Keep original character height and mass; do not turn it into a human fighter. Clean flat game concept art faithful to the blocky pixel shapes, suitable for conversion into 64x64 native pixel sprite. ONE character, ONE pose; no extra poses, no strip, no spritesheet, no clone, no extra limbs, no weapon, no effects, no trails, no text, no watermark, no floor or shadow. Actual transparent background. Full body visible with empty margin.",
+        "reason": "Appears to extend the front/screen-right arm, so rejected for rear-arm punch requirement."
+      }
+    }
+  ],
+  "preservation": "Only new assigned concepts and this prompt log written. No original assets or runtime clips changed.",
+  "revisions": [
+    {
+      "id": "attack-impact-v2",
+      "output": "art/return-v8-tique/Source/Concepts/attack-impact-v2.png",
+      "generatedSource": "C:/Users/은찬/.codex/generated_images/01a0f1c9-0be5-7731-913e-f6825e0cfc78/exec-38eff157-3cdd-4e65-9006-1af739626801.png",
+      "canonicalInput": "art/return-v5-feedback/Source/Native/tique-idle-8x.png",
+      "tool": "built-in image_gen.imagegen",
+      "prompt": "Use case: precise-object-edit. ONE single actual short rear-cross punch IMPACT pose for this exact tiny cute robot Tique. Reference image is the canonical idle character. Keep the exact adorable very large ROUND spherical copper/gold head, its size and height, two cyan eyes, tiny smile, compact torso, cyan chest heart, very short two-jointed legs and tiny mitten hands. Character faces screen RIGHT in the same mild three-quarter side view. BOTH soles planted on the original same horizontal groundline. DO NOT change proportions. CRITICAL ACTUAL STRIKE: his REAR arm starts at the shoulder on SCREEN LEFT, behind the torso. His waist and shoulders turn slightly FORWARD so this LEFT/REAR arm crosses HORIZONTALLY in front of the chest and strikes to screen RIGHT. The elbow is at CHEST/HEART HEIGHT; the forearm points HORIZONTALLY RIGHT, NOT downward. The punching tiny mitten fist MUST visibly stick out past the SCREEN-RIGHT EDGE OF THE TORSO by approximately FOUR native-pixel equivalents. Put that fist at the SAME HEIGHT as the center of the CYAN HEART. This is an unmistakably outward strike, NOT folded hands, NOT hands touching the heart, NOT a diagonal down arm, NOT an arm held against his belly. You must be able to trace one clearly CONNECTED short rear upper arm from the SCREEN-LEFT shoulder, around the torso with a bent elbow and the horizontal outward forearm to the visible fist in EMPTY SPACE to the right of his torso. Arm reach from torso edge is small, never more than half the head width; fist is only about FOUR native pixels square, NOT a boxing glove. The OTHER/front arm from the SCREEN-RIGHT shoulder stays bent and tucked close to its shoulder and does NOT extend. A small 3-pixel-equivalent waist turn and hip weight transfer drive the punch, NOT generic whole-body translation. Keep short grounded legs, no karate stance, no big step, no long arm, no detached shoulder, no extra limbs. Keep the cyan heart partly visible even where rear forearm crosses chest. Clean blocky flat shape reference faithful to canonical palette for a 64x64 native-pixel sprite. ONE character, ONE pose, full body and empty margin. No sheet, no frames, no strip, no effects, no trails, no weapon, no floor/shadow, no text, no watermark. Actual transparent background.",
+      "decision": {
+        "priorCandidate": "attack-impact.png retained unchanged but rejected as actual strike source: hands look tucked and fist is downward inside body.",
+        "status": "Single-pose outward-strike reference accepted by generating agent, pending root/native-author review.",
+        "visibleChecks": [
+          "Punching fist protrudes visibly beyond screen-right torso edge.",
+          "Forearm points horizontally right around chest/upper-heart height instead of downward.",
+          "Rear screen-left shoulder leads connected cross-body arm; other shoulder arm tucked.",
+          "Large round cute head, tiny mittens and short planted legs retained.",
+          "Single character on actual transparent background; no animation strip, sheet or effects."
+        ],
+        "nativeConversionNotes": "Lock original head, torso ratio, ground pivot and timing. Normalize generated upper-chest fist height to exact canonical heart center and constrain wrist/fist reach to 4 native pixels beyond torso. Clean partial-alpha source edges when quantizing."
+      }
+    }
+  ]
+}

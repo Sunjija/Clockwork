@@ -1,0 +1,2557 @@
+{
+  "status": "implemented candidate, visual review required",
+  "method": "independent static pose concepts -> native conversion -> explicit native exposure edits; no generated animation sheets/videos",
+  "canvas": [
+    64,
+    64
+  ],
+  "footPivot": [
+    32,
+    56
+  ],
+  "approvedPalette": [
+    [
+      43,
+      27,
+      36,
+      255
+    ],
+    [
+      188,
+      120,
+      59,
+      255
+    ],
+    [
+      221,
+      161,
+      75,
+      255
+    ],
+    [
+      117,
+      64,
+      50,
+      255
+    ],
+    [
+      244,
+      203,
+      112,
+      255
+    ],
+    [
+      156,
+      89,
+      56,
+      255
+    ],
+    [
+      255,
+      231,
+      163,
+      255
+    ],
+    [
+      19,
+      220,
+      232,
+      255
+    ],
+    [
+      19,
+      52,
+      69,
+      255
+    ],
+    [
+      165,
+      252,
+      241,
+      255
+    ],
+    [
+      11,
+      147,
+      177,
+      255
+    ],
+    [
+      9,
+      86,
+      107,
+      255
+    ],
+    [
+      82,
+      48,
+      40,
+      255
+    ]
+  ],
+  "originalIdleRgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+  "singleImageConversions": [
+    {
+      "name": "crouch",
+      "source": "art/return-v8-tique/Source/Concepts/crouch-land.png",
+      "sourceSha256": "056a775f74517751c522fc37e1f7c36689a375cfaf6e44423dd3dec1470a71c3",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        339,
+        256,
+        956,
+        1100
+      ],
+      "sampleSize": [
+        35,
+        48
+      ],
+      "sampleOffset": [
+        14,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "43418686b46d35583dc748ba4b5a9efea5832e1b8c41456d5efe46010df74313",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          42,
+          42,
+          47,
+          47
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "Jump",
+        "frame": 11,
+        "file": "crouch-authored.png",
+        "rgbaSha256": "d89c56ead48a3a3f319518d0f32a8d5c55fb1f7383ab30c618c4c4a962c965e9",
+        "pixelCleanupCount": 913
+      }
+    },
+    {
+      "name": "tuck",
+      "source": "art/return-v8-tique/Source/Concepts/tuck-air.png",
+      "sourceSha256": "bdc0abe08f7d82a058a87855354007755016d20c3ab1664c8d2218691ea0bd3b",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        304,
+        149,
+        951,
+        1090
+      ],
+      "sampleSize": [
+        33,
+        48
+      ],
+      "sampleOffset": [
+        15,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "20ac8e2d677c192f4f8eb9f42f52767861271240773179cdda53065b171753fa",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          44,
+          39,
+          49,
+          44
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam",
+        "kneeAndBootCrops": [
+          [
+            25,
+            48,
+            32,
+            54
+          ],
+          [
+            32,
+            49,
+            40,
+            56
+          ]
+        ]
+      },
+      "cleanedKey": {
+        "clip": "Jump",
+        "frame": 4,
+        "file": "tuck-authored.png",
+        "rgbaSha256": "99b8b187570ba47030f46cfbf98826bf4b47fede4c87a1a2c6ee242198493882",
+        "pixelCleanupCount": 877
+      }
+    },
+    {
+      "name": "dash",
+      "source": "art/return-v8-tique/Source/Concepts/dash-travel.png",
+      "sourceSha256": "6b7472549c3f8ccfb91694004dbb76cf939eadcb7f895615257dfcb9f5b222d9",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        327,
+        232,
+        1016,
+        1036
+      ],
+      "sampleSize": [
+        41,
+        48
+      ],
+      "sampleOffset": [
+        11,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "d38d6595f2f9b3e5e882dc7f0740a0e34d9804a6a5aff88d746bd207ba316cb1",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          15,
+          41,
+          20,
+          46
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "Dash",
+        "frame": 4,
+        "file": "dash-authored.png",
+        "rgbaSha256": "1a1b71b2bd0f1adb4d24d32f833d3bfbe427f5fd6bc7e25fd6d90104968dd90c",
+        "pixelCleanupCount": 1115
+      }
+    },
+    {
+      "name": "anticipate",
+      "source": "art/return-v8-tique/Source/Concepts/attack-anticipate.png",
+      "sourceSha256": "bed88abe6b67c4f76832a0d7b502636ca7ba7d0ac2e7ad56b63ac6b5ed6c8d83",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        350,
+        175,
+        977,
+        1107
+      ],
+      "sampleSize": [
+        32,
+        48
+      ],
+      "sampleOffset": [
+        16,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "ad6b08d2484bfc1aa918761a3bee1285136f00c7af0608dddcb8a164cec948db",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          18,
+          37,
+          23,
+          42
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "Attack",
+        "frame": 2,
+        "file": "anticipate-authored.png",
+        "rgbaSha256": "31f82eadf5587db3d2d5fb4e65545d1c4b59859784c15981a8a4f1d3c5a012f7",
+        "pixelCleanupCount": 927
+      }
+    },
+    {
+      "name": "impact",
+      "source": "art/return-v8-tique/Source/Concepts/attack-impact-v2.png",
+      "sourceSha256": "dbadb8dbe9b6c39f3ee9677069655e3d1f4397c0714cab4a3785b9ebe2fadc11",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        321,
+        165,
+        979,
+        1092
+      ],
+      "sampleSize": [
+        34,
+        48
+      ],
+      "sampleOffset": [
+        15,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "ad3eacbede4ccf13e82b003663d3c24155b8be0ae2342849cef638f774f91944",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          48,
+          37,
+          53,
+          42
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "Attack",
+        "frame": 4,
+        "file": "impact-authored.png",
+        "rgbaSha256": "1946e9eb0faa3fbc45a70fbe922774c2325f75e78b8b65f58d9a015a89d9709f",
+        "pixelCleanupCount": 885
+      }
+    },
+    {
+      "name": "push-side",
+      "source": "art/return-v5-feedback/Source/Concepts/push-side-v3.png",
+      "sourceSha256": "039f7185aae0fb3c8a06a4fc117eb15bf2e099ae4e13c7cc8897cbf209e7efc8",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        334,
+        172,
+        961,
+        1076
+      ],
+      "sampleSize": [
+        33,
+        48
+      ],
+      "sampleOffset": [
+        15,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "47300725cd845f11068c9601b686009fbdf5530ba2dda0fc5f875e63e7d4b2d3",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          48,
+          33,
+          53,
+          38
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "push-side",
+        "frame": 0,
+        "file": "push-side-authored.png",
+        "rgbaSha256": "503ad0b18e6ec2b5494a726122887d790fa183509bdc96c257d9317d4a8dfe59",
+        "pixelCleanupCount": 1014
+      }
+    },
+    {
+      "name": "push-up",
+      "source": "art/return-v5-feedback/Source/Concepts/push-up-v3.png",
+      "sourceSha256": "e002ff514c621ed34db691f06c27be8dad13d24996a05eac659485793b3bb56c",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        314,
+        157,
+        960,
+        1097
+      ],
+      "sampleSize": [
+        33,
+        48
+      ],
+      "sampleOffset": [
+        15,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "8b54052fee434aa471e73cda23a9cff463dd0f58fbabcc849cc2e70b864fb0d4",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          44,
+          33,
+          49,
+          38
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "push-up",
+        "frame": 0,
+        "file": "push-up-authored.png",
+        "rgbaSha256": "56165dee851bde8ed2a3cd71b378e28811fe5f4502f84c8da8db3b72acb1c6f7",
+        "pixelCleanupCount": 822
+      }
+    },
+    {
+      "name": "push-down",
+      "source": "art/return-v5-feedback/Source/Concepts/push-down-v4.png",
+      "sourceSha256": "2bc3d1df8d5d0bac19a0709c462b4628d678812655dd3eeb6f1bad527b5f2a5f",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        312,
+        154,
+        922,
+        1100
+      ],
+      "sampleSize": [
+        31,
+        48
+      ],
+      "sampleOffset": [
+        16,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "3e2d9c51cf87000412ed0bfa3a63cfec6ed36962c599b415f08ece81b288e9d2",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          41,
+          43,
+          46,
+          48
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "push-down",
+        "frame": 0,
+        "file": "push-down-authored.png",
+        "rgbaSha256": "d5c56a0a51582283ef88da3dc658bbddaa3f7211167a6b1978be441956583940",
+        "pixelCleanupCount": 790
+      }
+    },
+    {
+      "name": "hurt",
+      "source": "art/return-v5-feedback/Source/Concepts/hurt-pose-v2.png",
+      "sourceSha256": "9c83ee877412e7fc68b10a0292565b54d24a0deee25ae94c3c60868a5f2ca88a",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "cropPixels": [
+        312,
+        154,
+        923,
+        1099
+      ],
+      "sampleSize": [
+        31,
+        48
+      ],
+      "sampleOffset": [
+        16,
+        8
+      ],
+      "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+      "convertedRgbaSha256": "e79124a90c9d0412bbc4d24dc2dc138bda34993d485bfcf193b137b4c65d83ff",
+      "nativeContribution": {
+        "part": "compact mitten center color pixels / action silhouette guide",
+        "convertedCrop": [
+          41,
+          39,
+          46,
+          44
+        ],
+        "canonicalParts": "original head/torso/heart/feet pixel pieces",
+        "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+      },
+      "cleanedKey": {
+        "clip": "hurt-pose",
+        "frame": 0,
+        "file": "hurt-authored.png",
+        "rgbaSha256": "ef66859e419132da89e416bbc075fe961fb43cf825f9995415d0dc4294bba051",
+        "pixelCleanupCount": 725
+      }
+    }
+  ],
+  "clips": [
+    {
+      "name": "Idle",
+      "durations": [
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125,
+        125
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "approved Idle; shoulder palette relaxation only"
+      ],
+      "note": "Neutral original pose, planted feet and exact head/heart identity; tiny shoulder settling",
+      "uniqueFrames": 2
+    },
+    {
+      "name": "Walk",
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "approved Walk14 byte-exact native pixels"
+      ],
+      "note": "User-approved head position and heart-bottom seam retained unchanged",
+      "uniqueFrames": 14
+    },
+    {
+      "name": "Attack",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "anticipate",
+        "impact"
+      ],
+      "note": "Rear-arm punch: hip seam/side occlusion turn, foot drive, elbow opens, short hand, recoils. Reach peaks in04/05 at120..220ms",
+      "uniqueFrames": 11
+    },
+    {
+      "name": "Jump",
+      "durations": [
+        60,
+        30,
+        40,
+        40,
+        90,
+        70,
+        60,
+        40,
+        70,
+        60,
+        35,
+        35,
+        45,
+        45,
+        80
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "crouch",
+        "tuck"
+      ],
+      "note": "Planted preload, short tucked ascent, arms loosen at apex, open falling silhouette, foot contact then head-lag recovery",
+      "uniqueFrames": 11
+    },
+    {
+      "name": "DoubleJump",
+      "durations": [
+        50,
+        30,
+        45,
+        45,
+        90,
+        60,
+        40,
+        70,
+        70,
+        35,
+        45,
+        50,
+        80
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "tuck",
+        "crouch"
+      ],
+      "note": "Asymmetric short kick distinct from first jump, feet recollect, apex release, fall and grounded recovery",
+      "uniqueFrames": 13
+    },
+    {
+      "name": "Dash",
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "dash",
+        "crouch"
+      ],
+      "note": "Compact leading head/chest, tiny trailing hands, distinct active03..06 feet/arm follow-through, front-foot brake",
+      "uniqueFrames": 10
+    },
+    {
+      "name": "hurt-pose",
+      "durations": [
+        40,
+        50,
+        60
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "hurt"
+      ],
+      "note": "Short back recoil, arms tuck, head follows back to exact neutral Idle",
+      "uniqueFrames": 3
+    },
+    {
+      "name": "push-side",
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "push-side",
+        "approved Walk head/torso/feet"
+      ],
+      "note": "Two closed small connected palms; Walk support/heart/head retained; shoulders brace and follow chest per native exposure",
+      "uniqueFrames": 14
+    },
+    {
+      "name": "push-brace-side",
+      "durations": [
+        1000
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "push-side",
+        "approved Idle feet"
+      ],
+      "note": "Two-palm stationary brace with neutral planted feet",
+      "uniqueFrames": 1
+    },
+    {
+      "name": "push-up",
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "push-up",
+        "approved Walk head/torso/feet"
+      ],
+      "note": "Two closed small connected palms; Walk support/heart/head retained; shoulders brace and follow chest per native exposure",
+      "uniqueFrames": 14
+    },
+    {
+      "name": "push-brace-up",
+      "durations": [
+        1000
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "push-up",
+        "approved Idle feet"
+      ],
+      "note": "Two-palm stationary brace with neutral planted feet",
+      "uniqueFrames": 1
+    },
+    {
+      "name": "push-down",
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "push-down",
+        "approved Walk head/torso/feet"
+      ],
+      "note": "Two closed small connected palms; Walk support/heart/head retained; shoulders brace and follow chest per native exposure",
+      "uniqueFrames": 14
+    },
+    {
+      "name": "push-brace-down",
+      "durations": [
+        1000
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "push-down",
+        "approved Idle feet"
+      ],
+      "note": "Two-palm stationary brace with neutral planted feet",
+      "uniqueFrames": 1
+    },
+    {
+      "name": "dash-ghost",
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "width": 64,
+      "height": 64,
+      "sources": [
+        "new Dash full-image silhouette"
+      ],
+      "note": "Exact new Dash silhouettes, binary alpha and approved original cyan-shadow palette",
+      "uniqueFrames": 10
+    }
+  ],
+  "nativeFrames": [
+    {
+      "clip": "Idle",
+      "frame": 0,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Idle",
+      "frame": 1,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Idle",
+      "frame": 2,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Idle",
+      "frame": 3,
+      "rgbaSha256": "2bcbd6bfe1307c53b36352eeb8c77bb1be022f8551b43c5c198148bb0ac126e2",
+      "changedFromIdle": 2,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Idle",
+      "frame": 4,
+      "rgbaSha256": "2bcbd6bfe1307c53b36352eeb8c77bb1be022f8551b43c5c198148bb0ac126e2",
+      "changedFromIdle": 2,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Idle",
+      "frame": 5,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Idle",
+      "frame": 6,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Idle",
+      "frame": 7,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 0,
+      "rgbaSha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc",
+      "changedFromIdle": 734,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 1,
+      "rgbaSha256": "3f696545a5679c86ac527d5405040b4acb6f3c0b63946fb7fd5408c43d8343fc",
+      "changedFromIdle": 776,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 2,
+      "rgbaSha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c",
+      "changedFromIdle": 708,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 3,
+      "rgbaSha256": "ca0d14ba49e7dcb58d1061a849334435de2cd3dfa4a1b9886fb1ee2c2138cc70",
+      "changedFromIdle": 605,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 4,
+      "rgbaSha256": "5a33393809abb020b62dd3ffd568d792e62e1f382fa5d8afec1adfcbef3b0f9b",
+      "changedFromIdle": 250,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 5,
+      "rgbaSha256": "48cda201cf469921a781daf3b6b49437621c5c2fda7e5c005e35cd96059e47dd",
+      "changedFromIdle": 611,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 6,
+      "rgbaSha256": "a58309f473bfcfd9a8c2877735e8e6c16641f44f983f40307222f0cbeee9f5fb",
+      "changedFromIdle": 597,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 7,
+      "rgbaSha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0",
+      "changedFromIdle": 762,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 8,
+      "rgbaSha256": "b081fd537fc7cc1d3a6a27e9c920ea38c8fe22a043e64eaab3befb45a0468904",
+      "changedFromIdle": 775,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 9,
+      "rgbaSha256": "311093d01f74184c0f0f37c3a9ad5029296755e0e9007469eb4b53c27f4cf7e9",
+      "changedFromIdle": 711,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 10,
+      "rgbaSha256": "1b8dbde9c82edb2eb50d327ae764768735188a53cdfc40711b7a764de17d04af",
+      "changedFromIdle": 611,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 11,
+      "rgbaSha256": "23ffd3f45b8a7f9f9d2512d9aeec53af3947d3f0a15f78c7c878488fbaecbd0d",
+      "changedFromIdle": 234,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 12,
+      "rgbaSha256": "50474508f122d8255b10ec8e82ec186c58a24c07ec3d44358a1e75931cfa0c82",
+      "changedFromIdle": 549,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Walk",
+      "frame": 13,
+      "rgbaSha256": "60cc73dbe2eb24cd25872cdddb0b79c1110f2837a3ee5c45813c46d2496a6d57",
+      "changedFromIdle": 536,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 0,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 1,
+      "rgbaSha256": "e8c8a76ea7092a6f72f0d3ff10d0786e01cd6be58577bb587f920b6d5bd69963",
+      "changedFromIdle": 729,
+      "components8": 1,
+      "bbox": [
+        15,
+        9,
+        46,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 2,
+      "rgbaSha256": "31f82eadf5587db3d2d5fb4e65545d1c4b59859784c15981a8a4f1d3c5a012f7",
+      "changedFromIdle": 768,
+      "components8": 1,
+      "bbox": [
+        15,
+        9,
+        46,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 3,
+      "rgbaSha256": "7c44e820741efa4c5de982b672971e2bea76de2f3ab399a18a9886d05935599b",
+      "changedFromIdle": 661,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 4,
+      "rgbaSha256": "1946e9eb0faa3fbc45a70fbe922774c2325f75e78b8b65f58d9a015a89d9709f",
+      "changedFromIdle": 799,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 5,
+      "rgbaSha256": "64fb23952adf747258b0534ec7db5e77abad9b566f22ac335a9218db2f64a0cc",
+      "changedFromIdle": 884,
+      "components8": 1,
+      "bbox": [
+        17,
+        10,
+        56,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 6,
+      "rgbaSha256": "41af4cf770440fde60805ba6573355884c214a9ebc170fbafc3869a342d8dd35",
+      "changedFromIdle": 751,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 7,
+      "rgbaSha256": "61fedf4cebd930d5d6ebf4dea8948e206b86a35048c1e62553e775401864a0c6",
+      "changedFromIdle": 577,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 8,
+      "rgbaSha256": "ecbb28e8cba6ee8c306ce54f5f7f9410b24e5f787895d7a0865e229a7db6f96a",
+      "changedFromIdle": 574,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 9,
+      "rgbaSha256": "e612cf6bcb530df53c87c20c832814b01ceace8f6fcfb0bbdc316012fe2f965f",
+      "changedFromIdle": 496,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 10,
+      "rgbaSha256": "e720dac1c0518121c8bd2e38e9993523ec972b9f574af6f9ec7bd07a30330355",
+      "changedFromIdle": 2,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 11,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 0,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 1,
+      "rgbaSha256": "bfd4f898b1da4e155f75c354b9d633b74c6edca998b98692c16bcae6bab0b2c2",
+      "changedFromIdle": 379,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 2,
+      "rgbaSha256": "11099e0491de582c03491c9f95393f5640ccdde1c0f1e9c0c25e7a2633fac710",
+      "changedFromIdle": 731,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 3,
+      "rgbaSha256": "79f47d6928576a793d42a49a870066e6098967895ba0e2110e98b2c0818d6ea7",
+      "changedFromIdle": 594,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        53
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 4,
+      "rgbaSha256": "99b8b187570ba47030f46cfbf98826bf4b47fede4c87a1a2c6ee242198493882",
+      "changedFromIdle": 354,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        51
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 5,
+      "rgbaSha256": "f8e5431aa34ca5bdb77cde1948b53312327daf71fb617796928f75d7101d6619",
+      "changedFromIdle": 243,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        51
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 6,
+      "rgbaSha256": "56c83d00ab3da6fd29c8739814aa641cf6b8688309a95de3c29fb4a468887828",
+      "changedFromIdle": 251,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        52
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 7,
+      "rgbaSha256": "466fabf24453c3f764944bc575b47f45fc6d09e5c848a97a066b60deaa796617",
+      "changedFromIdle": 243,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        53
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 8,
+      "rgbaSha256": "870cb0634b828ff6a671963f9151a9618d97c137cb06e6dd6381a5d38fe60286",
+      "changedFromIdle": 135,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        50,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 9,
+      "rgbaSha256": "cf39684b1d378065db1d993282d36ea0c6bc79770a1c9168a969331fa63def18",
+      "changedFromIdle": 305,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        50,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 10,
+      "rgbaSha256": "11099e0491de582c03491c9f95393f5640ccdde1c0f1e9c0c25e7a2633fac710",
+      "changedFromIdle": 731,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 11,
+      "rgbaSha256": "d89c56ead48a3a3f319518d0f32a8d5c55fb1f7383ab30c618c4c4a962c965e9",
+      "changedFromIdle": 825,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 12,
+      "rgbaSha256": "11099e0491de582c03491c9f95393f5640ccdde1c0f1e9c0c25e7a2633fac710",
+      "changedFromIdle": 731,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 13,
+      "rgbaSha256": "bfd4f898b1da4e155f75c354b9d633b74c6edca998b98692c16bcae6bab0b2c2",
+      "changedFromIdle": 379,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Jump",
+      "frame": 14,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 0,
+      "rgbaSha256": "99b8b187570ba47030f46cfbf98826bf4b47fede4c87a1a2c6ee242198493882",
+      "changedFromIdle": 354,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        51
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 1,
+      "rgbaSha256": "28f05e7c3f65fb65a2e4e4ee014fc64782bb832318779fda1ebb6cb8152a8fbd",
+      "changedFromIdle": 265,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 2,
+      "rgbaSha256": "057987e75f0376587e4b14ae6512f37c0d4785f85cc5b8803f6196fd54d076a4",
+      "changedFromIdle": 424,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        53
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 3,
+      "rgbaSha256": "fb09b8b340a1b3f85315c792dd958d4fdb89562e82adec3bc9df57b03c5e2795",
+      "changedFromIdle": 803,
+      "components8": 1,
+      "bbox": [
+        16,
+        7,
+        49,
+        51
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 4,
+      "rgbaSha256": "b430e7546470723707fb65dcbf97eecbbbf261e80f1ce6669628c6887bb3cdff",
+      "changedFromIdle": 370,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        51
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 5,
+      "rgbaSha256": "56c83d00ab3da6fd29c8739814aa641cf6b8688309a95de3c29fb4a468887828",
+      "changedFromIdle": 251,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        52
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 6,
+      "rgbaSha256": "466fabf24453c3f764944bc575b47f45fc6d09e5c848a97a066b60deaa796617",
+      "changedFromIdle": 243,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        53
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 7,
+      "rgbaSha256": "870cb0634b828ff6a671963f9151a9618d97c137cb06e6dd6381a5d38fe60286",
+      "changedFromIdle": 135,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        50,
+        56
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 8,
+      "rgbaSha256": "cf39684b1d378065db1d993282d36ea0c6bc79770a1c9168a969331fa63def18",
+      "changedFromIdle": 305,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        50,
+        56
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 9,
+      "rgbaSha256": "11099e0491de582c03491c9f95393f5640ccdde1c0f1e9c0c25e7a2633fac710",
+      "changedFromIdle": 731,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 10,
+      "rgbaSha256": "d89c56ead48a3a3f319518d0f32a8d5c55fb1f7383ab30c618c4c4a962c965e9",
+      "changedFromIdle": 825,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 11,
+      "rgbaSha256": "bfd4f898b1da4e155f75c354b9d633b74c6edca998b98692c16bcae6bab0b2c2",
+      "changedFromIdle": 379,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "DoubleJump",
+      "frame": 12,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 0,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 1,
+      "rgbaSha256": "bfd4f898b1da4e155f75c354b9d633b74c6edca998b98692c16bcae6bab0b2c2",
+      "changedFromIdle": 379,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 2,
+      "rgbaSha256": "dbc2eb54159a57d4081571666211e09b78c4e9b0adaeed2ee5ec22217869b751",
+      "changedFromIdle": 708,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 3,
+      "rgbaSha256": "6eb85b05c47fe6dc3da043d21001c06d3a27480745eff777d829c95cf42d8fe7",
+      "changedFromIdle": 860,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        49,
+        55
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 4,
+      "rgbaSha256": "1a1b71b2bd0f1adb4d24d32f833d3bfbe427f5fd6bc7e25fd6d90104968dd90c",
+      "changedFromIdle": 863,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        49,
+        55
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 5,
+      "rgbaSha256": "342d65e459c5fe301ee2d4fb75828ac3b4e66ffaec048c6be5d6a27cf67e2d91",
+      "changedFromIdle": 842,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        54
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 6,
+      "rgbaSha256": "c4959f8858fd1195a79b7c9eacdd5eebfcba09d02452b2fb31a16e5cd1fce4cf",
+      "changedFromIdle": 763,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 7,
+      "rgbaSha256": "ef93caf2b85a4eb221d9b0781d64a4400cc368035b8522261134d92048bc0632",
+      "changedFromIdle": 734,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 8,
+      "rgbaSha256": "c987a0d14dd7614fcba6c757f2025b1336be510ad0065cb2e85d2f65badf3a9c",
+      "changedFromIdle": 786,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 9,
+      "rgbaSha256": "1ce0449085a9e16518b8b23f5885ef1143db64be7f403126b500faa38f7a822f",
+      "changedFromIdle": 468,
+      "components8": 1,
+      "bbox": [
+        15,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 10,
+      "rgbaSha256": "bfd4f898b1da4e155f75c354b9d633b74c6edca998b98692c16bcae6bab0b2c2",
+      "changedFromIdle": 379,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 11,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "hurt-pose",
+      "frame": 0,
+      "rgbaSha256": "ef66859e419132da89e416bbc075fe961fb43cf825f9995415d0dc4294bba051",
+      "changedFromIdle": 728,
+      "components8": 1,
+      "bbox": [
+        15,
+        9,
+        46,
+        56
+      ]
+    },
+    {
+      "clip": "hurt-pose",
+      "frame": 1,
+      "rgbaSha256": "5ad450f89530a1bd2be76716272b827dc65cad65182f0d512f2c886f4240f179",
+      "changedFromIdle": 570,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "hurt-pose",
+      "frame": 2,
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "changedFromIdle": 0,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 0,
+      "rgbaSha256": "503ad0b18e6ec2b5494a726122887d790fa183509bdc96c257d9317d4a8dfe59",
+      "changedFromIdle": 826,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 1,
+      "rgbaSha256": "e1f4e9e35d3525c216dc31618b4e8dfc5558475e1eadb93ac81736bf9afdea28",
+      "changedFromIdle": 861,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 2,
+      "rgbaSha256": "76039d41c469e773c606571b5ce83f5ba19f3f03f69666b21c40e36126c284d9",
+      "changedFromIdle": 791,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 3,
+      "rgbaSha256": "b6774fe5e1d5adae8f12aa5ad62d2d7a96ea5cf22086ea2de837f29ee22fcf56",
+      "changedFromIdle": 694,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 4,
+      "rgbaSha256": "a231f74fdd7a5743dc47821bb0a4d3ee051d582e0b19a05df52891cbee27a5a8",
+      "changedFromIdle": 347,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 5,
+      "rgbaSha256": "3a3d3c97bdc66e90b3682bcb361c0aadcd9309dcb68f306a1649ff97c76cdac4",
+      "changedFromIdle": 707,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 6,
+      "rgbaSha256": "06fa5489e852ea49792ba0c10251076835d668aa3411ff3c62fa5d0f282ca58d",
+      "changedFromIdle": 693,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 7,
+      "rgbaSha256": "f75f746ab5e07a8571ba7ed425306fbf3d26f1ce126d8d71dba1a824dd5dfb1c",
+      "changedFromIdle": 853,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 8,
+      "rgbaSha256": "c69fb45cde6fad4fcb972c27fae4979d198404adc5ac961528efb2b18376beda",
+      "changedFromIdle": 865,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 9,
+      "rgbaSha256": "632fb91253b50aa6dbaaf0afdc2fffbed460a5eaa3f055d8c8723d86277669d6",
+      "changedFromIdle": 797,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 10,
+      "rgbaSha256": "6fa3d90c4dd9fc445cb87d8278c5f7768c6e23a5f491d416a6c8387b1586882a",
+      "changedFromIdle": 700,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 11,
+      "rgbaSha256": "4f0f2878ef69dd71ec21daa36c12e873edb8b7f894345d2af17ddb8fa1896213",
+      "changedFromIdle": 332,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 12,
+      "rgbaSha256": "1092a0dc091026379d1a39725bfca6f2c237cdc40b2f5f84029d7a2a1044f361",
+      "changedFromIdle": 673,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-side",
+      "frame": 13,
+      "rgbaSha256": "c6affd267047f0d8f0da9f39b21762afb9c2f185400fe2acf0d9329c661dd1db",
+      "changedFromIdle": 660,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-brace-side",
+      "frame": 0,
+      "rgbaSha256": "b9fc913a82b36615cfffae28d268d88751e7b58d4e45e4ff115013d224ac7228",
+      "changedFromIdle": 181,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        55,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 0,
+      "rgbaSha256": "56165dee851bde8ed2a3cd71b378e28811fe5f4502f84c8da8db3b72acb1c6f7",
+      "changedFromIdle": 776,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 1,
+      "rgbaSha256": "4df37d13d1a544f063db2a5a83d1d4114f82c5749c6fcf51e4ba587467311b9f",
+      "changedFromIdle": 810,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 2,
+      "rgbaSha256": "f11999e048536a57ce4e2b57ea94d413ac1f3ac0401dbf8c3f9a4041b7cf59d5",
+      "changedFromIdle": 740,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 3,
+      "rgbaSha256": "89d6cb0cbcc522a5d5eef4098406510e8c74fe86831fde7ae8a03aa7f58ce396",
+      "changedFromIdle": 645,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 4,
+      "rgbaSha256": "0cc18a329b1f84e0f36e9da2a6e1e89029f07365b6676a30ffac07cb84dcc15a",
+      "changedFromIdle": 299,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 5,
+      "rgbaSha256": "e37053bf8e820ca340a77b767c890ae7953ab005cb8c30355ceca6129db25e72",
+      "changedFromIdle": 661,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 6,
+      "rgbaSha256": "465c69a6ea4d97a992760faa504c8104ed9603caa667e0410b96e943094d2dd2",
+      "changedFromIdle": 647,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 7,
+      "rgbaSha256": "d9f58facefd4afd5427fc8a11a9db2a6cbcc4d493e96aadbd624d606b1ef94d7",
+      "changedFromIdle": 802,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 8,
+      "rgbaSha256": "1c4d3f7f89e8c6fe72e543df615df61241e2224c60f2fcf3cef3d66df6cb0e98",
+      "changedFromIdle": 813,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 9,
+      "rgbaSha256": "a5917d7e7037374134af2741d56d1a00a0c2d8f5e79024d5a8378ac36bb6d1ba",
+      "changedFromIdle": 745,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 10,
+      "rgbaSha256": "b164f5f9df9029bf7c83b063dbbe29a1baf647ef2ce009818bea2f4fe970febc",
+      "changedFromIdle": 651,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 11,
+      "rgbaSha256": "d38a6a863614b77f2855b184844d2c185180a85bc0a18740df276f5c048e9751",
+      "changedFromIdle": 285,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 12,
+      "rgbaSha256": "982ec091bb00cd5e12d21e8b251ca3beaa9da0a096fc14037221fff7bd2c00fd",
+      "changedFromIdle": 627,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-up",
+      "frame": 13,
+      "rgbaSha256": "53b5dd1a192101a8ccdc0077a688434942b461c125179d8f62b5a157efcf8e73",
+      "changedFromIdle": 614,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-brace-up",
+      "frame": 0,
+      "rgbaSha256": "e869e65e12dc7d773b4b6cbe556bdd268e2f7a341dcfd6d3e2a0e8e53f7cbeb7",
+      "changedFromIdle": 136,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 0,
+      "rgbaSha256": "d5c56a0a51582283ef88da3dc658bbddaa3f7211167a6b1978be441956583940",
+      "changedFromIdle": 769,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 1,
+      "rgbaSha256": "08d44b7e5fcead6e99bd5fc6075ed894c1878b334556e4388123ce0f5a0a8d71",
+      "changedFromIdle": 798,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 2,
+      "rgbaSha256": "ead1ef5fc0274fbc2b7341ca278a7eb2d73ef0a919a3e1e180af48c33b7fee71",
+      "changedFromIdle": 726,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 3,
+      "rgbaSha256": "9603f6ce6bf1256df88f510ad6fd06a9fd1472a9190b2c52a1e0909faa754395",
+      "changedFromIdle": 630,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 4,
+      "rgbaSha256": "9d201b86b5d9bcb42bc5e6468f1845726a66155c1ce58e257cbdd35674503f82",
+      "changedFromIdle": 282,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 5,
+      "rgbaSha256": "6f6559525973e5f7288f72e34a7de443b9ed6ac89edd1048edc8284c2b1666d7",
+      "changedFromIdle": 647,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 6,
+      "rgbaSha256": "923ce781cbe7176a05dd8918ecdbe80f7122e1f16c224bbaf19a9eb94f2e0fa7",
+      "changedFromIdle": 633,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 7,
+      "rgbaSha256": "db90278c57ac5e9fdd2bd951b9cd92baedd7ab32c2d7f7bfee520c20234121f5",
+      "changedFromIdle": 788,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 8,
+      "rgbaSha256": "91a8d26913123782228d681eddf85158e7b70333fe4733b975c94748f3485ba6",
+      "changedFromIdle": 799,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 9,
+      "rgbaSha256": "c3283bdce481c2d0063c3e5f84d707b24c1b91d47b707e335fd6a72269f6ea06",
+      "changedFromIdle": 730,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 10,
+      "rgbaSha256": "17410812e022a293350077cb257d0bfeded8f933df65fc2aab8438ee1ce14121",
+      "changedFromIdle": 636,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 11,
+      "rgbaSha256": "769ae32207b2a1fe552b8876178922e71df57756e4d8bd5b6aa3da586b2083cf",
+      "changedFromIdle": 276,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 12,
+      "rgbaSha256": "688fa73f144275537c470a628e17fa5af987b241fa43f3a91d099440c11a6cc0",
+      "changedFromIdle": 621,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-down",
+      "frame": 13,
+      "rgbaSha256": "036f5a469a1f5812a00611fee0bf834fd9c755146dbc88da49bce9377f2c4f76",
+      "changedFromIdle": 608,
+      "components8": 1,
+      "bbox": [
+        17,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "push-brace-down",
+      "frame": 0,
+      "rgbaSha256": "e7ee9da43cfc35f52c890535478155eac39d7b4bc459bfdcd9a22476e221318e",
+      "changedFromIdle": 137,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        49,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 0,
+      "rgbaSha256": "4c7537b02c882921efabcef9e17b446eeb64903c931001acfa097b2d745a9a4e",
+      "changedFromIdle": 1082,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 1,
+      "rgbaSha256": "acb2aa61a345c4d0174c3b1640275e48906bc03dc481c800a0ea3017d2af8210",
+      "changedFromIdle": 1097,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 2,
+      "rgbaSha256": "be292f1aa4d6a4ed047e6ecb06464f081355ef53697cf35a6756ddfbe8581e34",
+      "changedFromIdle": 1116,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 3,
+      "rgbaSha256": "9848940d8040878bb25f23033542e06eed44c4d74b89aa55f1ad2713c253ac63",
+      "changedFromIdle": 1173,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        49,
+        55
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 4,
+      "rgbaSha256": "c3645d74f137fa1b2b9abee3899491c47dc0d0acbcea9b988df0edf6d3c0d225",
+      "changedFromIdle": 1171,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        49,
+        55
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 5,
+      "rgbaSha256": "b500c1c4e37ea69926abd8deb887d178c3e344c4338b7fafc128774df41b8bdb",
+      "changedFromIdle": 1170,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        49,
+        54
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 6,
+      "rgbaSha256": "9ed048f98f22dd70bbc6ac43c255dff8b4d1c7c435131b5f3c644b27a37f19f1",
+      "changedFromIdle": 1150,
+      "components8": 1,
+      "bbox": [
+        17,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 7,
+      "rgbaSha256": "66a869a529f687ad00afed5109af9358cc1cc3833b96e6b98acb3adf1e87829e",
+      "changedFromIdle": 1136,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        48,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 8,
+      "rgbaSha256": "cdafc75c6ee88407054cdf47e6295dce73e41ac077cb39d3676da8e2ccaf14d0",
+      "changedFromIdle": 1122,
+      "components8": 1,
+      "bbox": [
+        16,
+        10,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 9,
+      "rgbaSha256": "ad585c9844ddea1af6c2fc692d88654058b541cf4657c736d32e6a2949f888f4",
+      "changedFromIdle": 1107,
+      "components8": 1,
+      "bbox": [
+        15,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 10,
+      "rgbaSha256": "acb2aa61a345c4d0174c3b1640275e48906bc03dc481c800a0ea3017d2af8210",
+      "changedFromIdle": 1097,
+      "components8": 1,
+      "bbox": [
+        16,
+        9,
+        47,
+        56
+      ]
+    },
+    {
+      "clip": "dash-ghost",
+      "frame": 11,
+      "rgbaSha256": "4c7537b02c882921efabcef9e17b446eeb64903c931001acfa097b2d745a9a4e",
+      "changedFromIdle": 1082,
+      "components8": 1,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ]
+    }
+  ],
+  "revision": "iteration5",
+  "review": "First draft rejected; iteration2..4 actual archived comparisons; iteration5 ready for runtime review. Human acceptance remains unverified.",
+  "contributionDisclosure": "Generated sources guide pose topology and provide sampled palm center pixels; tuck also provides actual knee/boot image patches. Head, torso, heart and neutral feet are preserved from approved native images. Connecting joints, contour cleanup, occlusion, waist seam and timing are explicitly native authored, not generated animation frames."
+}

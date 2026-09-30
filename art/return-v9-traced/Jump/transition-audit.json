@@ -1,0 +1,156 @@
+[
+  {
+    "from": 0,
+    "to": 1,
+    "headVerticalShiftPixels": 1,
+    "wholeFrameChangedPixels": 640,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "idle",
+      "10-near-neutral"
+    ]
+  },
+  {
+    "from": 1,
+    "to": 2,
+    "headVerticalShiftPixels": 2,
+    "wholeFrameChangedPixels": 826,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "10-near-neutral",
+      "01-preload"
+    ]
+  },
+  {
+    "from": 2,
+    "to": 3,
+    "headVerticalShiftPixels": -3,
+    "wholeFrameChangedPixels": 972,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "01-preload",
+      "02-extension"
+    ]
+  },
+  {
+    "from": 3,
+    "to": 4,
+    "headVerticalShiftPixels": 0,
+    "wholeFrameChangedPixels": 131,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "02-extension",
+      "11-half-fold"
+    ]
+  },
+  {
+    "from": 4,
+    "to": 5,
+    "headVerticalShiftPixels": 0,
+    "wholeFrameChangedPixels": 87,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "11-half-fold",
+      "03-ascent"
+    ]
+  },
+  {
+    "from": 5,
+    "to": 6,
+    "headVerticalShiftPixels": 0,
+    "wholeFrameChangedPixels": 84,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "03-ascent",
+      "04-apex"
+    ]
+  },
+  {
+    "from": 6,
+    "to": 7,
+    "headVerticalShiftPixels": 0,
+    "wholeFrameChangedPixels": 97,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "04-apex",
+      "12-half-open"
+    ]
+  },
+  {
+    "from": 7,
+    "to": 8,
+    "headVerticalShiftPixels": 0,
+    "wholeFrameChangedPixels": 108,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "12-half-open",
+      "05-descent"
+    ]
+  },
+  {
+    "from": 8,
+    "to": 9,
+    "headVerticalShiftPixels": 0,
+    "wholeFrameChangedPixels": 0,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "05-descent",
+      "05-descent"
+    ]
+  },
+  {
+    "from": 9,
+    "to": 10,
+    "headVerticalShiftPixels": 3,
+    "wholeFrameChangedPixels": 978,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "05-descent",
+      "15-land-impact"
+    ]
+  },
+  {
+    "from": 10,
+    "to": 11,
+    "headVerticalShiftPixels": -1,
+    "wholeFrameChangedPixels": 597,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "15-land-impact",
+      "13-land-rise"
+    ]
+  },
+  {
+    "from": 11,
+    "to": 12,
+    "headVerticalShiftPixels": -1,
+    "wholeFrameChangedPixels": 635,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "13-land-rise",
+      "07-recovery"
+    ]
+  },
+  {
+    "from": 12,
+    "to": 13,
+    "headVerticalShiftPixels": 0,
+    "wholeFrameChangedPixels": 89,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "07-recovery",
+      "10-near-neutral"
+    ]
+  },
+  {
+    "from": 13,
+    "to": 14,
+    "headVerticalShiftPixels": -1,
+    "wholeFrameChangedPixels": 640,
+    "headChestHeartModelChangedPixels": 0,
+    "sourceTransition": [
+      "10-near-neutral",
+      "idle"
+    ]
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "generated_complete_body_keys": 8,
+  "rejected_sources": [],
+  "native_trace_keys": 8,
+  "frame_size": [
+    64,
+    64
+  ],
+  "palette": [
+    [
+      43,
+      27,
+      36,
+      255
+    ],
+    [
+      188,
+      120,
+      59,
+      255
+    ],
+    [
+      221,
+      161,
+      75,
+      255
+    ],
+    [
+      117,
+      64,
+      50,
+      255
+    ],
+    [
+      244,
+      203,
+      112,
+      255
+    ],
+    [
+      156,
+      89,
+      56,
+      255
+    ],
+    [
+      255,
+      231,
+      163,
+      255
+    ],
+    [
+      19,
+      220,
+      232,
+      255
+    ],
+    [
+      19,
+      52,
+      69,
+      255
+    ],
+    [
+      165,
+      252,
+      241,
+      255
+    ],
+    [
+      11,
+      147,
+      177,
+      255
+    ],
+    [
+      9,
+      86,
+      107,
+      255
+    ],
+    [
+      82,
+      48,
+      40,
+      255
+    ]
+  ],
+  "clips": [
+    {
+      "name": "Attack",
+      "frames": 12,
+      "all_hands_visible_and_connected": true,
+      "neutral_endpoints_exact": true
+    },
+    {
+      "name": "Dash",
+      "frames": 12,
+      "all_hands_visible_and_connected": true,
+      "neutral_endpoints_exact": true
+    }
+  ],
+  "binary_alpha": true,
+  "no_resampling_between_frames": true,
+  "original_identity_rgba_exact_in_all_frames": true,
+  "head_size": [
+    31,
+    27
+  ],
+  "body_size": [
+    21,
+    16
+  ],
+  "heart_size": [
+    13,
+    10
+  ],
+  "round_hands": {
+    "size": [
+      4,
+      4
+    ],
+    "silhouette": [
+      2,
+      4,
+      4,
+      2
+    ],
+    "colors": [
+      "INK",
+      "GOLD"
+    ]
+  },
+  "visual_review_status": "all24 actualPNGs anddecodedGIF exposures inspected besideoriginal; exacthead/body/core identity,roundhands,continuouswrists andshortconnectedlegs",
+  "runtime_playback_review": false
+}

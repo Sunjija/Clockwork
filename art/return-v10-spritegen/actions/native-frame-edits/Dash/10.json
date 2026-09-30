@@ -1,0 +1,260 @@
+{
+  "frame": 10,
+  "source_key": "original",
+  "pose": "recovery-near-neutral",
+  "pixelEdits": [
+    {
+      "x": 20,
+      "y": 41,
+      "before": "4",
+      "after": "1"
+    },
+    {
+      "x": 17,
+      "y": 42,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 18,
+      "y": 42,
+      "before": "c",
+      "after": "0"
+    },
+    {
+      "x": 20,
+      "y": 42,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 21,
+      "y": 42,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 22,
+      "y": 42,
+      "before": "3",
+      "after": "."
+    },
+    {
+      "x": 42,
+      "y": 42,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 43,
+      "y": 42,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 45,
+      "y": 42,
+      "before": "6",
+      "after": "0"
+    },
+    {
+      "x": 17,
+      "y": 43,
+      "before": "6",
+      "after": "0"
+    },
+    {
+      "x": 20,
+      "y": 43,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 21,
+      "y": 43,
+      "before": "3",
+      "after": "0"
+    },
+    {
+      "x": 22,
+      "y": 43,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 42,
+      "y": 43,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 44,
+      "y": 43,
+      "before": "2",
+      "after": "6"
+    },
+    {
+      "x": 45,
+      "y": 43,
+      "before": "6",
+      "after": "4"
+    },
+    {
+      "x": 46,
+      "y": 43,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 47,
+      "y": 43,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 17,
+      "y": 44,
+      "before": "6",
+      "after": "0"
+    },
+    {
+      "x": 19,
+      "y": 44,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 22,
+      "y": 44,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 42,
+      "y": 44,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 43,
+      "y": 44,
+      "before": "5",
+      "after": "0"
+    },
+    {
+      "x": 44,
+      "y": 44,
+      "before": "2",
+      "after": "4"
+    },
+    {
+      "x": 45,
+      "y": 44,
+      "before": "4",
+      "after": "2"
+    },
+    {
+      "x": 46,
+      "y": 44,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 47,
+      "y": 44,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 17,
+      "y": 45,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 18,
+      "y": 45,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 19,
+      "y": 45,
+      "before": "5",
+      "after": "1"
+    },
+    {
+      "x": 20,
+      "y": 45,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 21,
+      "y": 45,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 22,
+      "y": 45,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 45,
+      "before": "5",
+      "after": "2"
+    },
+    {
+      "x": 46,
+      "y": 45,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 47,
+      "y": 45,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 17,
+      "y": 46,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 18,
+      "y": 46,
+      "before": "3",
+      "after": "0"
+    },
+    {
+      "x": 20,
+      "y": 46,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 21,
+      "y": 46,
+      "before": "c",
+      "after": "."
+    },
+    {
+      "x": 22,
+      "y": 46,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 46,
+      "before": ".",
+      "after": "0"
+    }
+  ],
+  "motionAnnotation": "original full stance; relaxed hands finish a one-pixel return"
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "name": "side-brace",
+    "source": "art/return-v9-traced/SupportSource/side-brace.png",
+    "sourceSha256": "8e5588489118b72d9a6e9f7f66505d3f153ead41790b906354473eac0ff67e17",
+    "sourceCrop": [
+      288,
+      166,
+      948,
+      1105
+    ],
+    "headLandmarks": [
+      284,
+      164,
+      944,
+      691
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      16,
+      8
+    ],
+    "footRegistrationDx": 4,
+    "method": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived",
+    "nativeRgbaSha256": "1cd9e87c66280277767e4d04ee813f7ab8a85ca24136bad8ebcca59b07ba000f"
+  },
+  {
+    "name": "side-shift",
+    "source": "art/return-v9-traced/SupportSource/side-shift.png",
+    "sourceSha256": "b6514afa6613b53297c855419f0440bbcd09e1f7f2e6213d2175199869c86961",
+    "sourceCrop": [
+      315,
+      160,
+      971,
+      1095
+    ],
+    "headLandmarks": [
+      282,
+      165,
+      948,
+      700
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      16,
+      8
+    ],
+    "footRegistrationDx": 2,
+    "method": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived",
+    "nativeRgbaSha256": "82af35d37984979bcb471ff549d3c2334aace9295c8b6e3e27e0dab07c735cb2"
+  },
+  {
+    "name": "side-contact",
+    "source": "art/return-v9-traced/SupportSource/side-contact.png",
+    "sourceSha256": "88250649be855ac4e6e41ebe041b1f69a86343b6638274fcde46480615092e60",
+    "sourceCrop": [
+      300,
+      181,
+      1092,
+      1139
+    ],
+    "headLandmarks": [
+      356,
+      179,
+      1069,
+      724
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      16,
+      8
+    ],
+    "footRegistrationDx": 8,
+    "method": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived",
+    "nativeRgbaSha256": "50347a6ffb4bcee96586ebc720471666a1f90e7a296c3133c69585bb7a32ad01"
+  },
+  {
+    "name": "push-up",
+    "source": "art/return-v9-traced/SupportSource/push-up.png",
+    "sourceSha256": "30088cffcdb3b84cbe8e4c0f75c73d9600b28d9f81f10bba4c49f955edfec532",
+    "sourceCrop": [
+      277,
+      149,
+      1082,
+      1135
+    ],
+    "headLandmarks": [
+      278,
+      145,
+      972,
+      711
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      16,
+      8
+    ],
+    "footRegistrationDx": 1,
+    "method": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived",
+    "nativeRgbaSha256": "679f1d90528e9df47b0fe97adc0fa50a97f836f179fb7ceffa7b1a2e3f45b550"
+  },
+  {
+    "name": "push-down",
+    "source": "art/return-v9-traced/SupportSource/push-down.png",
+    "sourceSha256": "40a37fd931568cf6ddd83e14bea77e5e893bc95a07e091f7cf3991c9266e1239",
+    "sourceCrop": [
+      294,
+      158,
+      986,
+      1098
+    ],
+    "headLandmarks": [
+      293,
+      155,
+      944,
+      698
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      16,
+      8
+    ],
+    "footRegistrationDx": 0,
+    "method": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived",
+    "nativeRgbaSha256": "b1242820310b78c2a705892664270685154105f1285d712c27dd08b115269c62"
+  },
+  {
+    "name": "hurt-recoil",
+    "source": "art/return-v9-traced/SupportSource/hurt-recoil.png",
+    "sourceSha256": "3dedf5e221a190b83d7140f8283b65e51670b0fbd4333f776465f810bcf735e3",
+    "sourceCrop": [
+      284,
+      164,
+      924,
+      1112
+    ],
+    "headLandmarks": [
+      282,
+      161,
+      926,
+      702
+    ],
+    "bodyHeight": 20,
+    "offset": [
+      15,
+      9
+    ],
+    "footRegistrationDx": 0,
+    "method": "complete generated single-pose trace followed by explicit original-model head/chest/heart pixel corrections, connected limb contour cleanup and shared fingerless round hands; back-facing shell retains generated rear colours",
+    "nativeRgbaSha256": "d3a021d48761afacb85f6e5f28e720e1d9435e66fa9a32da7c6d8e5044bdd732",
+    "nativeCorrections": {
+      "head": [
+        15,
+        9
+      ],
+      "torso": [
+        22,
+        35
+      ],
+      "roundHands": [
+        [
+          18,
+          37
+        ],
+        [
+          43,
+          37
+        ]
+      ],
+      "changedPixels": 502
+    },
+    "traceMethod": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived"
+  },
+  {
+    "name": "hurt-settle",
+    "source": "art/return-v9-traced/SupportSource/hurt-settle.png",
+    "sourceSha256": "eaa07a48a836aafcac6ec2a71f489c0b7ca8b26ac1ee969c81290a7a3039deee",
+    "sourceCrop": [
+      321,
+      158,
+      928,
+      1095
+    ],
+    "headLandmarks": [
+      316,
+      155,
+      932,
+      688
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      16,
+      8
+    ],
+    "footRegistrationDx": 2,
+    "method": "complete generated single-pose trace followed by explicit original-model head/chest/heart pixel corrections, connected limb contour cleanup and shared fingerless round hands; back-facing shell retains generated rear colours",
+    "nativeRgbaSha256": "2976786599b4ee39aaaf40d61a7c6e092daa7e18539bd4411414195209bfbfea",
+    "nativeCorrections": {
+      "head": [
+        18,
+        8
+      ],
+      "torso": [
+        25,
+        34
+      ],
+      "roundHands": [
+        [
+          19,
+          42
+        ],
+        [
+          46,
+          42
+        ]
+      ],
+      "changedPixels": 116
+    },
+    "traceMethod": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived"
+  },
+  {
+    "name": "push-up-high-round",
+    "source": "art/return-v9-traced/SupportSource/push-up-high-round.png",
+    "sourceSha256": "218e7c17cfe0b7de24e8b0ac47adf5424723b905b10505114db2aec5e003459d",
+    "sourceCrop": [
+      178,
+      131,
+      1076,
+      1093
+    ],
+    "headLandmarks": [
+      323,
+      130,
+      927,
+      690
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      17,
+      8
+    ],
+    "footRegistrationDx": 0,
+    "method": "complete generated single-pose trace followed by explicit original-model head/chest/heart pixel corrections, connected limb contour cleanup and shared fingerless round hands; back-facing shell retains generated rear colours",
+    "nativeRgbaSha256": "2a6757aa440ba75fbc06b011c1a591f8bd161f49765ffdbe6307ded3fb6a0ceb",
+    "nativeCorrections": {
+      "head": null,
+      "torso": [
+        23,
+        34
+      ],
+      "roundHands": [
+        [
+          14,
+          22
+        ],
+        [
+          48,
+          22
+        ]
+      ],
+      "changedPixels": 274
+    },
+    "traceMethod": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived"
+  },
+  {
+    "name": "push-down-round",
+    "source": "art/return-v9-traced/SupportSource/push-down-round.png",
+    "sourceSha256": "e168cf003f32d15514b1bb7e97c8c7b26e3db8138b286f04d6f8cba78bfec7ee",
+    "sourceCrop": [
+      269,
+      238,
+      987,
+      1091
+    ],
+    "headLandmarks": [
+      324,
+      237,
+      940,
+      809
+    ],
+    "bodyHeight": 16,
+    "offset": [
+      17,
+      13
+    ],
+    "footRegistrationDx": 0,
+    "method": "complete generated single-pose trace followed by explicit original-model head/chest/heart pixel corrections, connected limb contour cleanup and shared fingerless round hands; back-facing shell retains generated rear colours",
+    "nativeRgbaSha256": "d74376c7c5366fa97c0f17cdaaf4a769348f72a210266f30f69001eae69e0eb5",
+    "nativeCorrections": {
+      "head": [
+        16,
+        13
+      ],
+      "torso": [
+        23,
+        39
+      ],
+      "roundHands": [
+        [
+          23,
+          56
+        ],
+        [
+          40,
+          57
+        ]
+      ],
+      "changedPixels": 874
+    },
+    "traceMethod": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived"
+  },
+  {
+    "name": "side-round-contact",
+    "source": "art/return-v9-traced/SupportSource/side-round-contact.png",
+    "sourceSha256": "e6336b07c5d5541e0b5b6306a1a9c788d2cea1cd7f34270e4792b6bf724ceade",
+    "sourceCrop": [
+      298,
+      181,
+      1107,
+      1141
+    ],
+    "headLandmarks": [
+      356,
+      179,
+      1069,
+      724
+    ],
+    "bodyHeight": 21,
+    "offset": [
+      16,
+      8
+    ],
+    "footRegistrationDx": 8,
+    "method": "complete generated single-pose trace followed by explicit original-model head/chest/heart pixel corrections, connected limb contour cleanup and shared fingerless round hands; back-facing shell retains generated rear colours",
+    "nativeRgbaSha256": "3fc5e25666fc6cb84e25cc351a8db5bbb3e3eee4273978d15adfc3087675e789",
+    "nativeCorrections": {
+      "head": [
+        22,
+        8
+      ],
+      "torso": [
+        29,
+        34
+      ],
+      "roundHands": [
+        [
+          53,
+          35
+        ],
+        [
+          52,
+          43
+        ]
+      ],
+      "changedPixels": 842
+    },
+    "traceMethod": "entire single-image silhouette traced by dominant palette blocks, head footprint normalized 31x27; all head/body/arms/feet source-derived"
+  }
+]

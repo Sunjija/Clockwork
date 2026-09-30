@@ -10,6 +10,7 @@ namespace TiqueReturn
     {
         public ReworkModel Model {get;private set;}
         PuzzleBook book;
+        string tiqueResourceRoot;
         readonly Dictionary<string,Sprite> art=new Dictionary<string,Sprite>();
         readonly Dictionary<string,Sprite[]> animations=new Dictionary<string,Sprite[]>();
         readonly Dictionary<string,int[]> durations=new Dictionary<string,int[]>();
@@ -18,7 +19,7 @@ namespace TiqueReturn
         Camera cameraWorld;RenderTexture target;Sprite pixel;AudioSource speaker;
         float accumulator,keyRepeat;int heldDirection=-1;
         ReworkCommand pending=ReworkCommand.Empty;
-        bool smoke,releaseGate;int inputEpoch,manualShot;float smokeStart;readonly ReworkPilot pilot=new ReworkPilot();
+        bool smoke,tiqueReview,offscreenCapture,releaseGate;int inputEpoch,manualShot;float smokeStart;readonly ReworkPilot pilot=new ReworkPilot();
         readonly HashSet<string> screenshots=new HashSet<string>();
         readonly HashSet<string> seenArtStates=new HashSet<string>();
         readonly Color cyan=new Color(.39f,.89f,.87f),gold=new Color(.95f,.73f,.36f),red=new Color(1,.36f,.28f);
@@ -27,16 +28,25 @@ namespace TiqueReturn
         {
             Application.targetFrameRate=60;QualitySettings.vSyncCount=0;QualitySettings.antiAliasing=0;Application.runInBackground=true;
             smoke=Array.IndexOf(Environment.GetCommandLineArgs(),"--return-v2-smoke")>=0;smokeStart=Time.realtimeSinceStartup+1.2f;
+            tiqueReview=Array.IndexOf(Environment.GetCommandLineArgs(),"--return-tique-review")>=0;
+            offscreenCapture=(smoke||tiqueReview)&&Array.IndexOf(Environment.GetCommandLineArgs(),"--return-offscreen-capture")>=0;
             book=JsonUtility.FromJson<PuzzleBook>(Resources.Load<TextAsset>("ReturnV2/puzzles").text);Restart();
             // Explicit QA fixture, never used by Play.cmd or the normal title.
             // Physical key probes can reach the existing safe guide without
             // confusing them with the input-only full-flow smoke pilot.
             if(Array.IndexOf(Environment.GetCommandLineArgs(),"--return-input-check")>=0){Model.BeginArena();Model.age=2.4f;}
-            var clips=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("Return/clips").text);
+            var tiqueAsset=Resources.Load<TextAsset>("ReturnV2/TiqueV10/clips");
+            string tiqueRoot="ReturnV2/TiqueV10/";
+            if(tiqueAsset==null){tiqueAsset=Resources.Load<TextAsset>("ReturnV2/TiqueV9/clips");tiqueRoot="ReturnV2/TiqueV9/";}
+            if(tiqueAsset==null){tiqueAsset=Resources.Load<TextAsset>("ReturnV2/TiqueV8/clips");tiqueRoot=tiqueAsset!=null?"ReturnV2/TiqueV8/":"Return/Tique/";}
+            tiqueResourceRoot=tiqueRoot;
+            var clips=JsonUtility.FromJson<ClipFile>((tiqueAsset??Resources.Load<TextAsset>("Return/clips")).text);
+            Debug.Log("TIQUE_ART_ROOT "+tiqueResourceRoot+" clips="+clips.clips.Length);
             foreach(var c in clips.clips)
             {
-                durations[c.name]=c.durations;Sprite[] frames=new Sprite[c.durations.Length];
-                for(int i=0;i<frames.Length;i++)frames[i]=Load("Return/Tique/"+c.name+"/"+i.ToString("00"));animations[c.name]=frames;
+                string key=char.IsUpper(c.name[0])?c.name:"fx-"+c.name;
+                durations[key]=c.durations;Sprite[] frames=new Sprite[c.durations.Length];
+                for(int i=0;i<frames.Length;i++)frames[i]=Load(tiqueRoot+c.name+"/"+i.ToString("00"));animations[key]=frames;
             }
             foreach(string name in new[]{"floor","wall"})art[name]=Load("ReturnV2/Art/"+name);
             // v7: dotified guardian motion images. v0.3 WardenAuthored and v6 WardenRig stay for comparison.
@@ -55,7 +65,7 @@ namespace TiqueReturn
                 animations["state-"+clip.name]=frames;
             }
             var feedbackClips=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/Feedback/clips").text);
-            foreach(var c in feedbackClips.clips){string key="fx-"+c.name;durations[key]=c.durations;var f=new Sprite[c.durations.Length];for(int i=0;i<f.Length;i++)f[i]=Load("ReturnV2/Feedback/"+c.name+"/"+i.ToString("00"));animations[key]=f;}
+            foreach(var c in feedbackClips.clips){string key="fx-"+c.name;if(animations.ContainsKey(key))continue;durations[key]=c.durations;var f=new Sprite[c.durations.Length];for(int i=0;i<f.Length;i++)f[i]=Load("ReturnV2/Feedback/"+c.name+"/"+i.ToString("00"));animations[key]=f;}
             foreach(string name in new[]{"jump","dash","land","hit","hurt","success","switch","warning"})audio[name]=Resources.Load<AudioClip>("Return/Audio/"+name);
             var tex=new Texture2D(1,1);tex.SetPixel(0,0,Color.white);tex.Apply();pixel=Sprite.Create(tex,new Rect(0,0,1,1),Vector2.one*.5f,64);
             var cam=new GameObject("640 x 360 Pixel Camera");cam.transform.SetParent(transform);cameraWorld=cam.AddComponent<Camera>();cam.AddComponent<AudioListener>();
@@ -66,7 +76,7 @@ namespace TiqueReturn
             display.cullingMask=0;display.depth=1;display.clearFlags=CameraClearFlags.SolidColor;display.backgroundColor=Color.black;
             speaker=gameObject.AddComponent<AudioSource>();speaker.playOnAwake=false;speaker.volume=.3f;
             LoadPixelUi();
-            DrawWorld();if(smoke)StartCoroutine(Smoke());
+            DrawWorld();if(smoke)StartCoroutine(Smoke());else if(tiqueReview)StartCoroutine(ReviewTique());
         }
         Sprite Load(string path)
         {
@@ -78,6 +88,7 @@ namespace TiqueReturn
         bool Down(KeyCode a,KeyCode b)=>Input.GetKeyDown(a)||Input.GetKeyDown(b);
         void Update()
         {
+            if(tiqueReview){DrawWorld();return;}
             if(smoke&&Time.realtimeSinceStartup<smokeStart){DrawWorld();return;}
             if(Screen.width<640||Screen.height<360)Screen.SetResolution(Math.Max(640,Screen.width),Math.Max(360,Screen.height),false);
             if(Input.GetKeyDown(KeyCode.F11))Screen.fullScreen=!Screen.fullScreen;
@@ -114,7 +125,7 @@ namespace TiqueReturn
             }
             DrawWorld();
         }
-        void OnApplicationFocus(bool focus){if(!focus&&!smoke&&Model!=null&&Model.phase!=Journey.Title){Model.paused=true;FlushInput();inputEpoch=Model.inputEpoch;}}
+        void OnApplicationFocus(bool focus){if(!focus&&!smoke&&!tiqueReview&&Model!=null&&Model.phase!=Journey.Title){Model.paused=true;FlushInput();inputEpoch=Model.inputEpoch;}}
         void Draw(string id,Sprite sprite,float x,float y,int layer,Color? tint=null,bool flip=false,float width=0,float height=0)
         {
             if(!pool.TryGetValue(id,out var r)){var go=new GameObject(id);go.transform.SetParent(transform);r=go.AddComponent<SpriteRenderer>();pool[id]=r;}
@@ -133,7 +144,7 @@ namespace TiqueReturn
         void Bar(string id,float x,float y,float w,float h,Color color,int layer=3){Draw(id,pixel,x,y,layer,color,false,Mathf.Max(1,w),Mathf.Max(1,h));}
         void Tique(float x,float y,string clip,int frame,int layer=1000,bool flip=false)
         {
-            if(Model.phase==Journey.Combat&&Model.hero.invincible>0&&!Model.reducedEffects&&(int)(Model.clock*14)%2==1)return;
+            if(TiqueAnimation.ShouldBlinkBody(Model))return;
             Color color=Color.white;
             Draw("tique",animations[clip][frame],x-32,y-56,layer,color,flip);
         }
@@ -167,10 +178,10 @@ namespace TiqueReturn
                 float ht=Mathf.Clamp01(p.visualAge/.15f);ht=ht*ht*(3-2*ht);
                 float px=Mathf.Lerp(p.previousPlayer%7,p.player%7,ht),py=Mathf.Lerp(p.previousPlayer/7,p.player/7,ht);
                 float footX=OpeningSequence.FootX(px),footY=OpeningSequence.FootY(py);
-                string clip="Idle";int frame=0;
+                string clip="Idle";int frame=WardenAnimation.FrameAt(durations[clip],m.clock,loop:true);
                 if(p.visualAge<.15f){clip="Walk";frame=WardenAnimation.FrameAt(durations[clip],p.walkAge,loop:true);}
                 if(p.lastPushedBox>=0&&p.visualAge<.15f){clip="fx-push-"+(p.lastDirection==2?"up":p.lastDirection==3?"down":"side");frame=WardenAnimation.FrameAt(durations[clip],p.walkAge,loop:true);}
-                if(p.blockedAge<.12f){clip="fx-push-brace-"+(p.lastDirection==2?"up":p.lastDirection==3?"down":"side");frame=0;}
+                if(p.blockedAge<.12f&&Array.IndexOf(p.boxes,CorePuzzle.Next(p.player,p.lastDirection))>=0){clip="fx-push-brace-"+(p.lastDirection==2?"up":p.lastDirection==3?"down":"side");frame=0;}
                 if(m.phase==Journey.Opening)
                 {
                     StateFeedback("chute",0,footX-24,0,3);
@@ -210,13 +221,11 @@ namespace TiqueReturn
                 }
                 if(m.bossMove==IronMove.WaveAim||(m.bossMove==IronMove.Wave&&m.Rage>=2&&m.bossAge>=.92f&&m.bossAge<1.1f)||(m.bossMove==IronMove.Slam&&m.Rage>=2))for(int i=0;i<15;i++)StateProp("wave-warn"+i,"warning-wave",m.bossAge,20+i*41,274,12,true);
                 for(int i=0;i<m.waves.Count;i++)StateProp("wave"+i,"wave-spin",m.clock,m.waves[i].x-12,260,12,true,m.waves[i].direction<0);
-                string pose=m.hero.Pose(durations,out int f);
-                if(!m.hero.Dashing&&!m.hero.Attacking&&m.hero.grounded&&m.hero.dashAge<.34f){pose="Dash";f=WardenAnimation.FrameAt(durations[pose],m.hero.dashAge-.16f,7,11);}
-                if(m.phase==Journey.Restored&&m.hero.axis==0){pose="Idle";f=0;}
+                int f=TiqueAnimation.Select(m.hero,durations,out string pose);
                 if(m.phase==Journey.Dead){pose="fx-power-down";f=WardenAnimation.FrameAt(durations[pose],m.age);}
-                else if(m.clock-m.hurtAt<.15f&&!m.hero.Dashing&&!m.hero.Attacking&&m.hero.grounded){pose="fx-hurt-pose";f=WardenAnimation.FrameAt(durations[pose],m.clock-m.hurtAt);}
+                else if(TiqueAnimation.InitialHurtVisible(m)){pose="fx-hurt-pose";f=WardenAnimation.FrameAt(durations[pose],m.clock-m.hurtAt);}
                 else if(m.idleAge>2.5f&&(m.idleAge-2.5f)%5.5f<.26f&&m.bossMove==IronMove.Rest&&!m.reducedEffects){float blink=(m.idleAge-2.5f)%5.5f;pose=blink<.08f||blink>=.18f?"fx-blink-half":"fx-blink-closed";f=0;}
-                if(m.hero.Dashing&&!m.reducedEffects)for(int i=1;i<=2;i++)Draw("ghost"+i,animations["fx-dash-ghost"][f],m.hero.x-32-m.hero.facing*i*9,m.hero.y-56,19,Color.white,m.hero.facing<0);
+                if(m.hero.Dashing&&!m.reducedEffects)for(int i=1;i<=2;i++)Draw("ghost"+i,animations["fx-dash-ghost"][f],m.hero.x-32-m.hero.facing*i*9,m.hero.y-56,19,new Color(1,1,1,i==1?.28f:.12f),m.hero.facing<0);
                 Tique(m.hero.x,m.hero.y,pose,f,20,m.hero.facing<0);
                 if(m.hero.invincible>0&&m.phase==Journey.Combat)StateFeedback("protect",0,m.hero.x-12,m.hero.y-27,21); // ring centred on the heart (15px above the feet)
                 bool chargeLock=m.bossMove==IronMove.ChargeAim&&m.bossAge>=.35f;
@@ -225,7 +234,8 @@ namespace TiqueReturn
                     Bar("lock-left",left,265,2,10,gold,13);Bar("lock-left-cap",left,265,8,2,gold,13);Bar("lock-right",right-2,265,2,10,gold,13);Bar("lock-right-cap",right-8,265,8,2,gold,13);}
             }
             if(!m.InArena&&m.hintLevel>0)foreach(int goal in m.puzzle.room.goals){float x=194+goal%7*36,y=64+goal/7*36;Bar("hint-l"+goal,x,y,2,36,gold,200);Bar("hint-r"+goal,x+34,y,2,36,gold,200);}
-            if(m.InArena&&m.hero.Attacking&&m.hero.attackAge>=.08f&&m.hero.attackAge<=.18f)StateFeedback("air",m.hero.attackAge-.08f,m.hero.x+m.hero.facing*14-10,m.hero.y-28,21,m.hero.facing<0);
+            // Contact and miss feedback are emitted by the actual 120–220ms
+            // outcome window; no premature, unconditional miss effect is drawn.
             foreach(var cue in m.feedback.cues)
             {
                 if(cue.kind=="bridge")
@@ -252,8 +262,25 @@ namespace TiqueReturn
         }
         IEnumerator Capture(string folder,string name)
         {
-            if(!screenshots.Add(name))yield break;yield return new WaitForEndOfFrame();
-            var texture=ScreenCapture.CaptureScreenshotAsTexture();if(texture==null)throw new InvalidOperationException("Visible player capture failed");
+            if(!screenshots.Add(name))yield break;
+            Texture2D texture;
+            if(offscreenCapture)
+            {
+                // QA only: render the real production world camera without
+                // operating a desktop window. Excludes IMGUI and presentation.
+                cameraWorld.Render();var previous=RenderTexture.active;
+                try
+                {
+                    RenderTexture.active=target;texture=new Texture2D(target.width,target.height,TextureFormat.RGBA32,false);
+                    texture.ReadPixels(new Rect(0,0,target.width,target.height),0,0);texture.Apply();
+                }
+                finally{RenderTexture.active=previous;}
+            }
+            else
+            {
+                yield return new WaitForEndOfFrame();texture=ScreenCapture.CaptureScreenshotAsTexture();
+                if(texture==null)throw new InvalidOperationException("Visible player capture failed");
+            }
             File.WriteAllBytes(Path.Combine(folder,name+".png"),texture.EncodeToPNG());Destroy(texture);
         }
         IEnumerator Smoke()

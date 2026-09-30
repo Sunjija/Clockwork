@@ -52,7 +52,18 @@ namespace TiqueReturn
             Snapshot s=history.Pop();player=previousPlayer=s.player;boxes=s.boxes;previousBoxes=(int[])boxes.Clone();
             moves=s.moves;pushes=s.pushes;motion=0;visualAge=blockedAge=100;lastPushedBox=-1;feedback="한 수 되돌렸어요.";return true;
         }
-        public void AdvanceVisual(float dt){if(visualAge<.15f)walkAge+=Math.Min(dt,.15f-visualAge)*36/.15f/45;motion=Math.Max(0,motion-dt);visualAge+=dt;blockedAge+=dt;}
+        public void AdvanceVisual(float dt)
+        {
+            if(visualAge<.15f)
+            {
+                // Match the renderer's eased 36px step, including acceleration
+                // and settling. Logical tile movement and lock durations are unchanged.
+                float before=Math.Min(1,Math.Max(0,visualAge/.15f));
+                float after=Math.Min(1,Math.Max(0,(visualAge+dt)/.15f));
+                walkAge+=(after*after*(3-2*after)-before*before*(3-2*before))*36/45;
+            }
+            motion=Math.Max(0,motion-dt);visualAge+=dt;blockedAge+=dt;
+        }
         public bool Move(int direction)
         {
             if(direction<0||direction>3||Solved)return false;

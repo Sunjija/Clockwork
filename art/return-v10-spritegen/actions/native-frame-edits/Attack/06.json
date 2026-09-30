@@ -1,0 +1,201 @@
+{
+  "frame": 6,
+  "source_key": "extension",
+  "pose": "early-withdrawal",
+  "pixelEdits": [
+    {
+      "x": 35,
+      "y": 34,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 36,
+      "y": 34,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 37,
+      "y": 34,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 34,
+      "y": 35,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 35,
+      "y": 35,
+      "before": "6",
+      "after": "."
+    },
+    {
+      "x": 36,
+      "y": 35,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 37,
+      "y": 35,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 34,
+      "y": 36,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 35,
+      "y": 36,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 36,
+      "y": 36,
+      "before": "2",
+      "after": "6"
+    },
+    {
+      "x": 37,
+      "y": 36,
+      "before": "1",
+      "after": "4"
+    },
+    {
+      "x": 38,
+      "y": 36,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 39,
+      "y": 36,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 34,
+      "y": 37,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 35,
+      "y": 37,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 36,
+      "y": 37,
+      "before": "1",
+      "after": "4"
+    },
+    {
+      "x": 37,
+      "y": 37,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 38,
+      "y": 37,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 39,
+      "y": 37,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 36,
+      "y": 38,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 37,
+      "y": 38,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 38,
+      "y": 38,
+      "before": ".",
+      "after": "1"
+    },
+    {
+      "x": 39,
+      "y": 38,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 35,
+      "y": 39,
+      "before": "a",
+      "after": "."
+    },
+    {
+      "x": 36,
+      "y": 39,
+      "before": "a",
+      "after": "0"
+    },
+    {
+      "x": 37,
+      "y": 39,
+      "before": "a",
+      "after": "0"
+    },
+    {
+      "x": 38,
+      "y": 39,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 39,
+      "y": 39,
+      "before": "1",
+      "after": "."
+    }
+  ],
+  "motionAnnotation": {
+    "handMoves": [
+      [
+        0,
+        [
+          35,
+          35
+        ]
+      ]
+    ],
+    "wristPoints": [
+      [
+        33,
+        36
+      ],
+      [
+        34,
+        36
+      ],
+      [
+        34,
+        37
+      ]
+    ],
+    "nativeSolePatches": 0
+  }
+}

@@ -1,0 +1,687 @@
+{
+  "key": "strike",
+  "source": "art/return-v10-spritegen/actions/frames/strike/frame-0.png",
+  "sourceSha256": "0bf9bd1747f56dc8baf15e2d206bd79f86eeab5ae8c60022cb93301d79041ea3",
+  "nativeSha256": "7410652589237d19ecc6c85c88688a5348ff398a1a87d4d9c2e3398b00560fe6",
+  "method": "whole extracted pose plus individually recorded native round hands, 2px metallic wrists, registered 5-dot mouth and cyan/glow semantic tracing",
+  "pixelEdits": [
+    {
+      "x": 34,
+      "y": 26,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 35,
+      "y": 26,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 36,
+      "y": 26,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 37,
+      "y": 26,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 34,
+      "y": 27,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 35,
+      "y": 27,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 36,
+      "y": 27,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 45,
+      "y": 30,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 30,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 47,
+      "y": 30,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 48,
+      "y": 30,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 49,
+      "y": 30,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 31,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 45,
+      "y": 31,
+      "before": "2",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 31,
+      "before": "6",
+      "after": "."
+    },
+    {
+      "x": 47,
+      "y": 31,
+      "before": "6",
+      "after": "."
+    },
+    {
+      "x": 48,
+      "y": 31,
+      "before": "4",
+      "after": "."
+    },
+    {
+      "x": 49,
+      "y": 31,
+      "before": "5",
+      "after": "."
+    },
+    {
+      "x": 50,
+      "y": 31,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 32,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 45,
+      "y": 32,
+      "before": "6",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 32,
+      "before": "6",
+      "after": "."
+    },
+    {
+      "x": 47,
+      "y": 32,
+      "before": "6",
+      "after": "0"
+    },
+    {
+      "x": 48,
+      "y": 32,
+      "before": "6",
+      "after": "0"
+    },
+    {
+      "x": 49,
+      "y": 32,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 50,
+      "y": 32,
+      "before": "5",
+      "after": "."
+    },
+    {
+      "x": 51,
+      "y": 32,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 33,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 45,
+      "y": 33,
+      "before": "4",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 33,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 48,
+      "y": 33,
+      "before": "6",
+      "after": "4"
+    },
+    {
+      "x": 50,
+      "y": 33,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 51,
+      "y": 33,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 43,
+      "y": 34,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 44,
+      "y": 34,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 45,
+      "y": 34,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 46,
+      "y": 34,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 48,
+      "y": 34,
+      "before": "4",
+      "after": "2"
+    },
+    {
+      "x": 50,
+      "y": 34,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 51,
+      "y": 34,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 43,
+      "y": 35,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 44,
+      "y": 35,
+      "before": "5",
+      "after": "2"
+    },
+    {
+      "x": 45,
+      "y": 35,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 46,
+      "y": 35,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 47,
+      "y": 35,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 49,
+      "y": 35,
+      "before": "5",
+      "after": "1"
+    },
+    {
+      "x": 50,
+      "y": 35,
+      "before": "5",
+      "after": "0"
+    },
+    {
+      "x": 51,
+      "y": 35,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 36,
+      "before": "5",
+      "after": "."
+    },
+    {
+      "x": 45,
+      "y": 36,
+      "before": "5",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 36,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 47,
+      "y": 36,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 48,
+      "y": 36,
+      "before": "5",
+      "after": "0"
+    },
+    {
+      "x": 49,
+      "y": 36,
+      "before": "5",
+      "after": "0"
+    },
+    {
+      "x": 50,
+      "y": 36,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 51,
+      "y": 36,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 30,
+      "y": 37,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 31,
+      "y": 37,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 32,
+      "y": 37,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 35,
+      "y": 37,
+      "before": "3",
+      "after": "4"
+    },
+    {
+      "x": 36,
+      "y": 37,
+      "before": "3",
+      "after": "4"
+    },
+    {
+      "x": 44,
+      "y": 37,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 45,
+      "y": 37,
+      "before": "3",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 37,
+      "before": "3",
+      "after": "."
+    },
+    {
+      "x": 47,
+      "y": 37,
+      "before": "3",
+      "after": "."
+    },
+    {
+      "x": 48,
+      "y": 37,
+      "before": "3",
+      "after": "."
+    },
+    {
+      "x": 49,
+      "y": 37,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 50,
+      "y": 37,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 29,
+      "y": 38,
+      "before": "1",
+      "after": "4"
+    },
+    {
+      "x": 33,
+      "y": 38,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 34,
+      "y": 38,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 35,
+      "y": 38,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 36,
+      "y": 38,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 45,
+      "y": 38,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 38,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 47,
+      "y": 38,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 48,
+      "y": 38,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 49,
+      "y": 38,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 28,
+      "y": 39,
+      "before": "4",
+      "after": "6"
+    },
+    {
+      "x": 43,
+      "y": 42,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 42,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 45,
+      "y": 42,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 46,
+      "y": 42,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 41,
+      "y": 43,
+      "before": "4",
+      "after": "2"
+    },
+    {
+      "x": 42,
+      "y": 43,
+      "before": "6",
+      "after": "2"
+    },
+    {
+      "x": 43,
+      "y": 43,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 44,
+      "y": 43,
+      "before": "0",
+      "after": "6"
+    },
+    {
+      "x": 45,
+      "y": 43,
+      "before": ".",
+      "after": "4"
+    },
+    {
+      "x": 46,
+      "y": 43,
+      "before": ".",
+      "after": "4"
+    },
+    {
+      "x": 47,
+      "y": 43,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 42,
+      "y": 44,
+      "before": "4",
+      "after": "2"
+    },
+    {
+      "x": 43,
+      "y": 44,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 44,
+      "y": 44,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 45,
+      "y": 44,
+      "before": ".",
+      "after": "2"
+    },
+    {
+      "x": 46,
+      "y": 44,
+      "before": ".",
+      "after": "1"
+    },
+    {
+      "x": 47,
+      "y": 44,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 41,
+      "y": 45,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 42,
+      "y": 45,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 43,
+      "y": 45,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 44,
+      "y": 45,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 45,
+      "y": 45,
+      "before": ".",
+      "after": "1"
+    },
+    {
+      "x": 46,
+      "y": 45,
+      "before": ".",
+      "after": "1"
+    },
+    {
+      "x": 47,
+      "y": 45,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 41,
+      "y": 46,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 42,
+      "y": 46,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 43,
+      "y": 46,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 46,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 45,
+      "y": 46,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 46,
+      "y": 46,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 41,
+      "y": 47,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 42,
+      "y": 47,
+      "before": "0",
+      "after": "."
+    }
+  ],
+  "hands": [
+    [
+      46,
+      32
+    ],
+    [
+      43,
+      42
+    ]
+  ],
+  "noPartResizing": true,
+  "noRectangularIdentityOverwrite": true
+}

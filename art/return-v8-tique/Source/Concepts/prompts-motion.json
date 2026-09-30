@@ -1,0 +1,24 @@
+{
+  "generator": "built-in image_gen.imagegen",
+  "mode": "independent single static pose edit",
+  "reference": "art/return-v5-feedback/Source/Native/tique-idle-8x.png",
+  "transparentBackground": true,
+  "status": "construction references; canonical native head and proportions remain authoritative",
+  "jobs": [
+    {
+      "output": "crouch-land.png",
+      "prompt": "Use case: precise-object-edit. SINGLE STATIC POSE reference for an original game character Tique, to be converted later into a native 64x64 sprite. Use the attached approved image as exact identity reference. Preserve this adorable little bronze robot's large spherical head, same head and torso dimensions, two wide cyan eyes and small smiling face, cyan heart on compact round torso, very short jointed legs, tiny 4-pixel mittens, chunky clear shapes and same bronze color highlights. Show exactly ONE character facing right in the same three-quarter side camera on a truly transparent background, no scenery, no shadow, no text, no effects, no frame strip or multiple poses. Change only the pose to a SMALL GROUNDED PRE-JUMP CROUCH / SOFT LANDING: feet stay under the body on the same horizontal floor, knee hinges fold just a little, hips 2 native pixels lower, torso still round without stretching, head remains big and round with face calm, hands relaxed alongside thighs, shoulders visibly connected. No wide lunge, no long limbs, no athletic human anatomy, no resized head or fists, no flying leap. Keep both soles planted and a readable adorable compact crouch. Crisp pixel-like block structure as reference; this is a single construction reference, not finished animation.",
+      "review": "Cute compact crouch reference accepted. Full generated head is not substituted for the original head."
+    },
+    {
+      "output": "tuck-air.png",
+      "prompt": "Use case: precise-object-edit. Asset: ONE separate static airborne TUCK pose reference of Tique for native64x64 game frames later; NOT animationstrip. Attached image is approved exact model. Preserve the very large perfectly round brass head and cheerful two cyan oval eyes, same proportions and 3/4side facing right, compact round torso with same cyan heart, very short 2joint legs and tiny fists. Give the same cute robot an airborne compact pose: both short knees fold slightly under the round torso, soles pulled up 3 nativepixels, toes slightly down and visibly distinct, hands very subtly swept backward at hip level, elbows stay fully attached. Head maintains same size and orientation, no face/heart redesign or additional accessories. No stretched limbs, no clenched human musculature, no large fists, no arms raised overhead. Clean crisp blocky shapes like attached art. Exactly one full character only, transparent background, no ground, shadows, motion lines, VFX, labels, text or other poses. This is a single IMAGE construction key used for subsequent deliberate pixel frame authoring.",
+      "review": "Folded boot and knee components accepted as conversion inputs; original head and heart retained."
+    },
+    {
+      "output": "dash-travel.png",
+      "prompt": "Use case: precise-object-edit. ONE STATIC DASH TRAVEL POSE construction reference of the exact attached cute bronze robot Tique, later converted to native64x64 pixels. Not a strip, animation or multiple poses. Preserve large round head and two cyan eyes and smile with EXACT same sizes/proportions, round smaller torso and cyanheart, SHORT legs and tiny fists. Keep right-facing same3/4sidecamera, truly transparentbackground. Dash pose: whole connected robot tilted forward only8degrees towardsRIGHT, upperbody leads slightly, SHORT knees folded so two littlefeet trail toLEFT underhips, smallarms close tobody sweptback gently, headround and notsquashed, waistconnectedneck, fistsconnected. Body angledasunitbut feettrailratherthan standingstraight. Keepcutecompact silhouette insteadhuman sprinter/longlegs. No enlargedarms/fists, no oversizedchest, no sphericalbodychange, no newaccessories. Singlecharacter fullyvisible centeredwithplentypadding. Crisp blocky pixelshapes asreference, noeffects or speedlines, text, groundshadows or scenery. A short low forwardleaning glidepose with feetrecollected, notbig runningstride.",
+      "review": "Forward lean reference accepted; source feet do not trail enough. Native exposures add knee collection and foot follow-through while preserving the approved head."
+    }
+  ]
+}

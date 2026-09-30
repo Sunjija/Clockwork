@@ -1,0 +1,1143 @@
+{
+  "frames": [
+    {
+      "clip": "Attack",
+      "frame": 0,
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": []
+    },
+    {
+      "clip": "Attack",
+      "frame": 1,
+      "sha256": "5a166f4409c0bf7b914955dd770fbf006d44d786fb34cd6f9b1760bd3c8e9006",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        33,
+        39,
+        41,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            19,
+            38
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              24,
+              39
+            ],
+            [
+              24,
+              40
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              43
+            ],
+            [
+              43,
+              44
+            ],
+            [
+              43,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 2,
+      "sha256": "97e617bb970881868bee0ef84dc0e5d1f4d667cb434be48ca6878a4f35d6c6f6",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        33,
+        39,
+        41,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            19,
+            36
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              20,
+              35
+            ],
+            [
+              24,
+              37
+            ],
+            [
+              24,
+              38
+            ],
+            [
+              24,
+              39
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              43
+            ],
+            [
+              43,
+              44
+            ],
+            [
+              43,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 3,
+      "sha256": "378b55be145303f8dcd19a711e7b7cd3f255bee7dbdc0bcdfa134933f8acd6ff",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        30,
+        39,
+        38,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            34,
+            34
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              33,
+              35
+            ],
+            [
+              33,
+              36
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              44
+            ],
+            [
+              42,
+              45
+            ],
+            [
+              42,
+              46
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 4,
+      "sha256": "7410652589237d19ecc6c85c88688a5348ff398a1a87d4d9c2e3398b00560fe6",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        29,
+        39,
+        37,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            46,
+            32
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              45,
+              34
+            ],
+            [
+              45,
+              35
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              43
+            ],
+            [
+              42,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 5,
+      "sha256": "0df9ec752751d18d94e62abf2c024513828e951fa8fd6d2aa7c0857161bdf602",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        29,
+        39,
+        37,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            47,
+            33
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              46,
+              34
+            ],
+            [
+              46,
+              35
+            ],
+            [
+              46,
+              36
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              43
+            ],
+            [
+              42,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 6,
+      "sha256": "76333c6af91d96c42cea3e63781d66f5f908db22c6ecaf455d0ce84941de0ff5",
+      "cyanHeartVisiblePixels": 38,
+      "cyanHeartBounds": [
+        30,
+        39,
+        38,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            35,
+            35
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              34,
+              36
+            ],
+            [
+              34,
+              37
+            ],
+            [
+              38,
+              40
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              44
+            ],
+            [
+              42,
+              45
+            ],
+            [
+              42,
+              46
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 7,
+      "sha256": "01d3439df4f7ebe4c3726b158827d23c6ca919b5a3322a14feabd2de3f9ab839",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            26,
+            38
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              27,
+              37
+            ],
+            [
+              28,
+              37
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            45
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              46
+            ],
+            [
+              42,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 8,
+      "sha256": "0fc2e7293568f07eabd9f638b417027fff52f2500e32834f0e69f4b959e132eb",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            22,
+            40
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              23,
+              39
+            ],
+            [
+              24,
+              39
+            ],
+            [
+              27,
+              41
+            ],
+            [
+              27,
+              42
+            ],
+            [
+              27,
+              43
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              44
+            ],
+            [
+              43,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 9,
+      "sha256": "2c274026f8231e7f9998fd2e036ed10bfa5ed9fb10e509d5913ed2e791a9fe6a",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            21,
+            41
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              22,
+              40
+            ],
+            [
+              23,
+              40
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              44
+            ],
+            [
+              43,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 10,
+      "sha256": "3547e8f63fa41dc602d3bcf5b1f138b57244d5dfaa31bd6082bc88739bf9be81",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            17,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              18,
+              41
+            ],
+            [
+              19,
+              41
+            ],
+            [
+              20,
+              41
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              43
+            ],
+            [
+              42,
+              44
+            ],
+            [
+              44,
+              41
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Attack",
+      "frame": 11,
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": []
+    },
+    {
+      "clip": "Dash",
+      "frame": 0,
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": []
+    },
+    {
+      "clip": "Dash",
+      "frame": 1,
+      "sha256": "389310c8ff77f2e76c98d8a92a9155bd37d9182833fd2f07e8846056be52e851",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        41,
+        39,
+        48
+      ],
+      "hands": [
+        {
+          "at": [
+            18,
+            44
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              19,
+              43
+            ],
+            [
+              20,
+              43
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              44
+            ],
+            [
+              42,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 2,
+      "sha256": "b33faa3439db39f68341896e3408614b58f88057314d5dc62796743da3bef31d",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        41,
+        39,
+        48
+      ],
+      "hands": [
+        {
+          "at": [
+            18,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              19,
+              42
+            ],
+            [
+              20,
+              42
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              43
+            ],
+            [
+              43,
+              44
+            ],
+            [
+              43,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 3,
+      "sha256": "92dc774fc50a3039b319c2d3264fc33b121a82d3c13075e3ea885e48ef05c42e",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        30,
+        40,
+        38,
+        47
+      ],
+      "hands": [
+        {
+          "at": [
+            14,
+            38
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              17,
+              37
+            ],
+            [
+              19,
+              39
+            ],
+            [
+              19,
+              40
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            44
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              45
+            ],
+            [
+              43,
+              46
+            ],
+            [
+              43,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 4,
+      "sha256": "51568129fd6d3a091bb6c4b5773d493cfc56c26a9086bc8cd529bd9014bf75aa",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        30,
+        40,
+        38,
+        47
+      ],
+      "hands": [
+        {
+          "at": [
+            12,
+            36
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              17,
+              37
+            ],
+            [
+              17,
+              38
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            45
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              46
+            ],
+            [
+              43,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 5,
+      "sha256": "ee4c383a3e1639ba0a74c7199e36860655ed4a26c96204438614b4a0744c5195",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        29,
+        40,
+        37,
+        47
+      ],
+      "hands": [
+        {
+          "at": [
+            12,
+            37
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              17,
+              38
+            ],
+            [
+              17,
+              39
+            ]
+          ]
+        },
+        {
+          "at": [
+            46,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              45,
+              43
+            ],
+            [
+              45,
+              44
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 6,
+      "sha256": "511dc5561e9c402a1718887ecdf576cdd84b4ac02a9204b3f23015b8ebdec191",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        29,
+        40,
+        37,
+        47
+      ],
+      "hands": [
+        {
+          "at": [
+            13,
+            38
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              18,
+              39
+            ],
+            [
+              18,
+              40
+            ]
+          ]
+        },
+        {
+          "at": [
+            45,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              44,
+              44
+            ],
+            [
+              44,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 7,
+      "sha256": "f714e27ec6a80407f6b5869d08fa5b7c8b8ba2fb60aa6fe29cca587bdce8f2c8",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        30,
+        40,
+        38,
+        47
+      ],
+      "hands": [
+        {
+          "at": [
+            14,
+            37
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              19,
+              38
+            ],
+            [
+              19,
+              39
+            ]
+          ]
+        },
+        {
+          "at": [
+            44,
+            44
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              43,
+              45
+            ],
+            [
+              43,
+              46
+            ],
+            [
+              43,
+              47
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 8,
+      "sha256": "1116686c293171668a17ac4527afc618e09121b677a5f273ab3c6f0e39c70f61",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            15,
+            38
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              20,
+              39
+            ],
+            [
+              20,
+              40
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            43
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              44
+            ],
+            [
+              42,
+              45
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 9,
+      "sha256": "5cc9adc327b3d95b55f4c2b8e7ac9cea8fc0874fd1e1a79a41f74f22d16ac4da",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            16,
+            39
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              21,
+              40
+            ],
+            [
+              21,
+              41
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            44
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              45
+            ],
+            [
+              42,
+              46
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 10,
+      "sha256": "3547e8f63fa41dc602d3bcf5b1f138b57244d5dfaa31bd6082bc88739bf9be81",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": [
+        {
+          "at": [
+            17,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              18,
+              41
+            ],
+            [
+              19,
+              41
+            ],
+            [
+              20,
+              41
+            ]
+          ]
+        },
+        {
+          "at": [
+            43,
+            42
+          ],
+          "opaquePixels": 21,
+          "metalWristNeighbors": [
+            [
+              42,
+              43
+            ],
+            [
+              42,
+              44
+            ],
+            [
+              44,
+              41
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "Dash",
+      "frame": 11,
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "cyanHeartVisiblePixels": 41,
+      "cyanHeartBounds": [
+        31,
+        39,
+        39,
+        46
+      ],
+      "hands": []
+    }
+  ],
+  "gifExposureChecks": [
+    {
+      "clip": "Attack",
+      "frameCount": 12,
+      "durations_ms": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "duration_ms": 460,
+      "pixelsExactlyMatchPngAt4x": true
+    },
+    {
+      "clip": "Dash",
+      "frameCount": 12,
+      "durations_ms": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        40,
+        30,
+        30,
+        40,
+        40
+      ],
+      "duration_ms": 440,
+      "pixelsExactlyMatchPngAt4x": true
+    }
+  ],
+  "assertions": [
+    "24 PNGs: 64x64, binary alpha, original13-color subset, single4-neighborcomponent",
+    "40 new hands: shared5x5/21-pixel round sphere, >=2 directly adjacent metal wristpixels",
+    "4 neutral endpoints: originalfile byte equal",
+    "12 ghostalphas: exactcorrespondingDashalphas",
+    "Both decodedGIFs:12exposures pixelidentical tocorresponding4xPNG, full originalduration"
+  ],
+  "heartNote": "Canonical41-pixelcyan/8x7mask. Attack06 shows38pixels because roundhand/forearm intentionally occludes3topcyan points. Other23frames show41. No chestrectangle replacement.",
+  "runtimeNaturalness": "pending root runtime review"
+}

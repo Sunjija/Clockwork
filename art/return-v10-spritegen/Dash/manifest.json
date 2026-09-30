@@ -1,0 +1,657 @@
+{
+  "clip": "Dash",
+  "frame_count": 12,
+  "frame_size": [
+    64,
+    64
+  ],
+  "pixel_pivot": [
+    32,
+    56
+  ],
+  "durations_ms": [
+    40,
+    30,
+    30,
+    30,
+    40,
+    50,
+    40,
+    35,
+    35,
+    35,
+    35,
+    40
+  ],
+  "duration_ms": 440,
+  "gif_durations_ms": [
+    40,
+    30,
+    30,
+    30,
+    40,
+    50,
+    40,
+    40,
+    30,
+    30,
+    40,
+    40
+  ],
+  "palette": [
+    [
+      43,
+      27,
+      36,
+      255
+    ],
+    [
+      188,
+      120,
+      59,
+      255
+    ],
+    [
+      221,
+      161,
+      75,
+      255
+    ],
+    [
+      117,
+      64,
+      50,
+      255
+    ],
+    [
+      244,
+      203,
+      112,
+      255
+    ],
+    [
+      156,
+      89,
+      56,
+      255
+    ],
+    [
+      255,
+      231,
+      163,
+      255
+    ],
+    [
+      19,
+      220,
+      232,
+      255
+    ],
+    [
+      19,
+      52,
+      69,
+      255
+    ],
+    [
+      165,
+      252,
+      241,
+      255
+    ],
+    [
+      11,
+      147,
+      177,
+      255
+    ],
+    [
+      9,
+      86,
+      107,
+      255
+    ],
+    [
+      82,
+      48,
+      40,
+      255
+    ]
+  ],
+  "binary_alpha": true,
+  "neutral_endpoints_original_bytes": true,
+  "method": "single whole-body images; real sprite-gen extraction/pixel-unfake; recorded native pose/hand contour tracing",
+  "motion_review": "PNG/contact and decoded GIF exposure review; actual runtime naturalness remains independent review",
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "duration_ms": 40,
+      "source_key": "original",
+      "pose": "original-neutral",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "hands": [],
+      "components4": [
+        1092
+      ],
+      "motionAnnotation": "approved original, byte-identical endpoint"
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "duration_ms": 30,
+      "source_key": "dashload",
+      "pose": "dash-preload-begin",
+      "sha256": "389310c8ff77f2e76c98d8a92a9155bd37d9182833fd2f07e8846056be52e851",
+      "bounds": [
+        15,
+        9,
+        50,
+        56
+      ],
+      "hands": [
+        [
+          18,
+          44
+        ],
+        [
+          43,
+          43
+        ]
+      ],
+      "components4": [
+        1121
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              18,
+              44
+            ]
+          ],
+          [
+            1,
+            [
+              43,
+              43
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            19,
+            43
+          ],
+          [
+            20,
+            43
+          ],
+          [
+            42,
+            44
+          ],
+          [
+            42,
+            45
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "duration_ms": 30,
+      "source_key": "dashload",
+      "pose": "dashload",
+      "sha256": "b33faa3439db39f68341896e3408614b58f88057314d5dc62796743da3bef31d",
+      "bounds": [
+        15,
+        9,
+        50,
+        56
+      ],
+      "hands": [
+        [
+          18,
+          43
+        ],
+        [
+          44,
+          42
+        ]
+      ],
+      "components4": [
+        1126
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "duration_ms": 30,
+      "source_key": "dashtravel",
+      "pose": "dash-entry",
+      "sha256": "92dc774fc50a3039b319c2d3264fc33b121a82d3c13075e3ea885e48ef05c42e",
+      "bounds": [
+        14,
+        9,
+        50,
+        56
+      ],
+      "hands": [
+        [
+          14,
+          38
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "components4": [
+        1131
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              14,
+              38
+            ]
+          ],
+          [
+            1,
+            [
+              44,
+              44
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            19,
+            39
+          ],
+          [
+            20,
+            39
+          ],
+          [
+            19,
+            40
+          ],
+          [
+            20,
+            40
+          ],
+          [
+            43,
+            45
+          ],
+          [
+            43,
+            46
+          ]
+        ],
+        "nativeSolePatches": 1
+      }
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "duration_ms": 40,
+      "source_key": "dashtravel",
+      "pose": "dashtravel",
+      "sha256": "51568129fd6d3a091bb6c4b5773d493cfc56c26a9086bc8cd529bd9014bf75aa",
+      "bounds": [
+        12,
+        9,
+        50,
+        56
+      ],
+      "hands": [
+        [
+          12,
+          36
+        ],
+        [
+          44,
+          45
+        ]
+      ],
+      "components4": [
+        1138
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "duration_ms": 50,
+      "source_key": "dashalternate",
+      "pose": "dashalternate",
+      "sha256": "ee4c383a3e1639ba0a74c7199e36860655ed4a26c96204438614b4a0744c5195",
+      "bounds": [
+        12,
+        10,
+        51,
+        56
+      ],
+      "hands": [
+        [
+          12,
+          37
+        ],
+        [
+          46,
+          42
+        ]
+      ],
+      "components4": [
+        1076
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "duration_ms": 40,
+      "source_key": "dashalternate",
+      "pose": "dash-stride-settle",
+      "sha256": "511dc5561e9c402a1718887ecdf576cdd84b4ac02a9204b3f23015b8ebdec191",
+      "bounds": [
+        13,
+        10,
+        51,
+        56
+      ],
+      "hands": [
+        [
+          13,
+          38
+        ],
+        [
+          45,
+          43
+        ]
+      ],
+      "components4": [
+        1075
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              13,
+              38
+            ]
+          ],
+          [
+            1,
+            [
+              45,
+              43
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            18,
+            39
+          ],
+          [
+            19,
+            39
+          ],
+          [
+            18,
+            40
+          ],
+          [
+            19,
+            40
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            44,
+            45
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "duration_ms": 35,
+      "source_key": "dashtravel",
+      "pose": "dash-exit",
+      "sha256": "f714e27ec6a80407f6b5869d08fa5b7c8b8ba2fb60aa6fe29cca587bdce8f2c8",
+      "bounds": [
+        14,
+        9,
+        50,
+        56
+      ],
+      "hands": [
+        [
+          14,
+          37
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "components4": [
+        1136
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              14,
+              37
+            ]
+          ],
+          [
+            1,
+            [
+              44,
+              44
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            19,
+            38
+          ],
+          [
+            20,
+            38
+          ],
+          [
+            19,
+            39
+          ],
+          [
+            20,
+            39
+          ],
+          [
+            43,
+            45
+          ],
+          [
+            43,
+            46
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "duration_ms": 35,
+      "source_key": "dashbrake",
+      "pose": "dashbrake",
+      "sha256": "1116686c293171668a17ac4527afc618e09121b677a5f273ab3c6f0e39c70f61",
+      "bounds": [
+        12,
+        8,
+        49,
+        56
+      ],
+      "hands": [
+        [
+          15,
+          38
+        ],
+        [
+          43,
+          43
+        ]
+      ],
+      "components4": [
+        1130
+      ],
+      "motionAnnotation": "complete generated keypose"
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "duration_ms": 35,
+      "source_key": "dashbrake",
+      "pose": "brake-settle",
+      "sha256": "5cc9adc327b3d95b55f4c2b8e7ac9cea8fc0874fd1e1a79a41f74f22d16ac4da",
+      "bounds": [
+        12,
+        8,
+        49,
+        56
+      ],
+      "hands": [
+        [
+          16,
+          39
+        ],
+        [
+          43,
+          44
+        ]
+      ],
+      "components4": [
+        1129
+      ],
+      "motionAnnotation": {
+        "handMoves": [
+          [
+            0,
+            [
+              16,
+              39
+            ]
+          ],
+          [
+            1,
+            [
+              43,
+              44
+            ]
+          ]
+        ],
+        "wristPoints": [
+          [
+            21,
+            40
+          ],
+          [
+            22,
+            40
+          ],
+          [
+            21,
+            41
+          ],
+          [
+            22,
+            41
+          ],
+          [
+            42,
+            45
+          ],
+          [
+            42,
+            46
+          ]
+        ],
+        "nativeSolePatches": 0
+      }
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "duration_ms": 35,
+      "source_key": "original",
+      "pose": "recovery-near-neutral",
+      "sha256": "3547e8f63fa41dc602d3bcf5b1f138b57244d5dfaa31bd6082bc88739bf9be81",
+      "bounds": [
+        16,
+        8,
+        48,
+        56
+      ],
+      "hands": [
+        [
+          17,
+          42
+        ],
+        [
+          43,
+          42
+        ]
+      ],
+      "components4": [
+        1086
+      ],
+      "motionAnnotation": "original full stance; relaxed hands finish a one-pixel return"
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "duration_ms": 40,
+      "source_key": "original",
+      "pose": "original-neutral",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "hands": [],
+      "components4": [
+        1092
+      ],
+      "motionAnnotation": "approved original, byte-identical endpoint"
+    }
+  ]
+}

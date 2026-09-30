@@ -15,6 +15,7 @@
     <Compile Include="../../Assets/Scripts/ReworkPilot.cs" Link="ReworkPilot.cs" />
     <Compile Include="../../Assets/Scripts/ReworkChecks.cs" Link="ReworkChecks.cs" />
     <Compile Include="../../Assets/Scripts/WardenAnimation.cs" Link="WardenAnimation.cs" />
+    <Compile Include="../../Assets/Scripts/TiqueAnimation.cs" Link="TiqueAnimation.cs" />
     <Compile Include="../../Assets/Scripts/WorldArtState.cs" Link="WorldArtState.cs" />
   </ItemGroup>
 </Project>

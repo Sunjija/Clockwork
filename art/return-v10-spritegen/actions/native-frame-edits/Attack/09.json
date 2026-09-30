@@ -1,0 +1,173 @@
+{
+  "frame": 9,
+  "source_key": "recoil",
+  "pose": "recoil-settle",
+  "pixelEdits": [
+    {
+      "x": 22,
+      "y": 40,
+      "before": ".",
+      "after": "2"
+    },
+    {
+      "x": 23,
+      "y": 40,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 24,
+      "y": 40,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 25,
+      "y": 40,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 23,
+      "y": 41,
+      "before": "6",
+      "after": "0"
+    },
+    {
+      "x": 24,
+      "y": 41,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 25,
+      "y": 41,
+      "before": "4",
+      "after": "."
+    },
+    {
+      "x": 26,
+      "y": 41,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 21,
+      "y": 42,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 22,
+      "y": 42,
+      "before": "0",
+      "after": "6"
+    },
+    {
+      "x": 24,
+      "y": 42,
+      "before": "2",
+      "after": "4"
+    },
+    {
+      "x": 25,
+      "y": 42,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 26,
+      "y": 42,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 21,
+      "y": 43,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 22,
+      "y": 43,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 25,
+      "y": 43,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 26,
+      "y": 43,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 21,
+      "y": 44,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 22,
+      "y": 44,
+      "before": ".",
+      "after": "2"
+    },
+    {
+      "x": 23,
+      "y": 44,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 24,
+      "y": 44,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 22,
+      "y": 45,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 24,
+      "y": 45,
+      "before": "3",
+      "after": "0"
+    },
+    {
+      "x": 25,
+      "y": 45,
+      "before": "3",
+      "after": "."
+    }
+  ],
+  "motionAnnotation": {
+    "handMoves": [
+      [
+        0,
+        [
+          21,
+          41
+        ]
+      ]
+    ],
+    "wristPoints": [
+      [
+        22,
+        40
+      ],
+      [
+        23,
+        40
+      ]
+    ],
+    "nativeSolePatches": 0
+  }
+}

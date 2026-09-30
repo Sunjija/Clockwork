@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "clips": 14,
+  "frames": 134,
+  "binaryAlpha": true,
+  "approved13Palette": true,
+  "connectedComponents8": true,
+  "activeDashDistinct": true,
+  "walkByteExact": true,
+  "humanQualityApproval": false
+}

@@ -1,0 +1,327 @@
+{
+  "key": "recoil",
+  "source": "art/return-v10-spritegen/actions/frames/recoil/frame-0.png",
+  "sourceSha256": "6d89d2c1b7a51494d166f4b2bc5cf16f8c5634ce97232a8a4cb31ec4e69a99d1",
+  "nativeSha256": "d17de0534f1a53ef13d0223aeaaf60878fdf9a52bea4627efd6e2b317a7e0fc9",
+  "method": "whole extracted pose plus individually recorded native hand/face contour cleanup",
+  "pixelEdits": [
+    {
+      "x": 35,
+      "y": 28,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 37,
+      "y": 28,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 39,
+      "y": 28,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 36,
+      "y": 29,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 38,
+      "y": 29,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 23,
+      "y": 39,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 24,
+      "y": 39,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 21,
+      "y": 40,
+      "before": "2",
+      "after": "."
+    },
+    {
+      "x": 22,
+      "y": 40,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 26,
+      "y": 40,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 21,
+      "y": 41,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 22,
+      "y": 41,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 24,
+      "y": 41,
+      "before": "2",
+      "after": "4"
+    },
+    {
+      "x": 25,
+      "y": 41,
+      "before": "2",
+      "after": "4"
+    },
+    {
+      "x": 21,
+      "y": 42,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 22,
+      "y": 42,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 25,
+      "y": 42,
+      "before": "2",
+      "after": "1"
+    },
+    {
+      "x": 21,
+      "y": 43,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 22,
+      "y": 43,
+      "before": "3",
+      "after": "0"
+    },
+    {
+      "x": 23,
+      "y": 43,
+      "before": "1",
+      "after": "2"
+    },
+    {
+      "x": 25,
+      "y": 43,
+      "before": "3",
+      "after": "1"
+    },
+    {
+      "x": 43,
+      "y": 43,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 43,
+      "before": "6",
+      "after": "."
+    },
+    {
+      "x": 46,
+      "y": 43,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 47,
+      "y": 43,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 22,
+      "y": 44,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 26,
+      "y": 44,
+      "before": "3",
+      "after": "."
+    },
+    {
+      "x": 42,
+      "y": 44,
+      "before": "0",
+      "after": "1"
+    },
+    {
+      "x": 43,
+      "y": 44,
+      "before": "4",
+      "after": "1"
+    },
+    {
+      "x": 44,
+      "y": 44,
+      "before": "4",
+      "after": "0"
+    },
+    {
+      "x": 45,
+      "y": 44,
+      "before": "0",
+      "after": "6"
+    },
+    {
+      "x": 46,
+      "y": 44,
+      "before": ".",
+      "after": "4"
+    },
+    {
+      "x": 47,
+      "y": 44,
+      "before": ".",
+      "after": "4"
+    },
+    {
+      "x": 48,
+      "y": 44,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 43,
+      "y": 45,
+      "before": "4",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 45,
+      "before": "2",
+      "after": "0"
+    },
+    {
+      "x": 45,
+      "y": 45,
+      "before": "0",
+      "after": "4"
+    },
+    {
+      "x": 46,
+      "y": 45,
+      "before": ".",
+      "after": "2"
+    },
+    {
+      "x": 47,
+      "y": 45,
+      "before": ".",
+      "after": "1"
+    },
+    {
+      "x": 48,
+      "y": 45,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 43,
+      "y": 46,
+      "before": "1",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 46,
+      "before": "1",
+      "after": "0"
+    },
+    {
+      "x": 45,
+      "y": 46,
+      "before": "0",
+      "after": "2"
+    },
+    {
+      "x": 46,
+      "y": 46,
+      "before": ".",
+      "after": "1"
+    },
+    {
+      "x": 47,
+      "y": 46,
+      "before": ".",
+      "after": "1"
+    },
+    {
+      "x": 48,
+      "y": 46,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 43,
+      "y": 47,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 44,
+      "y": 47,
+      "before": "0",
+      "after": "."
+    },
+    {
+      "x": 45,
+      "y": 47,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 46,
+      "y": 47,
+      "before": ".",
+      "after": "0"
+    },
+    {
+      "x": 47,
+      "y": 47,
+      "before": ".",
+      "after": "0"
+    }
+  ],
+  "hands": [
+    [
+      22,
+      40
+    ],
+    [
+      44,
+      43
+    ]
+  ],
+  "noPartResizing": true,
+  "noRectangularIdentityOverwrite": true
+}

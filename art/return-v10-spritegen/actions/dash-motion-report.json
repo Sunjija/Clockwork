@@ -1,0 +1,464 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 12,
+  "duration_seconds": 0.4400000000000001,
+  "size": [
+    64,
+    64
+  ],
+  "anchor_px": [
+    32.0,
+    56.0
+  ],
+  "facing": "right",
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 1,
+    "adjacent_exact": 0,
+    "exact_silhouette": 1,
+    "near_silhouette": 2
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 11,
+    "silhouette_changed_transitions": 11,
+    "silhouette_change_per_second": 2.9767376736677926
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.04,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        15.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.59065934065934,
+        30.924908424908423
+      ],
+      "opaque_pixels": 1092,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.04,
+      "duration_seconds": 0.03,
+      "bbox": [
+        15,
+        9,
+        50,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -17.0,
+        -47.0,
+        18.0,
+        0.0
+      ],
+      "centroid_px": [
+        32.312667261373775,
+        31.4892952720785
+      ],
+      "opaque_pixels": 1121,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.07,
+      "duration_seconds": 0.03,
+      "bbox": [
+        15,
+        9,
+        50,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -17.0,
+        -47.0,
+        18.0,
+        0.0
+      ],
+      "centroid_px": [
+        32.36412078152753,
+        31.52397868561279
+      ],
+      "opaque_pixels": 1126,
+      "edge_sides": []
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.1,
+      "duration_seconds": 0.03,
+      "bbox": [
+        14,
+        9,
+        50,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -18.0,
+        -47.0,
+        18.0,
+        0.0
+      ],
+      "centroid_px": [
+        32.10831122900088,
+        30.78735632183908
+      ],
+      "opaque_pixels": 1131,
+      "edge_sides": []
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.13,
+      "duration_seconds": 0.04,
+      "bbox": [
+        12,
+        9,
+        50,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -20.0,
+        -47.0,
+        18.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.9701230228471,
+        30.8884007029877
+      ],
+      "opaque_pixels": 1138,
+      "edge_sides": []
+    },
+    {
+      "frame": 5,
+      "time_seconds": 0.17,
+      "duration_seconds": 0.05,
+      "bbox": [
+        12,
+        10,
+        51,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -20.0,
+        -46.0,
+        19.0,
+        0.0
+      ],
+      "centroid_px": [
+        32.74814126394052,
+        31.87825278810409
+      ],
+      "opaque_pixels": 1076,
+      "edge_sides": []
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.22000000000000003,
+      "duration_seconds": 0.04,
+      "bbox": [
+        13,
+        10,
+        51,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -19.0,
+        -46.0,
+        19.0,
+        0.0
+      ],
+      "centroid_px": [
+        32.71488372093023,
+        31.904651162790696
+      ],
+      "opaque_pixels": 1075,
+      "edge_sides": []
+    },
+    {
+      "frame": 7,
+      "time_seconds": 0.26,
+      "duration_seconds": 0.035,
+      "bbox": [
+        14,
+        9,
+        50,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -18.0,
+        -47.0,
+        18.0,
+        0.0
+      ],
+      "centroid_px": [
+        32.03521126760563,
+        30.878521126760564
+      ],
+      "opaque_pixels": 1136,
+      "edge_sides": []
+    },
+    {
+      "frame": 8,
+      "time_seconds": 0.29500000000000004,
+      "duration_seconds": 0.035,
+      "bbox": [
+        12,
+        8,
+        49,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -20.0,
+        -48.0,
+        17.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.749557522123894,
+        30.921238938053097
+      ],
+      "opaque_pixels": 1130,
+      "edge_sides": []
+    },
+    {
+      "frame": 9,
+      "time_seconds": 0.33000000000000007,
+      "duration_seconds": 0.035,
+      "bbox": [
+        12,
+        8,
+        49,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -20.0,
+        -48.0,
+        17.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.779007971656334,
+        30.951727192205492
+      ],
+      "opaque_pixels": 1129,
+      "edge_sides": []
+    },
+    {
+      "frame": 10,
+      "time_seconds": 0.3650000000000001,
+      "duration_seconds": 0.035,
+      "bbox": [
+        16,
+        8,
+        48,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        16.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.703499079189687,
+        30.857274401473298
+      ],
+      "opaque_pixels": 1086,
+      "edge_sides": []
+    },
+    {
+      "frame": 11,
+      "time_seconds": 0.40000000000000013,
+      "duration_seconds": 0.04,
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "anchor_px": [
+        32.0,
+        56.0
+      ],
+      "bbox_from_anchor": [
+        -16.0,
+        -48.0,
+        15.0,
+        0.0
+      ],
+      "centroid_px": [
+        31.59065934065934,
+        30.924908424908423
+      ],
+      "opaque_pixels": 1092,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      12,
+      8,
+      51,
+      56
+    ],
+    "width_range": [
+      31,
+      39
+    ],
+    "height_range": [
+      46,
+      48
+    ],
+    "bottom_range": [
+      56,
+      56
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 12,
+    "size": [
+      64,
+      64
+    ],
+    "anchor_px": [
+      32.0,
+      56.0
+    ],
+    "durations_seconds": [
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.04,
+      0.05,
+      0.04,
+      0.035,
+      0.035,
+      0.035,
+      0.035,
+      0.04
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\asset.json": "8ba8c971071b7afca0c6c1485d08dc32fa008354c440fb94e3abbe03fed5f893",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\00.png": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\01.png": "389310c8ff77f2e76c98d8a92a9155bd37d9182833fd2f07e8846056be52e851",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\02.png": "b33faa3439db39f68341896e3408614b58f88057314d5dc62796743da3bef31d",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\03.png": "92dc774fc50a3039b319c2d3264fc33b121a82d3c13075e3ea885e48ef05c42e",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\04.png": "51568129fd6d3a091bb6c4b5773d493cfc56c26a9086bc8cd529bd9014bf75aa",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\05.png": "ee4c383a3e1639ba0a74c7199e36860655ed4a26c96204438614b4a0744c5195",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\06.png": "511dc5561e9c402a1718887ecdf576cdd84b4ac02a9204b3f23015b8ebdec191",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\07.png": "f714e27ec6a80407f6b5869d08fa5b7c8b8ba2fb60aa6fe29cca587bdce8f2c8",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\08.png": "1116686c293171668a17ac4527afc618e09121b677a5f273ab3c6f0e39c70f61",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\09.png": "5cc9adc327b3d95b55f4c2b8e7ac9cea8fc0874fd1e1a79a41f74f22d16ac4da",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\10.png": "3547e8f63fa41dc602d3bcf5b1f138b57244d5dfaa31bd6082bc88739bf9be81",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\11.png": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot.",
+    "Repeated poses retain all source frame durations; no frames were removed."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\asset.json",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\00.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\01.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\02.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\03.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\04.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\05.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\06.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\07.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\08.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\09.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\10.png",
+    "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\11.png"
+  ],
+  "source": "C:\\Users\\은찬\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v10-spritegen\\Dash\\asset.json"
+}

@@ -1,0 +1,403 @@
+[
+  {
+    "name": "crouch",
+    "source": "art/return-v8-tique/Source/Concepts/crouch-land.png",
+    "sourceSha256": "056a775f74517751c522fc37e1f7c36689a375cfaf6e44423dd3dec1470a71c3",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      339,
+      256,
+      956,
+      1100
+    ],
+    "sampleSize": [
+      35,
+      48
+    ],
+    "sampleOffset": [
+      14,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "43418686b46d35583dc748ba4b5a9efea5832e1b8c41456d5efe46010df74313",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        42,
+        42,
+        47,
+        47
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "Jump",
+      "frame": 11,
+      "file": "crouch-authored.png",
+      "rgbaSha256": "d89c56ead48a3a3f319518d0f32a8d5c55fb1f7383ab30c618c4c4a962c965e9",
+      "pixelCleanupCount": 913
+    }
+  },
+  {
+    "name": "tuck",
+    "source": "art/return-v8-tique/Source/Concepts/tuck-air.png",
+    "sourceSha256": "bdc0abe08f7d82a058a87855354007755016d20c3ab1664c8d2218691ea0bd3b",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      304,
+      149,
+      951,
+      1090
+    ],
+    "sampleSize": [
+      33,
+      48
+    ],
+    "sampleOffset": [
+      15,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "20ac8e2d677c192f4f8eb9f42f52767861271240773179cdda53065b171753fa",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        44,
+        39,
+        49,
+        44
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam",
+      "kneeAndBootCrops": [
+        [
+          25,
+          48,
+          32,
+          54
+        ],
+        [
+          32,
+          49,
+          40,
+          56
+        ]
+      ]
+    },
+    "cleanedKey": {
+      "clip": "Jump",
+      "frame": 4,
+      "file": "tuck-authored.png",
+      "rgbaSha256": "99b8b187570ba47030f46cfbf98826bf4b47fede4c87a1a2c6ee242198493882",
+      "pixelCleanupCount": 877
+    }
+  },
+  {
+    "name": "dash",
+    "source": "art/return-v8-tique/Source/Concepts/dash-travel.png",
+    "sourceSha256": "6b7472549c3f8ccfb91694004dbb76cf939eadcb7f895615257dfcb9f5b222d9",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      327,
+      232,
+      1016,
+      1036
+    ],
+    "sampleSize": [
+      41,
+      48
+    ],
+    "sampleOffset": [
+      11,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "d38d6595f2f9b3e5e882dc7f0740a0e34d9804a6a5aff88d746bd207ba316cb1",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        15,
+        41,
+        20,
+        46
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "Dash",
+      "frame": 4,
+      "file": "dash-authored.png",
+      "rgbaSha256": "1a1b71b2bd0f1adb4d24d32f833d3bfbe427f5fd6bc7e25fd6d90104968dd90c",
+      "pixelCleanupCount": 1115
+    }
+  },
+  {
+    "name": "anticipate",
+    "source": "art/return-v8-tique/Source/Concepts/attack-anticipate.png",
+    "sourceSha256": "bed88abe6b67c4f76832a0d7b502636ca7ba7d0ac2e7ad56b63ac6b5ed6c8d83",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      350,
+      175,
+      977,
+      1107
+    ],
+    "sampleSize": [
+      32,
+      48
+    ],
+    "sampleOffset": [
+      16,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "ad6b08d2484bfc1aa918761a3bee1285136f00c7af0608dddcb8a164cec948db",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        18,
+        37,
+        23,
+        42
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "Attack",
+      "frame": 2,
+      "file": "anticipate-authored.png",
+      "rgbaSha256": "31f82eadf5587db3d2d5fb4e65545d1c4b59859784c15981a8a4f1d3c5a012f7",
+      "pixelCleanupCount": 927
+    }
+  },
+  {
+    "name": "impact",
+    "source": "art/return-v8-tique/Source/Concepts/attack-impact-v2.png",
+    "sourceSha256": "dbadb8dbe9b6c39f3ee9677069655e3d1f4397c0714cab4a3785b9ebe2fadc11",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      321,
+      165,
+      979,
+      1092
+    ],
+    "sampleSize": [
+      34,
+      48
+    ],
+    "sampleOffset": [
+      15,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "ad3eacbede4ccf13e82b003663d3c24155b8be0ae2342849cef638f774f91944",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        48,
+        37,
+        53,
+        42
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "Attack",
+      "frame": 4,
+      "file": "impact-authored.png",
+      "rgbaSha256": "1946e9eb0faa3fbc45a70fbe922774c2325f75e78b8b65f58d9a015a89d9709f",
+      "pixelCleanupCount": 885
+    }
+  },
+  {
+    "name": "push-side",
+    "source": "art/return-v5-feedback/Source/Concepts/push-side-v3.png",
+    "sourceSha256": "039f7185aae0fb3c8a06a4fc117eb15bf2e099ae4e13c7cc8897cbf209e7efc8",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      334,
+      172,
+      961,
+      1076
+    ],
+    "sampleSize": [
+      33,
+      48
+    ],
+    "sampleOffset": [
+      15,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "47300725cd845f11068c9601b686009fbdf5530ba2dda0fc5f875e63e7d4b2d3",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        48,
+        33,
+        53,
+        38
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "push-side",
+      "frame": 0,
+      "file": "push-side-authored.png",
+      "rgbaSha256": "503ad0b18e6ec2b5494a726122887d790fa183509bdc96c257d9317d4a8dfe59",
+      "pixelCleanupCount": 1014
+    }
+  },
+  {
+    "name": "push-up",
+    "source": "art/return-v5-feedback/Source/Concepts/push-up-v3.png",
+    "sourceSha256": "e002ff514c621ed34db691f06c27be8dad13d24996a05eac659485793b3bb56c",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      314,
+      157,
+      960,
+      1097
+    ],
+    "sampleSize": [
+      33,
+      48
+    ],
+    "sampleOffset": [
+      15,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "8b54052fee434aa471e73cda23a9cff463dd0f58fbabcc849cc2e70b864fb0d4",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        44,
+        33,
+        49,
+        38
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "push-up",
+      "frame": 0,
+      "file": "push-up-authored.png",
+      "rgbaSha256": "56165dee851bde8ed2a3cd71b378e28811fe5f4502f84c8da8db3b72acb1c6f7",
+      "pixelCleanupCount": 822
+    }
+  },
+  {
+    "name": "push-down",
+    "source": "art/return-v5-feedback/Source/Concepts/push-down-v4.png",
+    "sourceSha256": "2bc3d1df8d5d0bac19a0709c462b4628d678812655dd3eeb6f1bad527b5f2a5f",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      312,
+      154,
+      922,
+      1100
+    ],
+    "sampleSize": [
+      31,
+      48
+    ],
+    "sampleOffset": [
+      16,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "3e2d9c51cf87000412ed0bfa3a63cfec6ed36962c599b415f08ece81b288e9d2",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        41,
+        43,
+        46,
+        48
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "push-down",
+      "frame": 0,
+      "file": "push-down-authored.png",
+      "rgbaSha256": "d5c56a0a51582283ef88da3dc658bbddaa3f7211167a6b1978be441956583940",
+      "pixelCleanupCount": 790
+    }
+  },
+  {
+    "name": "hurt",
+    "source": "art/return-v5-feedback/Source/Concepts/hurt-pose-v2.png",
+    "sourceSha256": "9c83ee877412e7fc68b10a0292565b54d24a0deee25ae94c3c60868a5f2ca88a",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "cropPixels": [
+      312,
+      154,
+      923,
+      1099
+    ],
+    "sampleSize": [
+      31,
+      48
+    ],
+    "sampleOffset": [
+      16,
+      8
+    ],
+    "method": "single static pose -> alpha content crop -> premultiplied BOX -> binary alpha -> approved 13-color palette",
+    "convertedRgbaSha256": "e79124a90c9d0412bbc4d24dc2dc138bda34993d485bfcf193b137b4c65d83ff",
+    "nativeContribution": {
+      "part": "compact mitten center color pixels / action silhouette guide",
+      "convertedCrop": [
+        41,
+        39,
+        46,
+        44
+      ],
+      "canonicalParts": "original head/torso/heart/feet pixel pieces",
+      "manualEdits": "integer arm connections, closed mitten contour, force transfer, waist bronze occlusion, hip seam"
+    },
+    "cleanedKey": {
+      "clip": "hurt-pose",
+      "frame": 0,
+      "file": "hurt-authored.png",
+      "rgbaSha256": "ef66859e419132da89e416bbc075fe961fb43cf825f9995415d0dc4294bba051",
+      "pixelCleanupCount": 725
+    }
+  }
+]

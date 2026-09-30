@@ -1,0 +1,180 @@
+{
+  "version": 2,
+  "no_video": true,
+  "no_generated_animation_sheet": true,
+  "no_parts_resizing": true,
+  "no_rectangular_identity_overwrite": true,
+  "identity_reference": "../canonical-reference-16x.png",
+  "generation_calls": 11,
+  "accepted_whole_body_stills": 9,
+  "rejected_whole_body_stills": 2,
+  "records": [
+    {
+      "key": "windup",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Create ONE complete full-body still sprite of the exact character in the attached ORIGINAL reference, matching its pixel density, proportions, face, palette and shading exactly. Same three-quarter view facing right. Pose: windup for a rear-arm punch to the right; waist and rear shoulder turn slightly away, rear hand drawn back near hip, front hand low, feet planted. Both small hands are ROUND FINGERLESS BALLS, no fingers or thumb. Transparent background, one character only, fully visible. No sheet, no animation, no text, no added gloves.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-cc5ca6f4-7678-4e36-a64d-39733237e895.png",
+      "preserved_file": "rejected/windup-01-proportions.png",
+      "status": "rejected",
+      "rejection_reason": "Elongated legs and physical-cap whole-sprite resize would violate original proportions.",
+      "preserved_sha256": "181331130d47f117c8a139c9805bbc1033869957c712a4355ef56e4675abb660"
+    },
+    {
+      "key": "windup",
+      "attempt": 2,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body windup pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet; do not reinterpret the character. Only bend the original short arms and knees slightly: rear round hand draws back beside the hip for a rightward punch, front round hand stays low, waist turns a little away. Two small ROUND FINGERLESS hands with no thumb or fingers. Same three-quarter facing-right view. Transparent background. Single still character, no sheet or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-9dd388f9-4d0d-4347-bf70-c07226033da5.png",
+      "preserved_file": "raw/windup.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "54c9d6e2b16ac5181daac5b81c0663293a39af6c2482128c4e7455b5ebef7b94"
+    },
+    {
+      "key": "strike",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body punch pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet; do not reinterpret the character. A rear-arm rightward punch: waist turns slightly to drive the rear shoulder forward, its original short forearm extends at lower chest height, while the other hand remains low beside the opposite hip. Both feet planted, reach compact. Two small ROUND FINGERLESS hands with no thumb or fingers, no gloves. Same three-quarter facing-right view. Transparent background. Single still character, no sheet or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-5a109a19-c60b-42c3-9808-2c7f1e7f6448.png",
+      "preserved_file": "rejected/strike-01-wrong-punch-arm.png",
+      "status": "rejected",
+      "rejection_reason": "The front arm punched; required rear arm across chest.",
+      "preserved_sha256": "d289d58c841ce847616e6187f6a1ca81af6bae03dd8f971fdfca396e4fc62230"
+    },
+    {
+      "key": "recoil",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body punch recoil pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet; do not reinterpret the character. After a compact rear-arm punch to the right, bend that elbow and draw the round hand halfway back toward the waist; waist and shoulder settle toward neutral. Other hand stays low, both soles planted. Two small ROUND FINGERLESS hands with no thumb or fingers, no gloves. Same three-quarter facing-right view. Transparent background. Single still character, no sheet or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-fed39cbf-9a6b-4ce9-83f7-4989559fbbd4.png",
+      "preserved_file": "raw/recoil.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "99ac5d906e74da19cb177db8078c42101375a53ea31a0831c51cd73dbc174132"
+    },
+    {
+      "key": "dashload",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body rightward dash preparation pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet; do not reinterpret the character. Bend the original short knees a little and lean the solid head and chest gently forward together; compact arms bend low beside the hips. Two small ROUND FINGERLESS hands with no thumb or fingers, no gloves. Same three-quarter facing-right view. Transparent background. Single still character, no sheet, no effect trails or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-b735f4bf-6a24-4a11-ad9e-1fab70e453a0.png",
+      "preserved_file": "raw/dashload.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "13ecbe57ed1efb0932665ee3a3b6fa48a3394cb7a683bca2c53a271b46977786"
+    },
+    {
+      "key": "dashtravel",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body rightward dash travel pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet; do not reinterpret the character. Lean the solid head and chest gently forward together; rear short arm bends back beside the hip, front short arm bends low, one small foot a little forward and the other trailing. Two small ROUND FINGERLESS hands with no thumb or fingers, no gloves. Same three-quarter facing-right view. Transparent background. Single still character, no sheet, no effect trails or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-8dffab02-0b77-4b45-991f-3b27e3b6e84c.png",
+      "preserved_file": "raw/dashtravel.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "62235316951e81430ca8190fc082358bbfcbf11fd7232d7d09bc6e5886b6a35f"
+    },
+    {
+      "key": "dashbrake",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body rightward dash braking pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet; do not reinterpret the character. Front small foot planted under the body, rear foot catching up; solid head and chest begin returning upright together, short arms relax near the hips. Two small ROUND FINGERLESS hands with no thumb or fingers, no gloves. Same three-quarter facing-right view. Transparent background. Single still character, no sheet, no effect trails or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-55968a36-ec14-4c28-80d4-91578f9b6215.png",
+      "preserved_file": "raw/dashbrake.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "b1f8ce9e575f2f08232f45c66496cd12ad3902d96b0f8f9c20ed33ded029f00e"
+    },
+    {
+      "key": "strike",
+      "attempt": 2,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body punch pose. Keep the exact original sprite style, face, proportions, pixels and small feet. The REAR arm, visible on the LEFT side of the reference, punches toward the RIGHT: that elbow swings from its left shoulder ACROSS THE FRONT OF THE CHEST and its small round hand reaches just beyond the chest's right edge. Waist turns a little to drive this same rear arm. The other front arm remains low at the right hip, with its separate round hand visible. Two small ROUND FINGERLESS hands, no thumb or fingers or gloves. Same three-quarter facing-right view. Transparent background. One complete character still, no sheet or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-564728e8-d4c8-4446-b2e0-c11acc9d67c9.png",
+      "preserved_file": "raw/strike.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "f167a690a65b957cf692f8550e414cadcea525498c50e90161df6cd24d15c81d"
+    },
+    {
+      "key": "extension",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body mid-punch pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet. Rear arm (on the LEFT in the reference) turns from its shoulder across the LOWER chest toward the RIGHT; elbow still bent, small round hand just in front of the chest, not yet at full reach. Waist follows this turn slightly. Other hand stays low at the right hip, both feet planted. Two small ROUND FINGERLESS hands with no thumb or fingers or gloves. Same three-quarter facing-right view. Transparent background. One complete still character, no sheet or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-b5d076ae-bc0a-493f-92cc-77027aed6226.png",
+      "preserved_file": "raw/extension.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "76d93066af2a153ec46ccc2ee2fb14a8821a0927e931128c1fde1e3537a4a6af"
+    },
+    {
+      "key": "withdraw",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body early punch withdrawal pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet. Rear arm (on the LEFT in the reference) has just punched to the RIGHT across the lower chest; now its elbow bends and the small round hand draws back to the chest's right edge. Waist is settling out of the strike. Other hand stays low at the right hip, both feet planted. Two small ROUND FINGERLESS hands with no thumb or fingers or gloves. Same three-quarter facing-right view. Transparent background. One complete still character, no sheet or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-286607da-f4dd-45a4-8c59-99600c13bbda.png",
+      "preserved_file": "raw/withdraw.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "60e18bf936e776bbe104333fff4595cbd6b26495d320632719229ff9b325333f"
+    },
+    {
+      "key": "dashalternate",
+      "attempt": 1,
+      "provider": "built-in image_gen",
+      "prompt": "Edit the attached finished pixel sprite into ONE full-body rightward dash travel pose. Preserve the exact original drawing, pixel block size, face, body proportions, and small feet. Solid head and chest lean gently forward together; the LEFT/rear short leg now reaches a little forward beneath the body while the RIGHT/front short leg bends back. Rear short arm bends back beside hip, front short arm bends low. Two small ROUND FINGERLESS hands with no thumb or fingers or gloves. Same three-quarter facing-right view. Transparent background. One complete still character, no sheet, no effects or text.",
+      "referenced_image_paths": [
+        "../canonical-reference-16x.png"
+      ],
+      "transparent_background": true,
+      "generated_file": "C:\\Users\\은찬\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-9242640a-2dc6-49d5-92d9-b66e188603dd.png",
+      "preserved_file": "raw/dashalternate.png",
+      "status": "accepted source still; traced native; runtime naturalness pending",
+      "rejection_reason": null,
+      "preserved_sha256": "f2cf6cee84fff39f371c96c8a426476b144340cee26a8c1ff097e2ca3910046d"
+    }
+  ],
+  "canonical_reference_sha256": "f5d00120f4f3b692bb00ffc68e801b750abc1e7cca86426e94d2b53e3bdba97d",
+  "palette_lock_sha256": "78fea180c7e8bafb2ee5b53f699d724d97b5e5c1417b585968aeceba8e7a6f81"
+}

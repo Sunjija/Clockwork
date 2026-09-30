@@ -1,0 +1,86 @@
+{
+  "status": "OFFLINE CANDIDATE; all48 PNGs frozen, up15 corrected after actual GPU gap finding; post-fix capture and user acceptance pending",
+  "generatedSingleStillSources": 12,
+  "selectedWholeSourceKeys": 5,
+  "nonSelectedPreservedCandidates": 7,
+  "reference": "original native Idle00 enlargedNEAREST16x ONLY",
+  "sourceReviewCoverage": "selected raw images and decodednative whole poses viewed directly",
+  "nativeExposureVisualReviewCoverage": "All48 frozen exported PNGs reviewed directly in rebuilt all48-contact-3x.png, including up14 and all3brace keys.",
+  "nativeExposureTechnicalCheck": "48/48 native64,13colors,binaryalpha,one4connectedopaquecomponent; neutralhurt02 originalPNGbytes",
+  "contacts": {
+    "side": {
+      "handCenters": [
+        [
+          50,
+          37
+        ],
+        [
+          50,
+          44
+        ]
+      ],
+      "bothHandRightEdge": 53,
+      "soleBaseline": 56
+    },
+    "up": {
+      "handCenters": [
+        [
+          16,
+          22
+        ],
+        [
+          47,
+          22
+        ]
+      ],
+      "bothHandTop": 20,
+      "boxBottomExclusive": 20,
+      "boxHorizontalExtentExclusive": [
+        17,
+        47
+      ],
+      "topRowTouchesUndersideAtX": [
+        17,
+        46
+      ],
+      "soleBaseline": 56,
+      "oldWrongTop24Preserved": "rejected/up-top24-wrong-battery-height"
+    },
+    "down": {
+      "handCenters": [
+        [
+          28,
+          57
+        ],
+        [
+          44,
+          57
+        ]
+      ],
+      "bothHandBottom": 60,
+      "boxTop": 60,
+      "rearSoleBaseline": 56
+    }
+  },
+  "perSource": {
+    "pushside-contact": "Both palms originally align in the new complete source. Automatic19.6x18.5 grid harmed eye contours; explicit whole-uniform19.6 measuredphase0 import selected. Wholeimage+4 registration. Onlysourcealpha wrist2x2metal strengthens connection; no limb extension. Upper body leans, chest can read narrow with crossing arm; actual runtime/user judgment pending.",
+    "pushup-contact": "Official canonical complete-source extraction. Root initially assumed battery-moving36px height and asked for palm top24; actual30x32 texture leaves4px visible gap in FinalWorldCamera. Caps now top20 at centers16/47, inward2/3px so first-row ink touches actual crate corners x17/46. Compact source wrist bend uses visible metal inside original source alpha; no limb elongation. Foreground caps overlap a few ear-edge pixels; no whole head/chest patch. Generator back vent removed by local bronze semantic correction.",
+    "pushdown-depth": "Newcomplete crouch source has small feet behind forward palms. Official9.5 divisor pitch rejected, not silentlyaccepted. Explicituniform19.0 phase14.25 import yields31x41. Compactshoe contours drawn at rearsole56, bothroundhandsbottom60. Bowedhead naturally hides chest, cyanheart visiblytiny through sourceforeshortening; no chest/headpartresize or originalrectpatch.",
+    "hurt": "Officialcanonical small recoil wholepose. Two originalsize roundhands, residual2pixelsoldhandstub removed.",
+    "hurt-settle": "Officialcanonical nearlyneutral wholepose. Originaltinycyanclusters cleaned, bothroundhands maintained.",
+    "nonselected": "Initialdown/gridcollapse, lowup/contact or otherbadgeometry candidates preserved with exactprompt/output/rawSHA."
+  },
+  "motion": "Four complete-native knee/heel weightstates per direction repeated over14originalWalkdurations. Hands/upperpose stayfixed incontact. This is restrainedsupport weighttransfer; it is not evidence of naturalwalking. No feetcroptranslate or pastedarmrig.",
+  "timing": "3directions14exposures originalWalkduration array;3braceholds1000ms;hurt40/50/60ms originalfinalneutral",
+  "actualRuntimeReview": {
+    "coverage": "Read-only actual FinalWorldCamera GPU contact sequence review, not live human play",
+    "directory": "unity/TiqueReturnPrototype/QA/V10/FinalWorldCamera/Preview",
+    "upBeforeCorrection": "4nativepx vertical gap visibly confirmed; corner horizontal alignment also corrected offline, new GPU capture pending",
+    "side": "Both palms stay on box plane throughout actual contact sequence. Small circular hand ends and source metal wrist remain readable; leaned chest and static upper-pose naturalness still require user judgment.",
+    "down": "Both foreground palms and rear shoes remain present throughout actual contact sequence. Source crouch foreshortens chest/heart; dark hand rims against gold crate edge reduce separation at native scale, no large disappearance observed.",
+    "directKeys": "No further OS inputs after user Escape; real-key double jump/coyote and user naturalness not verified."
+  },
+  "noQualityPass": true,
+  "upCorrection": "up-contact-correction.json: exactly15 up/brace-up PNG changed; other33 SHA preserved; all48 one4-connected component; actual post-fix contact unverified.",
+  "final48Contact": "all48-contact-3x.png"
+}

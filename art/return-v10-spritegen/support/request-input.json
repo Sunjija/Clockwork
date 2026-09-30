@@ -1,0 +1,74 @@
+{
+  "cell": {
+    "width": 64,
+    "height": 64,
+    "safe_margin_x": 4,
+    "safe_margin_y": 8
+  },
+  "states": {
+    "pushside": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: push an unseen box to the right with BOTH hands at its left face, elbows softly bent and palms at lower chest and waist height. Slight forward lean and short planted steps. No box drawn. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "pushup": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: back view pushing an unseen box upward away from camera with BOTH round hands above the shoulders. Use the same shell, ear caps and compact proportions viewed from behind. Two feet grounded. No box drawn. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "pushdown": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: facing camera and pushing an unseen box downward toward camera. BOTH round hands rest in front at hip height with compact bent elbows. Knees slightly bent; both feet visible at sides. No box drawn. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "hurt": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "ONE still pose: a small hit recoil. Solid upper body tilts backward slightly, both round hands loosen beside the hips, one foot bracing backward. Both arms attached and visible. The attached original native sprite alone defines the design, proportions, face, colors and pixel density. Both hands are fingerless round endcaps."
+    },
+    "pushup-high": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushup-high ONE fullbody still, original compact round hands and identity"
+    },
+    "pushdown-crouch": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushdown-crouch ONE fullbody still, original compact round hands and identity"
+    },
+    "hurt-settle": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "hurt-settle ONE fullbody still, original compact round hands and identity"
+    },
+    "pushup-contact": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushup-contact; only one complete pose. Original sprite identity unchanged."
+    },
+    "pushdown-contact": {
+      "frames": 1,
+      "fps": 1,
+      "loop": false,
+      "action": "pushdown-contact; only one complete pose. Original sprite identity unchanged."
+    }
+  },
+  "fit": {
+    "pixel_unfake": true,
+    "logical_height": 64,
+    "palette_size": 13,
+    "align_x": "alpha-centroid",
+    "align_y": "bottom",
+    "ground_frames": false,
+    "detail_bias": true,
+    "outline": false
+  }
+}

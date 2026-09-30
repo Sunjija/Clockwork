@@ -124,3 +124,17 @@ Directory.CreateDirectory(Path.Combine(qa,"WorkOrderV01"));
 var orderResult=WorkOrderChecks.Run(book);
 File.WriteAllText(Path.Combine(qa,"WorkOrderV01/model-checks.json"),JsonSerializer.Serialize(orderResult,jsonOptions));
 Console.WriteLine("PASS work order model checks");
+
+// While art is being authored the original manifest is a compatible fallback;
+// final verification records the actual manifest used, rather than assuming it.
+string tiqueManifest = Path.Combine(root,"Assets/Resources/ReturnV2/TiqueV10/clips.json");
+if(!File.Exists(tiqueManifest)) tiqueManifest = Path.Combine(root,"Assets/Resources/ReturnV2/TiqueV9/clips.json");
+if(!File.Exists(tiqueManifest)) tiqueManifest = Path.Combine(root,"Assets/Resources/ReturnV2/TiqueV8/clips.json");
+if(!File.Exists(tiqueManifest)) tiqueManifest = Path.Combine(root,"Assets/Resources/Return/clips.json");
+var tiqueClips = JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(tiqueManifest),jsonOptions);
+var tiqueTimes = tiqueClips.clips.ToDictionary(c=>c.name,c=>c.durations);
+var tiqueResult = TiqueAnimationChecks.Run(book,tiqueTimes);
+string tiqueRevision=tiqueManifest.Contains("TiqueV10")?"V10":tiqueManifest.Contains("TiqueV9")?"V9":"V8";
+Directory.CreateDirectory(Path.Combine(qa,tiqueRevision));
+File.WriteAllText(Path.Combine(qa,tiqueRevision,"animation-model-checks.json"),JsonSerializer.Serialize(new{manifest=tiqueManifest,result=tiqueResult},jsonOptions));
+Console.WriteLine("PASS Tique animation selector checks; manifest "+tiqueManifest);

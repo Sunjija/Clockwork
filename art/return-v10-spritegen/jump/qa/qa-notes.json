@@ -1,0 +1,41 @@
+{
+  "status": "OFFLINE CANDIDATE: actual runtime and user acceptance pending",
+  "sourceTotal": 10,
+  "selectedSourceTotal": 8,
+  "rejectedSourceTotal": 2,
+  "identityReference": "../canonical-reference-16x.png",
+  "visualReviewMethod": "Actual built-in single still source images and complete decoded/native contacts reviewed; no live human-play or naturalness claim. Clean GIF frames reviewed as complete native sequence contacts.",
+  "perState": {
+    "preload": "Retry selected. Original-size chest/heart retained; one-pixel restrained preparation. First compressed-chest candidate rejected and preserved.",
+    "takeoff": "Selected. Forearms bend in front at waist, compact shoes extend under hips; arms are the real source trace, not a replacement line rig.",
+    "early-rise": "Selected additional whole source. Hands sit midway from chest front to sides, reducing the takeoff-to-rise hand jump.",
+    "rise": "Selected. Left shoe folds back and right toe trails; full source is integer-shifted(-1,+2) to keep headtop8 rather than bottom-pin airtuck.",
+    "apex": "Selected root-generated complete still. Bent knees, hands softly outward; whole image moves one pixel up to headtop8.",
+    "fall": "Selected. Compact shoes extend downward, short elbows bent; source contour differs at lower jaw by1px, within retained source pose.",
+    "land": "Selected. Body stays solid, knees shorten stance, headtop10 and soles56; both arms settle visibly beside hips.",
+    "boost": "Retry selected. Crown/face and boots are closer to original than rejected first boost; knees tuck under hips and connected source arms remain compact."
+  },
+  "intermediates": "6 explicit complete-native contour variants, each anchored to a real whole-pose source with per-pixel delta; recovery is a whole-image1px shift plus sole contour, not relocated body parts.",
+  "artConstraints": {
+    "nativeCanvas": [
+      64,
+      64
+    ],
+    "paletteColors": 13,
+    "alpha": [
+      0,
+      255
+    ],
+    "newHands": "5x5 shared original-size round endcaps; original neutral endpoints exempt",
+    "wholeRegistration": "AIR headtop8; ground land10/recovery9/neutral8 with sole56",
+    "originalPreservation": "Original relaxed Idle and Walk untouched; neutral endpoints copied as original PNG bytes",
+    "noWholeHeadChestPatch": true,
+    "noRegionSpecificResize": true
+  },
+  "remainingLimits": [
+    "source lower-jaw/top shading still varies by approximately1 native pixel between independent poses",
+    "rise right toe extends2 pixels lower relative to registered head than neutral; actual air sequence must judge this pose",
+    "runtime clips intentionally need velocity/landing phase selection; all preparation frames should not be forced after impulse",
+    "No controlled real-key double-jump/coyote or final user naturalness approval yet"
+  ]
+}

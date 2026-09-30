@@ -1,0 +1,384 @@
+{
+  "clip": "DoubleJump",
+  "frameCount": 13,
+  "durationsMs": [
+    50,
+    30,
+    45,
+    45,
+    90,
+    60,
+    40,
+    70,
+    70,
+    35,
+    45,
+    50,
+    80
+  ],
+  "durationMs": 710,
+  "cell": [
+    64,
+    64
+  ],
+  "pivotPixels": [
+    32,
+    56
+  ],
+  "palette": [
+    [
+      43,
+      27,
+      36,
+      255
+    ],
+    [
+      188,
+      120,
+      59,
+      255
+    ],
+    [
+      221,
+      161,
+      75,
+      255
+    ],
+    [
+      117,
+      64,
+      50,
+      255
+    ],
+    [
+      244,
+      203,
+      112,
+      255
+    ],
+    [
+      156,
+      89,
+      56,
+      255
+    ],
+    [
+      255,
+      231,
+      163,
+      255
+    ],
+    [
+      19,
+      220,
+      232,
+      255
+    ],
+    [
+      19,
+      52,
+      69,
+      255
+    ],
+    [
+      165,
+      252,
+      241,
+      255
+    ],
+    [
+      11,
+      147,
+      177,
+      255
+    ],
+    [
+      9,
+      86,
+      107,
+      255
+    ],
+    [
+      82,
+      48,
+      40,
+      255
+    ]
+  ],
+  "alpha": "binary",
+  "frames": [
+    {
+      "index": 0,
+      "file": "00.png",
+      "durationMs": 50,
+      "sourceKey": "idle",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "opaquePixels": 1092,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 1,
+      "file": "01.png",
+      "durationMs": 30,
+      "sourceKey": "11-half-fold",
+      "sha256": "ebdbc1e93dbc67a71e2d48d26136a6f12c1481f0267f076fdcfce45fe75efd73",
+      "bounds": [
+        16,
+        8,
+        48,
+        54
+      ],
+      "opaquePixels": 1037,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 2,
+      "file": "02.png",
+      "durationMs": 45,
+      "sourceKey": "08-double-tuck",
+      "sha256": "50fddabbb4c712aa8b97b93e0f932adc58304380ed88981978bdf4f5a8c23031",
+      "bounds": [
+        16,
+        8,
+        48,
+        52
+      ],
+      "opaquePixels": 1002,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 3,
+      "file": "03.png",
+      "durationMs": 45,
+      "sourceKey": "09-double-release",
+      "sha256": "33d8f91649b89ba76132b418c17e0c5b86591b3f6bd727c70d47a210614924bc",
+      "bounds": [
+        15,
+        8,
+        52,
+        54
+      ],
+      "opaquePixels": 1054,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 4,
+      "file": "04.png",
+      "durationMs": 90,
+      "sourceKey": "14-boost-settle",
+      "sha256": "712ffd8099eacb85da26e2122e076772d3f1b47d0a0751ac99dd03319ea0dd94",
+      "bounds": [
+        16,
+        8,
+        48,
+        54
+      ],
+      "opaquePixels": 1043,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 5,
+      "file": "05.png",
+      "durationMs": 60,
+      "sourceKey": "03-ascent",
+      "sha256": "0b0ccf12e3c61be4263c7913cf0f04e67f83288e16b563c3aedf2c7cd19372d6",
+      "bounds": [
+        16,
+        8,
+        48,
+        53
+      ],
+      "opaquePixels": 1017,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 6,
+      "file": "06.png",
+      "durationMs": 40,
+      "sourceKey": "04-apex",
+      "sha256": "51696f7b68e7d0e50721970f7f1451bc897a9bbee28ddfe3b59ab706fa0e226c",
+      "bounds": [
+        16,
+        8,
+        48,
+        54
+      ],
+      "opaquePixels": 1024,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 7,
+      "file": "07.png",
+      "durationMs": 70,
+      "sourceKey": "12-half-open",
+      "sha256": "6e2bbfe72bd1e3565525bf4811566bbe929171648cb0465a427b088792d73540",
+      "bounds": [
+        16,
+        8,
+        48,
+        55
+      ],
+      "opaquePixels": 1049,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 8,
+      "file": "08.png",
+      "durationMs": 70,
+      "sourceKey": "05-descent",
+      "sha256": "55b9172763e60783be423db7801a715a8bcff43c6e0a7ff1fec18203fbda33c2",
+      "bounds": [
+        16,
+        8,
+        49,
+        56
+      ],
+      "opaquePixels": 1055,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 9,
+      "file": "09.png",
+      "durationMs": 35,
+      "sourceKey": "15-land-impact",
+      "sha256": "ad9b09cc0edba681c81182abef67254c2a442110444d5f36a9caff06a7361482",
+      "bounds": [
+        16,
+        11,
+        48,
+        56
+      ],
+      "opaquePixels": 1029,
+      "colors": 13,
+      "headTop": 11,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 10,
+      "file": "10.png",
+      "durationMs": 45,
+      "sourceKey": "13-land-rise",
+      "sha256": "9ebd9d7b900d369c5dda053c733e1de4fa139f5543a4759ea70cbe9931e704e4",
+      "bounds": [
+        16,
+        10,
+        48,
+        56
+      ],
+      "opaquePixels": 1051,
+      "colors": 13,
+      "headTop": 10,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 11,
+      "file": "11.png",
+      "durationMs": 50,
+      "sourceKey": "10-near-neutral",
+      "sha256": "419b58041ef467d1c88a1f024bba6a327f2af36c0efa387b5cc3f5f5605e0632",
+      "bounds": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "opaquePixels": 1049,
+      "colors": 13,
+      "headTop": 9,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    },
+    {
+      "index": 12,
+      "file": "12.png",
+      "durationMs": 80,
+      "sourceKey": "idle",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+      "bounds": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "opaquePixels": 1092,
+      "colors": 13,
+      "headTop": 8,
+      "canonicalPixelDeltas": {
+        "wholeHead": 0,
+        "chest": 0,
+        "heart": 0
+      }
+    }
+  ]
+}

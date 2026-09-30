@@ -1,0 +1,178 @@
+[
+  {
+    "key": "attack-windup",
+    "source": "Generated/attack-windup.png",
+    "prompt": "Prompts/attack-windup.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-1cd77024-425f-4a6c-80f6-dfb6bb9b4f97.png",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "5f04fffda2ea79f1ccead1a8fae96a7cb14a8a1d0717bbfabee0bbb837e1822e",
+    "nativeRGBAsha256": "20ab1081409ca086cbc912bbaea96bb5f08b2767ecc5bde43ea3efa9c7a63178",
+    "nativeCorrectionFile": "Native/attack-windup-identity-delta.json"
+  },
+  {
+    "key": "attack-impact",
+    "source": "Generated/attack-impact.png",
+    "prompt": "Prompts/attack-impact.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-523d9c03-9b25-426f-be52-e52b6132e6d1.png",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "287c5d411e5646b5738a218ae2c22cc591c297d2d588c3f68188f1b0176d9d0a",
+    "nativeRGBAsha256": "8335552711ae443ccee7d9ccd5997c3e7de86ab2e0187c9ec6aa333c417a6fe9",
+    "nativeCorrectionFile": "Native/attack-impact-identity-delta.json"
+  },
+  {
+    "key": "attack-recoil",
+    "source": "Generated/attack-recoil.png",
+    "prompt": "Prompts/attack-recoil.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-a1923bf0-739c-4152-a423-bf78e6c2f180.png",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "19e96f75599bcf8b219d3b1d635f4ed914dddae0bafbe8baebf1a4ef292f3be9",
+    "nativeRGBAsha256": "5a06701db8d6cc1214a699558b385bbb7184eb017cddaa464ae83f14e4f9235c",
+    "nativeCorrectionFile": "Native/attack-recoil-identity-delta.json"
+  },
+  {
+    "key": "dash-preload",
+    "source": "Generated/dash-preload.png",
+    "prompt": "Prompts/dash-preload.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-d778cfa1-a44e-48bb-af4f-114cbb44ca52.png",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "0feb9f0ead4b65c0423293e113c1827eb1c19cc4666d6f9263fca4a0358f53f0",
+    "nativeRGBAsha256": "4aeb6344d072ae3cabe21b7485305e40d0ffb5a735b851432cd0259f69369b02",
+    "nativeCorrectionFile": "Native/dash-preload-identity-delta.json"
+  },
+  {
+    "key": "dash-travel-a",
+    "source": "Generated/dash-travel-a.png",
+    "prompt": "Prompts/dash-travel-a.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-3681412b-9664-4af8-8273-51530c4180e6.png",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "0c179ce21aeaaabb861972b7fe45ef2f3f0fa455aef3ed69f45b9271ef274703",
+    "nativeRGBAsha256": "d257008ef08e8b7ac2bffd27d10da0295f729f7618ac3862d3785e2b57b4c8d1",
+    "nativeCorrectionFile": "Native/dash-travel-a-identity-delta.json"
+  },
+  {
+    "key": "dash-travel-b",
+    "source": "Generated/dash-travel-b.png",
+    "prompt": "Prompts/dash-travel-b.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-69f1a4da-ea80-4e31-a1a9-633cf98b683d.png",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "4fe7972f86112c027ed3ffd0972e31c6d5d7851ac4474caff998e8e2b31a2b10",
+    "nativeRGBAsha256": "053d28e469f1b551eb80380280353a48386d54896ac9ebcfe2e9732bc27a3978",
+    "nativeCorrectionFile": "Native/dash-travel-b-identity-delta.json"
+  },
+  {
+    "key": "dash-braking",
+    "source": "Generated/dash-braking.png",
+    "prompt": "Prompts/dash-braking.txt",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-299778be-7b2c-4998-af9a-71e12d7fd82d.png",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "0cc41b7b018d37e7db4578b055d581ea51b2b872c636c7d2c05b95daecf07df5",
+    "nativeRGBAsha256": "fa79d0ee23396864a3d9f9dad2fb7a425591a847f9c49f03298fe3932c5e4812",
+    "nativeCorrectionFile": "Native/dash-braking-identity-delta.json"
+  },
+  {
+    "key": "attack-extension",
+    "source": "Generated/attack-extension.png",
+    "prompt": "Prompts/attack-extension.txt",
+    "status": "accepted-action-pose-guide-identity-native-corrected",
+    "sourceReview": {
+      "completeBody": true,
+      "bothHandsVisible": true,
+      "continuousForearms": true,
+      "poseReadability": true,
+      "canonicalAppearanceAccepted": false,
+      "poseGuideAccepted": true,
+      "identityDriftCorrectedByOriginalNativePixels": true,
+      "thumbContourRemovedInNativeRoundHandCleanup": true
+    },
+    "tool": "image_gen.imagegen",
+    "reference": "C:\\Users\\\uc740\ucc2c\\Documents\\Codex\\2026-09-11\\https-github-com-sunjija-clockwork-https\\work\\Clockwork\\art\\return-v5-feedback\\Source\\Native\\tique-idle-8x.png",
+    "sourceSha256": "56d78dd715201ca54258e4554a5b57694bba4ea93b7545af897bee2e76ff4286",
+    "nativeRGBAsha256": "d7ea688fef2388819af936167427ed505c003a348fcba90c6922dc4eb5e6102d",
+    "builtinOutput": "C:\\Users\\\uc740\ucc2c\\.codex\\generated_images\\01a0f1ff-3f37-7382-82a4-ce0dc874fe5a\\exec-d3e59f34-8a66-4945-abb8-c8d6b8d4894d.png",
+    "nativeCorrectionFile": "Native/attack-extension-identity-delta.json"
+  }
+]

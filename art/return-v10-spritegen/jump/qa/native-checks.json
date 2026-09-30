@@ -1,0 +1,685 @@
+{
+  "status": "technical checks passed; natural motion requires actual runtime and user review",
+  "framesChecked": 28,
+  "generatedSources": 10,
+  "selectedWholePoseSources": 8,
+  "rejectedSourceCandidates": 2,
+  "durationMs": {
+    "Jump": 800,
+    "DoubleJump": 710
+  },
+  "frameReports": [
+    {
+      "clip": "Jump",
+      "index": 0,
+      "pose": "neutral",
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": true
+    },
+    {
+      "clip": "Jump",
+      "index": 1,
+      "pose": "preload-soft",
+      "rgbaSha256": "4826b93128cb27173bea76222edccbf4509aab491cda0b82abec3b8cb21cc255",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 2,
+      "pose": "preload",
+      "rgbaSha256": "14f7873d1afbf27f0930dbc166720b73e975003e7eb36f033d50ffeb82f29735",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 3,
+      "pose": "takeoff",
+      "rgbaSha256": "4aefcf6d7f0f941a70c29639e1ee3f59f790d262036197bfc212c1146663a533",
+      "bbox": [
+        16,
+        8,
+        48,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 4,
+      "pose": "early-rise",
+      "rgbaSha256": "f951e1a71bf5a75588d4c27d503689261d90712c3fb479f8f34424e62cb22b03",
+      "bbox": [
+        16,
+        8,
+        47,
+        55
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 5,
+      "pose": "rise",
+      "rgbaSha256": "06f393e799dc0a8311f76136a9b4692ba729c00b2297e7287681ebdd248530ba",
+      "bbox": [
+        16,
+        8,
+        47,
+        58
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 6,
+      "pose": "apex",
+      "rgbaSha256": "5a4827a218380d6010a644034cbae4ed875ad8dfc470394be90ea1e822ac45d5",
+      "bbox": [
+        16,
+        8,
+        48,
+        55
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 7,
+      "pose": "apex-unfold",
+      "rgbaSha256": "5485d25b88f6c88344c17c2dcf030e7561b0ac061605229e4dfff417526fcd12",
+      "bbox": [
+        16,
+        8,
+        48,
+        55
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 8,
+      "pose": "fall-early",
+      "rgbaSha256": "aac00359bbd1ce56feccfab58a4c04a614392eb510cc22e9df99ae666c944e60",
+      "bbox": [
+        16,
+        8,
+        48,
+        57
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 9,
+      "pose": "fall",
+      "rgbaSha256": "e24125865e32a2d71278326a2a3dc756363a30e600b0f04414aa8e17465e5aba",
+      "bbox": [
+        16,
+        8,
+        48,
+        57
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 10,
+      "pose": "land",
+      "rgbaSha256": "4be323ed1a8cbfa41088dcf649b95102f22b1d259cfc8843c94490eabd665889",
+      "bbox": [
+        16,
+        10,
+        48,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 11,
+      "pose": "recovery",
+      "rgbaSha256": "5f9a0dcccb2bdfed466f41e88cc5a0ab15d373b92acd2cf48bb6261f3087e02d",
+      "bbox": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 12,
+      "pose": "preload",
+      "rgbaSha256": "14f7873d1afbf27f0930dbc166720b73e975003e7eb36f033d50ffeb82f29735",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "Jump",
+      "index": 13,
+      "pose": "neutral",
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": true
+    },
+    {
+      "clip": "Jump",
+      "index": 14,
+      "pose": "neutral",
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": true
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 0,
+      "pose": "neutral",
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": true
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 1,
+      "pose": "apex-unfold",
+      "rgbaSha256": "5485d25b88f6c88344c17c2dcf030e7561b0ac061605229e4dfff417526fcd12",
+      "bbox": [
+        16,
+        8,
+        48,
+        55
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 2,
+      "pose": "boost",
+      "rgbaSha256": "f9f75bd19ef691db7657a7d6b5deb8499f6c4ce5c52922e6493b0114bbae8aaf",
+      "bbox": [
+        15,
+        8,
+        49,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 3,
+      "pose": "boost-release",
+      "rgbaSha256": "99b13ed290f2f31523ec9cabe613809d926099061328d4921610bfabe73ba80b",
+      "bbox": [
+        15,
+        8,
+        49,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 4,
+      "pose": "rise",
+      "rgbaSha256": "06f393e799dc0a8311f76136a9b4692ba729c00b2297e7287681ebdd248530ba",
+      "bbox": [
+        16,
+        8,
+        47,
+        58
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 5,
+      "pose": "apex-approach",
+      "rgbaSha256": "5e4a091847681d79fc0bf23343f136bca14a3021e8143ee2b7cc3007cde812bc",
+      "bbox": [
+        16,
+        8,
+        47,
+        57
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 6,
+      "pose": "apex",
+      "rgbaSha256": "5a4827a218380d6010a644034cbae4ed875ad8dfc470394be90ea1e822ac45d5",
+      "bbox": [
+        16,
+        8,
+        48,
+        55
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 7,
+      "pose": "fall-early",
+      "rgbaSha256": "aac00359bbd1ce56feccfab58a4c04a614392eb510cc22e9df99ae666c944e60",
+      "bbox": [
+        16,
+        8,
+        48,
+        57
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 8,
+      "pose": "fall",
+      "rgbaSha256": "e24125865e32a2d71278326a2a3dc756363a30e600b0f04414aa8e17465e5aba",
+      "bbox": [
+        16,
+        8,
+        48,
+        57
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": false,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 9,
+      "pose": "land",
+      "rgbaSha256": "4be323ed1a8cbfa41088dcf649b95102f22b1d259cfc8843c94490eabd665889",
+      "bbox": [
+        16,
+        10,
+        48,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 10,
+      "pose": "recovery",
+      "rgbaSha256": "5f9a0dcccb2bdfed466f41e88cc5a0ab15d373b92acd2cf48bb6261f3087e02d",
+      "bbox": [
+        16,
+        9,
+        48,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 11,
+      "pose": "preload",
+      "rgbaSha256": "14f7873d1afbf27f0930dbc166720b73e975003e7eb36f033d50ffeb82f29735",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": false
+    },
+    {
+      "clip": "DoubleJump",
+      "index": 12,
+      "pose": "neutral",
+      "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+      "bbox": [
+        16,
+        8,
+        47,
+        56
+      ],
+      "headBBoxRegistered": [
+        16,
+        8,
+        47,
+        35
+      ],
+      "binaryAlpha": true,
+      "canonicalPalette": true,
+      "singleOpaqueComponent8Connected": true,
+      "eyesAndCyanHeartIdentity": true,
+      "groundSoles56": true,
+      "neutralOriginalBytes": true
+    }
+  ]
+}

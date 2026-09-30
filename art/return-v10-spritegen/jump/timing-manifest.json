@@ -1,0 +1,272 @@
+{
+  "Jump": {
+    "frameCount": 15,
+    "durations": [
+      60,
+      30,
+      40,
+      40,
+      90,
+      70,
+      60,
+      40,
+      70,
+      60,
+      35,
+      35,
+      45,
+      45,
+      80
+    ],
+    "totalDurationMs": 800,
+    "frames": [
+      {
+        "index": 0,
+        "pose": "neutral",
+        "durationMs": 60,
+        "sourcePose": "neutral",
+        "file": "Jump/00.png",
+        "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+      },
+      {
+        "index": 1,
+        "pose": "preload-soft",
+        "durationMs": 30,
+        "sourcePose": "preload",
+        "file": "Jump/01.png",
+        "sha256": "1f2192008e83b26a327cd54f728aab8c5948f1c15cb1ea9e6a5d509143399fad"
+      },
+      {
+        "index": 2,
+        "pose": "preload",
+        "durationMs": 40,
+        "sourcePose": "preload",
+        "file": "Jump/02.png",
+        "sha256": "5ac0636a524e8431cd7846801a5202264facb4bd2ddc4840dfe29800e1724d02"
+      },
+      {
+        "index": 3,
+        "pose": "takeoff",
+        "durationMs": 40,
+        "sourcePose": "takeoff",
+        "file": "Jump/03.png",
+        "sha256": "ee320081277a138e949cef6fbc9cf92c7d1192ce0ecaff9865fe320f35c746a3"
+      },
+      {
+        "index": 4,
+        "pose": "early-rise",
+        "durationMs": 90,
+        "sourcePose": "early-rise",
+        "file": "Jump/04.png",
+        "sha256": "c671072e600dd1266e851050c07ed258171df9e000f53ace0bd5db66e6562a4d"
+      },
+      {
+        "index": 5,
+        "pose": "rise",
+        "durationMs": 70,
+        "sourcePose": "rise",
+        "file": "Jump/05.png",
+        "sha256": "d92066583e3fac1fdd5fe4076b3a2dffc2410d99077ce9a0cdc04bf22456cfc6"
+      },
+      {
+        "index": 6,
+        "pose": "apex",
+        "durationMs": 60,
+        "sourcePose": "apex",
+        "file": "Jump/06.png",
+        "sha256": "9bb183b0792b7793a0076aa40b0395d22122dd9ed100d169f56a59fba5b75c48"
+      },
+      {
+        "index": 7,
+        "pose": "apex-unfold",
+        "durationMs": 40,
+        "sourcePose": "apex",
+        "file": "Jump/07.png",
+        "sha256": "c433da6dd3a9d3d017379c7dc9fb3821cb213f2f56d35f3421c80d115efeebaf"
+      },
+      {
+        "index": 8,
+        "pose": "fall-early",
+        "durationMs": 70,
+        "sourcePose": "fall",
+        "file": "Jump/08.png",
+        "sha256": "f5cdab03cfc027bbea44b645f05ba7862f3d10b87cd7ffb661f63f7de518f881"
+      },
+      {
+        "index": 9,
+        "pose": "fall",
+        "durationMs": 60,
+        "sourcePose": "fall",
+        "file": "Jump/09.png",
+        "sha256": "b11d6297cc99f8e1ae2b97669d0699c95c0f6795b128d74a93a0192ea40e06b3"
+      },
+      {
+        "index": 10,
+        "pose": "land",
+        "durationMs": 35,
+        "sourcePose": "land",
+        "file": "Jump/10.png",
+        "sha256": "07ba85172b4e1329b7d26aefc46c6567bf89fb9141fb779aa7af14d0f0287608"
+      },
+      {
+        "index": 11,
+        "pose": "recovery",
+        "durationMs": 35,
+        "sourcePose": "land",
+        "file": "Jump/11.png",
+        "sha256": "e832b0d8e6fd395f273dbdd6d87732732ca8c6c90a51cba599c0db43c3f2f9f2"
+      },
+      {
+        "index": 12,
+        "pose": "preload",
+        "durationMs": 45,
+        "sourcePose": "preload",
+        "file": "Jump/12.png",
+        "sha256": "5ac0636a524e8431cd7846801a5202264facb4bd2ddc4840dfe29800e1724d02"
+      },
+      {
+        "index": 13,
+        "pose": "neutral",
+        "durationMs": 45,
+        "sourcePose": "neutral",
+        "file": "Jump/13.png",
+        "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+      },
+      {
+        "index": 14,
+        "pose": "neutral",
+        "durationMs": 80,
+        "sourcePose": "neutral",
+        "file": "Jump/14.png",
+        "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+      }
+    ],
+    "runtimeReview": "pending actual Unity sequence review; offline contact is not live human play"
+  },
+  "DoubleJump": {
+    "frameCount": 13,
+    "durations": [
+      50,
+      30,
+      45,
+      45,
+      90,
+      60,
+      40,
+      70,
+      70,
+      35,
+      45,
+      50,
+      80
+    ],
+    "totalDurationMs": 710,
+    "frames": [
+      {
+        "index": 0,
+        "pose": "neutral",
+        "durationMs": 50,
+        "sourcePose": "neutral",
+        "file": "DoubleJump/00.png",
+        "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+      },
+      {
+        "index": 1,
+        "pose": "apex-unfold",
+        "durationMs": 30,
+        "sourcePose": "apex",
+        "file": "DoubleJump/01.png",
+        "sha256": "c433da6dd3a9d3d017379c7dc9fb3821cb213f2f56d35f3421c80d115efeebaf"
+      },
+      {
+        "index": 2,
+        "pose": "boost",
+        "durationMs": 45,
+        "sourcePose": "boost",
+        "file": "DoubleJump/02.png",
+        "sha256": "35c1db4a64d7185165358223fa9477042725e3de518e4c4e14f44cc22d21ae95"
+      },
+      {
+        "index": 3,
+        "pose": "boost-release",
+        "durationMs": 45,
+        "sourcePose": "boost",
+        "file": "DoubleJump/03.png",
+        "sha256": "2ab7a27d748164a127847f12ddde51a0d7644cba2f20aedfe9e7cd220491562b"
+      },
+      {
+        "index": 4,
+        "pose": "rise",
+        "durationMs": 90,
+        "sourcePose": "rise",
+        "file": "DoubleJump/04.png",
+        "sha256": "d92066583e3fac1fdd5fe4076b3a2dffc2410d99077ce9a0cdc04bf22456cfc6"
+      },
+      {
+        "index": 5,
+        "pose": "apex-approach",
+        "durationMs": 60,
+        "sourcePose": "rise",
+        "file": "DoubleJump/05.png",
+        "sha256": "05001b330dda2f6eb97f243f52275038dfd3be37d766f030a4c32e415ce842a1"
+      },
+      {
+        "index": 6,
+        "pose": "apex",
+        "durationMs": 40,
+        "sourcePose": "apex",
+        "file": "DoubleJump/06.png",
+        "sha256": "9bb183b0792b7793a0076aa40b0395d22122dd9ed100d169f56a59fba5b75c48"
+      },
+      {
+        "index": 7,
+        "pose": "fall-early",
+        "durationMs": 70,
+        "sourcePose": "fall",
+        "file": "DoubleJump/07.png",
+        "sha256": "f5cdab03cfc027bbea44b645f05ba7862f3d10b87cd7ffb661f63f7de518f881"
+      },
+      {
+        "index": 8,
+        "pose": "fall",
+        "durationMs": 70,
+        "sourcePose": "fall",
+        "file": "DoubleJump/08.png",
+        "sha256": "b11d6297cc99f8e1ae2b97669d0699c95c0f6795b128d74a93a0192ea40e06b3"
+      },
+      {
+        "index": 9,
+        "pose": "land",
+        "durationMs": 35,
+        "sourcePose": "land",
+        "file": "DoubleJump/09.png",
+        "sha256": "07ba85172b4e1329b7d26aefc46c6567bf89fb9141fb779aa7af14d0f0287608"
+      },
+      {
+        "index": 10,
+        "pose": "recovery",
+        "durationMs": 45,
+        "sourcePose": "land",
+        "file": "DoubleJump/10.png",
+        "sha256": "e832b0d8e6fd395f273dbdd6d87732732ca8c6c90a51cba599c0db43c3f2f9f2"
+      },
+      {
+        "index": 11,
+        "pose": "preload",
+        "durationMs": 50,
+        "sourcePose": "preload",
+        "file": "DoubleJump/11.png",
+        "sha256": "5ac0636a524e8431cd7846801a5202264facb4bd2ddc4840dfe29800e1724d02"
+      },
+      {
+        "index": 12,
+        "pose": "neutral",
+        "durationMs": 80,
+        "sourcePose": "neutral",
+        "file": "DoubleJump/12.png",
+        "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+      }
+    ],
+    "runtimeReview": "pending actual Unity sequence review; offline contact is not live human play"
+  }
+}

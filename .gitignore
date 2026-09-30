@@ -18,3 +18,7 @@
 *.csproj
 *.sln
 *.user
+
+# Native sprite authoring caches
+/tools/art/__pycache__/
+*.sg-rwlock
