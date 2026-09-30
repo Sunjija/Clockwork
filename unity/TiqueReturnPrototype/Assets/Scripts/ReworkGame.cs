@@ -220,7 +220,7 @@ namespace TiqueReturn
                 else if(m.idleAge>2.5f&&(m.idleAge-2.5f)%5.5f<.26f&&m.bossMove==IronMove.Rest&&!m.reducedEffects){float blink=(m.idleAge-2.5f)%5.5f;pose=blink<.08f||blink>=.18f?"fx-blink-half":"fx-blink-closed";f=0;}
                 if(m.hero.Dashing&&!m.reducedEffects)for(int i=1;i<=2;i++)Draw("ghost"+i,animations["fx-dash-ghost"][f],m.hero.x-32-m.hero.facing*i*9,m.hero.y-56,19,Color.white,m.hero.facing<0);
                 Tique(m.hero.x,m.hero.y,pose,f,20,m.hero.facing<0);
-                if(m.hero.invincible>0&&m.phase==Journey.Combat)StateFeedback("protect",0,m.hero.x-12,m.hero.y-38,21);
+                if(m.hero.invincible>0&&m.phase==Journey.Combat)StateFeedback("protect",0,m.hero.x-12,m.hero.y-27,21); // ring centred on the heart (15px above the feet)
                 bool chargeLock=m.bossMove==IronMove.ChargeAim&&m.bossAge>=.35f;
                 bool slamLock=(m.bossMove==IronMove.SlamAim&&m.bossAge>=.45f)||m.bossMove==IronMove.Slam;
                 if(chargeLock||slamLock){float left=slamLock?m.aimX-68:m.bossFacing<0?24:m.bossX;float right=slamLock?m.aimX+68:m.bossFacing<0?m.bossX:616;

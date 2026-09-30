@@ -47,7 +47,7 @@ namespace TiqueReturn
             KeyCap(103,331,"Z");KeyCap(127,331,"Space");Text(180,333,42,"점프",dim);
             UiSprite("icon-jump",new Rect(218,334,12,12));KeyCap(243,331,"X");Text(269,333,42,"공격",dim);
             UiSprite("icon-attack",new Rect(309,334,12,12));KeyCap(337,331,"C");Text(363,333,42,"대시",dim);
-            UiSprite("icon-dash",new Rect(403,334,12,12));KeyCap(434,331,"E");Text(460,333,74,"상호작용",dim);KeyCap(573,331,"Esc");
+            UiSprite("icon-dash",new Rect(403,334,12,12));KeyCap(434,331,"E");Text(460,333,74,"상호작용",dim);UiSprite("icon-interact",new Rect(528,334,12,12));KeyCap(573,331,"Esc");
         }
         void Panel(int x,int y,int w,int h,string tile="panel")
         {
@@ -171,8 +171,8 @@ namespace TiqueReturn
                     Text(252+CellsWidth(9,true)+6,15,200,"철갑 문지기",dim);
                     if((m.bossHealth==6||m.bossHealth==3)&&m.clock-m.lastBossDamageAt<.22f){UiSprite("icon-locked",new Rect(238,16,12,12),gold);}
                     int after=12+CellsWidth(5,false)+4;
-                    if(m.hero.invincible>0&&m.phase==Journey.Combat)UiSprite("protect",new Rect(after,10,20,20));
-                    if(m.health==1)Text(after+24,16,120,"위험",red);
+                    if(m.hero.invincible>0&&m.phase==Journey.Combat)UiSprite("protect",new Rect(after,10,24,24));
+                    if(m.health==1)Text(after+28,16,120,"위험",red);
                 }
                 string state=m.phase==Journey.Restored?"폐기 명령 해제. 오른쪽 문에서 E":m.Vulnerable?"노심 노출 / X 공격":m.bossMove==IronMove.ChargeAim?"돌진: 기둥 뒤로 유도":m.bossMove==IronMove.WaveAim?"충격파: 점프":m.bossMove==IronMove.SlamAim?"낙하: 표시 밖으로 대시":"E 충전 → 유도 → X 반격";
                 if(m.phase!=Journey.Arrival){Panel(188,41,264,27);Text(198,47,244,state,m.Vulnerable?cyan:gold);}

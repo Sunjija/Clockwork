@@ -568,7 +568,150 @@ def effects():
         export(name, frames, d, note)
 
 
-STAGES = [hud_cells, effects]
+# ---------------------------------------------------------------- icons
+def icon(rows, main, second='g', size=12):
+    """10x10 mask ('#' main colour, '+' second colour) centred in a 12x12 cell with
+    a dark one-pixel outline, so every icon reads on panels and on the world."""
+    im = blank(size, size)
+    pad = (size - len(rows[0])) // 2
+    filled = set()
+    for y, row in enumerate(rows):
+        assert len(row) == len(rows[0]), rows
+        for x, ch in enumerate(row):
+            if ch != '.':
+                put(im, x + pad, y + pad, main if ch == '#' else second if ch == '+' else ch)
+                filled.add((x + pad, y + pad))
+    for x, y in filled:
+        for dx, dy in ((1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (-1, 1), (1, -1), (-1, -1)):
+            p = (x + dx, y + dy)
+            if p not in filled and 0 <= p[0] < size and 0 <= p[1] < size:
+                put(im, *p, 'k')
+    return im
+
+
+ICONS = {
+    'icon-jump': ('C', 'g', 'up arrow leaving the floor line', [
+        '....##....',
+        '...####...',
+        '..######..',
+        '.###..###.',
+        '....##....',
+        '....##....',
+        '....##....',
+        '..........',
+        '++++++++++',
+        '..........']),
+    'icon-dash': ('C', 'd', 'forward arrow with speed lines', [
+        '..........',
+        '.....#....',
+        '.....##...',
+        '++.######.',
+        '....######',
+        '++.######.',
+        '.....##...',
+        '.....#....',
+        '..........',
+        '..........']),
+    'icon-attack': ('B', 'w', 'punch impact burst (a 10px fist read as a mushroom)', [
+        '....#.....',
+        '.#..#..#..',
+        '..#.#.#...',
+        '...###....',
+        '####+####.',
+        '...###....',
+        '..#.#.#...',
+        '.#..#..#..',
+        '....#.....',
+        '..........']),
+    'icon-interact': ('C', 'l', 'charge bolt', [
+        '.....###..',
+        '....###...',
+        '...###....',
+        '..#######.',
+        '....###...',
+        '...###....',
+        '..###.....',
+        '.##.......',
+        '..........',
+        '..........']),
+    'icon-undo': ('G', 'g', 'arrow curling back to the left', [
+        '..........',
+        '..#.......',
+        '.##+++++..',
+        '#########.',
+        '.##.....##',
+        '..#......#',
+        '.........#',
+        '........##',
+        '...######.',
+        '..........']),
+    'icon-reset': ('G', 'g', 'closed loop with arrowhead', [
+        '...####...',
+        '..#....#..',
+        '.#......##',
+        '.#.....###',
+        '.#......#.',
+        '.#........',
+        '.#......#.',
+        '..#....#..',
+        '...####...',
+        '..........']),
+    'icon-hint': ('B', 'g', 'light bulb', [
+        '...####...',
+        '..##++##..',
+        '.##+####..',
+        '.#+#####..',
+        '.#######..',
+        '..#####...',
+        '...###....',
+        '...+++....',
+        '...+++....',
+        '....+.....']),
+    'icon-locked': ('B', 'k', 'padlock', [
+        '...####...',
+        '..#....#..',
+        '..#....#..',
+        '.########.',
+        '.########.',
+        '.###++###.',
+        '.####+###.',
+        '.####+###.',
+        '.########.',
+        '..........']),
+    'icon-pause': ('G', 'g', 'two bars', [
+        '..........',
+        '..##..##..',
+        '..##..##..',
+        '..##..##..',
+        '..##..##..',
+        '..##..##..',
+        '..##..##..',
+        '..##..##..',
+        '..........',
+        '..........']),
+}
+
+
+def protect_ring():
+    # Invulnerability mark: broken cyan ring around the heart (world, centred on the
+    # chest) and beside the HUD meter. Four arcs with gaps, never a solid shield.
+    im = blank(24, 24)
+    ellipse(im, 11.5, 11.5, 9, 9, 'k', keep=lambda a: (a + 20) % 90 < 60)
+    ellipse(im, 11.5, 11.5, 8, 8, 'C', keep=lambda a: (a + 20) % 90 < 60)
+    ellipse(im, 11.5, 11.5, 7, 7, 'd', keep=lambda a: (a + 20) % 90 < 60)
+    for a in (45, 135, 225, 315):
+        r = math.radians(a)
+        put(im, round(11.5 + math.cos(r) * 8), round(11.5 + math.sin(r) * 8), 'l')
+    return im
+
+
+def icons():
+    for name, (main, second, why, rows) in ICONS.items():
+        export(name, [icon(rows, main, second)], [1000], why + '; v5 12px icons were muddy brown/cyan blobs')
+    export('protect', [protect_ring()], [1000], 'broken ring; v5 was four faint corner ticks')
+
+
+STAGES = [hud_cells, effects, icons]
 
 if __name__ == '__main__':
     for stage in STAGES:

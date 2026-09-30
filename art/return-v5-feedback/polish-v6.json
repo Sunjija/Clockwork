@@ -317,6 +317,126 @@
         1000
       ],
       "why": "v5 chute was a faint brown outline; now a riveted hatch with a hanging flap"
+    },
+    {
+      "clip": "icon-jump",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "up arrow leaving the floor line; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-dash",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "forward arrow with speed lines; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-attack",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "punch impact burst (a 10px fist read as a mushroom); v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-interact",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "charge bolt; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-undo",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "arrow curling back to the left; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-reset",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "closed loop with arrowhead; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-hint",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "light bulb; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-locked",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "padlock; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "icon-pause",
+      "frames": 1,
+      "size": [
+        12,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "two bars; v5 12px icons were muddy brown/cyan blobs"
+    },
+    {
+      "clip": "protect",
+      "frames": 1,
+      "size": [
+        24,
+        24
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "broken ring; v5 was four faint corner ticks"
     }
   ]
 }
