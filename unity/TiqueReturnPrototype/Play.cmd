@@ -1,8 +1,8 @@
 @echo off
-if not exist "%~dp0Builds\WindowsV4\TiqueReturn.exe" (
+if not exist "%~dp0Builds\WindowsV5\TiqueReturn.exe" (
   echo No Unity player build exists yet.
   echo Activate Unity through Hub, then run Tools\Build-Windows.ps1.
   pause
   exit /b 1
 )
-start "Tique Return Circuit" "%~dp0Builds\WindowsV4\TiqueReturn.exe"
+start "Tique Return Circuit" "%~dp0Builds\WindowsV5\TiqueReturn.exe"

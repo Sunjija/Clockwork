@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "tool": "sky.press_key to returned WindowsV5 window, each action refreshed",
+  "normalPuzzleStart": true,
+  "combatUsesExplicitQaArrivalFixture": true,
+  "puzzleMoveUndoResetHintAndPauseObserved": true,
+  "combatMoveJumpAliasesAttackDashAndInteractionObserved": true,
+  "pauseWorldClockAndIgnoredMovementObserved": true,
+  "physicalDoubleJumpAndCoyoteTimingVerified": false,
+  "humanFullPlaythrough": false,
+  "nativeWindowCapture": "sky WGC timed out; fresh returned accessibility window selected, actual key logs AND Unity renderer captures recorded per physical key",
+  "buildSha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4",
+  "finalInputLogs": [
+    "final-puzzle-input.jsonl",
+    "final-combat-input.jsonl"
+  ],
+  "physicalEarlyOpeningSkipObserved": true,
+  "physicalInputRendererCaptures": 20,
+  "gameAssemblySha256": "dffd03d13ea09ffad6ac6f7d8da2cf690d7666541a171318a2bddf5a7facacd7"
+}

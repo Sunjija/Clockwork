@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace TiqueReturn
 {
-    public sealed class ReworkGame : MonoBehaviour
+    public sealed partial class ReworkGame : MonoBehaviour
     {
         public ReworkModel Model {get;private set;}
         PuzzleBook book;
@@ -15,10 +15,10 @@ namespace TiqueReturn
         readonly Dictionary<string,int[]> durations=new Dictionary<string,int[]>();
         readonly Dictionary<string,SpriteRenderer> pool=new Dictionary<string,SpriteRenderer>();
         readonly Dictionary<string,AudioClip> audio=new Dictionary<string,AudioClip>();
-        Camera cameraWorld;RenderTexture target;Sprite pixel;AudioSource speaker;Font font;
-        GUIStyle normal,small,title,button;float accumulator,keyRepeat;int heldDirection=-1;
+        Camera cameraWorld;RenderTexture target;Sprite pixel;AudioSource speaker;
+        float accumulator,keyRepeat;int heldDirection=-1;
         ReworkCommand pending=ReworkCommand.Empty;
-        bool smoke;float smokeStart;readonly ReworkPilot pilot=new ReworkPilot();
+        bool smoke,releaseGate;int inputEpoch,manualShot;float smokeStart;readonly ReworkPilot pilot=new ReworkPilot();
         readonly HashSet<string> screenshots=new HashSet<string>();
         readonly HashSet<string> seenArtStates=new HashSet<string>();
         readonly Color cyan=new Color(.39f,.89f,.87f),gold=new Color(.95f,.73f,.36f),red=new Color(1,.36f,.28f);
@@ -28,6 +28,10 @@ namespace TiqueReturn
             Application.targetFrameRate=60;QualitySettings.vSyncCount=0;QualitySettings.antiAliasing=0;Application.runInBackground=true;
             smoke=Array.IndexOf(Environment.GetCommandLineArgs(),"--return-v2-smoke")>=0;smokeStart=Time.realtimeSinceStartup+1.2f;
             book=JsonUtility.FromJson<PuzzleBook>(Resources.Load<TextAsset>("ReturnV2/puzzles").text);Restart();
+            // Explicit QA fixture, never used by Play.cmd or the normal title.
+            // Physical key probes can reach the existing safe guide without
+            // confusing them with the input-only full-flow smoke pilot.
+            if(Array.IndexOf(Environment.GetCommandLineArgs(),"--return-input-check")>=0){Model.BeginArena();Model.age=2.4f;}
             var clips=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("Return/clips").text);
             foreach(var c in clips.clips)
             {
@@ -49,6 +53,8 @@ namespace TiqueReturn
                 for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/StateArt/"+clip.name+"/"+i.ToString("00"));
                 animations["state-"+clip.name]=frames;
             }
+            var feedbackClips=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/Feedback/clips").text);
+            foreach(var c in feedbackClips.clips){string key="fx-"+c.name;durations[key]=c.durations;var f=new Sprite[c.durations.Length];for(int i=0;i<f.Length;i++)f[i]=Load("ReturnV2/Feedback/"+c.name+"/"+i.ToString("00"));animations[key]=f;}
             foreach(string name in new[]{"jump","dash","land","hit","hurt","success","switch","warning"})audio[name]=Resources.Load<AudioClip>("Return/Audio/"+name);
             var tex=new Texture2D(1,1);tex.SetPixel(0,0,Color.white);tex.Apply();pixel=Sprite.Create(tex,new Rect(0,0,1,1),Vector2.one*.5f,64);
             var cam=new GameObject("640 x 360 Pixel Camera");cam.transform.SetParent(transform);cameraWorld=cam.AddComponent<Camera>();cam.AddComponent<AudioListener>();
@@ -58,7 +64,7 @@ namespace TiqueReturn
             var presentation=new GameObject("Display");presentation.transform.SetParent(transform);var display=presentation.AddComponent<Camera>();
             display.cullingMask=0;display.depth=1;display.clearFlags=CameraClearFlags.SolidColor;display.backgroundColor=Color.black;
             speaker=gameObject.AddComponent<AudioSource>();speaker.playOnAwake=false;speaker.volume=.3f;
-            font=Font.CreateDynamicFontFromOSFont(new[]{"Malgun Gothic","Noto Sans CJK KR","Arial"},24);
+            LoadPixelUi();
             DrawWorld();if(smoke)StartCoroutine(Smoke());
         }
         Sprite Load(string path)
@@ -66,23 +72,24 @@ namespace TiqueReturn
             var t=Resources.Load<Texture2D>(path);if(t==null)throw new InvalidOperationException("Missing V2 art: "+path);
             t.filterMode=FilterMode.Point;return Sprite.Create(t,new Rect(0,0,t.width,t.height),Vector2.one*.5f,64);
         }
-        void Restart(){Model=new ReworkModel(book);Model.Sound=Sound;pending=ReworkCommand.Empty;accumulator=0;}
+        void Restart(){Model=new ReworkModel(book);Model.Sound=Sound;FlushInput();inputEpoch=Model.inputEpoch;}
         void Sound(string name){if(!Model.muted&&speaker!=null&&audio.TryGetValue(name,out var clip))speaker.PlayOneShot(clip,name=="land"?.2f:.8f);}
         bool Down(KeyCode a,KeyCode b)=>Input.GetKeyDown(a)||Input.GetKeyDown(b);
         void Update()
         {
             if(smoke&&Time.realtimeSinceStartup<smokeStart){DrawWorld();return;}
+            if(Screen.width<640||Screen.height<360)Screen.SetResolution(Math.Max(640,Screen.width),Math.Max(360,Screen.height),false);
             if(Input.GetKeyDown(KeyCode.F11))Screen.fullScreen=!Screen.fullScreen;
             if(Input.GetKeyDown(KeyCode.M))Model.muted=!Model.muted;
-            if(Input.GetKeyDown(KeyCode.Escape)){Model.paused=!Model.paused;pending=ReworkCommand.Empty;accumulator=0;}
+            if(Input.GetKeyDown(KeyCode.Escape)){Model.paused=!Model.paused;FlushInput();inputEpoch=Model.inputEpoch;}
+            if(!smoke&&HandleMenuKeys()){DrawWorld();return;}
             if(Model.paused)return;
             if(!smoke)
             {
-                if(Model.phase==Journey.Ending&&Input.GetKeyDown(KeyCode.Return)){Restart();return;}
-                pending.interact|=Down(KeyCode.E,KeyCode.Return);
+                pending.interact|=Model.phase==Journey.Opening||Model.phase==Journey.Arrival||Model.phase==Journey.RoomClear?Input.GetKeyDown(KeyCode.Return):Input.GetKeyDown(KeyCode.E);
                 pending.undo|=Down(KeyCode.Z,KeyCode.Backspace);pending.restart|=Input.GetKeyDown(KeyCode.R);pending.hint|=Input.GetKeyDown(KeyCode.H);
-                pending.jump|=Down(KeyCode.Space,KeyCode.UpArrow);pending.dash|=Down(KeyCode.LeftShift,KeyCode.RightShift);pending.attack|=Input.GetKeyDown(KeyCode.J);
-                pending.axis=(Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.D)?1:0)-(Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.A)?1:0);
+                pending.jump|=Down(KeyCode.Space,KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.Z);pending.dash|=Input.GetKeyDown(KeyCode.C);pending.attack|=Input.GetKeyDown(KeyCode.X);
+                pending.axis=(Input.GetKey(KeyCode.RightArrow)?1:0)-(Input.GetKey(KeyCode.LeftArrow)?1:0);
                 int dir=-1;
                 if(Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.A))dir=0;
                 if(Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.D))dir=1;
@@ -92,15 +99,21 @@ namespace TiqueReturn
                 if(dir>=0&&(dir!=heldDirection||keyRepeat<=0)){pending.grid=dir;keyRepeat=dir!=heldDirection?.23f:.16f;}
                 heldDirection=dir;
             }
+            if(!smoke&&releaseGate)
+            {
+                bool held=Input.GetKey(KeyCode.Return)||Input.GetKey(KeyCode.E)||Input.GetKey(KeyCode.X)||Input.GetKey(KeyCode.C)||Input.GetKey(KeyCode.Z)||Input.GetKey(KeyCode.Space)||Input.GetKey(KeyCode.LeftArrow)||Input.GetKey(KeyCode.RightArrow)||Input.GetKey(KeyCode.UpArrow)||Input.GetKey(KeyCode.DownArrow);
+                pending=ReworkCommand.Empty;heldDirection=-1;if(!held)releaseGate=false;
+            }
             accumulator+=Mathf.Min(.1f,Time.unscaledDeltaTime);
             while(accumulator>=1f/120)
             {
                 int axis=pending.axis;Model.Tick(1f/120,smoke?pilot.Next(Model):pending);
                 pending=ReworkCommand.Empty;pending.axis=axis;accumulator-=1f/120;
+                if(inputEpoch!=Model.inputEpoch){inputEpoch=Model.inputEpoch;FlushInput();break;}
             }
             DrawWorld();
         }
-        void OnApplicationFocus(bool focus){if(!focus&&!smoke&&Model!=null&&Model.phase!=Journey.Title){Model.paused=true;pending=ReworkCommand.Empty;accumulator=0;}}
+        void OnApplicationFocus(bool focus){if(!focus&&!smoke&&Model!=null&&Model.phase!=Journey.Title){Model.paused=true;FlushInput();inputEpoch=Model.inputEpoch;}}
         void Draw(string id,Sprite sprite,float x,float y,int layer,Color? tint=null,bool flip=false,float width=0,float height=0)
         {
             if(!pool.TryGetValue(id,out var r)){var go=new GameObject(id);go.transform.SetParent(transform);r=go.AddComponent<SpriteRenderer>();pool[id]=r;}
@@ -119,7 +132,8 @@ namespace TiqueReturn
         void Bar(string id,float x,float y,float w,float h,Color color,int layer=3){Draw(id,pixel,x,y,layer,color,false,Mathf.Max(1,w),Mathf.Max(1,h));}
         void Tique(float x,float y,string clip,int frame,int layer=1000,bool flip=false)
         {
-            Color color=Model.InArena&&Model.hero.invincible>0&&Model.phase==Journey.Combat&&Mathf.Sin(Model.clock*22)>0?new Color(1,1,1,.45f):Color.white;
+            if(Model.phase==Journey.Combat&&Model.hero.invincible>0&&!Model.reducedEffects&&(int)(Model.clock*14)%2==1)return;
+            Color color=Color.white;
             Draw("tique",animations[clip][frame],x-32,y-56,layer,color,flip);
         }
         void DrawWorld()
@@ -127,7 +141,7 @@ namespace TiqueReturn
             foreach(var r in pool.Values)r.enabled=false;var m=Model;
             StateProp("bg",m.InArena?(m.phase==Journey.Restored||m.phase==Journey.Ending?"arena-restored":"arena-dark"):
                 "workshop-power-"+WorldArtState.WorkshopPower(m),0,0,0,0);
-            cameraWorld.transform.position=new Vector3((320+(m.shake>0?Mathf.Round(Mathf.Sin(m.clock*90)*2):0))/64,180f/64,-10);
+            cameraWorld.transform.position=new Vector3((320+(m.shake>0&&!m.reducedEffects?Mathf.Round(Mathf.Sin(m.clock*90)*2):0))/64,180f/64,-10);
             if(!m.InArena)
             {
                 const float bx=194,by=64,cell=36;
@@ -147,11 +161,24 @@ namespace TiqueReturn
                 {
                     float x=Mathf.Lerp(p.previousBoxes[i]%7,p.boxes[i]%7,t),y=Mathf.Lerp(p.previousBoxes[i]/7,p.boxes[i]/7,t);
                     bool orb=p.room.types[i]==1;string box=WorldArtState.Box(p,i,out float boxAge);
-                    StateProp("box"+i,box,boxAge,bx+x*cell+(orb?5:3),by+y*cell+(orb?6:2),15+Mathf.RoundToInt(y*20),true);
+                    StateProp("box"+i,box,boxAge,bx+x*cell+(orb?5:3),by+y*cell+(orb?6:0),15+Mathf.RoundToInt(y*20),true);
                 }
-                float px=Mathf.Lerp(p.previousPlayer%7,p.player%7,t),py=Mathf.Lerp(p.previousPlayer/7,p.player/7,t);
-                string clip=p.motion>0?"Walk":"Idle";int frame=p.motion>0?(int)(m.clock*14)%animations["Walk"].Length:0;
-                Tique(bx+px*cell+18,by+py*cell+32,clip,frame,18+Mathf.RoundToInt(py*20),p.lastDirection==0);
+                float ht=Mathf.Clamp01(p.visualAge/.15f);ht=ht*ht*(3-2*ht);
+                float px=Mathf.Lerp(p.previousPlayer%7,p.player%7,ht),py=Mathf.Lerp(p.previousPlayer/7,p.player/7,ht);
+                float footX=OpeningSequence.FootX(px),footY=OpeningSequence.FootY(py);
+                string clip="Idle";int frame=0;
+                if(p.visualAge<.15f){clip="Walk";frame=WardenAnimation.FrameAt(durations[clip],p.walkAge,loop:true);}
+                if(p.lastPushedBox>=0&&p.visualAge<.15f){clip="fx-push-"+(p.lastDirection==2?"up":p.lastDirection==3?"down":"side");frame=WardenAnimation.FrameAt(durations[clip],p.walkAge,loop:true);}
+                if(p.blockedAge<.12f){clip="fx-push-brace-"+(p.lastDirection==2?"up":p.lastDirection==3?"down":"side");frame=0;}
+                if(m.phase==Journey.Opening)
+                {
+                    StateFeedback("chute",0,footX-24,0,3);
+                    Bar("opening-shadow",footX-9,footY,18,2,new Color(.06f,.1f,.12f),2);
+                    footY+=OpeningSequence.DropOffset(m.age,footY);int jump=OpeningSequence.LandingFrame(m.age);
+                    if(jump>=0){clip="Jump";frame=jump;}else if(m.age>=3.4f&&m.age<3.66f){clip=m.age<3.48f||m.age>=3.58f?"fx-blink-half":"fx-blink-closed";frame=0;}
+                }
+                else if(p.motion<=0&&p.blockedAge>.12f&&(m.clock%5.5f)<.26f&&p.moves>0){clip=m.clock%5.5f<.08f||m.clock%5.5f>=.18f?"fx-blink-half":"fx-blink-closed";frame=0;}
+                if(m.phase!=Journey.Title)Tique(footX,footY,clip,frame,18+Mathf.RoundToInt(py*20),p.lastDirection==0);
             }
             else
             {
@@ -165,12 +192,14 @@ namespace TiqueReturn
                     if(m.charged==i)Bar("power"+i,m.pylons[i]-19,285,38*m.chargeLife/16,2,cyan,6);
                 }
                 int bossFrame=WardenAnimation.Select(m,durations,out string bossClip);
-                if(m.bossMove==IronMove.Down)StateProp("iron-maw","warden-powered-down",0,m.bossX-96,m.bossY-132,10,false,m.bossFacing>0);
+                if(m.phase==Journey.Arrival)StateFeedback("warden-boot",Mathf.Min(2.399f,m.age),m.bossX-96,m.bossY-132,10,m.bossFacing>0);
+                else if(m.bossMove==IronMove.Down&&m.age<.24f)StateFeedback("warden-shutdown",m.age,m.bossX-96,m.bossY-132,10,m.bossFacing>0);
+                else if(m.bossMove==IronMove.Down)StateProp("iron-maw","warden-powered-down",0,m.bossX-96,m.bossY-132,10,false,m.bossFacing>0);
                 else Draw("iron-maw",animations[bossClip][bossFrame],m.bossX-96,m.bossY-132,10,Color.white,m.bossFacing>0);
                 if(m.Vulnerable||m.bossMove==IronMove.Down)
                 {
                     string core=WorldArtState.Core(m,out float coreAge);
-                    StateProp("exposed-core",core,coreAge,m.WeakX-16,246,11);
+                    StateProp("exposed-core",core,coreAge,m.WeakX-16,m.WeakY-18,11);
                     if(m.Vulnerable)Bar("open-time",m.bossX-42,m.bossY-112,84*(1-Mathf.Clamp01(m.bossAge/(m.assisted?7:5.2f))),2,gold,12);
                 }
                 if(m.bossMove==IronMove.ChargeAim)
@@ -182,104 +211,47 @@ namespace TiqueReturn
                 {
                     StateProp("slam-area","warning-slam",m.bossAge,m.aimX-68,266,12,true);
                 }
-                if(m.bossMove==IronMove.WaveAim)for(int i=0;i<15;i++)StateProp("wave-warn"+i,"warning-wave",m.bossAge,20+i*41,274,12,true);
+                if(m.bossMove==IronMove.WaveAim||(m.bossMove==IronMove.Wave&&m.Rage>=2&&m.bossAge>=.92f&&m.bossAge<1.1f)||(m.bossMove==IronMove.Slam&&m.Rage>=2))for(int i=0;i<15;i++)StateProp("wave-warn"+i,"warning-wave",m.bossAge,20+i*41,274,12,true);
                 for(int i=0;i<m.waves.Count;i++)StateProp("wave"+i,"wave-spin",m.clock,m.waves[i].x-12,260,12,true,m.waves[i].direction<0);
-                string pose=m.hero.Pose(durations,out int f);Tique(m.hero.x,m.hero.y,pose,f,20,m.hero.facing<0);
+                string pose=m.hero.Pose(durations,out int f);
+                if(!m.hero.Dashing&&!m.hero.Attacking&&m.hero.grounded&&m.hero.dashAge<.34f){pose="Dash";f=WardenAnimation.FrameAt(durations[pose],m.hero.dashAge-.16f,7,11);}
+                if(m.phase==Journey.Restored&&m.hero.axis==0){pose="Idle";f=0;}
+                if(m.phase==Journey.Dead){pose="fx-power-down";f=WardenAnimation.FrameAt(durations[pose],m.age);}
+                else if(m.clock-m.hurtAt<.15f&&!m.hero.Dashing&&!m.hero.Attacking&&m.hero.grounded){pose="fx-hurt-pose";f=WardenAnimation.FrameAt(durations[pose],m.clock-m.hurtAt);}
+                else if(m.idleAge>2.5f&&(m.idleAge-2.5f)%5.5f<.26f&&m.bossMove==IronMove.Rest&&!m.reducedEffects){float blink=(m.idleAge-2.5f)%5.5f;pose=blink<.08f||blink>=.18f?"fx-blink-half":"fx-blink-closed";f=0;}
+                if(m.hero.Dashing&&!m.reducedEffects)for(int i=1;i<=2;i++)Draw("ghost"+i,animations["fx-dash-ghost"][f],m.hero.x-32-m.hero.facing*i*9,m.hero.y-56,19,Color.white,m.hero.facing<0);
+                Tique(m.hero.x,m.hero.y,pose,f,20,m.hero.facing<0);
+                if(m.hero.invincible>0&&m.phase==Journey.Combat)StateFeedback("protect",0,m.hero.x-12,m.hero.y-38,21);
+                bool chargeLock=m.bossMove==IronMove.ChargeAim&&m.bossAge>=.35f;
+                bool slamLock=(m.bossMove==IronMove.SlamAim&&m.bossAge>=.45f)||m.bossMove==IronMove.Slam;
+                if(chargeLock||slamLock){float left=slamLock?m.aimX-68:m.bossFacing<0?24:m.bossX;float right=slamLock?m.aimX+68:m.bossFacing<0?m.bossX:616;
+                    Bar("lock-left",left,265,2,10,gold,13);Bar("lock-left-cap",left,265,8,2,gold,13);Bar("lock-right",right-2,265,2,10,gold,13);Bar("lock-right-cap",right-8,265,8,2,gold,13);}
             }
+            if(!m.InArena&&m.hintLevel>0)foreach(int goal in m.puzzle.room.goals){float x=194+goal%7*36,y=64+goal/7*36;Bar("hint-l"+goal,x,y,2,36,gold,200);Bar("hint-r"+goal,x+34,y,2,36,gold,200);}
+            if(m.InArena&&m.hero.Attacking&&m.hero.attackAge>=.08f&&m.hero.attackAge<=.18f)StateFeedback("air",m.hero.attackAge-.08f,m.hero.x+m.hero.facing*14-10,m.hero.y-28,21,m.hero.facing<0);
+            foreach(var cue in m.feedback.cues)
+            {
+                if(cue.kind=="bridge")
+                {
+                    // Captured endpoints, native 1px stepped wire; never follows a moving hand.
+                    Color electric=cue.age<.03f?ink:cyan;float mid=(cue.x+cue.endX)/2;
+                    Bar("bridge-a"+cue.serial,Mathf.Min(cue.x,mid),cue.y,Mathf.Abs(mid-cue.x)+1,1,electric,202);
+                    Bar("bridge-b"+cue.serial,mid,Mathf.Min(cue.y,cue.endY),1,Mathf.Abs(cue.y-cue.endY)+1,electric,202);
+                    Bar("bridge-c"+cue.serial,Mathf.Min(mid,cue.endX),cue.endY,Mathf.Abs(cue.endX-mid)+1,1,electric,202);
+                    StateFeedback("bridge",cue.age,cue.endX-16,cue.endY-16,202);continue;
+                }
+                if(cue.kind=="blocked"||cue.kind=="undo"||cue.kind=="reset")
+                {string icon=cue.kind=="blocked"?"icon-locked":"icon-"+cue.kind;Draw("cue"+cue.serial,animations["fx-"+icon][0],cue.x-6,cue.y-6,202);continue;}
+                if(cue.kind=="shutdown")continue;
+                string key="fx-"+cue.kind;if(!animations.ContainsKey(key))continue;int index=WardenAnimation.FrameAt(durations[key],cue.age);var sprite=animations[key][index];
+                bool ground=cue.kind.Contains("dust")||cue.kind=="friction"||cue.kind=="wall-brake"||cue.kind=="weight-settle";
+                Draw("cue"+cue.serial,sprite,cue.x-sprite.rect.width/2,cue.y-(ground?sprite.rect.height-2:sprite.rect.height/2),ground?4:202,Color.white,cue.direction<0);
+            }
+            RecordInput();
         }
-        void Styles()
+        void StateFeedback(string clip,float age,float x,float y,int layer,bool flip=false)
         {
-            if(normal!=null)return;
-            normal=new GUIStyle(GUI.skin.label){font=font,fontSize=22,wordWrap=true};normal.normal.textColor=ink;
-            small=new GUIStyle(normal){fontSize=19};small.normal.textColor=dim;
-            title=new GUIStyle(normal){fontSize=46,fontStyle=FontStyle.Bold};
-            button=new GUIStyle(GUI.skin.button){font=font,fontSize=21,padding=new RectOffset(12,12,8,8)};button.normal.textColor=ink;button.hover.textColor=cyan;
-        }
-        void Panel(float x,float y,float w,float h,Color? color=null){GUI.color=color??panel;GUI.DrawTexture(new Rect(x,y,w,h),Texture2D.whiteTexture);GUI.color=Color.white;}
-        void Text(float x,float y,float w,float h,string text,GUIStyle style=null,Color? color=null){GUI.color=color??Color.white;GUI.Label(new Rect(x,y,w,h),text,style??normal);GUI.color=Color.white;}
-        bool Button(float x,float y,float w,float h,string text)=>GUI.Button(new Rect(x,y,w,h),text,button);
-        void Overlay(){Panel(0,0,1280,720,new Color(.02f,.035f,.06f,.87f));}
-        void OnGUI()
-        {
-            if(Model==null||target==null)return;Styles();float s=Mathf.Min(Screen.width/1280f,Screen.height/720f);
-            GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1280*s)/2,(Screen.height-720*s)/2,0),Quaternion.identity,new Vector3(s,s,1));
-            GUI.DrawTexture(new Rect(0,0,1280,720),target,ScaleMode.StretchToFill,false);var m=Model;
-            if(m.phase==Journey.Title)
-            {
-                Overlay();Text(100,93,1000,40,"CLOCKWORK   /   RETURN PROTOCOL",small,cyan);
-                Text(96,157,1000,80,"티크 : 귀환 회로",title);
-                Text(100,267,920,94,"모두가 멈춘 공장. 아직 뛰는 작은 하트 하나.\n세 개의 회로를 잇고, 폐기 명령을 끝내세요.");
-                Text(100,376,960,50,"공간 퍼즐 3개  →  철갑 문지기  →  귀환 기록",small);
-                if(Button(100,460,338,62,"회로에 접속  ·  Enter"))m.Start();
-                Text(100,558,1030,72,"퍼즐  방향키 / WASD · Z 되돌리기 · R 방 초기화 · H 힌트\n전투  ← → 이동 · Space 점프 · Shift 대시 · J 공격 · E 충전",small);
-                Text(100,662,1000,34,"F11 전체화면   ·   M 소리   ·   Esc 일시정지",small);return;
-            }
-            Panel(20,16,1240,78);
-            Text(40,25,760,36,m.InArena?"02  /  폐기 집행실":"01  /  귀환 동력실",normal,cyan);
-            Text(40,60,1170,32,m.InArena?"충전 기둥으로 돌진을 유도하고, 열린 노심을 공격하세요.":"같은 색·모양의 소켓에 모든 전원을 놓으세요. 당길 수는 없어요.",small);
-            if(!m.InArena)
-            {
-                string[] names={"무게의 자리","멈추는 곳","서로의 벽"};
-                Panel(24,128,326,382);Text(44,148,282,35,"회로 "+(m.roomIndex+1)+" / 3",small,cyan);
-                Text(42,195,294,62,names[m.roomIndex],new GUIStyle(title){fontSize=32});
-                Text(44,280,282,82,"노란 추  ◆\n한 칸씩 밀립니다.",normal,gold);
-                if(m.roomIndex>0)Text(44,377,282,102,"시안 구슬  ●\n막힐 때까지\n미끄러집니다.",normal,cyan);
-                else Text(44,387,282,88,"소켓에 넣는 순서와\n뒤로 돌아갈 길을 생각해 보세요.",small);
-                Panel(928,128,328,382);Text(950,148,284,38,"움직임  "+m.puzzle.moves+"  /  밀기  "+m.puzzle.pushes,small);
-                if(Button(948,205,286,50,"한 수 되돌리기  ·  Z"))pending.undo=true;
-                if(Button(948,267,286,50,"이 방 다시 시작  ·  R"))pending.restart=true;
-                if(Button(948,329,286,50,"힌트 보기  ·  H"))pending.hint=true;
-                Text(950,401,282,101,m.Hint(),small,m.hintLevel>0?gold:dim);
-                Panel(24,532,326,99);Text(43,548,290,80,m.roomIndex==0?"“내가 돌아갈 곳은…\n엘리아스 공방.”":m.roomIndex==1?"기록 조각 02\n“기다릴게. 서두르지 마.”":"기록 조각 03\n“네 하트는 고장이 아니야.”",small);
-                Text(934,539,310,89,m.puzzle.feedback,small,cyan);
-            }
-            else
-            {
-                Text(843,26,220,31,"티크",small);for(int i=0;i<5;i++)Panel(911+i*26,35,18,14,i<m.health?cyan:new Color(.16f,.23f,.29f));
-                Panel(398,114,484,52);Text(415,119,216,35,"철갑 문지기",small);
-                for(int i=0;i<9;i++)Panel(624+i*26,131,20,10,i<m.bossHealth?red:new Color(.18f,.23f,.28f));
-                string state=m.phase==Journey.Restored||m.phase==Journey.Ending?"폐기 명령 해제  ·  귀환문으로 이동":m.Vulnerable?"노심 노출  ·  J 공격":m.bossMove==IronMove.ChargeAim?"돌진 준비  ·  기둥 뒤로 유도":m.bossMove==IronMove.WaveAim?"충격파 준비  ·  점프":m.bossMove==IronMove.SlamAim?"낙하 조준  ·  붉은 구역에서 대시":"충전  →  유도  →  반격";
-                Text(400,177,600,44,state,normal,m.Vulnerable?cyan:gold);
-                for(int i=0;i<2;i++)Text(m.pylons[i]*2-64,583,170,33,m.phase==Journey.Restored||m.phase==Journey.Ending?"전원 복구":m.charged==i?"충전  "+Mathf.CeilToInt(m.chargeLife)+"초":m.chargeCooldown>.25f?"냉각 중":"E  충전",small,m.charged==i?cyan:dim);
-                if(m.noticeLeft>0){Panel(98,606,1084,48);Text(116,614,1050,38,m.notice,small);}
-            }
-            Panel(0,660,1280,60);Text(25,676,1078,34,m.InArena?"← → 이동    Space / ↑ 점프·더블점프    Shift 대시    J 공격    E 충전":"방향키 / WASD 이동    Z 되돌리기    R 방 초기화    H 단계별 힌트",small);
-            if(Button(1137,669,120,42,"Esc  정지"))m.paused=true;
-            if(m.phase==Journey.RoomClear&&m.age>.8f)
-            {
-                Overlay();Text(210,170,1000,80,"회로 "+(m.roomIndex+1)+" 연결 완료",title);
-                Text(215,287,860,94,m.roomIndex==2?"귀환 전력을 복구했어요.\n출구를 막은 폐기 집행 장치가 깨어납니다.":"멈췄던 공장에 작은 불빛이 돌아옵니다.\n다음 방에서는 움직임의 규칙이 달라져요.");
-                if(Button(215,433,540,63,m.roomIndex==2?"문지기에게  ·  Enter":"다음 회로로  ·  Enter"))pending.interact=true;
-            }
-            if(m.phase==Journey.Arrival)
-            {
-                Panel(135,207,1010,240);Text(168,226,930,60,"폐기 집행 장치 : IRON MAW",new GUIStyle(title){fontSize=34});
-                Text(170,299,928,96,"기둥 옆 E로 충전한 뒤, 기둥 뒤에서 돌진을 유도하세요.\n장갑이 열리면 붉은 노심을 J로 공격할 수 있어요.\n충격파는 점프, 낙하는 대시로 피하세요.");
-                Text(170,410,850,36,"Enter로 시작  ·  잠시 후 자동 시작",small,cyan);
-            }
-            if(m.phase==Journey.Dead)
-            {
-                Overlay();Text(230,160,900,90,"다시, 하트를 켜고.",title);
-                Text(236,281,900,70,"회로는 복구되어 있어요. 문지기 앞에서 다시 시작합니다.");
-                if(Button(236,388,515,60,"다시 도전  ·  Enter"))pending.interact=true;
-                if(Button(236,470,515,55,m.assisted?"도움 켜짐 · 예고와 반격 시간 확대":"도움 모드 켜기"))m.assisted=!m.assisted;
-            }
-            if(m.phase==Journey.Restored)Text(986,375,260,73,m.clock-m.restoredAt<.8f?"귀환문 개방 중":"귀환 기록\n오른쪽 문에서 E",normal,cyan);
-            if(m.phase==Journey.Ending)
-            {
-                Overlay();Text(180,135,1000,86,"돌아갈 곳이 있어.",title);
-                Text(184,257,1000,70,"식별명: 티크.   귀환처: 엘리아스 공방.",normal,cyan);
-                Text(184,332,970,100,"“고장이 아니야. 네가 살아 있다는 뜻이지.”\n작은 하트가 한 번 더 뛰었습니다.\n폐기 판정 취소. 귀환을 허가합니다.");
-                Text(184,463,900,42,"플레이  "+TimeSpan.FromSeconds(m.playTime).ToString(@"mm\:ss")+"   ·   회로 밀기 "+m.totalPushes+"회   ·   장갑 파괴 "+m.breaks+"회",small);
-                if(Button(184,536,340,61,"처음부터  ·  Enter"))Restart();if(Button(546,536,220,61,"종료"))Application.Quit();
-            }
-            if(m.paused)
-            {
-                Overlay();Text(365,161,750,80,"잠시 멈췄어요.",title);
-                if(Button(365,285,550,60,"계속하기  ·  Esc")){m.paused=false;pending=ReworkCommand.Empty;}
-                if(Button(365,365,550,54,m.muted?"소리 켜기":"소리 끄기"))m.muted=!m.muted;
-                if(Button(365,438,550,54,"처음부터 다시"))Restart();if(Button(365,511,550,54,"종료"))Application.Quit();
-            }
+            string key="fx-"+clip;int f=WardenAnimation.FrameAt(durations[key],age);Draw("feedback-"+clip,animations[key][f],x,y,layer,Color.white,flip);
         }
         IEnumerator Capture(string folder,string name)
         {
@@ -293,7 +265,19 @@ namespace TiqueReturn
             yield return Capture(folder,"01-title");float deadline=Time.realtimeSinceStartup+210;
             while(Model.phase!=Journey.Ending&&Model.phase!=Journey.Dead&&Time.realtimeSinceStartup<deadline)
             {
+                if(Model.phase==Journey.Opening)
+                {
+                    if(Model.age>.1f)yield return Capture(folder,"opening-01-mask");
+                    if(Model.age>1.82f&&Model.age<2)yield return Capture(folder,"opening-02-fall");
+                    if(Model.age>2.01f&&Model.age<2.16f)yield return Capture(folder,"opening-03-land");
+                    if(Model.age>3.5f&&Model.age<3.58f)yield return Capture(folder,"opening-04-eyes");
+                    if(Model.age>6.1f&&Model.age<9)yield return Capture(folder,"opening-05-record");
+                    if(Model.age>11.1f)yield return Capture(folder,"opening-06-tutorial");
+                }
+                foreach(var cue in new List<FeedbackCue>(Model.feedback.cues))if(cue.age<.05f)yield return Capture(folder,"fx-"+cue.kind);
                 if(Model.phase==Journey.Puzzle)yield return Capture(folder,"02-puzzle-"+(Model.roomIndex+1));
+                if((Model.phase==Journey.Puzzle||Model.phase==Journey.RoomClear)&&Model.puzzle.lastPushedBox>=0&&Model.puzzle.visualAge>.025f&&Model.puzzle.visualAge<.12f)
+                    yield return Capture(folder,"push-"+(Model.puzzle.lastDirection==2?"up":Model.puzzle.lastDirection==3?"down":"side"));
                 if(Model.phase==Journey.Arrival)yield return Capture(folder,"03-guardian");
                 if(Model.bossMove==IronMove.ChargeAim)yield return Capture(folder,"04-charge-warning");
                 if(Model.bossMove==IronMove.Open)yield return Capture(folder,"05-armor-open");
@@ -331,6 +315,13 @@ namespace TiqueReturn
             var observed=new List<string>(seenArtStates);observed.Sort();File.WriteAllLines(Path.Combine(folder,"observed-art-states.txt"),observed);
             File.WriteAllLines(Path.Combine(folder,"events.txt"),Model.events);Debug.Log("RETURN_V2_SMOKE "+(pass?"PASS":"FAIL"));Application.Quit(pass?0:2);
         }
+        void RecordInput()
+        {
+            if(smoke)return;string[] args=Environment.GetCommandLineArgs();int k=Array.IndexOf(args,"--return-input-log");if(k<0)return;
+            foreach(KeyCode key in new[]{KeyCode.Return,KeyCode.Escape,KeyCode.LeftArrow,KeyCode.RightArrow,KeyCode.UpArrow,KeyCode.DownArrow,KeyCode.Z,KeyCode.Space,KeyCode.X,KeyCode.C,KeyCode.E,KeyCode.R,KeyCode.H})if(Input.GetKeyDown(key))
+            {string file=args[k+1];Directory.CreateDirectory(Path.GetDirectoryName(file));File.AppendAllText(file,JsonUtility.ToJson(new InputObservation{key=key.ToString(),phase=Model.phase.ToString(),clock=Model.clock,x=Model.hero.x,y=Model.hero.y,moves=Model.puzzle.moves,paused=Model.paused,attack=Model.hero.Attacking,dash=Model.hero.Dashing,jumps=Model.hero.jumps,charged=Model.charged})+"\n");StartCoroutine(Capture(Path.GetDirectoryName(file),"key-"+Path.GetFileNameWithoutExtension(file)+"-"+(manualShot++).ToString("00")+"-"+key));}
+        }
+        [Serializable] sealed class InputObservation{public string key,phase;public float clock,x,y;public int moves,jumps,charged;public bool paused,attack,dash;}
         void OnDestroy(){if(target!=null){target.Release();Destroy(target);}}
     }
 }

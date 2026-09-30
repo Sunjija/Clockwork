@@ -3,8 +3,8 @@ $ErrorActionPreference = 'Stop'
 $project = Split-Path $PSScriptRoot -Parent
 if (!(Test-Path -LiteralPath $Editor)) { throw 'Unity 6000.5.3f1 not found. Pass -Editor with your Unity.exe path.' }
 New-Item -ItemType Directory -Path (Join-Path $project 'QA') -Force | Out-Null
-$log = Join-Path $project $(if ($Legacy) {'QA/build.log'} else {'QA/build-v4.log'})
-$destination = Join-Path $project $(if ($Legacy) {'Builds/Windows/TiqueReturn.exe'} else {'Builds/WindowsV4/TiqueReturn.exe'})
+$log = Join-Path $project $(if ($Legacy) {'QA/build.log'} else {'QA/build-v5.log'})
+$destination = Join-Path $project $(if ($Legacy) {'Builds/Windows/TiqueReturn.exe'} else {'Builds/WindowsV5/TiqueReturn.exe'})
 $method = if ($Legacy) {'ReturnBuild.Build'} else {'ReworkBuild.Build'}
 $arguments = @('-batchmode','-quit','-projectPath',('"'+$project+'"'),'-executeMethod',$method,'-logFile',('"'+$log+'"'),'--return-output',('"'+$destination+'"'))
 $build = Start-Process -FilePath $Editor -ArgumentList $arguments -WindowStyle Hidden -Wait -PassThru

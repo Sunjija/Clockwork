@@ -1,0 +1,2072 @@
+{
+  "TC01": {
+    "name": "기본 대기",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TC02": {
+    "name": "눈 감기",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TC03": {
+    "name": "눈 감김 유지",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TC04": {
+    "name": "눈 뜨기",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TC05": {
+    "name": "방향 전환",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TC06": {
+    "name": "이동 접지 A",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TC07": {
+    "name": "이동 통과·접지 B",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TC08": {
+    "name": "이동 정지",
+    "status": "원본+눈 ROI 보정",
+    "assets": "Idle/Walk, blink-half/closed",
+    "code": "ReworkGame.DrawWorld / CorePuzzle.walkAge",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP01": {
+    "name": "빈 칸 확인",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP02": {
+    "name": "한 칸 디디기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP03": {
+    "name": "벽 앞 멈춤",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP04": {
+    "name": "추 접근·손 닿기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP05": {
+    "name": "추 밀기 지지",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP06": {
+    "name": "추 한 칸 밀기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP07": {
+    "name": "추 멈춤·힘 풀기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP08": {
+    "name": "추 밀기 실패",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP09": {
+    "name": "구슬 접촉",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP10": {
+    "name": "구슬 밀어 내기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP11": {
+    "name": "손 놓기·한 칸 전진",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP12": {
+    "name": "구슬 이동 관찰",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP13": {
+    "name": "구슬 밀기 실패",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP14": {
+    "name": "소켓 접촉 확인",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP15": {
+    "name": "잘못된 소켓 확인",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP16": {
+    "name": "완성 물체 다시 밀기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP17": {
+    "name": "한 수 되돌리기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP18": {
+    "name": "현재 방 초기화",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP19": {
+    "name": "힌트 확인",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP20": {
+    "name": "마지막 연결 대기",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP21": {
+    "name": "회로 복구 반응",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TP22": {
+    "name": "다음 공간 진입",
+    "status": "원본+양손 키 이미지 변환",
+    "assets": "push-side/up/down 14노출, push-brace 3종, StateArt",
+    "code": "CorePuzzle / ReworkModel.AdvancePuzzleVisual / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB01": {
+    "name": "전투 준비",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB02": {
+    "name": "이동 시작",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB03": {
+    "name": "지속 이동",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB04": {
+    "name": "정지·반대 방향",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB05": {
+    "name": "첫 점프 발 밀기",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB06": {
+    "name": "첫 점프 상승",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB07": {
+    "name": "첫 점프 정점",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB08": {
+    "name": "첫 점프 하강",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB09": {
+    "name": "두 번째 점프 재발동",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB10": {
+    "name": "두 번째 상승·정점",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB11": {
+    "name": "두 번째 하강",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB12": {
+    "name": "발판에서 떨어짐",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB13": {
+    "name": "최초 접지",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB14": {
+    "name": "착지 압축·복귀",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB15": {
+    "name": "지상 대시 출발",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB16": {
+    "name": "대시 진행",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB17": {
+    "name": "공중 대시",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB18": {
+    "name": "대시 종료·복귀",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB19": {
+    "name": "대시 재사용 준비",
+    "status": "준비 표시 생략",
+    "assets": "기존 대시 복귀 / dashReady 규칙 유지",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "문서 허용 선택 사항. 작은 캐릭터 주변 추가 표식 혼잡을 피함. 대시의 재사용 규칙은 유지.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB20": {
+    "name": "공격 반응·팔 회수",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB21": {
+    "name": "몸통 준비·힘 전달",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB22": {
+    "name": "주먹 유효 타격",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB23": {
+    "name": "명중 반응",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB24": {
+    "name": "빗나감·장갑 접촉",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB25": {
+    "name": "팔·몸통 회복",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB26": {
+    "name": "공격 회피 취소",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB27": {
+    "name": "기둥 접촉·충전 입력",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB28": {
+    "name": "충전 손 회수·유도 이동",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB29": {
+    "name": "피격 접촉·움찔",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB30": {
+    "name": "피격 보호·복귀",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB31": {
+    "name": "전원 저하·실패",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB32": {
+    "name": "재도전 복귀",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB33": {
+    "name": "전투 종료 확인",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "TB34": {
+    "name": "귀환문 조작·신원 확인",
+    "status": "원본+공용 새 픽셀 보완",
+    "assets": "Attack/Jump/DoubleJump/Dash, hurt-pose, power-down, bridge",
+    "code": "ReworkModel.MoveHero / DrawWorld / ReturnFeedback",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB01": {
+    "name": "전원 없는 정지",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB02": {
+    "name": "전력 수신",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB03": {
+    "name": "지지 다리 잠금",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB04": {
+    "name": "전투 대기",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB05": {
+    "name": "목표 방향 탐색",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB06": {
+    "name": "돌진 지지·몸 낮추기",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB07": {
+    "name": "돌진 방향 확정",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB08": {
+    "name": "돌진 준비 유지",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB09": {
+    "name": "지지 발 추진",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB10": {
+    "name": "돌진 진행",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB11": {
+    "name": "티크 접촉",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB12": {
+    "name": "일반 벽 충돌·제동",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB13": {
+    "name": "충전 기둥 접촉",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB14": {
+    "name": "충격 흡수",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB15": {
+    "name": "장갑 잠금 해제·열림",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB16": {
+    "name": "노심 노출 유지",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB17": {
+    "name": "노심 첫 접촉·피격",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB18": {
+    "name": "피격 후 열린 자세 회복",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB19": {
+    "name": "장갑 닫기",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB20": {
+    "name": "다리 재지지·잠금 복구",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB21": {
+    "name": "충격파 힘 모으기",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB22": {
+    "name": "마지막 발동 자세",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB23": {
+    "name": "첫 충격파 방출",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB24": {
+    "name": "방출 후 압축 회수",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB25": {
+    "name": "두 번째 방출 재준비",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB26": {
+    "name": "두 번째 방출",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB27": {
+    "name": "충격파 복귀·대기",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB28": {
+    "name": "이륙 접지·압축",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB29": {
+    "name": "상승·다리 모음",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB30": {
+    "name": "낙하 지점 추적",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB31": {
+    "name": "낙하 지점 확정·공중 유지",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB32": {
+    "name": "하강 발동",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB33": {
+    "name": "하강·접지 준비",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB34": {
+    "name": "바닥 접촉·낙하 타격",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB35": {
+    "name": "강화 착지 파형 방출",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB36": {
+    "name": "착지 압축·무게 회수",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB37": {
+    "name": "마지막 노심 타격",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB38": {
+    "name": "전원 차단·지지 정착",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "GB39": {
+    "name": "정지 유지",
+    "status": "원본+상태 재생 보완",
+    "assets": "WardenAuthored 52, StateArt core 12, boot/shutdown",
+    "code": "WardenAnimation.Select / BossTick / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H01": {
+    "name": "티크 동력계 외곽",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H02": {
+    "name": "티크 빈 칸 바탕",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H03": {
+    "name": "티크 정상 칸",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H04": {
+    "name": "티크 피해 접수",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H05": {
+    "name": "티크 소실 잔상",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H06": {
+    "name": "티크 저체력",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H07": {
+    "name": "티크 보호 중 표시",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H08": {
+    "name": "티크 마지막 소실",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H09": {
+    "name": "티크 재도전 채움",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H10": {
+    "name": "보스 계기 외곽",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H11": {
+    "name": "보스 정상·빈 칸",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H12": {
+    "name": "보스 3칸 구획 홈",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H13": {
+    "name": "보스 유효 피해 접수",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H14": {
+    "name": "보스 소실 잔상",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H15": {
+    "name": "보스 강화 경계",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H16": {
+    "name": "보스 최종 소실",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H17": {
+    "name": "장면 전환 숨김",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "H18": {
+    "name": "정지·연속 사건 처리",
+    "status": "이미지 변환 UI 연결",
+    "assets": "heart marker, tique-cell 3, iron 3, protect, native panel",
+    "code": "ReworkUi.Cells / hudRefillAt / damage times",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F01": {
+    "name": "주먹 가속 흔적",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F02": {
+    "name": "유효 접촉의 첫 점",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F03": {
+    "name": "노심 명중 확장",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F04": {
+    "name": "노심 명중 소멸",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F05": {
+    "name": "닫힌 장갑 접촉",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F06": {
+    "name": "허공 공격 종료",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F07": {
+    "name": "공격 취소 정리",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F08": {
+    "name": "티크 피해 접점",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F09": {
+    "name": "피격 보호 표현",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F10": {
+    "name": "무적 중 접촉",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F11": {
+    "name": "마지막 노심 타격",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F12": {
+    "name": "티크 마지막 피해",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F13": {
+    "name": "첫 점프 추진 먼지",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F14": {
+    "name": "공중 두 번째 추진",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F15": {
+    "name": "착지 먼지",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F16": {
+    "name": "지상 대시 출발",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F17": {
+    "name": "대시 잔상·진행",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F18": {
+    "name": "대시 종료·준비",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "대시 종료 자세 연결; 별도 준비 VFX는 선택 사항으로 생략.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F19": {
+    "name": "기둥 충전 접촉",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F20": {
+    "name": "충전 저장·만료",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F21": {
+    "name": "일반 벽 충돌",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F22": {
+    "name": "충전 기둥 충돌",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F23": {
+    "name": "장갑 개방 신호",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F24": {
+    "name": "노심 노출·종료 표시",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F25": {
+    "name": "돌진 추적→확정",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F26": {
+    "name": "충격파 생성·접촉·소멸",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F27": {
+    "name": "낙하 추적→확정",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F28": {
+    "name": "낙하 바닥 충격",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F29": {
+    "name": "강화 추가 파형 신호",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "F30": {
+    "name": "전원 차단·복구",
+    "status": "이미지 변환 VFX 또는 원본 파생",
+    "assets": "hit/hurt/armor/air/dust/boost/bridge/pylon-impact/slam-dust/dash-ghost",
+    "code": "ReturnFeedback / ReworkModel / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P01": {
+    "name": "추 접촉",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P02": {
+    "name": "추 마찰 이동",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P03": {
+    "name": "추 정착",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P04": {
+    "name": "구슬 방출",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P05": {
+    "name": "구슬 정지",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P06": {
+    "name": "막힌 밀기",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P07": {
+    "name": "올바른 접속",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P08": {
+    "name": "잘못된 접속",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P09": {
+    "name": "연결 해제",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P10": {
+    "name": "되돌리기·초기화",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P11": {
+    "name": "힌트 강조",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "P12": {
+    "name": "회로 복구·다음 공간",
+    "status": "이미지 변환 접촉+원본 상태",
+    "assets": "friction/weight-settle/orb-release/stop; StateArt socket 12노출",
+    "code": "AdvancePuzzleVisual / WorldArtState / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U01": {
+    "name": "패널 모서리",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U02": {
+    "name": "패널 변·바탕",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U03": {
+    "name": "버튼 기본",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U04": {
+    "name": "버튼 선택·호버",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U05": {
+    "name": "버튼 눌림",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U06": {
+    "name": "버튼 비활성",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U07": {
+    "name": "섹션별 키 캡",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U08": {
+    "name": "행동 아이콘",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U09": {
+    "name": "퍼즐 복구 아이콘",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U10": {
+    "name": "퍼즐 진행 0~3",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U11": {
+    "name": "충전 시간 프레임",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U12": {
+    "name": "충전 시간 채움·만료",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U13": {
+    "name": "노출 시간 프레임",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U14": {
+    "name": "노출 시간·타수",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U15": {
+    "name": "대시 사용 가능",
+    "status": "준비 표시 생략",
+    "assets": "기존 대시 복귀 / dashReady 규칙 유지",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "문서 허용 선택 사항. 작은 캐릭터 주변 추가 표식 혼잡을 피함. 대시의 재사용 규칙은 유지.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U16": {
+    "name": "안내·실패·완료 카드",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U17": {
+    "name": "제목·귀환 표식",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U18": {
+    "name": "한글 픽셀 글꼴",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U19": {
+    "name": "숫자·영문·키 글리프",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "U20": {
+    "name": "선택 커서·설정 표식",
+    "status": "이미지 변환 UI+허용된 픽셀 폰트",
+    "assets": "panel/button 4state/keycaps/action icons/381glyph atlas",
+    "code": "ReworkUi.LoadPixelUi / Panel / HandleMenuKeys",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A01": {
+    "name": "104×20 / 셀 8×10",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A02": {
+    "name": "136×20 / 셀 8×10",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "136×20 프레임 / 셀10×12, 3·6 구획 홈. 원문 크기는 출발점이며 네이티브 정수 배치로 확정.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A03": {
+    "name": "24×24",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A04": {
+    "name": "24×24",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A05": {
+    "name": "20×16",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A06": {
+    "name": "기존 32×8·136×16",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A07": {
+    "name": "글리프 12–16px 후보",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A08": {
+    "name": "모서리 4×4, 타일 4×4, 표식 8–16px",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A09": {
+    "name": "프레임 약 40×6·88×6",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "40/88 네이티브 채움 폭의 정수 클리핑, 공용9px 패널 프레임.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A10": {
+    "name": "20×16 이내",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A11": {
+    "name": "24×12",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용32×16 먼지 5노출 / 200ms로 확정. 땅 접점 피벗을 모든 발생처가 공유.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A12": {
+    "name": "24×24",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A13": {
+    "name": "32×32",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A14": {
+    "name": "96×24",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A15": {
+    "name": "16×16 / 24×12",
+    "status": "위 공용 묶음의 자산 인덱스",
+    "assets": "Source/Concepts -> Native -> Clips PNG/Piskel/APNG/pixel JSON",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "A16": {
+    "name": "워드마크 약 160×32",
+    "status": "픽셀 글꼴·기존 문으로 구현",
+    "assets": "licensed atlas title + StateArt exit",
+    "code": "art/return-v5-feedback/clip-source-map.json",
+    "reason": "새 생성 글자/대형 워드마크 대신 실제 픽셀 한글과 귀환문을 사용.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O01": {
+    "name": "제목 대기·시작 확정",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O02": {
+    "name": "첫 공간·운반 통로 암시",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O03": {
+    "name": "티크 낙하·착지·인지",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O04": {
+    "name": "귀환 기록 표시",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O05": {
+    "name": "단절 회로 식별",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O06": {
+    "name": "희망 반응",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O07": {
+    "name": "조작 안내 교체",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O08": {
+    "name": "첫 조작권 인계",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O09": {
+    "name": "첫 유효 행동 확인",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O10": {
+    "name": "복구→집행 재가동",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O11": {
+    "name": "전투 확인·재도전 인계",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "O12": {
+    "name": "귀환 문구 회수",
+    "status": "인게임 상태 연결",
+    "assets": "Opening14s / puzzle150-orb270 / clear800 / boot2400 / Enter / exit800",
+    "code": "ReworkModel.Tick / OpeningSequence / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D01": {
+    "name": "통로 낙하 원인 신호",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D02": {
+    "name": "화면 진입",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D03": {
+    "name": "낙하 진행",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D04": {
+    "name": "최초 발 접촉",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D05": {
+    "name": "착지 압축",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D06": {
+    "name": "접지 복귀",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D07": {
+    "name": "낙하 여운 정리",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "D08": {
+    "name": "기록·조작 인계",
+    "status": "원본 낙하+이미지 변환 통로/먼지",
+    "assets": "Jump08/09, Jump10..14 160ms, chute/dust, original Idle",
+    "code": "OpeningSequence.DropOffset / LandingFrame / DrawWorld",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A01": {
+    "name": "기존 재사용 우선",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A02": {
+    "name": "기존 재사용 우선, 부족 시 최소 보정",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A03": {
+    "name": "필요, 공용 신규 VFX 후보",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A04": {
+    "name": "필요 여부 실제 화면 판독 후",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A05": {
+    "name": "조건부 신규",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A06": {
+    "name": "선택·재사용",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A07": {
+    "name": "선택·재사용",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "새 본체 과장 연기는 생략. 기본형·방향·장치/문구의 기존 상태를 공유함.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A08": {
+    "name": "기존 픽셀 가림 재사용",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A09": {
+    "name": "기존 계획 재사용",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A10": {
+    "name": "기존 우선, 픽셀 자산 아님",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  },
+  "DO-A11": {
+    "name": "기존 동작/장치 재사용",
+    "status": "재사용·공용 연결",
+    "assets": "원본 Jump/Idle, chute/dust, pixel overlay, licensed glyphs, original land sound",
+    "code": "OpeningSequence / ReturnFeedback / ReworkUi",
+    "reason": "공용 노출·상태로 연결. 독립 새 클립 수와 ID 수를 혼동하지 않음.",
+    "automatedEvidence": "model-checks.json / asset-checks.json / Runtime* captures",
+    "humanApproval": false
+  }
+}

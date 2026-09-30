@@ -101,3 +101,8 @@ var stateChecks=WorldArtChecks.Run(book,states);
 Directory.CreateDirectory(Path.Combine(qa,"V4"));
 File.WriteAllText(Path.Combine(qa,"V4/state-model-checks.json"),JsonSerializer.Serialize(new{passed=true,checks=stateChecks,states=states.clips.Length,frames=states.clips.Sum(c=>c.durations.Length)},jsonOptions));
 foreach(string check in stateChecks)Console.WriteLine("STATE PASS "+check);
+
+Directory.CreateDirectory(Path.Combine(qa,"WorkOrderV01"));
+var orderResult=WorkOrderChecks.Run(book);
+File.WriteAllText(Path.Combine(qa,"WorkOrderV01/model-checks.json"),JsonSerializer.Serialize(orderResult,jsonOptions));
+Console.WriteLine("PASS work order model checks");

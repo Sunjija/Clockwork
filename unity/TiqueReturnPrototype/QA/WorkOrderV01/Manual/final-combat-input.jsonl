@@ -1,0 +1,11 @@
+{"key":"Return","phase":"Arrival","clock":56.20476531982422,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"Return","phase":"Combat","clock":58.38856506347656,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"C","phase":"Combat","clock":59.92222595214844,"x":85.41667175292969,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":true}
+{"key":"E","phase":"Combat","clock":61.15582275390625,"x":134.1667022705078,"y":282.0,"moves":0,"jumps":0,"charged":0,"paused":false,"attack":false,"dash":false}
+{"key":"X","phase":"Combat","clock":62.38108444213867,"x":134.1667022705078,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":true,"dash":false}
+{"key":"Z","phase":"Combat","clock":63.56467056274414,"x":134.1667022705078,"y":278.02777099609377,"moves":0,"jumps":1,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"Space","phase":"Combat","clock":64.81456756591797,"x":134.1667022705078,"y":278.02777099609377,"moves":0,"jumps":1,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"UpArrow","phase":"Combat","clock":66.04759979248047,"x":134.1667022705078,"y":278.02777099609377,"moves":0,"jumps":1,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"LeftArrow","phase":"Combat","clock":67.29729461669922,"x":132.7000274658203,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"RightArrow","phase":"Combat","clock":68.56365203857422,"x":134.1667022705078,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"Escape","phase":"Combat","clock":69.79668426513672,"x":134.1667022705078,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":true,"attack":false,"dash":false}

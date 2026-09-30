@@ -1,0 +1,9 @@
+{"key":"Return","phase":"Opening","clock":0.0,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"Return","phase":"Puzzle","clock":2.1833341121673586,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"LeftArrow","phase":"Puzzle","clock":3.7000210285186769,"x":80.0,"y":282.0,"moves":1,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"Z","phase":"Puzzle","clock":4.916677474975586,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"R","phase":"Puzzle","clock":6.149991989135742,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"H","phase":"Puzzle","clock":7.399972915649414,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}
+{"key":"Escape","phase":"Puzzle","clock":8.624954223632813,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":true,"attack":false,"dash":false}
+{"key":"RightArrow","phase":"Puzzle","clock":8.624954223632813,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":true,"attack":false,"dash":false}
+{"key":"Escape","phase":"Puzzle","clock":8.641620635986329,"x":80.0,"y":282.0,"moves":0,"jumps":0,"charged":-1,"paused":false,"attack":false,"dash":false}

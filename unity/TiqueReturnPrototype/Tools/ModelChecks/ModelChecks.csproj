@@ -6,6 +6,7 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="../../Assets/Scripts/ReturnFeedback.cs" Link="ReturnFeedback.cs" />
     <Compile Include="../../Assets/Scripts/ReturnModel.cs" Link="ReturnModel.cs" />
     <Compile Include="../../Assets/Scripts/ReturnChecks.cs" Link="ReturnChecks.cs" />
     <Compile Include="../../Assets/Scripts/ReturnPilot.cs" Link="ReturnPilot.cs" />

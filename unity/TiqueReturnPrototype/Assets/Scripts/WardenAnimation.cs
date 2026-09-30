@@ -35,7 +35,8 @@ namespace TiqueReturn
                 case IronMove.Wave:
                     name="attack";first=4;last=11;
                     // A second phase-three pulse gets its own matching bite.
-                    if(m.Rage>=2&&age>=1.1f)age-=1.1f;
+                    if(m.Rage>=2&&age>=1.07f&&age<1.1f){first=last=3;age=0;}
+                    else if(m.Rage>=2&&age>=1.1f)age-=1.1f;
                     break;
                 case IronMove.SlamAim:name="slam";last=6;break;
                 case IronMove.Slam:name="slam";first=7;last=9;break;

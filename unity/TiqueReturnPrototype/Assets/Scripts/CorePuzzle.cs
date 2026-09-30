@@ -18,6 +18,9 @@ namespace TiqueReturn
         public int player, previousPlayer, moves, pushes;
         public int[] boxes, previousBoxes;
         public int lastDirection=1;
+        public int lastPushedBox=-1;
+        public float blockedAge=100;
+        public float walkAge;
         public float motion;
         public float motionDuration=.15f, visualAge=100;
         public string feedback="";
@@ -41,26 +44,26 @@ namespace TiqueReturn
         public void Reset()
         {
             player=previousPlayer=room.start;boxes=(int[])room.boxes.Clone();previousBoxes=(int[])boxes.Clone();
-            moves=pushes=0;motion=0;visualAge=100;history.Clear();feedback="";
+            moves=pushes=0;motion=0;visualAge=blockedAge=100;lastPushedBox=-1;history.Clear();feedback="";
         }
         public bool Undo()
         {
             if(history.Count==0)return false;
             Snapshot s=history.Pop();player=previousPlayer=s.player;boxes=s.boxes;previousBoxes=(int[])boxes.Clone();
-            moves=s.moves;pushes=s.pushes;motion=0;visualAge=100;feedback="한 수 되돌렸어요.";return true;
+            moves=s.moves;pushes=s.pushes;motion=0;visualAge=blockedAge=100;lastPushedBox=-1;feedback="한 수 되돌렸어요.";return true;
         }
-        public void AdvanceVisual(float dt){motion=Math.Max(0,motion-dt);visualAge+=dt;}
+        public void AdvanceVisual(float dt){if(visualAge<.15f)walkAge+=Math.Min(dt,.15f-visualAge)*36/.15f/45;motion=Math.Max(0,motion-dt);visualAge+=dt;blockedAge+=dt;}
         public bool Move(int direction)
         {
             if(direction<0||direction>3||Solved)return false;
             lastDirection=direction;
             int target=Next(player,direction),box=Array.IndexOf(boxes,target);
-            if(Wall(target)){feedback="";return false;}
+            if(Wall(target)){blockedAge=0;feedback="";return false;}
             int end=target;
             if(box>=0)
             {
                 int next=Next(target,direction);
-                if(Wall(next)||Array.IndexOf(boxes,next)>=0){feedback="막혔어요. Z로 되돌릴 수 있어요.";return false;}
+                if(Wall(next)||Array.IndexOf(boxes,next)>=0){blockedAge=0;feedback="막혔어요. Z로 되돌릴 수 있어요.";return false;}
                 end=next;
                 if(room.types[box]==1)
                 {
@@ -69,7 +72,7 @@ namespace TiqueReturn
             }
             history.Push(new Snapshot{player=player,boxes=(int[])boxes.Clone(),moves=moves,pushes=pushes});
             previousPlayer=player;previousBoxes=(int[])boxes.Clone();player=target;moves++;
-            motionDuration=box>=0&&room.types[box]==1?.27f:.15f;motion=motionDuration;visualAge=0;
+            lastPushedBox=box;blockedAge=100;motionDuration=box>=0&&room.types[box]==1?.27f:.15f;motion=motionDuration;visualAge=0;
             if(box>=0){boxes[box]=end;pushes++;feedback=room.types[box]==1?"구슬은 소켓을 지나쳐도, 막힐 때까지 움직여요.":"추를 한 칸 밀었어요.";}
             else feedback="";
             if(Solved)feedback="회로 연결 완료.";

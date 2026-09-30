@@ -1,0 +1,736 @@
+[
+  {
+    "name": "hit",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      0,
+      0,
+      444,
+      444
+    ],
+    "contentBounds": [
+      131,
+      174,
+      357,
+      387
+    ],
+    "nativeSize": [
+      24,
+      24
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "a7f11f1e1414c134f92f09d18313f78227364551d7b5c635791199396bd05d95"
+  },
+  {
+    "name": "armor",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      444,
+      0,
+      887,
+      444
+    ],
+    "contentBounds": [
+      99,
+      140,
+      375,
+      422
+    ],
+    "nativeSize": [
+      20,
+      16
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "f7f5c7480e33f3086d035bdfea8c7574e22ac2dee0e52e959e2c637f327c9611"
+  },
+  {
+    "name": "hurt",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      887,
+      0,
+      1330,
+      444
+    ],
+    "contentBounds": [
+      56,
+      116,
+      349,
+      424
+    ],
+    "nativeSize": [
+      24,
+      24
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "38185da52bc0637a7d96da16e6afa49e2666febc36c258cb5c5faa4d3a624a3b"
+  },
+  {
+    "name": "dust",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      1330,
+      0,
+      1774,
+      444
+    ],
+    "contentBounds": [
+      25,
+      249,
+      378,
+      398
+    ],
+    "nativeSize": [
+      32,
+      16
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "99e84142b10524440f1c0f8f75867ecfb6a40bc28abb0b05c64d8c8d1535e7cd"
+  },
+  {
+    "name": "boost",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      0,
+      444,
+      444,
+      887
+    ],
+    "contentBounds": [
+      101,
+      58,
+      444,
+      364
+    ],
+    "nativeSize": [
+      24,
+      24
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "2999d6a131102f934d338e639e18c6c6575e71507b7eb19e35e7da84cab826ce"
+  },
+  {
+    "name": "slam-dust",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      408,
+      444,
+      958,
+      887
+    ],
+    "contentBounds": [
+      8,
+      139,
+      550,
+      346
+    ],
+    "nativeSize": [
+      96,
+      24
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "059ad9d4d922e34a3071d60d257d1a35e17dfc78a40c288713895ffa3ed6988d"
+  },
+  {
+    "name": "bridge",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      887,
+      444,
+      1330,
+      887
+    ],
+    "contentBounds": [
+      0,
+      189,
+      443,
+      346
+    ],
+    "nativeSize": [
+      32,
+      32
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "f180b6013ac9423f88b532ca112a2ad3de812bbc1ffa98f08909620d1483c396"
+  },
+  {
+    "name": "orb-stop",
+    "source": "feedback-components-v3.png",
+    "sourceSha256": "0ccb3ce0d6d741f28ccc367e0b8586d7efb5ee295fca8e37386b079dfa812ad8",
+    "cropPixels": [
+      1330,
+      444,
+      1774,
+      887
+    ],
+    "contentBounds": [
+      0,
+      167,
+      327,
+      353
+    ],
+    "nativeSize": [
+      24,
+      16
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "e9e127e7d2e014c2b877f37d3d2a01fbce9361a132723c455e866334b48c6276"
+  },
+  {
+    "name": "heart-full",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      0,
+      0,
+      362,
+      272
+    ],
+    "contentBounds": [
+      82,
+      95,
+      328,
+      272
+    ],
+    "nativeSize": [
+      16,
+      16
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "8769ad39fa73bf671ce44a9d64315d28adae0c68fac925a8acdb93928206370b"
+  },
+  {
+    "name": "heart-empty",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      362,
+      0,
+      724,
+      272
+    ],
+    "contentBounds": [
+      66,
+      95,
+      311,
+      272
+    ],
+    "nativeSize": [
+      16,
+      16
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "46e791efe4fc9bbb99faa9ff89e96fb5f4dc0d57ca7263fc42d7b395ebdc41de"
+  },
+  {
+    "name": "iron-full",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      724,
+      0,
+      1086,
+      272
+    ],
+    "contentBounds": [
+      39,
+      125,
+      309,
+      266
+    ],
+    "nativeSize": [
+      10,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "802f190edc66349d32390f329bfe4b047de6a354a885b5628f5e7a14e9ec054c"
+  },
+  {
+    "name": "iron-empty",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      1086,
+      0,
+      1448,
+      272
+    ],
+    "contentBounds": [
+      23,
+      125,
+      293,
+      266
+    ],
+    "nativeSize": [
+      10,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "790116dfcb81fda412651b9f6a6c3d6d01cbb7e43721ecc7dea0fa0dc702bc4d"
+  },
+  {
+    "name": "panel",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      0,
+      272,
+      362,
+      543
+    ],
+    "contentBounds": [
+      89,
+      0,
+      277,
+      259
+    ],
+    "nativeSize": [
+      9,
+      9
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "c3bc99f988d1af5446a4dc02777036ee9f763c159bdf303a1b13f84f2c7d318e"
+  },
+  {
+    "name": "button",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      362,
+      272,
+      724,
+      543
+    ],
+    "contentBounds": [
+      47,
+      0,
+      320,
+      253
+    ],
+    "nativeSize": [
+      9,
+      9
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "6e5cf3b44747f1e59b6db19b2a59f5c58737afd15b86d712d8575ea365e82b69"
+  },
+  {
+    "name": "button-selected",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      724,
+      272,
+      1086,
+      543
+    ],
+    "contentBounds": [
+      37,
+      93,
+      309,
+      253
+    ],
+    "nativeSize": [
+      9,
+      9
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "64f0e83d2df4a4afb8f455ae6dad4896ff4c5a30f25c1bc4c67ec22b843e8d8f"
+  },
+  {
+    "name": "button-pressed",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      1086,
+      272,
+      1448,
+      543
+    ],
+    "contentBounds": [
+      22,
+      93,
+      294,
+      253
+    ],
+    "nativeSize": [
+      9,
+      9
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "df926175ffd23544b8a6b6a65b057640d66afeb6cfedfc865a91e8e984dacd86"
+  },
+  {
+    "name": "button-disabled",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      0,
+      543,
+      362,
+      814
+    ],
+    "contentBounds": [
+      69,
+      63,
+      340,
+      221
+    ],
+    "nativeSize": [
+      9,
+      9
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "24849b7f0991b5c49948be289660672bb1d84ef6a808be2578210d4bb8c28e00"
+  },
+  {
+    "name": "icon-undo",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      362,
+      543,
+      724,
+      814
+    ],
+    "contentBounds": [
+      104,
+      49,
+      287,
+      237
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "fdb1f2df3eaf92a39859866066035f1dbb5c5d13adc1039db05722f3970867bc"
+  },
+  {
+    "name": "icon-reset",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      724,
+      543,
+      1086,
+      814
+    ],
+    "contentBounds": [
+      75,
+      49,
+      271,
+      251
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "4ba8e20154f31d79e8f6f59c796a596de2abf15c36e8978b84e52a2fc7d0cc65"
+  },
+  {
+    "name": "icon-hint",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      1086,
+      543,
+      1448,
+      814
+    ],
+    "contentBounds": [
+      51,
+      28,
+      269,
+      255
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "4da1dcb5bbdab776c008071dd74feddc789170d9ba508902ad2d45923c8f95ff"
+  },
+  {
+    "name": "icon-jump",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      0,
+      814,
+      362,
+      1086
+    ],
+    "contentBounds": [
+      102,
+      11,
+      310,
+      219
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "6c71f20be193c82758537d52bc333f031d9a1d32e97cf497f10b0eab0dc8e03e"
+  },
+  {
+    "name": "icon-attack",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      362,
+      814,
+      724,
+      1086
+    ],
+    "contentBounds": [
+      71,
+      38,
+      334,
+      191
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "fc7a55d958c51539968fb20f150e0528de395ea14abcbb9dfeeacb27bab273ae"
+  },
+  {
+    "name": "icon-dash",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      724,
+      814,
+      1086,
+      1086
+    ],
+    "contentBounds": [
+      47,
+      47,
+      318,
+      197
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "2a42d4048c434a7603e072f9554eec8220f879f696a31ed9af520d8f7a2d1d63"
+  },
+  {
+    "name": "icon-interact",
+    "source": "ui-components-v3.png",
+    "sourceSha256": "2d5564192f235309d74ae6777f20efca942001dcf5167548d339631b924456cc",
+    "cropPixels": [
+      1086,
+      814,
+      1448,
+      1086
+    ],
+    "contentBounds": [
+      81,
+      20,
+      250,
+      220
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "4bc966fbb0291c461cbeb8cbe738042b0ecc1801e02f0371fc5e824910f44c82"
+  },
+  {
+    "name": "protect",
+    "source": "misc-components-v3.png",
+    "sourceSha256": "b3d327396ef08b23dffbf005fc0e4b9b5604c6fc63696f0b09efc130a8749d78",
+    "cropPixels": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "contentBounds": [
+      152,
+      131,
+      439,
+      405
+    ],
+    "nativeSize": [
+      24,
+      24
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "a9b046f2a7704d9d61e1e130a0d55537ff2fdfe8b4191b7ac42d321e2e9a875b"
+  },
+  {
+    "name": "icon-locked",
+    "source": "misc-components-v3.png",
+    "sourceSha256": "b3d327396ef08b23dffbf005fc0e4b9b5604c6fc63696f0b09efc130a8749d78",
+    "cropPixels": [
+      512,
+      0,
+      1024,
+      512
+    ],
+    "contentBounds": [
+      170,
+      153,
+      343,
+      403
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "26d7f190f0af339a424440a3fd7e82e7d618dfc3791cc895e35c9a53a1b611c4"
+  },
+  {
+    "name": "icon-circuit",
+    "source": "misc-components-v3.png",
+    "sourceSha256": "b3d327396ef08b23dffbf005fc0e4b9b5604c6fc63696f0b09efc130a8749d78",
+    "cropPixels": [
+      1024,
+      0,
+      1536,
+      512
+    ],
+    "contentBounds": [
+      110,
+      151,
+      391,
+      404
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "81cbcbb1644d9043a53069a0137b4e2b1922e32f2c08b229cf724ec8fabfdfab"
+  },
+  {
+    "name": "chute",
+    "source": "misc-components-v3.png",
+    "sourceSha256": "b3d327396ef08b23dffbf005fc0e4b9b5604c6fc63696f0b09efc130a8749d78",
+    "cropPixels": [
+      0,
+      512,
+      512,
+      1024
+    ],
+    "contentBounds": [
+      123,
+      82,
+      472,
+      400
+    ],
+    "nativeSize": [
+      48,
+      40
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "243bfc48b478b8403686bac24d4b2cde348196b8057ce10a0d2bef131c16032a"
+  },
+  {
+    "name": "icon-pause",
+    "source": "misc-components-v3.png",
+    "sourceSha256": "b3d327396ef08b23dffbf005fc0e4b9b5604c6fc63696f0b09efc130a8749d78",
+    "cropPixels": [
+      512,
+      512,
+      1024,
+      1024
+    ],
+    "contentBounds": [
+      191,
+      135,
+      352,
+      338
+    ],
+    "nativeSize": [
+      12,
+      12
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "35bd5cdb0731d41db31a7846e377f0758729971cfa46789c42400b5c571504eb"
+  },
+  {
+    "name": "air",
+    "source": "misc-components-v3.png",
+    "sourceSha256": "b3d327396ef08b23dffbf005fc0e4b9b5604c6fc63696f0b09efc130a8749d78",
+    "cropPixels": [
+      1024,
+      512,
+      1536,
+      1024
+    ],
+    "contentBounds": [
+      118,
+      115,
+      445,
+      367
+    ],
+    "nativeSize": [
+      20,
+      16
+    ],
+    "method": "static component -> BOX area sample -> fixed palette -> binary alpha -> native pixel cleanup",
+    "nativeSha256": "8f99084fdf8cc4a606c25774626e93df756ba19f7570751895c4bfe74867ad6a"
+  },
+  {
+    "name": "push-side",
+    "source": "push-side-v3.png",
+    "sourceSha256": "039f7185aae0fb3c8a06a4fc117eb15bf2e099ae4e13c7cc8897cbf209e7efc8",
+    "nativeSize": [
+      64,
+      64
+    ],
+    "method": "single pose downsample; original body/heart/head/feet locked; short connected arm patches",
+    "nativeSha256": "648e1a1a78e23fd03094ab33f41d144c36ec5eb0373a7a336e8d48e2be328ac1"
+  },
+  {
+    "name": "push-up",
+    "source": "push-up-v3.png",
+    "sourceSha256": "e002ff514c621ed34db691f06c27be8dad13d24996a05eac659485793b3bb56c",
+    "nativeSize": [
+      64,
+      64
+    ],
+    "method": "single pose downsample; original body/heart/head/feet locked; short connected arm patches",
+    "nativeSha256": "1746d51790a5a110e5758d85e4382a03b9bae1e810424da224843456f68520d2"
+  },
+  {
+    "name": "push-down",
+    "source": "push-down-v4.png",
+    "sourceSha256": "2bc3d1df8d5d0bac19a0709c462b4628d678812655dd3eeb6f1bad527b5f2a5f",
+    "nativeSize": [
+      64,
+      64
+    ],
+    "method": "single pose downsample; original body/heart/head/feet locked; short connected arm patches",
+    "nativeSha256": "b7a8702cd9e1ba9c23071ca8a3a9391c92bb30b3816e46a5b55df3d9a499a057"
+  },
+  {
+    "name": "hurt-pose",
+    "source": "hurt-pose-v2.png",
+    "sourceSha256": "9c83ee877412e7fc68b10a0292565b54d24a0deee25ae94c3c60868a5f2ca88a",
+    "nativeSize": [
+      64,
+      64
+    ],
+    "method": "single pose downsample; original body/heart/head/feet locked; short connected arm patches",
+    "nativeSha256": "788218108e4e65733fd1b1fa2baeb589bd6975742ef8afa7bdc16eb0c03fe9fd"
+  }
+]

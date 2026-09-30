@@ -1,0 +1,60 @@
+{
+  "method": "single image design -> native conversion -> explicit pixel patches -> authored timed exposures",
+  "references": [
+    {
+      "image": "push-side-v3.png",
+      "kind": "single static pose",
+      "reference": "approved Tique Idle, nearest 8x",
+      "purpose": "two small connected mittens pressing one vertical face",
+      "noGeneratedAnimation": true
+    },
+    {
+      "image": "push-up-v3.png",
+      "kind": "single static pose",
+      "reference": "approved Tique Idle, nearest 8x",
+      "purpose": "two compact palms raised, same original facing and proportions",
+      "noGeneratedAnimation": true
+    },
+    {
+      "image": "push-down-v4.png",
+      "kind": "single static pose",
+      "reference": "approved Tique Idle, nearest 8x",
+      "purpose": "two tiny closed mittens pressing downward; explicitly no fingers or enlarged gloves",
+      "noGeneratedAnimation": true
+    },
+    {
+      "image": "hurt-pose-v2.png",
+      "kind": "single static pose",
+      "reference": "approved Tique Idle, nearest 8x",
+      "purpose": "small tucked connected arms, original body and foot baseline",
+      "noGeneratedAnimation": true
+    },
+    {
+      "image": "feedback-components-v3.png",
+      "kind": "different static components",
+      "reference": "dark clockwork / bronze, cyan, charcoal palette",
+      "purpose": "eight independent single VFX designs, not successive frames",
+      "noGeneratedAnimation": true
+    },
+    {
+      "image": "ui-components-v3.png",
+      "kind": "different static components",
+      "reference": "dark clockwork / bronze, cyan, charcoal palette",
+      "purpose": "sixteen independent HUD/button/action icon designs, no generated letters",
+      "noGeneratedAnimation": true
+    },
+    {
+      "image": "misc-components-v3.png",
+      "kind": "different static components",
+      "reference": "dark clockwork / bronze, cyan, charcoal palette",
+      "purpose": "six independent protective/lock/circuit/chute/pause/short arc designs",
+      "noGeneratedAnimation": true
+    }
+  ],
+  "rejected": {
+    "image": "push-down-v3-rejected.png",
+    "reason": "oversized open palms and fingers broke original hand proportions"
+  },
+  "legacyFrames": "67 Tique, 52 WardenAuthored, 187 StateArt kept read-only",
+  "fontException": "user explicitly permits a pixel font; licensed NeoDunggeunmo source -> binary glyph atlas, not AI generated letters"
+}

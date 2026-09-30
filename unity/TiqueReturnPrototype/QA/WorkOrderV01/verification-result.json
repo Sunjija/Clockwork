@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "build": "Builds\\WindowsV5\\TiqueReturn.exe",
+  "buildSha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4",
+  "modelChecks": 37,
+  "immutableSources": 309,
+  "newClips": 53,
+  "newFrames": 154,
+  "sourceImageConversions": 34,
+  "physicalInput": {
+    "passed": true,
+    "tool": "sky.press_key to returned WindowsV5 window, each action refreshed",
+    "normalPuzzleStart": true,
+    "combatUsesExplicitQaArrivalFixture": true,
+    "puzzleMoveUndoResetHintAndPauseObserved": true,
+    "combatMoveJumpAliasesAttackDashAndInteractionObserved": true,
+    "pauseWorldClockAndIgnoredMovementObserved": true,
+    "physicalDoubleJumpAndCoyoteTimingVerified": false,
+    "humanFullPlaythrough": false,
+    "nativeWindowCapture": "sky WGC timed out; fresh returned accessibility window selected, actual key logs AND Unity renderer captures recorded per physical key",
+    "buildSha256": "5ae0c84993c6bff7d0f03166cafd148cdec61f67ec85b5d97600e04b2abb26e4",
+    "finalInputLogs": [
+      "final-puzzle-input.jsonl",
+      "final-combat-input.jsonl"
+    ],
+    "physicalEarlyOpeningSkipObserved": true,
+    "physicalInputRendererCaptures": 20,
+    "gameAssemblySha256": "dffd03d13ea09ffad6ac6f7d8da2cf690d7666541a171318a2bddf5a7facacd7"
+  },
+  "runtimeRuns": {
+    "Runtime720Accepted": {
+      "passed": true,
+      "phase": "Ending",
+      "health": 2,
+      "breaks": 3,
+      "playSeconds": 68.11
+    },
+    "Runtime1080": {
+      "passed": true,
+      "phase": "Ending",
+      "health": 2,
+      "breaks": 3,
+      "playSeconds": 68.11
+    },
+    "RuntimeNonInteger": {
+      "passed": true,
+      "phase": "Ending",
+      "health": 2,
+      "breaks": 3,
+      "playSeconds": 68.11
+    }
+  },
+  "integerCaptureCount": 135,
+  "unverified": [
+    "human motion quality approval",
+    "first-time fun, difficulty and muted readability",
+    "physical double-jump/coyote timing",
+    "different high-DPI monitor"
+  ],
+  "gameAssemblySha256": "dffd03d13ea09ffad6ac6f7d8da2cf690d7666541a171318a2bddf5a7facacd7"
+}

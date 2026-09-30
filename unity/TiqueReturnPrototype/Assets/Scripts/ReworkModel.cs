@@ -4,7 +4,7 @@ using M = TiqueReturn.GridMath;
 
 namespace TiqueReturn
 {
-    public enum Journey { Title, Puzzle, RoomClear, Arrival, Combat, Restored, Ending, Dead }
+    public enum Journey { Title, Opening, Puzzle, RoomClear, Arrival, Combat, Restored, Ending, Dead }
     public enum IronMove { Rest, ChargeAim, Charge, WaveAim, Wave, SlamAim, Slam, Recover, Open, Down }
     public struct ReworkCommand
     {
@@ -19,6 +19,7 @@ namespace TiqueReturn
         public readonly PuzzleBook book;
         public readonly ReturnModel hero=new ReturnModel();
         public readonly List<string> events=new List<string>();
+        public readonly ReturnFeedback feedback=new ReturnFeedback();
         public readonly List<RingWave> waves=new List<RingWave>();
         public readonly float[] pylons={140,500};
         public readonly float[] pylonChargedAt={-100,-100};
@@ -32,6 +33,10 @@ namespace TiqueReturn
         public int bossFacing=-1,hitSerial=-1,totalMoves,totalPushes;
         public float age,clock,playTime,bossAge,bossX=490,bossY=Floor,aimX,chargeLife,shake,flash;
         public float stepLock,hitStop,chargeCooldown;
+        public float hurtAt=-100,idleAge,openingTime,controlTime,guideTime,hudRefillAt=-100;
+        public float lastBossDamageAt=-100;public int attackResolved=-1;
+        public bool reducedEffects,initialTutorial=true,openingLanded;
+        public int inputEpoch;public bool actionConsumed;
         public bool paused,muted,assisted;
         public string notice="";
         public float noticeLeft;
@@ -40,6 +45,7 @@ namespace TiqueReturn
         public bool Vulnerable => phase==Journey.Combat&&bossMove==IronMove.Open;
         public int Rage => Math.Min(2,(9-bossHealth)/3);
         public float WeakX => bossX+bossFacing*48;
+        public float WeakY => bossY-20;
         public bool CanControl => phase==Journey.Combat||phase==Journey.Restored;
         public ReworkModel(PuzzleBook book) {this.book=book;hero.phase=Phase.Combat;ResetHero();LoadRoom(0);}
         void ResetHero()
@@ -50,15 +56,17 @@ namespace TiqueReturn
         public void Event(string s){events.Add(clock.ToString("F2",System.Globalization.CultureInfo.InvariantCulture)+":"+s);}
         public void Say(string s,float seconds=3){notice=s;noticeLeft=seconds;}
         void LoadRoom(int index){roomIndex=index;puzzle=new CorePuzzle(book.levels[index]);hintLevel=0;stepLock=0;}
-        public void Start(){phase=Journey.Puzzle;age=0;Say("기록: 엘리아스 공방. 귀환 회로의 세 단절을 복구해야 해요.",5);Event("start");}
+        public void Start(){if(phase!=Journey.Title)return;phase=Journey.Opening;age=0;feedback.Clear();openingLanded=false;noticeLeft=0;inputEpoch++;Event("start");}
+        void FinishOpening(){phase=Journey.Puzzle;age=0;stepLock=0;feedback.Clear();hero.jumpUntil=-100;inputEpoch++;Event("opening-control");}
         public void BeginArena()
         {
             phase=Journey.Arrival;age=0;ResetHero();health=5;bossHealth=9;breaks=openHits=pattern=0;
             bossX=490;bossY=Floor;bossFacing=-1;charged=-1;chargeLife=chargeCooldown=0;waves.Clear();Next(IronMove.Rest);
+            feedback.Clear();hitStop=0;idleAge=0;attackResolved=-1;inputEpoch++;hudRefillAt=clock;
             pylonChargedAt[0]=pylonChargedAt[1]=-100;lastDischargedPylon=-1;dischargedAt=lastCoreHitAt=restoredAt=-100;
             Say("귀환 전력 복구. 그러나 폐기 집행 장치가 길을 막습니다.",4);Event("arena-arrival");
         }
-        public void Retry(){if(phase!=Journey.Dead)return;BeginArena();Event("checkpoint-retry");}
+        public void Retry(){if(phase!=Journey.Dead)return;BeginArena();age=2.4f;Event("checkpoint-retry");}
         void Next(IronMove move)
         {
             if(move==IronMove.ChargeAim)bossSequence="charge";
@@ -71,35 +79,45 @@ namespace TiqueReturn
         {
             if(paused)return;
             if(hitStop>0){hitStop=M.Max(0,hitStop-dt);return;}
-            clock+=dt;age+=dt;noticeLeft-=dt;shake=M.Max(0,shake-dt);flash=M.Max(0,flash-dt);
+            clock+=dt;age+=dt;feedback.Advance(dt);noticeLeft-=dt;shake=M.Max(0,shake-dt);flash=M.Max(0,flash-dt);
             if(phase!=Journey.Title&&phase!=Journey.Ending&&phase!=Journey.Dead)playTime+=dt;
             if(phase==Journey.Title){if(c.interact)Start();return;}
             if(phase==Journey.Dead){if(c.interact)Retry();return;}
             if(phase==Journey.Ending)return;
+            if(phase==Journey.Opening)
+            {
+                openingTime+=dt;
+                if(!openingLanded&&age>=OpeningSequence.Landing){openingLanded=true;feedback.Emit("dust",OpeningSequence.FootX(puzzle.player%7),OpeningSequence.FootY(puzzle.player/7));Sound?.Invoke("land");Event("opening-land");}
+                if(c.interact||age>=OpeningSequence.Duration)FinishOpening();return;
+            }
+            if(phase==Journey.Puzzle||phase==Journey.Combat||phase==Journey.Restored)controlTime+=dt;
             if(phase==Journey.Puzzle)
             {
-                stepLock=M.Max(0,stepLock-dt);puzzle.AdvanceVisual(dt);
-                if(c.undo){puzzle.Undo();stepLock=0;Event("undo");}
-                else if(c.restart){puzzle.Reset();stepLock=0;Event("room-reset");}
+                stepLock=M.Max(0,stepLock-dt);AdvancePuzzleVisual(dt);
+                if(c.undo){puzzle.Undo();stepLock=0;feedback.Clear();feedback.Emit("undo",OpeningSequence.FootX(puzzle.player%7),OpeningSequence.FootY(puzzle.player/7));Event("undo");}
+                else if(c.restart){puzzle.Reset();stepLock=0;feedback.Clear();feedback.Emit("reset",OpeningSequence.FootX(puzzle.player%7),OpeningSequence.FootY(puzzle.player/7));Event("room-reset");}
                 else if(c.hint){hintLevel=Math.Min(3,hintLevel+1);Event("hint");}
                 else if(c.grid>=0&&stepLock<=0)
                 {
                     int pushes=puzzle.pushes;
-                    if(puzzle.Move(c.grid)){stepLock=puzzle.motion;Sound?.Invoke(puzzle.pushes>pushes?"switch":"land");}
+                    if(puzzle.Move(c.grid)){initialTutorial=false;stepLock=puzzle.motion;Sound?.Invoke(puzzle.pushes>pushes?"switch":"land");
+                        if(puzzle.pushes>pushes){int b=puzzle.lastPushedBox;bool orb=puzzle.room.types[b]==1;int dx=OpeningSequence.DirectionX(c.grid),dy=OpeningSequence.DirectionY(c.grid);feedback.Emit(orb?"orb-release":"friction",OpeningSequence.FootX(puzzle.previousBoxes[b]%7)-(orb?dx*13:0),OpeningSequence.FootY(puzzle.previousBoxes[b]/7)-(orb?13+dy*13:0),c.grid==0?-1:1,.14f);}}
+                    else feedback.Emit("blocked",OpeningSequence.FootX(puzzle.player%7),OpeningSequence.FootY(puzzle.player/7)-18);
                 }
                 if(puzzle.Solved){phase=Journey.RoomClear;age=0;totalMoves+=puzzle.moves;totalPushes+=puzzle.pushes;Sound?.Invoke("success");Event("room-clear-"+(roomIndex+1));}
                 return;
             }
             if(phase==Journey.RoomClear)
             {
-                puzzle.AdvanceVisual(dt);
+                AdvancePuzzleVisual(dt);
                 if(c.interact&&age>.8f)
                 {if(roomIndex==book.levels.Length-1)BeginArena();else{LoadRoom(roomIndex+1);phase=Journey.Puzzle;age=0;noticeLeft=0;}}
                 return;
             }
             if(phase==Journey.Arrival)
             {
-                if(c.interact||age>6){phase=Journey.Combat;age=0;Next(IronMove.Rest);Say("기둥 옆에서 E로 충전 → 기둥 뒤로 돌진 유도 → 열린 붉은 틈을 J로 공격",7);}
+                guideTime+=dt;
+                if(c.interact&&age>=2.4f){phase=Journey.Combat;age=0;inputEpoch++;feedback.Clear();Next(IronMove.Rest);Say("E 충전 → 기둥 뒤로 유도 → 열린 노심에 X 공격",7);Event("combat-control");}
                 return;
             }
             MoveHero(dt,c);
@@ -110,10 +128,10 @@ namespace TiqueReturn
                 if(hero.x>594&&c.interact&&clock-restoredAt>=.8f){phase=Journey.Ending;age=0;Event("ending");Sound?.Invoke("success");}
                 return;
             }
-            if(c.interact&&hero.grounded&&chargeCooldown<=0)
+            if(c.interact&&!actionConsumed&&hero.grounded&&chargeCooldown<=0)
             {
                 for(int i=0;i<pylons.Length;i++)if(M.Abs(hero.x-pylons[i])<36)
-                {charged=i;pylonChargedAt[i]=clock;chargeLife=16;chargeCooldown=.25f;Event("pylon-charge-"+i);Sound?.Invoke("switch");Say("충전 완료. 문지기와 이 기둥 사이에 서지 말고, 기둥 뒤로 유도하세요.",3);break;}
+                {charged=i;pylonChargedAt[i]=clock;chargeLife=16;chargeCooldown=.25f;feedback.Bridge(hero.x+hero.facing*12,hero.y-17,pylons[i],Floor-42);Event("pylon-charge-"+i);Sound?.Invoke("switch");Say("충전 완료. 문지기와 이 기둥 사이에 서지 말고, 기둥 뒤로 유도하세요.",3);break;}
             }
             BossTick(dt);
             if(phase!=Journey.Combat)return;
@@ -123,32 +141,38 @@ namespace TiqueReturn
                 if(M.Abs(w.x-hero.x)<15&&hero.y>Floor-22)Damage("wave");
                 if(w.x<-25||w.x>665)waves.RemoveAt(i);
             }
-            if(hero.Attacking&&hero.attackAge>=.12f&&hero.attackAge<=.22f&&hitSerial!=hero.attackSerial)
+            if(hero.Attacking&&hero.attackAge>=.12f&&hero.attackAge<=.22f&&attackResolved!=hero.attackSerial)
             {
                 float hand=hero.x+hero.facing*22;
                 if(Vulnerable&&M.Abs(hand-WeakX)<31&&hero.y>Floor-25)
                 {
-                    hitSerial=hero.attackSerial;bossHealth--;openHits++;lastCoreHitAt=clock;flash=.12f;shake=.1f;hitStop=.045f;
+                    hitSerial=attackResolved=hero.attackSerial;bossHealth--;openHits++;lastCoreHitAt=lastBossDamageAt=clock;flash=.12f;shake=.1f;hitStop=.045f;
+                    feedback.Emit("hit",WeakX,WeakY,hero.facing,.17f);
                     Event("boss-hit");Sound?.Invoke("hit");
-                    if(bossHealth<=0){phase=Journey.Restored;age=0;restoredAt=clock;Next(IronMove.Down);waves.Clear();Event("guardian-stopped");Say("폐기 명령을 해제했습니다. 오른쪽 문에서 E로 귀환 기록을 확인하세요.",8);}
+                    if(bossHealth<=0){phase=Journey.Restored;age=0;restoredAt=clock;Next(IronMove.Down);waves.Clear();hero.attackAge=hero.dashAge=9;hero.jumpUntil=-100;feedback.Emit("shutdown",bossX,Floor-16,1,.8f);Event("guardian-stopped");Say("폐기 명령을 해제했습니다. 오른쪽 문에서 E로 귀환 기록을 확인하세요.",8);}
                     else if(openHits>=3){Next(IronMove.Recover);Say("장갑 재결합. 다음 충전 기둥으로 이동하세요.",3);}
                 }
+                else if(M.Abs(hand-bossX)<61&&hero.y>bossY-58&&hero.y<bossY+8)
+                {attackResolved=hero.attackSerial;feedback.Emit("armor",hand,hero.y-20,hero.facing,.14f);Event("armor-contact");Sound?.Invoke("switch");}
             }
+            if(hero.Attacking&&hero.attackAge>.22f&&attackResolved!=hero.attackSerial)
+            {attackResolved=hero.attackSerial;feedback.Emit("air",hero.x+hero.facing*22,hero.y-20,hero.facing,.11f);Event("air-punch");}
         }
         void MoveHero(float dt,ReworkCommand c)
         {
             var p=hero;p.clock=clock;p.axis=Math.Sign(c.axis);p.invincible=M.Max(0,p.invincible-dt);p.dashCooldown-=dt;
             if(p.axis!=0&&!p.Dashing&&!p.Attacking)p.facing=p.axis;
-            if(c.jump)p.jumpUntil=clock+ReturnModel.JumpBuffer;
-            if(p.jumpUntil>=clock&&!p.Dashing&&(p.grounded||p.jumps<2))
-            {
-                bool first=p.grounded||(p.jumps==0&&clock<=p.graceUntil);
-                p.vy=first?-245:-220;p.jumps=first?1:2;p.grounded=false;p.doublePose=!first;
-                p.jumpUntil=p.graceUntil=-100;p.airAge=0;p.attackAge=9;Sound?.Invoke("jump");Event(first?"jump":"double-jump");
-            }
+            bool action=false;
             if(c.dash&&p.dashReady&&p.dashCooldown<=0&&!p.Dashing)
-            {p.dashAge=0;p.dashReady=false;p.dashCooldown=.45f;p.vy=0;p.attackAge=9;Sound?.Invoke("dash");Event("dash");}
-            if(c.attack&&!p.Dashing&&!p.Attacking){p.attackAge=0;p.attackSerial++;}
+            {p.dashAge=0;p.dashReady=false;p.dashCooldown=.45f;p.vy=0;p.attackAge=9;p.jumpUntil=-100;action=true;Sound?.Invoke("dash");Event("dash");if(p.grounded)feedback.Emit("dust",p.x,p.y);}
+            if(c.jump&&!action)p.jumpUntil=clock+ReturnModel.JumpBuffer;
+            if(!action&&p.jumpUntil>=clock&&!p.Dashing&&(p.grounded||p.jumps<2))
+            {
+                bool contact=p.grounded;bool first=p.grounded||(p.jumps==0&&clock<=p.graceUntil);
+                p.vy=first?-245:-220;p.jumps=first?1:2;p.grounded=false;p.doublePose=!first;
+                p.jumpUntil=p.graceUntil=-100;p.airAge=0;p.attackAge=9;action=true;if(!first)feedback.Emit("boost",p.x,p.y-17);else if(contact)feedback.Emit("dust",p.x,p.y);Sound?.Invoke("jump");Event(first?"jump":"double-jump");
+            }
+            if(c.attack&&!action&&!p.Dashing&&!p.Attacking){p.attackAge=0;p.attackSerial++;action=true;Event("attack");}
             float oldY=p.y,oldX=p.x;bool grounded=p.grounded;
             float vx=p.Dashing?p.facing*325:p.Attacking&&p.grounded?p.axis*25:p.axis*Speed;
             p.x=M.Clamp(p.x+vx*dt,22,618);
@@ -159,16 +183,29 @@ namespace TiqueReturn
                 if(p.x+6>ledge.x&&p.x-6<ledge.xMax&&oldY<=ledge.y+.01f&&p.y>=ledge.y)landing=M.Min(landing,ledge.y);
             p.grounded=false;
             if(p.vy>=0&&oldY<=landing+.01f&&p.y>=landing)
-            {p.y=landing;p.vy=0;p.grounded=true;p.jumps=0;p.graceUntil=-100;if(!grounded){p.landAge=0;Sound?.Invoke("land");}}
+            {p.y=landing;p.vy=0;p.grounded=true;p.jumps=0;p.graceUntil=-100;if(!grounded){p.landAge=0;Sound?.Invoke("land");feedback.Emit("dust",p.x,p.y);}}
             if(grounded&&!p.grounded&&p.jumps==0){p.graceUntil=clock+.12f;p.airAge=9;Event("walk-off");}
             if(p.grounded&&!p.Dashing&&!p.Attacking)p.walkAge+=M.Abs(p.x-oldX)/45;
             p.attackAge+=dt;p.dashAge+=dt;p.airAge+=dt;p.landAge+=dt;
+            actionConsumed=action;
+            idleAge=p.axis==0&&p.grounded&&!p.Dashing&&!p.Attacking?idleAge+dt:0;
             if(p.grounded&&!p.Dashing&&p.dashCooldown<=0)p.dashReady=true;
+        }
+        void AdvancePuzzleVisual(float dt)
+        {
+            float previous=puzzle.motion;puzzle.AdvanceVisual(dt);
+            if(previous>0&&puzzle.motion<=0&&puzzle.lastPushedBox>=0)
+            {
+                int b=puzzle.lastPushedBox;bool orb=puzzle.room.types[b]==1;
+                float x=OpeningSequence.FootX(puzzle.boxes[b]%7),y=OpeningSequence.FootY(puzzle.boxes[b]/7);
+                if(orb){x+=OpeningSequence.DirectionX(puzzle.lastDirection)*13;y+=OpeningSequence.DirectionY(puzzle.lastDirection)*13-13;}
+                feedback.Emit(orb?"orb-stop":"weight-settle",x,y,puzzle.lastDirection==0?-1:1,.14f);
+            }
         }
         public void Damage(string cause)
         {
             if(phase!=Journey.Combat||hero.invincible>0||hero.Dashing)return;
-            health--;hero.invincible=assisted?1.5f:1.1f;hero.attackAge=9;shake=.18f;Event("hurt-"+cause);Sound?.Invoke("hurt");
+            health--;hurtAt=clock;feedback.Emit("hurt",hero.x,hero.y-20,-hero.facing,.17f);hero.invincible=assisted?1.5f:1.1f;hero.attackAge=9;shake=.18f;Event("hurt-"+cause);Sound?.Invoke("hurt");
             if(health<=0){phase=Journey.Dead;age=0;deaths++;waves.Clear();Event("death");}
         }
         void BossTick(float dt)
@@ -193,10 +230,10 @@ namespace TiqueReturn
                     if(charged>=0&&(old+bossFacing*49-pylons[charged])*bossFacing<0&&(bossX+bossFacing*49-pylons[charged])*bossFacing>=0)
                     {
                         bossX=pylons[charged]-bossFacing*49;lastDischargedPylon=charged;dischargedAt=clock;charged=-1;chargeLife=0;chargeCooldown=2;
-                        breaks++;openHits=0;waves.Clear();Next(IronMove.Open);shake=.3f;Sound?.Invoke("hit");Event("armor-break");Say("장갑이 열렸어요! 기둥 쪽 붉은 틈을 J로 세 번 공격하세요.",4);break;
+                        feedback.Emit("pylon-impact",pylons[lastDischargedPylon],Floor-30,bossFacing,.15f);breaks++;openHits=0;waves.Clear();Next(IronMove.Open);shake=.3f;Sound?.Invoke("hit");Event("armor-break");Say("장갑이 열렸어요! 기둥 쪽 붉은 틈을 X로 세 번 공격하세요.",4);break;
                     }
                     if(M.Abs(hero.x-bossX)<61&&hero.y>Floor-58)Damage("charge");
-                    if(bossX<82||bossX>558){bossX=M.Clamp(bossX,82,558);Next(IronMove.Recover);shake=.2f;}break;
+                    if(bossX<82||bossX>558){bossX=M.Clamp(bossX,82,558);feedback.Emit("wall-brake",bossX+bossFacing*52,Floor,bossFacing);Event("wall-brake");Next(IronMove.Recover);shake=.2f;}break;
                 case IronMove.WaveAim:
                     if(bossAge>warn){Next(IronMove.Wave);SpawnWaves();}break;
                 case IronMove.Wave:
@@ -212,7 +249,7 @@ namespace TiqueReturn
                     if(bossY>=Floor)
                     {
                         bossX=aimX;if(M.Abs(hero.x-bossX)<68&&hero.y>Floor-75)Damage("slam");
-                        shake=.23f;Sound?.Invoke("land");if(Rage>=2)SpawnWaves();Next(IronMove.Recover);
+                        feedback.Emit("slam-dust",bossX,Floor,1,.24f);shake=.23f;Sound?.Invoke("land");if(Rage>=2)SpawnWaves();Next(IronMove.Recover);
                     }break;
                 case IronMove.Open:
                     if(bossAge>(assisted?7:5.2f))Next(IronMove.Recover);break;
