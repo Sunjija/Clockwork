@@ -190,7 +190,6 @@ namespace TiqueReturn
                 {
                     string pylon=WorldArtState.Pylon(m,i,out float pylonAge);
                     StateProp("pylon"+i,pylon,pylonAge,m.pylons[i]-21,222,5,pylon=="pylon-expiring");
-                    if(m.charged==i)Bar("power"+i,m.pylons[i]-19,285,38*m.chargeLife/16,2,cyan,6);
                 }
                 int bossFrame=WardenAnimation.Select(m,durations,out string bossClip);
                 // Boot rises out of the dark slump; shutdown falls back into it and holds the last frame.
@@ -201,7 +200,6 @@ namespace TiqueReturn
                 {
                     string core=WorldArtState.Core(m,out float coreAge);
                     StateProp("exposed-core",core,coreAge,m.WeakX-16,m.WeakY-18,11);
-                    if(m.Vulnerable)Bar("open-time",m.bossX-42,m.bossY-112,84*(1-Mathf.Clamp01(m.bossAge/(m.assisted?7:5.2f))),2,gold,12);
                 }
                 if(m.bossMove==IronMove.ChargeAim)
                 {

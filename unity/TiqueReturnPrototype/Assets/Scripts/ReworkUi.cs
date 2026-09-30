@@ -19,9 +19,19 @@ namespace TiqueReturn
         void Text(int x,int y,int width,string value,Color? tint=null,int scale=1)
         {
             int px=x,py=y;GUI.color=tint??ink;
-            foreach(char c in value)
+            for(int k=0;k<value.Length;k++)
             {
-                if(c=='\n'||px+Advance(c)*scale>x+width){px=x;py+=16*scale;if(c=='\n')continue;}
+                char c=value[k];
+                if(c=='\n'){px=x;py+=16*scale;continue;}
+                // Wrap before a word that would overflow (words end at spaces), so
+                // punctuation stays attached to its word; over-long words still break.
+                if(px>x&&(k==0||value[k-1]==' '||value[k-1]=='\n')&&c!=' ')
+                {
+                    int word=0;for(int j=k;j<value.Length&&value[j]!=' '&&value[j]!='\n';j++)word+=Advance(value[j])*scale;
+                    if(px+word>x+width&&word<=width){px=x;py+=16*scale;}
+                }
+                if(px+Advance(c)*scale>x+width){px=x;py+=16*scale;}
+                if(px==x&&c==' ')continue;
                 if(glyphIndex.TryGetValue(c,out int i))GUI.DrawTextureWithTexCoords(new Rect(px,py,16*scale,16*scale),fontAtlas,
                     new Rect(i%glyphs.columns*16f/fontAtlas.width,1-(i/glyphs.columns+1)*16f/fontAtlas.height,16f/fontAtlas.width,16f/fontAtlas.height),true);
                 px+=Advance(c)*scale;
@@ -92,17 +102,20 @@ namespace TiqueReturn
             if(Input.GetKeyDown(KeyCode.Return))MenuAction(menuSelection);
             return true;
         }
+        // 10x12 cells fill their slots; the boss meter groups 3+3+3 with a brass notch.
+        static int CellsWidth(int count,bool boss)=>boss?6+count*12+6+3:24+count*13+3;
         void Cells(int x,int y,int count,int hp,bool boss,float lostAge)
         {
-            Panel(x,y,boss?136:104,20);
-            if(!boss)UiSprite(hp>0?"heart-full":"heart-empty",new Rect(x+3,y+2,16,16));
+            Panel(x,y,CellsWidth(count,boss),20);
+            if(!boss)UiSprite(hp>0?"heart-full":"heart-empty",new Rect(x+4,y+2,16,16));
             for(int i=0;i<count;i++)
             {
                 string kind=boss?"iron-":"tique-cell-";kind+=i<hp?"full":i==hp&&lostAge<.2f?"ghost":"empty";
-                int cx=x+(boss?5:25)+i*(boss?13:14);
-                UiSprite(kind,new Rect(cx,y+(boss?3:5),boss?10:8,boss?12:10));
-                if(i==hp&&lostAge<.05f){GUI.color=ink;GUI.DrawTexture(new Rect(cx+2,y+4,boss?6:12,1),Texture2D.whiteTexture);GUI.color=Color.white;}
-                if(boss&&(i==2||i==5)){GUI.color=gold;GUI.DrawTexture(new Rect(cx+11,y+3,1,15),Texture2D.whiteTexture);GUI.color=Color.white;}
+                int cx=boss?x+6+i*12+i/3*3:x+24+i*13;
+                UiSprite(kind,new Rect(cx,y+4,10,12));
+                // The lost cell's core flashes white for one beat, then shows the pale afterimage.
+                if(i==hp&&lostAge<.05f){GUI.color=ink;GUI.DrawTexture(new Rect(cx+2,y+6,6,8),Texture2D.whiteTexture);GUI.color=Color.white;}
+                if(boss&&(i==2||i==5)){GUI.color=gold;GUI.DrawTexture(new Rect(cx+11,y+5,1,10),Texture2D.whiteTexture);GUI.color=Color.white;}
             }
         }
         void Gauge(int x,int y,int width,float value,Color color)
@@ -121,8 +134,8 @@ namespace TiqueReturn
                 Text(64,94,520,"티크: 귀환 회로",ink,2);
                 Text(64,153,504,"멈춘 공장. 아직 뛰는 작은 하트 하나.\n세 회로를 잇고 폐기 명령을 끝내세요.");
                 if(Button(64,208,234,"시작   Enter"))MenuAction(0);
-                Text(64,247,504,"퍼즐: 방향키 / Z 되돌리기 / R 초기화 / H 힌트",dim);
-                Text(64,278,504,"전투: ← → 이동 / Z Space ↑ 점프 / X 공격 / C 대시\nE 상호작용   Esc 정지   F11 전체화면",dim);return;
+                Text(64,244,504,"퍼즐: 방향키 / Z 되돌리기 / R 초기화 / H 힌트",dim);
+                Text(64,268,504,"전투: ← → 이동 / Z Space ↑ 점프 / X 공격 / C 대시\nE 상호작용   Esc 정지   F11 전체화면",dim);return;
             }
             if(m.phase==Journey.Opening)
             {
@@ -135,7 +148,7 @@ namespace TiqueReturn
             }
             else if(!m.InArena)
             {
-                Panel(12,12,616,36);Text(24,23,390,"귀환 동력실  회로 "+(m.roomIndex+1)+" / 3",cyan);Circuit(548,24,m.roomIndex);
+                Panel(12,12,616,36);Text(24,23,390,"귀환 동력실  회로 "+(m.roomIndex+1)+" / 3",cyan);
                 Panel(12,63,174,168);string[] names={"무게의 자리","멈추는 곳","서로의 벽"};Text(24,75,154,names[m.roomIndex],gold);
                 Text(24,110,150,"노란 추\n한 칸씩 밀기",gold);
                 Text(24,168,150,m.roomIndex==0?"뒤로 돌아갈\n길을 남기세요.":"시안 구슬\n벽까지 미끄러짐",cyan);
@@ -155,10 +168,11 @@ namespace TiqueReturn
                 {
                     int hp=m.health;if(m.clock-m.hudRefillAt<.2f)hp=Math.Min(m.health,(int)((m.clock-m.hudRefillAt)/.04f)+1);
                     Cells(12,12,5,hp,false,m.clock-m.hurtAt);Cells(252,12,9,m.bossHealth,true,m.clock-m.lastBossDamageAt);
-                    Text(398,15,220,"철갑 문지기",dim);
+                    Text(252+CellsWidth(9,true)+6,15,200,"철갑 문지기",dim);
                     if((m.bossHealth==6||m.bossHealth==3)&&m.clock-m.lastBossDamageAt<.22f){UiSprite("icon-locked",new Rect(238,16,12,12),gold);}
-                    if(m.health==1)Text(119,16,120,"위험",red);
-                    if(m.hero.invincible>0&&m.phase==Journey.Combat)UiSprite("protect",new Rect(119,8,24,24));
+                    int after=12+CellsWidth(5,false)+4;
+                    if(m.hero.invincible>0&&m.phase==Journey.Combat)UiSprite("protect",new Rect(after,10,20,20));
+                    if(m.health==1)Text(after+24,16,120,"위험",red);
                 }
                 string state=m.phase==Journey.Restored?"폐기 명령 해제. 오른쪽 문에서 E":m.Vulnerable?"노심 노출 / X 공격":m.bossMove==IronMove.ChargeAim?"돌진: 기둥 뒤로 유도":m.bossMove==IronMove.WaveAim?"충격파: 점프":m.bossMove==IronMove.SlamAim?"낙하: 표시 밖으로 대시":"E 충전 → 유도 → X 반격";
                 if(m.phase!=Journey.Arrival){Panel(188,41,264,27);Text(198,47,244,state,m.Vulnerable?cyan:gold);}

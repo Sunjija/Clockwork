@@ -1,0 +1,78 @@
+{
+  "tool": "tools/art/author_return_polish.py",
+  "method": "explicit native pixels (character grids / integer pixel rules); no resampling of generated images",
+  "clips": [
+    {
+      "clip": "tique-cell-full",
+      "frames": 1,
+      "size": [
+        10,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "v5 cell was a 4px capsule inside an 8x10 slot; reads as a tick at 1x"
+    },
+    {
+      "clip": "tique-cell-empty",
+      "frames": 1,
+      "size": [
+        10,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "matching empty socket"
+    },
+    {
+      "clip": "tique-cell-ghost",
+      "frames": 1,
+      "size": [
+        10,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "pale steel afterimage, never brighter than a live cell"
+    },
+    {
+      "clip": "iron-full",
+      "frames": 1,
+      "size": [
+        10,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "iron cell fills its slot; chamfered plate vs round Tique cell"
+    },
+    {
+      "clip": "iron-empty",
+      "frames": 1,
+      "size": [
+        10,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "matching empty socket"
+    },
+    {
+      "clip": "iron-ghost",
+      "frames": 1,
+      "size": [
+        10,
+        12
+      ],
+      "durations": [
+        1000
+      ],
+      "why": "dim afterimage"
+    }
+  ]
+}

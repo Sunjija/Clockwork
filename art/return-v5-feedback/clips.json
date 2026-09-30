@@ -214,24 +214,24 @@
       "durations": [
         1000
       ],
-      "width": 8,
-      "height": 10
+      "width": 10,
+      "height": 12
     },
     {
       "name": "tique-cell-empty",
       "durations": [
         1000
       ],
-      "width": 8,
-      "height": 10
+      "width": 10,
+      "height": 12
     },
     {
       "name": "tique-cell-ghost",
       "durations": [
         1000
       ],
-      "width": 8,
-      "height": 10
+      "width": 10,
+      "height": 12
     },
     {
       "name": "icon-undo",

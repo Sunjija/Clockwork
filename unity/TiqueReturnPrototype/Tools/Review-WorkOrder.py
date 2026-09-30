@@ -4,7 +4,10 @@ import json,hashlib,sys
 from PIL import Image
 P=Path(__file__).resolve().parents[1];R=P.parents[1];Q=P/'QA/WorkOrderV01';F=P/'Assets/Resources/ReturnV2/Feedback'
 old=json.loads((Q/'original-sha256.json').read_text(encoding='utf-8'))
-changed=[n for n,h in old.items() if hashlib.sha256((R/n).read_bytes()).hexdigest()!=h]
+# Text originals were hashed on a CRLF checkout; .gitattributes checks them out as LF elsewhere.
+def digests(b):
+    lf=b.replace(b'\r\n',b'\n');return {hashlib.sha256(b).hexdigest(),hashlib.sha256(lf).hexdigest(),hashlib.sha256(lf.replace(b'\n',b'\r\n')).hexdigest()}
+changed=[n for n,h in old.items() if h not in digests((R/n).read_bytes())]
 assert not changed,changed
 clips=json.loads((F/'clips.json').read_text(encoding='utf-8'))['clips'];frames=0
 artRoot=R/'art/return-v5-feedback'
