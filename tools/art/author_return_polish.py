@@ -370,15 +370,22 @@ def fx_pylon_impact():
 
 
 def fx_dust():
-    # Shared jump/land/dash dust (32x16, anchored on the ground row 15).
+    # Shared jump/land/dash dust (32x16, ground row 15): a full cloud of overlapping
+    # shaded puffs on the contact beat, rolling outward and thinning, with specks.
     d = [30, 40, 40, 45, 45]
+    specks = [(16 + s * 3, 13, s * v, -35 - v // 3, [(.1, 'e', 1), (.2, 'f', 1)]) for s in (-1, 1) for v in (40, 70)]
+    t = times_at(d)
     frames = []
-    for off, r, lift in [(3, 1.5, 0), (6, 2.6, 0), (9, 2.8, 1), (11, 2.0, 2), (12, 1.0, 3)]:
+    for i, (spread, r, lift, n) in enumerate([(3, 2.4, 0, 2), (6, 3.4, 0, 3), (9, 3.2, 1, 3), (12, 2.4, 2, 2), (13, 1.4, 3, 1)]):
         im = blank(32, 16)
-        for s in (-1, 1):
-            puff(im, 16 + s * off, 14 - lift - r * .4, r, floor=15)
+        for side in (-1, 1):
+            for k in reversed(range(n)):
+                cx = 16 + side * (spread - k * 3)
+                puff(im, cx, 14 - lift - k * .7 - r * .3, r - k * .45, floor=15)
+        if i:
+            im.alpha_composite(particles(32, 16, specks, t[i] + .02, floor=15, g=200))
         frames.append(im)
-    put(frames[0], 16, 15, 'e'); line(frames[1], 13, 15, 19, 15, 'f')
+    line(frames[0], 11, 15, 21, 15, 'e'); line(frames[1], 8, 15, 24, 15, 'f')
     return frames, d
 
 
@@ -389,14 +396,16 @@ def fx_slam_dust():
     t = times_at(d)
     frames = []
     # Overlapping puffs make one low dust wall per side that rolls outward and thins.
-    for i, (reach, puffs, r) in enumerate([(22, 0, 0), (34, 3, 3.2), (40, 4, 3.8), (44, 4, 3.4), (46, 3, 2.4), (47, 2, 1.4)]):
+    for i, (reach, puffs, r) in enumerate([(22, 0, 0), (34, 4, 4.4), (40, 5, 5.0), (44, 5, 4.4), (46, 4, 3.2), (47, 3, 1.8)]):
         im = blank(96, 24)
         if i < 2:
             line(im, 48 - reach, 23, 48 + reach, 23, 'E' if i == 0 else 'e'); line(im, 44, 22, 52, 22, 'w' if i == 0 else 'E')
         for s in (-1, 1):
             for k in reversed(range(puffs)):
-                cx = 48 + s * (10 + k * 6 + i * 4)
-                puff(im, cx, 21 - (k % 2) * .8 - i * .3, r - k * .35, floor=23)
+                # Alternate big/small puffs and heights so the wall reads as one cloud.
+                rk = r - k * .45 + (.8 if k % 2 == 0 else -.4)
+                cx = 48 + s * (9 + k * 6 + i * 4)
+                puff(im, cx, 22 - rk * .6 - (k % 2) * 1.5 - i * .3, rk, floor=23)
         if i:
             im.alpha_composite(particles(96, 24, debris, t[i] + .02, floor=23, g=260))
         frames.append(im)
