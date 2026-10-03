@@ -1,0 +1,18 @@
+{
+  "clips": [
+    {
+      "name": "guardian-collapse",
+      "durations": [
+        300,
+        110,
+        110,
+        110,
+        110,
+        110,
+        2150
+      ],
+      "width": 640,
+      "height": 360
+    }
+  ]
+}

@@ -1,0 +1,1915 @@
+{
+  "revision": "guardian-v8-selective-distortion-correction",
+  "date": "2026-10-02",
+  "workflow": "Actual edited generated full-pose anchors -> fixed V7 palette native derivation -> limited pulse/reuse -> editable Return exports",
+  "canvas": [
+    192,
+    176
+  ],
+  "baselineRow": 163,
+  "footRegistrationContract": "Grounded whole poses use planted-foot column median row163, not lowest opaque pixel. Jaw-impact03/04 retain lowest row164 with median163; no further geometric correction.",
+  "palette": [
+    "#000000",
+    "#020103",
+    "#03040d",
+    "#050406",
+    "#0a0a13",
+    "#10101a",
+    "#161621",
+    "#1d1f2f",
+    "#1e2942",
+    "#24324e",
+    "#2e3e5d",
+    "#2f2a37",
+    "#34476a",
+    "#3b3542",
+    "#3d0b0c",
+    "#424960",
+    "#4e4049",
+    "#4f546a",
+    "#5c6074",
+    "#6a6d7e",
+    "#6d3238",
+    "#700b0a",
+    "#7a7a87",
+    "#851413",
+    "#888792",
+    "#9897a1",
+    "#ab2723",
+    "#aeacb4",
+    "#ceccd1",
+    "#d4332b",
+    "#e8655d",
+    "#f8f8f8"
+  ],
+  "nativeInputs": {
+    "idle": {
+      "path": "art/return-v8-guardian/Source/Native/idle.png",
+      "sha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54"
+    },
+    "jaw-impact-03": {
+      "path": "art/return-v8-guardian/Source/Native/jaw-impact-03.png",
+      "sha256": "e098d3a29f23501fb4a52b91c1ab66de055940920a8d849c664e3c27e6b716b6"
+    },
+    "jaw-impact-04": {
+      "path": "art/return-v8-guardian/Source/Native/jaw-impact-04.png",
+      "sha256": "0f7081e8376f09e04d83c96e98d07bce0ef60d3f41b406901dfa0ec08fdbec8b"
+    },
+    "jaw-impact-05": {
+      "path": "art/return-v8-guardian/Source/Native/jaw-impact-05.png",
+      "sha256": "74b35dee0915255ae7d221293da37be405a40b9cc49da98066031d2df3600d75"
+    },
+    "slam-land": {
+      "path": "art/return-v8-guardian/Source/Native/slam-land.png",
+      "sha256": "cf8de711b55bedc6ce288b898752ca6867368f21fa59d9f9aa3ee365f4a358d2"
+    }
+  },
+  "nativeDerivationRecord": "Source/Derivation/native-derivation.json",
+  "nativeDerivationSha256": "ac838f21e4ed27e718c876cfdbf506ca290ef0e8296159499318cd596e826305",
+  "unchangedV7Hashes": {
+    "slam-land/00.png": "9999321409529b069c0d52a8bf6c68e1a5b93eddca1ea30c1db6cbb8f812efb6",
+    "slam-land/01.png": "75d576fd16f8248416c96ca443dd2f2f666fa3a6e05986b4d1e39670d91958e0",
+    "slam-land/02.png": "6f30bd40189cf0d20253c89826489242899f20fe1b43812f70348bf02b6bdc68",
+    "idle/00.png": "6f30bd40189cf0d20253c89826489242899f20fe1b43812f70348bf02b6bdc68",
+    "idle/01.png": "bc19d716a824377991e570556700d5ce0fc18a716414013134a22bbd716fdd4e",
+    "idle/03.png": "a4544adaf9381a3226dd66ed5a6aa1a981f20f3404524362d1ce35f5ca747ff3",
+    "idle/02.png": "f3767cb6b30f4f7f3c4513bfc9eea74ce84bef0766d7822a88ccc4714b104372",
+    "idle/06.png": "31bc1226fa2d8e91d5f80090ea251264645147ebea21ce16050311dfe00f3f95",
+    "idle/07.png": "220d29bffbc34f3460705130f33356730065aac17a1f9aefb627030812208c5f",
+    "idle/05.png": "2991aff6add19ee6ab587298583066af0602a4187f266c3d089115638de1f1c9",
+    "idle/04.png": "250f9d630cbee24e4f77c264f1625254692c5ce9b9c2e8842a8fd5753b0538bc",
+    "charge-roll/00.png": "ff7c8fa85ec446d6be7090dce2d85889ff5548d213afe98672655f58e9324768",
+    "charge-roll/01.png": "6fada7791ea0d4d234a2b2cf284df46001076e4d0c7acae558f7764aaa076bc8",
+    "charge-roll/02.png": "d112d2b5e49ff53ff88bb71df9834eed58f9a3a225a4cf987ad84013c90b9fd6",
+    "walk/00.png": "25c285cae8af89c2c5104548f27691d7befb7984612790069b6f792db3e959e7",
+    "walk/01.png": "368d2175ab0fdafbeddac78cf4930bfd89b7884d79e0f867014b89c65265cbfc",
+    "walk/03.png": "4b89e8ff5639eb75b6a506d83aa537791bfe0252d302b6cba0bee5d3b1c3c9b6",
+    "walk/02.png": "3b5849b5a6939249bff5ab77c8ceb6b20dfb8ae5d96998c2d0e64d40c97c0ad4",
+    "walk/06.png": "f0406c97d8d220a732ec5eaa4e4b6b9c752fdec5f2477985f77f651df0969372",
+    "walk/07.png": "724df293126c99d0f8810a7d0f24b9431f9dd6313adfb19454cbd56177a33c58",
+    "walk/05.png": "b8cf3afcb329fcd80aa2f877a0ae40f7d390f9237909dd19d86b991797799da8",
+    "walk/04.png": "ca6f43441dd2c3045e296085fbe6184ac0ce23c8be8e88542c7eacc210cd99ac",
+    "boot/00.png": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+    "boot/01.png": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+    "boot/03.png": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+    "boot/02.png": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+    "boot/06.png": "eb993a32da474263515ae2224d4fdccfd67c252fcd5c82eec3159f0a453e4b1d",
+    "boot/07.png": "d7496f48861251f3065b18945466c6db838fa494e0a44537ea0de3a094c05017",
+    "boot/05.png": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+    "boot/04.png": "19c8c9647b1a759458da787447b8ef94adfdd6f2a81395bc49e942b619aee1cf",
+    "wave-strike/00.png": "34aca92f7a5286b9009ae912af138466645332d15e6e3723a3e3c1665f9852a7",
+    "wave-strike/01.png": "50e58de508e5a798fc722a13686df33bc494d329d5c0484711cf4576a2ba7729",
+    "wave-strike/03.png": "4dac18723d6a0646e1e51f2644bd9beef3bbe284b1676f8c731f75a917e528ad",
+    "wave-strike/02.png": "795ece63c7ed21fa53d9903b82857a4314b54983769189ecbcae44df70dcd61a",
+    "charge-aim/00.png": "57708b3bdbb9f2ed1f9b3a67e8f999799a6437e8fd61c3c42f7a100a5f53f405",
+    "charge-aim/01.png": "da081cecc2c7eeb0e15eab027943370f50ea5632d3af1c94704d12616dc6555c",
+    "charge-aim/02.png": "57782f31125cda6b339cb58b7900c5c82c6c8b4c3437e1752f53effe12593d38",
+    "core-flash/00.png": "c537d23c5bfe8627a3a0f49aba21e374cc6dfb0cdf80309cbbe6458bf11e51e0",
+    "core-flash/01.png": "569ccfdfb4de42f50025c1eb79e3fa89dc3f74bf660cb9727469a2d123f92b5e",
+    "defeat/00.png": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+    "defeat/01.png": "828c6ff2e8465e49753def44d872f85db12f3eaad34d9e1a7230ab397ce57d81",
+    "defeat/03.png": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+    "defeat/02.png": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+    "defeat/05.png": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+    "defeat/04.png": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+    "slam-fall/00.png": "dd39fc4a9b6613083f323147a28bc7f7d77a6b9ff5fa9fcfdd130eb24a38a1ed",
+    "slam-fall/01.png": "ce47924ba44595f0ddb51be24af8e1b9dc0989359a03fb3bf816c3f47841fe96",
+    "stagger-open/00.png": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+    "stagger-open/01.png": "831c7aeeeebf3386c9133da11f7e3b5f14d8a382568c97f31b92797df7b98f03",
+    "stagger-open/03.png": "50464eea281a4aa33fff57feb6619c910e5811217f888a0e7ee2d5cb3e4ecca9",
+    "stagger-open/02.png": "14a3d77fbc9dc6000b184c43dc6b1b6bec646e2186e9425061c79bb904b186ad",
+    "slam-rise/00.png": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+    "slam-rise/01.png": "20aa88cd4bd99ee3233d0c3ffd3ca4e8fbc007d09396c0226b08e20eecd06cd8",
+    "slam-rise/03.png": "75e71cae0659071d7edc7739c1a52ee61721336b3f491fbaaccbf460ee26240f",
+    "slam-rise/02.png": "ddbd1eeee89ecf3f2c1755f7b63944e7308216cf65edd8f31fbf50d890c7e305",
+    "slam-rise/04.png": "21f922ce4d0494fa6b24f7d9236d0c4740dbba71663203c0861959479ce99fd3",
+    "stagger-close/00.png": "61e13a018e8f1084694f54e8f5e1c3af103faa3b6ac0826fa354a00fc226976b",
+    "stagger-close/01.png": "591ad6ceea6e278239172bfd5d90473b701eb84d53e6bc8edee06f0b409addb4",
+    "stagger-close/03.png": "b496441062cd90627b4e5e64e98fddb75dc941d7cd1c1babec0ce1b417169596",
+    "stagger-close/02.png": "bdd7af93524b1698c7470fcff0aa1b37d7b628b05d5f8dd8de6591efae5e1c0c",
+    "wave-aim/00.png": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+    "wave-aim/01.png": "119523bbd84892da08be653c1b17626ea11f25683531273c7d9c15958aaf0169",
+    "wave-aim/03.png": "3faeb812189f92fcc738c6de255c3ec4cbe705837718e7c565c07ae3ca48c7a1",
+    "wave-aim/02.png": "f688261b33dbc75950bfb39d15d403c214bfff93d380c5c1986b35e55d0fe788",
+    "charge-crash/00.png": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+    "charge-crash/01.png": "ae72dee913c3463dc4b04f37a92481271e472b55f816284208f1e9c4a79d5ec7",
+    "charge-crash/03.png": "76769bf6cf9c3bfa3b92cc82a9fef1accf62444902ef0b05b0a02806d9dd0b89",
+    "charge-crash/02.png": "34e2a348402f011e1d693467ef5b35a6f3548552da10750d76c2bd7e6aed9e8a",
+    "charge-crash/06.png": "06cb048a3b102485226e91300b0e0faf0b7b65dbc959d96796aa11536f89290f",
+    "charge-crash/05.png": "6c91ec24491cc04a419093e73efc97ac40e6afe392a94f33fc1a5c292ef14e50",
+    "charge-crash/04.png": "4cf143cc02c1806292b4824b1aa61fac913a935a690e9dc696b375bcb1582828"
+  },
+  "mappings": [
+    {
+      "name": "idle",
+      "durations": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110,
+        110
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/00.png",
+          "v7Sha256": "6f30bd40189cf0d20253c89826489242899f20fe1b43812f70348bf02b6bdc68",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/00.png",
+          "runtimeSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "rgbaSha256": "9e8bc71de7223b95ca9a799aa1e040458fdf4957332804394d066d70cc256aa0",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 8379,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/01.png",
+          "v7Sha256": "bc19d716a824377991e570556700d5ce0fc18a716414013134a22bbd716fdd4e",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/01.png",
+          "runtimeSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "rgbaSha256": "9e8bc71de7223b95ca9a799aa1e040458fdf4957332804394d066d70cc256aa0",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 7787,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/02.png",
+          "v7Sha256": "f3767cb6b30f4f7f3c4513bfc9eea74ce84bef0766d7822a88ccc4714b104372",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/02.png",
+          "runtimeSha256": "e84ec9021a562e48786eafa9a42d605a8152c0306cea93e5bc703b326045d4bd",
+          "rgbaSha256": "22fa0085cbaf18158894a2a0a2a271a4640cead66dbc1d64c354807224f70c5b",
+          "changedPixelsFromSource": 49,
+          "changedPixelsFromV7": 8717,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/03.png",
+          "v7Sha256": "a4544adaf9381a3226dd66ed5a6aa1a981f20f3404524362d1ce35f5ca747ff3",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/03.png",
+          "runtimeSha256": "e84ec9021a562e48786eafa9a42d605a8152c0306cea93e5bc703b326045d4bd",
+          "rgbaSha256": "22fa0085cbaf18158894a2a0a2a271a4640cead66dbc1d64c354807224f70c5b",
+          "changedPixelsFromSource": 49,
+          "changedPixelsFromV7": 8967,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/03.v7-edits.json"
+        },
+        {
+          "frame": 4,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/04.png",
+          "v7Sha256": "250f9d630cbee24e4f77c264f1625254692c5ce9b9c2e8842a8fd5753b0538bc",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/04.png",
+          "runtimeSha256": "e84ec9021a562e48786eafa9a42d605a8152c0306cea93e5bc703b326045d4bd",
+          "rgbaSha256": "22fa0085cbaf18158894a2a0a2a271a4640cead66dbc1d64c354807224f70c5b",
+          "changedPixelsFromSource": 49,
+          "changedPixelsFromV7": 7910,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/04.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/04.v7-edits.json"
+        },
+        {
+          "frame": 5,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/05.png",
+          "v7Sha256": "2991aff6add19ee6ab587298583066af0602a4187f266c3d089115638de1f1c9",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/05.png",
+          "runtimeSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "rgbaSha256": "9e8bc71de7223b95ca9a799aa1e040458fdf4957332804394d066d70cc256aa0",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 7800,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/05.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/05.v7-edits.json"
+        },
+        {
+          "frame": 6,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/06.png",
+          "v7Sha256": "31bc1226fa2d8e91d5f80090ea251264645147ebea21ce16050311dfe00f3f95",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/06.png",
+          "runtimeSha256": "223b7e8c8076025bc1699bff5dedc43bebf85dac7c02b1a3bcc31cdbc87a303a",
+          "rgbaSha256": "64a0fc72f3df77e54deaec0250fdd20a186b5830baf18dc1d9943aa24f0fd109",
+          "changedPixelsFromSource": 44,
+          "changedPixelsFromV7": 8083,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/06.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/06.v7-edits.json"
+        },
+        {
+          "frame": 7,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source; existing vent red-ramp pulse only",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/idle/07.png",
+          "v7Sha256": "220d29bffbc34f3460705130f33356730065aac17a1f9aefb627030812208c5f",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/07.png",
+          "runtimeSha256": "223b7e8c8076025bc1699bff5dedc43bebf85dac7c02b1a3bcc31cdbc87a303a",
+          "rgbaSha256": "64a0fc72f3df77e54deaec0250fdd20a186b5830baf18dc1d9943aa24f0fd109",
+          "changedPixelsFromSource": 44,
+          "changedPixelsFromV7": 8096,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/idle/07.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/idle/07.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "walk",
+      "durations": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/00.png",
+          "sourceSha256": "25c285cae8af89c2c5104548f27691d7befb7984612790069b6f792db3e959e7",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/00.png",
+          "v7Sha256": "25c285cae8af89c2c5104548f27691d7befb7984612790069b6f792db3e959e7",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/00.png",
+          "runtimeSha256": "25c285cae8af89c2c5104548f27691d7befb7984612790069b6f792db3e959e7",
+          "rgbaSha256": "9e9b5b1e01204634bb95a3d78ee1379c0c97ac5e713021373c3d543ff57b7a5f",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            82,
+            163,
+            167
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/01.png",
+          "sourceSha256": "368d2175ab0fdafbeddac78cf4930bfd89b7884d79e0f867014b89c65265cbfc",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/01.png",
+          "v7Sha256": "368d2175ab0fdafbeddac78cf4930bfd89b7884d79e0f867014b89c65265cbfc",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/01.png",
+          "runtimeSha256": "368d2175ab0fdafbeddac78cf4930bfd89b7884d79e0f867014b89c65265cbfc",
+          "rgbaSha256": "e42e0e9e33ea252fee6765bedf8c272bc74c8052a492b24623e06239096a8710",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            82,
+            163,
+            167
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/02.png",
+          "sourceSha256": "3b5849b5a6939249bff5ab77c8ceb6b20dfb8ae5d96998c2d0e64d40c97c0ad4",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/02.png",
+          "v7Sha256": "3b5849b5a6939249bff5ab77c8ceb6b20dfb8ae5d96998c2d0e64d40c97c0ad4",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/02.png",
+          "runtimeSha256": "3b5849b5a6939249bff5ab77c8ceb6b20dfb8ae5d96998c2d0e64d40c97c0ad4",
+          "rgbaSha256": "118f2f76d23afb7dc296112ec88df7895c382848b676558995cd470b56216586",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            27,
+            82,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/03.png",
+          "sourceSha256": "4b89e8ff5639eb75b6a506d83aa537791bfe0252d302b6cba0bee5d3b1c3c9b6",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/03.png",
+          "v7Sha256": "4b89e8ff5639eb75b6a506d83aa537791bfe0252d302b6cba0bee5d3b1c3c9b6",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/03.png",
+          "runtimeSha256": "4b89e8ff5639eb75b6a506d83aa537791bfe0252d302b6cba0bee5d3b1c3c9b6",
+          "rgbaSha256": "d8731db7c6c27f7c9f2d9007c13455afca5ccd494cf31cf074ed61a278f59695",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            81,
+            165,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/03.v7-edits.json"
+        },
+        {
+          "frame": 4,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/04.png",
+          "sourceSha256": "ca6f43441dd2c3045e296085fbe6184ac0ce23c8be8e88542c7eacc210cd99ac",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/04.png",
+          "v7Sha256": "ca6f43441dd2c3045e296085fbe6184ac0ce23c8be8e88542c7eacc210cd99ac",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/04.png",
+          "runtimeSha256": "ca6f43441dd2c3045e296085fbe6184ac0ce23c8be8e88542c7eacc210cd99ac",
+          "rgbaSha256": "6faab0e151daa3a1ea3498a782e5e908837efac339d4f9ed60e9a8351ec3ab36",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            82,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/04.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/04.v7-edits.json"
+        },
+        {
+          "frame": 5,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/05.png",
+          "sourceSha256": "b8cf3afcb329fcd80aa2f877a0ae40f7d390f9237909dd19d86b991797799da8",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/05.png",
+          "v7Sha256": "b8cf3afcb329fcd80aa2f877a0ae40f7d390f9237909dd19d86b991797799da8",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/05.png",
+          "runtimeSha256": "b8cf3afcb329fcd80aa2f877a0ae40f7d390f9237909dd19d86b991797799da8",
+          "rgbaSha256": "feffc772b59a47362cfb763125f631b847f903a51aa162c2629ad5e5c0c98918",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            82,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/05.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/05.v7-edits.json"
+        },
+        {
+          "frame": 6,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/06.png",
+          "sourceSha256": "f0406c97d8d220a732ec5eaa4e4b6b9c752fdec5f2477985f77f651df0969372",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/06.png",
+          "v7Sha256": "f0406c97d8d220a732ec5eaa4e4b6b9c752fdec5f2477985f77f651df0969372",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/06.png",
+          "runtimeSha256": "f0406c97d8d220a732ec5eaa4e4b6b9c752fdec5f2477985f77f651df0969372",
+          "rgbaSha256": "7329e832e633b37e1014e9573a4bf2bcf136b0bf466c5abec41037c3a86fed1b",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            80,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/06.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/06.v7-edits.json"
+        },
+        {
+          "frame": 7,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/07.png",
+          "sourceSha256": "724df293126c99d0f8810a7d0f24b9431f9dd6313adfb19454cbd56177a33c58",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/walk/07.png",
+          "v7Sha256": "724df293126c99d0f8810a7d0f24b9431f9dd6313adfb19454cbd56177a33c58",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/walk/07.png",
+          "runtimeSha256": "724df293126c99d0f8810a7d0f24b9431f9dd6313adfb19454cbd56177a33c58",
+          "rgbaSha256": "82f1737b5bcdc6cb9b9845bafe30755aa501db7aadc4f6d7a75c28519544d822",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            82,
+            162,
+            167
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/walk/07.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/walk/07.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "charge-aim",
+      "durations": [
+        90,
+        170,
+        1000
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-aim/00.png",
+          "sourceSha256": "57708b3bdbb9f2ed1f9b3a67e8f999799a6437e8fd61c3c42f7a100a5f53f405",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-aim/00.png",
+          "v7Sha256": "57708b3bdbb9f2ed1f9b3a67e8f999799a6437e8fd61c3c42f7a100a5f53f405",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-aim/00.png",
+          "runtimeSha256": "57708b3bdbb9f2ed1f9b3a67e8f999799a6437e8fd61c3c42f7a100a5f53f405",
+          "rgbaSha256": "3bf2df8a186667763d9244371f00a7c1dfa14d7d476e01eba91e28a71eb43283",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            80,
+            161,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-aim/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-aim/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-aim/01.png",
+          "sourceSha256": "da081cecc2c7eeb0e15eab027943370f50ea5632d3af1c94704d12616dc6555c",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-aim/01.png",
+          "v7Sha256": "da081cecc2c7eeb0e15eab027943370f50ea5632d3af1c94704d12616dc6555c",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-aim/01.png",
+          "runtimeSha256": "da081cecc2c7eeb0e15eab027943370f50ea5632d3af1c94704d12616dc6555c",
+          "rgbaSha256": "f13ebd48bafd97b4d7dc845648aea1e33c36ee06ea39871605391fa7ea34fd13",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            85,
+            164,
+            166
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-aim/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-aim/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-aim/02.png",
+          "sourceSha256": "57782f31125cda6b339cb58b7900c5c82c6c8b4c3437e1752f53effe12593d38",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-aim/02.png",
+          "v7Sha256": "57782f31125cda6b339cb58b7900c5c82c6c8b4c3437e1752f53effe12593d38",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-aim/02.png",
+          "runtimeSha256": "57782f31125cda6b339cb58b7900c5c82c6c8b4c3437e1752f53effe12593d38",
+          "rgbaSha256": "bc384e1f49549eeeff046a5c780d18848b7391d70269e811167970b0bdd10df4",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            34,
+            103,
+            153,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-aim/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-aim/02.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "charge-roll",
+      "durations": [
+        80,
+        80,
+        80
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-roll/00.png",
+          "sourceSha256": "ff7c8fa85ec446d6be7090dce2d85889ff5548d213afe98672655f58e9324768",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-roll/00.png",
+          "v7Sha256": "ff7c8fa85ec446d6be7090dce2d85889ff5548d213afe98672655f58e9324768",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-roll/00.png",
+          "runtimeSha256": "ff7c8fa85ec446d6be7090dce2d85889ff5548d213afe98672655f58e9324768",
+          "rgbaSha256": "7addba790f348b633811a472d6c3a1e1e62048ab95ce445a93b841f5941d09b1",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            31,
+            103,
+            153,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-roll/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-roll/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-roll/01.png",
+          "sourceSha256": "6fada7791ea0d4d234a2b2cf284df46001076e4d0c7acae558f7764aaa076bc8",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-roll/01.png",
+          "v7Sha256": "6fada7791ea0d4d234a2b2cf284df46001076e4d0c7acae558f7764aaa076bc8",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-roll/01.png",
+          "runtimeSha256": "6fada7791ea0d4d234a2b2cf284df46001076e4d0c7acae558f7764aaa076bc8",
+          "rgbaSha256": "8f37efe9b41ea6e8a7ca5e3d3985978128e0705b2372dd295a32e6d8351a6fcc",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            95,
+            154,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-roll/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-roll/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-roll/02.png",
+          "sourceSha256": "d112d2b5e49ff53ff88bb71df9834eed58f9a3a225a4cf987ad84013c90b9fd6",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-roll/02.png",
+          "v7Sha256": "d112d2b5e49ff53ff88bb71df9834eed58f9a3a225a4cf987ad84013c90b9fd6",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-roll/02.png",
+          "runtimeSha256": "d112d2b5e49ff53ff88bb71df9834eed58f9a3a225a4cf987ad84013c90b9fd6",
+          "rgbaSha256": "634627bcd9ca3dffbb5b772fac3cf5f90f099f1990de2ac57f76ee2ba570ea70",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            104,
+            154,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-roll/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-roll/02.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "charge-crash",
+      "durations": [
+        90,
+        120,
+        120,
+        110,
+        110,
+        100,
+        100
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/00.png",
+          "sourceSha256": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/00.png",
+          "v7Sha256": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-crash/00.png",
+          "runtimeSha256": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+          "rgbaSha256": "9f41fa5e701539677e3cb193334c87d4b80e148b8d67d419d614dcca2fc5b396",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            32,
+            85,
+            151,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-crash/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-crash/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/01.png",
+          "sourceSha256": "ae72dee913c3463dc4b04f37a92481271e472b55f816284208f1e9c4a79d5ec7",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/01.png",
+          "v7Sha256": "ae72dee913c3463dc4b04f37a92481271e472b55f816284208f1e9c4a79d5ec7",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-crash/01.png",
+          "runtimeSha256": "ae72dee913c3463dc4b04f37a92481271e472b55f816284208f1e9c4a79d5ec7",
+          "rgbaSha256": "a28186b67811e440a4094455c3206cbc5f46c862cc73c5d936bbadb5dd2819b9",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            27,
+            58,
+            154,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-crash/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-crash/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/02.png",
+          "sourceSha256": "34e2a348402f011e1d693467ef5b35a6f3548552da10750d76c2bd7e6aed9e8a",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/02.png",
+          "v7Sha256": "34e2a348402f011e1d693467ef5b35a6f3548552da10750d76c2bd7e6aed9e8a",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-crash/02.png",
+          "runtimeSha256": "34e2a348402f011e1d693467ef5b35a6f3548552da10750d76c2bd7e6aed9e8a",
+          "rgbaSha256": "da30a3968f2684734105a67e22456f0ebace8a95140aeb6d91921818c73038d5",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            34,
+            58,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-crash/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-crash/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/03.png",
+          "sourceSha256": "76769bf6cf9c3bfa3b92cc82a9fef1accf62444902ef0b05b0a02806d9dd0b89",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/03.png",
+          "v7Sha256": "76769bf6cf9c3bfa3b92cc82a9fef1accf62444902ef0b05b0a02806d9dd0b89",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-crash/03.png",
+          "runtimeSha256": "76769bf6cf9c3bfa3b92cc82a9fef1accf62444902ef0b05b0a02806d9dd0b89",
+          "rgbaSha256": "58054e7a727094aa472c40e8d6957ae5a79bbf549b0a0d36b0abfdf7f7b783e6",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            34,
+            64,
+            165,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-crash/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-crash/03.v7-edits.json"
+        },
+        {
+          "frame": 4,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/04.png",
+          "sourceSha256": "4cf143cc02c1806292b4824b1aa61fac913a935a690e9dc696b375bcb1582828",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/04.png",
+          "v7Sha256": "4cf143cc02c1806292b4824b1aa61fac913a935a690e9dc696b375bcb1582828",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-crash/04.png",
+          "runtimeSha256": "4cf143cc02c1806292b4824b1aa61fac913a935a690e9dc696b375bcb1582828",
+          "rgbaSha256": "af1d0e4b658aa22f44239e649eb1281e5dd9c972655d68a5b6f725737e918215",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            34,
+            76,
+            161,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-crash/04.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-crash/04.v7-edits.json"
+        },
+        {
+          "frame": 5,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/05.png",
+          "sourceSha256": "6c91ec24491cc04a419093e73efc97ac40e6afe392a94f33fc1a5c292ef14e50",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/05.png",
+          "v7Sha256": "6c91ec24491cc04a419093e73efc97ac40e6afe392a94f33fc1a5c292ef14e50",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-crash/05.png",
+          "runtimeSha256": "6c91ec24491cc04a419093e73efc97ac40e6afe392a94f33fc1a5c292ef14e50",
+          "rgbaSha256": "c2389f03bca6d306a306087ac322a737693a13f27b38977957d0ca1e55a35d47",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            34,
+            78,
+            162,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-crash/05.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-crash/05.v7-edits.json"
+        },
+        {
+          "frame": 6,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/06.png",
+          "sourceSha256": "06cb048a3b102485226e91300b0e0faf0b7b65dbc959d96796aa11536f89290f",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/charge-crash/06.png",
+          "v7Sha256": "06cb048a3b102485226e91300b0e0faf0b7b65dbc959d96796aa11536f89290f",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/charge-crash/06.png",
+          "runtimeSha256": "06cb048a3b102485226e91300b0e0faf0b7b65dbc959d96796aa11536f89290f",
+          "rgbaSha256": "ae982be14b904684501b9c2ce100be964e2d4f21b109b826c26b6cf15191b543",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            32,
+            72,
+            159,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/charge-crash/06.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/charge-crash/06.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "stagger-open",
+      "durations": [
+        70,
+        90,
+        110,
+        1000
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/00.png",
+          "sourceSha256": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/00.png",
+          "v7Sha256": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-open/00.png",
+          "runtimeSha256": "6ffdb6477382ffe422a5128b0b07267d398a1bd73b96baf256c42a495e88728a",
+          "rgbaSha256": "9f41fa5e701539677e3cb193334c87d4b80e148b8d67d419d614dcca2fc5b396",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            32,
+            85,
+            151,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-open/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-open/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/01.png",
+          "sourceSha256": "831c7aeeeebf3386c9133da11f7e3b5f14d8a382568c97f31b92797df7b98f03",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/01.png",
+          "v7Sha256": "831c7aeeeebf3386c9133da11f7e3b5f14d8a382568c97f31b92797df7b98f03",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-open/01.png",
+          "runtimeSha256": "831c7aeeeebf3386c9133da11f7e3b5f14d8a382568c97f31b92797df7b98f03",
+          "rgbaSha256": "f3c95f76dc2da1b6e8fb15383477641553070840c1d10523f5247091cfe20244",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            90,
+            163,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-open/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-open/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/02.png",
+          "sourceSha256": "14a3d77fbc9dc6000b184c43dc6b1b6bec646e2186e9425061c79bb904b186ad",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/02.png",
+          "v7Sha256": "14a3d77fbc9dc6000b184c43dc6b1b6bec646e2186e9425061c79bb904b186ad",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-open/02.png",
+          "runtimeSha256": "14a3d77fbc9dc6000b184c43dc6b1b6bec646e2186e9425061c79bb904b186ad",
+          "rgbaSha256": "4d61dfe7773acc2a48964e392394f07c151c1955d42642a73edb3967a2ca1b47",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            33,
+            77,
+            157,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-open/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-open/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/03.png",
+          "sourceSha256": "50464eea281a4aa33fff57feb6619c910e5811217f888a0e7ee2d5cb3e4ecca9",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-open/03.png",
+          "v7Sha256": "50464eea281a4aa33fff57feb6619c910e5811217f888a0e7ee2d5cb3e4ecca9",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-open/03.png",
+          "runtimeSha256": "50464eea281a4aa33fff57feb6619c910e5811217f888a0e7ee2d5cb3e4ecca9",
+          "rgbaSha256": "86492b23dc3eeaaab6aa21a8f9915af7742f3731a36f212b1a26d71a7d1ec479",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            31,
+            90,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-open/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-open/03.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "stagger-close",
+      "durations": [
+        120,
+        120,
+        120,
+        120
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/00.png",
+          "sourceSha256": "61e13a018e8f1084694f54e8f5e1c3af103faa3b6ac0826fa354a00fc226976b",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/00.png",
+          "v7Sha256": "61e13a018e8f1084694f54e8f5e1c3af103faa3b6ac0826fa354a00fc226976b",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-close/00.png",
+          "runtimeSha256": "61e13a018e8f1084694f54e8f5e1c3af103faa3b6ac0826fa354a00fc226976b",
+          "rgbaSha256": "aa8a17a5117b98d7b2f60a178dd806c07dfd140b31128e5f039b6b79478f6cf2",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            71,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-close/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-close/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/01.png",
+          "sourceSha256": "591ad6ceea6e278239172bfd5d90473b701eb84d53e6bc8edee06f0b409addb4",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/01.png",
+          "v7Sha256": "591ad6ceea6e278239172bfd5d90473b701eb84d53e6bc8edee06f0b409addb4",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-close/01.png",
+          "runtimeSha256": "591ad6ceea6e278239172bfd5d90473b701eb84d53e6bc8edee06f0b409addb4",
+          "rgbaSha256": "0098cb49f134a9bec214c1eb4b2e34380f00191cd5941816cee0d6ac2c61ba40",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            69,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-close/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-close/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/02.png",
+          "sourceSha256": "bdd7af93524b1698c7470fcff0aa1b37d7b628b05d5f8dd8de6591efae5e1c0c",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/02.png",
+          "v7Sha256": "bdd7af93524b1698c7470fcff0aa1b37d7b628b05d5f8dd8de6591efae5e1c0c",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-close/02.png",
+          "runtimeSha256": "bdd7af93524b1698c7470fcff0aa1b37d7b628b05d5f8dd8de6591efae5e1c0c",
+          "rgbaSha256": "82ef044a9ed82abe4f7481105a37df582b2046f807454b0c767f6a9298ffbf38",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            75,
+            162,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-close/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-close/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/03.png",
+          "sourceSha256": "b496441062cd90627b4e5e64e98fddb75dc941d7cd1c1babec0ce1b417169596",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/stagger-close/03.png",
+          "v7Sha256": "b496441062cd90627b4e5e64e98fddb75dc941d7cd1c1babec0ce1b417169596",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-close/03.png",
+          "runtimeSha256": "b496441062cd90627b4e5e64e98fddb75dc941d7cd1c1babec0ce1b417169596",
+          "rgbaSha256": "79ecfcb8e2ce8fd269475bcef5b5b6567867ce9a646f51bb5f7156a7977f3c68",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            27,
+            69,
+            158,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/stagger-close/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/stagger-close/03.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "wave-aim",
+      "durations": [
+        60,
+        110,
+        1000,
+        30
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/00.png",
+          "sourceSha256": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/00.png",
+          "v7Sha256": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-aim/00.png",
+          "runtimeSha256": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+          "rgbaSha256": "cbd95c81fb0dc6c6ba5f8d3dd264cdac26ae297a8fe882bb19bde0963d9fef07",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            33,
+            75,
+            161,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-aim/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-aim/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/01.png",
+          "sourceSha256": "119523bbd84892da08be653c1b17626ea11f25683531273c7d9c15958aaf0169",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/01.png",
+          "v7Sha256": "119523bbd84892da08be653c1b17626ea11f25683531273c7d9c15958aaf0169",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-aim/01.png",
+          "runtimeSha256": "119523bbd84892da08be653c1b17626ea11f25683531273c7d9c15958aaf0169",
+          "rgbaSha256": "fda1b1123462d9d6e501f4bcea69eee23469996c7eff3312a9f2ef591b65adcc",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            35,
+            85,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-aim/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-aim/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/02.png",
+          "sourceSha256": "f688261b33dbc75950bfb39d15d403c214bfff93d380c5c1986b35e55d0fe788",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/02.png",
+          "v7Sha256": "f688261b33dbc75950bfb39d15d403c214bfff93d380c5c1986b35e55d0fe788",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-aim/02.png",
+          "runtimeSha256": "f688261b33dbc75950bfb39d15d403c214bfff93d380c5c1986b35e55d0fe788",
+          "rgbaSha256": "325a01c66774fb97ae36b7890d85f18b500421f47f1804a15315477d12b0af2f",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            36,
+            159,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-aim/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-aim/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/03.png",
+          "sourceSha256": "3faeb812189f92fcc738c6de255c3ec4cbe705837718e7c565c07ae3ca48c7a1",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-aim/03.png",
+          "v7Sha256": "3faeb812189f92fcc738c6de255c3ec4cbe705837718e7c565c07ae3ca48c7a1",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-aim/03.png",
+          "runtimeSha256": "3faeb812189f92fcc738c6de255c3ec4cbe705837718e7c565c07ae3ca48c7a1",
+          "rgbaSha256": "71856b8f160c6cd5d93b65269dedb6dd67c363fb5fd441cede8dd4587527c8a9",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            66,
+            161,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-aim/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-aim/03.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "wave-strike",
+      "durations": [
+        120,
+        120,
+        200,
+        310
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source unchanged",
+          "sourcePath": "art/return-v8-guardian/Source/Native/jaw-impact-03.png",
+          "sourceSha256": "e098d3a29f23501fb4a52b91c1ab66de055940920a8d849c664e3c27e6b716b6",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/00.png",
+          "v7Sha256": "34aca92f7a5286b9009ae912af138466645332d15e6e3723a3e3c1665f9852a7",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/00.png",
+          "runtimeSha256": "e098d3a29f23501fb4a52b91c1ab66de055940920a8d849c664e3c27e6b716b6",
+          "rgbaSha256": "5896ab2f0e20afa2acc8d2d432f3a15f7f02650d24d154d50ff5f7d799756268",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 7173,
+          "bbox": [
+            28,
+            89,
+            164,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-strike/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-strike/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source unchanged",
+          "sourcePath": "art/return-v8-guardian/Source/Native/jaw-impact-04.png",
+          "sourceSha256": "0f7081e8376f09e04d83c96e98d07bce0ef60d3f41b406901dfa0ec08fdbec8b",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/01.png",
+          "v7Sha256": "50e58de508e5a798fc722a13686df33bc494d329d5c0484711cf4576a2ba7729",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/01.png",
+          "runtimeSha256": "0f7081e8376f09e04d83c96e98d07bce0ef60d3f41b406901dfa0ec08fdbec8b",
+          "rgbaSha256": "11afdb2aa4ae43b47e9cba2e73168d225143511cd9ff420aac4c9b836f5ee497",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 6353,
+          "bbox": [
+            28,
+            104,
+            164,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-strike/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-strike/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source unchanged",
+          "sourcePath": "art/return-v8-guardian/Source/Native/jaw-impact-05.png",
+          "sourceSha256": "74b35dee0915255ae7d221293da37be405a40b9cc49da98066031d2df3600d75",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/02.png",
+          "v7Sha256": "795ece63c7ed21fa53d9903b82857a4314b54983769189ecbcae44df70dcd61a",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/02.png",
+          "runtimeSha256": "74b35dee0915255ae7d221293da37be405a40b9cc49da98066031d2df3600d75",
+          "rgbaSha256": "aa5b393036c0918127af75c098ab596629af8b8cd5f756a7b3c31ef898c95f27",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 6221,
+          "bbox": [
+            28,
+            100,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-strike/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-strike/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/03.png",
+          "sourceSha256": "4dac18723d6a0646e1e51f2644bd9beef3bbe284b1676f8c731f75a917e528ad",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/03.png",
+          "v7Sha256": "4dac18723d6a0646e1e51f2644bd9beef3bbe284b1676f8c731f75a917e528ad",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/03.png",
+          "runtimeSha256": "4dac18723d6a0646e1e51f2644bd9beef3bbe284b1676f8c731f75a917e528ad",
+          "rgbaSha256": "7bfef15e9ed7f40cc5a9aa2efe7c67563bf926a58915b6d4e42347c151d3e9c1",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            71,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/wave-strike/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/wave-strike/03.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "slam-rise",
+      "durations": [
+        50,
+        80,
+        170,
+        150,
+        1000
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/00.png",
+          "sourceSha256": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/00.png",
+          "v7Sha256": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-rise/00.png",
+          "runtimeSha256": "f8142d3fd5804bd76feb63dff3b68ba3f4f5f4e16396a711b099bddb631e3125",
+          "rgbaSha256": "cbd95c81fb0dc6c6ba5f8d3dd264cdac26ae297a8fe882bb19bde0963d9fef07",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            33,
+            75,
+            161,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-rise/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-rise/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/01.png",
+          "sourceSha256": "20aa88cd4bd99ee3233d0c3ffd3ca4e8fbc007d09396c0226b08e20eecd06cd8",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/01.png",
+          "v7Sha256": "20aa88cd4bd99ee3233d0c3ffd3ca4e8fbc007d09396c0226b08e20eecd06cd8",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-rise/01.png",
+          "runtimeSha256": "20aa88cd4bd99ee3233d0c3ffd3ca4e8fbc007d09396c0226b08e20eecd06cd8",
+          "rgbaSha256": "7d6521e36bb5507be04f9c7fee4e39f451b0c4be661f2a010afe578894b97a8e",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            20,
+            88,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-rise/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-rise/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/02.png",
+          "sourceSha256": "ddbd1eeee89ecf3f2c1755f7b63944e7308216cf65edd8f31fbf50d890c7e305",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/02.png",
+          "v7Sha256": "ddbd1eeee89ecf3f2c1755f7b63944e7308216cf65edd8f31fbf50d890c7e305",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-rise/02.png",
+          "runtimeSha256": "ddbd1eeee89ecf3f2c1755f7b63944e7308216cf65edd8f31fbf50d890c7e305",
+          "rgbaSha256": "22e58a2b9544f662458ae56e04554ca44a4012aa3d2bf53329f79dcf781c9865",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            21,
+            50,
+            161,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-rise/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-rise/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/03.png",
+          "sourceSha256": "75e71cae0659071d7edc7739c1a52ee61721336b3f491fbaaccbf460ee26240f",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/03.png",
+          "v7Sha256": "75e71cae0659071d7edc7739c1a52ee61721336b3f491fbaaccbf460ee26240f",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-rise/03.png",
+          "runtimeSha256": "75e71cae0659071d7edc7739c1a52ee61721336b3f491fbaaccbf460ee26240f",
+          "rgbaSha256": "00db9b30ff5a8da0b3ad8a343e2d56e0737f1795d90758583f85d56098962d3a",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            32,
+            79,
+            162,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-rise/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-rise/03.v7-edits.json"
+        },
+        {
+          "frame": 4,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/04.png",
+          "sourceSha256": "21f922ce4d0494fa6b24f7d9236d0c4740dbba71663203c0861959479ce99fd3",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-rise/04.png",
+          "v7Sha256": "21f922ce4d0494fa6b24f7d9236d0c4740dbba71663203c0861959479ce99fd3",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-rise/04.png",
+          "runtimeSha256": "21f922ce4d0494fa6b24f7d9236d0c4740dbba71663203c0861959479ce99fd3",
+          "rgbaSha256": "07f58490cdb8032a4e86a6531b3454e308f28cd436586b58ff624c55a9f99e68",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            61,
+            140,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-rise/04.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-rise/04.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "slam-fall",
+      "durations": [
+        90,
+        1000
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-fall/00.png",
+          "sourceSha256": "dd39fc4a9b6613083f323147a28bc7f7d77a6b9ff5fa9fcfdd130eb24a38a1ed",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-fall/00.png",
+          "v7Sha256": "dd39fc4a9b6613083f323147a28bc7f7d77a6b9ff5fa9fcfdd130eb24a38a1ed",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-fall/00.png",
+          "runtimeSha256": "dd39fc4a9b6613083f323147a28bc7f7d77a6b9ff5fa9fcfdd130eb24a38a1ed",
+          "rgbaSha256": "1259b35be419c5254adacb21af728510bd427dcabba3d66c86fa6c44ae30c040",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            46,
+            13,
+            130,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-fall/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-fall/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-fall/01.png",
+          "sourceSha256": "ce47924ba44595f0ddb51be24af8e1b9dc0989359a03fb3bf816c3f47841fe96",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-fall/01.png",
+          "v7Sha256": "ce47924ba44595f0ddb51be24af8e1b9dc0989359a03fb3bf816c3f47841fe96",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-fall/01.png",
+          "runtimeSha256": "ce47924ba44595f0ddb51be24af8e1b9dc0989359a03fb3bf816c3f47841fe96",
+          "rgbaSha256": "774aa7e5cef699184a014a96522a1bcd25e82432e2d579c6f63f41cb76af969c",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            44,
+            37,
+            136,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-fall/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-fall/01.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "slam-land",
+      "durations": [
+        220,
+        250,
+        110
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source unchanged",
+          "sourcePath": "art/return-v8-guardian/Source/Native/slam-land.png",
+          "sourceSha256": "cf8de711b55bedc6ce288b898752ca6867368f21fa59d9f9aa3ee365f4a358d2",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-land/00.png",
+          "v7Sha256": "9999321409529b069c0d52a8bf6c68e1a5b93eddca1ea30c1db6cbb8f812efb6",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-land/00.png",
+          "runtimeSha256": "cf8de711b55bedc6ce288b898752ca6867368f21fa59d9f9aa3ee365f4a358d2",
+          "rgbaSha256": "db950ee94465977667ef8e9e572d730041111c449c54dd3ce62261d321b283c7",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 7384,
+          "bbox": [
+            22,
+            102,
+            171,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-land/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-land/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-land/01.png",
+          "sourceSha256": "75d576fd16f8248416c96ca443dd2f2f666fa3a6e05986b4d1e39670d91958e0",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-land/01.png",
+          "v7Sha256": "75d576fd16f8248416c96ca443dd2f2f666fa3a6e05986b4d1e39670d91958e0",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-land/01.png",
+          "runtimeSha256": "75d576fd16f8248416c96ca443dd2f2f666fa3a6e05986b4d1e39670d91958e0",
+          "rgbaSha256": "bd3a3868bef00d0fc486d06888a51a1b7b86e35be5c53fcbd34ef45dfc804757",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            21,
+            69,
+            157,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-land/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-land/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "generated-correction",
+          "method": "Corrected generated full-pose native source unchanged",
+          "sourcePath": "art/return-v8-guardian/Source/Native/idle.png",
+          "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-land/02.png",
+          "v7Sha256": "6f30bd40189cf0d20253c89826489242899f20fe1b43812f70348bf02b6bdc68",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-land/02.png",
+          "runtimeSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+          "rgbaSha256": "9e8bc71de7223b95ca9a799aa1e040458fdf4957332804394d066d70cc256aa0",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 8379,
+          "bbox": [
+            28,
+            76,
+            164,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/slam-land/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/slam-land/02.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "defeat",
+      "durations": [
+        110,
+        110,
+        110,
+        110,
+        110,
+        1000
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/00.png",
+          "sourceSha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/00.png",
+          "v7Sha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/00.png",
+          "runtimeSha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+          "rgbaSha256": "c559a9333582bdc2685abf3ab8d1a0757657e3ca84d76efb6f6e08c88641cac0",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            27,
+            93,
+            164,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/defeat/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/defeat/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/01.png",
+          "sourceSha256": "828c6ff2e8465e49753def44d872f85db12f3eaad34d9e1a7230ab397ce57d81",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/01.png",
+          "v7Sha256": "828c6ff2e8465e49753def44d872f85db12f3eaad34d9e1a7230ab397ce57d81",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/01.png",
+          "runtimeSha256": "828c6ff2e8465e49753def44d872f85db12f3eaad34d9e1a7230ab397ce57d81",
+          "rgbaSha256": "dc043006593ef5cd3849161286ed4b22f7c95cc26db5b772d2d87e7f1ad4f2ab",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            31,
+            103,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/defeat/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/defeat/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/02.png",
+          "sourceSha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/02.png",
+          "v7Sha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/02.png",
+          "runtimeSha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+          "rgbaSha256": "cee856491978698dd227496294a7a858704528fe3f9ca28e3d1869100f2cb802",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            110,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/defeat/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/defeat/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/03.png",
+          "sourceSha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/03.png",
+          "v7Sha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/03.png",
+          "runtimeSha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+          "rgbaSha256": "6054761d05c153cc75f7205233b1840450bda3258c2345d4352a068d8282242d",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            104,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/defeat/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/defeat/03.v7-edits.json"
+        },
+        {
+          "frame": 4,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/04.png",
+          "sourceSha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/04.png",
+          "v7Sha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/04.png",
+          "runtimeSha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+          "rgbaSha256": "7a027ec9eb77293032a243ee35c1af336bef6d3320dea8b4e6f6fca3387c0477",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            107,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/defeat/04.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/defeat/04.v7-edits.json"
+        },
+        {
+          "frame": 5,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/05.png",
+          "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/defeat/05.png",
+          "v7Sha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/05.png",
+          "runtimeSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+          "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            110,
+            163,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/defeat/05.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/defeat/05.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "boot",
+      "durations": [
+        500,
+        300,
+        250,
+        250,
+        250,
+        250,
+        300,
+        300
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/00.png",
+          "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/00.png",
+          "v7Sha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/00.png",
+          "runtimeSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+          "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            110,
+            163,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/01.png",
+          "sourceSha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/01.png",
+          "v7Sha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/01.png",
+          "runtimeSha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+          "rgbaSha256": "7a027ec9eb77293032a243ee35c1af336bef6d3320dea8b4e6f6fca3387c0477",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            107,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/01.v7-edits.json"
+        },
+        {
+          "frame": 2,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/02.png",
+          "sourceSha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/02.png",
+          "v7Sha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/02.png",
+          "runtimeSha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+          "rgbaSha256": "6054761d05c153cc75f7205233b1840450bda3258c2345d4352a068d8282242d",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            30,
+            104,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/02.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/02.v7-edits.json"
+        },
+        {
+          "frame": 3,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/03.png",
+          "sourceSha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/03.png",
+          "v7Sha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/03.png",
+          "runtimeSha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+          "rgbaSha256": "cee856491978698dd227496294a7a858704528fe3f9ca28e3d1869100f2cb802",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            29,
+            110,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/03.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/03.v7-edits.json"
+        },
+        {
+          "frame": 4,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/04.png",
+          "sourceSha256": "19c8c9647b1a759458da787447b8ef94adfdd6f2a81395bc49e942b619aee1cf",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/04.png",
+          "v7Sha256": "19c8c9647b1a759458da787447b8ef94adfdd6f2a81395bc49e942b619aee1cf",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/04.png",
+          "runtimeSha256": "19c8c9647b1a759458da787447b8ef94adfdd6f2a81395bc49e942b619aee1cf",
+          "rgbaSha256": "4d4d6f0384c71d66b9fe7c2dcfc327bdaf65e542205b555f72bd59463a449eda",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            31,
+            103,
+            165,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/04.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/04.v7-edits.json"
+        },
+        {
+          "frame": 5,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/05.png",
+          "sourceSha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/05.png",
+          "v7Sha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/05.png",
+          "runtimeSha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+          "rgbaSha256": "c559a9333582bdc2685abf3ab8d1a0757657e3ca84d76efb6f6e08c88641cac0",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            27,
+            93,
+            164,
+            165
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/05.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/05.v7-edits.json"
+        },
+        {
+          "frame": 6,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/06.png",
+          "sourceSha256": "eb993a32da474263515ae2224d4fdccfd67c252fcd5c82eec3159f0a453e4b1d",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/06.png",
+          "v7Sha256": "eb993a32da474263515ae2224d4fdccfd67c252fcd5c82eec3159f0a453e4b1d",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/06.png",
+          "runtimeSha256": "eb993a32da474263515ae2224d4fdccfd67c252fcd5c82eec3159f0a453e4b1d",
+          "rgbaSha256": "5205ff362cf53c724661dce91899fe895cecfe71b5c71917e0f37148108f8f1a",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            28,
+            81,
+            163,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/06.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/06.v7-edits.json"
+        },
+        {
+          "frame": 7,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/07.png",
+          "sourceSha256": "d7496f48861251f3065b18945466c6db838fa494e0a44537ea0de3a094c05017",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/boot/07.png",
+          "v7Sha256": "d7496f48861251f3065b18945466c6db838fa494e0a44537ea0de3a094c05017",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/07.png",
+          "runtimeSha256": "d7496f48861251f3065b18945466c6db838fa494e0a44537ea0de3a094c05017",
+          "rgbaSha256": "b1e7698a0fd6b4cebd126cca526baa70300298057723e0a1efb6fbd9da54634a",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            27,
+            73,
+            161,
+            164
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/boot/07.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/boot/07.v7-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "core-flash",
+      "durations": [
+        60,
+        80
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/core-flash/00.png",
+          "sourceSha256": "c537d23c5bfe8627a3a0f49aba21e374cc6dfb0cdf80309cbbe6458bf11e51e0",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/core-flash/00.png",
+          "v7Sha256": "c537d23c5bfe8627a3a0f49aba21e374cc6dfb0cdf80309cbbe6458bf11e51e0",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/core-flash/00.png",
+          "runtimeSha256": "c537d23c5bfe8627a3a0f49aba21e374cc6dfb0cdf80309cbbe6458bf11e51e0",
+          "rgbaSha256": "695c7259a2bfe498383aadbfc3478500994fe02ab6141df91146eed3094e05d2",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            58,
+            106,
+            82,
+            140
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/core-flash/00.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/core-flash/00.v7-edits.json"
+        },
+        {
+          "frame": 1,
+          "sourceKind": "unchanged-v7-reuse",
+          "method": "Unchanged V7 runtime PNG byte-for-byte reuse",
+          "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/core-flash/01.png",
+          "sourceSha256": "569ccfdfb4de42f50025c1eb79e3fa89dc3f74bf660cb9727469a2d123f92b5e",
+          "v7Path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/core-flash/01.png",
+          "v7Sha256": "569ccfdfb4de42f50025c1eb79e3fa89dc3f74bf660cb9727469a2d123f92b5e",
+          "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/core-flash/01.png",
+          "runtimeSha256": "569ccfdfb4de42f50025c1eb79e3fa89dc3f74bf660cb9727469a2d123f92b5e",
+          "rgbaSha256": "a473f96f10d28768602932c69eb13655de8e5f272790754073df23996a6b5874",
+          "changedPixelsFromSource": 0,
+          "changedPixelsFromV7": 0,
+          "bbox": [
+            58,
+            106,
+            82,
+            140
+          ],
+          "sourceEditsPath": "art/return-v8-guardian/Clips/core-flash/01.source-edits.json",
+          "v7EditsPath": "art/return-v8-guardian/Clips/core-flash/01.v7-edits.json"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "clips": 15,
+    "frames": 71,
+    "correctedRuntimePngs": 13,
+    "unchangedV7ByteIdenticalPngs": 58,
+    "paletteColors": 32,
+    "canvas": [
+      192,
+      176
+    ],
+    "baselineRow": 163,
+    "namesAndDurationsPreserved": true,
+    "heldCoreAndCoreFlashPreserved": true,
+    "intendedCurlAndAirRotationsPreserved": true,
+    "idleSilhouetteInvariant": true,
+    "idleGeometricBreathing": false,
+    "binaryAlpha": true,
+    "point": true,
+    "mipmaps": false,
+    "compression": false,
+    "spritePixelsToUnits": 64,
+    "apngRoundtrip": "all frames RGBA and durations exact",
+    "piskelReplay": "all frames RGBA exact",
+    "pixelDeltaReplay": "all frames RGBA exact",
+    "nativeSourceEditReplay": "all frames RGBA exact",
+    "v7EditReplay": "all frames RGBA exact",
+    "runtimeCopies": "all PNG SHA256 exact",
+    "unityBuildPerformed": false,
+    "gameLaunched": false,
+    "runtimeCapture": false,
+    "humanAppearanceApproval": "pending"
+  },
+  "scope": "Selective asset correction only. No runtime build, game launch, visual approval or gameplay timing changes."
+}

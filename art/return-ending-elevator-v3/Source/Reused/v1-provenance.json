@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-02",
+  "mode": "built-in image_gen",
+  "useCase": "stylized-concept",
+  "inspectedByMain": true,
+  "inspectedNativeByMain": true,
+  "shownToUser": true,
+  "humanAppearanceApproval": "pending",
+  "requestSet": {
+    "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Source/requests.json",
+    "sha256": "a51a6f2a50131105a4cb2beaf74ce42bce6409c25a976bad6b2fada40a3c64ea"
+  },
+  "editRequest": {
+    "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Source/requests-edits.json",
+    "sha256": "41ac0a3c1342de129b1c65d4b69e9fd27a290fbc095c9ce774b654fd1db51619"
+  },
+  "selectedSources": {
+    "relay": {
+      "original": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-338f16a7-e9c4-4fb0-9706-61505cbad6e0.png",
+      "projectCopy": "Source/Generated/relay.png",
+      "sha256": "00be7ded9692b3c48affe192153d7e34fb4e1405faf1fc5bad0b0e4772df3721",
+      "references": [
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-a-board.png",
+          "sha256": "a15774c6911cfcee8bd8e196d5464c4e2eca6a887e0b795b8254059062203058"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/StateArt/workshop-power-3/00.png",
+          "sha256": "c64f75ad58ca289881105392358eb61b6b389a86a2fde13c69a3641cce1d221a"
+        }
+      ]
+    },
+    "warden-core": {
+      "original": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-21f29787-8bc8-4e45-bee9-00a937adde9e.png",
+      "projectCopy": "Source/Generated/warden-core.png",
+      "sha256": "df775e1b0cdcd5b149ae9e828a0348c56540437c5db5f84249ad63305ee236d2",
+      "references": [
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/00.png",
+          "sha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-open/03.png",
+          "sha256": "50464eea281a4aa33fff57feb6619c910e5811217f888a0e7ee2d5cb3e4ecca9"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-a-board.png",
+          "sha256": "a15774c6911cfcee8bd8e196d5464c4e2eca6a887e0b795b8254059062203058"
+        }
+      ]
+    },
+    "workshop": {
+      "original": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-9842a3d4-0f30-4db7-9f1e-375a5e94c7be.png",
+      "projectCopy": "Source/Generated/workshop.png",
+      "sha256": "97b5028b217fb3939659982e6a072bc265ac852c2f951a896f640d624d602572",
+      "references": [
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-b-board.png",
+          "sha256": "108056fec0dc42f363872d6caab8438bbd0323b8856416ffccf2bc1042995f5b"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/StateArt/workshop-power-3/00.png",
+          "sha256": "c64f75ad58ca289881105392358eb61b6b389a86a2fde13c69a3641cce1d221a"
+        }
+      ]
+    }
+  },
+  "preservedInitialWorkshop": {
+    "original": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-2d5ed956-8e6f-484e-b021-1344c62eb815.png",
+    "projectCopy": "Source/Generated/workshop-initial.png",
+    "sha256": "9171190d8cafb4ab3dfc78cec9164727dfb5ce9329775962ee5516954596f5c1"
+  },
+  "inspection": [
+    "Relay has one readable contact bridge, three cyan apertures and a cyan cable running right.",
+    "Guardian retains angular steel pressure jaws, an internal mouth red core, and no added eyes/human face.",
+    "Workshop has no NPC and the unintended bench cup was removed by a targeted imagegen edit.",
+    "Pixel-grid cleanup and exact palette will be mechanically derived from these individual sources, not a storyboard panel enlargement.",
+    "Do not claim source appearance or final native derivatives human-approved."
+  ],
+  "workflow": "Actual image generation -> main inspection and shown anchor -> native uniform sampling/palette -> small tracked masks -> existing PNG/Piskel/APNG format -> offline technical validation.",
+  "scope": "New isolated unapproved asset package only; no AI video, gameplay edits, Unity import/build, launcher update or game launch."
+}

@@ -1,0 +1,309 @@
+{
+  "version": 2,
+  "approval": "Native preview; human appearance approval pending",
+  "sourceGeneration": "Six actual built-in imagegen anchors selected in immutable Source/provenance.json; no original changed and no new generation substituted.",
+  "method": "alpha>=128 crop / premultiplied BOX / mild source unsharp / square-socket actual source brass-rim detail bias / 47 source palette colors + unchanged error red / nondithered nearest color / limited source silhouette and tone cleanup / fixed native registration",
+  "relatedEstablishedPipeline": [
+    "tools/art/dotify_guardian_motion.py",
+    "tools/art/prepare_tique_v10.py"
+  ],
+  "script": "tools/art/derive_readability_native_v2.py",
+  "scriptSha256": "7546982902021888fe1dad5489cd90f954036594b3010a2ac8dc7932629b4271",
+  "palette": "Source/Native/palette.json",
+  "paletteSha256": "4e740df266e99b59b2e767d4c86ec5fc7f2f392b282887932ad9a264f5bbfa8b",
+  "assets": {
+    "wall": {
+      "generatedSource": "Source/Generated/rev1/wall.png",
+      "sourceSha256": "84b56ce9db2fe0072d04bfc07906b7201f45f59f2912aeb4c8a4aa402af4080a",
+      "generatedDimensions": [
+        1254,
+        1254
+      ],
+      "cropAlphaThreshold": 128,
+      "cropRect": [
+        186,
+        199,
+        1069,
+        1035
+      ],
+      "targetCanvas": [
+        36,
+        36
+      ],
+      "fitSize": [
+        36,
+        36
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "fullCellContinuation": true,
+      "registration": {
+        "gridCell": [
+          36,
+          36
+        ],
+        "runtimeOffset": [
+          0,
+          0
+        ],
+        "nativeGroundRow": null
+      },
+      "output": "Source/Native/wall.png",
+      "outputSha256": "fda3561c2f87fb4c6a53fcb352b85f2e3a1921e793c7fe0a94e4275aacbcdb55",
+      "pixelMap": "Source/Derivation/wall-pixel-map.json",
+      "cleanupCount": 5,
+      "cleanupOperations": {
+        "source-edge-continuation": 3,
+        "low-contrast-single-pixel-fold": 2
+      },
+      "uniqueOpaqueColors": 14,
+      "opaquePixels": 1296
+    },
+    "weight": {
+      "generatedSource": "Source/Generated/rev1/weight.png",
+      "sourceSha256": "98c7d9c42a912d25aa85ab409876f1123b237b7830fa73106bc8c8e275081b2d",
+      "generatedDimensions": [
+        1215,
+        1295
+      ],
+      "cropAlphaThreshold": 128,
+      "cropRect": [
+        255,
+        277,
+        960,
+        1066
+      ],
+      "targetCanvas": [
+        30,
+        32
+      ],
+      "fitSize": [
+        29,
+        32
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "fullCellContinuation": false,
+      "registration": {
+        "gridCell": [
+          36,
+          36
+        ],
+        "runtimeOffset": [
+          3,
+          0
+        ],
+        "nativeGroundRow": 31
+      },
+      "output": "Source/Native/weight.png",
+      "outputSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+      "pixelMap": "Source/Derivation/weight-pixel-map.json",
+      "cleanupCount": 124,
+      "cleanupOperations": {
+        "low-contrast-single-pixel-fold": 9,
+        "source-silhouette-dark-ink": 115
+      },
+      "uniqueOpaqueColors": 18,
+      "opaquePixels": 761
+    },
+    "orb": {
+      "generatedSource": "Source/Generated/rev1/orb.png",
+      "sourceSha256": "aabfb002b31d174b55dd77d1c6a26d272b0ca01460f469bb9d246e037b1b2cd2",
+      "generatedDimensions": [
+        1254,
+        1254
+      ],
+      "cropAlphaThreshold": 128,
+      "cropRect": [
+        326,
+        342,
+        928,
+        951
+      ],
+      "targetCanvas": [
+        26,
+        26
+      ],
+      "fitSize": [
+        26,
+        26
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "fullCellContinuation": false,
+      "registration": {
+        "gridCell": [
+          36,
+          36
+        ],
+        "runtimeOffset": [
+          5,
+          6
+        ],
+        "nativeGroundRow": 25
+      },
+      "output": "Source/Native/orb.png",
+      "outputSha256": "16a8fba36b27c239f3529d09cb97f0d367d63eb257b2fd4ee4dcff63ecc00bba",
+      "pixelMap": "Source/Derivation/orb-pixel-map.json",
+      "cleanupCount": 54,
+      "cleanupOperations": {
+        "low-contrast-single-pixel-fold": 1,
+        "source-silhouette-dark-ink": 53
+      },
+      "uniqueOpaqueColors": 34,
+      "opaquePixels": 536
+    },
+    "weight_socket": {
+      "generatedSource": "Source/Generated/rev2/weight_socket.png",
+      "sourceSha256": "f7f20928d6d461eb3cf94a53779131520e31f99250dc230df5a75636979ccbef",
+      "generatedDimensions": [
+        1254,
+        1254
+      ],
+      "cropAlphaThreshold": 128,
+      "cropRect": [
+        283,
+        305,
+        971,
+        940
+      ],
+      "targetCanvas": [
+        36,
+        36
+      ],
+      "fitSize": [
+        32,
+        30
+      ],
+      "offset": [
+        2,
+        3
+      ],
+      "fullCellContinuation": false,
+      "registration": {
+        "gridCell": [
+          36,
+          36
+        ],
+        "runtimeOffset": [
+          0,
+          0
+        ],
+        "nativeGroundRow": null
+      },
+      "output": "Source/Native/weight_socket.png",
+      "outputSha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca",
+      "pixelMap": "Source/Derivation/weight_socket-pixel-map.json",
+      "cleanupCount": 69,
+      "cleanupOperations": {
+        "source-thin-brass-rim-detail-bias": 49,
+        "low-contrast-single-pixel-fold": 20
+      },
+      "uniqueOpaqueColors": 20,
+      "opaquePixels": 960
+    },
+    "orb_socket": {
+      "generatedSource": "Source/Generated/rev2/orb_socket.png",
+      "sourceSha256": "183e5da2c1868c107b9bbc002aa2d0ee6d463aad5621f9daa440a8141386db42",
+      "generatedDimensions": [
+        1254,
+        1254
+      ],
+      "cropAlphaThreshold": 128,
+      "cropRect": [
+        343,
+        351,
+        912,
+        901
+      ],
+      "targetCanvas": [
+        36,
+        36
+      ],
+      "fitSize": [
+        32,
+        31
+      ],
+      "offset": [
+        2,
+        2
+      ],
+      "fullCellContinuation": false,
+      "registration": {
+        "gridCell": [
+          36,
+          36
+        ],
+        "runtimeOffset": [
+          0,
+          0
+        ],
+        "nativeGroundRow": null
+      },
+      "output": "Source/Native/orb_socket.png",
+      "outputSha256": "438580e03dcfea98c56d70b73833a5a2945cbd0d785963405c3597dc36104191",
+      "pixelMap": "Source/Derivation/orb_socket-pixel-map.json",
+      "cleanupCount": 30,
+      "cleanupOperations": {
+        "low-contrast-single-pixel-fold": 30
+      },
+      "uniqueOpaqueColors": 26,
+      "opaquePixels": 764
+    },
+    "floor": {
+      "generatedSource": "Source/Generated/rev1/floor.png",
+      "sourceSha256": "f8768489030d984589ae62bf33dfb1d7699422977c6e9fcf39ad410bb5e9ba03",
+      "generatedDimensions": [
+        1254,
+        1254
+      ],
+      "cropAlphaThreshold": 128,
+      "cropRect": [
+        182,
+        196,
+        1072,
+        1056
+      ],
+      "targetCanvas": [
+        36,
+        36
+      ],
+      "fitSize": [
+        36,
+        36
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "fullCellContinuation": true,
+      "registration": {
+        "gridCell": [
+          36,
+          36
+        ],
+        "runtimeOffset": [
+          0,
+          0
+        ],
+        "nativeGroundRow": null
+      },
+      "output": "Source/Native/floor.png",
+      "outputSha256": "f5663fb4ead32c236d8a779d291ffd6f40b3da91ce64fb1618e77e98aa2deee3",
+      "pixelMap": "Source/Derivation/floor-pixel-map.json",
+      "cleanupCount": 33,
+      "cleanupOperations": {
+        "low-contrast-single-pixel-fold": 33
+      },
+      "uniqueOpaqueColors": 7,
+      "opaquePixels": 1296
+    }
+  },
+  "technicalVersusAppearance": "Dimensions, alpha, source hashes and repeatable conversion are technical evidence only. Native contact sheets and runtime feedback remain human visual/playtest gates."
+}

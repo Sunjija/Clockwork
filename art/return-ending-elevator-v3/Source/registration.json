@@ -1,0 +1,12 @@
+{
+  "nativeInspectedByMain": true,
+  "humanAppearanceApproval": "pending",
+  "carriageFloorAnchor": [64, 94],
+  "carCenterX": 310,
+  "lowerFloorY": 282,
+  "upperFloorY": 172,
+  "boardingStartX": 206,
+  "landingEndX": 410,
+  "workshopTiqueFoot": [430, 314],
+  "inspectionNotes": "Main inspected actual native background,128x128 transparent carriage, and existing workshop-wide. Use generated upper landing y172, not prompted y128. Car rear rail is y84; real continuous floor begins y94. Workshop actor stands below table at y314. Existing foot anchors stay unchanged; no sprite warp or newly painted contact pixels."
+}

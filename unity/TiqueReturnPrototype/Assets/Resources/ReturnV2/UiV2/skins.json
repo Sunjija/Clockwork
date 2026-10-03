@@ -1,0 +1,67 @@
+{
+  "version": 2,
+  "skins": [
+    {
+      "name": "panel",
+      "width": 96,
+      "height": 23,
+      "margins": [
+        10,
+        6,
+        10,
+        6
+      ]
+    },
+    {
+      "name": "button",
+      "width": 112,
+      "height": 21,
+      "margins": [
+        8,
+        5,
+        8,
+        5
+      ]
+    },
+    {
+      "name": "button-selected",
+      "width": 112,
+      "height": 21,
+      "margins": [
+        8,
+        5,
+        8,
+        5
+      ]
+    },
+    {
+      "name": "button-pressed",
+      "width": 112,
+      "height": 21,
+      "margins": [
+        8,
+        5,
+        8,
+        5
+      ]
+    },
+    {
+      "name": "button-disabled",
+      "width": 112,
+      "height": 21,
+      "margins": [
+        8,
+        5,
+        8,
+        5
+      ]
+    }
+  ],
+  "sliceOrder": [
+    "left",
+    "top",
+    "right",
+    "bottom"
+  ],
+  "rendering": "Keep corners native; crop/tile native edge pixels; do not scale whole skin geometry."
+}

@@ -1,0 +1,401 @@
+{
+  "clip": "guardian-collapse",
+  "exposures": [
+    {
+      "index": 0,
+      "startMs": 0,
+      "endMs": 300,
+      "pngSha256": "f1d3eeed1a932f04d798af125ca5ea3e01c2b48b8713e1cfd9a996508b11be1b",
+      "rgbaSha256": "6aef6be95a7f65b3eddd1a3ea7dae343580d64eaeb1c167f3b6850159fd049ec",
+      "subExposures": [
+        {
+          "startMs": 0,
+          "endMs": 300,
+          "phase": "standing",
+          "backgroundKey": "arena-closed",
+          "doorClosed": true,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                126,
+                226
+              ],
+              "foot": [
+                158,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            },
+            {
+              "sourceKey": "warden/idle/00",
+              "xy": [
+                354,
+                118
+              ],
+              "foot": [
+                450,
+                282
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "startMs": 300,
+      "endMs": 410,
+      "pngSha256": "a3480566671e29860af6a49aa7ab597bfa0128fa8090104e64d5bccb3539cb75",
+      "rgbaSha256": "8d9e620021374c68a1aeb45755ab76bac1239ad9a85969bf83a729d59fcda08f",
+      "subExposures": [
+        {
+          "startMs": 300,
+          "endMs": 410,
+          "phase": "collapse",
+          "backgroundKey": "arena-closed",
+          "doorClosed": true,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                126,
+                226
+              ],
+              "foot": [
+                158,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            },
+            {
+              "sourceKey": "warden/defeat/00",
+              "xy": [
+                354,
+                118
+              ],
+              "foot": [
+                450,
+                282
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "startMs": 410,
+      "endMs": 520,
+      "pngSha256": "631e05490971c2be3fc06abd6f1b51dd702eced171afd38b00b1fab7898154bc",
+      "rgbaSha256": "e2705ff441789479b5d74484a6445aeadf9b823cdfe3e00590ea24356d460382",
+      "subExposures": [
+        {
+          "startMs": 410,
+          "endMs": 520,
+          "phase": "collapse",
+          "backgroundKey": "arena-closed",
+          "doorClosed": true,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                126,
+                226
+              ],
+              "foot": [
+                158,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            },
+            {
+              "sourceKey": "warden/defeat/01",
+              "xy": [
+                354,
+                118
+              ],
+              "foot": [
+                450,
+                282
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "828c6ff2e8465e49753def44d872f85db12f3eaad34d9e1a7230ab397ce57d81"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "startMs": 520,
+      "endMs": 630,
+      "pngSha256": "3b431f71a9900b3471ef8b85319ab4c5b66a0af495f831a0784030db60b25ec2",
+      "rgbaSha256": "7a47510b4f789734cded0027f349d88b0a8f36b499d5ecdfa98aeae433cea540",
+      "subExposures": [
+        {
+          "startMs": 520,
+          "endMs": 630,
+          "phase": "collapse",
+          "backgroundKey": "arena-closed",
+          "doorClosed": true,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                126,
+                226
+              ],
+              "foot": [
+                158,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            },
+            {
+              "sourceKey": "warden/defeat/02",
+              "xy": [
+                354,
+                118
+              ],
+              "foot": [
+                450,
+                282
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "startMs": 630,
+      "endMs": 740,
+      "pngSha256": "c8177bca0fc5b77ecbf110f9419cb286958a1f3f43ab7c723df730f6018e1ec9",
+      "rgbaSha256": "34192b269d1a82b9cc6c353636d3479110634c26dadfccdaec537c09852476ef",
+      "subExposures": [
+        {
+          "startMs": 630,
+          "endMs": 740,
+          "phase": "collapse",
+          "backgroundKey": "arena-closed",
+          "doorClosed": true,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                126,
+                226
+              ],
+              "foot": [
+                158,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            },
+            {
+              "sourceKey": "warden/defeat/03",
+              "xy": [
+                354,
+                118
+              ],
+              "foot": [
+                450,
+                282
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "startMs": 740,
+      "endMs": 850,
+      "pngSha256": "cfccd448c698d0955d173ad845ea83853f5527f56c81b84a36be829735374d66",
+      "rgbaSha256": "2de489ed66cc3dd47ae1a9c0b726359b65e45bececedb882833a874f92ff7297",
+      "subExposures": [
+        {
+          "startMs": 740,
+          "endMs": 850,
+          "phase": "collapse",
+          "backgroundKey": "arena-closed",
+          "doorClosed": true,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                126,
+                226
+              ],
+              "foot": [
+                158,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            },
+            {
+              "sourceKey": "warden/defeat/04",
+              "xy": [
+                354,
+                118
+              ],
+              "foot": [
+                450,
+                282
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "startMs": 850,
+      "endMs": 3000,
+      "pngSha256": "c4070367658eb647d6e4f6005d897fc796fe5f15559f740793fe0dc63e230a31",
+      "rgbaSha256": "495fad50b5747e0f8ceead59621bf08bd81d7c85d2d28415b6a86c5ca4781f4c",
+      "subExposures": [
+        {
+          "startMs": 850,
+          "endMs": 3000,
+          "phase": "collapse",
+          "backgroundKey": "arena-closed",
+          "doorClosed": true,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                126,
+                226
+              ],
+              "foot": [
+                158,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            },
+            {
+              "sourceKey": "warden/defeat/05",
+              "xy": [
+                354,
+                118
+              ],
+              "foot": [
+                450,
+                282
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "durationMs": 3000,
+  "pixelTranslationOnly": true,
+  "humanMotionApproval": "pending",
+  "runtimeCapture": false
+}

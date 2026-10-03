@@ -1,0 +1,98 @@
+[
+  {
+    "frame": 0,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 0
+  },
+  {
+    "frame": 1,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 0
+  },
+  {
+    "frame": 2,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 49
+  },
+  {
+    "frame": 3,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 49
+  },
+  {
+    "frame": 4,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 49
+  },
+  {
+    "frame": 5,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 0
+  },
+  {
+    "frame": 6,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 44
+  },
+  {
+    "frame": 7,
+    "bbox": [
+      28,
+      76,
+      164,
+      164
+    ],
+    "lowestOpaqueRow": 163,
+    "alphaSha256": "5b1db5c59656f5fe8976d19449689aca4846ef08ac01d00a68df0e7e4042c606",
+    "changedPixelsFromFixedPose": 44
+  }
+]

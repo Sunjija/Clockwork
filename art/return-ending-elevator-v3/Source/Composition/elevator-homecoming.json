@@ -1,0 +1,7021 @@
+{
+  "clip": "elevator-homecoming",
+  "exposures": [
+    {
+      "index": 0,
+      "startMs": 0,
+      "endMs": 40,
+      "pngSha256": "21d917e4dd552ff74c648b691393cfe5594a4a810b45ae5c2258382e6c39f1a6",
+      "rgbaSha256": "04bf434554f7c8d50acf2eb1e4255b252c5e78231292dfeb4947f9c78dbb3d0a",
+      "subExposures": [
+        {
+          "startMs": 0,
+          "endMs": 40,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/00",
+              "xy": [
+                174,
+                226
+              ],
+              "foot": [
+                206,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "startMs": 40,
+      "endMs": 60,
+      "pngSha256": "8f1a7fd27d9446ff884a202b2ba835f9e9b03389936ce57770c7f96458638463",
+      "rgbaSha256": "fae6ceb9be84999eaadc9579dd2566507ce479cebeea282b52f7f3dfaadb5b75",
+      "subExposures": [
+        {
+          "startMs": 40,
+          "endMs": 60,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/00",
+              "xy": [
+                179,
+                226
+              ],
+              "foot": [
+                211,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "startMs": 60,
+      "endMs": 80,
+      "pngSha256": "e82d5eaa7bbf958127ee98337340ca1a69c74825da162353bd170d6ca79d1498",
+      "rgbaSha256": "76020115bf970d6841957e2879244329c4c1addcb8fa43e76644db36d72848e7",
+      "subExposures": [
+        {
+          "startMs": 60,
+          "endMs": 80,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/01",
+              "xy": [
+                182,
+                226
+              ],
+              "foot": [
+                214,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "startMs": 80,
+      "endMs": 100,
+      "pngSha256": "42db94870b351a8cb093d7f4d41435da849b26e2f1d6a02a4a5d2fccb8ae22ab",
+      "rgbaSha256": "1ff90096514e693b84f5f22a385861bb47660c8d68e42c4d313ff842711eba6b",
+      "subExposures": [
+        {
+          "startMs": 80,
+          "endMs": 100,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/01",
+              "xy": [
+                185,
+                226
+              ],
+              "foot": [
+                217,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "startMs": 100,
+      "endMs": 120,
+      "pngSha256": "398b13e544488a01a105d008388a28621232f37db6901754ca0a1171185d41a3",
+      "rgbaSha256": "7e4e4e07cc1936389ede75d0bcfc7545e127bedc60ee10aeaf247223592dfef1",
+      "subExposures": [
+        {
+          "startMs": 100,
+          "endMs": 120,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/02",
+              "xy": [
+                188,
+                226
+              ],
+              "foot": [
+                220,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "startMs": 120,
+      "endMs": 160,
+      "pngSha256": "5d1adc17bc69593163b7e51125272b07d9b97d53be24e791e19f51930b168ea1",
+      "rgbaSha256": "d2e1f01c9a4f2748e389c22d103e99c0cc41b97cd9bc3b866988dd5770baeee8",
+      "subExposures": [
+        {
+          "startMs": 120,
+          "endMs": 160,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/02",
+              "xy": [
+                190,
+                226
+              ],
+              "foot": [
+                222,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "startMs": 160,
+      "endMs": 180,
+      "pngSha256": "77ddfe8bd2a256984f10f0af680434eaef657d4a94eb8fb86bd8d2ced4e9e2ee",
+      "rgbaSha256": "f3f2818d22ee316797f919933d340f7541727019455bea1260d599cd2276b165",
+      "subExposures": [
+        {
+          "startMs": 160,
+          "endMs": 180,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/02",
+              "xy": [
+                196,
+                226
+              ],
+              "foot": [
+                228,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "startMs": 180,
+      "endMs": 200,
+      "pngSha256": "47bea0891b9b545cd034dd3cbd8f5fa31412fa0ad53a4580452693bd5aa9547d",
+      "rgbaSha256": "27764d35a9a2dfde915a8a7f99ed06fb2084fb00fa7124b852604e11fe411b37",
+      "subExposures": [
+        {
+          "startMs": 180,
+          "endMs": 200,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/03",
+              "xy": [
+                199,
+                226
+              ],
+              "foot": [
+                231,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "startMs": 200,
+      "endMs": 240,
+      "pngSha256": "34512c7b546f5ed777d21e606a78231494ee206a432a68632f2c77a048e3a2a2",
+      "rgbaSha256": "2729c4c68195e28231a15339746e8dba00710425e28a6f6a4b29545023936149",
+      "subExposures": [
+        {
+          "startMs": 200,
+          "endMs": 240,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/03",
+              "xy": [
+                201,
+                226
+              ],
+              "foot": [
+                233,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "startMs": 240,
+      "endMs": 280,
+      "pngSha256": "eefc7d76caac5b7496f8dbfc7d5834ffa8117b25466caae54ae97577886294de",
+      "rgbaSha256": "3d60c5f2926a7468e51acbc54ed1d51f507036ebc855307673bbd8303d899024",
+      "subExposures": [
+        {
+          "startMs": 240,
+          "endMs": 280,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/04",
+              "xy": [
+                207,
+                226
+              ],
+              "foot": [
+                239,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "startMs": 280,
+      "endMs": 320,
+      "pngSha256": "c927a9ca451bafdad101422704ff9d167c63d0490d988cd72a4d0ecb5d93d48b",
+      "rgbaSha256": "b0b8389e1e67dbb109cc5bcabccb9844f2d04ff6abfecd15d3a366aeeceb5172",
+      "subExposures": [
+        {
+          "startMs": 280,
+          "endMs": 320,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/05",
+              "xy": [
+                212,
+                226
+              ],
+              "foot": [
+                244,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "startMs": 320,
+      "endMs": 360,
+      "pngSha256": "7da852f4a89fb923d4f83066a432752df053ffcf000d2e093193b4b5dc0aadf1",
+      "rgbaSha256": "3a07445d81c761c2626d040173d8f78b1a8d1ef0155bf4e8ea8bd96e463bbbde",
+      "subExposures": [
+        {
+          "startMs": 320,
+          "endMs": 360,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/06",
+              "xy": [
+                218,
+                226
+              ],
+              "foot": [
+                250,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "startMs": 360,
+      "endMs": 380,
+      "pngSha256": "1bd802ede06018ed88ecdb434e09bb90a6f9462a5d04c3699222d3ffa9f1cece",
+      "rgbaSha256": "600e2acf0c3f983c882170abf9b12bc20b7ee594ea3e01731b7b919dc9e35a5a",
+      "subExposures": [
+        {
+          "startMs": 360,
+          "endMs": 380,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/06",
+              "xy": [
+                223,
+                226
+              ],
+              "foot": [
+                255,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "startMs": 380,
+      "endMs": 400,
+      "pngSha256": "31da3d0653acf655e245cdb001a6eaf2e10af8bbd2d944fac1fef72a8d636df1",
+      "rgbaSha256": "18d01151026cf0f5556fe6edf439e95859c46f1ea4f0a12a6d9130121622e4e5",
+      "subExposures": [
+        {
+          "startMs": 380,
+          "endMs": 400,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/07",
+              "xy": [
+                226,
+                226
+              ],
+              "foot": [
+                258,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "startMs": 400,
+      "endMs": 440,
+      "pngSha256": "a4188b30835fd9932f93cfdf0a3a508210fd4a517a653dc8e75df7c1e67defd2",
+      "rgbaSha256": "8a14e118248ac17f4971842f297b7a88edaa5f77717ec727a12e78dc53be45a2",
+      "subExposures": [
+        {
+          "startMs": 400,
+          "endMs": 440,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/07",
+              "xy": [
+                229,
+                226
+              ],
+              "foot": [
+                261,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "startMs": 440,
+      "endMs": 480,
+      "pngSha256": "d1bb8d1c5487bfbc7f1721f516d73819aaeb82b330173209ff9c88ae6457b6c7",
+      "rgbaSha256": "9ccf4f38d02b686d4c647e58ca9734e33f19e6cf3ecc9b13e1fe85b4bbd3fcbc",
+      "subExposures": [
+        {
+          "startMs": 440,
+          "endMs": 480,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/07",
+              "xy": [
+                234,
+                226
+              ],
+              "foot": [
+                266,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "startMs": 480,
+      "endMs": 520,
+      "pngSha256": "ff7a5d1b65b68bcf1e9c8a6f29296c7aa79fdf0de2e5d81f91e3b4c02e2a759a",
+      "rgbaSha256": "d279a4a77758f5f7287df275eb78a962f021294ccadf3a818c40a8159f1c137d",
+      "subExposures": [
+        {
+          "startMs": 480,
+          "endMs": 520,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/08",
+              "xy": [
+                240,
+                226
+              ],
+              "foot": [
+                272,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "startMs": 520,
+      "endMs": 560,
+      "pngSha256": "71b5d53b9d39b38edb43cc5a90482c7687fb79dad28f632028877ecf59f61dec",
+      "rgbaSha256": "df062dbbb3f91025c7ef2c9e8658c24088dc507a0bd28ff974048e0ed9811b4e",
+      "subExposures": [
+        {
+          "startMs": 520,
+          "endMs": 560,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/09",
+              "xy": [
+                245,
+                226
+              ],
+              "foot": [
+                277,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "startMs": 560,
+      "endMs": 580,
+      "pngSha256": "a8ebe8954d6cdd33967062d14e22816beb67307d1be533349452c93c5d10e667",
+      "rgbaSha256": "63ffb06318c3078725980612d365ebb0cbbbc0e89fb20317374d152959e77d84",
+      "subExposures": [
+        {
+          "startMs": 560,
+          "endMs": 580,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/09",
+              "xy": [
+                251,
+                226
+              ],
+              "foot": [
+                283,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "startMs": 580,
+      "endMs": 600,
+      "pngSha256": "87a5785c1266c028eca95c700eb465d617fa5a6a63f821278311922a484810b6",
+      "rgbaSha256": "f293357d4cabd52562a04bc9d8af57a207c88053525e664d0f39b958ffb391ac",
+      "subExposures": [
+        {
+          "startMs": 580,
+          "endMs": 600,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/10",
+              "xy": [
+                253,
+                226
+              ],
+              "foot": [
+                285,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "startMs": 600,
+      "endMs": 640,
+      "pngSha256": "426236986688e9cf99fa3f3f0645b8cb64b14b8ce5ff1ad3144a53e140226aa2",
+      "rgbaSha256": "e8aa3ee0501fa0fda1ed33d2fc4028ba378fc19625372d60eb9b9ddbf2d2e67b",
+      "subExposures": [
+        {
+          "startMs": 600,
+          "endMs": 640,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/10",
+              "xy": [
+                256,
+                226
+              ],
+              "foot": [
+                288,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "startMs": 640,
+      "endMs": 680,
+      "pngSha256": "ecc5a5573f3f7d585e92cf43e89068bd05f11af4e0bd04aaa5ddaced515c5bd9",
+      "rgbaSha256": "4118ceac15fc31b54b99f7793f588746a35c37551ee0546f49d47363da618ba7",
+      "subExposures": [
+        {
+          "startMs": 640,
+          "endMs": 680,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/11",
+              "xy": [
+                262,
+                226
+              ],
+              "foot": [
+                294,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "startMs": 680,
+      "endMs": 720,
+      "pngSha256": "24e84cb4db43215f6e72aad0e0c09962e679a3f1403b45d06daeaad49b993601",
+      "rgbaSha256": "ece90a98e5ca481e3be24c8d4035533d0c6958ba5017e3c990a8bde26e9be92e",
+      "subExposures": [
+        {
+          "startMs": 680,
+          "endMs": 720,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/12",
+              "xy": [
+                267,
+                226
+              ],
+              "foot": [
+                299,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "startMs": 720,
+      "endMs": 760,
+      "pngSha256": "512a7c1731703046286d10db3884e4031f30c7c3dd82f26c77ab3df7c961c259",
+      "rgbaSha256": "488a3790a92d90fc9b36bfd0c52ad61e323612cb2a8b022c5d537e603494e454",
+      "subExposures": [
+        {
+          "startMs": 720,
+          "endMs": 760,
+          "phase": "boarding",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/13",
+              "xy": [
+                273,
+                226
+              ],
+              "foot": [
+                305,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "startMs": 760,
+      "endMs": 1320,
+      "pngSha256": "8996def965e0a5c4ebd45d6ab7cd8131cba750c1ab6a09c66952de8a28a65eda",
+      "rgbaSha256": "d7bb2bbd32d4382ea5e05636e208b04a56eb92c260ff6f8ac16c8d2ea28d3cc5",
+      "subExposures": [
+        {
+          "startMs": 760,
+          "endMs": 800,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 800,
+          "endMs": 840,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 840,
+          "endMs": 880,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 880,
+          "endMs": 920,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 920,
+          "endMs": 960,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 960,
+          "endMs": 1000,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1000,
+          "endMs": 1040,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1040,
+          "endMs": 1080,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1080,
+          "endMs": 1120,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1120,
+          "endMs": 1160,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1160,
+          "endMs": 1200,
+          "phase": "boarded-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1200,
+          "endMs": 1240,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1240,
+          "endMs": 1280,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1280,
+          "endMs": 1320,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              188
+            ],
+            "floorY": 282,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                226
+              ],
+              "foot": [
+                310,
+                282
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "startMs": 1320,
+      "endMs": 1400,
+      "pngSha256": "8efd9054a88c3dc0290873d2031e9d1c97c14e2cd60bfe6323a940c54438d18c",
+      "rgbaSha256": "df2cb3fb2fb1f7d4da6dfd8bcd077246fff9ef862776cd46674538180e6bf36d",
+      "subExposures": [
+        {
+          "startMs": 1320,
+          "endMs": 1360,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              187
+            ],
+            "floorY": 281,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                225
+              ],
+              "foot": [
+                310,
+                281
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 1360,
+          "endMs": 1400,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              187
+            ],
+            "floorY": 281,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                225
+              ],
+              "foot": [
+                310,
+                281
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "startMs": 1400,
+      "endMs": 1440,
+      "pngSha256": "334787294aa0fa1d67ad7159444825236969e0928ce76935cb65e795f35f63d3",
+      "rgbaSha256": "7a481f2ca03e264f4b2bc12b5cd5021c07eae35910028b11b27309bc7035566a",
+      "subExposures": [
+        {
+          "startMs": 1400,
+          "endMs": 1440,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              186
+            ],
+            "floorY": 280,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                224
+              ],
+              "foot": [
+                310,
+                280
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "startMs": 1440,
+      "endMs": 1480,
+      "pngSha256": "7bb3178d3c8c1a3ceff20143b39872a6fe208b972b75373ec186b83a1eed8825",
+      "rgbaSha256": "e28fc5827d56f697cee77f50abb47c7233c9b7722f63a3872e47d0ee5911bf01",
+      "subExposures": [
+        {
+          "startMs": 1440,
+          "endMs": 1480,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              185
+            ],
+            "floorY": 279,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                223
+              ],
+              "foot": [
+                310,
+                279
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "startMs": 1480,
+      "endMs": 1520,
+      "pngSha256": "ba9e972dbb6c8fd2b9ff1502e78854b713286a034c4c5cebe7534aad56758328",
+      "rgbaSha256": "aab20198ab2fa359a4671cc18a51bcdcc820699b27fe0cebd3c6f1ee77bf077a",
+      "subExposures": [
+        {
+          "startMs": 1480,
+          "endMs": 1520,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              184
+            ],
+            "floorY": 278,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                222
+              ],
+              "foot": [
+                310,
+                278
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "startMs": 1520,
+      "endMs": 1560,
+      "pngSha256": "8bf9843dea90b4c046cf876e010af025089c37872b46df9303de69c9b1aebd3d",
+      "rgbaSha256": "240a3d49bf9d24ea81c36ba349b48ff195f18814d324e6f9e2cf85fc8c30ac52",
+      "subExposures": [
+        {
+          "startMs": 1520,
+          "endMs": 1560,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              183
+            ],
+            "floorY": 277,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                221
+              ],
+              "foot": [
+                310,
+                277
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "startMs": 1560,
+      "endMs": 1600,
+      "pngSha256": "74f27bcd8c560b546262c4a31990110350ef3a4f055095ddca0fc93d76e6421b",
+      "rgbaSha256": "e4f916fbc86bbe3ad863917861ae895966c48186548b5008ba9e5bf04da8f00a",
+      "subExposures": [
+        {
+          "startMs": 1560,
+          "endMs": 1600,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              182
+            ],
+            "floorY": 276,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                220
+              ],
+              "foot": [
+                310,
+                276
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "startMs": 1600,
+      "endMs": 1640,
+      "pngSha256": "348950e36dcbd2ef04ecf2745a1178a7bdb29992071cb48316d361c8377c8f34",
+      "rgbaSha256": "6ea6deaaef6eedd62ba58957ceefd9c96048d3c53000208b6d6b06719c5f1c3d",
+      "subExposures": [
+        {
+          "startMs": 1600,
+          "endMs": 1640,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              181
+            ],
+            "floorY": 275,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                219
+              ],
+              "foot": [
+                310,
+                275
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "startMs": 1640,
+      "endMs": 1680,
+      "pngSha256": "edeedf489a264b32c52f00a74ea6fc0a272ab7814f47d9fa60c2cb5c20e9ee92",
+      "rgbaSha256": "dadcce0060c14f7497e3b37364f795bba29e3ad21b0af45415524291b8dd9e47",
+      "subExposures": [
+        {
+          "startMs": 1640,
+          "endMs": 1680,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              180
+            ],
+            "floorY": 274,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                218
+              ],
+              "foot": [
+                310,
+                274
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "startMs": 1680,
+      "endMs": 1720,
+      "pngSha256": "2772ee5be55f47070cdecd328ec19082225a5d8299e444754557f5c4f9326697",
+      "rgbaSha256": "279cc8fd6fc062c9b1debf5556e86c1996e9b5da9ba93e728a99644fdbf5b779",
+      "subExposures": [
+        {
+          "startMs": 1680,
+          "endMs": 1720,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              178
+            ],
+            "floorY": 272,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                216
+              ],
+              "foot": [
+                310,
+                272
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "startMs": 1720,
+      "endMs": 1760,
+      "pngSha256": "22f831d4b3ee5d672a90c8887ac61459d2680111a030656802492440b26c6d15",
+      "rgbaSha256": "ee856faba4af755d9969b4f98a4b3de9d6feabe1e772828986303742669ab5b8",
+      "subExposures": [
+        {
+          "startMs": 1720,
+          "endMs": 1760,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              177
+            ],
+            "floorY": 271,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                215
+              ],
+              "foot": [
+                310,
+                271
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "startMs": 1760,
+      "endMs": 1800,
+      "pngSha256": "2fb96ca269fdc6f66abc8ebff951a5d46d8e829eb689599693dd8886d1e33f9a",
+      "rgbaSha256": "af5bb6e81c537490f57308b93036bb0f1614d93d56b3d12f1d199cf0f3464261",
+      "subExposures": [
+        {
+          "startMs": 1760,
+          "endMs": 1800,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              175
+            ],
+            "floorY": 269,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                213
+              ],
+              "foot": [
+                310,
+                269
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "startMs": 1800,
+      "endMs": 1840,
+      "pngSha256": "ebc3477734df5f2849410e1cd6fadf8a80d8d4ff9f15e56bc783d74342f77026",
+      "rgbaSha256": "a934a3a8293a41892d1383e2c2010db538781d565e12ff2e3482308a76584b0e",
+      "subExposures": [
+        {
+          "startMs": 1800,
+          "endMs": 1840,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              173
+            ],
+            "floorY": 267,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                211
+              ],
+              "foot": [
+                310,
+                267
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "startMs": 1840,
+      "endMs": 1880,
+      "pngSha256": "bab7e114936a063d3a53f3cfae6100d2adc81796a1ba297d419c372a18f6e348",
+      "rgbaSha256": "e5b55339b45d9b8893b4430573769bed138c939c10664ffc14eeaaf7506eb585",
+      "subExposures": [
+        {
+          "startMs": 1840,
+          "endMs": 1880,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              171
+            ],
+            "floorY": 265,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                209
+              ],
+              "foot": [
+                310,
+                265
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "startMs": 1880,
+      "endMs": 1920,
+      "pngSha256": "8154fd5e1832ce7010eb3811af22a91b1e54f643e98ad24168b6b669708cac31",
+      "rgbaSha256": "e936fb217abafc216aadd88b9f16e4b3c035f440ed196150f2b45ac62259909d",
+      "subExposures": [
+        {
+          "startMs": 1880,
+          "endMs": 1920,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              169
+            ],
+            "floorY": 263,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                207
+              ],
+              "foot": [
+                310,
+                263
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "startMs": 1920,
+      "endMs": 1960,
+      "pngSha256": "3e0005fab0452f4768019f1efa418d65923d846c28c20662ecc622a04edd0f03",
+      "rgbaSha256": "2758f61b8d84c604a8bb9fb9d2b93969f84c264e1abf01844e77cf9a33bbae44",
+      "subExposures": [
+        {
+          "startMs": 1920,
+          "endMs": 1960,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              167
+            ],
+            "floorY": 261,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                205
+              ],
+              "foot": [
+                310,
+                261
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "startMs": 1960,
+      "endMs": 2000,
+      "pngSha256": "abbbc4b69b65b135b9416c913ae3156efc21d1ec4e98e5d5dd93c4d449840072",
+      "rgbaSha256": "eaa3158634c89df39a652864c328e470a64565cdc636cfff572025bcddd8a122",
+      "subExposures": [
+        {
+          "startMs": 1960,
+          "endMs": 2000,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              165
+            ],
+            "floorY": 259,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                203
+              ],
+              "foot": [
+                310,
+                259
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "startMs": 2000,
+      "endMs": 2040,
+      "pngSha256": "83a44403e874575255ffe8ece24c24a416d0449b56eae321132c7cc3adf54ced",
+      "rgbaSha256": "4754b4b98e2d09fad5f382e50243437c10b6870ba2e6f8ec83693f4db26486a1",
+      "subExposures": [
+        {
+          "startMs": 2000,
+          "endMs": 2040,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              163
+            ],
+            "floorY": 257,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                201
+              ],
+              "foot": [
+                310,
+                257
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "startMs": 2040,
+      "endMs": 2080,
+      "pngSha256": "bb74317016b137633834af1849c356206f1cad2424b5b7f74ee13bf89621416a",
+      "rgbaSha256": "c83bcce002db4f76f07d9d0e5bd818c793cde34259f9c9c0105d86a7c640028f",
+      "subExposures": [
+        {
+          "startMs": 2040,
+          "endMs": 2080,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              161
+            ],
+            "floorY": 255,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                199
+              ],
+              "foot": [
+                310,
+                255
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "startMs": 2080,
+      "endMs": 2120,
+      "pngSha256": "e83c20974ce7b47541ab6910c28117e7723a7ad8bcb11382195cf952383cab7a",
+      "rgbaSha256": "5a7a235838f0f1d68ba401beeadefab6b0605d9632bd5dfab4ef353a806b5bc0",
+      "subExposures": [
+        {
+          "startMs": 2080,
+          "endMs": 2120,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              159
+            ],
+            "floorY": 253,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                197
+              ],
+              "foot": [
+                310,
+                253
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "startMs": 2120,
+      "endMs": 2160,
+      "pngSha256": "a9479364ebdd09b9c3ce9ef37650929d97e7ef96d7228571a36f8130f19e8a4e",
+      "rgbaSha256": "bc6d9996d18f85ab816947988476933c7e6fbf823a08ff3482ac16c1b7e27310",
+      "subExposures": [
+        {
+          "startMs": 2120,
+          "endMs": 2160,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              156
+            ],
+            "floorY": 250,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                194
+              ],
+              "foot": [
+                310,
+                250
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "startMs": 2160,
+      "endMs": 2200,
+      "pngSha256": "ad04418a74610f5fda85ca072454eb511981af2bc7cc98611c6e25c654f145a2",
+      "rgbaSha256": "407bbe50aafcc3ffe361d74c69ec907adb8b41f877b0bf0ffb20312e28e63094",
+      "subExposures": [
+        {
+          "startMs": 2160,
+          "endMs": 2200,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              154
+            ],
+            "floorY": 248,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                192
+              ],
+              "foot": [
+                310,
+                248
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "startMs": 2200,
+      "endMs": 2240,
+      "pngSha256": "142033954dd683f104a90894343ff76625976054c8133586ecfe3342356a8fc1",
+      "rgbaSha256": "3cc02b3173a73da956bed999f13f28600042fd4f3b113bc38f67739ec5fca8c9",
+      "subExposures": [
+        {
+          "startMs": 2200,
+          "endMs": 2240,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              152
+            ],
+            "floorY": 246,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-half/00",
+              "xy": [
+                278,
+                190
+              ],
+              "foot": [
+                310,
+                246
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c1e108276666a72bac36bce546efdc3f9952a724c63b2843a3fcbc779f14b9d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "startMs": 2240,
+      "endMs": 2280,
+      "pngSha256": "f808d0a17db88c56a42c41b061e48dc2a22fa7e5d705699b9600623231a52eda",
+      "rgbaSha256": "8153630bd01c769f21d45a5a663374f54a93ad3575a872e42f64c28f24e72bf0",
+      "subExposures": [
+        {
+          "startMs": 2240,
+          "endMs": 2280,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              149
+            ],
+            "floorY": 243,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-half/00",
+              "xy": [
+                278,
+                187
+              ],
+              "foot": [
+                310,
+                243
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c1e108276666a72bac36bce546efdc3f9952a724c63b2843a3fcbc779f14b9d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "startMs": 2280,
+      "endMs": 2320,
+      "pngSha256": "3e65ec2afbee6dd16b0ca580ebdda4a7f3a6e12cabaf877a0cba6b9480737530",
+      "rgbaSha256": "2f3224fb2494a7cbeb85403e3accc1c073bba80ec7dc4048045029a5bb2acb8f",
+      "subExposures": [
+        {
+          "startMs": 2280,
+          "endMs": 2320,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              147
+            ],
+            "floorY": 241,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-closed/00",
+              "xy": [
+                278,
+                185
+              ],
+              "foot": [
+                310,
+                241
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "3e26eb5c71d8fa4f01117f03101af3853b690de1282afc4996e99cea2d364bcb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "startMs": 2320,
+      "endMs": 2360,
+      "pngSha256": "72f742daa5b07ed62298494b80503360ca62f7a732db2f757ebb5a1771b1dc36",
+      "rgbaSha256": "f87fc20301ba920edce8b8b9797273fd4c2146b2ea413f7ddf26beeb0f66bc78",
+      "subExposures": [
+        {
+          "startMs": 2320,
+          "endMs": 2360,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              144
+            ],
+            "floorY": 238,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-closed/00",
+              "xy": [
+                278,
+                182
+              ],
+              "foot": [
+                310,
+                238
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "3e26eb5c71d8fa4f01117f03101af3853b690de1282afc4996e99cea2d364bcb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "startMs": 2360,
+      "endMs": 2380,
+      "pngSha256": "cb692bbd78a7b21964b6cd95d4e64ceb27d77a9c3a73765b5c763334c1c26c7c",
+      "rgbaSha256": "3c6806eac326065918c7e4067ea8c2dd4f0b9c2beda3319fd40ed9c55fd03288",
+      "subExposures": [
+        {
+          "startMs": 2360,
+          "endMs": 2380,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              142
+            ],
+            "floorY": 236,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-closed/00",
+              "xy": [
+                278,
+                180
+              ],
+              "foot": [
+                310,
+                236
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "3e26eb5c71d8fa4f01117f03101af3853b690de1282afc4996e99cea2d364bcb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "startMs": 2380,
+      "endMs": 2400,
+      "pngSha256": "a1b06a8b1d9d036e0e0296d109c174039fc4c06f890d25856b9ea32863422957",
+      "rgbaSha256": "c6cab4be6cd221925cb51b978b670dd0a02e05cba671bb457af39ec9192e2a7f",
+      "subExposures": [
+        {
+          "startMs": 2380,
+          "endMs": 2400,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              141
+            ],
+            "floorY": 235,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-half/00",
+              "xy": [
+                278,
+                179
+              ],
+              "foot": [
+                310,
+                235
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c1e108276666a72bac36bce546efdc3f9952a724c63b2843a3fcbc779f14b9d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "startMs": 2400,
+      "endMs": 2440,
+      "pngSha256": "c535d15b23347925acd90bd9f003e1895e1590ba23d8506decc931e0bf29c1ef",
+      "rgbaSha256": "8c404bbf820f6e8b9beb9c7fdd983f24a235162d7e65bc4deaf7fe07e3907276",
+      "subExposures": [
+        {
+          "startMs": 2400,
+          "endMs": 2440,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              139
+            ],
+            "floorY": 233,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-half/00",
+              "xy": [
+                278,
+                177
+              ],
+              "foot": [
+                310,
+                233
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c1e108276666a72bac36bce546efdc3f9952a724c63b2843a3fcbc779f14b9d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "startMs": 2440,
+      "endMs": 2460,
+      "pngSha256": "de9365cd581fb37eb80cbe3a6c52d486dc9f6fa296189c9d5a70a51c4a691447",
+      "rgbaSha256": "b811159052dc95d8137f2428c482c22617c9cbff7cb9315860709cbf40cfeea6",
+      "subExposures": [
+        {
+          "startMs": 2440,
+          "endMs": 2460,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              137
+            ],
+            "floorY": 231,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/blink-half/00",
+              "xy": [
+                278,
+                175
+              ],
+              "foot": [
+                310,
+                231
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c1e108276666a72bac36bce546efdc3f9952a724c63b2843a3fcbc779f14b9d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "startMs": 2460,
+      "endMs": 2480,
+      "pngSha256": "cbf831b1f781922c1d9a0cdd3a9a677284aea8667d8e3ae952123c0130f3a189",
+      "rgbaSha256": "22a01247c4386a7a2cc09b8b2a5dd32da6cc429e5894201d4957fd92954deb68",
+      "subExposures": [
+        {
+          "startMs": 2460,
+          "endMs": 2480,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              136
+            ],
+            "floorY": 230,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                174
+              ],
+              "foot": [
+                310,
+                230
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "startMs": 2480,
+      "endMs": 2520,
+      "pngSha256": "e6939ffbe4a41140271d82029ce6739b35610b9b58b35db4ac9d2f920683be56",
+      "rgbaSha256": "5f57d80178a7f76a5b46658d8066a418f19dbcec905e275adb34a75d89cdb848",
+      "subExposures": [
+        {
+          "startMs": 2480,
+          "endMs": 2520,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              134
+            ],
+            "floorY": 228,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                172
+              ],
+              "foot": [
+                310,
+                228
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "startMs": 2520,
+      "endMs": 2560,
+      "pngSha256": "93ceb6637e70b1c5bf96a6e2a53b4df31cf42313957df43fe46158f0ce557523",
+      "rgbaSha256": "cf70cb3715994fe9298ee20106d3933058b63b91c0138ed8f1ca1bd09c14a428",
+      "subExposures": [
+        {
+          "startMs": 2520,
+          "endMs": 2560,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              132
+            ],
+            "floorY": 226,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                170
+              ],
+              "foot": [
+                310,
+                226
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "startMs": 2560,
+      "endMs": 2600,
+      "pngSha256": "000f46f3bc8a06e3eddf2b1cfaa405f66faa8d150e3f13cb248ec48db18fe097",
+      "rgbaSha256": "04a0dfbdba93d33f8e53bb42350d8817ae8006824491be559be3490fb6762f6d",
+      "subExposures": [
+        {
+          "startMs": 2560,
+          "endMs": 2600,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              129
+            ],
+            "floorY": 223,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                167
+              ],
+              "foot": [
+                310,
+                223
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "startMs": 2600,
+      "endMs": 2640,
+      "pngSha256": "652c9f1e6d044fcc3fcf5d4ad640b66c1041f70ce481f7941e9b28e62bb04e5f",
+      "rgbaSha256": "6ad7285abdef01303d5e5ca4820492ff5fed8ae480fc13e50511142213b29832",
+      "subExposures": [
+        {
+          "startMs": 2600,
+          "endMs": 2640,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              127
+            ],
+            "floorY": 221,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                165
+              ],
+              "foot": [
+                310,
+                221
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "startMs": 2640,
+      "endMs": 2680,
+      "pngSha256": "c46dc6ffd7acaa301e03b36e3781b96e34345df308d6b7a9e245522e36d77dc9",
+      "rgbaSha256": "25383b46912587f28088f287b118eb8cfd1cea87918b7f1e1201c27e09f56664",
+      "subExposures": [
+        {
+          "startMs": 2640,
+          "endMs": 2680,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              124
+            ],
+            "floorY": 218,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                162
+              ],
+              "foot": [
+                310,
+                218
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "startMs": 2680,
+      "endMs": 2720,
+      "pngSha256": "2615c8ad4b2b0b906f9a516f5e953623613184b6ca02b4cac809a7958fc66e0d",
+      "rgbaSha256": "8e82e04044700a54d35c03c7a2c71c68a9908a04648f4975f8e3376e308b4bff",
+      "subExposures": [
+        {
+          "startMs": 2680,
+          "endMs": 2720,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              122
+            ],
+            "floorY": 216,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                160
+              ],
+              "foot": [
+                310,
+                216
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "startMs": 2720,
+      "endMs": 2760,
+      "pngSha256": "16413c6b18ccb92fbdc8152238575b16d00d369ddbbbbe7a2ccf631c5315b74c",
+      "rgbaSha256": "a7cd470d06267d0bbd6fa79984c6085342edf36f06c4b36504343de4fc6ad569",
+      "subExposures": [
+        {
+          "startMs": 2720,
+          "endMs": 2760,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              119
+            ],
+            "floorY": 213,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                157
+              ],
+              "foot": [
+                310,
+                213
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "startMs": 2760,
+      "endMs": 2800,
+      "pngSha256": "23a4aee225836f592a236272e374516bdbeba2169a3c9692a2d86851659011b7",
+      "rgbaSha256": "65edb024aed4c14f67efa749f3999780e20e9349e99f6f589bca43955dd1dc43",
+      "subExposures": [
+        {
+          "startMs": 2760,
+          "endMs": 2800,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              117
+            ],
+            "floorY": 211,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                155
+              ],
+              "foot": [
+                310,
+                211
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "startMs": 2800,
+      "endMs": 2840,
+      "pngSha256": "2c91666c9b9bf07547421520476c4e704618ba4bf265a8d29b291c65930e816e",
+      "rgbaSha256": "a317bb3b97b7324d61e0935b50d5577857495ce1346642889f3210d5072aadd1",
+      "subExposures": [
+        {
+          "startMs": 2800,
+          "endMs": 2840,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              114
+            ],
+            "floorY": 208,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                152
+              ],
+              "foot": [
+                310,
+                208
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "startMs": 2840,
+      "endMs": 2880,
+      "pngSha256": "609035fe1bc38d28ec786b9f86457753753206f29094f22ac593be347505db98",
+      "rgbaSha256": "74854d372bd74580c4d3a8d7837ed78e683c0ccfcb25a8b9a1fbd84154f126d3",
+      "subExposures": [
+        {
+          "startMs": 2840,
+          "endMs": 2880,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              112
+            ],
+            "floorY": 206,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                150
+              ],
+              "foot": [
+                310,
+                206
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "startMs": 2880,
+      "endMs": 2920,
+      "pngSha256": "07da413f2b5cc41bdea4d9d516e289f13f55a43e6fe2dd51f6b8021a2d2aeb95",
+      "rgbaSha256": "c1f92c73d18a6360c8de496c60c9c33f2a929328a7ebbe25d6e8239570e88011",
+      "subExposures": [
+        {
+          "startMs": 2880,
+          "endMs": 2920,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              110
+            ],
+            "floorY": 204,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                148
+              ],
+              "foot": [
+                310,
+                204
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "startMs": 2920,
+      "endMs": 2960,
+      "pngSha256": "fc89f6809cdf955571373b244ff77070edd245688094046eed305e8219c59688",
+      "rgbaSha256": "790d25e0b994afca3fd8330f713e2e3c6e32cdc76d7e2ee91646272639a2767b",
+      "subExposures": [
+        {
+          "startMs": 2920,
+          "endMs": 2960,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              107
+            ],
+            "floorY": 201,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                145
+              ],
+              "foot": [
+                310,
+                201
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "startMs": 2960,
+      "endMs": 3000,
+      "pngSha256": "d7dfda066c3ed650bb2817eb364d6cba05743863c1fbd267ac2db0b9a21f4400",
+      "rgbaSha256": "03664fb9268e0e770812433811e6ad6e304eea098c40b797f5008579a871970c",
+      "subExposures": [
+        {
+          "startMs": 2960,
+          "endMs": 3000,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              105
+            ],
+            "floorY": 199,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                143
+              ],
+              "foot": [
+                310,
+                199
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "startMs": 3000,
+      "endMs": 3040,
+      "pngSha256": "db266690e42b9e15af897ca740cb9735cec1fa1b69064fd55541db93032929d5",
+      "rgbaSha256": "2383eb6e41cb1d3485a3fb234e49d874871709481288b0baa90f1f832ad44afe",
+      "subExposures": [
+        {
+          "startMs": 3000,
+          "endMs": 3040,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              103
+            ],
+            "floorY": 197,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                141
+              ],
+              "foot": [
+                310,
+                197
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "startMs": 3040,
+      "endMs": 3080,
+      "pngSha256": "e4ebb25141d45e4909ff039da71b848d4e98e97d296f5de785c93f3582e51991",
+      "rgbaSha256": "99a965047a626c114dc52802ff4b4eed2a658a717c057e7cef4cd257c8f9b609",
+      "subExposures": [
+        {
+          "startMs": 3040,
+          "endMs": 3080,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              101
+            ],
+            "floorY": 195,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                139
+              ],
+              "foot": [
+                310,
+                195
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "startMs": 3080,
+      "endMs": 3120,
+      "pngSha256": "6a940767f18e43570eb6d9b418760961435074b7b73826602ddf282bda27b0e1",
+      "rgbaSha256": "76e9bf0b2e7f9bd382c680e2e36480f7e8660ea92fcaa13fbacccff995f23d33",
+      "subExposures": [
+        {
+          "startMs": 3080,
+          "endMs": 3120,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              99
+            ],
+            "floorY": 193,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                137
+              ],
+              "foot": [
+                310,
+                193
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "startMs": 3120,
+      "endMs": 3160,
+      "pngSha256": "02835ee861905c4c83dc8f555c1570021cfc5be45649b9b0d017171bbe4989d8",
+      "rgbaSha256": "851803bbd5966b99f52a3108cfe9ec2fed954a7528bc5ff510d3b968f8eada1c",
+      "subExposures": [
+        {
+          "startMs": 3120,
+          "endMs": 3160,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              97
+            ],
+            "floorY": 191,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                135
+              ],
+              "foot": [
+                310,
+                191
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "startMs": 3160,
+      "endMs": 3200,
+      "pngSha256": "73ffdd890f3aaf0f2323aed279074861106b3334516254a3c492d58e1f395e52",
+      "rgbaSha256": "24935576e1ae16aaa115034655b170327c91b6a2cda9a161566dd9b75d02b358",
+      "subExposures": [
+        {
+          "startMs": 3160,
+          "endMs": 3200,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              95
+            ],
+            "floorY": 189,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                133
+              ],
+              "foot": [
+                310,
+                189
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "startMs": 3200,
+      "endMs": 3240,
+      "pngSha256": "5986ec2d71b84b3eeee60e4b0913d3955c2aebd3a43187ffaceb709c33be0038",
+      "rgbaSha256": "784d35ef572c5d1e0c043958f3f2bae6c42b8e31431983dd8de7eac1b38a1530",
+      "subExposures": [
+        {
+          "startMs": 3200,
+          "endMs": 3240,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              93
+            ],
+            "floorY": 187,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                131
+              ],
+              "foot": [
+                310,
+                187
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "startMs": 3240,
+      "endMs": 3280,
+      "pngSha256": "1dcbfcfa69fdaa266264f597163020f72cfd292b9e58cd34a29a0a60b770098a",
+      "rgbaSha256": "f2d5cc5bde069c0be18cadbda89440d95cb8c19051a04f03e3ee953b0cd020af",
+      "subExposures": [
+        {
+          "startMs": 3240,
+          "endMs": 3280,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              91
+            ],
+            "floorY": 185,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                129
+              ],
+              "foot": [
+                310,
+                185
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "startMs": 3280,
+      "endMs": 3320,
+      "pngSha256": "41fb6eb79982bf882d67a13011bea18d0635e37134b1ac59e3f1ee4e3d408768",
+      "rgbaSha256": "d343aca273daaccd03470b45e47c86953045c229e0318f9f4c4e45a0dab2900f",
+      "subExposures": [
+        {
+          "startMs": 3280,
+          "endMs": 3320,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              89
+            ],
+            "floorY": 183,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                127
+              ],
+              "foot": [
+                310,
+                183
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "startMs": 3320,
+      "endMs": 3360,
+      "pngSha256": "3ef5f044a83a813dda4690cf987222094bc08e1dd5fd8b6e7ca0c1aab9328782",
+      "rgbaSha256": "b123f600edde4572d8d3a91052647b0368ae98f568c788da084a4fe5f570ad20",
+      "subExposures": [
+        {
+          "startMs": 3320,
+          "endMs": 3360,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              88
+            ],
+            "floorY": 182,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                126
+              ],
+              "foot": [
+                310,
+                182
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "startMs": 3360,
+      "endMs": 3400,
+      "pngSha256": "bd193e96cf9a076e2cdcc9182a71ff094c4b6b2575fa3238fffe9f2fa74fb0e7",
+      "rgbaSha256": "b4acd489f7e8291da2af393ae0a02d0dc7aa517f2de9a3466215104537961b58",
+      "subExposures": [
+        {
+          "startMs": 3360,
+          "endMs": 3400,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              86
+            ],
+            "floorY": 180,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                124
+              ],
+              "foot": [
+                310,
+                180
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "startMs": 3400,
+      "endMs": 3440,
+      "pngSha256": "93b03b40a61b0e267c2d1ffca4487151a70dbbd1c951f5fafb3f05151bce35ba",
+      "rgbaSha256": "f9a6b27c8cda5cc706bd25963af2784e484ea07800e1f91dcfd4d32f831c7e97",
+      "subExposures": [
+        {
+          "startMs": 3400,
+          "endMs": 3440,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              85
+            ],
+            "floorY": 179,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                123
+              ],
+              "foot": [
+                310,
+                179
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "startMs": 3440,
+      "endMs": 3480,
+      "pngSha256": "16f20d7c12ec778dd1beb699216b172b106540d1373d354309d74670b4580737",
+      "rgbaSha256": "6af1ce5697d3ba20a16dec1e1ac098fd1d9a704dab3bb136e6f8c2ef3fa6b555",
+      "subExposures": [
+        {
+          "startMs": 3440,
+          "endMs": 3480,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              84
+            ],
+            "floorY": 178,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                122
+              ],
+              "foot": [
+                310,
+                178
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "startMs": 3480,
+      "endMs": 3520,
+      "pngSha256": "890b67a461d52e82fe646cfd0ec28d2d5a3cb0d5d37c63ad9ae08e88dfdba246",
+      "rgbaSha256": "7c34d4687baad4fca5a697e6ca9a81d95995b94751bf45df741eaff83d709e7c",
+      "subExposures": [
+        {
+          "startMs": 3480,
+          "endMs": 3520,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              83
+            ],
+            "floorY": 177,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                121
+              ],
+              "foot": [
+                310,
+                177
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "startMs": 3520,
+      "endMs": 3560,
+      "pngSha256": "043d1a9e49ce663790a3b0044dc38d8d2ce6088d5b5b40b202d95b4b34aeb06f",
+      "rgbaSha256": "90bc1ebd7e216e0851c2767980c619cf9cb4f893bb6fbd4e8be322b9832927ea",
+      "subExposures": [
+        {
+          "startMs": 3520,
+          "endMs": 3560,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              82
+            ],
+            "floorY": 176,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                120
+              ],
+              "foot": [
+                310,
+                176
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "startMs": 3560,
+      "endMs": 3600,
+      "pngSha256": "d7a91a999555caa7d20b9fac3bcd1af9c2f9ea63ae7dc1400d25a025a4644a7b",
+      "rgbaSha256": "c5e0bee553fd4c995eafa045133f6a5f5a4934638598c14dff6b375cc44fc78b",
+      "subExposures": [
+        {
+          "startMs": 3560,
+          "endMs": 3600,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              81
+            ],
+            "floorY": 175,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                119
+              ],
+              "foot": [
+                310,
+                175
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "startMs": 3600,
+      "endMs": 3640,
+      "pngSha256": "d70e6361c0ea9003d51141b49cfb7fb5be3427a909faab58fca5f062b64349d4",
+      "rgbaSha256": "2929ccf82bfcedc2c819f4735cd0048ca3723639f1d5e00792c55dc4507e0dc3",
+      "subExposures": [
+        {
+          "startMs": 3600,
+          "endMs": 3640,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              80
+            ],
+            "floorY": 174,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                118
+              ],
+              "foot": [
+                310,
+                174
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "startMs": 3640,
+      "endMs": 3720,
+      "pngSha256": "540c33301befa65f8f1148ffd2bb68c0d4253d301e9c9dcc862590322ebdf95a",
+      "rgbaSha256": "7929406b78f66ab772da3593392a0924de59ccce5a51b3f1ef4e11b65d440535",
+      "subExposures": [
+        {
+          "startMs": 3640,
+          "endMs": 3680,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              79
+            ],
+            "floorY": 173,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                117
+              ],
+              "foot": [
+                310,
+                173
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 3680,
+          "endMs": 3720,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              79
+            ],
+            "floorY": 173,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                117
+              ],
+              "foot": [
+                310,
+                173
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "startMs": 3720,
+      "endMs": 4200,
+      "pngSha256": "5da97589417eff077dd1b1ca368d497c5334148723ed418fa911b0cc54098104",
+      "rgbaSha256": "8f0d137ca6f16d562bc7839ebcf881359199e26fb1ee35f3231f2723206edce5",
+      "subExposures": [
+        {
+          "startMs": 3720,
+          "endMs": 3760,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 3760,
+          "endMs": 3800,
+          "phase": "ascent",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 3800,
+          "endMs": 3840,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 3840,
+          "endMs": 3880,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 3880,
+          "endMs": 3920,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 3920,
+          "endMs": 3960,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 3960,
+          "endMs": 4000,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 4000,
+          "endMs": 4040,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 4040,
+          "endMs": 4080,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 4080,
+          "endMs": 4120,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 4120,
+          "endMs": 4160,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        },
+        {
+          "startMs": 4160,
+          "endMs": 4200,
+          "phase": "arrival-hold",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "startMs": 4200,
+      "endMs": 4240,
+      "pngSha256": "a3659c8bd2e05e1e39bf4f1efa2a41c85185c580dac03f0cb6e42910378c9f45",
+      "rgbaSha256": "ef53ede2d3070e0e51c7097401f1dba6a64515d62760ca9267d198318e66a291",
+      "subExposures": [
+        {
+          "startMs": 4200,
+          "endMs": 4240,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/00",
+              "xy": [
+                278,
+                116
+              ],
+              "foot": [
+                310,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "startMs": 4240,
+      "endMs": 4260,
+      "pngSha256": "ad9730d86d093c39c4f62ea56dee2a4df312d4d7447d26ea1b13a13c697dc614",
+      "rgbaSha256": "4ef14b065d12fc9109266b2c8f304290b719eacee39a6bad8f26385f3869f037",
+      "subExposures": [
+        {
+          "startMs": 4240,
+          "endMs": 4260,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/00",
+              "xy": [
+                283,
+                116
+              ],
+              "foot": [
+                315,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "startMs": 4260,
+      "endMs": 4280,
+      "pngSha256": "74f8e6404b755be9f207ed8670aed786467f0bbc6a9d953855596e85999dfdc4",
+      "rgbaSha256": "3e1882e11a79f79089ef26593e89e2d429b7c9a92939d4c37c9d9a7aff1b07be",
+      "subExposures": [
+        {
+          "startMs": 4260,
+          "endMs": 4280,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/01",
+              "xy": [
+                286,
+                116
+              ],
+              "foot": [
+                318,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "startMs": 4280,
+      "endMs": 4300,
+      "pngSha256": "5cd1b339febc2c782eda7ec42ed6f36978dfe9fc2f2277ebdd4f89627675d89c",
+      "rgbaSha256": "089cac697d3f7fdde4c4b90cb5ec0d857e3004b58483ced77e8017a9837863d0",
+      "subExposures": [
+        {
+          "startMs": 4280,
+          "endMs": 4300,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/01",
+              "xy": [
+                289,
+                116
+              ],
+              "foot": [
+                321,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "startMs": 4300,
+      "endMs": 4320,
+      "pngSha256": "75622c5e28df76351a8d2d485a28fe1f5b453a76ceea7c3daf019497cf3bff6c",
+      "rgbaSha256": "5121e1db9caa84184e02c82f64b5a24d449167c00ea7a34cb43ee616cf7cca3f",
+      "subExposures": [
+        {
+          "startMs": 4300,
+          "endMs": 4320,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/02",
+              "xy": [
+                291,
+                116
+              ],
+              "foot": [
+                323,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "startMs": 4320,
+      "endMs": 4360,
+      "pngSha256": "a4e7632ed396e43de186aa6cc71cf23f5b56a377bb5cedd2b3aecc1251b24652",
+      "rgbaSha256": "2e63421b74072ba69abe62c1aa6efadf9f2f7d2a173edfa0684277c4d40c8c14",
+      "subExposures": [
+        {
+          "startMs": 4320,
+          "endMs": 4360,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/02",
+              "xy": [
+                294,
+                116
+              ],
+              "foot": [
+                326,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "startMs": 4360,
+      "endMs": 4380,
+      "pngSha256": "450db92b8189f0a99b728b3a053780249703290d310def2181e522b4a4bcaf93",
+      "rgbaSha256": "ba91a3404cea208fd6cc029494489e1fcc74b35b8bcc42b593f7577a2e3562e4",
+      "subExposures": [
+        {
+          "startMs": 4360,
+          "endMs": 4380,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/02",
+              "xy": [
+                299,
+                116
+              ],
+              "foot": [
+                331,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "startMs": 4380,
+      "endMs": 4400,
+      "pngSha256": "4cb82dcb6e982e33d3849362938114ce2c5eb158e77db710276cd19ffd4e2951",
+      "rgbaSha256": "76ac18b27342495ba85f11296f75490d2668a0d9d25ee54bc8241cb633773815",
+      "subExposures": [
+        {
+          "startMs": 4380,
+          "endMs": 4400,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/03",
+              "xy": [
+                302,
+                116
+              ],
+              "foot": [
+                334,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "startMs": 4400,
+      "endMs": 4440,
+      "pngSha256": "beb34803b6bb25c02a9a784656aff3aa44e1f80f60d5464daa57864fddecf528",
+      "rgbaSha256": "753c17559b85b3d40ac666c0221f6d8be2f814100bec11c135ed9622fc1efcb6",
+      "subExposures": [
+        {
+          "startMs": 4400,
+          "endMs": 4440,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/03",
+              "xy": [
+                304,
+                116
+              ],
+              "foot": [
+                336,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "startMs": 4440,
+      "endMs": 4480,
+      "pngSha256": "207f4a11085094d56f64a7d9991bd62ee8d2e352f0ef10a87059449f4bb43f6b",
+      "rgbaSha256": "670dff3669d0a904005a027544d5e090c0acb6db63053d2780cf95188a830484",
+      "subExposures": [
+        {
+          "startMs": 4440,
+          "endMs": 4480,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/04",
+              "xy": [
+                310,
+                116
+              ],
+              "foot": [
+                342,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "startMs": 4480,
+      "endMs": 4520,
+      "pngSha256": "d089de001332ef00627f4a88f46111e602e36ac385f59979e77b52378a085bff",
+      "rgbaSha256": "d34b8f757309fddb8f1dd29163cabaac3fcec6e69e1eaf873b979c79e30ed1eb",
+      "subExposures": [
+        {
+          "startMs": 4480,
+          "endMs": 4520,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/05",
+              "xy": [
+                315,
+                116
+              ],
+              "foot": [
+                347,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "startMs": 4520,
+      "endMs": 4560,
+      "pngSha256": "bd77f2659446c8e32e8a4c5ae50004886b7408dbe333a4702ac770ddf62146b1",
+      "rgbaSha256": "7c5165cebe1f9de80239fd00ab20033abad8f2e834db4c154f4b86b7ecff1afd",
+      "subExposures": [
+        {
+          "startMs": 4520,
+          "endMs": 4560,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/06",
+              "xy": [
+                320,
+                116
+              ],
+              "foot": [
+                352,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "startMs": 4560,
+      "endMs": 4580,
+      "pngSha256": "37c8e7d8f03b49bc15e8bce9e3cc9c642bd835d22ef8b6be7a5369a50e9b5411",
+      "rgbaSha256": "7684d0ede469bee04a65841ab04bcda98120eac76869105dc69e2652e9809916",
+      "subExposures": [
+        {
+          "startMs": 4560,
+          "endMs": 4580,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/06",
+              "xy": [
+                325,
+                116
+              ],
+              "foot": [
+                357,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "startMs": 4580,
+      "endMs": 4600,
+      "pngSha256": "baca3d92f8cee120890bb73d53fc801bc50ab3396610886ca5b6adf2b8333871",
+      "rgbaSha256": "e2fc2d051287f4730801f37c3d3bd7035cfb1081f5a6965806e3d8b57acd4d99",
+      "subExposures": [
+        {
+          "startMs": 4580,
+          "endMs": 4600,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/07",
+              "xy": [
+                328,
+                116
+              ],
+              "foot": [
+                360,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 100,
+      "startMs": 4600,
+      "endMs": 4640,
+      "pngSha256": "f15e1ef9f271b1c130cf6850e3d6228e13d90b18f8c2a0c59662b9ac891f9c1b",
+      "rgbaSha256": "5481e1653d66cd25c131a6443390cd3e8cf1fefaa2b04583a9bcde68ed6e620e",
+      "subExposures": [
+        {
+          "startMs": 4600,
+          "endMs": 4640,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/07",
+              "xy": [
+                331,
+                116
+              ],
+              "foot": [
+                363,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 101,
+      "startMs": 4640,
+      "endMs": 4680,
+      "pngSha256": "32e06ae4cf86b5ad5d2d5c6a55bcef69885c0b434c45c75b70e84e585703eba3",
+      "rgbaSha256": "df8ec6e34489404d3705b0300e51d67a4e21ed3a342cd4ef3dc1e050c4b8fee0",
+      "subExposures": [
+        {
+          "startMs": 4640,
+          "endMs": 4680,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/07",
+              "xy": [
+                336,
+                116
+              ],
+              "foot": [
+                368,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 102,
+      "startMs": 4680,
+      "endMs": 4720,
+      "pngSha256": "95719a239e35648c5f117f20a5c7919c71b8a19c4e9ee7989385bf9068df24c6",
+      "rgbaSha256": "9446798f0a1c57b1d4df5b2ddfb6276939a80cb4c4e96b6b1ae5567a0ae82bcb",
+      "subExposures": [
+        {
+          "startMs": 4680,
+          "endMs": 4720,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/08",
+              "xy": [
+                341,
+                116
+              ],
+              "foot": [
+                373,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 103,
+      "startMs": 4720,
+      "endMs": 4760,
+      "pngSha256": "afcc823ae060128af7596b3d3cb26e4b9c91f10d0e7765e2c365eec05b481b6c",
+      "rgbaSha256": "fe32b87b8a551633656725722085454b9699a9b230e29cc55cf65335195b970b",
+      "subExposures": [
+        {
+          "startMs": 4720,
+          "endMs": 4760,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/09",
+              "xy": [
+                346,
+                116
+              ],
+              "foot": [
+                378,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 104,
+      "startMs": 4760,
+      "endMs": 4780,
+      "pngSha256": "047efbb749ed69f46bf254b272a3ad725ab38e65a5d2dd9aa5476e39c5705bba",
+      "rgbaSha256": "b939528faec8d077c32d4376201571ac07f33774f934703983bc48771be7b6f7",
+      "subExposures": [
+        {
+          "startMs": 4760,
+          "endMs": 4780,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/09",
+              "xy": [
+                352,
+                116
+              ],
+              "foot": [
+                384,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 105,
+      "startMs": 4780,
+      "endMs": 4800,
+      "pngSha256": "85806cab30ca744922237430ae308661b350bcaa82866aa94da4aa9b9e7483dc",
+      "rgbaSha256": "2c71dcd96b18f96d7d51e31ce949db34ba470d24d15ab6d8c4155e461914563f",
+      "subExposures": [
+        {
+          "startMs": 4780,
+          "endMs": 4800,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/10",
+              "xy": [
+                354,
+                116
+              ],
+              "foot": [
+                386,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 106,
+      "startMs": 4800,
+      "endMs": 4840,
+      "pngSha256": "b8738207c316a93fee3274566c399dca5ca3b127439168195e2d9dfd77810d3d",
+      "rgbaSha256": "e1fd813aebe1a5f46e3d8b4dc9b4d002dbe11a7c51cbb67e184caec3681f3297",
+      "subExposures": [
+        {
+          "startMs": 4800,
+          "endMs": 4840,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/10",
+              "xy": [
+                357,
+                116
+              ],
+              "foot": [
+                389,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 107,
+      "startMs": 4840,
+      "endMs": 4880,
+      "pngSha256": "bc96d9423d78a46ed81f8732a975fff0bb2eec314690d072a05efea7080d5fb6",
+      "rgbaSha256": "d7790fc83c808d84fc8c53e4b422a86e0b91c99eb38652a0c2c8f24e4b68bf33",
+      "subExposures": [
+        {
+          "startMs": 4840,
+          "endMs": 4880,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/11",
+              "xy": [
+                362,
+                116
+              ],
+              "foot": [
+                394,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 108,
+      "startMs": 4880,
+      "endMs": 4920,
+      "pngSha256": "f25033ed3bc1d8855c63b4024164c28b6eaf6d062fc915c07c62f757a9d5ace1",
+      "rgbaSha256": "0851ee83c2c581f5f30e3f3b8e1aeb6137a129488d221baefcceb67ebb3b7a2a",
+      "subExposures": [
+        {
+          "startMs": 4880,
+          "endMs": 4920,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/12",
+              "xy": [
+                367,
+                116
+              ],
+              "foot": [
+                399,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 109,
+      "startMs": 4920,
+      "endMs": 4960,
+      "pngSha256": "6bccedf65e724e0fb5654d95107fe8d9082546959fe82c7056a18c0a87a00599",
+      "rgbaSha256": "b1fa98a3a5ff64e4e90783d6eb755cb25deb390ade97dbce6eb211b25e8aa913",
+      "subExposures": [
+        {
+          "startMs": 4920,
+          "endMs": 4960,
+          "phase": "disembarking",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Walk/13",
+              "xy": [
+                373,
+                116
+              ],
+              "foot": [
+                405,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 110,
+      "startMs": 4960,
+      "endMs": 5000,
+      "pngSha256": "5fbb3f66dae874e48ea78012a1c201d9b01d0f7a569ce25ef4e1bb6c506f0e62",
+      "rgbaSha256": "859f82bd6081cc95f1a898af42b7588dc120bd9a618fd72ae38095eff16c4717",
+      "subExposures": [
+        {
+          "startMs": 4960,
+          "endMs": 5000,
+          "phase": "workshop-landing",
+          "background": "Source/Native/shaft-workshop-plate.png",
+          "carriage": {
+            "source": "Source/Native/open-lift-carriage.png",
+            "xy": [
+              246,
+              78
+            ],
+            "floorY": 172,
+            "anchor": [
+              64,
+              94
+            ],
+            "scale": 1,
+            "rigidTranslation": true
+          },
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                378,
+                116
+              ],
+              "foot": [
+                410,
+                172
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 111,
+      "startMs": 5000,
+      "endMs": 5440,
+      "pngSha256": "a9fe3512444c48da758661d52592636507fd8dcd4d475943aa3d37b4ee2dc648",
+      "rgbaSha256": "7deccfe8ec05b6348576b4293e3c9383fb19a0284c2fb7ba0e566f5a561f6e2f",
+      "subExposures": [
+        {
+          "startMs": 5000,
+          "endMs": 5120,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/06",
+          "workshopSourceTimeMs": 1000,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": false
+        },
+        {
+          "startMs": 5120,
+          "endMs": 5280,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/07",
+          "workshopSourceTimeMs": 1120,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": false
+        },
+        {
+          "startMs": 5280,
+          "endMs": 5440,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/08",
+          "workshopSourceTimeMs": 1280,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": false
+        }
+      ]
+    },
+    {
+      "index": 112,
+      "startMs": 5440,
+      "endMs": 5760,
+      "pngSha256": "3a4f2f67173f12bf462e3a77970624eb96055886ce4378c9c2b67a451fd68659",
+      "rgbaSha256": "336dcf58b65dc09086abd2378ecb416a00bea9814a9cc8f273ec0129cd2faded",
+      "subExposures": [
+        {
+          "startMs": 5440,
+          "endMs": 5600,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/09",
+          "workshopSourceTimeMs": 1440,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": false
+        },
+        {
+          "startMs": 5600,
+          "endMs": 5760,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/10",
+          "workshopSourceTimeMs": 1600,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": false
+        }
+      ]
+    },
+    {
+      "index": 113,
+      "startMs": 5760,
+      "endMs": 6000,
+      "pngSha256": "fdafcc4d32af712211a27223cfb2bf0cf050d72ba754e9c523ae8fd23f04b238",
+      "rgbaSha256": "4d5cef327c7e8a34f47d16ce74617086b29bebf9c48f4d31bf63e95311f812f9",
+      "subExposures": [
+        {
+          "startMs": 5760,
+          "endMs": 5920,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/11",
+          "workshopSourceTimeMs": 1760,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": false
+        },
+        {
+          "startMs": 5920,
+          "endMs": 6000,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/12",
+          "workshopSourceTimeMs": 1920,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": false
+        }
+      ]
+    },
+    {
+      "index": 114,
+      "startMs": 6000,
+      "endMs": 6080,
+      "pngSha256": "ca1fe8343d9966ed4fa38a577728f27fcbbe5399984eb497ede35e95c000c3d7",
+      "rgbaSha256": "e03f06723c939ab1728a82ff9017f24bbe395a9026344405007f10263519a00e",
+      "subExposures": [
+        {
+          "startMs": 6000,
+          "endMs": 6080,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/12",
+          "workshopSourceTimeMs": 2000,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": true,
+          "caption": {
+            "text": "돌아갈 곳이 있어.",
+            "fontSize": 16,
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "fontmode": "1",
+            "maskSha256": "a6aa95511e46363a888e1fc8253d04a9ace750460fa801cd7e9e1dbdc88ee198",
+            "nativeTextNotGenerated": true
+          }
+        }
+      ]
+    },
+    {
+      "index": 115,
+      "startMs": 6080,
+      "endMs": 7000,
+      "pngSha256": "28afd09f4aa74e33a553a6fad1f16ea7a7d3e9856b01b42b29330450f90b931c",
+      "rgbaSha256": "9af14c915fb056a7844f20b604cf762fed1e00c8bad5d1bf44c199c609d4a576",
+      "subExposures": [
+        {
+          "startMs": 6080,
+          "endMs": 6240,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/13",
+          "workshopSourceTimeMs": 2080,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": true,
+          "caption": {
+            "text": "돌아갈 곳이 있어.",
+            "fontSize": 16,
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "fontmode": "1",
+            "maskSha256": "a6aa95511e46363a888e1fc8253d04a9ace750460fa801cd7e9e1dbdc88ee198",
+            "nativeTextNotGenerated": true
+          }
+        },
+        {
+          "startMs": 6240,
+          "endMs": 6400,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/14",
+          "workshopSourceTimeMs": 2240,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": true,
+          "caption": {
+            "text": "돌아갈 곳이 있어.",
+            "fontSize": 16,
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "fontmode": "1",
+            "maskSha256": "a6aa95511e46363a888e1fc8253d04a9ace750460fa801cd7e9e1dbdc88ee198",
+            "nativeTextNotGenerated": true
+          }
+        },
+        {
+          "startMs": 6400,
+          "endMs": 7000,
+          "phase": "workshop-final",
+          "backgroundKey": "workshop-wide/15",
+          "workshopSourceTimeMs": 2400,
+          "actors": [
+            {
+              "sourceKey": "tique/Idle/00",
+              "xy": [
+                398,
+                258
+              ],
+              "foot": [
+                430,
+                314
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flipped": false,
+              "rotated": false,
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+            }
+          ],
+          "captionVisible": true,
+          "caption": {
+            "text": "돌아갈 곳이 있어.",
+            "fontSize": 16,
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "fontmode": "1",
+            "maskSha256": "a6aa95511e46363a888e1fc8253d04a9ace750460fa801cd7e9e1dbdc88ee198",
+            "nativeTextNotGenerated": true
+          }
+        }
+      ]
+    }
+  ],
+  "durationMs": 7000,
+  "pixelTranslationOnly": true,
+  "humanMotionApproval": "pending",
+  "runtimeCapture": false
+}

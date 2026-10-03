@@ -1,0 +1,5331 @@
+{
+  "scope": "independent static source/native/export audit; no game/Unity launched",
+  "humanAppearanceApproval": "pending",
+  "humanFunValidation": "pending",
+  "passed": [
+    {
+      "check": "v7-baseline-frame-count71",
+      "detail": "71"
+    },
+    {
+      "check": "v7-package-unchanged-from-audit-baseline",
+      "detail": ""
+    },
+    {
+      "check": "v7-palette32",
+      "detail": ""
+    },
+    {
+      "check": "earlier-generated-candidates-preserved-byte-exact",
+      "detail": ""
+    },
+    {
+      "check": "actual-generation-provenance-present",
+      "detail": ""
+    },
+    {
+      "check": "five-selected-generated-pose-targets",
+      "detail": ""
+    },
+    {
+      "check": "six-successful-calls-not-five-nativeframes",
+      "detail": ""
+    },
+    {
+      "check": "generated-anchor-inspection-recorded-not-human-approval",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:idle-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-621708c8-a894-4bb7-96f2-df0760017111.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-03-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-8deb1a67-f9b6-4150-9948-0764e3411e99.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-04-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-57699bf3-018f-4362-82d6-11fd5c43daf3.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-05-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-3242635a-ab57-42f7-b392-1e435160386c.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:slam-land-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-f3441876-85ab-4d49-87fc-15a355c61847.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-05-rev2",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-eeda3c79-59ab-4520-a6f3-6fd9b31673c5.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:idle",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-manifest-present",
+      "detail": ""
+    },
+    {
+      "check": "native-selection-provenance-sha",
+      "detail": ""
+    },
+    {
+      "check": "five-actual-anchor-assets",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:idle",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/idle.png"
+    },
+    {
+      "check": "generated-source-sha:idle",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:idle",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:idle",
+      "detail": "[167, 439, 1228, 1126]"
+    },
+    {
+      "check": "native-canvas192x176:idle",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:idle",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:idle",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:idle",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:idle",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:idle",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:idle",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:jaw-impact-03",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-03.png"
+    },
+    {
+      "check": "generated-source-sha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:jaw-impact-03",
+      "detail": "[214, 508, 1299, 1113]"
+    },
+    {
+      "check": "native-canvas192x176:jaw-impact-03",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:jaw-impact-04",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-04.png"
+    },
+    {
+      "check": "generated-source-sha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:jaw-impact-04",
+      "detail": "[90, 586, 1261, 1111]"
+    },
+    {
+      "check": "native-canvas192x176:jaw-impact-04",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:jaw-impact-05",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-05.png"
+    },
+    {
+      "check": "generated-source-sha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:jaw-impact-05",
+      "detail": "[184, 388, 1430, 974]"
+    },
+    {
+      "check": "native-canvas192x176:jaw-impact-05",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:slam-land",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/slam-land.png"
+    },
+    {
+      "check": "generated-source-sha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:slam-land",
+      "detail": "[163, 412, 1435, 939]"
+    },
+    {
+      "check": "native-canvas192x176:slam-land",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "landing-width-at-most149",
+      "detail": "(22, 102, 171, 164)"
+    },
+    {
+      "check": "native-source-footprints-present:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "generated-baseline-unchanged",
+      "detail": ""
+    },
+    {
+      "check": "export-native-derivation-record-sha",
+      "detail": ""
+    },
+    {
+      "check": "export-native-input-sha:idle",
+      "detail": ""
+    },
+    {
+      "check": "export-native-input-sha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "export-native-input-sha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "export-native-input-sha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "export-native-input-sha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "15clips71exposures",
+      "detail": ""
+    },
+    {
+      "check": "clip-manifest-byte-copy-unchanged-timings",
+      "detail": ""
+    },
+    {
+      "check": "every-clip-export-provenance",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:idle",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:idle",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:idle",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:idle/07.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:walk",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:walk",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:walk",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:walk",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:walk",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:walk/07.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:charge-aim",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:charge-aim",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:charge-aim",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:charge-aim",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:charge-aim",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:charge-roll",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:charge-roll",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:charge-roll",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:charge-roll",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:charge-roll",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-roll/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-roll/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-roll/02.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:charge-crash",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:charge-crash",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:charge-crash",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:charge-crash",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:charge-crash",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-crash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-crash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-crash/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-crash/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-crash/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-crash/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:charge-crash/06.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:stagger-open",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:stagger-open",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:stagger-open",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:stagger-open",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:stagger-open",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-open/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-open/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-open/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-open/03.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:stagger-close",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:stagger-close",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:stagger-close",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:stagger-close",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:stagger-close",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-close/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-close/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-close/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:stagger-close/03.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:wave-aim",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wave-aim",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wave-aim",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:wave-aim",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:wave-aim",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-aim/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-aim/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-aim/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-aim/03.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:wave-strike",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wave-strike",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wave-strike",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:wave-strike",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:wave-strike",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "corrected-pose-no-additional-repainting:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-strike/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "corrected-pose-no-additional-repainting:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-strike/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "corrected-pose-no-additional-repainting:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-strike/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:wave-strike/03.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:slam-rise",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:slam-rise",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:slam-rise",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:slam-rise",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:slam-rise",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-rise/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-rise/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-rise/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-rise/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-rise/04.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:slam-fall",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:slam-fall",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:slam-fall",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:slam-fall",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:slam-fall",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-fall/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-fall/01.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "corrected-pose-no-additional-repainting:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-land/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-land/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "corrected-pose-no-additional-repainting:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:slam-land/02.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:defeat",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:defeat",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:defeat",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:defeat",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:defeat",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:defeat/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:defeat/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:defeat/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:defeat/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:defeat/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:defeat/05.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:boot",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:boot",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:boot",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:boot",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:boot",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/02.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/03.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/04.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/05.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/06.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:boot/07.png",
+      "detail": ""
+    },
+    {
+      "check": "export-mapping-timing:core-flash",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:core-flash",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:core-flash",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:core-flash",
+      "detail": ""
+    },
+    {
+      "check": "per-frame-provenance-count:core-flash",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:core-flash/00.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-native-frame-copy:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-canvas:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "runtime-binary-alpha:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "intentional-v7-frame-byte-preserved:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-final-sha:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-v7-sha:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "recorded-source-sha:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "actual-native-source-edit-replay:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "v7-delta-replay:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "editable-base-delta-replay:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-replay:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "apng-pixels-timing-replay:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed64ppu:core-flash/01.png",
+      "detail": ""
+    },
+    {
+      "check": "exactly13-allowed-changed-58-byte-preserved",
+      "detail": "['idle/00.png', 'idle/01.png', 'idle/02.png', 'idle/03.png', 'idle/04.png', 'idle/05.png', 'idle/06.png', 'idle/07.png', 'slam-land/00.png', 'slam-land/02.png', 'wave-strike/00.png', 'wave-strike/01.png', 'wave-strike/02.png']"
+    },
+    {
+      "check": "runtime-original-v7-palette32",
+      "detail": "32"
+    },
+    {
+      "check": "idle-alpha-geometry-fixed8exposures",
+      "detail": ""
+    },
+    {
+      "check": "idle-ground-fixed163",
+      "detail": ""
+    },
+    {
+      "check": "idle-only-existing-back-vents-one-red-ramp-step-no-mouth-body-motion",
+      "detail": ""
+    },
+    {
+      "check": "landing-width149-ground163",
+      "detail": ""
+    },
+    {
+      "check": "tique-v10-entire-tracked-package-unchanged-from-head",
+      "detail": ""
+    },
+    {
+      "check": "tique-v10-frame-count139-preserved",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-77frames-present",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v2-prior-audit-byte-preserved:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-pixels-preserved:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "readability-v1-draft-77frames-preserved",
+      "detail": ""
+    }
+  ],
+  "failed": [],
+  "observations": {
+    "authorHostGeneratedCacheVerified": true,
+    "generatedSources": {
+      "idle": "Source/Generated/rev1/idle.png",
+      "jaw-impact-03": "Source/Generated/rev1/jaw-impact-03.png",
+      "jaw-impact-04": "Source/Generated/rev1/jaw-impact-04.png",
+      "jaw-impact-05": "Source/Generated/rev1/jaw-impact-05.png",
+      "slam-land": "Source/Generated/rev1/slam-land.png"
+    },
+    "idle": {
+      "bounds": [
+        28,
+        76,
+        164,
+        164
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "jaw-impact-03": {
+      "bounds": [
+        28,
+        89,
+        164,
+        165
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "jaw-impact-04": {
+      "bounds": [
+        28,
+        104,
+        164,
+        165
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "jaw-impact-05": {
+      "bounds": [
+        28,
+        100,
+        164,
+        164
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "slam-land": {
+      "bounds": [
+        22,
+        102,
+        171,
+        164
+      ],
+      "groundMedian": 163,
+      "width": 149
+    },
+    "changedFrames": [
+      "idle/00.png",
+      "idle/01.png",
+      "idle/02.png",
+      "idle/03.png",
+      "idle/04.png",
+      "idle/05.png",
+      "idle/06.png",
+      "idle/07.png",
+      "slam-land/00.png",
+      "slam-land/02.png",
+      "wave-strike/00.png",
+      "wave-strike/01.png",
+      "wave-strike/02.png"
+    ],
+    "preservedFrames": 58,
+    "runtimePaletteColors": 32
+  },
+  "phase": "all",
+  "mechanicalPassed": true
+}

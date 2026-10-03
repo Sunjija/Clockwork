@@ -1,0 +1,13 @@
+{
+  "modelVersion": 2,
+  "piskel": {
+    "name": "panel",
+    "description": "Unchanged generated-source native panel; exact timing/deltas included.",
+    "fps": 20,
+    "width": 96,
+    "height": 23,
+    "layers": [
+      "{\"name\": \"panel\", \"opacity\": 1, \"frameCount\": 1, \"chunks\": [{\"layout\": [[0]], \"base64PNG\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAAAXCAYAAAD0v0pBAAACBUlEQVR4nO2az0oCURTG79gwYkiKU5C1KSoschEYQVGrtq1r27YHaNMT9AA9QNtategFolaB0MIgMcuV0yJDQ4qkmPiuHblqUWPzJ+j8FjN37jhH+c6cc8dzRhMfLK9t2DSuVO5F9aEix1b+QqN5xjnJ1JzUNZ4whWkOtubPjg+krnIzs7hqqydz2XOxtZQQh6WoMAxdzqnnme/BTQwajVexPlYX+7k3MTGVap23rDtRzJ5oIXiompkXQ3u7ori902bkqV6TkQAjjDOgGbSDhp+RTA7L6NCwUT1DEcC4Tzqz0KWzroYM0gwmIwMxD76eKRbyMg2thK/FUTkuBdHiyXGbBH9+rLH4HqNqjHGoat1qWKE70xDjHdAamkP7ECb4CSc4pAOYgB1Az6yMP6h6y6cgTkH+ourNKShg2AEBpyGZgngNCA6OgABQb/jW/wBeiP2DF+E/5AQdtSAKCS7CeQ80ht4oV0N7HRPkDezRKPiqhs38jv5oTPYBCOjcVY7GB4qFmqzUMe6BG53Ep3I0NNZJ6M5FGM0DcgoYmZ6V+/LVZduxG5R7tOn3dU5s0jFpiMxCnL5MCtMUwirdNHvCnV0x6gmjj6mGD0CP2O0WpdGjTepXO7221+t+Ypdsqml8M93X1RNGcwYvPGid3Xugph/UrF39lf+MiDlqhw2jOVY6jfS2yTuI7+OofAPEKwAAAABJRU5ErkJggg==\"}]}"
+    ]
+  }
+}

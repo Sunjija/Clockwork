@@ -9,6 +9,7 @@ static class WorldArtChecks
         void Known(string name){Check(names.ContainsKey(name),"Missing state asset: "+name);}
         string[] rows={"#######","#.....#","#.....#","#.....#","#.....#","#.....#","#######"};
         var p=new CorePuzzle(new PuzzleRoom{rows=rows,start=22,boxes=new[]{23},types=new[]{0},goals=new[]{24}});
+        Check(WorldArtState.WallMask(p,0)==6&&WorldArtState.WallMask(p,6)==12&&WorldArtState.WallMask(p,42)==3&&WorldArtState.WallMask(p,48)==9,"Connected wall corner masks do not wrap rows or include outside tiles");
         Check(WorldArtState.Socket(p,0,out _) =="amber-slot-empty","Empty socket initially");
         Check(p.Move(1),"Legal push");
         Check(WorldArtState.Box(p,0,out _) =="battery-moving","Moving weight frame during interpolation");
@@ -20,6 +21,15 @@ static class WorldArtChecks
         p.Undo();Check(WorldArtState.Socket(p,0,out _) =="amber-slot-empty"&&WorldArtState.Box(p,0,out _) =="battery-idle","Undo restores art, no stale latches");
         p.Move(1);p.Reset();Check(WorldArtState.Socket(p,0,out _) =="amber-slot-empty","Reset clears state art");
         pass.Add("move/contact/connect/filled sequence, undo and reset match the board");
+        p=new CorePuzzle(new PuzzleRoom{rows=rows,start=22,boxes=new[]{23,10},types=new[]{0,0},goals=new[]{24,12}});
+        Check(p.Move(1),"Place weight on one socket before complete board");p.AdvanceVisual(.7f);
+        Check(WorldArtState.Socket(p,0,out _) =="amber-slot-filled","Partial socket connected");
+        foreach(int direction in new[]{2,1,1,3,0})Check(p.Move(direction),"Connected weight remains movable");
+        Check(WorldArtState.Socket(p,0,out _) =="amber-slot-empty","Moving connected weight away clears connection");
+        p=new CorePuzzle(new PuzzleRoom{rows=rows,start=22,boxes=new[]{23,10},types=new[]{1,0},goals=new[]{24,12}});
+        Check(p.Move(1)&&p.boxes[0]==26,"Empty goal does not stop orb");p.AdvanceVisual(.3f);
+        Check(WorldArtState.Socket(p,0,out _) =="cyan-slot-empty","Passed socket does not latch a false connection");
+        pass.Add("connected props are not locked; orb passes goals; wall adjacency stays in bounds");
         p=new CorePuzzle(new PuzzleRoom{rows=rows,start=22,boxes=new[]{24,25},types=new[]{0,1},goals=new[]{25,24}});
         Check(WorldArtState.Socket(p,0,out _) =="amber-slot-wrong"&&WorldArtState.Socket(p,1,out _) =="cyan-slot-wrong","Wrong type is distinct from empty and filled");
         Check(!p.Solved,"Wrong art agrees with unsolved rules");pass.Add("mismatched sockets use error-state sprites");

@@ -1,0 +1,187 @@
+{
+  "frames": [
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/00.png",
+      "sourcePngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "timeMs": 0,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/01.png",
+      "sourcePngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "timeMs": 160,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/02.png",
+      "sourcePngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+      "timeMs": 320,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/03.png",
+      "sourcePngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+      "timeMs": 480,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/04.png",
+      "sourcePngSha256": "15dbf1926faa2a39790f8a0c6a0bc449fe26695daf7b3c6e66e61f61af5989a0",
+      "timeMs": 640,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "f6950636e26d4e5894a80dbb64fb994f96d55976b2a5f59cc0f8bb69d94c5627"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/05.png",
+      "sourcePngSha256": "15dbf1926faa2a39790f8a0c6a0bc449fe26695daf7b3c6e66e61f61af5989a0",
+      "timeMs": 800,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "f6950636e26d4e5894a80dbb64fb994f96d55976b2a5f59cc0f8bb69d94c5627"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/06.png",
+      "sourcePngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+      "timeMs": 960,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/07.png",
+      "sourcePngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+      "timeMs": 1120,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/08.png",
+      "sourcePngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+      "timeMs": 1280,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/09.png",
+      "sourcePngSha256": "cc1c9699398246dea3a29e7606cca5f12b6e8c2dfa22b83658e4db6d8b51d472",
+      "timeMs": 1440,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "34964aa683ad509842530e7397ee8b11290c858f5eb5aec2318eb78821403fd4"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/10.png",
+      "sourcePngSha256": "cc1c9699398246dea3a29e7606cca5f12b6e8c2dfa22b83658e4db6d8b51d472",
+      "timeMs": 1600,
+      "durationMs": 160,
+      "caption": {
+        "text": "돌아갈 곳이 있어.",
+        "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+        "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+        "sizeNative": 16,
+        "fontmode": "1",
+        "generatedLettering": false
+      },
+      "reusedRgbaUnchangedOutsideCaption": true,
+      "rgbaSha256": "6344c31cb1753a990ac718e200717caf88395009b8c31611ad8dacda2f45e7f0"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/11.png",
+      "sourcePngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+      "timeMs": 1760,
+      "durationMs": 160,
+      "caption": {
+        "text": "돌아갈 곳이 있어.",
+        "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+        "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+        "sizeNative": 16,
+        "fontmode": "1",
+        "generatedLettering": false
+      },
+      "reusedRgbaUnchangedOutsideCaption": true,
+      "rgbaSha256": "d624b8ffc0d47e3281933b0d8c1b8fc036fa6d83f51aff38ae03ee5f25fdf161"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/12.png",
+      "sourcePngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+      "timeMs": 1920,
+      "durationMs": 160,
+      "caption": {
+        "text": "돌아갈 곳이 있어.",
+        "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+        "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+        "sizeNative": 16,
+        "fontmode": "1",
+        "generatedLettering": false
+      },
+      "reusedRgbaUnchangedOutsideCaption": true,
+      "rgbaSha256": "d624b8ffc0d47e3281933b0d8c1b8fc036fa6d83f51aff38ae03ee5f25fdf161"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/13.png",
+      "sourcePngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "timeMs": 2080,
+      "durationMs": 160,
+      "caption": {
+        "text": "돌아갈 곳이 있어.",
+        "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+        "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+        "sizeNative": 16,
+        "fontmode": "1",
+        "generatedLettering": false
+      },
+      "reusedRgbaUnchangedOutsideCaption": true,
+      "rgbaSha256": "c340da8595db03e3b65bc238a7a2dcf7701414bf951c5eab4c21c1794c31b07b"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/14.png",
+      "sourcePngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "timeMs": 2240,
+      "durationMs": 160,
+      "caption": {
+        "text": "돌아갈 곳이 있어.",
+        "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+        "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+        "sizeNative": 16,
+        "fontmode": "1",
+        "generatedLettering": false
+      },
+      "reusedRgbaUnchangedOutsideCaption": true,
+      "rgbaSha256": "c340da8595db03e3b65bc238a7a2dcf7701414bf951c5eab4c21c1794c31b07b"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-close/15.png",
+      "sourcePngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "timeMs": 2400,
+      "durationMs": 600,
+      "caption": {
+        "text": "돌아갈 곳이 있어.",
+        "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+        "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+        "sizeNative": 16,
+        "fontmode": "1",
+        "generatedLettering": false
+      },
+      "reusedRgbaUnchangedOutsideCaption": true,
+      "rgbaSha256": "c340da8595db03e3b65bc238a7a2dcf7701414bf951c5eab4c21c1794c31b07b"
+    }
+  ],
+  "sourceInfo": {
+    "priorClip": "workshop-close",
+    "priorGeneratedSource": "Source/v1-provenance.json",
+    "originalFrameTimingPreserved": true,
+    "newPropsAuthored": false,
+    "captionOnsetMs": 1600
+  }
+}

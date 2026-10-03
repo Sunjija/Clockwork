@@ -1,0 +1,10 @@
+{
+  "note": "Original candidates captured before native conversion; additional actual generated revisions may be added without overwriting these.",
+  "files": {
+    "Source/Generated/rev1/idle.png": "b7545f5f1509a9b5ef974f95aac6ef6ebcdad4b21156ab555dab435d3e5cec60",
+    "Source/Generated/rev1/jaw-impact-03.png": "f6fb438895a5fe93146385e3eb3c16fbe7f169d8bfadbf3c23b7473a22d77e21",
+    "Source/Generated/rev1/jaw-impact-04.png": "379288badf48bd17298ac3d529a93411bfeaf86cd6bfa4e694fb0dc1ab997cc9",
+    "Source/Generated/rev1/jaw-impact-05.png": "abcf8b70ef30992e54773dabb9876a473d1d13997040fd8308da876572048de2",
+    "Source/Generated/rev1/slam-land.png": "ff1d908bd8084fca92ea0e8b60d36530fd68240eb79928c3d72e7a22fcc0e2c3"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-02",
+  "status": "unapproved-native-candidate",
+  "mainViewedGeneratedAnchors": true,
+  "mainViewedNativeContact": true,
+  "mainViewedTemporalContact": true,
+  "findings": [
+    "Relay power-on and rightward cable propagation read clearly; fixed metal structure remains stable.",
+    "Guardian pressure-jaw silhouette is retained, no eyes added; red mouth core powers on. The sampled piston activation stroke is small and requires user motion feedback.",
+    "Workshop wide and close share the exact source/crop; amber floor no longer maps to red. Dust motion is intentionally very restrained.",
+    "Native logical320x180 grid is enlarged only by integer2x; workshop-close is the same160x90 crop enlarged4x.",
+    "No sound, caption, runtime integration, build, launcher modification or game launch performed."
+  ],
+  "outputSummary": {
+    "clips": 4,
+    "frames": 56,
+    "durationsMs": [
+      2000,
+      2000,
+      3000,
+      3000
+    ],
+    "formats": [
+      "PNG frames",
+      "Piskel",
+      "APNG",
+      "GIF offline preview"
+    ],
+    "paletteColors": 64
+  },
+  "technicalValidation": "QA/independent-validation.json:643 checks passed; exact GIF preview pixel/timing check in QA/preview-timing.json.",
+  "humanVisualApproval": "pending",
+  "nextStep": "User review of dot density, guardian ignition strength and workshop warmth before runtime integration.",
+  "toolMode": "built-in image_gen"
+}

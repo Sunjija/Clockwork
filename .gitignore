@@ -18,7 +18,19 @@
 *.csproj
 *.sln
 *.user
+/art/return-ui-v2/QA/compile/
 
 # Native sprite authoring caches
 /tools/art/__pycache__/
 *.sg-rwlock
+
+# macOS local folder state
+.DS_Store
+
+# Reproducible cinematic per-frame delta caches (PNG/Piskel/APNG sources are committed)
+/art/return-pixel-cinematics*/Clips/**/*.pixels.json
+/art/return-ending-elevator-v3/Clips/**/*.pixels.json
+/art/return-cinematic-edit-v4*/Clips/**/*.pixels.json
+
+# Incomplete local video-encoding experiments, not approved deliverables
+/art/return-pixel-cinematics-v2-full*/QA/video-preview-build-*/

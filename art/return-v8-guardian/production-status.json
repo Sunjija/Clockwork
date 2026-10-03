@@ -1,0 +1,60 @@
+{
+  "revision": "guardian-v8-selective-distortion-correction",
+  "date": "2026-10-02",
+  "stage": "exported-and-statically-validated-candidate",
+  "scope": "Boss asset improvement only; no gameplay timing or hit geometry changes",
+  "imageFirst": {
+    "successfulActualGenerationCalls": 6,
+    "selectedCorrectedPoseSources": 5,
+    "unselectedGeneratedVariantPreserved": 1,
+    "failedDispatchesBeforeGeneration": 1,
+    "generatedAnchorsShownAndInspected": true,
+    "nativeComparisonsInspectedByProductionAgent": true,
+    "humanAppearanceApproval": "pending",
+    "immutableGenerationRecord": "Source/provenance.json"
+  },
+  "exports": {
+    "clips": 15,
+    "frames": 71,
+    "correctedRuntimePngs": 13,
+    "unchangedV7ByteIdenticalPngs": 58,
+    "canvas": [192, 176],
+    "paletteColors": 32,
+    "existingNamesAndDurationsPreserved": true,
+    "heldCoreAndCoreFlashPreserved": true,
+    "intendedCurlAndAirRotationPreserved": true,
+    "idleSilhouetteInvariant": true,
+    "landingWidthBefore": 183,
+    "landingWidthAfter": 149,
+    "medianPlantedFootRow": 163,
+    "jaw03And04LowestOpaqueRow": 164,
+    "runtimeResourceRoot": "ReturnV2/WardenV8/",
+    "runtimeSourceBinding": "V8 preferred with unchanged V7 fallback",
+    "editableFormats": ["PNG", "Piskel", "APNG", "pixel-delta JSON"]
+  },
+  "validation": {
+    "independentStaticPassedChecks": 1311,
+    "independentStaticFailures": 0,
+    "independentStaticReport": "QA/audit-all-report.json",
+    "exportReplayReport": "QA/clip-validation.json",
+    "pureCSharpGuardianStateTimeSelections": 105600,
+    "pureCSharpReport": "QA/model-regression/V8/animation-model-checks.json",
+    "pureCSharpRegressionPassed": true,
+    "priorProductionQaOverwritten": false,
+    "tiqueAndReadabilityVisualExportsPreserved": true,
+    "fullSequenceStaticContactsInspectedByProductionAgent": true,
+    "offlineSequencePreviewRecord": "QA/clip-sequence-preview.json",
+    "unityEditorLaunched": false,
+    "unityPlayerBuildPerformed": false,
+    "gameLaunched": false,
+    "runtimeCapturePerformed": false,
+    "existingGameExecutableUpdated": false,
+    "runtimeMotionApproval": "not performed",
+    "humanAppearanceApproval": "pending",
+    "humanPlaytest": "not performed"
+  },
+  "git": {
+    "commitCreated": false,
+    "pushPerformed": false
+  }
+}

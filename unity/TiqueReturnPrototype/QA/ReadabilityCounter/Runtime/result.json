@@ -1,0 +1,39 @@
+{
+    "passed": true,
+    "scope": "Actual Unity world-camera GPU captures and production-command fixtures. Puzzle solutions replayed; combat initial state explicitly staged. IMGUI, desktop, physical keys, subjective art approval and human playability excluded.",
+    "completedRooms": 3,
+    "counterHits": 1,
+    "bossHealth": 8,
+    "health": 5,
+    "captures": [
+        "puzzle-1-initial",
+        "puzzle-1-connected",
+        "puzzle-2-initial",
+        "puzzle-2-orb-moving",
+        "puzzle-2-connected",
+        "puzzle-3-initial",
+        "puzzle-3-orb-moving",
+        "puzzle-3-connected",
+        "counter-01-locked-warning",
+        "counter-02-land-miss",
+        "counter-03-opening",
+        "counter-04-ready-core",
+        "counter-05-hit"
+    ],
+    "events": [
+        "0.00:boss-Rest",
+        "0.00:arena-arrival",
+        "0.81:boss-SlamAim",
+        "1.32:dash",
+        "2.07:boss-Slam",
+        "2.38:boss-CounterSettle",
+        "2.38:slam-miss",
+        "2.58:boss-Open",
+        "2.58:counter-open",
+        "2.88:attack",
+        "3.00:counter-hit",
+        "3.00:boss-hit",
+        "3.00:counter-close-hit",
+        "3.00:boss-Recover"
+    ]
+}

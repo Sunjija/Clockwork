@@ -1,0 +1,6 @@
+{
+  "mode": "built-in image_gen",
+  "useCase": "precise-object-edit",
+  "target": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-2d5ed956-8e6f-484e-b021-1344c62eb815.png",
+  "prompt": "Use case: precise-object-edit.\nEdit target: the attached Clockwork pixel-art workshop image. Change ONLY the ONE small brass cup/mug on the center of the workbench: remove the cup and continue the existing empty workbench surface behind it. Do not replace it with any object. Keep EVERY other pixel-art design, workbench, gear, lamp, clock, shelf, stool, tools, pipe, window, framing, warm light, palette and camera position unchanged. No character, human, plant, added object or generated text. Preserve the hard pixel-art edges and same 16:9 scene. This is a tiny cleanup, not a redesign or change in style."
+}

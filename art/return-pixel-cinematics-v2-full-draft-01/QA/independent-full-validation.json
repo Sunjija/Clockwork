@@ -1,0 +1,277 @@
+{
+  "passed": true,
+  "scope": "Independent read-only decode/replay of actual prepared PNG, generated/native/reuse SHA and eight-cut editable outputs. No packager/composer import or execution.",
+  "checkedAtUtc": "2026-10-02T13:40:08.126784+00:00",
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "unityFilesWritten": false,
+  "humanAppearanceApproval": "pending",
+  "geometryRigidMathematicalApproval": "pending",
+  "errors": [],
+  "warnings": [
+    "Piskel is frame-editable at fixed fps20; variable shot exposure authority is APNG and manifest, not playback timing inside Piskel.",
+    "Native doorway patch includes floor rows282..283 inside the approved door crop; floor outside crop and all rows284+ are byte-exact.",
+    "A1 retains exact battery-moving sprite RGBA, but samples its original440ms cycle at composite cuts that omit30/35ms prop boundaries. During760ms movement,220ms has a different visible pose from the original prop timeline, with at most30ms transition delay. APNG/manifest matches the authored plan; original moving-prop exposure timing is not exact."
+  ],
+  "checks": {
+    "originalRuntimePoseTiming": {
+      "A1BatteryMovingOriginalCycleMs": 440,
+      "A1BatteryMovingTimelineMs": 760,
+      "A1BatteryMovingDifferingPoseMs": 220,
+      "A1BatteryMovingMaximumTransitionDelayMs": 30,
+      "A1BatteryMovingSourceRgbaUnchanged": true,
+      "A1BatteryMovingOriginalExposureTimingExact": false,
+      "authoredPlanApngExposureTimingExact": true,
+      "needsMainReviewOfSourceInfoClaim": true
+    },
+    "plan": {
+      "shotDurationsMs": {
+        "A1": 2000,
+        "A2": 2000,
+        "A3": 2000,
+        "A4": 2000,
+        "B1": 2000,
+        "B2": 2000,
+        "B3": 3000,
+        "B4": 3000
+      },
+      "frameCounts": {
+        "A1": 27,
+        "A2": 12,
+        "A3": 12,
+        "A4": 9,
+        "B1": 6,
+        "B2": 49,
+        "B3": 16,
+        "B4": 16
+      },
+      "sequences": [
+        {
+          "name": "awakening",
+          "shots": [
+            "A1",
+            "A2",
+            "A3",
+            "A4"
+          ],
+          "durationMs": 8000
+        },
+        {
+          "name": "homecoming",
+          "shots": [
+            "B1",
+            "B2",
+            "B3",
+            "B4"
+          ],
+          "durationMs": 10000
+        }
+      ],
+      "continuous18s": false,
+      "bossFightBetweenSequences": true
+    },
+    "generatedTraceability": {
+      "preservedOriginalCount": 8,
+      "requestCount": 4,
+      "selected": [
+        "puzzle-plate",
+        "arena-plate",
+        "exit-open-edit"
+      ],
+      "rejected": {
+        "name": "exit-rejected-layout",
+        "reason": "Floor/door moved; preserved, never used in native frames."
+      },
+      "sourceAndReferenceShaExact": true,
+      "mainInspectionRecordOnly": true,
+      "humanAppearanceApproval": "pending"
+    },
+    "nativeDerivation": {
+      "plates": 3,
+      "logical320x180To640x360NearestExact": true,
+      "generatedBoxPaletteReplayExact": true,
+      "paletteColors": 64,
+      "alpha255": true,
+      "geometryRigidMathematicalApproval": "pending"
+    },
+    "floorDoorRegistration": {
+      "allowedGeneratedDoorRect": [
+        578,
+        190,
+        638,
+        284
+      ],
+      "outsideRectRgbaExact": true,
+      "allFloorRowsY284AndBelowExact": true,
+      "floorY282AndBelowChangedPixelsInsideDoorOnly": 108,
+      "outsideDoorFloorExact": true,
+      "doorGeometryHumanApproval": "pending"
+    },
+    "unchangedSpriteReuse": {
+      "count": 72,
+      "originalAndCopyPngBytesShaExact": true,
+      "wholeSpriteScale": 1,
+      "noBodyPartsRedrawn": true
+    },
+    "sourceFrameReplay": {
+      "rgbaExact": true,
+      "compositedSubexposuresVerified": 102,
+      "priorPngByteExactFrames": 50,
+      "priorCaptionOnlyFrames": 6,
+      "captionRasterChecks": 12,
+      "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+      "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d"
+    },
+    "artifacts": [
+      {
+        "name": "A1",
+        "frames": 27,
+        "durationMs": 2000,
+        "paletteColors": 99,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 27,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "A2",
+        "frames": 12,
+        "durationMs": 2000,
+        "paletteColors": 57,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 9,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "A3",
+        "frames": 12,
+        "durationMs": 2000,
+        "paletteColors": 57,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 11,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "A4",
+        "frames": 9,
+        "durationMs": 2000,
+        "paletteColors": 74,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 9,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "B1",
+        "frames": 6,
+        "durationMs": 2000,
+        "paletteColors": 75,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 6,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "B2",
+        "frames": 49,
+        "durationMs": 2000,
+        "paletteColors": 68,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 49,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "B3",
+        "frames": 16,
+        "durationMs": 3000,
+        "paletteColors": 52,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 7,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "B4",
+        "frames": 16,
+        "durationMs": 3000,
+        "paletteColors": 52,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 8,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "awakening",
+        "frames": 60,
+        "durationMs": 8000,
+        "paletteColors": 126,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 56,
+        "humanMotionApproval": "pending"
+      },
+      {
+        "name": "homecoming",
+        "frames": 87,
+        "durationMs": 10000,
+        "paletteColors": 79,
+        "pngRgbaPiskelApngExact": true,
+        "apngVariableDurationExact": true,
+        "apngDisposal": 1,
+        "apngBlend": 0,
+        "gifRgbExposureAndTotalExact": true,
+        "gifDecodedFrames": 70,
+        "humanMotionApproval": "pending"
+      }
+    ],
+    "readme": {
+      "present": true,
+      "absoluteLinksChecked": 0
+    },
+    "ffmpeg": {
+      "bundledPythonImageioFfmpegImport": "ModuleNotFoundError",
+      "pathLookup": null,
+      "existingBinarySearchRoots": [
+        "/Users/daddung/.cache/codex-runtimes",
+        "/Users/daddung/.codex/plugins/cache",
+        "/Applications",
+        "/opt",
+        "/usr/local/bin",
+        "/usr/local/lib",
+        "/Users/daddung/.local"
+      ],
+      "foundExistingBinary": false,
+      "installed": false
+    }
+  }
+}

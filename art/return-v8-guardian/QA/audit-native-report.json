@@ -1,0 +1,658 @@
+{
+  "scope": "independent static source/native/export audit; no game/Unity launched",
+  "humanAppearanceApproval": "pending",
+  "humanFunValidation": "pending",
+  "passed": [
+    {
+      "check": "v7-baseline-frame-count71",
+      "detail": "71"
+    },
+    {
+      "check": "v7-package-unchanged-from-audit-baseline",
+      "detail": ""
+    },
+    {
+      "check": "v7-palette32",
+      "detail": ""
+    },
+    {
+      "check": "earlier-generated-candidates-preserved-byte-exact",
+      "detail": ""
+    },
+    {
+      "check": "actual-generation-provenance-present",
+      "detail": ""
+    },
+    {
+      "check": "five-selected-generated-pose-targets",
+      "detail": ""
+    },
+    {
+      "check": "six-successful-calls-not-five-nativeframes",
+      "detail": ""
+    },
+    {
+      "check": "generated-anchor-inspection-recorded-not-human-approval",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:idle-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-621708c8-a894-4bb7-96f2-df0760017111.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:idle-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-03-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-8deb1a67-f9b6-4150-9948-0764e3411e99.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-03-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-04-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-57699bf3-018f-4362-82d6-11fd5c43daf3.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-04-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-05-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-3242635a-ab57-42f7-b392-1e435160386c.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-05-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:slam-land-rev1",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-f3441876-85ab-4d49-87fc-15a355c61847.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:slam-land-rev1",
+      "detail": ""
+    },
+    {
+      "check": "author-host-generated-original-present:jaw-impact-05-rev2",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-eeda3c79-59ab-4520-a6f3-6fd9b31673c5.png"
+    },
+    {
+      "check": "saved-imagegen-original-byte-identical:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "actual-prompt-file-preserved:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "actual-full-prompt-identified:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "actual-call-reference-mapping:jaw-impact-05-rev2",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:idle",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "selected-pose-real-call-mapping:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-manifest-present",
+      "detail": ""
+    },
+    {
+      "check": "native-selection-provenance-sha",
+      "detail": ""
+    },
+    {
+      "check": "five-actual-anchor-assets",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:idle",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/idle.png"
+    },
+    {
+      "check": "generated-source-sha:idle",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:idle",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:idle",
+      "detail": "[167, 439, 1228, 1126]"
+    },
+    {
+      "check": "native-canvas192x176:idle",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:idle",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:idle",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:idle",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:idle",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:idle",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:idle",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:idle",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:idle",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:jaw-impact-03",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-03.png"
+    },
+    {
+      "check": "generated-source-sha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:jaw-impact-03",
+      "detail": "[214, 508, 1299, 1113]"
+    },
+    {
+      "check": "native-canvas192x176:jaw-impact-03",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:jaw-impact-03",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:jaw-impact-04",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-04.png"
+    },
+    {
+      "check": "generated-source-sha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:jaw-impact-04",
+      "detail": "[90, 586, 1261, 1111]"
+    },
+    {
+      "check": "native-canvas192x176:jaw-impact-04",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:jaw-impact-04",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:jaw-impact-05",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-05.png"
+    },
+    {
+      "check": "generated-source-sha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:jaw-impact-05",
+      "detail": "[184, 388, 1430, 974]"
+    },
+    {
+      "check": "native-canvas192x176:jaw-impact-05",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "native-source-footprints-present:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:jaw-impact-05",
+      "detail": ""
+    },
+    {
+      "check": "generated-source-present:slam-land",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/slam-land.png"
+    },
+    {
+      "check": "generated-source-sha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold128:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:slam-land",
+      "detail": "[163, 412, 1435, 939]"
+    },
+    {
+      "check": "native-canvas192x176:slam-land",
+      "detail": "(192, 176)"
+    },
+    {
+      "check": "native-binary-alpha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-v7-palette-only:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-output-sha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "native-ground-baseline163:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "uniform-whole-pose-scale-only:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "horizontal-registration-x96:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "landing-width-at-most149",
+      "detail": "(22, 102, 171, 164)"
+    },
+    {
+      "check": "native-source-footprints-present:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-crop-sha:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-registration:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-source-footprint-step:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-full-sample-grid:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-premultiplied-area-replay:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "raw-source-palette-replay:slam-land",
+      "detail": ""
+    },
+    {
+      "check": "limited-source-cleanup-replay:slam-land",
+      "detail": ""
+    }
+  ],
+  "failed": [],
+  "observations": {
+    "authorHostGeneratedCacheVerified": true,
+    "generatedSources": {
+      "idle": "Source/Generated/rev1/idle.png",
+      "jaw-impact-03": "Source/Generated/rev1/jaw-impact-03.png",
+      "jaw-impact-04": "Source/Generated/rev1/jaw-impact-04.png",
+      "jaw-impact-05": "Source/Generated/rev1/jaw-impact-05.png",
+      "slam-land": "Source/Generated/rev1/slam-land.png"
+    },
+    "idle": {
+      "bounds": [
+        28,
+        76,
+        164,
+        164
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "jaw-impact-03": {
+      "bounds": [
+        28,
+        89,
+        164,
+        165
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "jaw-impact-04": {
+      "bounds": [
+        28,
+        104,
+        164,
+        165
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "jaw-impact-05": {
+      "bounds": [
+        28,
+        100,
+        164,
+        164
+      ],
+      "groundMedian": 163.0,
+      "width": 136
+    },
+    "slam-land": {
+      "bounds": [
+        22,
+        102,
+        171,
+        164
+      ],
+      "groundMedian": 163,
+      "width": 149
+    }
+  },
+  "phase": "native",
+  "mechanicalPassed": true
+}

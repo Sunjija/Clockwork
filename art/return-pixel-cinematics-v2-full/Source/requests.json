@@ -1,0 +1,38 @@
+{
+  "revision": "full-eight-cut-v2",
+  "requests": [
+    {
+      "name": "puzzle-plate",
+      "args": {
+        "prompt": "Edit the provided actual Clockwork game screenshot into a single clean background plate for the SAME game-camera cut. Preserve the cold steel/navy and restrained brass/cyan pixel-art style, hard stepped edges, no smooth gradients or painterly texture, no bloom, no 3D realism. A single 16:9 landscape frame, no montage, no text or lettering. This is a background-only asset: absolutely no robot characters, no guardian, no UI, no HUD, no instructions. Keep game scale and readable gray connected walls. Reserve foreground space for compositing the original unchanged game sprites later. Do not invent a new game world. Preserve the fixed square-grid puzzle composition visible in the reference, centered in the frame. Keep the connected gray wall boundaries and recessed grid floor. Remove all movable objects and socket/orb icons from the cells so the exact original brass weights, cyan ROUND orbs, and square/round recessed sockets can be composited back unchanged. No new machinery inside the grid. Outside the grid remain quiet dark factory walls. Retain the grid proportions and tile positions, not a cinematic close-up or diagonal view.",
+        "referenced_image_paths": [
+          "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ui-v2/QA/font-position-repair/runtime-ui/05-puzzle-3.png"
+        ],
+        "transparent_background": false
+      }
+    },
+    {
+      "name": "arena-plate",
+      "args": {
+        "prompt": "Edit the provided actual Clockwork game screenshot into a single clean background plate for the SAME game-camera cut. Preserve the cold steel/navy and restrained brass/cyan pixel-art style, hard stepped edges, no smooth gradients or painterly texture, no bloom, no 3D realism. A single 16:9 landscape frame, no montage, no text or lettering. This is a background-only asset: absolutely no robot characters, no guardian, no UI, no HUD, no instructions. Keep game scale and readable gray connected walls. Reserve foreground space for compositing the original unchanged game sprites later. Do not invent a new game world. Preserve the original fixed SIDE-VIEW combat arena architecture and composition: long perfectly horizontal traversable platform at 79 percent frame height, quiet cold steel factory wall behind, room to place the small robot on the left and the large four-legged guardian on the right. Keep the doorway at the extreme right. The foreground floor top must stay perfectly flat and straight. Remove all characters and loose impact marks, keep the existing door CLOSED and unlit. The bottom fifth is a solid steel platform base. No foreground obstacles, no extra pillars obstructing actors, no glowing circular portal.",
+        "referenced_image_paths": [
+          "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ui-v2/QA/font-position-repair/runtime-ui/10-combat-rest.png"
+        ],
+        "transparent_background": false
+      }
+    },
+    {
+      "name": "exit-plate",
+      "args": {
+        "prompt": "Edit the provided actual Clockwork game screenshot into a single clean background plate for the SAME game-camera cut. Preserve the cold steel/navy and restrained brass/cyan pixel-art style, hard stepped edges, no smooth gradients or painterly texture, no bloom, no 3D realism. A single 16:9 landscape frame, no montage, no text or lettering. This is a background-only asset: absolutely no robot characters, no guardian, no UI, no HUD, no instructions. Keep game scale and readable gray connected walls. Reserve foreground space for compositing the original unchanged game sprites later. Do not invent a new game world. Keep the SAME side-view combat arena structure and floor as the screenshot. Show the existing rightmost mechanical doorway now OPEN, with a small warm amber light spilling from an ordinary quiet workshop beyond it. The open doorway must be at x approximately 84 percent of the frame, and the floor perfectly horizontal at y79 percent. The workshop beyond is inspired by the second reference image: muted brass task-lamp light, no people. Preserve the cold factory elsewhere. No floating portal, no huge blast of light, no new foreground objects. Leave clear floor for the original small robot walking right. No robots or other characters. Keep the entire arena, not a door close-up.",
+        "referenced_image_paths": [
+          "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ui-v2/QA/font-position-repair/runtime-ui/10-combat-rest.png",
+          "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Source/Generated/workshop.png"
+        ],
+        "transparent_background": false
+      }
+    }
+  ],
+  "humanAppearanceApproval": "pending",
+  "runtimeIntegrated": false
+}

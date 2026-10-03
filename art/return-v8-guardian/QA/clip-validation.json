@@ -1,0 +1,32 @@
+{
+  "clips": 15,
+  "frames": 71,
+  "correctedRuntimePngs": 13,
+  "unchangedV7ByteIdenticalPngs": 58,
+  "paletteColors": 32,
+  "canvas": [
+    192,
+    176
+  ],
+  "baselineRow": 163,
+  "namesAndDurationsPreserved": true,
+  "heldCoreAndCoreFlashPreserved": true,
+  "intendedCurlAndAirRotationsPreserved": true,
+  "idleSilhouetteInvariant": true,
+  "idleGeometricBreathing": false,
+  "binaryAlpha": true,
+  "point": true,
+  "mipmaps": false,
+  "compression": false,
+  "spritePixelsToUnits": 64,
+  "apngRoundtrip": "all frames RGBA and durations exact",
+  "piskelReplay": "all frames RGBA exact",
+  "pixelDeltaReplay": "all frames RGBA exact",
+  "nativeSourceEditReplay": "all frames RGBA exact",
+  "v7EditReplay": "all frames RGBA exact",
+  "runtimeCopies": "all PNG SHA256 exact",
+  "unityBuildPerformed": false,
+  "gameLaunched": false,
+  "runtimeCapture": false,
+  "humanAppearanceApproval": "pending"
+}

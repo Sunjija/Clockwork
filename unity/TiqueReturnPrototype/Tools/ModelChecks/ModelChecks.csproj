@@ -12,6 +12,8 @@
     <Compile Include="../../Assets/Scripts/ReturnPilot.cs" Link="ReturnPilot.cs" />
     <Compile Include="../../Assets/Scripts/CorePuzzle.cs" Link="CorePuzzle.cs" />
     <Compile Include="../../Assets/Scripts/ReworkModel.cs" Link="ReworkModel.cs" />
+    <Compile Include="../../Assets/Scripts/AdaptiveGuidance.cs" Link="AdaptiveGuidance.cs" />
+    <Compile Include="../../Assets/Scripts/CompactUiLayout.cs" Link="CompactUiLayout.cs" />
     <Compile Include="../../Assets/Scripts/ReworkPilot.cs" Link="ReworkPilot.cs" />
     <Compile Include="../../Assets/Scripts/ReworkChecks.cs" Link="ReworkChecks.cs" />
     <Compile Include="../../Assets/Scripts/WardenAnimation.cs" Link="WardenAnimation.cs" />

@@ -1,0 +1,2322 @@
+{
+  "revision": "pixel-cinematics-v1",
+  "method": "Offline packaging of prepared native PNGs only; no generated video or geometry authoring.",
+  "planSha256": "ab0f045398d0563d163d4ee33d6171ab0213b9ad2a1c1adab9ee61a2936ef373",
+  "provenanceSha256": "48f01c6b2c1e8710a5e43baa5239071b29687ad532ea656a3ebd95e8b0bec9fe",
+  "inspectedByMain": true,
+  "humanAppearanceApproval": "pending",
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "unityFilesWritten": false,
+  "sourcePngsModified": false,
+  "clips": [
+    {
+      "name": "relay-power",
+      "width": 640,
+      "height": 360,
+      "durations": [
+        200,
+        120,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        280,
+        600
+      ],
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/relay.png",
+      "sourceNativeSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 200,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/00.png",
+          "pngSha256": "78ceaba4513696d8c156c1d852699e95cbd7c7d27db9c4df3c99d4d026faf18f",
+          "exportPath": "Exports/relay-power/00.png",
+          "rgbaSha256": "e22c899105c79d408674cc3a35d80061a09190ffa0ab8cb455c9720eda5eb629",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 1,
+          "durationMs": 120,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/01.png",
+          "pngSha256": "7275e1eca62a8579bba0ffadf248d94535d0718dff27fee3953b2a8dd7fb3512",
+          "exportPath": "Exports/relay-power/01.png",
+          "rgbaSha256": "22c3821c63ee2e04c212f5850673315c14ac0455eda8d8b7617d1133314a99ce",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 2296,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 2,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/02.png",
+          "pngSha256": "51731e5f7fc24a777f7cd0c3bdd129d0e75c7fa51b3603fd528db242de82b5b4",
+          "exportPath": "Exports/relay-power/02.png",
+          "rgbaSha256": "cf47a6b55dfeef9bdd949820a0d28ba2ed93485ea51a53233f1a3a2771180b18",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 2296,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 3,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/03.png",
+          "pngSha256": "c0242980ec42968aeb7397caaecdf6b1e6f38423c6e1ac848ae35002299da256",
+          "exportPath": "Exports/relay-power/03.png",
+          "rgbaSha256": "ca0e4621764884632e69123d9a45bd7424807f32d8ff36782c6522e0ece13b52",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 2296,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 4,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/04.png",
+          "pngSha256": "b22614a449a7ceafa99f356bb80293c306fda7cf0d86e6f92c5bd217fae6edd5",
+          "exportPath": "Exports/relay-power/04.png",
+          "rgbaSha256": "268eb973b43712c3df9613ef5df2b8cd34e32e25783e3fdf8db70a28640fc5a8",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 3080,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 5,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/05.png",
+          "pngSha256": "75d7698bd7375057885050be682e6516a7be4afd6686b0099a10ad08cd4281cd",
+          "exportPath": "Exports/relay-power/05.png",
+          "rgbaSha256": "e3f576246a8c9698c2e16396b0e5efa96791cd6c380e077fcf370644fce14156",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 4260,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 6,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/06.png",
+          "pngSha256": "64629ee97af30d689cb2872ad4e482a09c23272ffef2ea7a958e4d4d8935bf30",
+          "exportPath": "Exports/relay-power/06.png",
+          "rgbaSha256": "465d381dbcbed3b5f8245d777d2de7d4bf90445446fed716c4a5e982a93da945",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 5256,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 7,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/07.png",
+          "pngSha256": "c7a85d1903010b748bbcc3118b155389d3124c532f5f49c8e0ed6c9be8851f10",
+          "exportPath": "Exports/relay-power/07.png",
+          "rgbaSha256": "56502dc9ff3b1b47479c02b681e73ee242b8b6b7666fe12773550c5c3bcb5e60",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 5776,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 8,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/08.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "exportPath": "Exports/relay-power/08.png",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 7344,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 9,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/09.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "exportPath": "Exports/relay-power/09.png",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 7344,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 10,
+          "durationMs": 280,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/10.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "exportPath": "Exports/relay-power/10.png",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 7344,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 11,
+          "durationMs": 600,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/relay-power/11.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "exportPath": "Exports/relay-power/11.png",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 7344,
+          "pixelDeltaReplay": true
+        }
+      ],
+      "palette": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          13
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          5,
+          4,
+          6
+        ],
+        [
+          7,
+          11,
+          18
+        ],
+        [
+          9,
+          17,
+          27
+        ],
+        [
+          9,
+          91,
+          120
+        ],
+        [
+          10,
+          10,
+          19
+        ],
+        [
+          11,
+          76,
+          108
+        ],
+        [
+          14,
+          21,
+          31
+        ],
+        [
+          15,
+          27,
+          41
+        ],
+        [
+          15,
+          106,
+          150
+        ],
+        [
+          16,
+          16,
+          26
+        ],
+        [
+          20,
+          29,
+          42
+        ],
+        [
+          20,
+          86,
+          135
+        ],
+        [
+          22,
+          22,
+          33
+        ],
+        [
+          22,
+          35,
+          50
+        ],
+        [
+          29,
+          31,
+          47
+        ],
+        [
+          30,
+          41,
+          66
+        ],
+        [
+          36,
+          50,
+          78
+        ],
+        [
+          36,
+          109,
+          161
+        ],
+        [
+          37,
+          156,
+          186
+        ],
+        [
+          38,
+          55,
+          76
+        ],
+        [
+          39,
+          83,
+          115
+        ],
+        [
+          46,
+          62,
+          93
+        ],
+        [
+          47,
+          42,
+          55
+        ],
+        [
+          51,
+          32,
+          18
+        ],
+        [
+          52,
+          71,
+          106
+        ],
+        [
+          58,
+          38,
+          23
+        ],
+        [
+          59,
+          53,
+          66
+        ],
+        [
+          63,
+          41,
+          25
+        ],
+        [
+          66,
+          45,
+          30
+        ],
+        [
+          66,
+          73,
+          96
+        ],
+        [
+          67,
+          247,
+          250
+        ],
+        [
+          73,
+          45,
+          25
+        ],
+        [
+          75,
+          52,
+          34
+        ],
+        [
+          78,
+          64,
+          73
+        ],
+        [
+          79,
+          84,
+          106
+        ],
+        [
+          83,
+          52,
+          30
+        ],
+        [
+          91,
+          60,
+          35
+        ],
+        [
+          92,
+          96,
+          116
+        ],
+        [
+          95,
+          52,
+          29
+        ],
+        [
+          96,
+          66,
+          39
+        ],
+        [
+          106,
+          109,
+          126
+        ],
+        [
+          108,
+          68,
+          34
+        ],
+        [
+          120,
+          81,
+          41
+        ],
+        [
+          121,
+          70,
+          33
+        ],
+        [
+          122,
+          122,
+          135
+        ],
+        [
+          136,
+          135,
+          146
+        ],
+        [
+          145,
+          85,
+          36
+        ],
+        [
+          152,
+          151,
+          161
+        ],
+        [
+          154,
+          100,
+          45
+        ],
+        [
+          174,
+          172,
+          180
+        ],
+        [
+          201,
+          149,
+          85
+        ],
+        [
+          206,
+          204,
+          209
+        ],
+        [
+          248,
+          248,
+          248
+        ]
+      ],
+      "paletteColors": 57,
+      "paletteAtMost64": true,
+      "alphaValues": [
+        255
+      ],
+      "binaryAlpha": true,
+      "alpha255": true,
+      "shapeStable": true,
+      "shapeMetric": "Alpha mask only; this does not assert rigid body geometry in opaque scenes.",
+      "shapeCheck": "Alpha masks recorded, not forced invariant for intentionally changing poses.",
+      "piskelReplayRgbaExact": true,
+      "apngReplayRgbaAndDurationExact": true,
+      "pixelDeltaReplayRgbaExact": true,
+      "pngExportByteExact": true,
+      "sheetSha256": "4c876fc3979959589c2367115b0b1f53924bf4df501505df6b1f1b7f9cb08b94",
+      "apngSha256": "7ad196b00eb5d57653d3556288fcf7fa780478b5b70b14867188ffa57a5cbb5e",
+      "piskelSha256": "5475bed6e3314211c9790d806386aa0c63806d0a75d8e6c07bbdfd0341b9c888",
+      "preview": {
+        "path": "QA/relay-power-preview.gif",
+        "sha256": "ed6bde3a22a175cfbd432197c0e795250d9861e71f02b620d5f0adad8f9febaa",
+        "encodedDurationsMs": [
+          200,
+          120,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          280,
+          600
+        ],
+        "encodedTotalMs": 2000,
+        "scale": 2,
+        "resampling": "NEAREST",
+        "runtimeCapture": false,
+        "timingAuthority": "native.apng and clips.json, not GIF"
+      }
+    },
+    {
+      "name": "warden-boot",
+      "width": 640,
+      "height": 360,
+      "durations": [
+        200,
+        120,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        280,
+        600
+      ],
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/warden-core.png",
+      "sourceNativeSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 200,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/00.png",
+          "pngSha256": "25448677a11b9966837f645c5d61dfa60b1784087737753a705a353e3ccb47ab",
+          "exportPath": "Exports/warden-boot/00.png",
+          "rgbaSha256": "40ad2ca875a379081b5efbb09374a37a254b9a32fba5e1d56f11a04ef59fd4c1",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 1,
+          "durationMs": 120,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/01.png",
+          "pngSha256": "64917e21d0e89d2d076d78888a39bc45843edb87b623fc8294337cc27494ca7c",
+          "exportPath": "Exports/warden-boot/01.png",
+          "rgbaSha256": "db748ad566635f23781009593bdcf0a5eaede457db25abb5f57fb7e46d2682a3",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 9036,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 2,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/02.png",
+          "pngSha256": "7b203e9068d4c07c8b57a241cef0acb3d065a7fa3c4cff056472fd07fc9f250d",
+          "exportPath": "Exports/warden-boot/02.png",
+          "rgbaSha256": "5a05b6319065f1e3e344a7fe420c6872e30f69668be4b330b07d31c6053af83c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 11704,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 3,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/03.png",
+          "pngSha256": "b49d156c4ff5f87e2ad534052a1e6a64d87bbbb135da8243480673b87335241b",
+          "exportPath": "Exports/warden-boot/03.png",
+          "rgbaSha256": "c5f519a274c2035cc85c0a0be32c94f14811aebe2a073905623c1988c44fcedf",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 12472,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 4,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/04.png",
+          "pngSha256": "7122458cb19a884bece9563e6686fd05f3239afd7a79456f1751fd6572ab6eae",
+          "exportPath": "Exports/warden-boot/04.png",
+          "rgbaSha256": "0fe03d9b81f793b40336905df0f6ce8ca25b29ad68acc2f9cb9541870187138b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 12472,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 5,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/05.png",
+          "pngSha256": "19610df5e529548da06bdc611c505ccd88e16bf7de54282d86cb49cb47c1e63f",
+          "exportPath": "Exports/warden-boot/05.png",
+          "rgbaSha256": "8108ec34b650ff9dead27fa85a3e2600d32a82e0dd608d61a2d46c1a7fd22ff2",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 12472,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 6,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/06.png",
+          "pngSha256": "5d7643ac59d777e5978caa9cc1ea973b205663cc27391f5a3a9dca515fb4f1f2",
+          "exportPath": "Exports/warden-boot/06.png",
+          "rgbaSha256": "0faeec0cb5a6383bdb81862d44569746ccc76a0d4b8d0fe4dd4e6cbb1028688d",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 12472,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 7,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/07.png",
+          "pngSha256": "a5622f583f94a99c907d64eaf9dc4ed12f3e54160f391da69acf2afe0e3bee1a",
+          "exportPath": "Exports/warden-boot/07.png",
+          "rgbaSha256": "1d957e08c9e9f3794691d4cf2a8363ee7a4e40ecd7e09f2a76cb20bdacba49cb",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 12472,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 8,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/08.png",
+          "pngSha256": "9620ebaa4e96d001146dc02cc19478157a6452bee470522cd808ddbd00da64ed",
+          "exportPath": "Exports/warden-boot/08.png",
+          "rgbaSha256": "251d6da736489e8b51dbd2700bec21c9988912f8aa21535a5ffc7ad5da4af1d7",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 12376,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 9,
+          "durationMs": 100,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/09.png",
+          "pngSha256": "5b16c6fb0d333872727ddf50d4e362353a156ff65551b2427c606c79e275c30f",
+          "exportPath": "Exports/warden-boot/09.png",
+          "rgbaSha256": "1b9c69ef45a1b7b21750ca2ace7afede228006082b8eb260910cc46d92972b4d",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 11704,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 10,
+          "durationMs": 280,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/10.png",
+          "pngSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+          "exportPath": "Exports/warden-boot/10.png",
+          "rgbaSha256": "6eea4bc7eaed45b490b4ab44112695dd27dcf9119839333dc05968b16ee6d77e",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 11704,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 11,
+          "durationMs": 600,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/warden-boot/11.png",
+          "pngSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+          "exportPath": "Exports/warden-boot/11.png",
+          "rgbaSha256": "6eea4bc7eaed45b490b4ab44112695dd27dcf9119839333dc05968b16ee6d77e",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 11704,
+          "pixelDeltaReplay": true
+        }
+      ],
+      "palette": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          13
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          5,
+          4,
+          6
+        ],
+        [
+          7,
+          11,
+          18
+        ],
+        [
+          9,
+          17,
+          27
+        ],
+        [
+          10,
+          10,
+          19
+        ],
+        [
+          14,
+          21,
+          31
+        ],
+        [
+          15,
+          27,
+          41
+        ],
+        [
+          16,
+          16,
+          26
+        ],
+        [
+          20,
+          29,
+          42
+        ],
+        [
+          22,
+          22,
+          33
+        ],
+        [
+          22,
+          35,
+          50
+        ],
+        [
+          29,
+          31,
+          47
+        ],
+        [
+          30,
+          41,
+          66
+        ],
+        [
+          36,
+          50,
+          78
+        ],
+        [
+          36,
+          109,
+          161
+        ],
+        [
+          38,
+          55,
+          76
+        ],
+        [
+          39,
+          83,
+          115
+        ],
+        [
+          46,
+          62,
+          93
+        ],
+        [
+          47,
+          42,
+          55
+        ],
+        [
+          51,
+          32,
+          18
+        ],
+        [
+          52,
+          71,
+          106
+        ],
+        [
+          58,
+          38,
+          23
+        ],
+        [
+          59,
+          53,
+          66
+        ],
+        [
+          61,
+          11,
+          12
+        ],
+        [
+          63,
+          41,
+          25
+        ],
+        [
+          66,
+          45,
+          30
+        ],
+        [
+          66,
+          73,
+          96
+        ],
+        [
+          73,
+          45,
+          25
+        ],
+        [
+          75,
+          52,
+          34
+        ],
+        [
+          78,
+          64,
+          73
+        ],
+        [
+          79,
+          84,
+          106
+        ],
+        [
+          83,
+          52,
+          30
+        ],
+        [
+          91,
+          60,
+          35
+        ],
+        [
+          92,
+          96,
+          116
+        ],
+        [
+          96,
+          66,
+          39
+        ],
+        [
+          106,
+          109,
+          126
+        ],
+        [
+          108,
+          68,
+          34
+        ],
+        [
+          109,
+          50,
+          56
+        ],
+        [
+          112,
+          11,
+          10
+        ],
+        [
+          120,
+          81,
+          41
+        ],
+        [
+          121,
+          70,
+          33
+        ],
+        [
+          122,
+          122,
+          135
+        ],
+        [
+          133,
+          20,
+          19
+        ],
+        [
+          136,
+          135,
+          146
+        ],
+        [
+          145,
+          85,
+          36
+        ],
+        [
+          152,
+          151,
+          161
+        ],
+        [
+          154,
+          100,
+          45
+        ],
+        [
+          171,
+          39,
+          35
+        ],
+        [
+          174,
+          172,
+          180
+        ],
+        [
+          201,
+          149,
+          85
+        ],
+        [
+          206,
+          204,
+          209
+        ],
+        [
+          212,
+          51,
+          43
+        ],
+        [
+          232,
+          101,
+          93
+        ],
+        [
+          248,
+          248,
+          248
+        ]
+      ],
+      "paletteColors": 57,
+      "paletteAtMost64": true,
+      "alphaValues": [
+        255
+      ],
+      "binaryAlpha": true,
+      "alpha255": true,
+      "shapeStable": true,
+      "shapeMetric": "Alpha mask only; this does not assert rigid body geometry in opaque scenes.",
+      "shapeCheck": "Alpha masks recorded, not forced invariant for intentionally changing poses.",
+      "piskelReplayRgbaExact": true,
+      "apngReplayRgbaAndDurationExact": true,
+      "pixelDeltaReplayRgbaExact": true,
+      "pngExportByteExact": true,
+      "sheetSha256": "265d4e1efceb47efd827524e5d8b771398fdba35c2015d93c224c6eb73803621",
+      "apngSha256": "c24ffcb87810859c5c096518e489554e7534c39d0ce48e97f912870379c818fc",
+      "piskelSha256": "319e593ec7c2e3d72a4d1c2147a5db632c17d9dc3e2943bb4922e872aae04a45",
+      "preview": {
+        "path": "QA/warden-boot-preview.gif",
+        "sha256": "767bd92e736b9db2009434eaad7dab43e1f78389d83e5e84dde64c9bf4ac3b27",
+        "encodedDurationsMs": [
+          200,
+          120,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          280,
+          600
+        ],
+        "encodedTotalMs": 2000,
+        "scale": 2,
+        "resampling": "NEAREST",
+        "runtimeCapture": false,
+        "timingAuthority": "native.apng and clips.json, not GIF"
+      }
+    },
+    {
+      "name": "workshop-wide",
+      "width": 640,
+      "height": 360,
+      "durations": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        600
+      ],
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/workshop.png",
+      "sourceNativeSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/00.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "exportPath": "Exports/workshop-wide/00.png",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 1,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/01.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "exportPath": "Exports/workshop-wide/01.png",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 2,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/02.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "exportPath": "Exports/workshop-wide/02.png",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 36,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 3,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/03.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "exportPath": "Exports/workshop-wide/03.png",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 36,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 4,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/04.png",
+          "pngSha256": "8ebc65dbe2032cc89019ed44fd42d019ad54aab0efaf0e0301fe45015bbd621d",
+          "exportPath": "Exports/workshop-wide/04.png",
+          "rgbaSha256": "4cfb2538a7712a1d259a4537ba7da2c68aecefee8133b63b8cebfbee94cf77ec",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 32,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 5,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/05.png",
+          "pngSha256": "8ebc65dbe2032cc89019ed44fd42d019ad54aab0efaf0e0301fe45015bbd621d",
+          "exportPath": "Exports/workshop-wide/05.png",
+          "rgbaSha256": "4cfb2538a7712a1d259a4537ba7da2c68aecefee8133b63b8cebfbee94cf77ec",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 32,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 6,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/06.png",
+          "pngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+          "exportPath": "Exports/workshop-wide/06.png",
+          "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 36,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 7,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/07.png",
+          "pngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+          "exportPath": "Exports/workshop-wide/07.png",
+          "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 36,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 8,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/08.png",
+          "pngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+          "exportPath": "Exports/workshop-wide/08.png",
+          "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 36,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 9,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/09.png",
+          "pngSha256": "4b53648dfd989d4794dd233132f4e067f3179a08803c76d1aaf5a03b5516ffc5",
+          "exportPath": "Exports/workshop-wide/09.png",
+          "rgbaSha256": "2125495a5b3ec35aaa4b2332acf013937cb9bc6b1cc8037b92367bbadded0df3",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 40,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 10,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/10.png",
+          "pngSha256": "4b53648dfd989d4794dd233132f4e067f3179a08803c76d1aaf5a03b5516ffc5",
+          "exportPath": "Exports/workshop-wide/10.png",
+          "rgbaSha256": "2125495a5b3ec35aaa4b2332acf013937cb9bc6b1cc8037b92367bbadded0df3",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 40,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 11,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/11.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "exportPath": "Exports/workshop-wide/11.png",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 36,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 12,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/12.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "exportPath": "Exports/workshop-wide/12.png",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 36,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 13,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/13.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "exportPath": "Exports/workshop-wide/13.png",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 14,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/14.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "exportPath": "Exports/workshop-wide/14.png",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 15,
+          "durationMs": 600,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/15.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "exportPath": "Exports/workshop-wide/15.png",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        }
+      ],
+      "palette": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          13
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          5,
+          4,
+          6
+        ],
+        [
+          7,
+          11,
+          18
+        ],
+        [
+          9,
+          17,
+          27
+        ],
+        [
+          9,
+          91,
+          120
+        ],
+        [
+          10,
+          10,
+          19
+        ],
+        [
+          11,
+          76,
+          108
+        ],
+        [
+          14,
+          21,
+          31
+        ],
+        [
+          15,
+          27,
+          41
+        ],
+        [
+          15,
+          106,
+          150
+        ],
+        [
+          16,
+          16,
+          26
+        ],
+        [
+          20,
+          29,
+          42
+        ],
+        [
+          20,
+          86,
+          135
+        ],
+        [
+          22,
+          22,
+          33
+        ],
+        [
+          22,
+          35,
+          50
+        ],
+        [
+          29,
+          31,
+          47
+        ],
+        [
+          30,
+          41,
+          66
+        ],
+        [
+          36,
+          50,
+          78
+        ],
+        [
+          36,
+          109,
+          161
+        ],
+        [
+          37,
+          156,
+          186
+        ],
+        [
+          38,
+          55,
+          76
+        ],
+        [
+          39,
+          83,
+          115
+        ],
+        [
+          46,
+          62,
+          93
+        ],
+        [
+          47,
+          42,
+          55
+        ],
+        [
+          51,
+          32,
+          18
+        ],
+        [
+          58,
+          38,
+          23
+        ],
+        [
+          59,
+          53,
+          66
+        ],
+        [
+          61,
+          11,
+          12
+        ],
+        [
+          63,
+          41,
+          25
+        ],
+        [
+          66,
+          45,
+          30
+        ],
+        [
+          66,
+          73,
+          96
+        ],
+        [
+          67,
+          247,
+          250
+        ],
+        [
+          73,
+          45,
+          25
+        ],
+        [
+          75,
+          52,
+          34
+        ],
+        [
+          78,
+          64,
+          73
+        ],
+        [
+          83,
+          52,
+          30
+        ],
+        [
+          91,
+          60,
+          35
+        ],
+        [
+          95,
+          52,
+          29
+        ],
+        [
+          96,
+          66,
+          39
+        ],
+        [
+          108,
+          68,
+          34
+        ],
+        [
+          109,
+          50,
+          56
+        ],
+        [
+          120,
+          81,
+          41
+        ],
+        [
+          121,
+          70,
+          33
+        ],
+        [
+          145,
+          85,
+          36
+        ],
+        [
+          154,
+          100,
+          45
+        ],
+        [
+          201,
+          149,
+          85
+        ],
+        [
+          206,
+          204,
+          209
+        ],
+        [
+          232,
+          101,
+          93
+        ],
+        [
+          248,
+          248,
+          248
+        ]
+      ],
+      "paletteColors": 52,
+      "paletteAtMost64": true,
+      "alphaValues": [
+        255
+      ],
+      "binaryAlpha": true,
+      "alpha255": true,
+      "shapeStable": true,
+      "shapeMetric": "Alpha mask only; this does not assert rigid body geometry in opaque scenes.",
+      "shapeCheck": "Alpha masks recorded, not forced invariant for intentionally changing poses.",
+      "piskelReplayRgbaExact": true,
+      "apngReplayRgbaAndDurationExact": true,
+      "pixelDeltaReplayRgbaExact": true,
+      "pngExportByteExact": true,
+      "sheetSha256": "4faacff5141b45e0d0e34a96a1cb88f08e0495d522897c52d551e573e4906fc9",
+      "apngSha256": "faec60fac8b596481a3f2befadee3979b3ba8ff7b3e57a6cfc4abbf5bf257e1d",
+      "piskelSha256": "8347a491b4613d810d405d8119be5dcfce0dd847aaa9106973c11931cd3ed96f",
+      "preview": {
+        "path": "QA/workshop-wide-preview.gif",
+        "sha256": "599f752969ba79572572da7f49d5f1b97f6e254303ae3cde68ff5780d388b200",
+        "encodedDurationsMs": [
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          600
+        ],
+        "encodedTotalMs": 3000,
+        "scale": 2,
+        "resampling": "NEAREST",
+        "runtimeCapture": false,
+        "timingAuthority": "native.apng and clips.json, not GIF"
+      }
+    },
+    {
+      "name": "workshop-close",
+      "width": 640,
+      "height": 360,
+      "durations": [
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        160,
+        600
+      ],
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/workshop-close.png",
+      "sourceNativeSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/00.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "exportPath": "Exports/workshop-close/00.png",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 1,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/01.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "exportPath": "Exports/workshop-close/01.png",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 2,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/02.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "exportPath": "Exports/workshop-close/02.png",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 144,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 3,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/03.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "exportPath": "Exports/workshop-close/03.png",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 144,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 4,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/04.png",
+          "pngSha256": "15dbf1926faa2a39790f8a0c6a0bc449fe26695daf7b3c6e66e61f61af5989a0",
+          "exportPath": "Exports/workshop-close/04.png",
+          "rgbaSha256": "f6950636e26d4e5894a80dbb64fb994f96d55976b2a5f59cc0f8bb69d94c5627",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 128,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 5,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/05.png",
+          "pngSha256": "15dbf1926faa2a39790f8a0c6a0bc449fe26695daf7b3c6e66e61f61af5989a0",
+          "exportPath": "Exports/workshop-close/05.png",
+          "rgbaSha256": "f6950636e26d4e5894a80dbb64fb994f96d55976b2a5f59cc0f8bb69d94c5627",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 128,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 6,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/06.png",
+          "pngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+          "exportPath": "Exports/workshop-close/06.png",
+          "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 144,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 7,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/07.png",
+          "pngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+          "exportPath": "Exports/workshop-close/07.png",
+          "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 144,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 8,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/08.png",
+          "pngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+          "exportPath": "Exports/workshop-close/08.png",
+          "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 144,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 9,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/09.png",
+          "pngSha256": "cc1c9699398246dea3a29e7606cca5f12b6e8c2dfa22b83658e4db6d8b51d472",
+          "exportPath": "Exports/workshop-close/09.png",
+          "rgbaSha256": "34964aa683ad509842530e7397ee8b11290c858f5eb5aec2318eb78821403fd4",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 160,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 10,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/10.png",
+          "pngSha256": "cc1c9699398246dea3a29e7606cca5f12b6e8c2dfa22b83658e4db6d8b51d472",
+          "exportPath": "Exports/workshop-close/10.png",
+          "rgbaSha256": "34964aa683ad509842530e7397ee8b11290c858f5eb5aec2318eb78821403fd4",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 160,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 11,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/11.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "exportPath": "Exports/workshop-close/11.png",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 144,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 12,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/12.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "exportPath": "Exports/workshop-close/12.png",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 144,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 13,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/13.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "exportPath": "Exports/workshop-close/13.png",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 14,
+          "durationMs": 160,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/14.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "exportPath": "Exports/workshop-close/14.png",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        },
+        {
+          "frame": 15,
+          "durationMs": 600,
+          "sourcePath": "art/return-pixel-cinematics-v1/Clips/workshop-close/15.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "exportPath": "Exports/workshop-close/15.png",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "bounds": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "changedPixelsFromFirstFrame": 0,
+          "pixelDeltaReplay": true
+        }
+      ],
+      "palette": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          3,
+          4,
+          13
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          5,
+          4,
+          6
+        ],
+        [
+          7,
+          11,
+          18
+        ],
+        [
+          9,
+          17,
+          27
+        ],
+        [
+          9,
+          91,
+          120
+        ],
+        [
+          10,
+          10,
+          19
+        ],
+        [
+          11,
+          76,
+          108
+        ],
+        [
+          14,
+          21,
+          31
+        ],
+        [
+          15,
+          27,
+          41
+        ],
+        [
+          15,
+          106,
+          150
+        ],
+        [
+          16,
+          16,
+          26
+        ],
+        [
+          20,
+          29,
+          42
+        ],
+        [
+          20,
+          86,
+          135
+        ],
+        [
+          22,
+          22,
+          33
+        ],
+        [
+          22,
+          35,
+          50
+        ],
+        [
+          29,
+          31,
+          47
+        ],
+        [
+          30,
+          41,
+          66
+        ],
+        [
+          36,
+          50,
+          78
+        ],
+        [
+          36,
+          109,
+          161
+        ],
+        [
+          37,
+          156,
+          186
+        ],
+        [
+          38,
+          55,
+          76
+        ],
+        [
+          39,
+          83,
+          115
+        ],
+        [
+          46,
+          62,
+          93
+        ],
+        [
+          47,
+          42,
+          55
+        ],
+        [
+          51,
+          32,
+          18
+        ],
+        [
+          58,
+          38,
+          23
+        ],
+        [
+          59,
+          53,
+          66
+        ],
+        [
+          63,
+          41,
+          25
+        ],
+        [
+          66,
+          45,
+          30
+        ],
+        [
+          66,
+          73,
+          96
+        ],
+        [
+          67,
+          247,
+          250
+        ],
+        [
+          73,
+          45,
+          25
+        ],
+        [
+          75,
+          52,
+          34
+        ],
+        [
+          78,
+          64,
+          73
+        ],
+        [
+          83,
+          52,
+          30
+        ],
+        [
+          91,
+          60,
+          35
+        ],
+        [
+          95,
+          52,
+          29
+        ],
+        [
+          96,
+          66,
+          39
+        ],
+        [
+          108,
+          68,
+          34
+        ],
+        [
+          120,
+          81,
+          41
+        ],
+        [
+          121,
+          70,
+          33
+        ],
+        [
+          145,
+          85,
+          36
+        ],
+        [
+          154,
+          100,
+          45
+        ],
+        [
+          201,
+          149,
+          85
+        ],
+        [
+          206,
+          204,
+          209
+        ],
+        [
+          232,
+          101,
+          93
+        ],
+        [
+          248,
+          248,
+          248
+        ]
+      ],
+      "paletteColors": 50,
+      "paletteAtMost64": true,
+      "alphaValues": [
+        255
+      ],
+      "binaryAlpha": true,
+      "alpha255": true,
+      "shapeStable": true,
+      "shapeMetric": "Alpha mask only; this does not assert rigid body geometry in opaque scenes.",
+      "shapeCheck": "Alpha masks recorded, not forced invariant for intentionally changing poses.",
+      "piskelReplayRgbaExact": true,
+      "apngReplayRgbaAndDurationExact": true,
+      "pixelDeltaReplayRgbaExact": true,
+      "pngExportByteExact": true,
+      "sheetSha256": "0ad614d8bf8477bc8e8a516b9afd5229c3f2b1a0205ca23c71ca0c12b0026435",
+      "apngSha256": "bb4cd28f1b650388553cdd3331047f184fdfad9378bdecc75e04c2817ce8bc90",
+      "piskelSha256": "a1714311755769509b6a25e23c22cdaa6879bff3b61cc47d6382e720400bdd49",
+      "preview": {
+        "path": "QA/workshop-close-preview.gif",
+        "sha256": "8962c6e4acb743ad9e585f3f17e3c9400926c2d9acfaf84d520703230d9c8382",
+        "encodedDurationsMs": [
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          160,
+          600
+        ],
+        "encodedTotalMs": 3000,
+        "scale": 2,
+        "resampling": "NEAREST",
+        "runtimeCapture": false,
+        "timingAuthority": "native.apng and clips.json, not GIF"
+      }
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "inspectedByMain": true,
+  "scriptSha256": "f1a96042df2c7260b61a135674bfc7dfda4d011278f37e12fda4ccc3d61ac6cb",
+  "samplerScriptSha256": "a47c1340798052ce0a999175ca10856d1b6de51148afb304e2c07e7161b1e9e7",
+  "assets": {
+    "puzzle-plate": {
+      "generatedDimensions": [
+        1672,
+        941
+      ],
+      "sourceRect": [
+        0.0,
+        0.25,
+        1672.0,
+        940.75
+      ],
+      "sourceStep": [
+        5.225,
+        5.225
+      ],
+      "wholeImageUniformScale": 0.19138755980861244,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": {
+        "original": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-619fe604-1040-4fa3-97e5-a5f57a3dec28.png",
+        "projectCopy": "Source/Generated/puzzle-plate.png",
+        "sha256": "4a1af1bacfc6b0c8aa74989dd3bfc9d62304ac0cca7649a8f1becaeb1752260a"
+      },
+      "rgbaSha256": "96ca15c95dab55577fea3cd9677e4b9a12d0d992e62e8a70b5c8763bf9750871"
+    },
+    "arena-plate": {
+      "generatedDimensions": [
+        1672,
+        941
+      ],
+      "sourceRect": [
+        0.0,
+        0.25,
+        1672.0,
+        940.75
+      ],
+      "sourceStep": [
+        5.225,
+        5.225
+      ],
+      "wholeImageUniformScale": 0.19138755980861244,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": {
+        "original": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-9888646f-a8b8-449d-9be9-22996a394ea3.png",
+        "projectCopy": "Source/Generated/arena-plate.png",
+        "sha256": "b9ca31c68cdcde9edc3fb86284f8cf6c2111384f522b2a18441929ce6e2aff7a"
+      },
+      "rgbaSha256": "9881eac916d3544550880691f556d7c8b531768f5d6cf129d7f5d5355f093947"
+    },
+    "exit-open-edit": {
+      "generatedDimensions": [
+        1672,
+        941
+      ],
+      "sourceRect": [
+        0.0,
+        0.25,
+        1672.0,
+        940.75
+      ],
+      "sourceStep": [
+        5.225,
+        5.225
+      ],
+      "wholeImageUniformScale": 0.19138755980861244,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": {
+        "original": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-e4bfaf25-8146-4db5-806a-6089fb5a3c43.png",
+        "projectCopy": "Source/Generated/exit-open-edit.png",
+        "sha256": "d123ab6e51bfe9fae12395dcb28dec9a66908065fd37b5e8c93ee482b3697d08"
+      },
+      "rgbaSha256": "bbc2abec6852a0fbf1ed256cb50c8ecbe3971d9933e1403cd38f6f214fc6840f"
+    },
+    "arena-door-open": {
+      "base": "arena-plate",
+      "generatedEdit": "exit-open-edit",
+      "nativeCropRect": [
+        578,
+        190,
+        638,
+        284
+      ],
+      "outsideCropRgbaExact": true,
+      "geometryWarped": false
+    }
+  },
+  "bodyPartScaling": false,
+  "handPaintedNewBackgrounds": false
+}

@@ -1,0 +1,554 @@
+{
+  "kind": "offline4-up-source-frame-preview",
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "humanAppearanceApproval": "pending",
+  "samplingIntervalMs": 100,
+  "previewLoopMs": 6000,
+  "exactClipTimingAuthority": "Clips/<name>/native.apng and Exports/clips.json",
+  "allNativePreviewPixelsExact": true,
+  "samples": [
+    {
+      "timeMs": 0,
+      "clipSourceFrames": {
+        "relay-power": 0,
+        "warden-boot": 0,
+        "workshop-wide": 0,
+        "workshop-close": 0
+      }
+    },
+    {
+      "timeMs": 100,
+      "clipSourceFrames": {
+        "relay-power": 0,
+        "warden-boot": 0,
+        "workshop-wide": 0,
+        "workshop-close": 0
+      }
+    },
+    {
+      "timeMs": 200,
+      "clipSourceFrames": {
+        "relay-power": 1,
+        "warden-boot": 1,
+        "workshop-wide": 1,
+        "workshop-close": 1
+      }
+    },
+    {
+      "timeMs": 300,
+      "clipSourceFrames": {
+        "relay-power": 1,
+        "warden-boot": 1,
+        "workshop-wide": 1,
+        "workshop-close": 1
+      }
+    },
+    {
+      "timeMs": 400,
+      "clipSourceFrames": {
+        "relay-power": 2,
+        "warden-boot": 2,
+        "workshop-wide": 2,
+        "workshop-close": 2
+      }
+    },
+    {
+      "timeMs": 500,
+      "clipSourceFrames": {
+        "relay-power": 3,
+        "warden-boot": 3,
+        "workshop-wide": 3,
+        "workshop-close": 3
+      }
+    },
+    {
+      "timeMs": 600,
+      "clipSourceFrames": {
+        "relay-power": 4,
+        "warden-boot": 4,
+        "workshop-wide": 3,
+        "workshop-close": 3
+      }
+    },
+    {
+      "timeMs": 700,
+      "clipSourceFrames": {
+        "relay-power": 5,
+        "warden-boot": 5,
+        "workshop-wide": 4,
+        "workshop-close": 4
+      }
+    },
+    {
+      "timeMs": 800,
+      "clipSourceFrames": {
+        "relay-power": 6,
+        "warden-boot": 6,
+        "workshop-wide": 5,
+        "workshop-close": 5
+      }
+    },
+    {
+      "timeMs": 900,
+      "clipSourceFrames": {
+        "relay-power": 7,
+        "warden-boot": 7,
+        "workshop-wide": 5,
+        "workshop-close": 5
+      }
+    },
+    {
+      "timeMs": 1000,
+      "clipSourceFrames": {
+        "relay-power": 8,
+        "warden-boot": 8,
+        "workshop-wide": 6,
+        "workshop-close": 6
+      }
+    },
+    {
+      "timeMs": 1100,
+      "clipSourceFrames": {
+        "relay-power": 9,
+        "warden-boot": 9,
+        "workshop-wide": 6,
+        "workshop-close": 6
+      }
+    },
+    {
+      "timeMs": 1200,
+      "clipSourceFrames": {
+        "relay-power": 10,
+        "warden-boot": 10,
+        "workshop-wide": 7,
+        "workshop-close": 7
+      }
+    },
+    {
+      "timeMs": 1300,
+      "clipSourceFrames": {
+        "relay-power": 10,
+        "warden-boot": 10,
+        "workshop-wide": 8,
+        "workshop-close": 8
+      }
+    },
+    {
+      "timeMs": 1400,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 8,
+        "workshop-close": 8
+      }
+    },
+    {
+      "timeMs": 1500,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 9,
+        "workshop-close": 9
+      }
+    },
+    {
+      "timeMs": 1600,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 10,
+        "workshop-close": 10
+      }
+    },
+    {
+      "timeMs": 1700,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 10,
+        "workshop-close": 10
+      }
+    },
+    {
+      "timeMs": 1800,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 11,
+        "workshop-close": 11
+      }
+    },
+    {
+      "timeMs": 1900,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 11,
+        "workshop-close": 11
+      }
+    },
+    {
+      "timeMs": 2000,
+      "clipSourceFrames": {
+        "relay-power": 0,
+        "warden-boot": 0,
+        "workshop-wide": 12,
+        "workshop-close": 12
+      }
+    },
+    {
+      "timeMs": 2100,
+      "clipSourceFrames": {
+        "relay-power": 0,
+        "warden-boot": 0,
+        "workshop-wide": 13,
+        "workshop-close": 13
+      }
+    },
+    {
+      "timeMs": 2200,
+      "clipSourceFrames": {
+        "relay-power": 1,
+        "warden-boot": 1,
+        "workshop-wide": 13,
+        "workshop-close": 13
+      }
+    },
+    {
+      "timeMs": 2300,
+      "clipSourceFrames": {
+        "relay-power": 1,
+        "warden-boot": 1,
+        "workshop-wide": 14,
+        "workshop-close": 14
+      }
+    },
+    {
+      "timeMs": 2400,
+      "clipSourceFrames": {
+        "relay-power": 2,
+        "warden-boot": 2,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 2500,
+      "clipSourceFrames": {
+        "relay-power": 3,
+        "warden-boot": 3,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 2600,
+      "clipSourceFrames": {
+        "relay-power": 4,
+        "warden-boot": 4,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 2700,
+      "clipSourceFrames": {
+        "relay-power": 5,
+        "warden-boot": 5,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 2800,
+      "clipSourceFrames": {
+        "relay-power": 6,
+        "warden-boot": 6,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 2900,
+      "clipSourceFrames": {
+        "relay-power": 7,
+        "warden-boot": 7,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 3000,
+      "clipSourceFrames": {
+        "relay-power": 8,
+        "warden-boot": 8,
+        "workshop-wide": 0,
+        "workshop-close": 0
+      }
+    },
+    {
+      "timeMs": 3100,
+      "clipSourceFrames": {
+        "relay-power": 9,
+        "warden-boot": 9,
+        "workshop-wide": 0,
+        "workshop-close": 0
+      }
+    },
+    {
+      "timeMs": 3200,
+      "clipSourceFrames": {
+        "relay-power": 10,
+        "warden-boot": 10,
+        "workshop-wide": 1,
+        "workshop-close": 1
+      }
+    },
+    {
+      "timeMs": 3300,
+      "clipSourceFrames": {
+        "relay-power": 10,
+        "warden-boot": 10,
+        "workshop-wide": 1,
+        "workshop-close": 1
+      }
+    },
+    {
+      "timeMs": 3400,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 2,
+        "workshop-close": 2
+      }
+    },
+    {
+      "timeMs": 3500,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 3,
+        "workshop-close": 3
+      }
+    },
+    {
+      "timeMs": 3600,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 3,
+        "workshop-close": 3
+      }
+    },
+    {
+      "timeMs": 3700,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 4,
+        "workshop-close": 4
+      }
+    },
+    {
+      "timeMs": 3800,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 5,
+        "workshop-close": 5
+      }
+    },
+    {
+      "timeMs": 3900,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 5,
+        "workshop-close": 5
+      }
+    },
+    {
+      "timeMs": 4000,
+      "clipSourceFrames": {
+        "relay-power": 0,
+        "warden-boot": 0,
+        "workshop-wide": 6,
+        "workshop-close": 6
+      }
+    },
+    {
+      "timeMs": 4100,
+      "clipSourceFrames": {
+        "relay-power": 0,
+        "warden-boot": 0,
+        "workshop-wide": 6,
+        "workshop-close": 6
+      }
+    },
+    {
+      "timeMs": 4200,
+      "clipSourceFrames": {
+        "relay-power": 1,
+        "warden-boot": 1,
+        "workshop-wide": 7,
+        "workshop-close": 7
+      }
+    },
+    {
+      "timeMs": 4300,
+      "clipSourceFrames": {
+        "relay-power": 1,
+        "warden-boot": 1,
+        "workshop-wide": 8,
+        "workshop-close": 8
+      }
+    },
+    {
+      "timeMs": 4400,
+      "clipSourceFrames": {
+        "relay-power": 2,
+        "warden-boot": 2,
+        "workshop-wide": 8,
+        "workshop-close": 8
+      }
+    },
+    {
+      "timeMs": 4500,
+      "clipSourceFrames": {
+        "relay-power": 3,
+        "warden-boot": 3,
+        "workshop-wide": 9,
+        "workshop-close": 9
+      }
+    },
+    {
+      "timeMs": 4600,
+      "clipSourceFrames": {
+        "relay-power": 4,
+        "warden-boot": 4,
+        "workshop-wide": 10,
+        "workshop-close": 10
+      }
+    },
+    {
+      "timeMs": 4700,
+      "clipSourceFrames": {
+        "relay-power": 5,
+        "warden-boot": 5,
+        "workshop-wide": 10,
+        "workshop-close": 10
+      }
+    },
+    {
+      "timeMs": 4800,
+      "clipSourceFrames": {
+        "relay-power": 6,
+        "warden-boot": 6,
+        "workshop-wide": 11,
+        "workshop-close": 11
+      }
+    },
+    {
+      "timeMs": 4900,
+      "clipSourceFrames": {
+        "relay-power": 7,
+        "warden-boot": 7,
+        "workshop-wide": 11,
+        "workshop-close": 11
+      }
+    },
+    {
+      "timeMs": 5000,
+      "clipSourceFrames": {
+        "relay-power": 8,
+        "warden-boot": 8,
+        "workshop-wide": 12,
+        "workshop-close": 12
+      }
+    },
+    {
+      "timeMs": 5100,
+      "clipSourceFrames": {
+        "relay-power": 9,
+        "warden-boot": 9,
+        "workshop-wide": 13,
+        "workshop-close": 13
+      }
+    },
+    {
+      "timeMs": 5200,
+      "clipSourceFrames": {
+        "relay-power": 10,
+        "warden-boot": 10,
+        "workshop-wide": 13,
+        "workshop-close": 13
+      }
+    },
+    {
+      "timeMs": 5300,
+      "clipSourceFrames": {
+        "relay-power": 10,
+        "warden-boot": 10,
+        "workshop-wide": 14,
+        "workshop-close": 14
+      }
+    },
+    {
+      "timeMs": 5400,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 5500,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 5600,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 5700,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 5800,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    },
+    {
+      "timeMs": 5900,
+      "clipSourceFrames": {
+        "relay-power": 11,
+        "warden-boot": 11,
+        "workshop-wide": 15,
+        "workshop-close": 15
+      }
+    }
+  ],
+  "previewPath": "art/return-pixel-cinematics-v1/QA/all-cuts-preview.gif",
+  "previewSha256": "17f3f0e73b24ef46dd1b93492328c4ab81d977c5240034e75b571fb94d95c359"
+}

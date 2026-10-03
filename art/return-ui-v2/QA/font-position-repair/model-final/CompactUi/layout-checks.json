@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "count": 16,
+  "checks": [
+    "all 9 phases, both title preferences and help states stay inside 640x360",
+    "ordinary puzzle HUD and contextual help never cover the board",
+    "combat HUD and failure help never cover y90..300 strike zone",
+    "pause actions/indexes match 8 arena / 7 puzzle entries at both title preferences",
+    "puzzle has undo/reset only; both preferences preserve native16 body glyphs",
+    "pattern names only during telegraph; E only in pylon range; X only during exposure",
+    "automatic guidance setting suppresses toasts",
+    "Korean word-aware wrapping uses exact native renderer advances",
+    "overlong Latin words wrap without drawing outside native text bounds",
+    "text height includes consistent size\u002B2 line spacing",
+    "all production guidance strings fit puzzle/combat/retry cards at both title preferences",
+    "native16 and integer2x title advances have no fractional glyph scaling",
+    "title enlargement changes titles only, never resamples body/secondary glyphs",
+    "title-only accessibility preference keeps compatible action and truthful label",
+    "all opening log windows, combat-ready transition and room/exit labels fit native glyph geometry",
+    "all native text blocks, controls and icon foregrounds remain disjoint"
+  ],
+  "scope": "Shared production draw-plan geometry/text/actions; offline layout, not live Unity GUI"
+}

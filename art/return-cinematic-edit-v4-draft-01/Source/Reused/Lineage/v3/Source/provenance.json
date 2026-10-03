@@ -1,0 +1,53 @@
+{
+  "revision": "ending-elevator-v3",
+  "builtInMode": true,
+  "inspectedByMain": true,
+  "shownToUser": true,
+  "selectedSources": {
+    "shaft-workshop-plate": {
+      "sourcePath": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-39db7a25-fa3e-4a3f-bafd-39c26e506ea5.png",
+      "sourceSha256": "79e37a6421a7e50a18b2c1864cea8148e9f0b1099aa980708540a90dabb96db5",
+      "projectCopy": "Source/Generated/shaft-workshop-plate.png",
+      "copySha256": "79e37a6421a7e50a18b2c1864cea8148e9f0b1099aa980708540a90dabb96db5",
+      "args": {
+        "prompt": "Use case: precise-object-edit. Asset type: Clockwork ending scene background plate, single16:9 landscape frame. Input image1 is the factory environment edit target; image2 is the exact workshop lighting/prop reference for the upper landing. Primary edit: replace the ordinary right-hand exit route with a clearly readable TWO-LEVEL industrial ELEVATOR SHAFT leading from the cold lower factory up to the warm workshop. Reframe as a flat fixed SIDE VIEW of two stacked levels, not isometric or cinematic3D. Retain the original Clockwork steel/brass/navy/cyan pixel-art language and workshop identity. Background ONLY, no elevator carriage, no moving platform, no characters, no bosses, no UI/text. Layout in a640x360logical composition: center the empty elevator shaft at x312 with two straight vertical steel guide rails around x252 andx372, running y35..300. Lower boarding floor top is a perfectly horizontal line at y282, spanning x0..250; upper landing floor is perfectly horizontal at y128, spanning x372..640. Do not place a floor across the shaft. The upper-right landing opens into the warm quiet workshop, with its existing task lamp and workbench visible behind the landing doorway; a small brass wall clock, no new people. Lower-left room is cold factory. The shaft itself is tall unobstructed negative space for inserting a separately generated open-cage carriage. Strong vertical rails make ascent direction unmistakable. Restrained crisp chunky pixel-art, limited palette, hard stepped edges, no soft gradients, bloom, fog, painterly noise or photographs. No cable ropes drawn as a moving asset, no extra doors at the bottom, no floating portals. Preserve quiet readable surfaces and game-sized stage floors; a single background image, not a storyboard or sprite sheet.",
+        "referenced_image_paths": [
+          "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v2-full/Source/Generated/arena-plate.png",
+          "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Source/Generated/workshop.png"
+        ],
+        "transparent_background": false
+      },
+      "references": [
+        {
+          "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v2-full/Source/Generated/arena-plate.png",
+          "sourceSha256": "b9ca31c68cdcde9edc3fb86284f8cf6c2111384f522b2a18441929ce6e2aff7a",
+          "projectCopy": "Source/References/shaft-workshop-plate-0.png",
+          "copySha256": "b9ca31c68cdcde9edc3fb86284f8cf6c2111384f522b2a18441929ce6e2aff7a"
+        },
+        {
+          "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Source/Generated/workshop.png",
+          "sourceSha256": "97b5028b217fb3939659982e6a072bc265ac852c2f951a896f640d624d602572",
+          "projectCopy": "Source/References/shaft-workshop-plate-1.png",
+          "copySha256": "97b5028b217fb3939659982e6a072bc265ac852c2f951a896f640d624d602572"
+        }
+      ]
+    },
+    "open-lift-carriage": {
+      "sourcePath": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-80470861-4bba-40c5-9f0b-632647ac1dca.png",
+      "sourceSha256": "62ffef711247f78208aa3e44e4e5e0e416269dca682cad474c7d641d2ed755ba",
+      "projectCopy": "Source/Generated/open-lift-carriage.png",
+      "copySha256": "62ffef711247f78208aa3e44e4e5e0e416269dca682cad474c7d641d2ed755ba",
+      "args": {
+        "prompt": "Use case: stylized-concept. Asset type: one transparent PNG game elevator carriage sprite for Clockwork's pixel-art ending. A compact steel-and-brass OPEN industrial lift cage, flat front/side-game view (no perspective distortion). Two thick side posts, a simple rectangular roof beam and a perfectly horizontal solid steel floor/platform near the bottom, slim rear rail, a small cyan status lamp on the right post. The front is completely OPEN so a separately composited small robot will stay visible while standing inside. The interior opening must be genuinely transparent, like the outer background; no solid wall, no glass or rendered checkerboard. Broad enough clear central opening for a64px game robot, proportions approximately width128:height112. Floor top at about85percent of the cage height, enough visible dark metal base below it. Keep the frame clearly elevator-like, with small side guide shoes, not a bus, doorway, weapon, throne, cage prison or floating boat. No moving-door panel, no wheels, no passengers, no ropes, no chains, no ground/shadow plane. Color: dark navy/slate steel, muted brass joints and bolts, restrained cyan indicator. Retro high-quality PIXEL ART, clear2D silhouette, hard stepped pixel edges, limited flat shading, no smooth gradient, no glow/bloom, no 3D or photography. Single complete carriage centered with clean transparent padding, NO text, numerals, logos or watermark. A real alpha-transparent cutout, not a green-screen or baked checkerboard.",
+        "transparent_background": true
+      },
+      "references": []
+    }
+  },
+  "requests": "Source/requests.json",
+  "requestsSha256": "b4c0131466f8838c1fd5307f11c7563014851bcf14c6f8009f85db5274fa919f",
+  "humanAppearanceApproval": "pending",
+  "runtimeIntegrated": false,
+  "unityFilesWritten": false,
+  "gameLaunched": false
+}

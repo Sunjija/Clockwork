@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "status": "experimental-preview-attempts-stopped-no-final-mp4",
+  "scope": "Offline existing PNG frame editing and existing WAV mux only; not AI video generation or a game recording.",
+  "scriptPath": "tools/art/render_full_cinematics_v2.swift",
+  "scriptSha256": "7c8beafc3a5e2c0d3493c324945b27648f3f6ad7268fc00dd24e431006cb867c",
+  "scriptShaScope": "Preserved current experimental script after both attempts; not a claim that both earlier revisions had this SHA.",
+  "swiftAvailable": true,
+  "swiftVersion": "6.1.2",
+  "frameworksAvailable": ["AVFoundation", "CoreVideo", "CoreGraphics", "ImageIO", "CryptoKit"],
+  "swiftTypeCheckPassed": true,
+  "clipPlanPath": "Clips/clip-plan.json",
+  "clipPlanSha256": "4f84762c4ddd34b499abf666b9a67614e3c860cf53c79b0d0bd1deb7b4547513",
+  "finalSourceSequences": {
+    "awakening": {"frames": 72, "durationMs": 8000},
+    "homecoming": {"frames": 87, "durationMs": 10000}
+  },
+  "renderAttempts": 2,
+  "attempts": [
+    {
+      "attempt": 1,
+      "sequence": "awakening",
+      "method": "Native PNG integer2x to H264; separate WAV-to-AAC M4A; zero-start AVMutableComposition and MP4 passthrough export.",
+      "workingFolder": "QA/video-preview-build-IDMNHL",
+      "workingFiles": ["awakening-silent.mp4", "awakening-sound.m4a", "awakening-muxed.mp4"],
+      "observedSourceWavDurationMs": 8000,
+      "observedSilentVideoDurationMs": 8000,
+      "observedSeparateAacDurationMs": 8000,
+      "observedMuxedContainerDurationMs": 8000,
+      "observedMuxedVideoDurationMs": 8000,
+      "observedMuxedAudioDurationMs": 7956,
+      "lostAudioDurationMs": 44,
+      "lostAudioSamplesAt48000Hz": 2112,
+      "failure": "MP4 audio duration is not exact",
+      "suspectedCause": "AAC encoder-priming handling during separate-M4A passthrough mux; inferred from the observed2112-sample loss, not independently proven.",
+      "accepted": false,
+      "promotedToFinal": false
+    },
+    {
+      "attempt": 2,
+      "sequence": "awakening",
+      "method": "Original PCM WAV directly in zero-start AVMutableComposition; compressed H264 samples copied; AAC encoded once in the final MP4 writer.",
+      "workingFolder": "QA/video-preview-build-8QMnnx",
+      "workingFiles": ["awakening-silent.mp4", "awakening-muxed.mp4"],
+      "failure": "Writer stalled: nil",
+      "failureStage": "Writer backpressure readiness wait",
+      "readinessTimeoutSeconds": 60,
+      "finalTrackDurationValidationCompleted": false,
+      "accepted": false,
+      "promotedToFinal": false
+    }
+  ],
+  "homecomingRenderAttempted": false,
+  "finalMp4Absent": true,
+  "finalPathsCheckedAbsent": [
+    "Sequences/awakening/preview.mp4",
+    "Sequences/homecoming/preview.mp4"
+  ],
+  "finalVideoValidationReportAbsent": true,
+  "videoValidationReportPath": "QA/video-preview-validation.json",
+  "intermediateCandidatesPreserved": true,
+  "workingFolders": ["QA/video-preview-build-IDMNHL", "QA/video-preview-build-8QMnnx"],
+  "nativePngOrApngModifiedByPreviewScript": false,
+  "nativePreservationBasis": "The renderer reads source PNGs only and writes no PNG/APNG or game paths; no native pixel/floor edit was performed.",
+  "sourceWavModified": false,
+  "sourceWavHashesStillMatchAudioCuesManifest": true,
+  "completedAudioScriptUnchanged": true,
+  "completedAudioScriptPath": "tools/art/mix_full_cinematics_v2_audio.py",
+  "completedAudioScriptSha256": "18fb8b51fcf04bc1dfda057f3451086ce664ac2366fd791e54c415b3255e68ed",
+  "completedSequenceWavHashes": {
+    "Sequences/awakening/sound.wav": "8ebb58a4bcd3f8cfa335c5d6eea98d062379d53729c0bebf6c86c2537dd6fab8",
+    "Sequences/homecoming/sound.wav": "bda670da1a4943ea26654edd49cb640fd18c6fb505602ae64bc9b76cd2f8a390"
+  },
+  "additionalAttemptsStopped": true,
+  "installationPerformed": false,
+  "deletionPerformed": false,
+  "gameChangedOrExecuted": false,
+  "humanListeningReview": "not-performed",
+  "humanFinalApproval": "pending",
+  "pixelAndColorAuthority": "Existing native PNG/APNG; MP4 experiments are lossy rejected viewing candidates.",
+  "handoff": "Use completed GIF/APNG visuals and standalone WAV audio; do not deliver rejected or partial MP4 files."
+}

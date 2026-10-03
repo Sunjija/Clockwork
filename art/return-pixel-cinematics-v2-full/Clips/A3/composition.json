@@ -1,0 +1,107 @@
+{
+  "frames": [
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/00.png",
+      "sourcePngSha256": "25448677a11b9966837f645c5d61dfa60b1784087737753a705a353e3ccb47ab",
+      "timeMs": 0,
+      "durationMs": 200,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "40ad2ca875a379081b5efbb09374a37a254b9a32fba5e1d56f11a04ef59fd4c1"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/01.png",
+      "sourcePngSha256": "64917e21d0e89d2d076d78888a39bc45843edb87b623fc8294337cc27494ca7c",
+      "timeMs": 200,
+      "durationMs": 120,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "db748ad566635f23781009593bdcf0a5eaede457db25abb5f57fb7e46d2682a3"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/02.png",
+      "sourcePngSha256": "7b203e9068d4c07c8b57a241cef0acb3d065a7fa3c4cff056472fd07fc9f250d",
+      "timeMs": 320,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "5a05b6319065f1e3e344a7fe420c6872e30f69668be4b330b07d31c6053af83c"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/03.png",
+      "sourcePngSha256": "b49d156c4ff5f87e2ad534052a1e6a64d87bbbb135da8243480673b87335241b",
+      "timeMs": 420,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "c5f519a274c2035cc85c0a0be32c94f14811aebe2a073905623c1988c44fcedf"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/04.png",
+      "sourcePngSha256": "7122458cb19a884bece9563e6686fd05f3239afd7a79456f1751fd6572ab6eae",
+      "timeMs": 520,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "0fe03d9b81f793b40336905df0f6ce8ca25b29ad68acc2f9cb9541870187138b"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/05.png",
+      "sourcePngSha256": "19610df5e529548da06bdc611c505ccd88e16bf7de54282d86cb49cb47c1e63f",
+      "timeMs": 620,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "8108ec34b650ff9dead27fa85a3e2600d32a82e0dd608d61a2d46c1a7fd22ff2"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/06.png",
+      "sourcePngSha256": "5d7643ac59d777e5978caa9cc1ea973b205663cc27391f5a3a9dca515fb4f1f2",
+      "timeMs": 720,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "0faeec0cb5a6383bdb81862d44569746ccc76a0d4b8d0fe4dd4e6cbb1028688d"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/07.png",
+      "sourcePngSha256": "a5622f583f94a99c907d64eaf9dc4ed12f3e54160f391da69acf2afe0e3bee1a",
+      "timeMs": 820,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "1d957e08c9e9f3794691d4cf2a8363ee7a4e40ecd7e09f2a76cb20bdacba49cb"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/08.png",
+      "sourcePngSha256": "9620ebaa4e96d001146dc02cc19478157a6452bee470522cd808ddbd00da64ed",
+      "timeMs": 920,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "251d6da736489e8b51dbd2700bec21c9988912f8aa21535a5ffc7ad5da4af1d7"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/09.png",
+      "sourcePngSha256": "5b16c6fb0d333872727ddf50d4e362353a156ff65551b2427c606c79e275c30f",
+      "timeMs": 1020,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "1b9c69ef45a1b7b21750ca2ace7afede228006082b8eb260910cc46d92972b4d"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/10.png",
+      "sourcePngSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+      "timeMs": 1120,
+      "durationMs": 280,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "6eea4bc7eaed45b490b4ab44112695dd27dcf9119839333dc05968b16ee6d77e"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/warden-boot/11.png",
+      "sourcePngSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+      "timeMs": 1400,
+      "durationMs": 600,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "6eea4bc7eaed45b490b4ab44112695dd27dcf9119839333dc05968b16ee6d77e"
+    }
+  ],
+  "sourceInfo": {
+    "priorClip": "warden-boot",
+    "priorGeneratedSource": "Source/v1-provenance.json",
+    "originalFrameTimingPreserved": true,
+    "newPropsAuthored": false,
+    "captionOnsetMs": null
+  }
+}

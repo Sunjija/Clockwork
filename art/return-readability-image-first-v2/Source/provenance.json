@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-01",
+  "tool": "built-in image_gen",
+  "generationCalls": 8,
+  "uniqueAssetCandidates": 6,
+  "nativeExportCompleted": true,
+  "unityIntegrated": true,
+  "nativeIntegrationDate": "2026-10-02",
+  "nativeDerivation": "Source/Derivation/native-derivation.json",
+  "runtimeExport": "Clips/export-manifest.json",
+  "technicalAudit": "QA/audit-all-report.json",
+  "runtimeValidation": "QA/runtime-validation.json",
+  "userAppearanceApproval": "pending; v1 readability direction positively assessed",
+  "selectedPreviewFiles": {
+    "wall": "Source/Generated/rev1/wall.png",
+    "weight": "Source/Generated/rev1/weight.png",
+    "orb": "Source/Generated/rev1/orb.png",
+    "weight_socket": "Source/Generated/rev2/weight_socket.png",
+    "orb_socket": "Source/Generated/rev2/orb_socket.png",
+    "floor": "Source/Generated/rev1/floor.png"
+  },
+  "calls": [
+    {
+      "asset": "wall",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-564c2ed6-7ac4-492f-8cc3-378bb210d2fa.png",
+      "savedFile": "Source/Generated/rev1/wall.png",
+      "promptFile": "Source/prompts.json",
+      "referenceImage": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/wall-00/00.png",
+      "styleReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png"
+    },
+    {
+      "asset": "weight",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-f7af5ff0-abc3-46d9-8f3c-8e1ece6af0c4.png",
+      "savedFile": "Source/Generated/rev1/weight.png",
+      "promptFile": "Source/prompts.json",
+      "referenceImage": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/battery-idle/00.png",
+      "styleReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png"
+    },
+    {
+      "asset": "orb",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-acfc6f66-63a9-4aa3-b4bc-566ebe757e4f.png",
+      "savedFile": "Source/Generated/rev1/orb.png",
+      "promptFile": "Source/prompts.json",
+      "referenceImage": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/orb-idle/00.png",
+      "styleReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png"
+    },
+    {
+      "asset": "weight_socket",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-2957f52c-e6e7-4199-a0b0-00e2952bdac4.png",
+      "savedFile": "Source/Generated/rev1/weight_socket.png",
+      "promptFile": "Source/prompts.json",
+      "referenceImage": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/amber-slot-empty/00.png",
+      "styleReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png"
+    },
+    {
+      "asset": "orb_socket",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-4bf22b9b-b33f-44c5-af60-8ea22e2a97c2.png",
+      "savedFile": "Source/Generated/rev1/orb_socket.png",
+      "promptFile": "Source/prompts.json",
+      "referenceImage": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/cyan-slot-empty/00.png",
+      "styleReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png"
+    },
+    {
+      "asset": "floor",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-408c1928-2df7-4ae1-bfde-b9e03713fcd0.png",
+      "savedFile": "Source/Generated/rev1/floor.png",
+      "promptFile": "Source/prompts.json",
+      "referenceImage": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/floor/00.png",
+      "styleReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png"
+    },
+    {
+      "asset": "weight_socket",
+      "revision": 2,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-1507fad4-c7ef-430c-acbc-9366ffd51f06.png",
+      "savedFile": "Source/Generated/rev2/weight_socket.png",
+      "promptFile": "Source/socket-revision-prompts.json",
+      "referenceImages": [
+        "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-2957f52c-e6e7-4199-a0b0-00e2952bdac4.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/amber-slot-empty/00.png"
+      ],
+      "reason": "Thin flat amber/cyan floor cavity; avoid raised blocks and gold orb socket"
+    },
+    {
+      "asset": "orb_socket",
+      "revision": 2,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-c244d3ff-0375-4acc-8234-28acf85c9945.png",
+      "savedFile": "Source/Generated/rev2/orb_socket.png",
+      "promptFile": "Source/socket-revision-prompts.json",
+      "referenceImages": [
+        "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-4bf22b9b-b33f-44c5-af60-8ea22e2a97c2.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/cyan-slot-empty/00.png"
+      ],
+      "reason": "Thin flat amber/cyan floor cavity; avoid raised blocks and gold orb socket"
+    }
+  ]
+}

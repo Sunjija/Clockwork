@@ -1,0 +1,236 @@
+{
+  "scope": "independent source/native/export mechanical audit, not user approval or gameplay",
+  "userAppearanceApproval": "pending",
+  "humanFunValidation": "pending",
+  "passed": [
+    {
+      "check": "generated-call-mapping:wall",
+      "detail": "Source/Generated/rev1/wall.png"
+    },
+    {
+      "check": "generated-original-present:wall",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-564c2ed6-7ac4-492f-8cc3-378bb210d2fa.png"
+    },
+    {
+      "check": "generated-original-unchanged:wall",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:wall",
+      "detail": "Source/prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:weight",
+      "detail": "Source/Generated/rev1/weight.png"
+    },
+    {
+      "check": "generated-original-present:weight",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-f7af5ff0-abc3-46d9-8f3c-8e1ece6af0c4.png"
+    },
+    {
+      "check": "generated-original-unchanged:weight",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:weight",
+      "detail": "Source/prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:orb",
+      "detail": "Source/Generated/rev1/orb.png"
+    },
+    {
+      "check": "generated-original-present:orb",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-acfc6f66-63a9-4aa3-b4bc-566ebe757e4f.png"
+    },
+    {
+      "check": "generated-original-unchanged:orb",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:orb",
+      "detail": "Source/prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:weight_socket",
+      "detail": "Source/Generated/rev2/weight_socket.png"
+    },
+    {
+      "check": "generated-original-present:weight_socket",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-1507fad4-c7ef-430c-acbc-9366ffd51f06.png"
+    },
+    {
+      "check": "generated-original-unchanged:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:weight_socket",
+      "detail": "Source/socket-revision-prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:orb_socket",
+      "detail": "Source/Generated/rev2/orb_socket.png"
+    },
+    {
+      "check": "generated-original-present:orb_socket",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-c244d3ff-0375-4acc-8234-28acf85c9945.png"
+    },
+    {
+      "check": "generated-original-unchanged:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:orb_socket",
+      "detail": "Source/socket-revision-prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:floor",
+      "detail": "Source/Generated/rev1/floor.png"
+    },
+    {
+      "check": "generated-original-present:floor",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-408c1928-2df7-4ae1-bfde-b9e03713fcd0.png"
+    },
+    {
+      "check": "generated-original-unchanged:floor",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:floor",
+      "detail": "Source/prompts.json"
+    }
+  ],
+  "failed": [],
+  "observations": {
+    "sources": [
+      {
+        "asset": "wall",
+        "file": "Source/Generated/rev1/wall.png",
+        "sha256": "84b56ce9db2fe0072d04bfc07906b7201f45f59f2912aeb4c8a4aa402af4080a",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          186,
+          199,
+          1069,
+          1035
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          23,
+          77,
+          1220,
+          1214
+        ]
+      },
+      {
+        "asset": "weight",
+        "file": "Source/Generated/rev1/weight.png",
+        "sha256": "98c7d9c42a912d25aa85ab409876f1123b237b7830fa73106bc8c8e275081b2d",
+        "size": [
+          1215,
+          1295
+        ],
+        "crop128": [
+          255,
+          277,
+          960,
+          1066
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          0,
+          51,
+          1160,
+          1277
+        ]
+      },
+      {
+        "asset": "orb",
+        "file": "Source/Generated/rev1/orb.png",
+        "sha256": "aabfb002b31d174b55dd77d1c6a26d272b0ca01460f469bb9d246e037b1b2cd2",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          326,
+          342,
+          928,
+          951
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          111,
+          53,
+          1208,
+          1150
+        ]
+      },
+      {
+        "asset": "weight_socket",
+        "file": "Source/Generated/rev2/weight_socket.png",
+        "sha256": "f7f20928d6d461eb3cf94a53779131520e31f99250dc230df5a75636979ccbef",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          283,
+          305,
+          971,
+          940
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          111,
+          52,
+          1121,
+          1214
+        ]
+      },
+      {
+        "asset": "orb_socket",
+        "file": "Source/Generated/rev2/orb_socket.png",
+        "sha256": "183e5da2c1868c107b9bbc002aa2d0ee6d463aad5621f9daa440a8141386db42",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          343,
+          351,
+          912,
+          901
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          59,
+          21,
+          1194,
+          1228
+        ]
+      },
+      {
+        "asset": "floor",
+        "file": "Source/Generated/rev1/floor.png",
+        "sha256": "f8768489030d984589ae62bf33dfb1d7699422977c6e9fcf39ad410bb5e9ba03",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          182,
+          196,
+          1072,
+          1056
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          0,
+          40,
+          1222,
+          1214
+        ]
+      }
+    ]
+  },
+  "mechanicalPassed": true,
+  "phase": "source"
+}

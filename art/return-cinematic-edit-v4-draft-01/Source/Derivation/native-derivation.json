@@ -1,0 +1,94 @@
+{
+  "generatedSource": {
+    "sourcePath": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-5d1d77ce-beff-44b0-8571-6edfee0dc528.png",
+    "sourceSha256": "10d347d4f1d9874330e70b48f66656fb1fedfd5a93535aac6efc2a1fc077992e",
+    "projectCopy": "Source/Generated/shaft-no-destination.png",
+    "copySha256": "10d347d4f1d9874330e70b48f66656fb1fedfd5a93535aac6efc2a1fc077992e"
+  },
+  "sourceGeometry": {
+    "generatedDimensions": [
+      1672,
+      941
+    ],
+    "sourceRect": [
+      0.0,
+      0.25,
+      1672.0,
+      940.75
+    ],
+    "sourceStep": [
+      5.225,
+      5.225
+    ],
+    "wholeImageUniformScale": 0.19138755980861244,
+    "geometryWarped": false,
+    "bodyPartScaling": false
+  },
+  "logicalSize": [
+    320,
+    180
+  ],
+  "nativeSize": [
+    640,
+    360
+  ],
+  "integerScale": 2,
+  "nativeSha256": "3d19e473d6ca13720cfd2c66acadaabc3863068c29aa7153f3699eaf93829938",
+  "logicalSha256": "37ac5f4054f53dedbee186e30929b709e3f94f42936ce3e62cf81171498f15c2",
+  "pixelMapSha256": "e87bebdf38ffb74e53d130cc0e28215be87160da66dd686c3a14397d8a5e3afc",
+  "reusedLift": {
+    "nativeCarriage": {
+      "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/Native/open-lift-carriage.png",
+      "sourceSha256": "df9706bb3774bce5f11bedb9f9e4d76f1b18125bcd2d84c339195c255a90a5d3",
+      "projectCopy": "Source/Reused/Lift/Source/Native/open-lift-carriage.png",
+      "copySha256": "df9706bb3774bce5f11bedb9f9e4d76f1b18125bcd2d84c339195c255a90a5d3"
+    },
+    "logicalCarriage": {
+      "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/Native/open-lift-carriage-logical.png",
+      "sourceSha256": "c757726bd36cb1a759a97432aa93908ecf439a8aaff5bd1d5d163f3a0cdec565",
+      "projectCopy": "Source/Reused/Lift/Source/Native/open-lift-carriage-logical.png",
+      "copySha256": "c757726bd36cb1a759a97432aa93908ecf439a8aaff5bd1d5d163f3a0cdec565"
+    },
+    "generatedOriginal": {
+      "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/Generated/open-lift-carriage.png",
+      "sourceSha256": "62ffef711247f78208aa3e44e4e5e0e416269dca682cad474c7d641d2ed755ba",
+      "projectCopy": "Source/Reused/Lift/Source/Generated/open-lift-carriage.png",
+      "copySha256": "62ffef711247f78208aa3e44e4e5e0e416269dca682cad474c7d641d2ed755ba"
+    },
+    "pixelMap": {
+      "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/Derivation/open-lift-carriage-pixel-map.json",
+      "sourceSha256": "2e566ce0bf0b2c8137bd1abe06b8cb5c405ef07de16159abd2f14446fae63793",
+      "projectCopy": "Source/Reused/Lift/Source/Derivation/open-lift-carriage-pixel-map.json",
+      "copySha256": "2e566ce0bf0b2c8137bd1abe06b8cb5c405ef07de16159abd2f14446fae63793"
+    },
+    "derivation": {
+      "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/Derivation/native-derivation.json",
+      "sourceSha256": "1cce1b4c3358665921ece86219a41d6028aecffdda455c575cd757df890e1416",
+      "projectCopy": "Source/Reused/Lift/Source/Derivation/native-derivation.json",
+      "copySha256": "1cce1b4c3358665921ece86219a41d6028aecffdda455c575cd757df890e1416"
+    },
+    "provenance": {
+      "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/provenance.json",
+      "sourceSha256": "4c0de6ef0c3fb1cda8cc078d883eec0cabedb277a6e809bda29f65f0ef6b18fc",
+      "projectCopy": "Source/Reused/Lift/Source/provenance.json",
+      "copySha256": "4c0de6ef0c3fb1cda8cc078d883eec0cabedb277a6e809bda29f65f0ef6b18fc"
+    },
+    "requests": {
+      "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/requests.json",
+      "sourceSha256": "b4c0131466f8838c1fd5307f11c7563014851bcf14c6f8009f85db5274fa919f",
+      "projectCopy": "Source/Reused/Lift/Source/requests.json",
+      "copySha256": "b4c0131466f8838c1fd5307f11c7563014851bcf14c6f8009f85db5274fa919f"
+    }
+  },
+  "palette": {
+    "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v2-full/Source/Native/palette.json",
+    "sourceSha256": "9fe52c3cdf9d5235570491b35664c2eb0b7a4d68a0102429d38f073413d6de74",
+    "projectCopy": "Source/Native/palette.json",
+    "copySha256": "9fe52c3cdf9d5235570491b35664c2eb0b7a4d68a0102429d38f073413d6de74"
+  },
+  "scriptSha256": "4b3110b39d4dba3fedbcbf178c9eb2f96e68d92259e0ea2040af1fdefc96a97c",
+  "nativeHelperSha256": "a47c1340798052ce0a999175ca10856d1b6de51148afb304e2c07e7161b1e9e7",
+  "humanAppearanceApproval": "pending",
+  "runtimeIntegrated": false,
+  "newDesignsCodePainted": false
+}

@@ -1,0 +1,361 @@
+{
+  "passed": true,
+  "revision": "cinematic-edit-v4",
+  "scope": "Independent source/archive hashes, generated-to-native replay, all prepared PNGs and every merged subexposure whole-world/camera replay. Semantic room absence follows main visual inspection; this is not human art/motion approval or runtime capture.",
+  "scriptPath": "tools/art/check_cinematic_edit_v4.py",
+  "scriptSha256": "a229198ec3dbaa0580b635d1901b1ac5cd56881d27733dbf6615b845a31074ca",
+  "readOnlyNativeHelperSha256": "a47c1340798052ce0a999175ca10856d1b6de51148afb304e2c07e7161b1e9e7",
+  "sourceFileHashes": {
+    "Source/provenance.json": "80afae933361302266f00661d5a9a05f0caed14f7d2738192d7d0fbeabc0706b",
+    "Source/reused-assets.json": "1fe0f258d7679fe45d16e187d9a7bf346c0d4a3c8e5ecf261af728d4ae70d6df",
+    "Source/registration.json": "8fd79ca8b67ab1871c558cb6a7f0d30b82d60d58e9a2f660cde3a3ff7898cad2",
+    "Source/requests.json": "3945988cbb313699fe3d8f74e54e1c06c833008fd4cb6e57d228f778e19b52e9",
+    "Source/generation-results.json": "5d57e7e60cee6f166e62c72f40ce3d421bf6d1350585c4510f21516d8cf09690",
+    "Source/Generated/shaft-no-destination.png": "10d347d4f1d9874330e70b48f66656fb1fedfd5a93535aac6efc2a1fc077992e",
+    "Source/Native/palette.json": "9fe52c3cdf9d5235570491b35664c2eb0b7a4d68a0102429d38f073413d6de74",
+    "Source/Native/shaft-no-destination-logical.png": "37ac5f4054f53dedbee186e30929b709e3f94f42936ce3e62cf81171498f15c2",
+    "Source/Native/shaft-no-destination.png": "3d19e473d6ca13720cfd2c66acadaabc3863068c29aa7153f3699eaf93829938",
+    "Source/References/shaft-0.png": "79e37a6421a7e50a18b2c1864cea8148e9f0b1099aa980708540a90dabb96db5",
+    "Source/Derivation/native-derivation.json": "c0d1469dd665d4e75d11d0ade742900d894d72bb42e9643e0ac0136eabc45e49",
+    "Source/Derivation/shaft-pixel-map.json": "e87bebdf38ffb74e53d130cc0e28215be87160da66dd686c3a14397d8a5e3afc",
+    "Source/Composition/guardian-collapse.json": "b782bfce732e23e3ebd05d3730751987ca75cd74a34dbf4a16d8b4ec5f7b543d",
+    "Source/Composition/elevator-ascent.json": "0b2966c4daa3d6044f20ae821369e678a9afe7934502e602cf3f3e90b6c772f9",
+    "Source/Composition/authoring.json": "2dbd85f044e76ff50d48246099ba86903dc2f9e3fad27519e42322d81be55bfc",
+    "Source/Composition/awakening.json": "338f7fd6fef0ceb1fe12fdbd76f103030b82d00d505f21e514b6ff8961330038",
+    "Source/Reused/Frames/collapse/00.png": "f1d3eeed1a932f04d798af125ca5ea3e01c2b48b8713e1cfd9a996508b11be1b",
+    "Source/Reused/Frames/collapse/01.png": "a3480566671e29860af6a49aa7ab597bfa0128fa8090104e64d5bccb3539cb75",
+    "Source/Reused/Frames/collapse/03.png": "3b431f71a9900b3471ef8b85319ab4c5b66a0af495f831a0784030db60b25ec2",
+    "Source/Reused/Frames/collapse/02.png": "631e05490971c2be3fc06abd6f1b51dd702eced171afd38b00b1fab7898154bc",
+    "Source/Reused/Frames/collapse/06.png": "c4070367658eb647d6e4f6005d897fc796fe5f15559f740793fe0dc63e230a31",
+    "Source/Reused/Frames/collapse/05.png": "cfccd448c698d0955d173ad845ea83853f5527f56c81b84a36be829735374d66",
+    "Source/Reused/Frames/collapse/04.png": "c8177bca0fc5b77ecbf110f9419cb286958a1f3f43ab7c723df730f6018e1ec9",
+    "Source/Reused/Frames/tique/blink-half/00.png": "9c1e108276666a72bac36bce546efdc3f9952a724c63b2843a3fcbc779f14b9d",
+    "Source/Reused/Frames/tique/Idle/00.png": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+    "Source/Reused/Frames/tique/Walk/00.png": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb",
+    "Source/Reused/Frames/tique/Walk/01.png": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46",
+    "Source/Reused/Frames/tique/Walk/03.png": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2",
+    "Source/Reused/Frames/tique/Walk/02.png": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+    "Source/Reused/Frames/tique/Walk/06.png": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9",
+    "Source/Reused/Frames/tique/Walk/12.png": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9",
+    "Source/Reused/Frames/tique/Walk/13.png": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48",
+    "Source/Reused/Frames/tique/Walk/07.png": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+    "Source/Reused/Frames/tique/Walk/11.png": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9",
+    "Source/Reused/Frames/tique/Walk/05.png": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f",
+    "Source/Reused/Frames/tique/Walk/04.png": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da",
+    "Source/Reused/Frames/tique/Walk/10.png": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be",
+    "Source/Reused/Frames/tique/Walk/09.png": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9",
+    "Source/Reused/Frames/tique/Walk/08.png": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d",
+    "Source/Reused/Frames/tique/blink-closed/00.png": "3e26eb5c71d8fa4f01117f03101af3853b690de1282afc4996e99cea2d364bcb",
+    "Source/Reused/Frames/awakening/A4/00.png": "c4070367658eb647d6e4f6005d897fc796fe5f15559f740793fe0dc63e230a31",
+    "Source/Reused/Frames/awakening/A4/01.png": "cfccd448c698d0955d173ad845ea83853f5527f56c81b84a36be829735374d66",
+    "Source/Reused/Frames/awakening/A4/03.png": "f9586cc28f9c7f7cb8bac7de12269f7cf8efb218aed5b66707b7db1d0f65bfbd",
+    "Source/Reused/Frames/awakening/A4/02.png": "c8177bca0fc5b77ecbf110f9419cb286958a1f3f43ab7c723df730f6018e1ec9",
+    "Source/Reused/Frames/awakening/A4/06.png": "8bbd5eb15a6b934c2e14699cac891c9b532dbb4f30b505ac3771694240e4175d",
+    "Source/Reused/Frames/awakening/A4/07.png": "026f0a73c9c2d65faea07d499812ab4cd4c583f8fef9e31d6972d89d6041c213",
+    "Source/Reused/Frames/awakening/A4/05.png": "cd05a81463fa031d26f6695488640469b3b251ecbb76ef7c364c0de5b52e02a8",
+    "Source/Reused/Frames/awakening/A4/04.png": "a3f391272ea79dee7ecda72a1727ca91ea931cf45245867faabf32b36a5d0aa5",
+    "Source/Reused/Frames/awakening/A4/08.png": "3b369ba0e9b0fa1e70a73fea87d1c21bb125f524eda7655d1930cafb57f6633b",
+    "Source/Reused/Frames/awakening/A3/00.png": "25448677a11b9966837f645c5d61dfa60b1784087737753a705a353e3ccb47ab",
+    "Source/Reused/Frames/awakening/A3/01.png": "64917e21d0e89d2d076d78888a39bc45843edb87b623fc8294337cc27494ca7c",
+    "Source/Reused/Frames/awakening/A3/03.png": "b49d156c4ff5f87e2ad534052a1e6a64d87bbbb135da8243480673b87335241b",
+    "Source/Reused/Frames/awakening/A3/02.png": "7b203e9068d4c07c8b57a241cef0acb3d065a7fa3c4cff056472fd07fc9f250d",
+    "Source/Reused/Frames/awakening/A3/06.png": "5d7643ac59d777e5978caa9cc1ea973b205663cc27391f5a3a9dca515fb4f1f2",
+    "Source/Reused/Frames/awakening/A3/07.png": "a5622f583f94a99c907d64eaf9dc4ed12f3e54160f391da69acf2afe0e3bee1a",
+    "Source/Reused/Frames/awakening/A3/11.png": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+    "Source/Reused/Frames/awakening/A3/05.png": "19610df5e529548da06bdc611c505ccd88e16bf7de54282d86cb49cb47c1e63f",
+    "Source/Reused/Frames/awakening/A3/04.png": "7122458cb19a884bece9563e6686fd05f3239afd7a79456f1751fd6572ab6eae",
+    "Source/Reused/Frames/awakening/A3/10.png": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+    "Source/Reused/Frames/awakening/A3/09.png": "5b16c6fb0d333872727ddf50d4e362353a156ff65551b2427c606c79e275c30f",
+    "Source/Reused/Frames/awakening/A3/08.png": "9620ebaa4e96d001146dc02cc19478157a6452bee470522cd808ddbd00da64ed",
+    "Source/Reused/Frames/awakening/A2/00.png": "78ceaba4513696d8c156c1d852699e95cbd7c7d27db9c4df3c99d4d026faf18f",
+    "Source/Reused/Frames/awakening/A2/01.png": "7275e1eca62a8579bba0ffadf248d94535d0718dff27fee3953b2a8dd7fb3512",
+    "Source/Reused/Frames/awakening/A2/03.png": "c0242980ec42968aeb7397caaecdf6b1e6f38423c6e1ac848ae35002299da256",
+    "Source/Reused/Frames/awakening/A2/02.png": "51731e5f7fc24a777f7cd0c3bdd129d0e75c7fa51b3603fd528db242de82b5b4",
+    "Source/Reused/Frames/awakening/A2/06.png": "64629ee97af30d689cb2872ad4e482a09c23272ffef2ea7a958e4d4d8935bf30",
+    "Source/Reused/Frames/awakening/A2/07.png": "c7a85d1903010b748bbcc3118b155389d3124c532f5f49c8e0ed6c9be8851f10",
+    "Source/Reused/Frames/awakening/A2/11.png": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+    "Source/Reused/Frames/awakening/A2/05.png": "75d7698bd7375057885050be682e6516a7be4afd6686b0099a10ad08cd4281cd",
+    "Source/Reused/Frames/awakening/A2/04.png": "b22614a449a7ceafa99f356bb80293c306fda7cf0d86e6f92c5bd217fae6edd5",
+    "Source/Reused/Frames/awakening/A2/10.png": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+    "Source/Reused/Frames/awakening/A2/09.png": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+    "Source/Reused/Frames/awakening/A2/08.png": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+    "Source/Reused/Frames/awakening/A1/14.png": "b411e766a152d259d6010a61a377166a65c11d0c72e517b26a8f97d9cab0a6b2",
+    "Source/Reused/Frames/awakening/A1/00.png": "9e857d5b34bd020f5e27dc067ecbf91f5837218f5db1c4054bc1bb3dfcf82c1d",
+    "Source/Reused/Frames/awakening/A1/28.png": "6b3ccbfe871edee633682e1c5046302f0c1df971ef819f7c8118f2138e0aab3f",
+    "Source/Reused/Frames/awakening/A1/29.png": "1e4d16eb4f1856885ce8e79dfe1ee9350cb00406f57e70e9089abaae8fc0b695",
+    "Source/Reused/Frames/awakening/A1/01.png": "359c8e172c2ac6e410233f2b4f0d2b45768b19ee9359ef2030e0da514364ca4f",
+    "Source/Reused/Frames/awakening/A1/15.png": "e2d255a12836bd5353cd432c6c21e428287dc26b5cddc2505c3a30307c0d71a0",
+    "Source/Reused/Frames/awakening/A1/03.png": "05ad01adaa1d4e420d0de864c22657d74be03c0f3017221f89e25799ab56fcb5",
+    "Source/Reused/Frames/awakening/A1/17.png": "e16b85ac21be6e467a9c172d8e7f0841d576a890f044f6aadaff64e3c8d8047b",
+    "Source/Reused/Frames/awakening/A1/16.png": "b9b0a8aa637ddcec565a47b074816b6081f896d33602d6d0990f2c277e88313e",
+    "Source/Reused/Frames/awakening/A1/02.png": "5926a7212469eaefb2834927057d5ce15dc5e819883e0cc1b132c08dbdbfc150",
+    "Source/Reused/Frames/awakening/A1/06.png": "1fc65006e2cea81c78c426668ff2c45cf12db6d9b1b47c5fed78a52cf464d037",
+    "Source/Reused/Frames/awakening/A1/12.png": "f3d9c197aa2ebd32706087e8e7805208d211a5a6b983a9c9dde32aa1a9c43f7c",
+    "Source/Reused/Frames/awakening/A1/13.png": "c899d310803b6b6d3719084316e801600fd0ea14d7ac2e0ef2e8244b938011a5",
+    "Source/Reused/Frames/awakening/A1/07.png": "9a547a144283e186b22f69acb185a7399d6941251a72b4dfe5e743691fc5446d",
+    "Source/Reused/Frames/awakening/A1/11.png": "bc88cc6967c300e9eb99d1f0b4b3b3a5b395f1095808c3817c5ff8ed4c560d82",
+    "Source/Reused/Frames/awakening/A1/05.png": "63edba7a51df2381202ec69860cf590c6d9b04dd1cf5722f84bfb4ddaef9287d",
+    "Source/Reused/Frames/awakening/A1/04.png": "3e5d433cef17459d076a087b490ad2e2c0d91d0d898e9fd91ba0ed5a910d865f",
+    "Source/Reused/Frames/awakening/A1/10.png": "5aff023246c825dc1dfcbb53dfa4e931e135a25fd1301f5c59cf22747725509a",
+    "Source/Reused/Frames/awakening/A1/38.png": "5139ba18a75e7bd6832e16fb15848cf20b32589766b3bc4e3e620ddb24e22d36",
+    "Source/Reused/Frames/awakening/A1/35.png": "e596d9c75ad22b32e3731a0f376b21482c1402057f1ae8659d5f8fc63a14c2cf",
+    "Source/Reused/Frames/awakening/A1/21.png": "559642216f1757c33d5c86e385867976135c822a4c6c02304605b0d1cee6e5d0",
+    "Source/Reused/Frames/awakening/A1/09.png": "df6d2ff1cd25b5b3c3000e08214796f41252eeea4d3872da479a65400d71fde1",
+    "Source/Reused/Frames/awakening/A1/08.png": "33bfd7939717b75b74fdb06d87203cf23e0bd611f075999d3a76a085ecd1e89e",
+    "Source/Reused/Frames/awakening/A1/20.png": "cde2cea26f3357da8e9ca32dbac4f8251e5079e8efc1b5a74fe5d8713113ce14",
+    "Source/Reused/Frames/awakening/A1/34.png": "2052b919868d81b7476a9af31fdb3947a74bcd6b319b9dba7274c65ec70a813c",
+    "Source/Reused/Frames/awakening/A1/22.png": "358f3b633ed5d502e5b549be91e807862ec03b7f908ea3ea3bb8bc54bdcf9db4",
+    "Source/Reused/Frames/awakening/A1/36.png": "9f66bddb78481c16928fd16aaa3bde1a069ca6d02a5a628f5101aa0730da4876",
+    "Source/Reused/Frames/awakening/A1/37.png": "5c13d9a2a0d8c5df1cd50ec76d4d7baedc9a8434ca41b50360a4b6de5e70a5f9",
+    "Source/Reused/Frames/awakening/A1/23.png": "a1cc6f3d01368c74701cb22e01e19d597aaa65f51b8b99ac1868b63974f9e526",
+    "Source/Reused/Frames/awakening/A1/27.png": "52afb4eef0af4a67c13801cab749b45c094ccec607469a964422e1def035360f",
+    "Source/Reused/Frames/awakening/A1/33.png": "1f9cb482ee1b69d73cc570a570c71cfa73ee85a7add0eb2b406012cb00284e6d",
+    "Source/Reused/Frames/awakening/A1/32.png": "b6c96b53c34987e66f53e39d81118f861a20bea4ba3ebc062574affa55ba8b1c",
+    "Source/Reused/Frames/awakening/A1/26.png": "84444cfac00f1d4bca2797f7e603e9e57f0544f1ec3bf1d35dc40f8c08a021b0",
+    "Source/Reused/Frames/awakening/A1/18.png": "02dba19269a857c5ae1582a42d456829549592865e3c026f46fe7fb9297dda4e",
+    "Source/Reused/Frames/awakening/A1/30.png": "93884cedd7a10b1b77c0c5cd6ba9a499351e8c6129f4520194de6287c5bdb239",
+    "Source/Reused/Frames/awakening/A1/24.png": "21084111261439bf3f2097dc24af9564f9eaaf97ccc948693d60231203c7b67f",
+    "Source/Reused/Frames/awakening/A1/25.png": "2ed194e1a83db81d67b6c44d6bf12590cc428dc6f7289f79e0fa025121dbacd8",
+    "Source/Reused/Frames/awakening/A1/31.png": "447e48e9da4cf4cc2090e3025e696e188d27dbfc5bb8c7361a6f9801bd9a56bc",
+    "Source/Reused/Frames/awakening/A1/19.png": "efcd714c6a1c0bbe08152e5050cc5020631fdd11ffa5ebc1824bb38de29ffef4",
+    "Source/Reused/Lineage/v2/Clips/clip-plan.json": "4f84762c4ddd34b499abf666b9a67614e3c860cf53c79b0d0bd1deb7b4547513",
+    "Source/Reused/Lineage/v2/Source/provenance.json": "bbf44c442a0ee5f62f2592b6fa6892c45d884bbcd7ba0be0f10d964dcdf5fb13",
+    "Source/Reused/Lineage/v3/Clips/clip-plan.json": "ba81c3b954d48aa8305805a2ae9e62207e58f7406edd71deeefe199a49f9c8e0",
+    "Source/Reused/Lineage/v3/Source/provenance.json": "4c0de6ef0c3fb1cda8cc078d883eec0cabedb277a6e809bda29f65f0ef6b18fc",
+    "Source/Reused/Lift/Source/provenance.json": "4c0de6ef0c3fb1cda8cc078d883eec0cabedb277a6e809bda29f65f0ef6b18fc",
+    "Source/Reused/Lift/Source/requests.json": "b4c0131466f8838c1fd5307f11c7563014851bcf14c6f8009f85db5274fa919f",
+    "Source/Reused/Lift/Source/Generated/open-lift-carriage.png": "62ffef711247f78208aa3e44e4e5e0e416269dca682cad474c7d641d2ed755ba",
+    "Source/Reused/Lift/Source/Native/open-lift-carriage.png": "df9706bb3774bce5f11bedb9f9e4d76f1b18125bcd2d84c339195c255a90a5d3",
+    "Source/Reused/Lift/Source/Native/open-lift-carriage-logical.png": "c757726bd36cb1a759a97432aa93908ecf439a8aaff5bd1d5d163f3a0cdec565",
+    "Source/Reused/Lift/Source/Derivation/native-derivation.json": "1cce1b4c3358665921ece86219a41d6028aecffdda455c575cd757df890e1416",
+    "Source/Reused/Lift/Source/Derivation/open-lift-carriage-pixel-map.json": "2e566ce0bf0b2c8137bd1abe06b8cb5c405ef07de16159abd2f14446fae63793"
+  },
+  "native": {
+    "shaftGeneratedBoxPaletteReplayExact": true,
+    "shaftNative2xReplayExact": true,
+    "liftGeneratedBoxPaletteAlphaReplayExact": true,
+    "liftNative2xReplayExact": true,
+    "liftInteriorAlphaOpen": true,
+    "fixedPaletteColors": 64
+  },
+  "reusedOriginalBytesExact": true,
+  "clips": [
+    {
+      "name": "awakening",
+      "frameCount": 68,
+      "subExposureCount": 72,
+      "durationMs": 8000,
+      "wholeWorldCameraReplayRgbaExact": true,
+      "cameraIntegerScales": [
+        1,
+        2
+      ],
+      "pngHashesExact": true,
+      "alpha255": true
+    },
+    {
+      "name": "guardian-collapse",
+      "frameCount": 8,
+      "subExposureCount": 8,
+      "durationMs": 3000,
+      "wholeWorldCameraReplayRgbaExact": true,
+      "cameraIntegerScales": [
+        1,
+        2,
+        4
+      ],
+      "pngHashesExact": true,
+      "alpha255": true
+    },
+    {
+      "name": "elevator-ascent",
+      "frameCount": 147,
+      "subExposureCount": 182,
+      "durationMs": 7000,
+      "wholeWorldCameraReplayRgbaExact": true,
+      "cameraIntegerScales": [
+        1,
+        2,
+        4
+      ],
+      "pngHashesExact": true,
+      "alpha255": true
+    }
+  ],
+  "quadraticWorldFloorContinuousAcrossCuts": [
+    {
+      "timeMs": 1200,
+      "continuousFloorY": 282,
+      "roundedFloorY": 282
+    },
+    {
+      "timeMs": 2200,
+      "continuousFloorY": 271.2318244170096,
+      "roundedFloorY": 271
+    },
+    {
+      "timeMs": 4600,
+      "continuousFloorY": 157.51989026063097,
+      "roundedFloorY": 158
+    }
+  ],
+  "carriageAndRiderRigidWorldTranslation": true,
+  "noDestinationDisembarkCaptionLayers": true,
+  "intentionalWideExitClippingFromMs": 4600,
+  "cutToBlackMs": 6600,
+  "sourceAndPreparedPngsUnchanged": true,
+  "independentClips": true,
+  "concatenatedSequenceCreated": false,
+  "shotBoard": {
+    "path": "QA/shot-board.png",
+    "sha256": "ce0fff4e9d7eccca74f01a72d85cb40d7713773d807f1ffd0474b2cd80853f07",
+    "size": [
+      1920,
+      1544
+    ],
+    "fontPath": "art/return-v5-feedback/Source/Font/neodgm.ttf",
+    "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+    "fontSize": 16,
+    "fontMode": "1",
+    "cells": [
+      {
+        "cell": [
+          0,
+          0
+        ],
+        "clip": "awakening",
+        "timeMs": 1060,
+        "frameIndex": 38,
+        "pngSha256": "08dee6b08d93d87cfd73d4c0ffa2567aa6271d31ce5a4cd4b850b74831b54730",
+        "label": "A1 / 도킹 전신"
+      },
+      {
+        "cell": [
+          1,
+          0
+        ],
+        "clip": "awakening",
+        "timeMs": 3000,
+        "frameIndex": 47,
+        "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+        "label": "A2 / 릴레이 인서트"
+      },
+      {
+        "cell": [
+          2,
+          0
+        ],
+        "clip": "awakening",
+        "timeMs": 5000,
+        "frameIndex": 56,
+        "pngSha256": "9620ebaa4e96d001146dc02cc19478157a6452bee470522cd808ddbd00da64ed",
+        "label": "A3 / 문지기 노심"
+      },
+      {
+        "cell": [
+          0,
+          1
+        ],
+        "clip": "awakening",
+        "timeMs": 7200,
+        "frameIndex": 65,
+        "pngSha256": "8bbd5eb15a6b934c2e14699cac891c9b532dbb4f30b505ac3771694240e4175d",
+        "label": "A4 / 전투 공간"
+      },
+      {
+        "cell": [
+          1,
+          1
+        ],
+        "clip": "guardian-collapse",
+        "timeMs": 520,
+        "frameIndex": 3,
+        "pngSha256": "2294a00698e43256db73d9706a81315f5f4309a2a20c299746d91c83ee8f218c",
+        "label": "C1 / 붕괴 미디엄"
+      },
+      {
+        "cell": [
+          2,
+          1
+        ],
+        "clip": "guardian-collapse",
+        "timeMs": 1200,
+        "frameIndex": 6,
+        "pngSha256": "7fbce13edc5c2176c3d3372d05d7196f091e1c33ce0be4b4b5671543e9adfed9",
+        "label": "C2 / 꺼진 노심"
+      },
+      {
+        "cell": [
+          0,
+          2
+        ],
+        "clip": "guardian-collapse",
+        "timeMs": 2400,
+        "frameIndex": 7,
+        "pngSha256": "c4070367658eb647d6e4f6005d897fc796fe5f15559f740793fe0dc63e230a31",
+        "label": "C3 / 정적 와이드"
+      },
+      {
+        "cell": [
+          1,
+          2
+        ],
+        "clip": "elevator-ascent",
+        "timeMs": 760,
+        "frameIndex": 24,
+        "pngSha256": "056062bf2b2a57aabb9e955d9bdb221cda2b5cbe6e6d864bd6dc65a7a466b724",
+        "label": "E1 / 탑승 미디엄"
+      },
+      {
+        "cell": [
+          2,
+          2
+        ],
+        "clip": "elevator-ascent",
+        "timeMs": 1800,
+        "frameIndex": 29,
+        "pngSha256": "38d85af2e3c1df17472d19835fe752a4384de837b956d6b4dad166eb4551aa1e",
+        "label": "E2 / 레일 인서트"
+      },
+      {
+        "cell": [
+          0,
+          3
+        ],
+        "clip": "elevator-ascent",
+        "timeMs": 3400,
+        "frameIndex": 67,
+        "pngSha256": "73ecc3edb581c1bf04e8b6215e3470d57dfdf51196d47ba207f72e77d85ba818",
+        "label": "E3 / 티크 트래킹"
+      },
+      {
+        "cell": [
+          1,
+          3
+        ],
+        "clip": "elevator-ascent",
+        "timeMs": 5000,
+        "frameIndex": 107,
+        "pngSha256": "5a3f6884c2683c6cc6d8b1b34389707cdbc0cabb085fa2e1f7c5f5cdecf5db54",
+        "label": "E4 / 상승 와이드"
+      },
+      {
+        "cell": [
+          2,
+          3
+        ],
+        "clip": "elevator-ascent",
+        "timeMs": 6600,
+        "frameIndex": 146,
+        "pngSha256": "c608313127acde5128c9b320bcfceeb66b5a58f8a2d7de59f475ef012fe5ad18",
+        "label": "E4 / 암전"
+      }
+    ]
+  },
+  "humanAppearanceApproval": "pending",
+  "humanMotionApproval": "pending",
+  "runtimeIntegrated": false,
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "unityFilesWritten": false
+}

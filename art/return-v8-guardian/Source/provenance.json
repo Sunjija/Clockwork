@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-02",
+  "tool": "built-in image_gen",
+  "successfulImageCalls": 6,
+  "distinctCorrectedPoseTargets": 5,
+  "failedDispatchRecord": "Source/call-failures.json",
+  "generatedAnchorsInspected": true,
+  "anchorInspection": "All five specific pose edits displayed and inspected by parent before native derivation. Rev1 jaw05 halo-like preview RGB is alpha0 outside the character; it is discarded through established premultiplied alpha128 derivation, not painted out.",
+  "selectedNativeSources": {
+    "idle": "Source/Generated/rev1/idle.png",
+    "jaw-impact-03": "Source/Generated/rev1/jaw-impact-03.png",
+    "jaw-impact-04": "Source/Generated/rev1/jaw-impact-04.png",
+    "jaw-impact-05": "Source/Generated/rev1/jaw-impact-05.png",
+    "slam-land": "Source/Generated/rev1/slam-land.png"
+  },
+  "userAppearanceApproval": "pending; inspecting sources is not human final-art approval",
+  "gameLaunchRequested": false,
+  "calls": [
+    {
+      "asset": "idle",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-621708c8-a894-4bb7-96f2-df0760017111.png",
+      "savedFile": "Source/Generated/rev1/idle.png",
+      "promptFile": "Source/requests.json",
+      "referenceImages": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/idle/00.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/idle/00.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v2/iron-warden/references/canonical-base.png"
+      ]
+    },
+    {
+      "asset": "jaw-impact-03",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-8deb1a67-f9b6-4150-9948-0764e3411e99.png",
+      "savedFile": "Source/Generated/rev1/jaw-impact-03.png",
+      "promptFile": "Source/requests.json",
+      "referenceImages": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/jaw_shockwave/03.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/idle/00.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v2/iron-warden/references/canonical-base.png"
+      ]
+    },
+    {
+      "asset": "jaw-impact-04",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-57699bf3-018f-4362-82d6-11fd5c43daf3.png",
+      "savedFile": "Source/Generated/rev1/jaw-impact-04.png",
+      "promptFile": "Source/requests.json",
+      "referenceImages": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/jaw_shockwave/04.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/idle/00.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v2/iron-warden/references/canonical-base.png"
+      ]
+    },
+    {
+      "asset": "jaw-impact-05",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-3242635a-ab57-42f7-b392-1e435160386c.png",
+      "savedFile": "Source/Generated/rev1/jaw-impact-05.png",
+      "promptFile": "Source/requests.json",
+      "referenceImages": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/jaw_shockwave/05.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/idle/00.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v2/iron-warden/references/canonical-base.png"
+      ]
+    },
+    {
+      "asset": "slam-land",
+      "revision": 1,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-f3441876-85ab-4d49-87fc-15a355c61847.png",
+      "savedFile": "Source/Generated/rev1/slam-land.png",
+      "promptFile": "Source/requests.json",
+      "referenceImages": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/drop_slam/06.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v7-guardian/Frames/idle/00.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v2/iron-warden/references/canonical-base.png"
+      ]
+    },
+    {
+      "asset": "jaw-impact-05",
+      "revision": 2,
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-eeda3c79-59ab-4520-a6f3-6fd9b31673c5.png",
+      "savedFile": "Source/Generated/rev2/jaw-impact-05.png",
+      "promptFile": "Source/halo-removal-request.json",
+      "referenceImages": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-05.png"
+      ],
+      "selected": false,
+      "reason": "Extraction variant preserved. Inspection found the apparent halo is RGB under alpha0, already transparent in rev1; use the first pose correction to avoid unnecessary identity drift."
+    }
+  ]
+}

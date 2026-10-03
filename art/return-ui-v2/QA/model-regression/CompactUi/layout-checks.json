@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "count": 11,
+  "checks": [
+    "all 9 phases, both text sizes and help states stay inside 640x360",
+    "ordinary puzzle HUD and contextual help never cover the board",
+    "combat HUD and failure help never cover y90..300 strike zone",
+    "pause actions/indexes match 8 arena / 7 puzzle entries at both text sizes",
+    "puzzle has undo/reset only; default14 and optional16 body font is respected",
+    "pattern names only during telegraph; E only in pylon range; X only during exposure",
+    "automatic guidance setting suppresses toasts",
+    "Korean word-aware wrapping uses exact renderer advances",
+    "overlong Latin words wrap without drawing outside text bounds",
+    "text height includes consistent size\u002B2 line spacing",
+    "all production guidance strings fit both contextual card layouts at both text preferences"
+  ],
+  "scope": "Shared production draw-plan geometry/text/actions; offline layout, not live Unity GUI"
+}

@@ -1,0 +1,121 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Seoul",
+  "task": "Two pixel-art cinematic storyboard sheets, eight planning frames, no video generation or game implementation",
+  "mode": "built-in image_gen",
+  "useCase": "illustration-story",
+  "status": "unapproved-storyboard-preview",
+  "requestSet": {
+    "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Source/requests.json",
+    "sha256": "e7c6cb7383bec9c0ec903c669dc63e67141857d85965cd80bab60e2d6c35ecdb"
+  },
+  "generationRecovery": "A original was recovered from the previous interrupted generation. No B output was present; B was generated from its exact saved request in the continued turn.",
+  "outputs": [
+    {
+      "sequence": "A",
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-10c738aa-aaed-4e93-b0c9-588b59cb2800.png",
+      "projectCopy": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-a-board.png",
+      "sha256": "a15774c6911cfcee8bd8e196d5464c4e2eca6a887e0b795b8254059062203058",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "copyMatchesOriginal": true,
+      "derivation": "none; unmodified generated contact-sheet preview",
+      "references": [
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/00.png",
+          "sha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-open/03.png",
+          "sha256": "50464eea281a4aa33fff57feb6619c910e5811217f888a0e7ee2d5cb3e4ecca9"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png",
+          "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ui-v2/QA/font-position-repair/runtime-ui/10-combat-rest.png",
+          "sha256": "2884bdd7648a471a5f43e802d5519066b2a624ebb59dc0286cff9477f3f9d762"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ui-v2/QA/font-position-repair/runtime-ui/05-puzzle-3.png",
+          "sha256": "3ccaaa1d9cdad3ac3031cc0f27477c735b1ddb771adf446cff1c0f3d7a153186"
+        }
+      ]
+    },
+    {
+      "sequence": "B",
+      "generatedOriginal": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-d37c7571-a2a2-4d50-ac9c-19915157a200.png",
+      "projectCopy": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-b-board.png",
+      "sha256": "108056fec0dc42f363872d6caab8438bbd0323b8856416ffccf2bc1042995f5b",
+      "dimensions": {
+        "width": 1672,
+        "height": 941
+      },
+      "copyMatchesOriginal": true,
+      "derivation": "none; unmodified generated contact-sheet preview",
+      "references": [
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png",
+          "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/00.png",
+          "sha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/StateArt/exit-open/00.png",
+          "sha256": "a6b2697c729837b4c2e76fde4c646ba10ce00566b3c437fc8c0448b76825fd34"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ui-v2/QA/font-position-repair/runtime-ui/10-combat-rest.png",
+          "sha256": "2884bdd7648a471a5f43e802d5519066b2a624ebb59dc0286cff9477f3f9d762"
+        },
+        {
+          "path": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/StateArt/workshop-power-3/00.png",
+          "sha256": "c64f75ad58ca289881105392358eb61b6b389a86a2fde13c69a3641cce1d221a"
+        }
+      ]
+    }
+  ],
+  "inspection": {
+    "method": "Main agent viewed each generated original and displayed the storyboard sheets; visual inspection is not human approval.",
+    "observations": [
+      "Both sheets contain four correctly ordered labelled panels; no generated Korean captions or gameplay HUD.",
+      "Tique retains brass body and cyan eyes/heart; guardian has pressure jaws and no added eyes/human face.",
+      "A3 red core is inside the mouth; A4 and B1 show player left and guardian right facing left.",
+      "B2 shows right exit and warm interior; B3/B4 show empty industrial workshop without a new NPC.",
+      "A1 is explanatory oblique framing, not a replacement for the actual puzzle camera.",
+      "Pixel blocks coexist with fine textures and some soft backgrounds; final native-pixel cleanup not performed.",
+      "B3/B4 share workshop mood but some prop differences remain; individual production anchors must enforce continuity."
+    ],
+    "technicalChecks": [
+      "PNG dimensions read with sips",
+      "SHA-256 original/copy equality",
+      "Reference SHA-256 preserved"
+    ],
+    "humanVisualApproval": "pending",
+    "runtimePixelDerivation": "not performed; planned after storyboard feedback and individual image-first anchors",
+    "animationExport": "not performed",
+    "videoGeneration": "not performed",
+    "gameIntegration": "not performed"
+  },
+  "timingTargets": {
+    "A": 8,
+    "B": 10,
+    "gameHandoffCuts": 4,
+    "gameHandoffSeconds": 8,
+    "plannedAiShots": [
+      "A2",
+      "A3",
+      "B3",
+      "B4"
+    ],
+    "plannedAiSeconds": 10,
+    "includesOpening": false,
+    "playerExitWaitCanExtend": true
+  },
+  "scope": "Planning package only. No game source, runtime assets, builds, desktop launcher, or approved falling opening modified."
+}

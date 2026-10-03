@@ -1,0 +1,84 @@
+{
+  "version": 2,
+  "method": "Actual imagegen anchors / ratio-preserving premultiplied BOX / mild unsharp / fixed material palette / binary alpha",
+  "script": "tools/art/derive_export_ui_v2.py",
+  "scriptSha256": "fa6f7779dca36ccfbad9d980dfa8db9398db247b48af55ff50fc79f0e8db0d39",
+  "selectionSource": "Source/provenance.json",
+  "selectionSha256": "8f6186a7838731690d908d03dca406eb6fa13eca213f6937f68d580884f33db7",
+  "palette": "Source/Native/palette.json",
+  "paletteSha256": "574f82384c98f0e67fbe81fdeee0d3a19be25b8df122cafc6743bb6348ae6dae",
+  "assets": {
+    "panel": {
+      "generatedDimensions": [
+        2172,
+        724
+      ],
+      "cropRect": [
+        128,
+        122,
+        2046,
+        585
+      ],
+      "nativeDimensions": [
+        96,
+        23
+      ],
+      "alphaThreshold": 128,
+      "wholeAssetUniformScale": 0.05005213764337852,
+      "unsharp": {
+        "radius": 0.4,
+        "percent": 45,
+        "threshold": 2
+      },
+      "generatedSource": "Source/Generated/panel.png",
+      "sourceSha256": "d652e503fee6a722c44009b2babab96ebec216682a0b3309c8c5f33250a7ae35",
+      "nativeSource": "Source/Native/panel.png",
+      "nativeSha256": "845f9973ba06b4995db3c60279918380c2108a9795a9c602baba49be17b1d8eb",
+      "slice": [
+        10,
+        6,
+        10,
+        6
+      ],
+      "alphaPixelsAdded": 0,
+      "paletteIndexMap": "Source/Derivation/panel-pixel-map.json"
+    },
+    "button": {
+      "generatedDimensions": [
+        2125,
+        740
+      ],
+      "cropRect": [
+        184,
+        218,
+        1942,
+        542
+      ],
+      "nativeDimensions": [
+        112,
+        21
+      ],
+      "alphaThreshold": 128,
+      "wholeAssetUniformScale": 0.06370875995449374,
+      "unsharp": {
+        "radius": 0.4,
+        "percent": 45,
+        "threshold": 2
+      },
+      "generatedSource": "Source/Generated/button.png",
+      "sourceSha256": "8e3bc6d41b8a0ac823bd71e42bbe1ea42ed1707151a5f700046dae1a9d08f5a7",
+      "nativeSource": "Source/Native/button.png",
+      "nativeSha256": "40903ef629d7c7016602bda2cffb5825ba3f13c47cc137a0c854515339bcd117",
+      "slice": [
+        8,
+        5,
+        8,
+        5
+      ],
+      "alphaPixelsAdded": 0,
+      "paletteIndexMap": "Source/Derivation/button-pixel-map.json"
+    }
+  },
+  "humanAppearanceApproval": "pending",
+  "gameExecuted": false
+}

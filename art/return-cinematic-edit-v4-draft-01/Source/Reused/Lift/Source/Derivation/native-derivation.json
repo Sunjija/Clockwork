@@ -1,0 +1,87 @@
+{
+  "inspectedByMain": true,
+  "humanAppearanceApproval": "pending",
+  "scriptSha256": "af167a16880f82bc9c43897b93096f26fc662294aaf79ceed4d23f9fe7b7991a",
+  "readOnlyHelper": {
+    "path": "tools/art/derive_pixel_cinematics_v1.py",
+    "sha256": "a47c1340798052ce0a999175ca10856d1b6de51148afb304e2c07e7161b1e9e7"
+  },
+  "reusedFixedPalette": {
+    "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Source/Native/palette.json",
+    "sourceSha256": "9fe52c3cdf9d5235570491b35664c2eb0b7a4d68a0102429d38f073413d6de74",
+    "projectCopy": "Source/Native/palette.json",
+    "copySha256": "9fe52c3cdf9d5235570491b35664c2eb0b7a4d68a0102429d38f073413d6de74"
+  },
+  "assets": {
+    "shaft-workshop-plate": {
+      "generatedDimensions": [
+        1672,
+        941
+      ],
+      "sourceRect": [
+        0.0,
+        0.25,
+        1672.0,
+        940.75
+      ],
+      "sourceStep": [
+        5.225,
+        5.225
+      ],
+      "wholeImageUniformScale": 0.19138755980861244,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": "Source/Generated/shaft-workshop-plate.png",
+      "sourceSha256": "79e37a6421a7e50a18b2c1864cea8148e9f0b1099aa980708540a90dabb96db5",
+      "logicalOutput": "Source/Native/shaft-workshop-plate-logical.png",
+      "logicalSha256": "7a517d62b86ca49156b1d3324d45aa9934d537b448f6d93c45d87b1d1539ea25",
+      "output": "Source/Native/shaft-workshop-plate.png",
+      "outputSha256": "6b6eab96f6b539ee98765d76cf5bce07d0d9e80e5c2004b917162029b8a550e5",
+      "pixelMap": "Source/Derivation/shaft-workshop-plate-pixel-map.json",
+      "pixelMapSha256": "02c1a8d89947621a338f64fb9ad8f1bf58f4893477990a14989851348bd2bad7",
+      "integerScale": 2
+    },
+    "open-lift-carriage": {
+      "generatedDimensions": [
+        1340,
+        1174
+      ],
+      "sourceRect": [
+        110,
+        36,
+        1230,
+        1126
+      ],
+      "alphaBBoxThreshold": 128,
+      "sampleSize": [
+        52,
+        51
+      ],
+      "paddingOffsetLogical": [
+        6,
+        6
+      ],
+      "sourceStep": [
+        21.53846153846154,
+        21.372549019607842
+      ],
+      "wholeObjectUniformScale": 0.04642857142857143,
+      "heightRoundingPixels": 0.3928571428571459,
+      "binaryAlphaThreshold": 128,
+      "clearInteriorFraction": 0.8928571428571429,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": "Source/Generated/open-lift-carriage.png",
+      "sourceSha256": "62ffef711247f78208aa3e44e4e5e0e416269dca682cad474c7d641d2ed755ba",
+      "logicalOutput": "Source/Native/open-lift-carriage-logical.png",
+      "logicalSha256": "c757726bd36cb1a759a97432aa93908ecf439a8aaff5bd1d5d163f3a0cdec565",
+      "output": "Source/Native/open-lift-carriage.png",
+      "outputSha256": "df9706bb3774bce5f11bedb9f9e4d76f1b18125bcd2d84c339195c255a90a5d3",
+      "pixelMap": "Source/Derivation/open-lift-carriage-pixel-map.json",
+      "pixelMapSha256": "2e566ce0bf0b2c8137bd1abe06b8cb5c405ef07de16159abd2f14446fae63793",
+      "integerScale": 2
+    }
+  },
+  "newDesignsCodePainted": false,
+  "unityFilesWritten": false
+}

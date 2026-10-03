@@ -1,0 +1,208 @@
+{
+  "sourceNative": "Source/Native/workshop-logical.png",
+  "sourceSha256": "29edb8db2ee9ef81a5551fc69ede967bfe70b9faf7ce9036e5448316d9498269",
+  "sourceFleckCoordinates": [
+    [
+      117,
+      82
+    ],
+    [
+      134,
+      82
+    ],
+    [
+      137,
+      88
+    ],
+    [
+      115,
+      84
+    ],
+    [
+      135,
+      85
+    ]
+  ],
+  "sourceFleckRgba": [
+    [
+      201,
+      149,
+      85,
+      255
+    ],
+    [
+      145,
+      85,
+      36,
+      255
+    ],
+    [
+      145,
+      85,
+      36,
+      255
+    ],
+    [
+      145,
+      85,
+      36,
+      255
+    ],
+    [
+      145,
+      85,
+      36,
+      255
+    ]
+  ],
+  "underlaySourceDonors": [
+    {
+      "at": [
+        117,
+        82
+      ],
+      "sourceDonor": [
+        116,
+        83
+      ],
+      "rgba": [
+        145,
+        85,
+        36,
+        255
+      ]
+    },
+    {
+      "at": [
+        134,
+        82
+      ],
+      "sourceDonor": [
+        133,
+        82
+      ],
+      "rgba": [
+        121,
+        70,
+        33,
+        255
+      ]
+    },
+    {
+      "at": [
+        115,
+        84
+      ],
+      "sourceDonor": [
+        114,
+        84
+      ],
+      "rgba": [
+        108,
+        68,
+        34,
+        255
+      ]
+    },
+    {
+      "at": [
+        135,
+        85
+      ],
+      "sourceDonor": [
+        135,
+        84
+      ],
+      "rgba": [
+        121,
+        70,
+        33,
+        255
+      ]
+    },
+    {
+      "at": [
+        137,
+        88
+      ],
+      "sourceDonor": [
+        137,
+        87
+      ],
+      "rgba": [
+        121,
+        70,
+        33,
+        255
+      ]
+    }
+  ],
+  "integerOffsets": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      0,
+      -2
+    ],
+    [
+      0,
+      -2
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "newParticleDesignPainted": false,
+  "method": "Five actual generated air-fleck samples move by integer pixels; lamp and all props remain fixed."
+}

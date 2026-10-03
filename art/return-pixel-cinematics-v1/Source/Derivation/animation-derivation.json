@@ -1,0 +1,892 @@
+{
+  "revision": "pixel-cinematics-animation-v1",
+  "scriptSha256": "ca93c689776a6934562ba7756b02277e97c9348d083949f764effd38bee0826c",
+  "nativeDerivationSha256": "46f022eccd5b496574f8f7eb22ce9d1dc2998c7bc377e74be417f6fcc2a5d9a4",
+  "inspectedNativeByMain": true,
+  "humanAppearanceApproval": "pending",
+  "geometryWarped": false,
+  "interpolatedLimbScaling": false,
+  "unityFilesWritten": false,
+  "clips": [
+    {
+      "name": "relay-power",
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/relay.png",
+      "sourceNativeSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "allowedMaskPath": "art/return-pixel-cinematics-v1/Source/Derivation/relay-power-allowed-mask.png",
+      "allowedMaskSha256": "48bcd8ac6d867058abfba8f54652c40bccc13ae2fdbdb866aa2e0b6c0197fc1e",
+      "staticOutsideMask": true,
+      "mechanics": [
+        "Existing cyan aperture pixels power on, then cable segments illuminate left-to-right. All brass and steel geometry is invariant."
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 200,
+          "state": {
+            "apertureLevel": 0.03,
+            "rightwardCableProgress": 0.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/00.png",
+          "pngSha256": "78ceaba4513696d8c156c1d852699e95cbd7c7d27db9c4df3c99d4d026faf18f",
+          "rgbaSha256": "e22c899105c79d408674cc3a35d80061a09190ffa0ab8cb455c9720eda5eb629",
+          "changedPixelsFromNative": 7344,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/00.source-edits.json"
+        },
+        {
+          "frame": 1,
+          "durationMs": 120,
+          "state": {
+            "apertureLevel": 0.25,
+            "rightwardCableProgress": 0.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/01.png",
+          "pngSha256": "7275e1eca62a8579bba0ffadf248d94535d0718dff27fee3953b2a8dd7fb3512",
+          "rgbaSha256": "22c3821c63ee2e04c212f5850673315c14ac0455eda8d8b7617d1133314a99ce",
+          "changedPixelsFromNative": 7344,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/01.source-edits.json"
+        },
+        {
+          "frame": 2,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 0.6,
+            "rightwardCableProgress": 0.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/02.png",
+          "pngSha256": "51731e5f7fc24a777f7cd0c3bdd129d0e75c7fa51b3603fd528db242de82b5b4",
+          "rgbaSha256": "cf47a6b55dfeef9bdd949820a0d28ba2ed93485ea51a53233f1a3a2771180b18",
+          "changedPixelsFromNative": 7344,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/02.source-edits.json"
+        },
+        {
+          "frame": 3,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 0.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/03.png",
+          "pngSha256": "c0242980ec42968aeb7397caaecdf6b1e6f38423c6e1ac848ae35002299da256",
+          "rgbaSha256": "ca0e4621764884632e69123d9a45bd7424807f32d8ff36782c6522e0ece13b52",
+          "changedPixelsFromNative": 5048,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/03.source-edits.json"
+        },
+        {
+          "frame": 4,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 0.2
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/04.png",
+          "pngSha256": "b22614a449a7ceafa99f356bb80293c306fda7cf0d86e6f92c5bd217fae6edd5",
+          "rgbaSha256": "268eb973b43712c3df9613ef5df2b8cd34e32e25783e3fdf8db70a28640fc5a8",
+          "changedPixelsFromNative": 4264,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/04.source-edits.json"
+        },
+        {
+          "frame": 5,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 0.4
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/05.png",
+          "pngSha256": "75d7698bd7375057885050be682e6516a7be4afd6686b0099a10ad08cd4281cd",
+          "rgbaSha256": "e3f576246a8c9698c2e16396b0e5efa96791cd6c380e077fcf370644fce14156",
+          "changedPixelsFromNative": 3084,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/05.source-edits.json"
+        },
+        {
+          "frame": 6,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 0.6
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/06.png",
+          "pngSha256": "64629ee97af30d689cb2872ad4e482a09c23272ffef2ea7a958e4d4d8935bf30",
+          "rgbaSha256": "465d381dbcbed3b5f8245d777d2de7d4bf90445446fed716c4a5e982a93da945",
+          "changedPixelsFromNative": 2088,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/06.source-edits.json"
+        },
+        {
+          "frame": 7,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 0.8
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/07.png",
+          "pngSha256": "c7a85d1903010b748bbcc3118b155389d3124c532f5f49c8e0ed6c9be8851f10",
+          "rgbaSha256": "56502dc9ff3b1b47479c02b681e73ee242b8b6b7666fe12773550c5c3bcb5e60",
+          "changedPixelsFromNative": 1568,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/07.source-edits.json"
+        },
+        {
+          "frame": 8,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 1.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/08.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/08.source-edits.json"
+        },
+        {
+          "frame": 9,
+          "durationMs": 100,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 1.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/09.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/09.source-edits.json"
+        },
+        {
+          "frame": 10,
+          "durationMs": 280,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 1.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/10.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/10.source-edits.json"
+        },
+        {
+          "frame": 11,
+          "durationMs": 600,
+          "state": {
+            "apertureLevel": 1.0,
+            "rightwardCableProgress": 1.0
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/relay-power/11.png",
+          "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+          "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/relay-power/11.source-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "warden-boot",
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/warden-core.png",
+      "sourceNativeSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+      "allowedMaskPath": "art/return-pixel-cinematics-v1/Source/Derivation/warden-boot-allowed-mask.png",
+      "allowedMaskSha256": "d3c28ba840217e8d7598b3f182dbf548d64cd6e84c1fd11e7930eb359e492a3d",
+      "staticOutsideMask": true,
+      "mechanics": [
+        "Only existing mouth/core and vent colors power on. A sampled exposed rod makes a one-logical-pixel rigid activation stroke and returns. Jaw plates and all other body/background pixels stay fixed."
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 200,
+          "state": {
+            "mouthAndVentLevel": 0.03,
+            "pistonLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/00.png",
+          "pngSha256": "25448677a11b9966837f645c5d61dfa60b1784087737753a705a353e3ccb47ab",
+          "rgbaSha256": "40ad2ca875a379081b5efbb09374a37a254b9a32fba5e1d56f11a04ef59fd4c1",
+          "changedPixelsFromNative": 11704,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/00.source-edits.json"
+        },
+        {
+          "frame": 1,
+          "durationMs": 120,
+          "state": {
+            "mouthAndVentLevel": 0.06,
+            "pistonLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/01.png",
+          "pngSha256": "64917e21d0e89d2d076d78888a39bc45843edb87b623fc8294337cc27494ca7c",
+          "rgbaSha256": "db748ad566635f23781009593bdcf0a5eaede457db25abb5f57fb7e46d2682a3",
+          "changedPixelsFromNative": 11704,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/01.source-edits.json"
+        },
+        {
+          "frame": 2,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 0.12,
+            "pistonLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/02.png",
+          "pngSha256": "7b203e9068d4c07c8b57a241cef0acb3d065a7fa3c4cff056472fd07fc9f250d",
+          "rgbaSha256": "5a05b6319065f1e3e344a7fe420c6872e30f69668be4b330b07d31c6053af83c",
+          "changedPixelsFromNative": 11704,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/02.source-edits.json"
+        },
+        {
+          "frame": 3,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 0.3,
+            "pistonLogicalOffset": [
+              1,
+              1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/03.png",
+          "pngSha256": "b49d156c4ff5f87e2ad534052a1e6a64d87bbbb135da8243480673b87335241b",
+          "rgbaSha256": "c5f519a274c2035cc85c0a0be32c94f14811aebe2a073905623c1988c44fcedf",
+          "changedPixelsFromNative": 12472,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/03.source-edits.json"
+        },
+        {
+          "frame": 4,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 0.55,
+            "pistonLogicalOffset": [
+              1,
+              1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/04.png",
+          "pngSha256": "7122458cb19a884bece9563e6686fd05f3239afd7a79456f1751fd6572ab6eae",
+          "rgbaSha256": "0fe03d9b81f793b40336905df0f6ce8ca25b29ad68acc2f9cb9541870187138b",
+          "changedPixelsFromNative": 12472,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/04.source-edits.json"
+        },
+        {
+          "frame": 5,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 0.8,
+            "pistonLogicalOffset": [
+              1,
+              1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/05.png",
+          "pngSha256": "19610df5e529548da06bdc611c505ccd88e16bf7de54282d86cb49cb47c1e63f",
+          "rgbaSha256": "8108ec34b650ff9dead27fa85a3e2600d32a82e0dd608d61a2d46c1a7fd22ff2",
+          "changedPixelsFromNative": 6244,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/05.source-edits.json"
+        },
+        {
+          "frame": 6,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 1.0,
+            "pistonLogicalOffset": [
+              1,
+              1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/06.png",
+          "pngSha256": "5d7643ac59d777e5978caa9cc1ea973b205663cc27391f5a3a9dca515fb4f1f2",
+          "rgbaSha256": "0faeec0cb5a6383bdb81862d44569746ccc76a0d4b8d0fe4dd4e6cbb1028688d",
+          "changedPixelsFromNative": 768,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/06.source-edits.json"
+        },
+        {
+          "frame": 7,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 0.84,
+            "pistonLogicalOffset": [
+              1,
+              1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/07.png",
+          "pngSha256": "a5622f583f94a99c907d64eaf9dc4ed12f3e54160f391da69acf2afe0e3bee1a",
+          "rgbaSha256": "1d957e08c9e9f3794691d4cf2a8363ee7a4e40ecd7e09f2a76cb20bdacba49cb",
+          "changedPixelsFromNative": 5292,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/07.source-edits.json"
+        },
+        {
+          "frame": 8,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 1.0,
+            "pistonLogicalOffset": [
+              0,
+              1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/08.png",
+          "pngSha256": "9620ebaa4e96d001146dc02cc19478157a6452bee470522cd808ddbd00da64ed",
+          "rgbaSha256": "251d6da736489e8b51dbd2700bec21c9988912f8aa21535a5ffc7ad5da4af1d7",
+          "changedPixelsFromNative": 672,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/08.source-edits.json"
+        },
+        {
+          "frame": 9,
+          "durationMs": 100,
+          "state": {
+            "mouthAndVentLevel": 0.9,
+            "pistonLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/09.png",
+          "pngSha256": "5b16c6fb0d333872727ddf50d4e362353a156ff65551b2427c606c79e275c30f",
+          "rgbaSha256": "1b9c69ef45a1b7b21750ca2ace7afede228006082b8eb260910cc46d92972b4d",
+          "changedPixelsFromNative": 3684,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/09.source-edits.json"
+        },
+        {
+          "frame": 10,
+          "durationMs": 280,
+          "state": {
+            "mouthAndVentLevel": 1.0,
+            "pistonLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/10.png",
+          "pngSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+          "rgbaSha256": "6eea4bc7eaed45b490b4ab44112695dd27dcf9119839333dc05968b16ee6d77e",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/10.source-edits.json"
+        },
+        {
+          "frame": 11,
+          "durationMs": 600,
+          "state": {
+            "mouthAndVentLevel": 1.0,
+            "pistonLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/warden-boot/11.png",
+          "pngSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+          "rgbaSha256": "6eea4bc7eaed45b490b4ab44112695dd27dcf9119839333dc05968b16ee6d77e",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/warden-boot/11.source-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "workshop-wide",
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/workshop.png",
+      "sourceNativeSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "allowedMaskPath": "art/return-pixel-cinematics-v1/Source/Derivation/workshop-wide-allowed-mask.png",
+      "allowedMaskSha256": "dd3b5609ae283713981a8e9029b95e1630453a2c6b89b389f8073b1bd6ed2784",
+      "staticOutsideMask": true,
+      "mechanics": [
+        "Five sparse generated lamp-cone flecks drift slowly. Lamp intensity, clock, bench, stool and all other props are invariant."
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/00.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/00.source-edits.json"
+        },
+        {
+          "frame": 1,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/01.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/01.source-edits.json"
+        },
+        {
+          "frame": 2,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/02.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "changedPixelsFromNative": 36,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/02.source-edits.json"
+        },
+        {
+          "frame": 3,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/03.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "changedPixelsFromNative": 36,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/03.source-edits.json"
+        },
+        {
+          "frame": 4,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/04.png",
+          "pngSha256": "8ebc65dbe2032cc89019ed44fd42d019ad54aab0efaf0e0301fe45015bbd621d",
+          "rgbaSha256": "4cfb2538a7712a1d259a4537ba7da2c68aecefee8133b63b8cebfbee94cf77ec",
+          "changedPixelsFromNative": 32,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/04.source-edits.json"
+        },
+        {
+          "frame": 5,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/05.png",
+          "pngSha256": "8ebc65dbe2032cc89019ed44fd42d019ad54aab0efaf0e0301fe45015bbd621d",
+          "rgbaSha256": "4cfb2538a7712a1d259a4537ba7da2c68aecefee8133b63b8cebfbee94cf77ec",
+          "changedPixelsFromNative": 32,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/05.source-edits.json"
+        },
+        {
+          "frame": 6,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/06.png",
+          "pngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+          "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f",
+          "changedPixelsFromNative": 36,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/06.source-edits.json"
+        },
+        {
+          "frame": 7,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/07.png",
+          "pngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+          "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f",
+          "changedPixelsFromNative": 36,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/07.source-edits.json"
+        },
+        {
+          "frame": 8,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/08.png",
+          "pngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+          "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f",
+          "changedPixelsFromNative": 36,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/08.source-edits.json"
+        },
+        {
+          "frame": 9,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/09.png",
+          "pngSha256": "4b53648dfd989d4794dd233132f4e067f3179a08803c76d1aaf5a03b5516ffc5",
+          "rgbaSha256": "2125495a5b3ec35aaa4b2332acf013937cb9bc6b1cc8037b92367bbadded0df3",
+          "changedPixelsFromNative": 40,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/09.source-edits.json"
+        },
+        {
+          "frame": 10,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/10.png",
+          "pngSha256": "4b53648dfd989d4794dd233132f4e067f3179a08803c76d1aaf5a03b5516ffc5",
+          "rgbaSha256": "2125495a5b3ec35aaa4b2332acf013937cb9bc6b1cc8037b92367bbadded0df3",
+          "changedPixelsFromNative": 40,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/10.source-edits.json"
+        },
+        {
+          "frame": 11,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/11.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "changedPixelsFromNative": 36,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/11.source-edits.json"
+        },
+        {
+          "frame": 12,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/12.png",
+          "pngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+          "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9",
+          "changedPixelsFromNative": 36,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/12.source-edits.json"
+        },
+        {
+          "frame": 13,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/13.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/13.source-edits.json"
+        },
+        {
+          "frame": 14,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/14.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/14.source-edits.json"
+        },
+        {
+          "frame": 15,
+          "durationMs": 600,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-wide/15.png",
+          "pngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+          "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-wide/15.source-edits.json"
+        }
+      ]
+    },
+    {
+      "name": "workshop-close",
+      "sourceNative": "art/return-pixel-cinematics-v1/Source/Native/workshop-close.png",
+      "sourceNativeSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "allowedMaskPath": "art/return-pixel-cinematics-v1/Source/Derivation/workshop-close-allowed-mask.png",
+      "allowedMaskSha256": "283dcd4cdb411a7d9d6399b79b5eef188e0692ae7fba2ac0a4710bdbbdfce042",
+      "staticOutsideMask": true,
+      "mechanics": [
+        "Five sparse generated lamp-cone flecks drift slowly. Lamp intensity, clock, bench, stool and all other props are invariant."
+      ],
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/00.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/00.source-edits.json"
+        },
+        {
+          "frame": 1,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/01.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/01.source-edits.json"
+        },
+        {
+          "frame": 2,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/02.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "changedPixelsFromNative": 144,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/02.source-edits.json"
+        },
+        {
+          "frame": 3,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/03.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "changedPixelsFromNative": 144,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/03.source-edits.json"
+        },
+        {
+          "frame": 4,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/04.png",
+          "pngSha256": "15dbf1926faa2a39790f8a0c6a0bc449fe26695daf7b3c6e66e61f61af5989a0",
+          "rgbaSha256": "f6950636e26d4e5894a80dbb64fb994f96d55976b2a5f59cc0f8bb69d94c5627",
+          "changedPixelsFromNative": 128,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/04.source-edits.json"
+        },
+        {
+          "frame": 5,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/05.png",
+          "pngSha256": "15dbf1926faa2a39790f8a0c6a0bc449fe26695daf7b3c6e66e61f61af5989a0",
+          "rgbaSha256": "f6950636e26d4e5894a80dbb64fb994f96d55976b2a5f59cc0f8bb69d94c5627",
+          "changedPixelsFromNative": 128,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/05.source-edits.json"
+        },
+        {
+          "frame": 6,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/06.png",
+          "pngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+          "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850",
+          "changedPixelsFromNative": 144,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/06.source-edits.json"
+        },
+        {
+          "frame": 7,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/07.png",
+          "pngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+          "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850",
+          "changedPixelsFromNative": 144,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/07.source-edits.json"
+        },
+        {
+          "frame": 8,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              1,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/08.png",
+          "pngSha256": "41217d348ac2df3fca8516bda32809f4e633d120b0b0e5d997117da3fbed4fd1",
+          "rgbaSha256": "3bb93be98a6ffbe21bdf391d55bdad3ab115e7b04c4f3eb1750030b6d2304850",
+          "changedPixelsFromNative": 144,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/08.source-edits.json"
+        },
+        {
+          "frame": 9,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/09.png",
+          "pngSha256": "cc1c9699398246dea3a29e7606cca5f12b6e8c2dfa22b83658e4db6d8b51d472",
+          "rgbaSha256": "34964aa683ad509842530e7397ee8b11290c858f5eb5aec2318eb78821403fd4",
+          "changedPixelsFromNative": 160,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/09.source-edits.json"
+        },
+        {
+          "frame": 10,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -2
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/10.png",
+          "pngSha256": "cc1c9699398246dea3a29e7606cca5f12b6e8c2dfa22b83658e4db6d8b51d472",
+          "rgbaSha256": "34964aa683ad509842530e7397ee8b11290c858f5eb5aec2318eb78821403fd4",
+          "changedPixelsFromNative": 160,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/10.source-edits.json"
+        },
+        {
+          "frame": 11,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/11.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "changedPixelsFromNative": 144,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/11.source-edits.json"
+        },
+        {
+          "frame": 12,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              -1
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/12.png",
+          "pngSha256": "da48e28e1271062d115d80a2b4f1302594587dc3f0d34f7fd9c5ab560e89c753",
+          "rgbaSha256": "0f36d73ebfc5db024eee43f738493e71fcb055825eef087057f46c8ca0f8c80b",
+          "changedPixelsFromNative": 144,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/12.source-edits.json"
+        },
+        {
+          "frame": 13,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/13.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/13.source-edits.json"
+        },
+        {
+          "frame": 14,
+          "durationMs": 160,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/14.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/14.source-edits.json"
+        },
+        {
+          "frame": 15,
+          "durationMs": 600,
+          "state": {
+            "dustLogicalOffset": [
+              0,
+              0
+            ]
+          },
+          "output": "art/return-pixel-cinematics-v1/Clips/workshop-close/15.png",
+          "pngSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+          "rgbaSha256": "625f8c3d7bc607ec0ab23dc32c87b3914cb7578f795f34515b7532e0d6b50641",
+          "changedPixelsFromNative": 0,
+          "localEditsPath": "art/return-pixel-cinematics-v1/Clips/workshop-close/15.source-edits.json"
+        }
+      ]
+    }
+  ]
+}

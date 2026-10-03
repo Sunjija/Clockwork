@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "count": 17,
+  "checks": [
+    "three distinct blocked pushes trigger; first failures remain quiet",
+    "held blocked auto-repeat never manufactures repeated-failure or stagnation evidence",
+    "ordinary walls, empty undo/reset and AFK stay silent",
+    "successful undo cycles produce non-spoiling room-specific strategy",
+    "two meaningful room resets count across attempts without treating empty reset as failure",
+    "orb passovers are distinguished from correct socket arrival and teach obstacle stopping",
+    "4.8-second toast, 24-second cooldown, gradual escalation and pause freeze",
+    "successful recovery push cancels obsolete queued support before cooldown delivery",
+    "board revisit requires genuine repeated part layouts, never ordinary walking loops",
+    "active-only stagnation works; room completion/new room clear context",
+    "same-hazard actual damage triggers; mixed first hits and repeated event observation do not",
+    "three armor rejections explain opening, successful core hit clears support",
+    "combat guidance waits for safe grounded Rest/Recover and then delivers once, never indefinitely postponed",
+    "missed core windows require two actual empty windows; hit windows never count",
+    "death/arrival/retry/victory/ending/new-game transitions preserve only useful retry knowledge",
+    "all 30 short strategy strings \u226435 chars, maxMeasuredWidth16=424px / 592px",
+    "full input-only paired production playthrough proves guidance is read-only and gameplay/timings unchanged"
+  ],
+  "scope": "Read-only automatic support layer over actual puzzle/combat models; not a Unity runtime test"
+}

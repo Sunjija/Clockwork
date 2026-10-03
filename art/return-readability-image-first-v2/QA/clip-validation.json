@@ -1,0 +1,24 @@
+{
+  "clips": 31,
+  "frames": 77,
+  "paletteColors": 48,
+  "alpha": [
+    0,
+    255
+  ],
+  "point": true,
+  "mipmaps": false,
+  "compression": false,
+  "spritePixelsToUnits": 64,
+  "apngRoundtrip": "all multi-frame clips byte-identical, timings identical",
+  "piskelReplay": "all frames byte-identical",
+  "pixelDeltaReplay": "all frames byte-identical",
+  "nativeSourceEditReplay": "all frames byte-identical",
+  "pngRuntimeCopies": "SHA256 exact",
+  "timingSource": "ReturnV2/StateArt/clips.json",
+  "wallMaskReciprocalContinuity": true,
+  "orbMeridianSourcePixelCount": 16,
+  "rulesChanged": false,
+  "runtimeCapture": false,
+  "humanAppearanceApproval": "pending"
+}

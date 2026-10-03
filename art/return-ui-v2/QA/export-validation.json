@@ -1,0 +1,21 @@
+{
+  "runtimeClips": 5,
+  "runtimeFrames": 5,
+  "binaryAlpha": true,
+  "paletteCap": 19,
+  "point": true,
+  "mipmaps": false,
+  "compression": false,
+  "piskelReplay": true,
+  "apngReplay": true,
+  "sourceDeltaReplay": true,
+  "runtimePngExactCopy": true,
+  "firstFramePixelDeltaReplay": true,
+  "buttonStateAlphaInvariant": true,
+  "fontRepertoire": 407,
+  "addedFontGlyphs": 26,
+  "fontCoverage": true,
+  "feedbackAssetsUnchanged": true,
+  "runtimeOrBuildExecuted": false,
+  "humanAppearanceApproval": "pending"
+}

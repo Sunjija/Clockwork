@@ -1,0 +1,146 @@
+{
+  "revision": "pixel-cinematics-native-v1",
+  "inspectedByMain": true,
+  "humanAppearanceApproval": "pending",
+  "scriptSha256": "a47c1340798052ce0a999175ca10856d1b6de51148afb304e2c07e7161b1e9e7",
+  "method": "Generated individual scene -> uniform premultiplied BOX logical320x180 -> fixed64palette -> integer2x native640x360; close shot is the same workshop crop4x.",
+  "paletteSha256": "9fe52c3cdf9d5235570491b35664c2eb0b7a4d68a0102429d38f073413d6de74",
+  "assets": {
+    "relay": {
+      "generatedDimensions": [
+        1672,
+        941
+      ],
+      "sourceRect": [
+        0.0,
+        0.25,
+        1672.0,
+        940.75
+      ],
+      "sourceStep": [
+        5.225,
+        5.225
+      ],
+      "wholeImageUniformScale": 0.19138755980861244,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": "art/return-pixel-cinematics-v1/Source/Generated/relay.png",
+      "sourceSha256": "00be7ded9692b3c48affe192153d7e34fb4e1405faf1fc5bad0b0e4772df3721",
+      "logicalOutput": "art/return-pixel-cinematics-v1/Source/Native/relay-logical.png",
+      "logicalSha256": "d14ea2a421fbb618c60ce28afb082de838e876ea8806770ffca5bf8f81efc461",
+      "output": "art/return-pixel-cinematics-v1/Source/Native/relay.png",
+      "outputSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "pixelMap": "art/return-pixel-cinematics-v1/Source/Derivation/relay-pixel-map.json",
+      "pixelMapSha256": "caf4f07e2575b60504ec1924631991aa042a4059dc30893f6291e817533383dd",
+      "nativeCanvas": [
+        640,
+        360
+      ],
+      "logicalGrid": [
+        320,
+        180
+      ],
+      "integerScale": 2,
+      "uniqueColors": 57
+    },
+    "warden-core": {
+      "generatedDimensions": [
+        1672,
+        941
+      ],
+      "sourceRect": [
+        0.0,
+        0.25,
+        1672.0,
+        940.75
+      ],
+      "sourceStep": [
+        5.225,
+        5.225
+      ],
+      "wholeImageUniformScale": 0.19138755980861244,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": "art/return-pixel-cinematics-v1/Source/Generated/warden-core.png",
+      "sourceSha256": "df775e1b0cdcd5b149ae9e828a0348c56540437c5db5f84249ad63305ee236d2",
+      "logicalOutput": "art/return-pixel-cinematics-v1/Source/Native/warden-core-logical.png",
+      "logicalSha256": "897cae93934d9ac1280048959652e9dcd4789a84539a530d19d82da31790a085",
+      "output": "art/return-pixel-cinematics-v1/Source/Native/warden-core.png",
+      "outputSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+      "pixelMap": "art/return-pixel-cinematics-v1/Source/Derivation/warden-core-pixel-map.json",
+      "pixelMapSha256": "5c9d4cd0605ed770df4143cac98f334597a89e8d8545d0a0549083594f9086a2",
+      "nativeCanvas": [
+        640,
+        360
+      ],
+      "logicalGrid": [
+        320,
+        180
+      ],
+      "integerScale": 2,
+      "uniqueColors": 57
+    },
+    "workshop": {
+      "generatedDimensions": [
+        1672,
+        941
+      ],
+      "sourceRect": [
+        0.0,
+        0.25,
+        1672.0,
+        940.75
+      ],
+      "sourceStep": [
+        5.225,
+        5.225
+      ],
+      "wholeImageUniformScale": 0.19138755980861244,
+      "geometryWarped": false,
+      "bodyPartScaling": false,
+      "source": "art/return-pixel-cinematics-v1/Source/Generated/workshop.png",
+      "sourceSha256": "97b5028b217fb3939659982e6a072bc265ac852c2f951a896f640d624d602572",
+      "logicalOutput": "art/return-pixel-cinematics-v1/Source/Native/workshop-logical.png",
+      "logicalSha256": "29edb8db2ee9ef81a5551fc69ede967bfe70b9faf7ce9036e5448316d9498269",
+      "output": "art/return-pixel-cinematics-v1/Source/Native/workshop.png",
+      "outputSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "pixelMap": "art/return-pixel-cinematics-v1/Source/Derivation/workshop-pixel-map.json",
+      "pixelMapSha256": "ffbecd385d67d82d62b11af4d8401deb89cde20c8922437742ea70208972c58c",
+      "nativeCanvas": [
+        640,
+        360
+      ],
+      "logicalGrid": [
+        320,
+        180
+      ],
+      "integerScale": 2,
+      "uniqueColors": 52
+    },
+    "workshop-close": {
+      "sameSourceAs": "workshop",
+      "source": "art/return-pixel-cinematics-v1/Source/Generated/workshop.png",
+      "sourceSha256": "97b5028b217fb3939659982e6a072bc265ac852c2f951a896f640d624d602572",
+      "logicalCropRect": [
+        70,
+        25,
+        230,
+        115
+      ],
+      "cropSize": [
+        160,
+        90
+      ],
+      "nativeCanvas": [
+        640,
+        360
+      ],
+      "integerScale": 4,
+      "output": "art/return-pixel-cinematics-v1/Source/Native/workshop-close.png",
+      "outputSha256": "cc9c0b99380f14ae167d9e5e181bbbe292dcff8739610a467bb830b1897824c0",
+      "newObjectsAuthored": false,
+      "geometryWarped": false
+    }
+  },
+  "unityFilesWritten": false
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UnityManagedPath Condition="'$(UnityManagedPath)' == ''">/Applications/Unity/Hub/Editor/6000.5.3f1/Unity.app/Contents/Resources/Scripting/Managed/UnityEngine</UnityManagedPath>
+    <OutputPath>$(MSBuildProjectDirectory)/../../../../art/return-ui-v2/QA/compile/</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/Scripts/**/*.cs" />
+    <Reference Include="$(UnityManagedPath)/*.dll">
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,203 @@
+{
+  "name": "guardian-collapse",
+  "durationMs": 3000,
+  "frames": [
+    {
+      "index": 0,
+      "startMs": 0,
+      "endMs": 300,
+      "rgbaSha256": "9a3f8486310dbc6093247279a237c2b04841802ed9a3f2bd70f645d7d3a3f1da",
+      "pngSha256": "8dd71956ddb21cf45d42261d4e107325d9e9dfe4258d90c19081d5ba6d62e2a7",
+      "subExposures": [
+        {
+          "startMs": 0,
+          "endMs": 300,
+          "shotId": "C1",
+          "cameraRect": [
+            290,
+            118,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "collapse/00",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "startMs": 300,
+      "endMs": 410,
+      "rgbaSha256": "3a1044732439be2e3dbb3ffa3a5a4c21465b259c5c14ac274b718225af0660b4",
+      "pngSha256": "3d93d4e10eea067925e4514f69f97a58008e78e1a8b0baf679b7f3295d0f03ef",
+      "subExposures": [
+        {
+          "startMs": 300,
+          "endMs": 410,
+          "shotId": "C1",
+          "cameraRect": [
+            290,
+            118,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "collapse/01",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "startMs": 410,
+      "endMs": 520,
+      "rgbaSha256": "e191e81a8fb2fa0f85a5ad15222ab2679016d55e89f555aa90d1dc753f657f3d",
+      "pngSha256": "a7e61430bf12fb3e8949a424ee359cadcfaa4513225d40fe094269f64724c980",
+      "subExposures": [
+        {
+          "startMs": 410,
+          "endMs": 520,
+          "shotId": "C1",
+          "cameraRect": [
+            290,
+            118,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "collapse/02",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "startMs": 520,
+      "endMs": 630,
+      "rgbaSha256": "cfb876f86cc71533b81a4165ce9065f1c1a40a8cb6599b706a91e6f9e1492b4e",
+      "pngSha256": "2294a00698e43256db73d9706a81315f5f4309a2a20c299746d91c83ee8f218c",
+      "subExposures": [
+        {
+          "startMs": 520,
+          "endMs": 630,
+          "shotId": "C1",
+          "cameraRect": [
+            290,
+            118,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "collapse/03",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "startMs": 630,
+      "endMs": 740,
+      "rgbaSha256": "049c5be35f7b453020fb9c2fb812f174b009fdb4ce67a32fc1280b9bb4064447",
+      "pngSha256": "301512ee0e6e765eb9a5133fa99a7be29e91c011209e8d1adcc354d80c24784d",
+      "subExposures": [
+        {
+          "startMs": 630,
+          "endMs": 740,
+          "shotId": "C1",
+          "cameraRect": [
+            290,
+            118,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "collapse/04",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "startMs": 740,
+      "endMs": 850,
+      "rgbaSha256": "33420640187bb85e0713840be650e1f901ecde59859b28e6f37ad7f79a92cc74",
+      "pngSha256": "fb23124b80a79b80846c7e0a6c51da0a6ab19bac9925bb7124c34e521b9d2415",
+      "subExposures": [
+        {
+          "startMs": 740,
+          "endMs": 850,
+          "shotId": "C1",
+          "cameraRect": [
+            290,
+            118,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "collapse/05",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "startMs": 850,
+      "endMs": 1800,
+      "rgbaSha256": "feef5f942d19b9a427f9d77a6af3123ae42f2f27687aec07adff548c3af87c87",
+      "pngSha256": "7fbce13edc5c2176c3d3372d05d7196f091e1c33ce0be4b4b5671543e9adfed9",
+      "subExposures": [
+        {
+          "startMs": 850,
+          "endMs": 1800,
+          "shotId": "C2",
+          "cameraRect": [
+            326,
+            220,
+            160,
+            90
+          ],
+          "cameraScale": 4,
+          "sourceFrameKey": "collapse/06",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "startMs": 1800,
+      "endMs": 3000,
+      "rgbaSha256": "495fad50b5747e0f8ceead59621bf08bd81d7c85d2d28415b6a86c5ca4781f4c",
+      "pngSha256": "c4070367658eb647d6e4f6005d897fc796fe5f15559f740793fe0dc63e230a31",
+      "subExposures": [
+        {
+          "startMs": 1800,
+          "endMs": 3000,
+          "shotId": "C3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "collapse/06",
+          "sourceClockRestarted": false,
+          "closedArena": true
+        }
+      ]
+    }
+  ],
+  "sourceActorPosesUnchanged": true,
+  "wholeCameraIntegerScalingOnly": true,
+  "humanAppearanceApproval": "pending",
+  "humanMotionApproval": "pending",
+  "runtimeCapture": false
+}

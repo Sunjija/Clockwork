@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "scope": "Exact binary glyph-mask comparison in actual production GUI captures; not human appearance/input approval",
+  "nativeCell": 16,
+  "allowedTextSizes": [
+    16,
+    32
+  ],
+  "observations": [
+    {
+      "file": "01-title.png",
+      "glyphsCompared": 65,
+      "integerScale": 2,
+      "sha256": "e36fc567accc528c2589fbca8f15331e3cb4a2194d8c571540990a3b29b8a12f"
+    },
+    {
+      "file": "02-title-large.png",
+      "glyphsCompared": 65,
+      "integerScale": 2,
+      "sha256": "3af574de6a5546d0a785e005efbfaeac055acd4cf2190ad264fc194aaac2a56f"
+    },
+    {
+      "file": "03-puzzle-1.png",
+      "glyphsCompared": 42,
+      "integerScale": 2,
+      "sha256": "1b503f3ba43cd72979b3579ed84eb74cb99cb8e9a185945097b908297b3d1e06"
+    },
+    {
+      "file": "04-puzzle-2.png",
+      "glyphsCompared": 34,
+      "integerScale": 2,
+      "sha256": "e4447fd9c40e9d7b3e1dd40a450815c9f2a6c6ecba8eb58a2427a0b3bdcd0165"
+    },
+    {
+      "file": "05-puzzle-3.png",
+      "glyphsCompared": 34,
+      "integerScale": 2,
+      "sha256": "3ccaaa1d9cdad3ac3031cc0f27477c735b1ddb771adf446cff1c0f3d7a153186"
+    }
+  ],
+  "glyphsCompared": 240
+}

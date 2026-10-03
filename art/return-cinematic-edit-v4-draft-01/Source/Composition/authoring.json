@@ -1,0 +1,27 @@
+{
+  "scriptSha256": "4b3110b39d4dba3fedbcbf178c9eb2f96e68d92259e0ea2040af1fdefc96a97c",
+  "registrationSha256": "8fd79ca8b67ab1871c558cb6a7f0d30b82d60d58e9a2f660cde3a3ff7898cad2",
+  "integerViewportSizes": [
+    [
+      640,
+      360
+    ],
+    [
+      320,
+      180
+    ],
+    [
+      160,
+      90
+    ]
+  ],
+  "noWorkshop": true,
+  "noArrival": true,
+  "noDisembark": true,
+  "noEndingCaption": true,
+  "fallingOpeningChanged": false,
+  "runtimeIntegrated": false,
+  "unityFilesWritten": false,
+  "humanAppearanceApproval": "pending",
+  "humanMotionApproval": "pending"
+}

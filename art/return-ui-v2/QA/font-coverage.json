@@ -1,0 +1,62 @@
+{
+  "characters": 407,
+  "preservedGlyphs": 381,
+  "preservedGlyphRgbaExact": true,
+  "addedGlyphs": 26,
+  "currentCSharpCorpusMissingCharacters": [],
+  "licensedCmapMissingCharacters": [],
+  "binaryAlpha": true,
+  "nativeSizedAtlases": [],
+  "rejectedHistoricalAtlases": [
+    {
+      "size": 12,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-12.png",
+      "sha256": "89b52cad9f83a29c4666ca83516f0d2eeb86200552a654f9d69c26855b9e7914",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    },
+    {
+      "size": 14,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-14.png",
+      "sha256": "855d4101a62efa86a1916f88287b121130e48837b20b03edba709ea9567a0a01",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    },
+    {
+      "size": 20,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-20.png",
+      "sha256": "4f5e0dd9119e3a5f0083aafb78761f43356d17fff47e70f031e8a1de159f77d5",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    },
+    {
+      "size": 24,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-24.png",
+      "sha256": "9eb9530f002a762a8329b5d8188c6a7b784610fa251e25e8bb24676d6e1e9882",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    }
+  ],
+  "sourceCorpusSha256": {
+    "unity/TiqueReturnPrototype/Assets/Scripts/AdaptiveGuidance.cs": "10c52d640ab68d09a6dcbcf5564e3e41ab81f4d999ea4c01c64beeb6d792f8d5",
+    "unity/TiqueReturnPrototype/Assets/Scripts/CompactUiLayout.cs": "bb615b9b2d1bc4467f6b31e5ce9dfc36a7f0b9c4eb059765c857342f5badd0ef",
+    "unity/TiqueReturnPrototype/Assets/Scripts/CorePuzzle.cs": "23ec03e4908f8d9e7cf5acee2d753cc9647d719ab9c0818746fbe5fd25bbfa1f",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnChecks.cs": "34e3ebd332c4f666943c8c600f76a525f92b36c8fce6e630ae2e6c95e34e8e23",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnFeedback.cs": "448a350b0abe71f0a11f1037a4e2efc084da414bc936b89f2bdcbd25f1d378cf",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnGame.cs": "c4e98df9e5bddfc3650f90cdfd88f0bcfbb0bad7c83f93b195d19803c83ee8ca",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnModel.cs": "a2b0dcff34c112a2bd0bdba952dc1dc6a596239aac8543a486b59a6a6a80875b",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnPilot.cs": "3ba667f1df89a33be0eb9cf22503b3649134f6e7bb9a384e7aef8c0ea69be3cf",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkChecks.cs": "7ce7d344f8b0f59cf1157b111ae19fbfe514a385cd593075b63673502b2ee794",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkGame.cs": "aa85383001e6af0b4be74b11ca8106865163e316f1b604639accde98c324e663",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkModel.cs": "26df7755152b02069a3099a403e87e5edd6561949c073448f042b06b61f84a63",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkPilot.cs": "163cdf3dfa12e5d76a3634b2433429c36a5089e861e4328e7377bbad4c02eca4",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkReadabilityReview.cs": "328462cc9b7946e9221a239f1879abe5b74c16f3cb0a68f378cd941599f08457",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkTiqueReview.cs": "f7642b9340032516274662d19651d743c8a5e31844d7a9d96a5b5e92268e1b59",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkUi.cs": "e5a21b7841e15ea5dff08904c4f7cb91a01651cad43462b485361a76f5ee2b38",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkUiReview.cs": "29291d8601b216960b0d14ab3e8a0ffb9b47dbb37c02dc9a269ab2d55ea7d10b",
+    "unity/TiqueReturnPrototype/Assets/Scripts/TiqueAnimation.cs": "83c178bf3882ef0fdb0f8f3ef57d4712ea836466e94b5c0fe4d68c0722a546fe",
+    "unity/TiqueReturnPrototype/Assets/Scripts/WardenAnimation.cs": "c20bbea47bd717598d3861c79cb2888fcd164d0ed994c619afc02f63132ce65f",
+    "unity/TiqueReturnPrototype/Assets/Scripts/WorldArtState.cs": "5fab7aa3f633dd5d7fbc39669706c67e51ef22b8f25775452ee19a3c648bc3ff"
+  },
+  "runtimeOrBuildExecuted": false
+}

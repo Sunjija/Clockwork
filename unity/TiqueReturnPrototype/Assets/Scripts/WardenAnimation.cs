@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace TiqueReturn
 {
-    // Picks IRON MAW v7 frames (Resources/ReturnV2/WardenV7) from production state.
-    // Each clip is assembled by tools/art/dotify_guardian_motion.py so that a state
+    // Picks IRON MAW's versioned clips from production state. V8 keeps the same
+    // frame counts and timing contract as v7; selected whole-pose art is corrected.
+    // Each authored clip is assembled so that a state
     // only ever plays forward through one clip; a long exposure at the end of a clip
     // is the pose held while gameplay waits (curled ball, rearing, apex, core bared).
     public static class WardenAnimation
@@ -29,6 +30,7 @@ namespace TiqueReturn
                 case IronMove.Wave:return "wave-strike";
                 case IronMove.SlamAim:return "slam-rise";
                 case IronMove.Slam:return "slam-fall";
+                case IronMove.CounterSettle:return "slam-land";
                 case IronMove.Open:return "stagger-open";
                 case IronMove.Down:return "defeat";
                 case IronMove.Recover:
@@ -43,7 +45,17 @@ namespace TiqueReturn
             float warning=m.assisted?1.4f:1.05f;
             switch(name)
             {
-                case "idle":loop=true;age=m.clock;break; // breathing keeps its phase across states
+                case "stagger-open":
+                    if(m.openingSource==CoreOpeningSource.SlamCounter)
+                    {
+                        // Preserve the authored forward exposures, compress
+                        // only their transition to the counter's 200ms warm-up.
+                        int[] authored=durations["iron-stagger-open"];float heldAt=0;
+                        for(int i=0;i<authored.Length-1;i++)heldAt+=authored[i]/1000f;
+                        age=age<ReworkModel.CounterOpenWarmup?age*heldAt/ReworkModel.CounterOpenWarmup:Math.Max(age,heldAt+.001f);
+                    }
+                    break;
+                case "idle":loop=true;age=m.clock;break; // idle loop keeps its phase across states
                 case "charge-roll":loop=true;break;
                 case "wave-aim":
                     // Rear up and hold; the swing down fills the last 30ms before the waves.

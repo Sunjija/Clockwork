@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-02",
+  "tool": "built-in image_gen",
+  "requests": [
+    {
+      "asset": "panel",
+      "prompt": "Use case: ui-mockup. Asset type: one production anchor for a native-pixel Clockwork game UI sprite, not a screenshot or moodboard. Reference image 1 is an unchanged game background for material/palette only; reference image 2 is the existing game world palette only. Create a single isolated rectangular UI element on actual transparent alpha, front-on orthographic, entire frame visible with generous transparent margin. Crisp carefully placed pixel-art clusters, restrained 16-bit industrial mechanical style, deep navy charcoal, cool gray steel, tiny cyan and muted brass accents. Thin stepped/chamfered pixel corners, quiet matte dark center for small text. The center must be uniform enough for nine-slice reuse; all decoration confined to outer frame/corners. No characters, no environment, no cast shadow, no glow, no gradient, no text, no letters/numbers/logos, no extra elements or sheet, no floating labels. Design is understated and compact so gameplay stays central; avoid ornamental gears and bulky ornament. Primary request: ONE wide information-panel frame, approximately 3:1 aspect. Its thin steel contour is mostly low-contrast, with a small cyan inset in one corner and tiny brass rivets. It will be sampled to approximately 96x32 native pixels, then nine-sliced as slim HUD cards, a one-line help toast and restrained menus. Preserve usable clean edges and corners; a subtle border is more important than decoration.",
+      "referenced_image_paths": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/QA/ReadabilityCounter/Runtime/puzzle-2-initial.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/QA/ReadabilityCounter/Runtime/counter-04-ready-core.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "asset": "button",
+      "prompt": "Use case: ui-mockup. Asset type: one production anchor for a native-pixel Clockwork game UI sprite, not a screenshot or moodboard. Reference image 1 is an unchanged game background for material/palette only; reference image 2 is the existing game world palette only. Create a single isolated rectangular UI element on actual transparent alpha, front-on orthographic, entire frame visible with generous transparent margin. Crisp carefully placed pixel-art clusters, restrained 16-bit industrial mechanical style, deep navy charcoal, cool gray steel, tiny cyan and muted brass accents. Thin stepped/chamfered pixel corners, quiet matte dark center for small text. The center must be uniform enough for nine-slice reuse; all decoration confined to outer frame/corners. No characters, no environment, no cast shadow, no glow, no gradient, no text, no letters/numbers/logos, no extra elements or sheet, no floating labels. Design is understated and compact so gameplay stays central; avoid ornamental gears and bulky ornament. Primary request: ONE compact menu-button frame, approximately 3.2:1 aspect. Make a very thin silver-steel lip and dark navy inset, with tiny brass contact marks at the ends. This will be sampled to approximately64x20 native pixels and nine-sliced for compact button rows; the same unmodified shape must support selected/pressed/disabled palette states. No text baked into the button, no oversized heavy border.",
+      "referenced_image_paths": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/QA/ReadabilityCounter/Runtime/puzzle-2-initial.png",
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/QA/ReadabilityCounter/Runtime/counter-04-ready-core.png"
+      ],
+      "transparent_background": true
+    }
+  ]
+}

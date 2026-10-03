@@ -1,0 +1,3818 @@
+{
+  "revision": "ending-elevator-v3",
+  "planSha256": "ba81c3b954d48aa8305805a2ae9e62207e58f7406edd71deeefe199a49f9c8e0",
+  "provenanceSha256": "4c0de6ef0c3fb1cda8cc078d883eec0cabedb277a6e809bda29f65f0ef6b18fc",
+  "inspectedByMain": true,
+  "sharedHelperPath": "tools/art/package_full_cinematics_v2.py",
+  "sharedHelperSha256": "0d456700a81080209ad00d76bd3f4661768dd491bd16e3d0526b604e3bd757df",
+  "humanAppearanceApproval": "pending",
+  "runtimeIntegrated": false,
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "unityFilesWritten": false,
+  "sourcePngsModified": false,
+  "independentClips": true,
+  "concatenatedSequenceCreated": false,
+  "clips": [
+    {
+      "name": "guardian-collapse",
+      "width": 640,
+      "height": 360,
+      "frameCount": 7,
+      "durations": [
+        300,
+        110,
+        110,
+        110,
+        110,
+        110,
+        2150
+      ],
+      "durationMs": 3000,
+      "paletteColors": 72,
+      "paletteAtMost256": true,
+      "alpha255": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 300,
+          "rgbaSha256": "6aef6be95a7f65b3eddd1a3ea7dae343580d64eaeb1c167f3b6850159fd049ec",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            0,
+            0
+          ],
+          "deltaPath": "Clips/guardian-collapse/00.pixels.json",
+          "deltaSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "changedPixelsFromFirstFrame": 0,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/guardian-collapse/00.png",
+          "exportPath": "Exports/guardian-collapse/00.png",
+          "pngSha256": "f1d3eeed1a932f04d798af125ca5ea3e01c2b48b8713e1cfd9a996508b11be1b"
+        },
+        {
+          "frame": 1,
+          "durationMs": 110,
+          "rgbaSha256": "8d9e620021374c68a1aeb45755ab76bac1239ad9a85969bf83a729d59fcda08f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            1,
+            0
+          ],
+          "deltaPath": "Clips/guardian-collapse/01.pixels.json",
+          "deltaSha256": "03b787d38b6bd1752808a67853eb33f582a5eea0f3333782fc55c635f3657f95",
+          "changedPixelsFromFirstFrame": 8617,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/guardian-collapse/01.png",
+          "exportPath": "Exports/guardian-collapse/01.png",
+          "pngSha256": "a3480566671e29860af6a49aa7ab597bfa0128fa8090104e64d5bccb3539cb75"
+        },
+        {
+          "frame": 2,
+          "durationMs": 110,
+          "rgbaSha256": "e2705ff441789479b5d74484a6445aeadf9b823cdfe3e00590ea24356d460382",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            2,
+            0
+          ],
+          "deltaPath": "Clips/guardian-collapse/02.pixels.json",
+          "deltaSha256": "28c33b0e26a59d0994dcbe5b4d7c1e0703537907a0ced317b81b506e5ba2cd97",
+          "changedPixelsFromFirstFrame": 8717,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/guardian-collapse/02.png",
+          "exportPath": "Exports/guardian-collapse/02.png",
+          "pngSha256": "631e05490971c2be3fc06abd6f1b51dd702eced171afd38b00b1fab7898154bc"
+        },
+        {
+          "frame": 3,
+          "durationMs": 110,
+          "rgbaSha256": "7a47510b4f789734cded0027f349d88b0a8f36b499d5ecdfa98aeae433cea540",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            3,
+            0
+          ],
+          "deltaPath": "Clips/guardian-collapse/03.pixels.json",
+          "deltaSha256": "220baa43911bcba220c535da4bf5480a79af3ab7b63618df39f2e7acbe02c512",
+          "changedPixelsFromFirstFrame": 8904,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/guardian-collapse/03.png",
+          "exportPath": "Exports/guardian-collapse/03.png",
+          "pngSha256": "3b431f71a9900b3471ef8b85319ab4c5b66a0af495f831a0784030db60b25ec2"
+        },
+        {
+          "frame": 4,
+          "durationMs": 110,
+          "rgbaSha256": "34192b269d1a82b9cc6c353636d3479110634c26dadfccdaec537c09852476ef",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            4,
+            0
+          ],
+          "deltaPath": "Clips/guardian-collapse/04.pixels.json",
+          "deltaSha256": "834e793060f5c5de4360fa8883702e979ca72b4c0da27cf558b8538fa5a51fe6",
+          "changedPixelsFromFirstFrame": 8630,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/guardian-collapse/04.png",
+          "exportPath": "Exports/guardian-collapse/04.png",
+          "pngSha256": "c8177bca0fc5b77ecbf110f9419cb286958a1f3f43ab7c723df730f6018e1ec9"
+        },
+        {
+          "frame": 5,
+          "durationMs": 110,
+          "rgbaSha256": "2de489ed66cc3dd47ae1a9c0b726359b65e45bececedb882833a874f92ff7297",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            5,
+            0
+          ],
+          "deltaPath": "Clips/guardian-collapse/05.pixels.json",
+          "deltaSha256": "a9b6369e24b23250f60d04364b94b4483bc81b10d41bf80ea9cff7a7aaa80078",
+          "changedPixelsFromFirstFrame": 8790,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/guardian-collapse/05.png",
+          "exportPath": "Exports/guardian-collapse/05.png",
+          "pngSha256": "cfccd448c698d0955d173ad845ea83853f5527f56c81b84a36be829735374d66"
+        },
+        {
+          "frame": 6,
+          "durationMs": 2150,
+          "rgbaSha256": "495fad50b5747e0f8ceead59621bf08bd81d7c85d2d28415b6a86c5ca4781f4c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            6,
+            0
+          ],
+          "deltaPath": "Clips/guardian-collapse/06.pixels.json",
+          "deltaSha256": "235a65ce0fe69167d92ec9153231e878fb29b5dffe389f1973abd7580b6f7cb2",
+          "changedPixelsFromFirstFrame": 8858,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/guardian-collapse/06.png",
+          "exportPath": "Exports/guardian-collapse/06.png",
+          "pngSha256": "c4070367658eb647d6e4f6005d897fc796fe5f15559f740793fe0dc63e230a31"
+        }
+      ],
+      "gridSheetColumns": 7,
+      "gridSheetRows": 1,
+      "piskelChunkCount": 1,
+      "piskelMaxChunkWidth": 4480,
+      "piskelReplayRgbaExact": true,
+      "apngReplayRgbaAndDurationExact": true,
+      "gridSheetReplayRgbaExact": true,
+      "sheetSha256": "d25674ca207509b43effc7e3f8c89b70bc05f0a6a3f85132cd3d51f10009d8a7",
+      "apngSha256": "ea20999ce43aca66fc96467f984be5701f74f573dc1f29a1ffbad980e321c586",
+      "piskelSha256": "91b5ea62c3c4c18bc0728f6d13a444c771899f056eb94d92320a9fa20e82a4cf",
+      "preview": {
+        "path": "QA/guardian-collapse-preview.gif",
+        "sha256": "bd31073a5f94492ff18480eb19e0a26d99b5538041409a43b15b1e812581ac89",
+        "requestedDurationsMs": [
+          300,
+          110,
+          110,
+          110,
+          110,
+          110,
+          2150
+        ],
+        "encodedDurationsMs": [
+          300,
+          110,
+          110,
+          110,
+          110,
+          110,
+          2150
+        ],
+        "encodedExposures": [
+          {
+            "originalIndex": 0,
+            "durationMs": 300
+          },
+          {
+            "originalIndex": 1,
+            "durationMs": 110
+          },
+          {
+            "originalIndex": 2,
+            "durationMs": 110
+          },
+          {
+            "originalIndex": 3,
+            "durationMs": 110
+          },
+          {
+            "originalIndex": 4,
+            "durationMs": 110
+          },
+          {
+            "originalIndex": 5,
+            "durationMs": 110
+          },
+          {
+            "originalIndex": 6,
+            "durationMs": 2150
+          }
+        ],
+        "skippedOriginalIndexes": [],
+        "requestedTotalMs": 3000,
+        "encodedTotalMs": 3000,
+        "decodedTotalMatchesSource": true,
+        "scale": 2,
+        "resampling": "NEAREST",
+        "sharedPalette": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            13
+          ],
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            5,
+            4,
+            6
+          ],
+          [
+            7,
+            11,
+            18
+          ],
+          [
+            9,
+            17,
+            27
+          ],
+          [
+            9,
+            86,
+            107
+          ],
+          [
+            10,
+            10,
+            19
+          ],
+          [
+            11,
+            76,
+            108
+          ],
+          [
+            11,
+            147,
+            177
+          ],
+          [
+            14,
+            21,
+            31
+          ],
+          [
+            15,
+            27,
+            41
+          ],
+          [
+            16,
+            16,
+            26
+          ],
+          [
+            19,
+            52,
+            69
+          ],
+          [
+            19,
+            220,
+            232
+          ],
+          [
+            20,
+            29,
+            42
+          ],
+          [
+            20,
+            86,
+            135
+          ],
+          [
+            22,
+            22,
+            33
+          ],
+          [
+            22,
+            35,
+            50
+          ],
+          [
+            29,
+            31,
+            47
+          ],
+          [
+            30,
+            41,
+            66
+          ],
+          [
+            36,
+            50,
+            78
+          ],
+          [
+            36,
+            109,
+            161
+          ],
+          [
+            37,
+            156,
+            186
+          ],
+          [
+            38,
+            55,
+            76
+          ],
+          [
+            39,
+            83,
+            115
+          ],
+          [
+            43,
+            27,
+            36
+          ],
+          [
+            46,
+            62,
+            93
+          ],
+          [
+            47,
+            42,
+            55
+          ],
+          [
+            51,
+            32,
+            18
+          ],
+          [
+            52,
+            71,
+            106
+          ],
+          [
+            58,
+            38,
+            23
+          ],
+          [
+            59,
+            53,
+            66
+          ],
+          [
+            61,
+            11,
+            12
+          ],
+          [
+            63,
+            41,
+            25
+          ],
+          [
+            66,
+            45,
+            30
+          ],
+          [
+            66,
+            73,
+            96
+          ],
+          [
+            67,
+            247,
+            250
+          ],
+          [
+            73,
+            45,
+            25
+          ],
+          [
+            75,
+            52,
+            34
+          ],
+          [
+            78,
+            64,
+            73
+          ],
+          [
+            79,
+            84,
+            106
+          ],
+          [
+            82,
+            48,
+            40
+          ],
+          [
+            83,
+            52,
+            30
+          ],
+          [
+            91,
+            60,
+            35
+          ],
+          [
+            92,
+            96,
+            116
+          ],
+          [
+            96,
+            66,
+            39
+          ],
+          [
+            106,
+            109,
+            126
+          ],
+          [
+            108,
+            68,
+            34
+          ],
+          [
+            109,
+            50,
+            56
+          ],
+          [
+            112,
+            11,
+            10
+          ],
+          [
+            117,
+            64,
+            50
+          ],
+          [
+            120,
+            81,
+            41
+          ],
+          [
+            122,
+            122,
+            135
+          ],
+          [
+            133,
+            20,
+            19
+          ],
+          [
+            136,
+            135,
+            146
+          ],
+          [
+            152,
+            151,
+            161
+          ],
+          [
+            154,
+            100,
+            45
+          ],
+          [
+            156,
+            89,
+            56
+          ],
+          [
+            165,
+            252,
+            241
+          ],
+          [
+            171,
+            39,
+            35
+          ],
+          [
+            174,
+            172,
+            180
+          ],
+          [
+            188,
+            120,
+            59
+          ],
+          [
+            201,
+            149,
+            85
+          ],
+          [
+            206,
+            204,
+            209
+          ],
+          [
+            212,
+            51,
+            43
+          ],
+          [
+            221,
+            161,
+            75
+          ],
+          [
+            232,
+            101,
+            93
+          ],
+          [
+            244,
+            203,
+            112
+          ],
+          [
+            248,
+            248,
+            248
+          ],
+          [
+            255,
+            231,
+            163
+          ]
+        ],
+        "paletteColors": 72,
+        "dither": "NONE: direct exact P-index assignment",
+        "decodedExposureRgbExact": true,
+        "adjacentIdenticalExposureMergeAllowed": true,
+        "decodedFrameCount": 7,
+        "description": "10ms nearest boundary preview; original variable timing is retained in PNG/APNG, not GIF.",
+        "timingAuthority": "native.apng and QA/validation.json, not GIF"
+      },
+      "sourceInfo": {
+        "composition": "Source/Composition/guardian-collapse.json",
+        "compositionSha256": "39741cd95460b31cb166e8821b0985d4489fee4d5253abe2e6f6cf8c59788a9d",
+        "registrationSha256": "a45409210edef37584e573d3b1882c8d461cf923c3a06cc72fe4bfe494038045",
+        "actorFramesUnchanged": true,
+        "nativeScale": 1,
+        "newGeneratedLiftAssets": false
+      },
+      "sourceInfoSha256": "16e9711cfcd7e1623a5c13d497678297fbb757fb9e3d8ef907587591e2a56f25",
+      "pngExportByteExact": true
+    },
+    {
+      "name": "elevator-homecoming",
+      "width": 640,
+      "height": 360,
+      "frameCount": 116,
+      "durations": [
+        40,
+        20,
+        20,
+        20,
+        20,
+        40,
+        20,
+        20,
+        40,
+        40,
+        40,
+        40,
+        20,
+        20,
+        40,
+        40,
+        40,
+        40,
+        20,
+        20,
+        40,
+        40,
+        40,
+        40,
+        560,
+        80,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        20,
+        20,
+        40,
+        20,
+        20,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        40,
+        80,
+        480,
+        40,
+        20,
+        20,
+        20,
+        20,
+        40,
+        20,
+        20,
+        40,
+        40,
+        40,
+        40,
+        20,
+        20,
+        40,
+        40,
+        40,
+        40,
+        20,
+        20,
+        40,
+        40,
+        40,
+        40,
+        40,
+        440,
+        320,
+        240,
+        80,
+        920
+      ],
+      "durationMs": 7000,
+      "paletteColors": 74,
+      "paletteAtMost256": true,
+      "alpha255": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMs": 40,
+          "rgbaSha256": "04bf434554f7c8d50acf2eb1e4255b252c5e78231292dfeb4947f9c78dbb3d0a",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            0,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/00.pixels.json",
+          "deltaSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "changedPixelsFromFirstFrame": 0,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/00.png",
+          "exportPath": "Exports/elevator-homecoming/00.png",
+          "pngSha256": "21d917e4dd552ff74c648b691393cfe5594a4a810b45ae5c2258382e6c39f1a6"
+        },
+        {
+          "frame": 1,
+          "durationMs": 20,
+          "rgbaSha256": "fae6ceb9be84999eaadc9579dd2566507ce479cebeea282b52f7f3dfaadb5b75",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            1,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/01.pixels.json",
+          "deltaSha256": "bcefbe573e1e03992892f11c69ca4ff6cdcd41bc5019eda2a603b7fbb7309cdc",
+          "changedPixelsFromFirstFrame": 1167,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/01.png",
+          "exportPath": "Exports/elevator-homecoming/01.png",
+          "pngSha256": "8f1a7fd27d9446ff884a202b2ba835f9e9b03389936ce57770c7f96458638463"
+        },
+        {
+          "frame": 2,
+          "durationMs": 20,
+          "rgbaSha256": "76020115bf970d6841957e2879244329c4c1addcb8fa43e76644db36d72848e7",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            2,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/02.pixels.json",
+          "deltaSha256": "fe0e4f1f4618bf8124a551f0ae325471d86f8b74ed01283c421f27ed109cb4c6",
+          "changedPixelsFromFirstFrame": 1335,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/02.png",
+          "exportPath": "Exports/elevator-homecoming/02.png",
+          "pngSha256": "e82d5eaa7bbf958127ee98337340ca1a69c74825da162353bd170d6ca79d1498"
+        },
+        {
+          "frame": 3,
+          "durationMs": 20,
+          "rgbaSha256": "1ff90096514e693b84f5f22a385861bb47660c8d68e42c4d313ff842711eba6b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            3,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/03.pixels.json",
+          "deltaSha256": "71c9e812986c454ea4fb0f8e7ae95af327cac16a118a17c8fd0a7510c2fc3667",
+          "changedPixelsFromFirstFrame": 1431,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/03.png",
+          "exportPath": "Exports/elevator-homecoming/03.png",
+          "pngSha256": "42db94870b351a8cb093d7f4d41435da849b26e2f1d6a02a4a5d2fccb8ae22ab"
+        },
+        {
+          "frame": 4,
+          "durationMs": 20,
+          "rgbaSha256": "7e4e4e07cc1936389ede75d0bcfc7545e127bedc60ee10aeaf247223592dfef1",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            4,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/04.pixels.json",
+          "deltaSha256": "40dd65762036b2f4d23793e36028fc6b61505a46faf3d5ba3dee448c5dcb26a8",
+          "changedPixelsFromFirstFrame": 1586,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/04.png",
+          "exportPath": "Exports/elevator-homecoming/04.png",
+          "pngSha256": "398b13e544488a01a105d008388a28621232f37db6901754ca0a1171185d41a3"
+        },
+        {
+          "frame": 5,
+          "durationMs": 40,
+          "rgbaSha256": "d2e1f01c9a4f2748e389c22d103e99c0cc41b97cd9bc3b866988dd5770baeee8",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            5,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/05.pixels.json",
+          "deltaSha256": "10301a82f3f8422fac60e43c8de43e4b6becffcd28687c4fcafa85821fb38f7e",
+          "changedPixelsFromFirstFrame": 1684,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/05.png",
+          "exportPath": "Exports/elevator-homecoming/05.png",
+          "pngSha256": "5d1adc17bc69593163b7e51125272b07d9b97d53be24e791e19f51930b168ea1"
+        },
+        {
+          "frame": 6,
+          "durationMs": 20,
+          "rgbaSha256": "f3f2818d22ee316797f919933d340f7541727019455bea1260d599cd2276b165",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            6,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/06.pixels.json",
+          "deltaSha256": "bdbd33c3afe2aa07659f84a2a03baffaff79d02171eebf019ae5d6f5c02f8fcc",
+          "changedPixelsFromFirstFrame": 1928,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/06.png",
+          "exportPath": "Exports/elevator-homecoming/06.png",
+          "pngSha256": "77ddfe8bd2a256984f10f0af680434eaef657d4a94eb8fb86bd8d2ced4e9e2ee"
+        },
+        {
+          "frame": 7,
+          "durationMs": 20,
+          "rgbaSha256": "27764d35a9a2dfde915a8a7f99ed06fb2084fb00fa7124b852604e11fe411b37",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            7,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/07.pixels.json",
+          "deltaSha256": "96aad221779befacd25396800ef83456fb3a21162578dc24ad842f63304c2119",
+          "changedPixelsFromFirstFrame": 2004,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/07.png",
+          "exportPath": "Exports/elevator-homecoming/07.png",
+          "pngSha256": "47bea0891b9b545cd034dd3cbd8f5fa31412fa0ad53a4580452693bd5aa9547d"
+        },
+        {
+          "frame": 8,
+          "durationMs": 40,
+          "rgbaSha256": "2729c4c68195e28231a15339746e8dba00710425e28a6f6a4b29545023936149",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            8,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/08.pixels.json",
+          "deltaSha256": "4185f2b9c9844a83102c76b66837fb55895cd119dd619d7fbadc80391dc77519",
+          "changedPixelsFromFirstFrame": 2040,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/08.png",
+          "exportPath": "Exports/elevator-homecoming/08.png",
+          "pngSha256": "34512c7b546f5ed777d21e606a78231494ee206a432a68632f2c77a048e3a2a2"
+        },
+        {
+          "frame": 9,
+          "durationMs": 40,
+          "rgbaSha256": "3d60c5f2926a7468e51acbc54ed1d51f507036ebc855307673bbd8303d899024",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            9,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/09.pixels.json",
+          "deltaSha256": "d5ca81e8505104ce3c44ff024df9d91dcdb0ae9832c0b59ecdfc34dd7cb97c46",
+          "changedPixelsFromFirstFrame": 2137,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/09.png",
+          "exportPath": "Exports/elevator-homecoming/09.png",
+          "pngSha256": "eefc7d76caac5b7496f8dbfc7d5834ffa8117b25466caae54ae97577886294de"
+        },
+        {
+          "frame": 10,
+          "durationMs": 40,
+          "rgbaSha256": "b0b8389e1e67dbb109cc5bcabccb9844f2d04ff6abfecd15d3a366aeeceb5172",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            10,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/10.pixels.json",
+          "deltaSha256": "63ea6d7016da1d2bbd2159ba28bec2b354c9e39bb4884e05f07e70d47a202b4f",
+          "changedPixelsFromFirstFrame": 2123,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/10.png",
+          "exportPath": "Exports/elevator-homecoming/10.png",
+          "pngSha256": "c927a9ca451bafdad101422704ff9d167c63d0490d988cd72a4d0ecb5d93d48b"
+        },
+        {
+          "frame": 11,
+          "durationMs": 40,
+          "rgbaSha256": "3a07445d81c761c2626d040173d8f78b1a8d1ef0155bf4e8ea8bd96e463bbbde",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            11,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/11.pixels.json",
+          "deltaSha256": "0de48e1d55da8c4b2cef4afdacd01d2e2b93378a682c691da4ce308dc97c5037",
+          "changedPixelsFromFirstFrame": 2130,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/11.png",
+          "exportPath": "Exports/elevator-homecoming/11.png",
+          "pngSha256": "7da852f4a89fb923d4f83066a432752df053ffcf000d2e093193b4b5dc0aadf1"
+        },
+        {
+          "frame": 12,
+          "durationMs": 20,
+          "rgbaSha256": "600e2acf0c3f983c882170abf9b12bc20b7ee594ea3e01731b7b919dc9e35a5a",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            12,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/12.pixels.json",
+          "deltaSha256": "097a7538d9c30227208f32475d3984aa60690a60f787b34bb354f910b3a9a80d",
+          "changedPixelsFromFirstFrame": 2130,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/12.png",
+          "exportPath": "Exports/elevator-homecoming/12.png",
+          "pngSha256": "1bd802ede06018ed88ecdb434e09bb90a6f9462a5d04c3699222d3ffa9f1cece"
+        },
+        {
+          "frame": 13,
+          "durationMs": 20,
+          "rgbaSha256": "18d01151026cf0f5556fe6edf439e95859c46f1ea4f0a12a6d9130121622e4e5",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            13,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/13.pixels.json",
+          "deltaSha256": "eae94055b98b41ba99515d67c78dd1749e4fe5f8de16af4268a11d8da3760821",
+          "changedPixelsFromFirstFrame": 2109,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/13.png",
+          "exportPath": "Exports/elevator-homecoming/13.png",
+          "pngSha256": "31da3d0653acf655e245cdb001a6eaf2e10af8bbd2d944fac1fef72a8d636df1"
+        },
+        {
+          "frame": 14,
+          "durationMs": 40,
+          "rgbaSha256": "8a14e118248ac17f4971842f297b7a88edaa5f77717ec727a12e78dc53be45a2",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            14,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/14.pixels.json",
+          "deltaSha256": "0c215a4da2bebd56c3802fc979715b86fb32aaf7aabe4a1010694ec977e2ccbb",
+          "changedPixelsFromFirstFrame": 2109,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/14.png",
+          "exportPath": "Exports/elevator-homecoming/14.png",
+          "pngSha256": "a4188b30835fd9932f93cfdf0a3a508210fd4a517a653dc8e75df7c1e67defd2"
+        },
+        {
+          "frame": 15,
+          "durationMs": 40,
+          "rgbaSha256": "9ccf4f38d02b686d4c647e58ca9734e33f19e6cf3ecc9b13e1fe85b4bbd3fcbc",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            15,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/15.pixels.json",
+          "deltaSha256": "be44803a1e2de150a2f3598333120533d1b46386336cc6b38f3a2eb1bc35b950",
+          "changedPixelsFromFirstFrame": 2109,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/15.png",
+          "exportPath": "Exports/elevator-homecoming/15.png",
+          "pngSha256": "d1bb8d1c5487bfbc7f1721f516d73819aaeb82b330173209ff9c88ae6457b6c7"
+        },
+        {
+          "frame": 16,
+          "durationMs": 40,
+          "rgbaSha256": "d279a4a77758f5f7287df275eb78a962f021294ccadf3a818c40a8159f1c137d",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            16,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/16.pixels.json",
+          "deltaSha256": "60385dc0f217d934e1c2f8b5d782e17226a4a354ed0921bd5673dea505a3055e",
+          "changedPixelsFromFirstFrame": 2110,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/16.png",
+          "exportPath": "Exports/elevator-homecoming/16.png",
+          "pngSha256": "ff7a5d1b65b68bcf1e9c8a6f29296c7aa79fdf0de2e5d81f91e3b4c02e2a759a"
+        },
+        {
+          "frame": 17,
+          "durationMs": 40,
+          "rgbaSha256": "df062dbbb3f91025c7ef2c9e8658c24088dc507a0bd28ff974048e0ed9811b4e",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            17,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/17.pixels.json",
+          "deltaSha256": "7e7080bb01f87666808203b4acdf626248554daf3af380ae35f64b47031085fb",
+          "changedPixelsFromFirstFrame": 2108,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/17.png",
+          "exportPath": "Exports/elevator-homecoming/17.png",
+          "pngSha256": "71b5d53b9d39b38edb43cc5a90482c7687fb79dad28f632028877ecf59f61dec"
+        },
+        {
+          "frame": 18,
+          "durationMs": 20,
+          "rgbaSha256": "63ffb06318c3078725980612d365ebb0cbbbc0e89fb20317374d152959e77d84",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            18,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/18.pixels.json",
+          "deltaSha256": "8fe6c29bafd871f9d58b82bb097de2c0e1c539ed10147cc19450e2e6fe0c2c5f",
+          "changedPixelsFromFirstFrame": 2108,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/18.png",
+          "exportPath": "Exports/elevator-homecoming/18.png",
+          "pngSha256": "a8ebe8954d6cdd33967062d14e22816beb67307d1be533349452c93c5d10e667"
+        },
+        {
+          "frame": 19,
+          "durationMs": 20,
+          "rgbaSha256": "f293357d4cabd52562a04bc9d8af57a207c88053525e664d0f39b958ffb391ac",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            19,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/19.pixels.json",
+          "deltaSha256": "f6674ba895c3261f0bc7416adafaae16d2e7b334e14919326d24558176e6b35d",
+          "changedPixelsFromFirstFrame": 2094,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/19.png",
+          "exportPath": "Exports/elevator-homecoming/19.png",
+          "pngSha256": "87a5785c1266c028eca95c700eb465d617fa5a6a63f821278311922a484810b6"
+        },
+        {
+          "frame": 20,
+          "durationMs": 40,
+          "rgbaSha256": "e8aa3ee0501fa0fda1ed33d2fc4028ba378fc19625372d60eb9b9ddbf2d2e67b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            20,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/20.pixels.json",
+          "deltaSha256": "2bac4dddfa7c85b1afa18ffdd74a4717f786810426eb60af45b895933b6eec1b",
+          "changedPixelsFromFirstFrame": 2094,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/20.png",
+          "exportPath": "Exports/elevator-homecoming/20.png",
+          "pngSha256": "426236986688e9cf99fa3f3f0645b8cb64b14b8ce5ff1ad3144a53e140226aa2"
+        },
+        {
+          "frame": 21,
+          "durationMs": 40,
+          "rgbaSha256": "4118ceac15fc31b54b99f7793f588746a35c37551ee0546f49d47363da618ba7",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            21,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/21.pixels.json",
+          "deltaSha256": "569815e77eb097583c60729f1754eaa092a5e9517909ca0f49b329d4ee55556a",
+          "changedPixelsFromFirstFrame": 2159,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/21.png",
+          "exportPath": "Exports/elevator-homecoming/21.png",
+          "pngSha256": "ecc5a5573f3f7d585e92cf43e89068bd05f11af4e0bd04aaa5ddaced515c5bd9"
+        },
+        {
+          "frame": 22,
+          "durationMs": 40,
+          "rgbaSha256": "ece90a98e5ca481e3be24c8d4035533d0c6958ba5017e3c990a8bde26e9be92e",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            22,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/22.pixels.json",
+          "deltaSha256": "a54912bbb066a636fbe315aebe3934236e26658d34c430724e1df769315f0acb",
+          "changedPixelsFromFirstFrame": 2186,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/22.png",
+          "exportPath": "Exports/elevator-homecoming/22.png",
+          "pngSha256": "24e84cb4db43215f6e72aad0e0c09962e679a3f1403b45d06daeaad49b993601"
+        },
+        {
+          "frame": 23,
+          "durationMs": 40,
+          "rgbaSha256": "488a3790a92d90fc9b36bfd0c52ad61e323612cb2a8b022c5d537e603494e454",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            23,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/23.pixels.json",
+          "deltaSha256": "049bd048253b0cbc2d8fb5ddd5020b43738a530654e04149f9c82dbdfdfbfa6d",
+          "changedPixelsFromFirstFrame": 2193,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/23.png",
+          "exportPath": "Exports/elevator-homecoming/23.png",
+          "pngSha256": "512a7c1731703046286d10db3884e4031f30c7c3dd82f26c77ab3df7c961c259"
+        },
+        {
+          "frame": 24,
+          "durationMs": 560,
+          "rgbaSha256": "d7bb2bbd32d4382ea5e05636e208b04a56eb92c260ff6f8ac16c8d2ea28d3cc5",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            24,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/24.pixels.json",
+          "deltaSha256": "00adf4e4d08d86898f0833ce3e8d90b41ec86fb44b4a48fded4db4dec2f1cb71",
+          "changedPixelsFromFirstFrame": 2181,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/24.png",
+          "exportPath": "Exports/elevator-homecoming/24.png",
+          "pngSha256": "8996def965e0a5c4ebd45d6ab7cd8131cba750c1ab6a09c66952de8a28a65eda"
+        },
+        {
+          "frame": 25,
+          "durationMs": 80,
+          "rgbaSha256": "df2cb3fb2fb1f7d4da6dfd8bcd077246fff9ef862776cd46674538180e6bf36d",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            25,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/25.pixels.json",
+          "deltaSha256": "bb82891d0ccae6b92b1fd4360a6fbe5663604ffa775aa6bf1e608765f988dd9c",
+          "changedPixelsFromFirstFrame": 3993,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/25.png",
+          "exportPath": "Exports/elevator-homecoming/25.png",
+          "pngSha256": "8efd9054a88c3dc0290873d2031e9d1c97c14e2cd60bfe6323a940c54438d18c"
+        },
+        {
+          "frame": 26,
+          "durationMs": 40,
+          "rgbaSha256": "7a481f2ca03e264f4b2bc12b5cd5021c07eae35910028b11b27309bc7035566a",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            26,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/26.pixels.json",
+          "deltaSha256": "38fe3de36f5f4c280b4c04a00047aac4ee5036e57964fee5dbc8bace169d11ab",
+          "changedPixelsFromFirstFrame": 5813,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/26.png",
+          "exportPath": "Exports/elevator-homecoming/26.png",
+          "pngSha256": "334787294aa0fa1d67ad7159444825236969e0928ce76935cb65e795f35f63d3"
+        },
+        {
+          "frame": 27,
+          "durationMs": 40,
+          "rgbaSha256": "e28fc5827d56f697cee77f50abb47c7233c9b7722f63a3872e47d0ee5911bf01",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            27,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/27.pixels.json",
+          "deltaSha256": "1482dfb3d42f8b7c4876ffe4265ef9385c1e95ac6b9d891c44f14e586e805358",
+          "changedPixelsFromFirstFrame": 6197,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/27.png",
+          "exportPath": "Exports/elevator-homecoming/27.png",
+          "pngSha256": "7bb3178d3c8c1a3ceff20143b39872a6fe208b972b75373ec186b83a1eed8825"
+        },
+        {
+          "frame": 28,
+          "durationMs": 40,
+          "rgbaSha256": "aab20198ab2fa359a4671cc18a51bcdcc820699b27fe0cebd3c6f1ee77bf077a",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            28,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/28.pixels.json",
+          "deltaSha256": "f6c6e2320289dc36649498924ce8c9f1d76ceb9463de819b06705d67f00f2744",
+          "changedPixelsFromFirstFrame": 6584,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/28.png",
+          "exportPath": "Exports/elevator-homecoming/28.png",
+          "pngSha256": "ba9e972dbb6c8fd2b9ff1502e78854b713286a034c4c5cebe7534aad56758328"
+        },
+        {
+          "frame": 29,
+          "durationMs": 40,
+          "rgbaSha256": "240a3d49bf9d24ea81c36ba349b48ff195f18814d324e6f9e2cf85fc8c30ac52",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            29,
+            0
+          ],
+          "deltaPath": "Clips/elevator-homecoming/29.pixels.json",
+          "deltaSha256": "3ae64ffed708c90baab7ed4ac03989758fa2b3019de405860677ca0ac23e0144",
+          "changedPixelsFromFirstFrame": 6873,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/29.png",
+          "exportPath": "Exports/elevator-homecoming/29.png",
+          "pngSha256": "8bf9843dea90b4c046cf876e010af025089c37872b46df9303de69c9b1aebd3d"
+        },
+        {
+          "frame": 30,
+          "durationMs": 40,
+          "rgbaSha256": "e4f916fbc86bbe3ad863917861ae895966c48186548b5008ba9e5bf04da8f00a",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            0,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/30.pixels.json",
+          "deltaSha256": "f5a004bb02f4cd51f3cfb1b76f42fe2bc8a56c4e0146d02d010dcf4825b6935b",
+          "changedPixelsFromFirstFrame": 7159,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/30.png",
+          "exportPath": "Exports/elevator-homecoming/30.png",
+          "pngSha256": "74f27bcd8c560b546262c4a31990110350ef3a4f055095ddca0fc93d76e6421b"
+        },
+        {
+          "frame": 31,
+          "durationMs": 40,
+          "rgbaSha256": "6ea6deaaef6eedd62ba58957ceefd9c96048d3c53000208b6d6b06719c5f1c3d",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            1,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/31.pixels.json",
+          "deltaSha256": "cef3ea3dc5794f6f2fc8e9a3740da5c05dea842c13ad107de94019fa3dc8c3a1",
+          "changedPixelsFromFirstFrame": 7306,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/31.png",
+          "exportPath": "Exports/elevator-homecoming/31.png",
+          "pngSha256": "348950e36dcbd2ef04ecf2745a1178a7bdb29992071cb48316d361c8377c8f34"
+        },
+        {
+          "frame": 32,
+          "durationMs": 40,
+          "rgbaSha256": "dadcce0060c14f7497e3b37364f795bba29e3ad21b0af45415524291b8dd9e47",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            2,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/32.pixels.json",
+          "deltaSha256": "6c5055a2bf43c55d9011a6e27089ad400893b4d5474abb4764f5d5e35f61e130",
+          "changedPixelsFromFirstFrame": 7455,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/32.png",
+          "exportPath": "Exports/elevator-homecoming/32.png",
+          "pngSha256": "edeedf489a264b32c52f00a74ea6fc0a272ab7814f47d9fa60c2cb5c20e9ee92"
+        },
+        {
+          "frame": 33,
+          "durationMs": 40,
+          "rgbaSha256": "279cc8fd6fc062c9b1debf5556e86c1996e9b5da9ba93e728a99644fdbf5b779",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            3,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/33.pixels.json",
+          "deltaSha256": "2eaca457f35370ca2362f8d41b41950e3ac2ca5a7e668047f1b14dcf902bdb8d",
+          "changedPixelsFromFirstFrame": 7681,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/33.png",
+          "exportPath": "Exports/elevator-homecoming/33.png",
+          "pngSha256": "2772ee5be55f47070cdecd328ec19082225a5d8299e444754557f5c4f9326697"
+        },
+        {
+          "frame": 34,
+          "durationMs": 40,
+          "rgbaSha256": "ee856faba4af755d9969b4f98a4b3de9d6feabe1e772828986303742669ab5b8",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            4,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/34.pixels.json",
+          "deltaSha256": "bf61000036cb08e4c8255b72861e7c73597a1d02819679fc4315381765208a0d",
+          "changedPixelsFromFirstFrame": 7779,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/34.png",
+          "exportPath": "Exports/elevator-homecoming/34.png",
+          "pngSha256": "22f831d4b3ee5d672a90c8887ac61459d2680111a030656802492440b26c6d15"
+        },
+        {
+          "frame": 35,
+          "durationMs": 40,
+          "rgbaSha256": "af5bb6e81c537490f57308b93036bb0f1614d93d56b3d12f1d199cf0f3464261",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            5,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/35.pixels.json",
+          "deltaSha256": "6f0f2383b029725cbc56b7664c9b5a664cec3b66bf87e42e8c6ba037d240900d",
+          "changedPixelsFromFirstFrame": 7977,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/35.png",
+          "exportPath": "Exports/elevator-homecoming/35.png",
+          "pngSha256": "2fb96ca269fdc6f66abc8ebff951a5d46d8e829eb689599693dd8886d1e33f9a"
+        },
+        {
+          "frame": 36,
+          "durationMs": 40,
+          "rgbaSha256": "a934a3a8293a41892d1383e2c2010db538781d565e12ff2e3482308a76584b0e",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            6,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/36.pixels.json",
+          "deltaSha256": "e5414fcd7f1dd13b250071fc6ef4f538aadc78b43e4b7330bf0563934b4a8161",
+          "changedPixelsFromFirstFrame": 8143,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/36.png",
+          "exportPath": "Exports/elevator-homecoming/36.png",
+          "pngSha256": "ebc3477734df5f2849410e1cd6fadf8a80d8d4ff9f15e56bc783d74342f77026"
+        },
+        {
+          "frame": 37,
+          "durationMs": 40,
+          "rgbaSha256": "e5b55339b45d9b8893b4430573769bed138c939c10664ffc14eeaaf7506eb585",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            7,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/37.pixels.json",
+          "deltaSha256": "e5e5ae076c9c02fa0dba4c62f471b59a7c3f15ed208db1cc1f97d4ae7e7a12d9",
+          "changedPixelsFromFirstFrame": 8317,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/37.png",
+          "exportPath": "Exports/elevator-homecoming/37.png",
+          "pngSha256": "bab7e114936a063d3a53f3cfae6100d2adc81796a1ba297d419c372a18f6e348"
+        },
+        {
+          "frame": 38,
+          "durationMs": 40,
+          "rgbaSha256": "e936fb217abafc216aadd88b9f16e4b3c035f440ed196150f2b45ac62259909d",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            8,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/38.pixels.json",
+          "deltaSha256": "0b252c251e8ed5a1778f6eef9126f8ca57b21265df3871c36b99846940bdd2b8",
+          "changedPixelsFromFirstFrame": 8539,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/38.png",
+          "exportPath": "Exports/elevator-homecoming/38.png",
+          "pngSha256": "8154fd5e1832ce7010eb3811af22a91b1e54f643e98ad24168b6b669708cac31"
+        },
+        {
+          "frame": 39,
+          "durationMs": 40,
+          "rgbaSha256": "2758f61b8d84c604a8bb9fb9d2b93969f84c264e1abf01844e77cf9a33bbae44",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            9,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/39.pixels.json",
+          "deltaSha256": "3c871296bd9a2b209f066986f4123c3ea269d2835498b138d72f48778dbcfa82",
+          "changedPixelsFromFirstFrame": 8629,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/39.png",
+          "exportPath": "Exports/elevator-homecoming/39.png",
+          "pngSha256": "3e0005fab0452f4768019f1efa418d65923d846c28c20662ecc622a04edd0f03"
+        },
+        {
+          "frame": 40,
+          "durationMs": 40,
+          "rgbaSha256": "eaa3158634c89df39a652864c328e470a64565cdc636cfff572025bcddd8a122",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            10,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/40.pixels.json",
+          "deltaSha256": "f5cfb3ff16fa71602b976724a16fe3ba3bbb36df507b7b220569b3e79eb72e41",
+          "changedPixelsFromFirstFrame": 8655,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/40.png",
+          "exportPath": "Exports/elevator-homecoming/40.png",
+          "pngSha256": "abbbc4b69b65b135b9416c913ae3156efc21d1ec4e98e5d5dd93c4d449840072"
+        },
+        {
+          "frame": 41,
+          "durationMs": 40,
+          "rgbaSha256": "4754b4b98e2d09fad5f382e50243437c10b6870ba2e6f8ec83693f4db26486a1",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            11,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/41.pixels.json",
+          "deltaSha256": "118fed3eef40fe94dd7ecd294068b9e496375149212371b7a3e69210d4873260",
+          "changedPixelsFromFirstFrame": 8736,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/41.png",
+          "exportPath": "Exports/elevator-homecoming/41.png",
+          "pngSha256": "83a44403e874575255ffe8ece24c24a416d0449b56eae321132c7cc3adf54ced"
+        },
+        {
+          "frame": 42,
+          "durationMs": 40,
+          "rgbaSha256": "c83bcce002db4f76f07d9d0e5bd818c793cde34259f9c9c0105d86a7c640028f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            12,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/42.pixels.json",
+          "deltaSha256": "1870f178c4e457155637f42b0a80461c9eb2ab7f2457454b7e55bb5c9f168dc6",
+          "changedPixelsFromFirstFrame": 8821,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/42.png",
+          "exportPath": "Exports/elevator-homecoming/42.png",
+          "pngSha256": "bb74317016b137633834af1849c356206f1cad2424b5b7f74ee13bf89621416a"
+        },
+        {
+          "frame": 43,
+          "durationMs": 40,
+          "rgbaSha256": "5a7a235838f0f1d68ba401beeadefab6b0605d9632bd5dfab4ef353a806b5bc0",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            13,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/43.pixels.json",
+          "deltaSha256": "82dbd09562eef095e26f4dddc38e6c4bae004c39700d16b792b9b160abc9f784",
+          "changedPixelsFromFirstFrame": 8968,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/43.png",
+          "exportPath": "Exports/elevator-homecoming/43.png",
+          "pngSha256": "e83c20974ce7b47541ab6910c28117e7723a7ad8bcb11382195cf952383cab7a"
+        },
+        {
+          "frame": 44,
+          "durationMs": 40,
+          "rgbaSha256": "bc6d9996d18f85ab816947988476933c7e6fbf823a08ff3482ac16c1b7e27310",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            14,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/44.pixels.json",
+          "deltaSha256": "a2978e16de803ad5cba434eef8df8315ceee4a19fe32d867f2e72ada00c4a589",
+          "changedPixelsFromFirstFrame": 9025,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/44.png",
+          "exportPath": "Exports/elevator-homecoming/44.png",
+          "pngSha256": "a9479364ebdd09b9c3ce9ef37650929d97e7ef96d7228571a36f8130f19e8a4e"
+        },
+        {
+          "frame": 45,
+          "durationMs": 40,
+          "rgbaSha256": "407bbe50aafcc3ffe361d74c69ec907adb8b41f877b0bf0ffb20312e28e63094",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            15,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/45.pixels.json",
+          "deltaSha256": "e5bc13c66a03cdbf7958f964eae753d4524039a458d6c29fdb9f038c51949fcc",
+          "changedPixelsFromFirstFrame": 9056,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/45.png",
+          "exportPath": "Exports/elevator-homecoming/45.png",
+          "pngSha256": "ad04418a74610f5fda85ca072454eb511981af2bc7cc98611c6e25c654f145a2"
+        },
+        {
+          "frame": 46,
+          "durationMs": 40,
+          "rgbaSha256": "3cc02b3173a73da956bed999f13f28600042fd4f3b113bc38f67739ec5fca8c9",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            16,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/46.pixels.json",
+          "deltaSha256": "04145ed950dc1690f87a7fc68aed72442822d0d89a36d41e2b1f57ac3fdf1b03",
+          "changedPixelsFromFirstFrame": 9107,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/46.png",
+          "exportPath": "Exports/elevator-homecoming/46.png",
+          "pngSha256": "142033954dd683f104a90894343ff76625976054c8133586ecfe3342356a8fc1"
+        },
+        {
+          "frame": 47,
+          "durationMs": 40,
+          "rgbaSha256": "8153630bd01c769f21d45a5a663374f54a93ad3575a872e42f64c28f24e72bf0",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            17,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/47.pixels.json",
+          "deltaSha256": "c2559ec19c297763e29fcc086f67b49920e1ec17c258ed408913474242e0ab67",
+          "changedPixelsFromFirstFrame": 9151,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/47.png",
+          "exportPath": "Exports/elevator-homecoming/47.png",
+          "pngSha256": "f808d0a17db88c56a42c41b061e48dc2a22fa7e5d705699b9600623231a52eda"
+        },
+        {
+          "frame": 48,
+          "durationMs": 40,
+          "rgbaSha256": "2f3224fb2494a7cbeb85403e3accc1c073bba80ec7dc4048045029a5bb2acb8f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            18,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/48.pixels.json",
+          "deltaSha256": "5c0826e07fd0e2a6bda6373c61a95dc2d496bec122a2843dad7f38b7d9f1a961",
+          "changedPixelsFromFirstFrame": 9240,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/48.png",
+          "exportPath": "Exports/elevator-homecoming/48.png",
+          "pngSha256": "3e65ec2afbee6dd16b0ca580ebdda4a7f3a6e12cabaf877a0cba6b9480737530"
+        },
+        {
+          "frame": 49,
+          "durationMs": 40,
+          "rgbaSha256": "f87fc20301ba920edce8b8b9797273fd4c2146b2ea413f7ddf26beeb0f66bc78",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            19,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/49.pixels.json",
+          "deltaSha256": "81920f804e0448f84bc7fbf44f5162923bee48cc042b576566abc31e7cfaccde",
+          "changedPixelsFromFirstFrame": 9416,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/49.png",
+          "exportPath": "Exports/elevator-homecoming/49.png",
+          "pngSha256": "72f742daa5b07ed62298494b80503360ca62f7a732db2f757ebb5a1771b1dc36"
+        },
+        {
+          "frame": 50,
+          "durationMs": 20,
+          "rgbaSha256": "3c6806eac326065918c7e4067ea8c2dd4f0b9c2beda3319fd40ed9c55fd03288",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            20,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/50.pixels.json",
+          "deltaSha256": "9d1e2fe39805af8dfe0fa4397380eb1c57df31a0fad20de2ce5ca83328f2da81",
+          "changedPixelsFromFirstFrame": 9511,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/50.png",
+          "exportPath": "Exports/elevator-homecoming/50.png",
+          "pngSha256": "cb692bbd78a7b21964b6cd95d4e64ceb27d77a9c3a73765b5c763334c1c26c7c"
+        },
+        {
+          "frame": 51,
+          "durationMs": 20,
+          "rgbaSha256": "c6cab4be6cd221925cb51b978b670dd0a02e05cba671bb457af39ec9192e2a7f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            21,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/51.pixels.json",
+          "deltaSha256": "b7f51a87d5fffeb88e8228be1a51edf9f66d52b482fcc0c5e4f61b639d20ce3c",
+          "changedPixelsFromFirstFrame": 9535,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/51.png",
+          "exportPath": "Exports/elevator-homecoming/51.png",
+          "pngSha256": "a1b06a8b1d9d036e0e0296d109c174039fc4c06f890d25856b9ea32863422957"
+        },
+        {
+          "frame": 52,
+          "durationMs": 40,
+          "rgbaSha256": "8c404bbf820f6e8b9beb9c7fdd983f24a235162d7e65bc4deaf7fe07e3907276",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            22,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/52.pixels.json",
+          "deltaSha256": "6ccc4eeb51c3fb0f539647a016aa19848febfb7aaa17db7292606fa860a4ba3e",
+          "changedPixelsFromFirstFrame": 9562,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/52.png",
+          "exportPath": "Exports/elevator-homecoming/52.png",
+          "pngSha256": "c535d15b23347925acd90bd9f003e1895e1590ba23d8506decc931e0bf29c1ef"
+        },
+        {
+          "frame": 53,
+          "durationMs": 20,
+          "rgbaSha256": "b811159052dc95d8137f2428c482c22617c9cbff7cb9315860709cbf40cfeea6",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            23,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/53.pixels.json",
+          "deltaSha256": "aade5869ded25c9b65e8e1a41139ba1e4dcc823bf8384007104421ded80e8a8e",
+          "changedPixelsFromFirstFrame": 9567,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/53.png",
+          "exportPath": "Exports/elevator-homecoming/53.png",
+          "pngSha256": "de9365cd581fb37eb80cbe3a6c52d486dc9f6fa296189c9d5a70a51c4a691447"
+        },
+        {
+          "frame": 54,
+          "durationMs": 20,
+          "rgbaSha256": "22a01247c4386a7a2cc09b8b2a5dd32da6cc429e5894201d4957fd92954deb68",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            24,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/54.pixels.json",
+          "deltaSha256": "522d00a3f653ce87ed4c58d20a34d07131fed7fee772668885b6863ba6cfd341",
+          "changedPixelsFromFirstFrame": 9573,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/54.png",
+          "exportPath": "Exports/elevator-homecoming/54.png",
+          "pngSha256": "cbf831b1f781922c1d9a0cdd3a9a677284aea8667d8e3ae952123c0130f3a189"
+        },
+        {
+          "frame": 55,
+          "durationMs": 40,
+          "rgbaSha256": "5f57d80178a7f76a5b46658d8066a418f19dbcec905e275adb34a75d89cdb848",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            25,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/55.pixels.json",
+          "deltaSha256": "697fff05a21d94ff8f2987e9c9be461003872835d942892bd3acec0aeb3f5078",
+          "changedPixelsFromFirstFrame": 9572,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/55.png",
+          "exportPath": "Exports/elevator-homecoming/55.png",
+          "pngSha256": "e6939ffbe4a41140271d82029ce6739b35610b9b58b35db4ac9d2f920683be56"
+        },
+        {
+          "frame": 56,
+          "durationMs": 40,
+          "rgbaSha256": "cf70cb3715994fe9298ee20106d3933058b63b91c0138ed8f1ca1bd09c14a428",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            26,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/56.pixels.json",
+          "deltaSha256": "47db52e91a3c8e8ae3a6e586c01b5f4d791a311c500995d84d5ad5dca0b60e95",
+          "changedPixelsFromFirstFrame": 9523,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/56.png",
+          "exportPath": "Exports/elevator-homecoming/56.png",
+          "pngSha256": "93ceb6637e70b1c5bf96a6e2a53b4df31cf42313957df43fe46158f0ce557523"
+        },
+        {
+          "frame": 57,
+          "durationMs": 40,
+          "rgbaSha256": "04a0dfbdba93d33f8e53bb42350d8817ae8006824491be559be3490fb6762f6d",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            27,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/57.pixels.json",
+          "deltaSha256": "428af974c60ed40fa9223be42b2df4e62f106e9bf785368c5250c4844e605109",
+          "changedPixelsFromFirstFrame": 9507,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/57.png",
+          "exportPath": "Exports/elevator-homecoming/57.png",
+          "pngSha256": "000f46f3bc8a06e3eddf2b1cfaa405f66faa8d150e3f13cb248ec48db18fe097"
+        },
+        {
+          "frame": 58,
+          "durationMs": 40,
+          "rgbaSha256": "6ad7285abdef01303d5e5ca4820492ff5fed8ae480fc13e50511142213b29832",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            28,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/58.pixels.json",
+          "deltaSha256": "b8fbd55f8574bfeb6a5fda6a751179f430ca9b0c244ebc405cb4f644da874947",
+          "changedPixelsFromFirstFrame": 9578,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/58.png",
+          "exportPath": "Exports/elevator-homecoming/58.png",
+          "pngSha256": "652c9f1e6d044fcc3fcf5d4ad640b66c1041f70ce481f7941e9b28e62bb04e5f"
+        },
+        {
+          "frame": 59,
+          "durationMs": 40,
+          "rgbaSha256": "25383b46912587f28088f287b118eb8cfd1cea87918b7f1e1201c27e09f56664",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            29,
+            1
+          ],
+          "deltaPath": "Clips/elevator-homecoming/59.pixels.json",
+          "deltaSha256": "89cc9841dd148c1ca24fa6a9a1a9f7dbf54475bf4ca917424f44b6462e171b90",
+          "changedPixelsFromFirstFrame": 9832,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/59.png",
+          "exportPath": "Exports/elevator-homecoming/59.png",
+          "pngSha256": "c46dc6ffd7acaa301e03b36e3781b96e34345df308d6b7a9e245522e36d77dc9"
+        },
+        {
+          "frame": 60,
+          "durationMs": 40,
+          "rgbaSha256": "8e82e04044700a54d35c03c7a2c71c68a9908a04648f4975f8e3376e308b4bff",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            0,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/60.pixels.json",
+          "deltaSha256": "7983772f4db716cf3494cf48da192310a44415ae20261f98ff53256ae1eb8680",
+          "changedPixelsFromFirstFrame": 9804,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/60.png",
+          "exportPath": "Exports/elevator-homecoming/60.png",
+          "pngSha256": "2615c8ad4b2b0b906f9a516f5e953623613184b6ca02b4cac809a7958fc66e0d"
+        },
+        {
+          "frame": 61,
+          "durationMs": 40,
+          "rgbaSha256": "a7cd470d06267d0bbd6fa79984c6085342edf36f06c4b36504343de4fc6ad569",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            1,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/61.pixels.json",
+          "deltaSha256": "86181d325b06bb1450dd9454e18d9c051152ed5e72baa0ee2e12833b6fc012d2",
+          "changedPixelsFromFirstFrame": 9670,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/61.png",
+          "exportPath": "Exports/elevator-homecoming/61.png",
+          "pngSha256": "16413c6b18ccb92fbdc8152238575b16d00d369ddbbbbe7a2ccf631c5315b74c"
+        },
+        {
+          "frame": 62,
+          "durationMs": 40,
+          "rgbaSha256": "65edb024aed4c14f67efa749f3999780e20e9349e99f6f589bca43955dd1dc43",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            2,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/62.pixels.json",
+          "deltaSha256": "b1f33bd1f0d6891ba0698e39037ec7a6c8f98d3f3e76901a9bb0784e9d5dcde0",
+          "changedPixelsFromFirstFrame": 9623,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/62.png",
+          "exportPath": "Exports/elevator-homecoming/62.png",
+          "pngSha256": "23a4aee225836f592a236272e374516bdbeba2169a3c9692a2d86851659011b7"
+        },
+        {
+          "frame": 63,
+          "durationMs": 40,
+          "rgbaSha256": "a317bb3b97b7324d61e0935b50d5577857495ce1346642889f3210d5072aadd1",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            3,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/63.pixels.json",
+          "deltaSha256": "b0256ebbef25c116d1124f269c0a46628656cc0fb208a508c3298e4a33f079ca",
+          "changedPixelsFromFirstFrame": 9621,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/63.png",
+          "exportPath": "Exports/elevator-homecoming/63.png",
+          "pngSha256": "2c91666c9b9bf07547421520476c4e704618ba4bf265a8d29b291c65930e816e"
+        },
+        {
+          "frame": 64,
+          "durationMs": 40,
+          "rgbaSha256": "74854d372bd74580c4d3a8d7837ed78e683c0ccfcb25a8b9a1fbd84154f126d3",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            4,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/64.pixels.json",
+          "deltaSha256": "51daa286e474fc003bdbb1b51508c449750f68ade51523746c9bffd32474b7a0",
+          "changedPixelsFromFirstFrame": 9481,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/64.png",
+          "exportPath": "Exports/elevator-homecoming/64.png",
+          "pngSha256": "609035fe1bc38d28ec786b9f86457753753206f29094f22ac593be347505db98"
+        },
+        {
+          "frame": 65,
+          "durationMs": 40,
+          "rgbaSha256": "c1f92c73d18a6360c8de496c60c9c33f2a929328a7ebbe25d6e8239570e88011",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            5,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/65.pixels.json",
+          "deltaSha256": "92ac83295872b8a7466f5bbbd7b1de20b76e1debaee418d336df709071c99322",
+          "changedPixelsFromFirstFrame": 9709,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/65.png",
+          "exportPath": "Exports/elevator-homecoming/65.png",
+          "pngSha256": "07da413f2b5cc41bdea4d9d516e289f13f55a43e6fe2dd51f6b8021a2d2aeb95"
+        },
+        {
+          "frame": 66,
+          "durationMs": 40,
+          "rgbaSha256": "790d25e0b994afca3fd8330f713e2e3c6e32cdc76d7e2ee91646272639a2767b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            6,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/66.pixels.json",
+          "deltaSha256": "587008d4d563d8b297843e39c36e8b980664c9f61f94b147bee7688e79d28fdc",
+          "changedPixelsFromFirstFrame": 9777,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/66.png",
+          "exportPath": "Exports/elevator-homecoming/66.png",
+          "pngSha256": "fc89f6809cdf955571373b244ff77070edd245688094046eed305e8219c59688"
+        },
+        {
+          "frame": 67,
+          "durationMs": 40,
+          "rgbaSha256": "03664fb9268e0e770812433811e6ad6e304eea098c40b797f5008579a871970c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            7,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/67.pixels.json",
+          "deltaSha256": "cb054b681a7f512b6c9d685bc43612b63fc1013bdd491ab251011a06f31cc985",
+          "changedPixelsFromFirstFrame": 9755,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/67.png",
+          "exportPath": "Exports/elevator-homecoming/67.png",
+          "pngSha256": "d7dfda066c3ed650bb2817eb364d6cba05743863c1fbd267ac2db0b9a21f4400"
+        },
+        {
+          "frame": 68,
+          "durationMs": 40,
+          "rgbaSha256": "2383eb6e41cb1d3485a3fb234e49d874871709481288b0baa90f1f832ad44afe",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            8,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/68.pixels.json",
+          "deltaSha256": "511b42e0c4f1b5ddb506b59a40b9c712908da247d21335adcfd0a3b42b2d8d26",
+          "changedPixelsFromFirstFrame": 9867,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/68.png",
+          "exportPath": "Exports/elevator-homecoming/68.png",
+          "pngSha256": "db266690e42b9e15af897ca740cb9735cec1fa1b69064fd55541db93032929d5"
+        },
+        {
+          "frame": 69,
+          "durationMs": 40,
+          "rgbaSha256": "99a965047a626c114dc52802ff4b4eed2a658a717c057e7cef4cd257c8f9b609",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            9,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/69.pixels.json",
+          "deltaSha256": "009356b63450aa05f7d460231eae48067fa6f79c14a521dab984e59ab0e296db",
+          "changedPixelsFromFirstFrame": 10161,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/69.png",
+          "exportPath": "Exports/elevator-homecoming/69.png",
+          "pngSha256": "e4ebb25141d45e4909ff039da71b848d4e98e97d296f5de785c93f3582e51991"
+        },
+        {
+          "frame": 70,
+          "durationMs": 40,
+          "rgbaSha256": "76e9bf0b2e7f9bd382c680e2e36480f7e8660ea92fcaa13fbacccff995f23d33",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            10,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/70.pixels.json",
+          "deltaSha256": "d308b718e18c57e78cb8f4a084674cc2d3f5d5cf60732f780b8bddbee1d70021",
+          "changedPixelsFromFirstFrame": 10365,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/70.png",
+          "exportPath": "Exports/elevator-homecoming/70.png",
+          "pngSha256": "6a940767f18e43570eb6d9b418760961435074b7b73826602ddf282bda27b0e1"
+        },
+        {
+          "frame": 71,
+          "durationMs": 40,
+          "rgbaSha256": "851803bbd5966b99f52a3108cfe9ec2fed954a7528bc5ff510d3b968f8eada1c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            11,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/71.pixels.json",
+          "deltaSha256": "a3094d65c0321a551fdae4da2ffbd063592c15de14749c871afe35d1d318c9f7",
+          "changedPixelsFromFirstFrame": 10555,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/71.png",
+          "exportPath": "Exports/elevator-homecoming/71.png",
+          "pngSha256": "02835ee861905c4c83dc8f555c1570021cfc5be45649b9b0d017171bbe4989d8"
+        },
+        {
+          "frame": 72,
+          "durationMs": 40,
+          "rgbaSha256": "24935576e1ae16aaa115034655b170327c91b6a2cda9a161566dd9b75d02b358",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            12,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/72.pixels.json",
+          "deltaSha256": "e042d504444f6dc15c9ae080cd332840b0a4c13500c9d38dddaa8790c67a4e75",
+          "changedPixelsFromFirstFrame": 10679,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/72.png",
+          "exportPath": "Exports/elevator-homecoming/72.png",
+          "pngSha256": "73ffdd890f3aaf0f2323aed279074861106b3334516254a3c492d58e1f395e52"
+        },
+        {
+          "frame": 73,
+          "durationMs": 40,
+          "rgbaSha256": "784d35ef572c5d1e0c043958f3f2bae6c42b8e31431983dd8de7eac1b38a1530",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            13,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/73.pixels.json",
+          "deltaSha256": "ce171d90d40659915eacd0a49b70e7ec919b98f63659f4140f32481b101edf10",
+          "changedPixelsFromFirstFrame": 10697,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/73.png",
+          "exportPath": "Exports/elevator-homecoming/73.png",
+          "pngSha256": "5986ec2d71b84b3eeee60e4b0913d3955c2aebd3a43187ffaceb709c33be0038"
+        },
+        {
+          "frame": 74,
+          "durationMs": 40,
+          "rgbaSha256": "f2d5cc5bde069c0be18cadbda89440d95cb8c19051a04f03e3ee953b0cd020af",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            14,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/74.pixels.json",
+          "deltaSha256": "b7000f7cdd8e23b57a50c15dcd6df4d8e21ab435543889136478cfabf7ef875b",
+          "changedPixelsFromFirstFrame": 10691,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/74.png",
+          "exportPath": "Exports/elevator-homecoming/74.png",
+          "pngSha256": "1dcbfcfa69fdaa266264f597163020f72cfd292b9e58cd34a29a0a60b770098a"
+        },
+        {
+          "frame": 75,
+          "durationMs": 40,
+          "rgbaSha256": "d343aca273daaccd03470b45e47c86953045c229e0318f9f4c4e45a0dab2900f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            15,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/75.pixels.json",
+          "deltaSha256": "3897dde1d2aad45681af2ec20110a48441ba7ebca633a5aa5bf157bbfc74bad1",
+          "changedPixelsFromFirstFrame": 10693,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/75.png",
+          "exportPath": "Exports/elevator-homecoming/75.png",
+          "pngSha256": "41fb6eb79982bf882d67a13011bea18d0635e37134b1ac59e3f1ee4e3d408768"
+        },
+        {
+          "frame": 76,
+          "durationMs": 40,
+          "rgbaSha256": "b123f600edde4572d8d3a91052647b0368ae98f568c788da084a4fe5f570ad20",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            16,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/76.pixels.json",
+          "deltaSha256": "6e8da4727d88bf6879324b21837dc7550b717ace733c6b69ba1f54f3511afb15",
+          "changedPixelsFromFirstFrame": 10709,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/76.png",
+          "exportPath": "Exports/elevator-homecoming/76.png",
+          "pngSha256": "3ef5f044a83a813dda4690cf987222094bc08e1dd5fd8b6e7ca0c1aab9328782"
+        },
+        {
+          "frame": 77,
+          "durationMs": 40,
+          "rgbaSha256": "b4acd489f7e8291da2af393ae0a02d0dc7aa517f2de9a3466215104537961b58",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            17,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/77.pixels.json",
+          "deltaSha256": "764ab53a0238a796af64cae8ceb46fa5810aa9b8e1273d3f0fcc89cd344f8ccb",
+          "changedPixelsFromFirstFrame": 10737,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/77.png",
+          "exportPath": "Exports/elevator-homecoming/77.png",
+          "pngSha256": "bd193e96cf9a076e2cdcc9182a71ff094c4b6b2575fa3238fffe9f2fa74fb0e7"
+        },
+        {
+          "frame": 78,
+          "durationMs": 40,
+          "rgbaSha256": "f9a6b27c8cda5cc706bd25963af2784e484ea07800e1f91dcfd4d32f831c7e97",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            18,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/78.pixels.json",
+          "deltaSha256": "fbcca5d94ed8570727674ab5a502252c4788245d5c502b0292a288e4a7a49086",
+          "changedPixelsFromFirstFrame": 10751,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/78.png",
+          "exportPath": "Exports/elevator-homecoming/78.png",
+          "pngSha256": "93b03b40a61b0e267c2d1ffca4487151a70dbbd1c951f5fafb3f05151bce35ba"
+        },
+        {
+          "frame": 79,
+          "durationMs": 40,
+          "rgbaSha256": "6af1ce5697d3ba20a16dec1e1ac098fd1d9a704dab3bb136e6f8c2ef3fa6b555",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            19,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/79.pixels.json",
+          "deltaSha256": "718b6619930a272b5ab51d78afad641f6eb0d78d4856aace26087e17fa26e922",
+          "changedPixelsFromFirstFrame": 10765,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/79.png",
+          "exportPath": "Exports/elevator-homecoming/79.png",
+          "pngSha256": "16f20d7c12ec778dd1beb699216b172b106540d1373d354309d74670b4580737"
+        },
+        {
+          "frame": 80,
+          "durationMs": 40,
+          "rgbaSha256": "7c34d4687baad4fca5a697e6ca9a81d95995b94751bf45df741eaff83d709e7c",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            20,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/80.pixels.json",
+          "deltaSha256": "ba6c522a35506048db65c86024dd101be59cd2278110db4b1c734734cb9a132d",
+          "changedPixelsFromFirstFrame": 10747,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/80.png",
+          "exportPath": "Exports/elevator-homecoming/80.png",
+          "pngSha256": "890b67a461d52e82fe646cfd0ec28d2d5a3cb0d5d37c63ad9ae08e88dfdba246"
+        },
+        {
+          "frame": 81,
+          "durationMs": 40,
+          "rgbaSha256": "90bc1ebd7e216e0851c2767980c619cf9cb4f893bb6fbd4e8be322b9832927ea",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            21,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/81.pixels.json",
+          "deltaSha256": "6bbc39bdf29c4589a64b17d99d27613d90f849897cbf3b7e85ed3051139959f3",
+          "changedPixelsFromFirstFrame": 10729,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/81.png",
+          "exportPath": "Exports/elevator-homecoming/81.png",
+          "pngSha256": "043d1a9e49ce663790a3b0044dc38d8d2ce6088d5b5b40b202d95b4b34aeb06f"
+        },
+        {
+          "frame": 82,
+          "durationMs": 40,
+          "rgbaSha256": "c5e0bee553fd4c995eafa045133f6a5f5a4934638598c14dff6b375cc44fc78b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            22,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/82.pixels.json",
+          "deltaSha256": "6aee86ba3ff44fabf62bd5538b7da8b2be964b14bc80734a4d2387eea6d7becd",
+          "changedPixelsFromFirstFrame": 10759,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/82.png",
+          "exportPath": "Exports/elevator-homecoming/82.png",
+          "pngSha256": "d7a91a999555caa7d20b9fac3bcd1af9c2f9ea63ae7dc1400d25a025a4644a7b"
+        },
+        {
+          "frame": 83,
+          "durationMs": 40,
+          "rgbaSha256": "2929ccf82bfcedc2c819f4735cd0048ca3723639f1d5e00792c55dc4507e0dc3",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            23,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/83.pixels.json",
+          "deltaSha256": "1bb7ee1ce32fe7a92c9ee183c94c9b55f76d35918c6fd98b54973469e48362dc",
+          "changedPixelsFromFirstFrame": 10789,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/83.png",
+          "exportPath": "Exports/elevator-homecoming/83.png",
+          "pngSha256": "d70e6361c0ea9003d51141b49cfb7fb5be3427a909faab58fca5f062b64349d4"
+        },
+        {
+          "frame": 84,
+          "durationMs": 80,
+          "rgbaSha256": "7929406b78f66ab772da3593392a0924de59ccce5a51b3f1ef4e11b65d440535",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            24,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/84.pixels.json",
+          "deltaSha256": "acd9b68a2bfb6ea4eea770385990851cb116e18931121a4cc84d312c12c8fe44",
+          "changedPixelsFromFirstFrame": 10785,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/84.png",
+          "exportPath": "Exports/elevator-homecoming/84.png",
+          "pngSha256": "540c33301befa65f8f1148ffd2bb68c0d4253d301e9c9dcc862590322ebdf95a"
+        },
+        {
+          "frame": 85,
+          "durationMs": 480,
+          "rgbaSha256": "8f0d137ca6f16d562bc7839ebcf881359199e26fb1ee35f3231f2723206edce5",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            25,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/85.pixels.json",
+          "deltaSha256": "d6feb52bfe0f10e038fba63864610f0611481c61b760a56c1c301da1551e9f78",
+          "changedPixelsFromFirstFrame": 10781,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/85.png",
+          "exportPath": "Exports/elevator-homecoming/85.png",
+          "pngSha256": "5da97589417eff077dd1b1ca368d497c5334148723ed418fa911b0cc54098104"
+        },
+        {
+          "frame": 86,
+          "durationMs": 40,
+          "rgbaSha256": "ef53ede2d3070e0e51c7097401f1dba6a64515d62760ca9267d198318e66a291",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            26,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/86.pixels.json",
+          "deltaSha256": "784eb0932341cf5aa28f85de762a86252d6288be7d911c442a0579395a403b92",
+          "changedPixelsFromFirstFrame": 10768,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/86.png",
+          "exportPath": "Exports/elevator-homecoming/86.png",
+          "pngSha256": "a3659c8bd2e05e1e39bf4f1efa2a41c85185c580dac03f0cb6e42910378c9f45"
+        },
+        {
+          "frame": 87,
+          "durationMs": 20,
+          "rgbaSha256": "4ef14b065d12fc9109266b2c8f304290b719eacee39a6bad8f26385f3869f037",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            27,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/87.pixels.json",
+          "deltaSha256": "d9cb2ad58d7337074edd03f501a93a0c4fe2c0d52dd566e415b73de34894e78d",
+          "changedPixelsFromFirstFrame": 10768,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/87.png",
+          "exportPath": "Exports/elevator-homecoming/87.png",
+          "pngSha256": "ad9730d86d093c39c4f62ea56dee2a4df312d4d7447d26ea1b13a13c697dc614"
+        },
+        {
+          "frame": 88,
+          "durationMs": 20,
+          "rgbaSha256": "3e1882e11a79f79089ef26593e89e2d429b7c9a92939d4c37c9d9a7aff1b07be",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            28,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/88.pixels.json",
+          "deltaSha256": "bbc1e2c69c7426a853676f94d69859fffc17682651af99fc9730336bbda7593a",
+          "changedPixelsFromFirstFrame": 10727,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/88.png",
+          "exportPath": "Exports/elevator-homecoming/88.png",
+          "pngSha256": "74f8e6404b755be9f207ed8670aed786467f0bbc6a9d953855596e85999dfdc4"
+        },
+        {
+          "frame": 89,
+          "durationMs": 20,
+          "rgbaSha256": "089cac697d3f7fdde4c4b90cb5ec0d857e3004b58483ced77e8017a9837863d0",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            29,
+            2
+          ],
+          "deltaPath": "Clips/elevator-homecoming/89.pixels.json",
+          "deltaSha256": "b286131d862100df92bec09008cbf427767b84e4d0e4bf040a8a8c871e7595db",
+          "changedPixelsFromFirstFrame": 10726,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/89.png",
+          "exportPath": "Exports/elevator-homecoming/89.png",
+          "pngSha256": "5cd1b339febc2c782eda7ec42ed6f36978dfe9fc2f2277ebdd4f89627675d89c"
+        },
+        {
+          "frame": 90,
+          "durationMs": 20,
+          "rgbaSha256": "5121e1db9caa84184e02c82f64b5a24d449167c00ea7a34cb43ee616cf7cca3f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            0,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/90.pixels.json",
+          "deltaSha256": "f779f008fd86b92b083622a145b8cc80ef4fc6dd107822013c8cc1e9e720739a",
+          "changedPixelsFromFirstFrame": 10705,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/90.png",
+          "exportPath": "Exports/elevator-homecoming/90.png",
+          "pngSha256": "75622c5e28df76351a8d2d485a28fe1f5b453a76ceea7c3daf019497cf3bff6c"
+        },
+        {
+          "frame": 91,
+          "durationMs": 40,
+          "rgbaSha256": "2e63421b74072ba69abe62c1aa6efadf9f2f7d2a173edfa0684277c4d40c8c14",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            1,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/91.pixels.json",
+          "deltaSha256": "0649c60d8cfa20bf7d8e4e2fe3627fca5c7bc467dd40cf9c27d719105b700e9c",
+          "changedPixelsFromFirstFrame": 10683,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/91.png",
+          "exportPath": "Exports/elevator-homecoming/91.png",
+          "pngSha256": "a4e7632ed396e43de186aa6cc71cf23f5b56a377bb5cedd2b3aecc1251b24652"
+        },
+        {
+          "frame": 92,
+          "durationMs": 20,
+          "rgbaSha256": "ba91a3404cea208fd6cc029494489e1fcc74b35b8bcc42b593f7577a2e3562e4",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            2,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/92.pixels.json",
+          "deltaSha256": "aacea055aa9e4b1279af7709ae33d68cc75f34da641810f68349f1f230fab78b",
+          "changedPixelsFromFirstFrame": 10680,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/92.png",
+          "exportPath": "Exports/elevator-homecoming/92.png",
+          "pngSha256": "450db92b8189f0a99b728b3a053780249703290d310def2181e522b4a4bcaf93"
+        },
+        {
+          "frame": 93,
+          "durationMs": 20,
+          "rgbaSha256": "76ac18b27342495ba85f11296f75490d2668a0d9d25ee54bc8241cb633773815",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            3,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/93.pixels.json",
+          "deltaSha256": "c3311ef1c616f8c60702330034e5ce80cc9ebf6ebd30dd1aab74668e010dd633",
+          "changedPixelsFromFirstFrame": 10678,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/93.png",
+          "exportPath": "Exports/elevator-homecoming/93.png",
+          "pngSha256": "4cb82dcb6e982e33d3849362938114ce2c5eb158e77db710276cd19ffd4e2951"
+        },
+        {
+          "frame": 94,
+          "durationMs": 40,
+          "rgbaSha256": "753c17559b85b3d40ac666c0221f6d8be2f814100bec11c135ed9622fc1efcb6",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            4,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/94.pixels.json",
+          "deltaSha256": "421777ba5158632773058b2495ed2d690d20d2af3215b77456de943f05c9fc7f",
+          "changedPixelsFromFirstFrame": 10656,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/94.png",
+          "exportPath": "Exports/elevator-homecoming/94.png",
+          "pngSha256": "beb34803b6bb25c02a9a784656aff3aa44e1f80f60d5464daa57864fddecf528"
+        },
+        {
+          "frame": 95,
+          "durationMs": 40,
+          "rgbaSha256": "670dff3669d0a904005a027544d5e090c0acb6db63053d2780cf95188a830484",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            5,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/95.pixels.json",
+          "deltaSha256": "74d4b2d5bba10e33c57c1730e51e841b3dbfe3c3434752accb5ce9443db6afa5",
+          "changedPixelsFromFirstFrame": 10479,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/95.png",
+          "exportPath": "Exports/elevator-homecoming/95.png",
+          "pngSha256": "207f4a11085094d56f64a7d9991bd62ee8d2e352f0ef10a87059449f4bb43f6b"
+        },
+        {
+          "frame": 96,
+          "durationMs": 40,
+          "rgbaSha256": "d34b8f757309fddb8f1dd29163cabaac3fcec6e69e1eaf873b979c79e30ed1eb",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            6,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/96.pixels.json",
+          "deltaSha256": "adbe623a20430ff7eaed373cae8e8ab83f0d96ed0349e3ef18fb45e89f2cd0e0",
+          "changedPixelsFromFirstFrame": 10276,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/96.png",
+          "exportPath": "Exports/elevator-homecoming/96.png",
+          "pngSha256": "d089de001332ef00627f4a88f46111e602e36ac385f59979e77b52378a085bff"
+        },
+        {
+          "frame": 97,
+          "durationMs": 40,
+          "rgbaSha256": "7c5165cebe1f9de80239fd00ab20033abad8f2e834db4c154f4b86b7ecff1afd",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            7,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/97.pixels.json",
+          "deltaSha256": "4c49635e084ab70e93426c1f098b8699c0a69a6762926759e8933827ffe4fe5d",
+          "changedPixelsFromFirstFrame": 10250,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/97.png",
+          "exportPath": "Exports/elevator-homecoming/97.png",
+          "pngSha256": "bd77f2659446c8e32e8a4c5ae50004886b7408dbe333a4702ac770ddf62146b1"
+        },
+        {
+          "frame": 98,
+          "durationMs": 20,
+          "rgbaSha256": "7684d0ede469bee04a65841ab04bcda98120eac76869105dc69e2652e9809916",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            8,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/98.pixels.json",
+          "deltaSha256": "1065f232ca849b2fc61d6220b4342b59b1f10b7df38aa5a3b872cd5690c70418",
+          "changedPixelsFromFirstFrame": 10304,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/98.png",
+          "exportPath": "Exports/elevator-homecoming/98.png",
+          "pngSha256": "37c8e7d8f03b49bc15e8bce9e3cc9c642bd835d22ef8b6be7a5369a50e9b5411"
+        },
+        {
+          "frame": 99,
+          "durationMs": 20,
+          "rgbaSha256": "e2fc2d051287f4730801f37c3d3bd7035cfb1081f5a6965806e3d8b57acd4d99",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            9,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/99.pixels.json",
+          "deltaSha256": "65aaa420431787d3a2946666b275c3920f40cb9bdc415630225a2a5c4f771516",
+          "changedPixelsFromFirstFrame": 10352,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/99.png",
+          "exportPath": "Exports/elevator-homecoming/99.png",
+          "pngSha256": "baca3d92f8cee120890bb73d53fc801bc50ab3396610886ca5b6adf2b8333871"
+        },
+        {
+          "frame": 100,
+          "durationMs": 40,
+          "rgbaSha256": "5481e1653d66cd25c131a6443390cd3e8cf1fefaa2b04583a9bcde68ed6e620e",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            10,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/100.pixels.json",
+          "deltaSha256": "da9e943ebd749d4d86a2a5460dc8acf4a98251b3fc9d420b0561dec25324b547",
+          "changedPixelsFromFirstFrame": 10459,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/100.png",
+          "exportPath": "Exports/elevator-homecoming/100.png",
+          "pngSha256": "f15e1ef9f271b1c130cf6850e3d6228e13d90b18f8c2a0c59662b9ac891f9c1b"
+        },
+        {
+          "frame": 101,
+          "durationMs": 40,
+          "rgbaSha256": "df8ec6e34489404d3705b0300e51d67a4e21ed3a342cd4ef3dc1e050c4b8fee0",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            11,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/101.pixels.json",
+          "deltaSha256": "74c2f5da3a8ddb990ed62840de7c5e745f853ccc752aa34976867c756b587e39",
+          "changedPixelsFromFirstFrame": 10665,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/101.png",
+          "exportPath": "Exports/elevator-homecoming/101.png",
+          "pngSha256": "32e06ae4cf86b5ad5d2d5c6a55bcef69885c0b434c45c75b70e84e585703eba3"
+        },
+        {
+          "frame": 102,
+          "durationMs": 40,
+          "rgbaSha256": "9446798f0a1c57b1d4df5b2ddfb6276939a80cb4c4e96b6b1ae5567a0ae82bcb",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            12,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/102.pixels.json",
+          "deltaSha256": "01fa0058aeb5211922053e0a2a21696bb63b966c7ed2ddd4e8ca10439e4686d6",
+          "changedPixelsFromFirstFrame": 10731,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/102.png",
+          "exportPath": "Exports/elevator-homecoming/102.png",
+          "pngSha256": "95719a239e35648c5f117f20a5c7919c71b8a19c4e9ee7989385bf9068df24c6"
+        },
+        {
+          "frame": 103,
+          "durationMs": 40,
+          "rgbaSha256": "fe32b87b8a551633656725722085454b9699a9b230e29cc55cf65335195b970b",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            13,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/103.pixels.json",
+          "deltaSha256": "6edba3d875994a29cd4c4561bf890cfc5f6f0120bbec0b401711fc3b6dc3dc07",
+          "changedPixelsFromFirstFrame": 10752,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/103.png",
+          "exportPath": "Exports/elevator-homecoming/103.png",
+          "pngSha256": "afcc823ae060128af7596b3d3cb26e4b9c91f10d0e7765e2c365eec05b481b6c"
+        },
+        {
+          "frame": 104,
+          "durationMs": 20,
+          "rgbaSha256": "b939528faec8d077c32d4376201571ac07f33774f934703983bc48771be7b6f7",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            14,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/104.pixels.json",
+          "deltaSha256": "7accdf57bf0644a1207e7e6f9688e47f934631c245137558bd442183a11dc15e",
+          "changedPixelsFromFirstFrame": 10752,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/104.png",
+          "exportPath": "Exports/elevator-homecoming/104.png",
+          "pngSha256": "047efbb749ed69f46bf254b272a3ad725ab38e65a5d2dd9aa5476e39c5705bba"
+        },
+        {
+          "frame": 105,
+          "durationMs": 20,
+          "rgbaSha256": "2c71dcd96b18f96d7d51e31ce949db34ba470d24d15ab6d8c4155e461914563f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            15,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/105.pixels.json",
+          "deltaSha256": "bd1b6736568f39702649c48934ba5a57de39a3861be2a26dbe8d12f10aadf4be",
+          "changedPixelsFromFirstFrame": 10738,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/105.png",
+          "exportPath": "Exports/elevator-homecoming/105.png",
+          "pngSha256": "85806cab30ca744922237430ae308661b350bcaa82866aa94da4aa9b9e7483dc"
+        },
+        {
+          "frame": 106,
+          "durationMs": 40,
+          "rgbaSha256": "e1fd813aebe1a5f46e3d8b4dc9b4d002dbe11a7c51cbb67e184caec3681f3297",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            16,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/106.pixels.json",
+          "deltaSha256": "5558cf3a33f934f804b4a3c96fe06332313d1b5e6231f56767f9f9df1cb26eb7",
+          "changedPixelsFromFirstFrame": 10738,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/106.png",
+          "exportPath": "Exports/elevator-homecoming/106.png",
+          "pngSha256": "b8738207c316a93fee3274566c399dca5ca3b127439168195e2d9dfd77810d3d"
+        },
+        {
+          "frame": 107,
+          "durationMs": 40,
+          "rgbaSha256": "d7790fc83c808d84fc8c53e4b422a86e0b91c99eb38652a0c2c8f24e4b68bf33",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            17,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/107.pixels.json",
+          "deltaSha256": "a2307e102d5ebe2d839adc66bb5bbca2fd9132ca064571d6c3bbdd899c194ef3",
+          "changedPixelsFromFirstFrame": 10803,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/107.png",
+          "exportPath": "Exports/elevator-homecoming/107.png",
+          "pngSha256": "bc96d9423d78a46ed81f8732a975fff0bb2eec314690d072a05efea7080d5fb6"
+        },
+        {
+          "frame": 108,
+          "durationMs": 40,
+          "rgbaSha256": "0851ee83c2c581f5f30e3f3b8e1aeb6137a129488d221baefcceb67ebb3b7a2a",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            18,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/108.pixels.json",
+          "deltaSha256": "fcaa00bad3fee7da61a29e0f25b346d122fc6dc56185fa97f2f218e28c3c5abc",
+          "changedPixelsFromFirstFrame": 10830,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/108.png",
+          "exportPath": "Exports/elevator-homecoming/108.png",
+          "pngSha256": "f25033ed3bc1d8855c63b4024164c28b6eaf6d062fc915c07c62f757a9d5ace1"
+        },
+        {
+          "frame": 109,
+          "durationMs": 40,
+          "rgbaSha256": "b1fa98a3a5ff64e4e90783d6eb755cb25deb390ade97dbce6eb211b25e8aa913",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            19,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/109.pixels.json",
+          "deltaSha256": "592400b70c7b32c9a7dfa5f7447a25f8fe460900d55a834f4c11f532272e493c",
+          "changedPixelsFromFirstFrame": 10837,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/109.png",
+          "exportPath": "Exports/elevator-homecoming/109.png",
+          "pngSha256": "6bccedf65e724e0fb5654d95107fe8d9082546959fe82c7056a18c0a87a00599"
+        },
+        {
+          "frame": 110,
+          "durationMs": 40,
+          "rgbaSha256": "859f82bd6081cc95f1a898af42b7588dc120bd9a618fd72ae38095eff16c4717",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            20,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/110.pixels.json",
+          "deltaSha256": "18570ceba3c45d9c0fe3b04eac138380318116bc909ccd22d17ba8eb7ebb6ce9",
+          "changedPixelsFromFirstFrame": 10825,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/110.png",
+          "exportPath": "Exports/elevator-homecoming/110.png",
+          "pngSha256": "5fbb3f66dae874e48ea78012a1c201d9b01d0f7a569ce25ef4e1bb6c506f0e62"
+        },
+        {
+          "frame": 111,
+          "durationMs": 440,
+          "rgbaSha256": "7deccfe8ec05b6348576b4293e3c9383fb19a0284c2fb7ba0e566f5a561f6e2f",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            21,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/111.pixels.json",
+          "deltaSha256": "11ae84aeb363a87c11d1d816029d40cad71e46516b8bc4bf934f03f0a62deb3b",
+          "changedPixelsFromFirstFrame": 221346,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/111.png",
+          "exportPath": "Exports/elevator-homecoming/111.png",
+          "pngSha256": "a9fe3512444c48da758661d52592636507fd8dcd4d475943aa3d37b4ee2dc648"
+        },
+        {
+          "frame": 112,
+          "durationMs": 320,
+          "rgbaSha256": "336dcf58b65dc09086abd2378ecb416a00bea9814a9cc8f273ec0129cd2faded",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            22,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/112.pixels.json",
+          "deltaSha256": "9ba8fa9e56e7989692848a4281577eb8a1a6824af42307bc77ac585193215095",
+          "changedPixelsFromFirstFrame": 221346,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/112.png",
+          "exportPath": "Exports/elevator-homecoming/112.png",
+          "pngSha256": "3a4f2f67173f12bf462e3a77970624eb96055886ce4378c9c2b67a451fd68659"
+        },
+        {
+          "frame": 113,
+          "durationMs": 240,
+          "rgbaSha256": "4d5cef327c7e8a34f47d16ce74617086b29bebf9c48f4d31bf63e95311f812f9",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            23,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/113.pixels.json",
+          "deltaSha256": "51fa99d1dbfa7f6347dd69e91366552e392ce0e8852c58fee35cbb6b552a29df",
+          "changedPixelsFromFirstFrame": 221346,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/113.png",
+          "exportPath": "Exports/elevator-homecoming/113.png",
+          "pngSha256": "fdafcc4d32af712211a27223cfb2bf0cf050d72ba754e9c523ae8fd23f04b238"
+        },
+        {
+          "frame": 114,
+          "durationMs": 80,
+          "rgbaSha256": "e03f06723c939ab1728a82ff9017f24bbe395a9026344405007f10263519a00e",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            24,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/114.pixels.json",
+          "deltaSha256": "c6c201aa1707d546f782d226b0d31bd1aae1af47fdae1c5dbcca6b3cef6d8cfa",
+          "changedPixelsFromFirstFrame": 221363,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/114.png",
+          "exportPath": "Exports/elevator-homecoming/114.png",
+          "pngSha256": "ca1fe8343d9966ed4fa38a577728f27fcbbe5399984eb497ede35e95c000c3d7"
+        },
+        {
+          "frame": 115,
+          "durationMs": 920,
+          "rgbaSha256": "9af14c915fb056a7844f20b604cf762fed1e00c8bad5d1bf44c199c609d4a576",
+          "alphaMaskSha256": "1516b21572cdecd2baad775e49c4a2d235b7ce37c9692d90df6b9e0df92f820c",
+          "sheetCell": [
+            25,
+            3
+          ],
+          "deltaPath": "Clips/elevator-homecoming/115.pixels.json",
+          "deltaSha256": "899644299417cd8f2bf7c3212ec1263dc7d983a8a833c3a3378dbdc82f7f5bfc",
+          "changedPixelsFromFirstFrame": 221363,
+          "deltaReplayRgbaExact": true,
+          "sourcePath": "art/return-ending-elevator-v3/Clips/elevator-homecoming/115.png",
+          "exportPath": "Exports/elevator-homecoming/115.png",
+          "pngSha256": "28afd09f4aa74e33a553a6fad1f16ea7a7d3e9856b01b42b29330450f90b931c"
+        }
+      ],
+      "gridSheetColumns": 30,
+      "gridSheetRows": 4,
+      "piskelChunkCount": 4,
+      "piskelMaxChunkWidth": 19200,
+      "piskelReplayRgbaExact": true,
+      "apngReplayRgbaAndDurationExact": true,
+      "gridSheetReplayRgbaExact": true,
+      "sheetSha256": "319a357305378dbbccb8a8cb4a64a16d783d557453b2fa8114d36360f525ce29",
+      "apngSha256": "3f4d16f6c26f38b0a0647c5de3cc1df9dfa15374024c5741d06c89052af21a22",
+      "piskelSha256": "2f4105b50fe159c1df24bea344fa6ec07b88a19eb0ffd9b085f9ac1b8c8de105",
+      "preview": {
+        "path": "QA/elevator-homecoming-preview.gif",
+        "sha256": "2858db9e93ed1a294e18a2c56f6cf5f5ddc8fa7baadffe01f4998e3b602ef2ec",
+        "requestedDurationsMs": [
+          40,
+          20,
+          20,
+          20,
+          20,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          560,
+          80,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          80,
+          480,
+          40,
+          20,
+          20,
+          20,
+          20,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          40,
+          440,
+          320,
+          240,
+          80,
+          920
+        ],
+        "encodedDurationsMs": [
+          40,
+          20,
+          20,
+          20,
+          20,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          560,
+          80,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          40,
+          80,
+          480,
+          40,
+          20,
+          20,
+          20,
+          20,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          20,
+          20,
+          40,
+          40,
+          40,
+          40,
+          40,
+          440,
+          320,
+          240,
+          80,
+          920
+        ],
+        "encodedExposures": [
+          {
+            "originalIndex": 0,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 1,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 2,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 3,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 4,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 5,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 6,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 7,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 8,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 9,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 10,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 11,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 12,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 13,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 14,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 15,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 16,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 17,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 18,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 19,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 20,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 21,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 22,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 23,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 24,
+            "durationMs": 560
+          },
+          {
+            "originalIndex": 25,
+            "durationMs": 80
+          },
+          {
+            "originalIndex": 26,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 27,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 28,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 29,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 30,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 31,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 32,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 33,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 34,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 35,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 36,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 37,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 38,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 39,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 40,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 41,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 42,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 43,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 44,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 45,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 46,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 47,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 48,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 49,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 50,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 51,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 52,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 53,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 54,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 55,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 56,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 57,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 58,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 59,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 60,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 61,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 62,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 63,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 64,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 65,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 66,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 67,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 68,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 69,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 70,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 71,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 72,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 73,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 74,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 75,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 76,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 77,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 78,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 79,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 80,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 81,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 82,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 83,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 84,
+            "durationMs": 80
+          },
+          {
+            "originalIndex": 85,
+            "durationMs": 480
+          },
+          {
+            "originalIndex": 86,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 87,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 88,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 89,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 90,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 91,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 92,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 93,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 94,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 95,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 96,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 97,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 98,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 99,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 100,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 101,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 102,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 103,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 104,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 105,
+            "durationMs": 20
+          },
+          {
+            "originalIndex": 106,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 107,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 108,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 109,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 110,
+            "durationMs": 40
+          },
+          {
+            "originalIndex": 111,
+            "durationMs": 440
+          },
+          {
+            "originalIndex": 112,
+            "durationMs": 320
+          },
+          {
+            "originalIndex": 113,
+            "durationMs": 240
+          },
+          {
+            "originalIndex": 114,
+            "durationMs": 80
+          },
+          {
+            "originalIndex": 115,
+            "durationMs": 920
+          }
+        ],
+        "skippedOriginalIndexes": [],
+        "requestedTotalMs": 7000,
+        "encodedTotalMs": 7000,
+        "decodedTotalMatchesSource": true,
+        "scale": 2,
+        "resampling": "NEAREST",
+        "sharedPalette": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            3,
+            4,
+            13
+          ],
+          [
+            3,
+            5,
+            10
+          ],
+          [
+            5,
+            4,
+            6
+          ],
+          [
+            7,
+            11,
+            18
+          ],
+          [
+            9,
+            17,
+            27
+          ],
+          [
+            9,
+            86,
+            107
+          ],
+          [
+            9,
+            91,
+            120
+          ],
+          [
+            10,
+            10,
+            19
+          ],
+          [
+            11,
+            76,
+            108
+          ],
+          [
+            11,
+            147,
+            177
+          ],
+          [
+            14,
+            21,
+            31
+          ],
+          [
+            15,
+            27,
+            41
+          ],
+          [
+            15,
+            106,
+            150
+          ],
+          [
+            16,
+            16,
+            26
+          ],
+          [
+            19,
+            52,
+            69
+          ],
+          [
+            19,
+            220,
+            232
+          ],
+          [
+            20,
+            29,
+            42
+          ],
+          [
+            20,
+            86,
+            135
+          ],
+          [
+            22,
+            22,
+            33
+          ],
+          [
+            22,
+            35,
+            50
+          ],
+          [
+            29,
+            31,
+            47
+          ],
+          [
+            30,
+            41,
+            66
+          ],
+          [
+            36,
+            50,
+            78
+          ],
+          [
+            36,
+            109,
+            161
+          ],
+          [
+            37,
+            156,
+            186
+          ],
+          [
+            38,
+            55,
+            76
+          ],
+          [
+            39,
+            83,
+            115
+          ],
+          [
+            43,
+            27,
+            36
+          ],
+          [
+            46,
+            62,
+            93
+          ],
+          [
+            47,
+            42,
+            55
+          ],
+          [
+            51,
+            32,
+            18
+          ],
+          [
+            52,
+            71,
+            106
+          ],
+          [
+            58,
+            38,
+            23
+          ],
+          [
+            59,
+            53,
+            66
+          ],
+          [
+            61,
+            11,
+            12
+          ],
+          [
+            63,
+            41,
+            25
+          ],
+          [
+            66,
+            45,
+            30
+          ],
+          [
+            66,
+            73,
+            96
+          ],
+          [
+            67,
+            247,
+            250
+          ],
+          [
+            73,
+            45,
+            25
+          ],
+          [
+            75,
+            52,
+            34
+          ],
+          [
+            78,
+            64,
+            73
+          ],
+          [
+            79,
+            84,
+            106
+          ],
+          [
+            82,
+            48,
+            40
+          ],
+          [
+            83,
+            52,
+            30
+          ],
+          [
+            91,
+            60,
+            35
+          ],
+          [
+            92,
+            96,
+            116
+          ],
+          [
+            95,
+            52,
+            29
+          ],
+          [
+            96,
+            66,
+            39
+          ],
+          [
+            106,
+            109,
+            126
+          ],
+          [
+            108,
+            68,
+            34
+          ],
+          [
+            109,
+            50,
+            56
+          ],
+          [
+            117,
+            64,
+            50
+          ],
+          [
+            120,
+            81,
+            41
+          ],
+          [
+            121,
+            70,
+            33
+          ],
+          [
+            122,
+            122,
+            135
+          ],
+          [
+            136,
+            135,
+            146
+          ],
+          [
+            145,
+            85,
+            36
+          ],
+          [
+            152,
+            151,
+            161
+          ],
+          [
+            154,
+            100,
+            45
+          ],
+          [
+            156,
+            89,
+            56
+          ],
+          [
+            165,
+            252,
+            241
+          ],
+          [
+            174,
+            172,
+            180
+          ],
+          [
+            188,
+            120,
+            59
+          ],
+          [
+            201,
+            149,
+            85
+          ],
+          [
+            206,
+            204,
+            209
+          ],
+          [
+            217,
+            228,
+            225
+          ],
+          [
+            221,
+            161,
+            75
+          ],
+          [
+            232,
+            101,
+            93
+          ],
+          [
+            244,
+            203,
+            112
+          ],
+          [
+            248,
+            248,
+            248
+          ],
+          [
+            255,
+            231,
+            163
+          ]
+        ],
+        "paletteColors": 74,
+        "dither": "NONE: direct exact P-index assignment",
+        "decodedExposureRgbExact": true,
+        "adjacentIdenticalExposureMergeAllowed": true,
+        "decodedFrameCount": 116,
+        "description": "10ms nearest boundary preview; original variable timing is retained in PNG/APNG, not GIF.",
+        "timingAuthority": "native.apng and QA/validation.json, not GIF"
+      },
+      "sourceInfo": {
+        "composition": "Source/Composition/elevator-homecoming.json",
+        "compositionSha256": "54f235065769ab11ca649b92a962b9ee7905b2e04e3af74c6b10ee4299e6636b",
+        "registrationSha256": "a45409210edef37584e573d3b1882c8d461cf923c3a06cc72fe4bfe494038045",
+        "actorFramesUnchanged": true,
+        "nativeScale": 1,
+        "newGeneratedLiftAssets": true
+      },
+      "sourceInfoSha256": "2ff61f5977a1978a00760c3c2d60a5fd5be4ac94f53d0cd81f2321e01a47898c",
+      "pngExportByteExact": true
+    }
+  ]
+}

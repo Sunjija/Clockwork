@@ -1,0 +1,520 @@
+{
+  "revision": "readability-v1",
+  "method": "native pixel authorship, existing Return export/timing pattern",
+  "generatedAnimationStripsUsed": false,
+  "oldAssetsModified": false,
+  "wallMask": {
+    "N": 1,
+    "E": 2,
+    "S": 4,
+    "W": 8
+  },
+  "wallClipName": "wall-{mask:02d}",
+  "palette": [
+    [
+      9,
+      17,
+      24,
+      255
+    ],
+    [
+      13,
+      23,
+      31,
+      255
+    ],
+    [
+      22,
+      78,
+      92,
+      255
+    ],
+    [
+      25,
+      36,
+      44,
+      255
+    ],
+    [
+      28,
+      139,
+      160,
+      255
+    ],
+    [
+      31,
+      43,
+      51,
+      255
+    ],
+    [
+      41,
+      55,
+      68,
+      255
+    ],
+    [
+      64,
+      82,
+      97,
+      255
+    ],
+    [
+      65,
+      210,
+      220,
+      255
+    ],
+    [
+      89,
+      109,
+      122,
+      255
+    ],
+    [
+      93,
+      55,
+      30,
+      255
+    ],
+    [
+      114,
+      130,
+      138,
+      255
+    ],
+    [
+      157,
+      244,
+      235,
+      255
+    ],
+    [
+      168,
+      100,
+      39,
+      255
+    ],
+    [
+      225,
+      250,
+      241,
+      255
+    ],
+    [
+      236,
+      157,
+      53,
+      255
+    ],
+    [
+      244,
+      87,
+      69,
+      255
+    ],
+    [
+      255,
+      211,
+      104,
+      255
+    ],
+    [
+      255,
+      239,
+      163,
+      255
+    ]
+  ],
+  "clips": [
+    {
+      "name": "floor",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-00",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-01",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-02",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-03",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-04",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-05",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-06",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-07",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-08",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-09",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-10",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-11",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-12",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-13",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-14",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "wall-15",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "battery-idle",
+      "durations": [
+        1000
+      ],
+      "width": 30,
+      "height": 32,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "orb-idle",
+      "durations": [
+        1000
+      ],
+      "width": 26,
+      "height": 26,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "battery-moving",
+      "durations": [
+        40,
+        30,
+        30,
+        30,
+        40,
+        50,
+        40,
+        35,
+        35,
+        35,
+        35,
+        40
+      ],
+      "width": 30,
+      "height": 32,
+      "loop": true,
+      "tiqueTiming": "Dash",
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "orb-moving",
+      "durations": [
+        60,
+        40,
+        80,
+        60,
+        40,
+        40,
+        60,
+        100,
+        40,
+        60,
+        60,
+        40,
+        40,
+        40
+      ],
+      "width": 26,
+      "height": 26,
+      "loop": true,
+      "tiqueTiming": "Walk",
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "battery-docked",
+      "durations": [
+        1000
+      ],
+      "width": 30,
+      "height": 32,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "orb-docked",
+      "durations": [
+        1000
+      ],
+      "width": 26,
+      "height": 26,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "amber-slot-empty",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "amber-slot-filled",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "amber-slot-wrong",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "amber-slot-connect",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": "Attack",
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "cyan-slot-empty",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "cyan-slot-filled",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "cyan-slot-wrong",
+      "durations": [
+        1000
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": null,
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    },
+    {
+      "name": "cyan-slot-connect",
+      "durations": [
+        20,
+        30,
+        40,
+        30,
+        70,
+        30,
+        40,
+        40,
+        30,
+        30,
+        40,
+        60
+      ],
+      "width": 36,
+      "height": 36,
+      "loop": false,
+      "tiqueTiming": "Attack",
+      "source": "native integer-pixel authoring; editable Piskel and pixel-delta replay"
+    }
+  ],
+  "runtimePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt",
+  "validationScope": "native asset / APNG / Piskel / palette validation; gameplay verification is separate"
+}

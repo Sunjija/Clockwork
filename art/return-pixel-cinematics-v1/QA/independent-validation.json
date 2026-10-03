@@ -1,0 +1,2583 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "label": "main-anchor-inspection",
+      "passed": true
+    },
+    {
+      "label": "export-candidate-not-human-approved",
+      "passed": true
+    },
+    {
+      "label": "export-plan-sha",
+      "passed": true
+    },
+    {
+      "label": "export-provenance-sha",
+      "passed": true
+    },
+    {
+      "label": "generated-source-copy-sha:relay",
+      "passed": true
+    },
+    {
+      "label": "generated-original-byte-preserved:relay",
+      "passed": true
+    },
+    {
+      "label": "generation-reference-sha:/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-a-board.png",
+      "passed": true
+    },
+    {
+      "label": "generation-reference-sha:/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/StateArt/workshop-power-3/00.png",
+      "passed": true
+    },
+    {
+      "label": "generated-source-copy-sha:warden-core",
+      "passed": true
+    },
+    {
+      "label": "generated-original-byte-preserved:warden-core",
+      "passed": true
+    },
+    {
+      "label": "generation-reference-sha:/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/idle/00.png",
+      "passed": true
+    },
+    {
+      "label": "generation-reference-sha:/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/stagger-open/03.png",
+      "passed": true
+    },
+    {
+      "label": "generation-reference-sha:/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-a-board.png",
+      "passed": true
+    },
+    {
+      "label": "generated-source-copy-sha:workshop",
+      "passed": true
+    },
+    {
+      "label": "generated-original-byte-preserved:workshop",
+      "passed": true
+    },
+    {
+      "label": "generation-reference-sha:/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-cinematics-storyboard-v1/Generated/sequence-b-board.png",
+      "passed": true
+    },
+    {
+      "label": "generation-reference-sha:/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/StateArt/workshop-power-3/00.png",
+      "passed": true
+    },
+    {
+      "label": "generated-source-copy-sha:initial-workshop",
+      "passed": true
+    },
+    {
+      "label": "generated-original-byte-preserved:initial-workshop",
+      "passed": true
+    },
+    {
+      "label": "generation-request-sha:requestSet",
+      "passed": true
+    },
+    {
+      "label": "generation-request-sha:editRequest",
+      "passed": true
+    },
+    {
+      "label": "native-palette64-sha",
+      "passed": true
+    },
+    {
+      "label": "native-source-output-sha:relay",
+      "passed": true
+    },
+    {
+      "label": "native640x360-alpha255:relay",
+      "passed": true
+    },
+    {
+      "label": "native-fixed-palette:relay",
+      "passed": true
+    },
+    {
+      "label": "logical-source-sha:relay",
+      "passed": true
+    },
+    {
+      "label": "logical-native2x-exact:relay",
+      "passed": true
+    },
+    {
+      "label": "native-pixelmap-sha:relay",
+      "passed": true
+    },
+    {
+      "label": "native-palette-map-replay:relay",
+      "passed": true
+    },
+    {
+      "label": "native-source-output-sha:warden-core",
+      "passed": true
+    },
+    {
+      "label": "native640x360-alpha255:warden-core",
+      "passed": true
+    },
+    {
+      "label": "native-fixed-palette:warden-core",
+      "passed": true
+    },
+    {
+      "label": "logical-source-sha:warden-core",
+      "passed": true
+    },
+    {
+      "label": "logical-native2x-exact:warden-core",
+      "passed": true
+    },
+    {
+      "label": "native-pixelmap-sha:warden-core",
+      "passed": true
+    },
+    {
+      "label": "native-palette-map-replay:warden-core",
+      "passed": true
+    },
+    {
+      "label": "native-source-output-sha:workshop",
+      "passed": true
+    },
+    {
+      "label": "native640x360-alpha255:workshop",
+      "passed": true
+    },
+    {
+      "label": "native-fixed-palette:workshop",
+      "passed": true
+    },
+    {
+      "label": "logical-source-sha:workshop",
+      "passed": true
+    },
+    {
+      "label": "logical-native2x-exact:workshop",
+      "passed": true
+    },
+    {
+      "label": "native-pixelmap-sha:workshop",
+      "passed": true
+    },
+    {
+      "label": "native-palette-map-replay:workshop",
+      "passed": true
+    },
+    {
+      "label": "native-source-output-sha:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "native640x360-alpha255:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "native-fixed-palette:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "workshop-close-shares-generated-source",
+      "passed": true
+    },
+    {
+      "label": "same-workshop-logical-crop4x-exact",
+      "passed": true
+    },
+    {
+      "label": "workshop-close-logical-crop2x-exact",
+      "passed": true
+    },
+    {
+      "label": "four-clip-names-exact",
+      "passed": true
+    },
+    {
+      "label": "clip-duration2-2-3-3s:relay-power",
+      "passed": true
+    },
+    {
+      "label": "clip-native-source-record:relay-power",
+      "passed": true
+    },
+    {
+      "label": "binary-animation-mask:relay-power",
+      "passed": true
+    },
+    {
+      "label": "animation-mask-sha:relay-power",
+      "passed": true
+    },
+    {
+      "label": "animation-native-sha:relay-power",
+      "passed": true
+    },
+    {
+      "label": "editable-count-and-sheet:relay-power",
+      "passed": true
+    },
+    {
+      "label": "editable-package-shas:relay-power",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/0",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/1",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/2",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/3",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/4",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/5",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/6",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/7",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/8",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/9",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/10",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:relay-power/11",
+      "passed": true
+    },
+    {
+      "label": "export-clip-manifest:relay-power",
+      "passed": true
+    },
+    {
+      "label": "clip-duration2-2-3-3s:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "clip-native-source-record:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "binary-animation-mask:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "animation-mask-sha:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "animation-native-sha:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "editable-count-and-sheet:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "editable-package-shas:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/0",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/1",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/2",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/3",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/4",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/5",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/6",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/7",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/8",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/9",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/10",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:warden-boot/11",
+      "passed": true
+    },
+    {
+      "label": "export-clip-manifest:warden-boot",
+      "passed": true
+    },
+    {
+      "label": "clip-duration2-2-3-3s:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "clip-native-source-record:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "binary-animation-mask:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "animation-mask-sha:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "animation-native-sha:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "editable-count-and-sheet:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "editable-package-shas:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/0",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/1",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/2",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/3",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/4",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/5",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/6",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/7",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/8",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/9",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/10",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/11",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/12",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/13",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/14",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-wide/15",
+      "passed": true
+    },
+    {
+      "label": "export-clip-manifest:workshop-wide",
+      "passed": true
+    },
+    {
+      "label": "clip-duration2-2-3-3s:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "clip-native-source-record:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "binary-animation-mask:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "animation-mask-sha:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "animation-native-sha:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "editable-count-and-sheet:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "editable-package-shas:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/0",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/1",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/2",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/3",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/4",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/5",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/6",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/7",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/8",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/9",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/10",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/11",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/12",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/13",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/14",
+      "passed": true
+    },
+    {
+      "label": "frame-alpha-size:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "frame-palette:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "export-byte-sha:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "export-frame-source-record:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "animation-frame-record:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "native-delta-replay:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "nonanimated-pixels-invariant:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "delta-replay:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "piskel-replay:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "apng-rgba-duration:workshop-close/15",
+      "passed": true
+    },
+    {
+      "label": "export-clip-manifest:workshop-close",
+      "passed": true
+    },
+    {
+      "label": "readme-absolute-links-exist",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "unityFilesWritten": false,
+  "geometryRigidMathematicalApproval": "pending",
+  "humanAppearanceApproval": "pending"
+}

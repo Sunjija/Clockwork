@@ -1,0 +1,367 @@
+{
+  "assets": {
+    "ReadabilityArtV2/cyan-slot-filled/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/cyan-slot-filled/00.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/cyan-slot-filled/00.png",
+      "sha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd"
+    },
+    "ReadabilityArtV2/orb-docked/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/orb-docked/00.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/orb-docked/00.png",
+      "sha256": "dd7d0296176f4dc76a3057b67d6c025b37aa561fc640ef8071e9f462e7f24c89"
+    },
+    "ReadabilityArtV2/amber-slot-filled/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-filled/00.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-filled/00.png",
+      "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+    },
+    "ReadabilityArtV2/battery-docked/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-docked/00.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-docked/00.png",
+      "sha256": "1267f087ac2340d670adc0c2cf71b7a9fb00597a789880e1e74c84b2b9c1e218"
+    },
+    "ReadabilityArtV2/amber-slot-empty/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-empty/00.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-empty/00.png",
+      "sha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca"
+    },
+    "ReadabilityArtV2/battery-moving/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/00.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/00.png",
+      "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+    },
+    "TiqueV10/push-side/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/00.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/00.png",
+      "sha256": "1c13ae44b6d0b15cedd0b80cb1139a910898299ae650180a11ad2a8b22465c58"
+    },
+    "ReadabilityArtV2/battery-moving/01.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/01.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/01.png",
+      "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+    },
+    "TiqueV10/push-side/01.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/01.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/01.png",
+      "sha256": "1c13ae44b6d0b15cedd0b80cb1139a910898299ae650180a11ad2a8b22465c58"
+    },
+    "ReadabilityArtV2/battery-moving/02.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/02.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/02.png",
+      "sha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea"
+    },
+    "ReadabilityArtV2/battery-moving/03.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/03.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/03.png",
+      "sha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea"
+    },
+    "TiqueV10/push-side/02.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/02.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/02.png",
+      "sha256": "43d5d9e55068ac99d64e187dddebd9cb0ed87b6f61c6344229023af293aa3de0"
+    },
+    "ReadabilityArtV2/battery-moving/04.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/04.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/04.png",
+      "sha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea"
+    },
+    "ReadabilityArtV2/battery-moving/05.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/05.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/05.png",
+      "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+    },
+    "TiqueV10/push-side/03.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/03.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/03.png",
+      "sha256": "43d5d9e55068ac99d64e187dddebd9cb0ed87b6f61c6344229023af293aa3de0"
+    },
+    "ReadabilityArtV2/battery-moving/06.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/06.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/06.png",
+      "sha256": "6f867303457eeaf29136c2e9ca883645ca5eab92dea6230e26920dd8ef3fef4b"
+    },
+    "TiqueV10/push-side/04.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/04.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/04.png",
+      "sha256": "43d5d9e55068ac99d64e187dddebd9cb0ed87b6f61c6344229023af293aa3de0"
+    },
+    "ReadabilityArtV2/battery-moving/07.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/07.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/07.png",
+      "sha256": "c83d3cbbbe1f70d57ed157b665d553c9af41b98aa5cc5831f3fa2ca90692a770"
+    },
+    "TiqueV10/push-side/05.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/05.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/05.png",
+      "sha256": "890c8b5f4bbc2769b837dda4429cfa8d08881e38bbf6898a14a816d1b37b1f13"
+    },
+    "ReadabilityArtV2/battery-moving/08.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/08.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/08.png",
+      "sha256": "7c2d826575b289d24040bb1087d2ae1457bb64f0fdda7d854f99a7aa9cb5941a"
+    },
+    "TiqueV10/push-side/06.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/06.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/06.png",
+      "sha256": "1c13ae44b6d0b15cedd0b80cb1139a910898299ae650180a11ad2a8b22465c58"
+    },
+    "ReadabilityArtV2/battery-moving/09.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/09.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/09.png",
+      "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+    },
+    "ReadabilityArtV2/battery-moving/10.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/10.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/10.png",
+      "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+    },
+    "TiqueV10/push-side/07.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/07.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/07.png",
+      "sha256": "1c13ae44b6d0b15cedd0b80cb1139a910898299ae650180a11ad2a8b22465c58"
+    },
+    "ReadabilityArtV2/battery-moving/11.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/battery-moving/11.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/battery-moving/11.png",
+      "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+    },
+    "TiqueV10/push-side/08.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/08.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/08.png",
+      "sha256": "1a375fe164298717bbd7676c8bd12351ed1cc13a3eb9f96584d990433cbfbd66"
+    },
+    "TiqueV10/push-side/09.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/09.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/09.png",
+      "sha256": "1a375fe164298717bbd7676c8bd12351ed1cc13a3eb9f96584d990433cbfbd66"
+    },
+    "TiqueV10/push-side/10.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/10.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/10.png",
+      "sha256": "1a375fe164298717bbd7676c8bd12351ed1cc13a3eb9f96584d990433cbfbd66"
+    },
+    "TiqueV10/push-side/11.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/11.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/11.png",
+      "sha256": "890c8b5f4bbc2769b837dda4429cfa8d08881e38bbf6898a14a816d1b37b1f13"
+    },
+    "TiqueV10/push-side/12.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/12.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/12.png",
+      "sha256": "1c13ae44b6d0b15cedd0b80cb1139a910898299ae650180a11ad2a8b22465c58"
+    },
+    "TiqueV10/push-side/13.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/push-side/13.png",
+      "projectCopy": "Source/Reused/TiqueV10/push-side/13.png",
+      "sha256": "1c13ae44b6d0b15cedd0b80cb1139a910898299ae650180a11ad2a8b22465c58"
+    },
+    "ReadabilityArtV2/amber-slot-connect/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/00.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/00.png",
+      "sha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca"
+    },
+    "TiqueV10/Idle/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Idle/00.png",
+      "projectCopy": "Source/Reused/TiqueV10/Idle/00.png",
+      "sha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41"
+    },
+    "ReadabilityArtV2/amber-slot-connect/01.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/01.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/01.png",
+      "sha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca"
+    },
+    "ReadabilityArtV2/amber-slot-connect/02.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/02.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/02.png",
+      "sha256": "62a371dda4be3a62a18fbfbfcd00309400e4253d3b00b9c1f3585c9e42a1d2dd"
+    },
+    "ReadabilityArtV2/amber-slot-connect/03.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/03.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/03.png",
+      "sha256": "62a371dda4be3a62a18fbfbfcd00309400e4253d3b00b9c1f3585c9e42a1d2dd"
+    },
+    "ReadabilityArtV2/amber-slot-connect/04.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/04.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/04.png",
+      "sha256": "9e523da9998e494de93450258717abfa4df5062fa3605f7c77a2cf0216633089"
+    },
+    "ReadabilityArtV2/amber-slot-connect/05.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/05.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/05.png",
+      "sha256": "9e523da9998e494de93450258717abfa4df5062fa3605f7c77a2cf0216633089"
+    },
+    "ReadabilityArtV2/amber-slot-connect/06.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/06.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/06.png",
+      "sha256": "5ebdb73c5bb8e9763c52f265cfc7625687fbb69876ff1356109aa2933df94cdc"
+    },
+    "ReadabilityArtV2/amber-slot-connect/07.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/07.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/07.png",
+      "sha256": "5ebdb73c5bb8e9763c52f265cfc7625687fbb69876ff1356109aa2933df94cdc"
+    },
+    "ReadabilityArtV2/amber-slot-connect/08.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/08.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/08.png",
+      "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+    },
+    "ReadabilityArtV2/amber-slot-connect/09.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/09.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/09.png",
+      "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+    },
+    "ReadabilityArtV2/amber-slot-connect/10.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/10.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/10.png",
+      "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+    },
+    "ReadabilityArtV2/amber-slot-connect/11.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/amber-slot-connect/11.png",
+      "projectCopy": "Source/Reused/ReadabilityArtV2/amber-slot-connect/11.png",
+      "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+    },
+    "WardenV8/boot/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/00.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/00.png",
+      "sha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542"
+    },
+    "WardenV8/boot/01.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/01.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/01.png",
+      "sha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f"
+    },
+    "WardenV8/boot/02.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/02.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/02.png",
+      "sha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e"
+    },
+    "WardenV8/boot/03.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/03.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/03.png",
+      "sha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9"
+    },
+    "WardenV8/boot/04.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/04.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/04.png",
+      "sha256": "19c8c9647b1a759458da787447b8ef94adfdd6f2a81395bc49e942b619aee1cf"
+    },
+    "WardenV8/boot/05.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/05.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/05.png",
+      "sha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177"
+    },
+    "WardenV8/boot/06.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/06.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/06.png",
+      "sha256": "eb993a32da474263515ae2224d4fdccfd67c252fcd5c82eec3159f0a453e4b1d"
+    },
+    "WardenV8/boot/07.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/boot/07.png",
+      "projectCopy": "Source/Reused/WardenV8/boot/07.png",
+      "sha256": "d7496f48861251f3065b18945466c6db838fa494e0a44537ea0de3a094c05017"
+    },
+    "WardenV8/defeat/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/00.png",
+      "projectCopy": "Source/Reused/WardenV8/defeat/00.png",
+      "sha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177"
+    },
+    "WardenV8/defeat/01.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/01.png",
+      "projectCopy": "Source/Reused/WardenV8/defeat/01.png",
+      "sha256": "828c6ff2e8465e49753def44d872f85db12f3eaad34d9e1a7230ab397ce57d81"
+    },
+    "WardenV8/defeat/02.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/02.png",
+      "projectCopy": "Source/Reused/WardenV8/defeat/02.png",
+      "sha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9"
+    },
+    "WardenV8/defeat/03.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/03.png",
+      "projectCopy": "Source/Reused/WardenV8/defeat/03.png",
+      "sha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e"
+    },
+    "WardenV8/defeat/04.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/04.png",
+      "projectCopy": "Source/Reused/WardenV8/defeat/04.png",
+      "sha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f"
+    },
+    "WardenV8/defeat/05.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/defeat/05.png",
+      "projectCopy": "Source/Reused/WardenV8/defeat/05.png",
+      "sha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542"
+    },
+    "TiqueV10/Walk/00.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/00.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/00.png",
+      "sha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb"
+    },
+    "TiqueV10/Walk/01.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/01.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/01.png",
+      "sha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46"
+    },
+    "TiqueV10/Walk/02.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/02.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/02.png",
+      "sha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999"
+    },
+    "TiqueV10/Walk/03.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/03.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/03.png",
+      "sha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2"
+    },
+    "TiqueV10/Walk/04.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/04.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/04.png",
+      "sha256": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da"
+    },
+    "TiqueV10/Walk/05.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/05.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/05.png",
+      "sha256": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f"
+    },
+    "TiqueV10/Walk/06.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/06.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/06.png",
+      "sha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9"
+    },
+    "TiqueV10/Walk/07.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/07.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/07.png",
+      "sha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a"
+    },
+    "TiqueV10/Walk/08.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/08.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/08.png",
+      "sha256": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d"
+    },
+    "TiqueV10/Walk/09.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/09.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/09.png",
+      "sha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9"
+    },
+    "TiqueV10/Walk/10.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/10.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/10.png",
+      "sha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be"
+    },
+    "TiqueV10/Walk/11.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/11.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/11.png",
+      "sha256": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9"
+    },
+    "TiqueV10/Walk/12.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/12.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/12.png",
+      "sha256": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9"
+    },
+    "TiqueV10/Walk/13.png": {
+      "original": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/TiqueV10/Walk/13.png",
+      "projectCopy": "Source/Reused/TiqueV10/Walk/13.png",
+      "sha256": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48"
+    }
+  },
+  "spriteFrameRgbaUnchanged": true,
+  "posesGeneratedAgain": false,
+  "unityFilesWritten": false
+}

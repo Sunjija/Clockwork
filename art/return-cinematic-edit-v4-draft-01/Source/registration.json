@@ -1,0 +1,45 @@
+{
+  "nativeInspectedByMain": true,
+  "humanAppearanceApproval": "pending",
+  "carriageFloorAnchor": [
+    64,
+    94
+  ],
+  "carCenterX": 310,
+  "lowerFloorY": 282,
+  "exitFloorY": -32,
+  "boardingStartX": 206,
+  "awakeningDockCrop": [
+    192,
+    130,
+    320,
+    180
+  ],
+  "collapseMediumCrop": [
+    290,
+    118,
+    320,
+    180
+  ],
+  "deadCoreCrop": [
+    326,
+    220,
+    160,
+    90
+  ],
+  "boardingCrop": [
+    150,
+    150,
+    320,
+    180
+  ],
+  "guideInsertCrop": [
+    328,
+    180,
+    160,
+    90
+  ],
+  "riderTrackingX": 230,
+  "riderScreenFootLogical": 78,
+  "inspectionNotes": "Main inspected real imagegen original and derived640x360 destination-free shaft. Upper workshop and y172landing absent; y282lowerboardingfloor and rails retained. Car128x128 unchanged v3nativefloor94. Different shot sizes crop the SAME world at integer2x/4x; no pose/part redraw, no targetroom ordisembark. Camera on originalsource axis."
+}

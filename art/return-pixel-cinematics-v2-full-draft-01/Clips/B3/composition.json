@@ -1,0 +1,139 @@
+{
+  "frames": [
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/00.png",
+      "sourcePngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "timeMs": 0,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/01.png",
+      "sourcePngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "timeMs": 160,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/02.png",
+      "sourcePngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+      "timeMs": 320,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/03.png",
+      "sourcePngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+      "timeMs": 480,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/04.png",
+      "sourcePngSha256": "8ebc65dbe2032cc89019ed44fd42d019ad54aab0efaf0e0301fe45015bbd621d",
+      "timeMs": 640,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "4cfb2538a7712a1d259a4537ba7da2c68aecefee8133b63b8cebfbee94cf77ec"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/05.png",
+      "sourcePngSha256": "8ebc65dbe2032cc89019ed44fd42d019ad54aab0efaf0e0301fe45015bbd621d",
+      "timeMs": 800,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "4cfb2538a7712a1d259a4537ba7da2c68aecefee8133b63b8cebfbee94cf77ec"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/06.png",
+      "sourcePngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+      "timeMs": 960,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/07.png",
+      "sourcePngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+      "timeMs": 1120,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/08.png",
+      "sourcePngSha256": "64b266c3717c67a93d5a3da14a5ebfd2acbdd55ec24a642e404b620ca2e25624",
+      "timeMs": 1280,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "717106ad313dae8557d696b26a06fba2d9807950993576ec651f9b0180366e5f"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/09.png",
+      "sourcePngSha256": "4b53648dfd989d4794dd233132f4e067f3179a08803c76d1aaf5a03b5516ffc5",
+      "timeMs": 1440,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "2125495a5b3ec35aaa4b2332acf013937cb9bc6b1cc8037b92367bbadded0df3"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/10.png",
+      "sourcePngSha256": "4b53648dfd989d4794dd233132f4e067f3179a08803c76d1aaf5a03b5516ffc5",
+      "timeMs": 1600,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "2125495a5b3ec35aaa4b2332acf013937cb9bc6b1cc8037b92367bbadded0df3"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/11.png",
+      "sourcePngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+      "timeMs": 1760,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/12.png",
+      "sourcePngSha256": "e2c8bf7a80dffaa6674fff7363b48e464521c47e800dfe27814b4fc2b43c64e2",
+      "timeMs": 1920,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "d22e5ea899527abb979591fedde5f8dd5a3c1f68857ff0d969b3c97c46e3ebe9"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/13.png",
+      "sourcePngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "timeMs": 2080,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/14.png",
+      "sourcePngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "timeMs": 2240,
+      "durationMs": 160,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/workshop-wide/15.png",
+      "sourcePngSha256": "6cf4123a220ea65962a2ce3d95c5fa0db13cb8e3ee9d4c0ddc0b4def5511459d",
+      "timeMs": 2400,
+      "durationMs": 600,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "8f7495cc0a4a77e9580063faa95a0c50f043ad1d5c36bfe0e1c8b6b8f46e789c"
+    }
+  ],
+  "sourceInfo": {
+    "priorClip": "workshop-wide",
+    "priorGeneratedSource": "Source/v1-provenance.json",
+    "originalFrameTimingPreserved": true,
+    "newPropsAuthored": false,
+    "captionOnsetMs": null
+  }
+}

@@ -6,6 +6,17 @@ namespace TiqueReturn
     // no independent visual latch can claim a disconnected socket is powered.
     public static class WorldArtState
     {
+        // Connected wall tiles: N=1, E=2, S=4, W=8; outside the board
+        // is not a neighboring tile, even though it blocks puzzle movement.
+        public static int WallMask(CorePuzzle p,int pos)
+        {
+            int mask=0,x=pos%7,y=pos/7;
+            if(y>0&&p.Wall(pos-7))mask|=1;
+            if(x<6&&p.Wall(pos+1))mask|=2;
+            if(y<6&&p.Wall(pos+7))mask|=4;
+            if(x>0&&p.Wall(pos-1))mask|=8;
+            return mask;
+        }
         public static string Socket(CorePuzzle p,int goal,out float age)
         {
             age=0;string prefix=p.room.types[goal]==0?"amber-slot-":"cyan-slot-";

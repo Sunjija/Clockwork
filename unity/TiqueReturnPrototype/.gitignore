@@ -10,6 +10,8 @@
 *.sln
 *.slnx
 !Tools/ModelChecks/*.csproj
+!Tools/CompileGame/CompileGame.csproj
+/Tools/CompileGame/obj/
 /Tools/ModelChecks/bin/
 /Tools/ModelChecks/obj/
 /QA/StaticCompile/

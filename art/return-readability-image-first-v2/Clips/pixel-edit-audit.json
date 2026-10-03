@@ -1,0 +1,1220 @@
+[
+  {
+    "name": "floor",
+    "nativeAsset": "floor",
+    "method": "Unchanged generated-source native floor",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "06d1778a5a202af2c5984ca2c445731fc574509a327a22105e7e6953fc157b5a",
+        "pngSha256": "f5663fb4ead32c236d8a779d291ffd6f40b3da91ce64fb1618e77e98aa2deee3"
+      }
+    ]
+  },
+  {
+    "name": "wall-00",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 0",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "4fe03bcf42bc833492bc73869632555f885f8446f2faca23f3f6aca9ed8a8d72",
+        "pngSha256": "fda3561c2f87fb4c6a53fcb352b85f2e3a1921e793c7fe0a94e4275aacbcdb55"
+      }
+    ]
+  },
+  {
+    "name": "wall-01",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 1",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 119,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "bb75eeb9921e39ae6313dbcf6b938437facf5e75dea75a2ae593c46bc6058d56",
+        "pngSha256": "ebe71ae977452429b0acf01d60edd62f69b14e7877bab41c04d67f237c23492f"
+      }
+    ]
+  },
+  {
+    "name": "wall-02",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 2",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 73,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "4b2627bda1a1e372923e4e4805e1b3e15b2ca54a17bcbd67b22241f534611c47",
+        "pngSha256": "3deb6aa2abf3a0a5790f9e1628434ed6a06c28dfbffc85c7bcb6ac8963d0b576"
+      }
+    ]
+  },
+  {
+    "name": "wall-03",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 3",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 183,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "44a98cbc5dbcf9a850ebdd6a21bfdb348bcf4f8cb8e526975826b46d866cce22",
+        "pngSha256": "83fa443bb7cf424ec7259e973ba7904b37a8da7724c76178f3ab1bd815688ddc"
+      }
+    ]
+  },
+  {
+    "name": "wall-04",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 4",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 91,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "6e613e39fead210f0f740815dcd86ab21bce0c66b0d923b29ec319288896d3cc",
+        "pngSha256": "233b53ef5ff195862a0814f37b734875ad4cc6092bc5574977830b36eb60cae8"
+      }
+    ]
+  },
+  {
+    "name": "wall-05",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 5",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 210,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "5e0da7783f75f6d2d2e66c7e1f79c7fa50b1304d7a18043395a9346749f3539e",
+        "pngSha256": "5046a762f44ad4c92fec13ea5a150698407e385132b6332197f8e7483ddf1f88"
+      }
+    ]
+  },
+  {
+    "name": "wall-06",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 6",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 159,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "2ae466b4fd853d063bedd50e7d9d6284fb66e39f26e3257d9e9dde22880343ea",
+        "pngSha256": "b867fc648171c30fe4c9ea296a85b82a70546054fab24dafb1cd881696e9ef61"
+      }
+    ]
+  },
+  {
+    "name": "wall-07",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 7",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 269,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "97d0a0908b5f58c2e91ac443b930f5a02f172a5b2812ead824f4ef974e05a42d",
+        "pngSha256": "48f44fdd8678a65207909879c03c8dfb46b006223948cce0dc55df2d6a6de3cb"
+      }
+    ]
+  },
+  {
+    "name": "wall-08",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 8",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 86,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "0351200a6cee64e033fdebbd0c664f0bbe2a43d6326bf30d618990e0cf53f679",
+        "pngSha256": "5517f532d1962615fea56f285bceb5801184f99af9b9d4b2cefe1e3e36ea1c8c"
+      }
+    ]
+  },
+  {
+    "name": "wall-09",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 9",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 200,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "38d5c46ced308b9ec9188bd35b9e725dbdb82f2439b4f16304cb936f7f13f8b9",
+        "pngSha256": "d66d1a34f822d593f6e31c32975edd14acee318ccf234d05a6eff218e165ea76"
+      }
+    ]
+  },
+  {
+    "name": "wall-10",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 10",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 159,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "46143e96d6b6e95d4116b6dcb0e3d821c3d91cdf32f041854e9753f832128378",
+        "pngSha256": "89ce9244cf48af897ebbc0b97765a5c878e14b98eb66bdbb7d55f5d36870318d"
+      }
+    ]
+  },
+  {
+    "name": "wall-11",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 11",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 264,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "5abc86446ac05451b82995b89115c225939095d0093c5771c663fc3228e7f765",
+        "pngSha256": "82089adbd924db02066585b1068f6535d2f0d59972627099a9698940ae442313"
+      }
+    ]
+  },
+  {
+    "name": "wall-12",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 12",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 173,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "62ea7a9a6c7d9468e858163da8f494d8981f0ae1a206d583cdea9f2fec0d93dc",
+        "pngSha256": "d9436417e5ad148cb27d505b9d370aa389ab751b837983169db38b0baf5c3a04"
+      }
+    ]
+  },
+  {
+    "name": "wall-13",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 13",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 287,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "cb321a54a3e6f634f104747805f4ad27c06abe2576ed07e0a541b103936d118e",
+        "pngSha256": "df4e60c02af95abf87fd45dccf658009482d46ce549d5a935bfa1b41d04f9d05"
+      }
+    ]
+  },
+  {
+    "name": "wall-14",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 14",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 241,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "de56cd13117bfd2777281b4750f049a6294a7e8d4ffe73903e0d176c1ec3fc06",
+        "pngSha256": "76608122fad8306c8e22f70af45af9627c78db1fa542e7ddab3c97ab12fe138e"
+      }
+    ]
+  },
+  {
+    "name": "wall-15",
+    "nativeAsset": "wall",
+    "method": "Connected border strip samples only; adjacency mask 15",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 346,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "3ea8f9d6e01a19fff04c1857473d6d8638852407a3fdb602ff73f0edcf29da48",
+        "pngSha256": "c8c7d25e110687b6f06f419fdd7f40eb9214af3a5cc3935ad04e72de9f7f0a51"
+      }
+    ]
+  },
+  {
+    "name": "battery-idle",
+    "nativeAsset": "weight",
+    "method": "Unchanged native source",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b",
+        "pngSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+      }
+    ]
+  },
+  {
+    "name": "orb-idle",
+    "nativeAsset": "orb",
+    "method": "Unchanged native source",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "89c1b42ff66f3db6cf22b6262e9371c59166ec87f823db0a7b2b4e1462995b66",
+        "pngSha256": "16a8fba36b27c239f3529d09cb97f0d367d63eb257b2fd4ee4dcff63ecc00bba"
+      }
+    ]
+  },
+  {
+    "name": "battery-moving",
+    "nativeAsset": "weight",
+    "method": "Source handle integer 1px flex; body/foot fixed. Docked source contact pixels highlight.",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b",
+        "pngSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+      },
+      {
+        "frame": 1,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b",
+        "pngSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+      },
+      {
+        "frame": 2,
+        "changedPixelsFromFirstFrame": 91,
+        "changedPixelsFromNativeSource": 91,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "470d593f6d89930c4279df2cf6cbc37572d4280a1b5b49bfe7ddbe6376334332",
+        "pngSha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea"
+      },
+      {
+        "frame": 3,
+        "changedPixelsFromFirstFrame": 91,
+        "changedPixelsFromNativeSource": 91,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "470d593f6d89930c4279df2cf6cbc37572d4280a1b5b49bfe7ddbe6376334332",
+        "pngSha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea"
+      },
+      {
+        "frame": 4,
+        "changedPixelsFromFirstFrame": 91,
+        "changedPixelsFromNativeSource": 91,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "470d593f6d89930c4279df2cf6cbc37572d4280a1b5b49bfe7ddbe6376334332",
+        "pngSha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea"
+      },
+      {
+        "frame": 5,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b",
+        "pngSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+      },
+      {
+        "frame": 6,
+        "changedPixelsFromFirstFrame": 87,
+        "changedPixelsFromNativeSource": 87,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "25f72aa9010162d6108aff69879787b0855df3971e2d8d76ef3019878189dd60",
+        "pngSha256": "6f867303457eeaf29136c2e9ca883645ca5eab92dea6230e26920dd8ef3fef4b"
+      },
+      {
+        "frame": 7,
+        "changedPixelsFromFirstFrame": 91,
+        "changedPixelsFromNativeSource": 91,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "f96bf10a64ece75c5bcb4cafc54db429c6c90b4f889347ccfd0aa318fb46ea84",
+        "pngSha256": "c83d3cbbbe1f70d57ed157b665d553c9af41b98aa5cc5831f3fa2ca90692a770"
+      },
+      {
+        "frame": 8,
+        "changedPixelsFromFirstFrame": 4,
+        "changedPixelsFromNativeSource": 4,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "b04ca86892f69ea4dff69a47dd05e28804db81571abb01aaf53ed26cc3c8785b",
+        "pngSha256": "7c2d826575b289d24040bb1087d2ae1457bb64f0fdda7d854f99a7aa9cb5941a"
+      },
+      {
+        "frame": 9,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b",
+        "pngSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+      },
+      {
+        "frame": 10,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b",
+        "pngSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+      },
+      {
+        "frame": 11,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b",
+        "pngSha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2"
+      }
+    ]
+  },
+  {
+    "name": "orb-moving",
+    "nativeAsset": "orb",
+    "method": "Source inner meridian clusters integer remap; fixed silhouette/light. Docked source contact highlight.",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "89c1b42ff66f3db6cf22b6262e9371c59166ec87f823db0a7b2b4e1462995b66",
+        "pngSha256": "16a8fba36b27c239f3529d09cb97f0d367d63eb257b2fd4ee4dcff63ecc00bba"
+      },
+      {
+        "frame": 1,
+        "changedPixelsFromFirstFrame": 28,
+        "changedPixelsFromNativeSource": 28,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "40cb1436be67d101daff90e301f71e4c1b7e8f4ee39dcdff8c33fcbe1b3e25d5",
+        "pngSha256": "2971540ecb9e792d2d070a9698296bf04b3c337b57e6dc07ddea1efe209fb312"
+      },
+      {
+        "frame": 2,
+        "changedPixelsFromFirstFrame": 31,
+        "changedPixelsFromNativeSource": 31,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "b4cfff29e798afe8722ad662d5e0a3c5003a443fff83b1247649c03896e12972",
+        "pngSha256": "0f7eb6d1cdb63354c70c90511471b65e061b522772bf5fe8a5c2ad33a42c898f"
+      },
+      {
+        "frame": 3,
+        "changedPixelsFromFirstFrame": 31,
+        "changedPixelsFromNativeSource": 31,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "fe5fe1b6e82723c2997e0849f04ac439f12a3a3be4461e6e75ab490df7489234",
+        "pngSha256": "d37a88faf0a6daa1190367b83e164b5b73a61c93ec4c80eb81fef70bbd55d876"
+      },
+      {
+        "frame": 4,
+        "changedPixelsFromFirstFrame": 32,
+        "changedPixelsFromNativeSource": 32,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "e59abe29f3209e3e7f734b58e735271f32f8391b9287920ddc17846c29b1b808",
+        "pngSha256": "9508bc8f9d4574f7aa2a6ffe81fb8a0549a545b252155ef7978e65d49547bcdc"
+      },
+      {
+        "frame": 5,
+        "changedPixelsFromFirstFrame": 31,
+        "changedPixelsFromNativeSource": 31,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "507a44f56aa57e5537ec9f0efd8f344f5f22f14df9f1ce3eb8702614b3689995",
+        "pngSha256": "bdd6a47b63b1c36a7ee02d04f8e3c12be9adf30f80cb08e65764a5745bb1c95d"
+      },
+      {
+        "frame": 6,
+        "changedPixelsFromFirstFrame": 30,
+        "changedPixelsFromNativeSource": 30,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "3c93a83a5699b61d21bfcd1c8a7867843e95cf880bfea19e0408d84bf0d16393",
+        "pngSha256": "0c6380a56085b8a79765234acc8110832b866c70a4ae11d4731fc77954e39572"
+      },
+      {
+        "frame": 7,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "89c1b42ff66f3db6cf22b6262e9371c59166ec87f823db0a7b2b4e1462995b66",
+        "pngSha256": "16a8fba36b27c239f3529d09cb97f0d367d63eb257b2fd4ee4dcff63ecc00bba"
+      },
+      {
+        "frame": 8,
+        "changedPixelsFromFirstFrame": 28,
+        "changedPixelsFromNativeSource": 28,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "f91c401ee5bb863c41b7c4c04f951a23c9c0807aa7ff2442564423852f2b2b00",
+        "pngSha256": "26c7c72d8525a9c3c95f094927ee5a1d4cb0f17d55c4b64beaa74f148d42b598"
+      },
+      {
+        "frame": 9,
+        "changedPixelsFromFirstFrame": 30,
+        "changedPixelsFromNativeSource": 30,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "e9c592fcb1e7ddcb4c01782d4c4c35e044f372d86df71837034ca60f5434cf96",
+        "pngSha256": "648d59613389215ebf724f353f78424f0219343f453601630d982b2dc508dc56"
+      },
+      {
+        "frame": 10,
+        "changedPixelsFromFirstFrame": 23,
+        "changedPixelsFromNativeSource": 23,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "069a2fe4da7f86b55d4a4198df6883b82f23550d7da5a6cb9ee5c03c13225fe7",
+        "pngSha256": "8e10be2ffd7d0f53afdcf38c4ccad99f086e5c51b396f0b8cbaa1455e91ecbe2"
+      },
+      {
+        "frame": 11,
+        "changedPixelsFromFirstFrame": 25,
+        "changedPixelsFromNativeSource": 25,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "af3b20c18879b02f01dda83a79ed9b63d379390d96b55763b06116be2e16a6d0",
+        "pngSha256": "7fc39462852bded97c693c94d5a923fba29f1427d3227bc28424037839fa7b9a"
+      },
+      {
+        "frame": 12,
+        "changedPixelsFromFirstFrame": 31,
+        "changedPixelsFromNativeSource": 31,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "5a3ecafb9d903bb585251f985bf97f6d96b43840fdfaeb902dd5160886933f30",
+        "pngSha256": "b481c38eeda0fd20f893275bb583e5f23581efb4a6e95a08cc11c9c446991fe1"
+      },
+      {
+        "frame": 13,
+        "changedPixelsFromFirstFrame": 31,
+        "changedPixelsFromNativeSource": 31,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "9701a553e1bec8a34001d1c4e7238dfb0f56ec01ca62b989040f98594f4bd044",
+        "pngSha256": "d43300ad201f6b2b4bd68b46f680e0c84784e143c138ba94ec249c3ecc5c3f7b"
+      }
+    ]
+  },
+  {
+    "name": "battery-docked",
+    "nativeAsset": "weight",
+    "method": "Source handle integer 1px flex; body/foot fixed. Docked source contact pixels highlight.",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 31,
+        "bounds": [
+          0,
+          0,
+          29,
+          32
+        ],
+        "rgbaSha256": "fa53e6b6f993624a7cc99daeca022d35b92d845a91a0e36f317af374555760eb",
+        "pngSha256": "1267f087ac2340d670adc0c2cf71b7a9fb00597a789880e1e74c84b2b9c1e218"
+      }
+    ]
+  },
+  {
+    "name": "orb-docked",
+    "nativeAsset": "orb",
+    "method": "Source inner meridian clusters integer remap; fixed silhouette/light. Docked source contact highlight.",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 34,
+        "bounds": [
+          0,
+          0,
+          26,
+          26
+        ],
+        "rgbaSha256": "17b23f9cb4dd98caee7e1db2dcb7f2ee1547881f1090644e4fb5fdf86d8f5223",
+        "pngSha256": "dd7d0296176f4dc76a3057b67d6c025b37aa561fc640ef8071e9f462e7f24c89"
+      }
+    ]
+  },
+  {
+    "name": "amber-slot-empty",
+    "nativeAsset": "weight_socket",
+    "method": "Unchanged native source",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "7eb617109f0d0f114d6f865cc28b371a6cbfa3d724d53ea478ad7b4508fa078e",
+        "pngSha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca"
+      }
+    ]
+  },
+  {
+    "name": "amber-slot-filled",
+    "nativeAsset": "weight_socket",
+    "method": "Four source outer rim quadrants highlighted, cavity unchanged",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 176,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48",
+        "pngSha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+      }
+    ]
+  },
+  {
+    "name": "amber-slot-wrong",
+    "nativeAsset": "weight_socket",
+    "method": "Unchanged existing red corner port marks reused over native socket",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 52,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "e753d79e67007bd6c1e5432783730f42175a817572349236a68727c7cfbd7e50",
+        "pngSha256": "c35c7f9c8dd957033521abba102ae833944918005a796f031934a20cb36deb71"
+      }
+    ]
+  },
+  {
+    "name": "amber-slot-connect",
+    "nativeAsset": "weight_socket",
+    "method": "Source outer rim quadrants light sequentially; existing Attack timing",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "7eb617109f0d0f114d6f865cc28b371a6cbfa3d724d53ea478ad7b4508fa078e",
+        "pngSha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca"
+      },
+      {
+        "frame": 1,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "7eb617109f0d0f114d6f865cc28b371a6cbfa3d724d53ea478ad7b4508fa078e",
+        "pngSha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca"
+      },
+      {
+        "frame": 2,
+        "changedPixelsFromFirstFrame": 48,
+        "changedPixelsFromNativeSource": 48,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "112b0679106bc4474ef728c64bf3169375bf494c51e4205d8de276efa829b52c",
+        "pngSha256": "62a371dda4be3a62a18fbfbfcd00309400e4253d3b00b9c1f3585c9e42a1d2dd"
+      },
+      {
+        "frame": 3,
+        "changedPixelsFromFirstFrame": 48,
+        "changedPixelsFromNativeSource": 48,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "112b0679106bc4474ef728c64bf3169375bf494c51e4205d8de276efa829b52c",
+        "pngSha256": "62a371dda4be3a62a18fbfbfcd00309400e4253d3b00b9c1f3585c9e42a1d2dd"
+      },
+      {
+        "frame": 4,
+        "changedPixelsFromFirstFrame": 93,
+        "changedPixelsFromNativeSource": 93,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "c178963360c9175306fefdd793d7766f0391496e3914312fe372ef4f8c65385d",
+        "pngSha256": "9e523da9998e494de93450258717abfa4df5062fa3605f7c77a2cf0216633089"
+      },
+      {
+        "frame": 5,
+        "changedPixelsFromFirstFrame": 93,
+        "changedPixelsFromNativeSource": 93,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "c178963360c9175306fefdd793d7766f0391496e3914312fe372ef4f8c65385d",
+        "pngSha256": "9e523da9998e494de93450258717abfa4df5062fa3605f7c77a2cf0216633089"
+      },
+      {
+        "frame": 6,
+        "changedPixelsFromFirstFrame": 135,
+        "changedPixelsFromNativeSource": 135,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "79afd7e131441aa2929c3600bf13eb4d9fca9070a891dea8e93e38da53630662",
+        "pngSha256": "5ebdb73c5bb8e9763c52f265cfc7625687fbb69876ff1356109aa2933df94cdc"
+      },
+      {
+        "frame": 7,
+        "changedPixelsFromFirstFrame": 135,
+        "changedPixelsFromNativeSource": 135,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "79afd7e131441aa2929c3600bf13eb4d9fca9070a891dea8e93e38da53630662",
+        "pngSha256": "5ebdb73c5bb8e9763c52f265cfc7625687fbb69876ff1356109aa2933df94cdc"
+      },
+      {
+        "frame": 8,
+        "changedPixelsFromFirstFrame": 176,
+        "changedPixelsFromNativeSource": 176,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48",
+        "pngSha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+      },
+      {
+        "frame": 9,
+        "changedPixelsFromFirstFrame": 176,
+        "changedPixelsFromNativeSource": 176,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48",
+        "pngSha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+      },
+      {
+        "frame": 10,
+        "changedPixelsFromFirstFrame": 176,
+        "changedPixelsFromNativeSource": 176,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48",
+        "pngSha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+      },
+      {
+        "frame": 11,
+        "changedPixelsFromFirstFrame": 176,
+        "changedPixelsFromNativeSource": 176,
+        "bounds": [
+          2,
+          3,
+          34,
+          33
+        ],
+        "rgbaSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48",
+        "pngSha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e"
+      }
+    ]
+  },
+  {
+    "name": "cyan-slot-empty",
+    "nativeAsset": "orb_socket",
+    "method": "Unchanged native source",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "b5ac1e0dc7041e154697cd478ea21499d9e29440391e1e1142da34bb7f528e7f",
+        "pngSha256": "438580e03dcfea98c56d70b73833a5a2945cbd0d785963405c3597dc36104191"
+      }
+    ]
+  },
+  {
+    "name": "cyan-slot-filled",
+    "nativeAsset": "orb_socket",
+    "method": "Four source outer rim quadrants highlighted, cavity unchanged",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 178,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92",
+        "pngSha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd"
+      }
+    ]
+  },
+  {
+    "name": "cyan-slot-wrong",
+    "nativeAsset": "orb_socket",
+    "method": "Unchanged existing red corner port marks reused over native socket",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 52,
+        "bounds": [
+          0,
+          0,
+          36,
+          36
+        ],
+        "rgbaSha256": "958491a9f55bebec520fad3f833139eff410ef810bfc4167141e80ad7aa56950",
+        "pngSha256": "add0aaf18e7dcab9cb33e88843429afbf5299bb2a9441922f22791fc66e5c3ad"
+      }
+    ]
+  },
+  {
+    "name": "cyan-slot-connect",
+    "nativeAsset": "orb_socket",
+    "method": "Source outer rim quadrants light sequentially; existing Attack timing",
+    "frames": [
+      {
+        "frame": 0,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "b5ac1e0dc7041e154697cd478ea21499d9e29440391e1e1142da34bb7f528e7f",
+        "pngSha256": "438580e03dcfea98c56d70b73833a5a2945cbd0d785963405c3597dc36104191"
+      },
+      {
+        "frame": 1,
+        "changedPixelsFromFirstFrame": 0,
+        "changedPixelsFromNativeSource": 0,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "b5ac1e0dc7041e154697cd478ea21499d9e29440391e1e1142da34bb7f528e7f",
+        "pngSha256": "438580e03dcfea98c56d70b73833a5a2945cbd0d785963405c3597dc36104191"
+      },
+      {
+        "frame": 2,
+        "changedPixelsFromFirstFrame": 51,
+        "changedPixelsFromNativeSource": 51,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "7cdcd76bfc7efa3281fb4dd54af7d025e759df01186423a57a11fbb6632134a5",
+        "pngSha256": "42c0637dc7458b530cb397b7b389d6d44a9b7c65aadb16a1741715e4bbdefe25"
+      },
+      {
+        "frame": 3,
+        "changedPixelsFromFirstFrame": 51,
+        "changedPixelsFromNativeSource": 51,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "7cdcd76bfc7efa3281fb4dd54af7d025e759df01186423a57a11fbb6632134a5",
+        "pngSha256": "42c0637dc7458b530cb397b7b389d6d44a9b7c65aadb16a1741715e4bbdefe25"
+      },
+      {
+        "frame": 4,
+        "changedPixelsFromFirstFrame": 103,
+        "changedPixelsFromNativeSource": 103,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "d6ddc1022602bda5f321390f1add2c05b678dbc44edeaea523ad74ce6d94e5bf",
+        "pngSha256": "e380b8fac548adad22473465663cd51a5d3c3de8e6496add95f5421b2e73850f"
+      },
+      {
+        "frame": 5,
+        "changedPixelsFromFirstFrame": 103,
+        "changedPixelsFromNativeSource": 103,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "d6ddc1022602bda5f321390f1add2c05b678dbc44edeaea523ad74ce6d94e5bf",
+        "pngSha256": "e380b8fac548adad22473465663cd51a5d3c3de8e6496add95f5421b2e73850f"
+      },
+      {
+        "frame": 6,
+        "changedPixelsFromFirstFrame": 141,
+        "changedPixelsFromNativeSource": 141,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "097cfbc405b2142f47e3a0d650d641f0abc865da5270dad17b316e7ec4710e49",
+        "pngSha256": "de99c11e4ea9821a230a1d1b9ac2395f99334ee08c990ad59921f54ef9faadb0"
+      },
+      {
+        "frame": 7,
+        "changedPixelsFromFirstFrame": 141,
+        "changedPixelsFromNativeSource": 141,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "097cfbc405b2142f47e3a0d650d641f0abc865da5270dad17b316e7ec4710e49",
+        "pngSha256": "de99c11e4ea9821a230a1d1b9ac2395f99334ee08c990ad59921f54ef9faadb0"
+      },
+      {
+        "frame": 8,
+        "changedPixelsFromFirstFrame": 178,
+        "changedPixelsFromNativeSource": 178,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92",
+        "pngSha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd"
+      },
+      {
+        "frame": 9,
+        "changedPixelsFromFirstFrame": 178,
+        "changedPixelsFromNativeSource": 178,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92",
+        "pngSha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd"
+      },
+      {
+        "frame": 10,
+        "changedPixelsFromFirstFrame": 178,
+        "changedPixelsFromNativeSource": 178,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92",
+        "pngSha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd"
+      },
+      {
+        "frame": 11,
+        "changedPixelsFromFirstFrame": 178,
+        "changedPixelsFromNativeSource": 178,
+        "bounds": [
+          2,
+          2,
+          34,
+          33
+        ],
+        "rgbaSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92",
+        "pngSha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd"
+      }
+    ]
+  }
+]

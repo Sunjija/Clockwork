@@ -1,0 +1,45 @@
+{
+  "nativeInspectedByMain": true,
+  "humanAppearanceApproval": "pending",
+  "carriageFloorAnchor": [
+    64,
+    94
+  ],
+  "carCenterX": 310,
+  "lowerFloorY": 282,
+  "exitFloorY": -32,
+  "boardingStartX": 206,
+  "awakeningDockCrop": [
+    192,
+    130,
+    320,
+    180
+  ],
+  "collapseMediumCrop": [
+    290,
+    118,
+    320,
+    180
+  ],
+  "deadCoreCrop": [
+    326,
+    220,
+    160,
+    90
+  ],
+  "boardingCrop": [
+    150,
+    150,
+    320,
+    180
+  ],
+  "guideInsertCrop": [
+    277,
+    188,
+    160,
+    90
+  ],
+  "riderTrackingX": 230,
+  "riderScreenFootLogical": 78,
+  "inspectionNotes": "Main inspected actualgeneratedandnative destination-free shaft plusa tighterE2nativecrop. Upperworkshop andy172landing absent. Carriagefloor94andlowerfloor282retained. E2reframesexistingcarriagebeam/statuslampnearscreencenter; Tiqueappearsaspartialforeground, notnewpose. v4draft-01preservesthefirstlessreadablepipe-heavyinsert. Sameworld integer2x/4xcrops, no bodypartredraw/room/arrival."
+}

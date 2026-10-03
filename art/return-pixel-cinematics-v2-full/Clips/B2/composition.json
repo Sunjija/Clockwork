@@ -1,0 +1,2561 @@
+{
+  "shot": "B2",
+  "frames": [
+    {
+      "timeMs": 0,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/00.png",
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "13922255c57919f27cf54a3ab49d9407de96e4ab851995c6134dcd2befe60912"
+    },
+    {
+      "timeMs": 40,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/00.png",
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb",
+              "xy": [
+                138,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "d837b3b363c7508bdf6e717d0c41791e30f7faf827e7ccb7a41985e174f664ae"
+    },
+    {
+      "timeMs": 60,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/01.png",
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46",
+              "xy": [
+                143,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3f696545a5679c86ac527d5405040b4acb6f3c0b63946fb7fd5408c43d8343fc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "e821bd5c70e74b82d7d36fb8ca3382fec2eaf35ce67d12ffc4b4bfe13caafdd2"
+    },
+    {
+      "timeMs": 80,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/01.png",
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46",
+              "xy": [
+                149,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3f696545a5679c86ac527d5405040b4acb6f3c0b63946fb7fd5408c43d8343fc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "e8b368e920ea80ef64b50bedf9dbe9225933fb8e2adb265bc040bffeccfb784f"
+    },
+    {
+      "timeMs": 100,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/02.png",
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+              "xy": [
+                155,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "3ff6b3c52ad4037881925156034910459bacdc4bbe6965fcee37fe136aec9e38"
+    },
+    {
+      "timeMs": 120,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/02.png",
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+              "xy": [
+                161,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "a66a79ba00d996077d7c821b2b6d9a451bb0270f044914b8a1ba6a571dc4328a"
+    },
+    {
+      "timeMs": 160,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/02.png",
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+              "xy": [
+                172,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "cdaca0c6fc328eb349cb60d71e537d0abf42ce90340ee85025f25fc9d859ac1a"
+    },
+    {
+      "timeMs": 180,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/03.png",
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2",
+              "xy": [
+                178,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "ca0d14ba49e7dcb58d1061a849334435de2cd3dfa4a1b9886fb1ee2c2138cc70",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "1b17db8dc02108af7e7f8f8701e53b09a61364b5582cafca7e862c36e953beec"
+    },
+    {
+      "timeMs": 200,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/03.png",
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2",
+              "xy": [
+                184,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "ca0d14ba49e7dcb58d1061a849334435de2cd3dfa4a1b9886fb1ee2c2138cc70",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "0461ef5061adbbdd282da57dda54c4b85f909c3d916e42c608a6aa11ae42b591"
+    },
+    {
+      "timeMs": 240,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/04.png",
+              "sourceSha256": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da",
+              "xy": [
+                195,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "5a33393809abb020b62dd3ffd568d792e62e1f382fa5d8afec1adfcbef3b0f9b",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "ebea6028f3185cdda3561c941a7ea8cdbf6907e1338ace0c5fa1b00014afb0b7"
+    },
+    {
+      "timeMs": 280,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/05.png",
+              "sourceSha256": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f",
+              "xy": [
+                207,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "48cda201cf469921a781daf3b6b49437621c5c2fda7e5c005e35cd96059e47dd",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "5178641de9b219ffaaa570079858aa8f793cebce38a8888442b2779553ff789b"
+    },
+    {
+      "timeMs": 320,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/06.png",
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9",
+              "xy": [
+                218,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a58309f473bfcfd9a8c2877735e8e6c16641f44f983f40307222f0cbeee9f5fb",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "6f9cec381ec2d789a6b1bbe899555ffce47e934491de5f09383c8e28af58862f"
+    },
+    {
+      "timeMs": 360,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/06.png",
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9",
+              "xy": [
+                230,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a58309f473bfcfd9a8c2877735e8e6c16641f44f983f40307222f0cbeee9f5fb",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "f7d4cc9208653ffcf46530614730e23ad79cb8a8a3e9d709ba931ce53342a81c"
+    },
+    {
+      "timeMs": 380,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/07.png",
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+              "xy": [
+                236,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "fb68c493a15805360d56048d294e9706ccddd9878ea7f28082ed98cb9ab39ef4"
+    },
+    {
+      "timeMs": 400,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/07.png",
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+              "xy": [
+                241,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "0e4fefa982be4fab318053ff24c38dee53f00384c83a2d635e2ed124842a665e"
+    },
+    {
+      "timeMs": 440,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/07.png",
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+              "xy": [
+                253,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "f18c418b07b6e3b0b7d4eb94f4827b16284915306fab15db0be8b5843d853ffa"
+    },
+    {
+      "timeMs": 480,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/08.png",
+              "sourceSha256": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d",
+              "xy": [
+                264,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "b081fd537fc7cc1d3a6a27e9c920ea38c8fe22a043e64eaab3befb45a0468904",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "ebe2e8ae8a863117785d2ca4fdcfa5764dd152f3492e1e5369681965946fcd99"
+    },
+    {
+      "timeMs": 520,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/09.png",
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9",
+              "xy": [
+                276,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "311093d01f74184c0f0f37c3a9ad5029296755e0e9007469eb4b53c27f4cf7e9",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "369e78dce1170970770ca9575e219e6a01c7106f83e3b08582564f2eb624aa70"
+    },
+    {
+      "timeMs": 560,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/09.png",
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9",
+              "xy": [
+                287,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "311093d01f74184c0f0f37c3a9ad5029296755e0e9007469eb4b53c27f4cf7e9",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "68ef3c820f162747b8deff21d3dbb88dd84a4e949954949838d976d65cb11b2a"
+    },
+    {
+      "timeMs": 580,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/10.png",
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be",
+              "xy": [
+                293,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "1b8dbde9c82edb2eb50d327ae764768735188a53cdfc40711b7a764de17d04af",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "71fe78c11f709b551483b4ff230a53ee5c1ebaa489a1d6c54432b2400b66bb6d"
+    },
+    {
+      "timeMs": 600,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/10.png",
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be",
+              "xy": [
+                299,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "1b8dbde9c82edb2eb50d327ae764768735188a53cdfc40711b7a764de17d04af",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "9c8c4c9dfd920dd4e24129236e8781433d1b66ee9aa0557c3d4cafb050a1b17a"
+    },
+    {
+      "timeMs": 640,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/11.png",
+              "sourceSha256": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9",
+              "xy": [
+                310,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "23ffd3f45b8a7f9f9d2512d9aeec53af3947d3f0a15f78c7c878488fbaecbd0d",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "b170ea1d59963724b71dd0dea34b64dde5a1ba740f77ca13056edc25a92c0425"
+    },
+    {
+      "timeMs": 680,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/12.png",
+              "sourceSha256": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9",
+              "xy": [
+                322,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "50474508f122d8255b10ec8e82ec186c58a24c07ec3d44358a1e75931cfa0c82",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "739ec585cd619386ce0bc3d9fdd277bcd1bdd1409898616f15b49a25288982e7"
+    },
+    {
+      "timeMs": 720,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/13.png",
+              "sourceSha256": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48",
+              "xy": [
+                333,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "60cc73dbe2eb24cd25872cdddb0b79c1110f2837a3ee5c45813c46d2496a6d57",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "c0370199e419b810f541c6efaf2f4fae097ccc85c3616c46d14b0313fe789dfc"
+    },
+    {
+      "timeMs": 760,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/00.png",
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb",
+              "xy": [
+                345,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "4578e560faed6356f4b882c391ede78755beae15d338a17796a629cc742207d4"
+    },
+    {
+      "timeMs": 800,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/00.png",
+              "sourceSha256": "820e4d76acb865300f18ce15f0ccbbd73ef5ef9fa07d743c7932c481921836bb",
+              "xy": [
+                357,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a43516ba36444e25206bc2ee5113fc35f59f47c375287433217a85c4c134e7bc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "6b186015a63a8c39c950ead90d9e5984efa85ca627e36d6702935b80d8cce0cd"
+    },
+    {
+      "timeMs": 820,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/01.png",
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46",
+              "xy": [
+                362,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3f696545a5679c86ac527d5405040b4acb6f3c0b63946fb7fd5408c43d8343fc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "d845351e40da2d397e0ac5f022bb98b526f0c74b2ae876f3dc302c76402b39ac"
+    },
+    {
+      "timeMs": 840,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/01.png",
+              "sourceSha256": "b59e10f0a87f932dcf8fd785237a11077c42e544597e14fe4314257e00dfac46",
+              "xy": [
+                368,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3f696545a5679c86ac527d5405040b4acb6f3c0b63946fb7fd5408c43d8343fc",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "a569aadeac4595bc9f3e877f152a896ed3704c7b9f6ec1943db956e1f1c6a398"
+    },
+    {
+      "timeMs": 860,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/02.png",
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+              "xy": [
+                374,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "f6692ed14a40bc29b69bb8baabad6cc92d8db669007b7a295e1fa688e559fedf"
+    },
+    {
+      "timeMs": 880,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/02.png",
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+              "xy": [
+                380,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "9386a03df0884235a3a1dff8651b6d42924573fb6e600e2f3e14c295763125df"
+    },
+    {
+      "timeMs": 920,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/02.png",
+              "sourceSha256": "ab553b8ce0af60b5f3c6fe80dbbbf75b439111addbfa53cf14a6d6283be87999",
+              "xy": [
+                391,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "3707a1f3c3fbf262acf31b2949784a5768e8376fc48aee0d93fb0439adc0742c",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "504d2498e797537358a7a3b53c8cda28a1c2f62742b3257fef30f53305faef6c"
+    },
+    {
+      "timeMs": 940,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/03.png",
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2",
+              "xy": [
+                397,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "ca0d14ba49e7dcb58d1061a849334435de2cd3dfa4a1b9886fb1ee2c2138cc70",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "f624ea2acb90777de22dc6dd58ad0aace745f1f68e9cc2a2e9e61e53c7d29b17"
+    },
+    {
+      "timeMs": 960,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/03.png",
+              "sourceSha256": "935d20b605b541824023932766e0c442f23f4ddd0d2444c8f1e2141eda9348c2",
+              "xy": [
+                403,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "ca0d14ba49e7dcb58d1061a849334435de2cd3dfa4a1b9886fb1ee2c2138cc70",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "8ac6667914981a5ee870e59d4c2a03cd8e3bf3823402f9d55fd41cad8dfeb573"
+    },
+    {
+      "timeMs": 1000,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/04.png",
+              "sourceSha256": "ae4d23013c5ddc1dc218771545d8f29fce9c1754d23983a4cc653e33b77255da",
+              "xy": [
+                414,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "5a33393809abb020b62dd3ffd568d792e62e1f382fa5d8afec1adfcbef3b0f9b",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "c796cf03ec52f3b26179dc7d6ae348ea55af6851e22e0749feb059aa8b28531a"
+    },
+    {
+      "timeMs": 1040,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/05.png",
+              "sourceSha256": "c4fdf9eeb20b6a669fe0d5b2d815615f990eabce16a2216f0b4b630f52ecd88f",
+              "xy": [
+                426,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "48cda201cf469921a781daf3b6b49437621c5c2fda7e5c005e35cd96059e47dd",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "4782c297c6d6fa93528854346895919840eb299452e87736042561c5cd2effcd"
+    },
+    {
+      "timeMs": 1080,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/06.png",
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9",
+              "xy": [
+                437,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a58309f473bfcfd9a8c2877735e8e6c16641f44f983f40307222f0cbeee9f5fb",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "591c4fd27006d645ca2e1773220b42da8190976495a61ff6250ffb09949de080"
+    },
+    {
+      "timeMs": 1120,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/06.png",
+              "sourceSha256": "494fa92b69ba3058d2054b3d5e4ec02a4a0112a84b38f2415b89c88c9cd207d9",
+              "xy": [
+                449,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a58309f473bfcfd9a8c2877735e8e6c16641f44f983f40307222f0cbeee9f5fb",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "0234148eec321132e188dcaf41750bcadb6ec8d13aafd85574ab9e7f77c20a10"
+    },
+    {
+      "timeMs": 1140,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/07.png",
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+              "xy": [
+                454,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "8bbe22588a123efc8fcd9a6530f49a336615858bfd3191e22268944bccc2a22d"
+    },
+    {
+      "timeMs": 1160,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/07.png",
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+              "xy": [
+                460,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "3ad65a7406188fc700d8c0925c77cc8e8db5d1b60f95ca27f4193847bc003059"
+    },
+    {
+      "timeMs": 1200,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/07.png",
+              "sourceSha256": "7463dce36e6da062b54dc2aa0432ff83af4a6726df9dcbbbf0e53a6b9f5d6a8a",
+              "xy": [
+                472,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "944eb69e907a1c8ed8f01bd15e20273de4e99751cbfabe15f64bc4f6919ac3a0",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "d8be2665654be483d04a5e76dc4f703966dbd2236042e781c3872dfbc76fa737"
+    },
+    {
+      "timeMs": 1240,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/08.png",
+              "sourceSha256": "ebc767c5734b5235b2de1ad1862b7c6b6365b8cdfb8a2413f77d113c247c825d",
+              "xy": [
+                483,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "b081fd537fc7cc1d3a6a27e9c920ea38c8fe22a043e64eaab3befb45a0468904",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "cc754b1a040cd792f1c327dc1c57ddf24bb28929bec305a9fab24a00766f7c2d"
+    },
+    {
+      "timeMs": 1280,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/09.png",
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9",
+              "xy": [
+                495,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "311093d01f74184c0f0f37c3a9ad5029296755e0e9007469eb4b53c27f4cf7e9",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "5af0d6ffaa011cd7e7c04256e54624e4a33cb6d3266835a2f446931ddbff70f0"
+    },
+    {
+      "timeMs": 1320,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/09.png",
+              "sourceSha256": "9c527bfc47f5811444eeef354f39b639d06dc80451599e2ab694d4e1e73fadb9",
+              "xy": [
+                506,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "311093d01f74184c0f0f37c3a9ad5029296755e0e9007469eb4b53c27f4cf7e9",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "95d9ebae12054b43f6dbcb40175bb42f0535e86620cc66c44e119d21f67bcd78"
+    },
+    {
+      "timeMs": 1340,
+      "durationMs": 20,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/10.png",
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be",
+              "xy": [
+                512,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "1b8dbde9c82edb2eb50d327ae764768735188a53cdfc40711b7a764de17d04af",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "ee33b88e781f6eb49a857336b6ec90ef08b09d2b417a795416970575302ecb11"
+    },
+    {
+      "timeMs": 1360,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/10.png",
+              "sourceSha256": "492a3b1906772644394e7d3dfa7101e8c7e11632ba2ebd7c00275f996914c0be",
+              "xy": [
+                518,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "1b8dbde9c82edb2eb50d327ae764768735188a53cdfc40711b7a764de17d04af",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "21a300141092e6806aa285849a7a8b9d94000330c0203d15cf71ef2620767dbb"
+    },
+    {
+      "timeMs": 1400,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/11.png",
+              "sourceSha256": "b91fc463c2846980f9832767cfe6f821eb0248ffb9ac10da9e5c988146f73dd9",
+              "xy": [
+                529,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "23ffd3f45b8a7f9f9d2512d9aeec53af3947d3f0a15f78c7c878488fbaecbd0d",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "5553eec1ea2281636738854725079ba0f94058ad06e8899ec91da3749a3940d9"
+    },
+    {
+      "timeMs": 1440,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/12.png",
+              "sourceSha256": "eeb8b2a6513abc5ec8903db9d74a9448b3e06dab12b997929ab59d8fab9280a9",
+              "xy": [
+                541,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "50474508f122d8255b10ec8e82ec186c58a24c07ec3d44358a1e75931cfa0c82",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "55253a5bf523468abdd05d097c7234dbc3d498dc47271bef3e8e44a3fcc62067"
+    },
+    {
+      "timeMs": 1480,
+      "durationMs": 40,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Walk/13.png",
+              "sourceSha256": "f3d14679d2cfad7c25b6fb2dc1afdbfce82b69c058485289e8f5699e11f95c48",
+              "xy": [
+                552,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "60cc73dbe2eb24cd25872cdddb0b79c1110f2837a3ee5c45813c46d2496a6d57",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "f08e595bbaf51ea9edec2cac9e064721ce6917693b592e498ba309ba87928d3a"
+    },
+    {
+      "timeMs": 1520,
+      "durationMs": 480,
+      "subexposures": [
+        {
+          "background": "arena-door-open",
+          "layers": [
+            {
+              "source": "WardenV8/defeat/05.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                564,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "7f4b4fd26ee3268e60ea80559155694a448c69b01d80fa83b14bbc561feae2db"
+    }
+  ],
+  "sourceInfo": {
+    "action": "Current Walk two760ms cycles to warm door; idle last480ms.",
+    "previewAutoMoveOnly": true,
+    "runtimeMustWaitForPlayerDoorInteraction": true,
+    "floorY": 282,
+    "spriteScaling": false,
+    "originalWalkPoseTiming": true
+  }
+}

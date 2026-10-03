@@ -2,7 +2,9 @@ using System.Text.Json;
 using TiqueReturn;
 
 string root = Path.GetFullPath(args.Length > 0 ? args[0] : "../..");
-string qa = Path.Combine(root, "QA");
+// Optional isolated output root prevents a targeted art audit from replacing
+// earlier production evidence. With no second argument, keep the legacy path.
+string qa = Path.GetFullPath(args.Length > 1 ? args[1] : Path.Combine(root, "QA"));
 Directory.CreateDirectory(qa);
 var passed = ReturnChecks.Run(Console.WriteLine);
 var jsonOptions = new JsonSerializerOptions { IncludeFields = true, WriteIndented = true };
@@ -53,17 +55,24 @@ File.WriteAllText(Path.Combine(qa,"model-checks.json"),JsonSerializer.Serialize(
 Console.WriteLine($"PASS {passed.Count} checks; input-only playthrough {m.playTime:F2}s, HP {m.hp}/4. Unity runtime still unverified.");
 
 var book=JsonSerializer.Deserialize<PuzzleBook>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/puzzles.json")),jsonOptions);
+var guidanceChecks=AdaptiveGuidanceChecks.Run(book,Console.WriteLine);
+var uiChecks=CompactUiLayoutChecks.Run(book,Console.WriteLine);
+Directory.CreateDirectory(Path.Combine(qa,"CompactUi"));
+CompactUiLayoutChecks.ExportSnapshots(book,Path.Combine(qa,"CompactUi/draw-plan-fixtures.json"));
+File.WriteAllText(Path.Combine(qa,"CompactUi/layout-checks.json"),JsonSerializer.Serialize(new{passed=true,count=uiChecks.Count,checks=uiChecks,scope="Shared production draw-plan geometry/text/actions; offline layout, not live Unity GUI"},jsonOptions));
+File.WriteAllText(Path.Combine(qa,"CompactUi/guidance-checks.json"),JsonSerializer.Serialize(new{passed=true,count=guidanceChecks.Count,checks=guidanceChecks,scope="Read-only automatic support layer over actual puzzle/combat models; not a Unity runtime test"},jsonOptions));
 var v2Checks=ReworkChecks.Run(book,Console.WriteLine);
 var v2=new ReworkModel(book);var v2Pilot=new ReworkPilot();
 for(int n=0;n<120*210&&v2.phase!=Journey.Ending&&v2.phase!=Journey.Dead;n++)v2.Tick(1f/120,v2Pilot.Next(v2));
 Directory.CreateDirectory(Path.Combine(qa,"V2"));
 File.WriteAllText(Path.Combine(qa,"V2/model-result.json"),JsonSerializer.Serialize(new{passed=v2.phase==Journey.Ending,phase=v2.phase.ToString(),v2.health,v2.bossHealth,v2.breaks,v2.playTime,checks=v2Checks,events=v2.events},jsonOptions));
 Assert(v2.phase==Journey.Ending,"V2 input-only playthrough ended in "+v2.phase+" hp="+v2.health+" boss="+v2.bossHealth);
-Assert(v2.breaks>=3,"At least three armor breaks required");
+Assert(v2.breaks>=1,"Input-only mixed route must still exercise a pillar armor break");
 Assert(v2.events.Any(e=>e.EndsWith(":wave-release"))&&v2.events.Any(e=>e.EndsWith(":boss-Slam")),"All boss patterns exercised");
 Console.WriteLine($"V2 PASS {v2Checks.Count} checks + complete input playthrough; HP {v2.health}/5, time {v2.playTime:F2}s.");
 
-var authored=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/WardenV7/clips.json")),jsonOptions);
+string guardianVersion=File.Exists(Path.Combine(root,"Assets/Resources/ReturnV2/WardenV8/clips.json"))?"V8":"V7";
+var authored=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/Warden"+guardianVersion+"/clips.json")),jsonOptions);
 var bossTimes=authored.clips.ToDictionary(c=>"iron-"+c.name,c=>c.durations);
 Assert(bossTimes["iron-boot"].Sum()==2400,"Boot keeps the 2.4s arrival");
 var visual=new ReworkModel(book);
@@ -86,19 +95,24 @@ visual.bossHealth=3;Assert(Pick(IronMove.Wave,1.1f,"attack",out _)==0,"Second ph
 Assert(Pick(IronMove.WaveAim,.6f,"attack",out _)==2&&Pick(IronMove.WaveAim,1.03f,"attack",out _)==3,"Wave telegraph holds the rear-up, swings down in the last 30ms");
 Assert(Pick(IronMove.ChargeAim,1.2f,"charge",out var aimClip)==2&&aimClip=="iron-charge-aim","Charge telegraph holds the curled ball");
 Assert(Pick(IronMove.SlamAim,.12f,"slam",out _)<=1,"Slam stays on the grounded crouch for the 130ms brace");
-Assert(Pick(IronMove.Recover,0,"slam",out var slamClip)==0&&slamClip=="iron-slam-land","Ground contact shows the sprawl");
+Assert(Pick(IronMove.Recover,0,"slam",out var slamClip)==0&&slamClip=="iron-slam-land","Ground contact shows the authored landing pose");
 Assert(Pick(IronMove.Recover,.84f,"slam",out _)==2,"Landing ends on the idle stance");
 Assert(Pick(IronMove.Open,3,"stagger",out var openClip)==3&&openClip=="iron-stagger-open","Exposed core pose holds for the whole window");
+visual.openingSource=CoreOpeningSource.SlamCounter;
+Assert(Pick(IronMove.CounterSettle,.1f,"slam",out var settleClip)==0&&settleClip=="iron-slam-land","Counter settle holds authored landing pose");
+Assert(Pick(IronMove.Open,ReworkModel.CounterOpenWarmup,"stagger",out _)==3,"Counter attack permission starts on the held authored core pose");
+Assert(Pick(IronMove.Open,ReworkModel.CounterOpenWarmup-.01f,"stagger",out _)<3,"Counter preparation runs forward through authored transition");
+visual.openingSource=CoreOpeningSource.None;
 Assert(Pick(IronMove.Recover,0,"charge",out var crashClip)==0&&crashClip=="iron-charge-crash","Plain wall crash recoils");
 Assert(Pick(IronMove.Down,2,"stagger",out _)==bossTimes["iron-defeat"].Length-1,"Defeat holds the collapsed frame");
-visual.clock=.5f;Assert(Pick(IronMove.Rest,0,"charge",out var idleClip)>=0&&idleClip=="iron-idle","Rest breathes on the idle loop");
+visual.clock=.5f;Assert(Pick(IronMove.Rest,0,"charge",out var idleClip)>=0&&idleClip=="iron-idle","Rest selects the authored idle loop");
 var lift=new ReworkModel(book);lift.BeginArena();lift.phase=Journey.Combat;lift.bossMove=IronMove.SlamAim;
 for(int i=0;i<12;i++)lift.Tick(1f/120,ReworkCommand.Empty);
 Assert(lift.bossY==ReworkModel.Floor,"Landing attack must brace before leaving floor");
 for(int i=0;i<12;i++)lift.Tick(1f/120,ReworkCommand.Empty);
 Assert(lift.bossY<ReworkModel.Floor,"Lift follows the 130ms brace exposures");
-Directory.CreateDirectory(Path.Combine(qa,"V7"));
-File.WriteAllText(Path.Combine(qa,"V7/animation-model-checks.json"),JsonSerializer.Serialize(new{passed=true,selections,clips=authored.clips.Length,frames=authored.clips.Sum(c=>c.durations.Length),scope="Pure C# frame selection over WardenV7; subjective motion quality is not certified"},jsonOptions));
+Directory.CreateDirectory(Path.Combine(qa,guardianVersion));
+File.WriteAllText(Path.Combine(qa,guardianVersion,"animation-model-checks.json"),JsonSerializer.Serialize(new{passed=true,selections,clips=authored.clips.Length,frames=authored.clips.Sum(c=>c.durations.Length),resourceVersion=guardianVersion,scope="Pure C# frame selection over Warden"+guardianVersion+"; game execution and subjective motion approval excluded"},jsonOptions));
 // Trace one input-only fight for the offline preview (tools render it with the real frames).
 var trace=new ReworkModel(book);var tracePilot=new ReworkPilot();var rows=new List<object>();
 for(int n=0;n<120*240&&trace.phase!=Journey.Ending;n++)
@@ -111,8 +125,8 @@ for(int n=0;n<120*240&&trace.phase!=Journey.Ending;n++)
     rows.Add(new{t=Math.Round(trace.clock,3),phase=trace.phase.ToString(),move=trace.bossMove.ToString(),clip,frame,bx=Math.Round(trace.bossX,1),by=Math.Round(trace.bossY,1),face=trace.bossFacing,
         hx=Math.Round(trace.hero.x,1),hy=Math.Round(trace.hero.y,1),hf=trace.hero.facing,flash=trace.Vulnerable&&trace.clock-trace.lastCoreHitAt<.14f,waves=trace.waves.Select(w=>Math.Round(w.x)).ToArray()});
 }
-File.WriteAllText(Path.Combine(qa,"V7/fight-trace.json"),JsonSerializer.Serialize(rows));
-Console.WriteLine($"PASS guardian v7 clips: {selections} state/time selections, wave impact, telegraph holds, slam brace/landing, core hold, crash, defeat, idle; trace {rows.Count} rows.");
+File.WriteAllText(Path.Combine(qa,guardianVersion,"fight-trace.json"),JsonSerializer.Serialize(rows));
+Console.WriteLine($"PASS guardian {guardianVersion} clips: {selections} state/time selections, wave impact, telegraph holds, slam brace/landing, core hold, crash, defeat, idle; trace {rows.Count} rows.");
 
 var states=JsonSerializer.Deserialize<ClipFile>(File.ReadAllText(Path.Combine(root,"Assets/Resources/ReturnV2/StateArt/clips.json")),jsonOptions);
 var stateChecks=WorldArtChecks.Run(book,states);

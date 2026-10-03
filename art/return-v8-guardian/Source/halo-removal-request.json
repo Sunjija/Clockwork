@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-02",
+  "tool": "built-in image_gen",
+  "request": {
+    "asset": "jaw-impact-05",
+    "prompt": "Use case: background-extraction. Input Image 1 is the exact corrected Clockwork IRON MAW pixel-art late jaw-impact pose to preserve. Change ONLY the surrounding background: remove the soft grey halo/glow and all background haze, shadows and glow pixels. Keep the exact character, pose, silhouette, all internal pixels, mechanical armor, four legs, rivets and red mouth/vents UNCHANGED. Preserve the existing crisp pixel art. Output a genuine transparent cutout with empty alpha=0 outside the dark hard-edged character outline, no glow, no new scene or cast shadow, no extra objects, no text. Do not restyle, repaint, resize, stretch or move any character part.",
+    "referenced_image_paths": [
+      "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v8-guardian/Source/Generated/rev1/jaw-impact-05.png"
+    ],
+    "transparent_background": true
+  },
+  "reason": "First corrected late-impact pose has an unwanted soft halo. Preserve that candidate but generate a transparent extraction before native derivation."
+}

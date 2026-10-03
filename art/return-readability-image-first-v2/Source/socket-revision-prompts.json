@@ -1,0 +1,18 @@
+{
+  "tool": "built-in image_gen",
+  "reason": "Do not sacrifice confirmed readability: first sockets too raised; orb socket must be cyan not gold.",
+  "assets": [
+    {
+      "asset": "weight_socket",
+      "target": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-2957f52c-e6e7-4199-a0b0-00e2952bdac4.png",
+      "shapeReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/amber-slot-empty/00.png",
+      "prompt": "Edit Image1, the generated square socket. Image2 is the desired THIN FLAT socket structure; keep its readable negative space. The generated socket is too bulky and raised: flatten it into a recessed floor cavity. Remove the four thick golden corner blocks entirely, replacing them with THIN flat amber conductor lines, about one logical pixel wide at36x36. Make the continuous brass border much narrower and darker; leave large almost-black square interior, the simple recessed square symbol, and a narrow lower inner lip indicating a hole. No bevels suggesting a raised crate, no gold frame masses, no padlocks. Keep orthographic square footprint and crisp pixel style, restrained worn amber highlights only. Preserve genuine transparent background and padding. One asset only, no letters or scene."
+    },
+    {
+      "asset": "orb_socket",
+      "target": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-4bf22b9b-b33f-44c5-af60-8ea22e2a97c2.png",
+      "shapeReference": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArt/cyan-slot-empty/00.png",
+      "prompt": "Edit Image1, the generated round socket. Image2 is the desired readable THIN FLAT cyan socket structure. CRITICAL: REMOVE ALL GOLD, YELLOW, BRASS AND BROWN from this socket. Use exclusively dark blue-gray steel with a slim CYAN/TEAL contact ring. Delete the four thick gold blocks and replace them with four THIN teal flat contact segments. Flatten the raised ring into a round sunken floor cavity with large nearly-black center and one simple recessed circular symbol. At36x36, the rim is only1-2logicalpixels thick, dark upper inner lip, subtle cyan lower inner lip, no bulky pedestal/bevel/uprightwheel. Preserve a circular footprint, negative space, crisp chunky pixels, transparent background and same framing. No glow filling the hole, letters, scene or extra assets."
+    }
+  ]
+}

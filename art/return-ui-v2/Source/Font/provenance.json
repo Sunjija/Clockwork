@@ -1,0 +1,2940 @@
+{
+  "family": "NeoDunggeunmo",
+  "version": "1.601",
+  "license": "SIL OFL 1.1",
+  "reuseBasis": "Unchanged approved font outlines and old glyph/arrow masks; no new font design or generated lettering.",
+  "source": "art/return-v5-feedback/Source/Font/neodgm.ttf",
+  "sourceSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+  "licensePath": "art/return-v5-feedback/Source/Font/LICENSE.txt",
+  "licenseSha256": "c1997f54b659ff8bbe2addf4e7f03fb823db7d1b81b043fb2633183b1fc0c2f0",
+  "approvedAtlasSource": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/Feedback/font.png",
+  "approvedAtlasSha256": "ffd4a2f336d908f19b63cc9ec12a8e2c8c3134378a4232c12a5cba65d0368ce9",
+  "approvedIndexSha256": "9dfde5f905d29b480c81ccc677e1f3f70c5e23bdaf4565bb0ea0164613fd0e2a",
+  "preservedGlyphCount": 381,
+  "addedGlyphCount": 26,
+  "addedCharacters": "–겨꿔끼넘넣눌뉴닌닫닿딪메며빠써우워져짧착채춰턱혀히",
+  "glyphCount": 407,
+  "missingGlyphs": [],
+  "cell": 16,
+  "preservedGlyphRgbaExact": true,
+  "runtimeRendererSizes": [
+    16,
+    32
+  ],
+  "nativeSizedAtlases": [],
+  "rejectedHistoricalAtlases": [
+    {
+      "size": 12,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-12.png",
+      "sha256": "89b52cad9f83a29c4666ca83516f0d2eeb86200552a654f9d69c26855b9e7914",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    },
+    {
+      "size": 14,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-14.png",
+      "sha256": "855d4101a62efa86a1916f88287b121130e48837b20b03edba709ea9567a0a01",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    },
+    {
+      "size": 20,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-20.png",
+      "sha256": "4f5e0dd9119e3a5f0083aafb78761f43356d17fff47e70f031e8a1de159f77d5",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    },
+    {
+      "size": 24,
+      "path": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font-24.png",
+      "sha256": "9eb9530f002a762a8329b5d8188c6a7b784610fa251e25e8bb24676d6e1e9882",
+      "status": "rejected-historical-candidate-not-loaded",
+      "reason": "Non-integer 16px-grid rasterization loses or clips glyph strokes"
+    }
+  ],
+  "bodyRendererSizes": {
+    "default": 16,
+    "largeText": 16
+  },
+  "headingRendererSizes": {
+    "default": 16,
+    "largeText": 32
+  },
+  "rendererRule": "Original 16px atlas sampled with Point; only integer multiples allowed",
+  "feedbackAssetsModified": false,
+  "coverageRule": "Every non-whitespace codepoint in current Assets/Scripts/*.cs plus ASCII and approved control symbols.",
+  "corpus": {
+    "unity/TiqueReturnPrototype/Assets/Scripts/AdaptiveGuidance.cs": "10c52d640ab68d09a6dcbcf5564e3e41ab81f4d999ea4c01c64beeb6d792f8d5",
+    "unity/TiqueReturnPrototype/Assets/Scripts/CompactUiLayout.cs": "bb615b9b2d1bc4467f6b31e5ce9dfc36a7f0b9c4eb059765c857342f5badd0ef",
+    "unity/TiqueReturnPrototype/Assets/Scripts/CorePuzzle.cs": "23ec03e4908f8d9e7cf5acee2d753cc9647d719ab9c0818746fbe5fd25bbfa1f",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnChecks.cs": "34e3ebd332c4f666943c8c600f76a525f92b36c8fce6e630ae2e6c95e34e8e23",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnFeedback.cs": "448a350b0abe71f0a11f1037a4e2efc084da414bc936b89f2bdcbd25f1d378cf",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnGame.cs": "c4e98df9e5bddfc3650f90cdfd88f0bcfbb0bad7c83f93b195d19803c83ee8ca",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnModel.cs": "a2b0dcff34c112a2bd0bdba952dc1dc6a596239aac8543a486b59a6a6a80875b",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReturnPilot.cs": "3ba667f1df89a33be0eb9cf22503b3649134f6e7bb9a384e7aef8c0ea69be3cf",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkChecks.cs": "7ce7d344f8b0f59cf1157b111ae19fbfe514a385cd593075b63673502b2ee794",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkGame.cs": "aa85383001e6af0b4be74b11ca8106865163e316f1b604639accde98c324e663",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkModel.cs": "26df7755152b02069a3099a403e87e5edd6561949c073448f042b06b61f84a63",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkPilot.cs": "163cdf3dfa12e5d76a3634b2433429c36a5089e861e4328e7377bbad4c02eca4",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkReadabilityReview.cs": "328462cc9b7946e9221a239f1879abe5b74c16f3cb0a68f378cd941599f08457",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkTiqueReview.cs": "f7642b9340032516274662d19651d743c8a5e31844d7a9d96a5b5e92268e1b59",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkUi.cs": "e5a21b7841e15ea5dff08904c4f7cb91a01651cad43462b485361a76f5ee2b38",
+    "unity/TiqueReturnPrototype/Assets/Scripts/ReworkUiReview.cs": "29291d8601b216960b0d14ab3e8a0ffb9b47dbb37c02dc9a269ab2d55ea7d10b",
+    "unity/TiqueReturnPrototype/Assets/Scripts/TiqueAnimation.cs": "83c178bf3882ef0fdb0f8f3ef57d4712ea836466e94b5c0fe4d68c0722a546fe",
+    "unity/TiqueReturnPrototype/Assets/Scripts/WardenAnimation.cs": "c20bbea47bd717598d3861c79cb2888fcd164d0ed994c619afc02f63132ce65f",
+    "unity/TiqueReturnPrototype/Assets/Scripts/WorldArtState.cs": "5fab7aa3f633dd5d7fbc39669706c67e51ef22b8f25775452ee19a3c648bc3ff"
+  },
+  "runtimeAtlas": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/UiV2/font.png",
+  "runtimeAtlasSha256": "86e7ba2a0b49349b0b0e7d3ff45fbb9ff417a245a1fb573c9e586959dcc5b776",
+  "glyphs": [
+    {
+      "character": " ",
+      "codepoint": 32,
+      "index": 0,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5341e6b2646979a70e57653007a1f310169421ec9bdd9f1a5648f75ade005af1"
+    },
+    {
+      "character": "!",
+      "codepoint": 33,
+      "index": 1,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3862855e0dc1ee8edeb27adaa386e9b8e86335f0440d8f9891fc837c7dd141e1"
+    },
+    {
+      "character": "\"",
+      "codepoint": 34,
+      "index": 2,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3c2c1c786a04a02682c685953f6f4201dc4345b47043b896fc4a0d10ed1894bc"
+    },
+    {
+      "character": "#",
+      "codepoint": 35,
+      "index": 3,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8272a7d57449d5193e08e9b427adccd4f3275a58e92e9512d41f81d3e046ea40"
+    },
+    {
+      "character": "$",
+      "codepoint": 36,
+      "index": 4,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9750b2796861fb0ae7e8051c5e5c152be91dbd1f7c97410cc0d1a459f0154ab2"
+    },
+    {
+      "character": "%",
+      "codepoint": 37,
+      "index": 5,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d592ceba0adb6661460119676252f0c3c9698b6557c8450efa4f4afaed2716cd"
+    },
+    {
+      "character": "&",
+      "codepoint": 38,
+      "index": 6,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "48f10f6f9c379c786ee25f3244abd097efb0ca76a6ff37fcb230a4846f90efe6"
+    },
+    {
+      "character": "'",
+      "codepoint": 39,
+      "index": 7,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0d09a9ab22b90677f415b46e8734ff4d468c16c29e054096cb303e48ce49cedc"
+    },
+    {
+      "character": "(",
+      "codepoint": 40,
+      "index": 8,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b6782b8d71de018fa7dc1d48a33088140433bf23f5e37524e95e445c0767d144"
+    },
+    {
+      "character": ")",
+      "codepoint": 41,
+      "index": 9,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "91b558ed1434fe9f4522d6a5b402183fb0f1460cd7610f707712341aed94228e"
+    },
+    {
+      "character": "*",
+      "codepoint": 42,
+      "index": 10,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c3ba8b76ac60fbfbacc0a93a92ced669b18527cd5598adbc9e8ab4e5edbc2892"
+    },
+    {
+      "character": "+",
+      "codepoint": 43,
+      "index": 11,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d6343ac5f8cb683fe7a7d0f54a83fa7f4aac73ec66fe2cc23c335d3caa462de5"
+    },
+    {
+      "character": ",",
+      "codepoint": 44,
+      "index": 12,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b8da8203f1e5c1d8d7e811dc24f96711baaa00d282e1e0f6a408b458114d3792"
+    },
+    {
+      "character": "-",
+      "codepoint": 45,
+      "index": 13,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "cdae0a17e13c47d31cd4049ab3a28425dff9f492d3001c54e7b41b772202a391"
+    },
+    {
+      "character": ".",
+      "codepoint": 46,
+      "index": 14,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9e484803b08c45b366b8057338f557f06486abfdfe5af176b031eefb396ce5bc"
+    },
+    {
+      "character": "/",
+      "codepoint": 47,
+      "index": 15,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8ff576e3c31c9b228e5783984f5e43f8ed30aff0028b2e2c52ea6f99556f4819"
+    },
+    {
+      "character": "0",
+      "codepoint": 48,
+      "index": 16,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "664b41712a769c84e5e25738b0270d511fab8be8c325b8cb3f725f628b652bbf"
+    },
+    {
+      "character": "1",
+      "codepoint": 49,
+      "index": 17,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a0d02ab8538ba78862638e6084ff97b44ef89e7f9ffdc5b897bbe80764c92fbc"
+    },
+    {
+      "character": "2",
+      "codepoint": 50,
+      "index": 18,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "eed383a86a50d75d23e7189e7199ff79a6cab93cf532b9616187974d95e5bce1"
+    },
+    {
+      "character": "3",
+      "codepoint": 51,
+      "index": 19,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2d6d612e0645b1bcd2a076d43c792678db214014f07cab594cc6c894b112dbe4"
+    },
+    {
+      "character": "4",
+      "codepoint": 52,
+      "index": 20,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "584a4c15189fc7ce6c66fedd76f3841ed9fa22af0ef44be34c0e82fb112a4f1b"
+    },
+    {
+      "character": "5",
+      "codepoint": 53,
+      "index": 21,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "80c5d76bd60cd16f1caa28f0c255ad7ab7172df470d99b25e7b63454b08e8074"
+    },
+    {
+      "character": "6",
+      "codepoint": 54,
+      "index": 22,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6e4628ef0edad8aab73d97dc36fcc9b3cf6d7048d7f92bfe14c2464e7657bd54"
+    },
+    {
+      "character": "7",
+      "codepoint": 55,
+      "index": 23,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fc5a3b556acf27352db5e1f328ea81f90c0b345a6a6383a2d2301b188122bd9c"
+    },
+    {
+      "character": "8",
+      "codepoint": 56,
+      "index": 24,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e20d496f104299e8e0d6a7f0a67e8e7048530aeb172410e8e5b5e2ba76a3ae6d"
+    },
+    {
+      "character": "9",
+      "codepoint": 57,
+      "index": 25,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "36a8f6fa709580c6ce15f4c3c885247b138c3d1de5c6b2e31afe5c646bebd2fa"
+    },
+    {
+      "character": ":",
+      "codepoint": 58,
+      "index": 26,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "706dd212d31768d2343ebd064f33d1c979f607ef2436df61aee3b8dd1ce8fec6"
+    },
+    {
+      "character": ";",
+      "codepoint": 59,
+      "index": 27,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "04b4e11d18777a68d1a116e664083f5648e6149f50f78af098c1222cfd8b1944"
+    },
+    {
+      "character": "<",
+      "codepoint": 60,
+      "index": 28,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3a271499570001ba1e37832735dd97604e07b8f6553665562d705cd0860f7f1a"
+    },
+    {
+      "character": "=",
+      "codepoint": 61,
+      "index": 29,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9e1ecc1ce005b9cd742f272541cc0efce0906a4dcf57f2a07865a51400df269c"
+    },
+    {
+      "character": ">",
+      "codepoint": 62,
+      "index": 30,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "08a7e4e040838c02d5066c6bf11c2a4aa5b56f936d6e850a31ed6df736add0ed"
+    },
+    {
+      "character": "?",
+      "codepoint": 63,
+      "index": 31,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fa9b1daff54965e15e910fede1de42d366250f9935334d683e4ddb47bc2b4e16"
+    },
+    {
+      "character": "@",
+      "codepoint": 64,
+      "index": 32,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "64a635a8df4de65fdc50fc61d14e9720679f156b224b497da239461c812b1e64"
+    },
+    {
+      "character": "A",
+      "codepoint": 65,
+      "index": 33,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d019130e2abd2b3da00c02a2163cf02ad1074b6a7a778a608b5944624ff32a56"
+    },
+    {
+      "character": "B",
+      "codepoint": 66,
+      "index": 34,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "50862e7862d91dcf16d11e5e9fe9b289a1b2566a10d42f88eb4c236ba3f8436e"
+    },
+    {
+      "character": "C",
+      "codepoint": 67,
+      "index": 35,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "7f25e49b6fd9b14c0264acc72c93a8f6d22b04c8b710eb9771b6d1db587336f0"
+    },
+    {
+      "character": "D",
+      "codepoint": 68,
+      "index": 36,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "38c343e13086e72558d278286b27e49f233f00d38d49484c1d14dd5589add1e8"
+    },
+    {
+      "character": "E",
+      "codepoint": 69,
+      "index": 37,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f06fdeee0d4cb450e9e819a0d44345b38ffe15eb5bb9b3dafd63e1f747c4b133"
+    },
+    {
+      "character": "F",
+      "codepoint": 70,
+      "index": 38,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2d51bb4135be6dec254720ea32cea0c187b1e2b71af5041a4b6a4f88bb7d591d"
+    },
+    {
+      "character": "G",
+      "codepoint": 71,
+      "index": 39,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3bbc672713769284cec21c5018665dec84734a10abca6605ddf206b86ffa2568"
+    },
+    {
+      "character": "H",
+      "codepoint": 72,
+      "index": 40,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5bb84da7b737490099eb39ec3b7713cc65db0caed645552b87e2b8edd8d8561f"
+    },
+    {
+      "character": "I",
+      "codepoint": 73,
+      "index": 41,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "15946d905dd74822fc31be17ae2fc1973e5757254f90fcad745bb642c8426a92"
+    },
+    {
+      "character": "J",
+      "codepoint": 74,
+      "index": 42,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9e45512bb3748f13a10003e3000c3ec565c040befc53529ed31cae8fb468486a"
+    },
+    {
+      "character": "K",
+      "codepoint": 75,
+      "index": 43,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ab11b8b4ee60a1db8b18b5f88946d633d268502b6c1a99dc8e2661898ca77ff0"
+    },
+    {
+      "character": "L",
+      "codepoint": 76,
+      "index": 44,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a6012704096b619e92f682f4b16075d58a4461d181c10da2ca0807fdad485f87"
+    },
+    {
+      "character": "M",
+      "codepoint": 77,
+      "index": 45,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e179f9b216d2f49ec5666d178b8bbfc71f45d6c1b8554b69ab7208bb9631145b"
+    },
+    {
+      "character": "N",
+      "codepoint": 78,
+      "index": 46,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ca0cb222399c9657026bcac4758a620535a49d3d1f67be515a3d1b3d91842162"
+    },
+    {
+      "character": "O",
+      "codepoint": 79,
+      "index": 47,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d42514c552702c0a3a5dcd75bc1e836c9c1799253e8e2cf70de3b27bf0d0354b"
+    },
+    {
+      "character": "P",
+      "codepoint": 80,
+      "index": 48,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f4705e3c3acac5fd98f1f63d5a20b4f36f01fa25e5a34e6d5eac262e9e63d56e"
+    },
+    {
+      "character": "Q",
+      "codepoint": 81,
+      "index": 49,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a13bd031b81188ed393390aeab0786c93ec9a161f9272767c1aa23d4b07be1ae"
+    },
+    {
+      "character": "R",
+      "codepoint": 82,
+      "index": 50,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "01d15111c3097021f543fee0c0f3bd99e1b10c58e79bd5823bea6c49dae6cd9d"
+    },
+    {
+      "character": "S",
+      "codepoint": 83,
+      "index": 51,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d25530f792f784e0eef4fcc74b4bacb9ba7dbd2dc2afbd9259775a7593e959af"
+    },
+    {
+      "character": "T",
+      "codepoint": 84,
+      "index": 52,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c4b1e416a0731c31b50952a79aa09035a5246e9f1d5d0fafce83ea27fdf6f914"
+    },
+    {
+      "character": "U",
+      "codepoint": 85,
+      "index": 53,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "43329c8b0141f3095b47e05b2a566ac998d6216cbede4562193da4bd80d63c45"
+    },
+    {
+      "character": "V",
+      "codepoint": 86,
+      "index": 54,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c26475a51e5404a2751a76b7d679ac3a7073f8fb86075ebd9ea5e12a03d2bab6"
+    },
+    {
+      "character": "W",
+      "codepoint": 87,
+      "index": 55,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "46613ced9a336105985cf94dd261d3e16ab4cd987aa957092aef41e696472f72"
+    },
+    {
+      "character": "X",
+      "codepoint": 88,
+      "index": 56,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d4711dbc38fb71fa2dd353e3b5ee221c5f4c8e9377be61f65d31008cce5fcc4b"
+    },
+    {
+      "character": "Y",
+      "codepoint": 89,
+      "index": 57,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "449606bfaa2379546ad2282c2f638096ed9ba944c58584e5eb67e17734e81281"
+    },
+    {
+      "character": "Z",
+      "codepoint": 90,
+      "index": 58,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6ecfdb87c3b1df45bd4cbf20a55e812da85e0da9bbac03358d69874820c772d9"
+    },
+    {
+      "character": "[",
+      "codepoint": 91,
+      "index": 59,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fca53dda85bc66cd155553e50d33106d138903d0a72ddd62bc5c9a5db7417963"
+    },
+    {
+      "character": "\\",
+      "codepoint": 92,
+      "index": 60,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "84a9ee62deb460798e92f4895302c6bd7444fe64896257bf8fe988e0e90de67c"
+    },
+    {
+      "character": "]",
+      "codepoint": 93,
+      "index": 61,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9b4d2abf63582527ff5d2df024ad3b41c3e776abd2def075a09412a1869feb9a"
+    },
+    {
+      "character": "^",
+      "codepoint": 94,
+      "index": 62,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3b63e99e0cf829e148dcdf5235a5fa67f0bf47b268f9a45dea78844fdf5d888f"
+    },
+    {
+      "character": "_",
+      "codepoint": 95,
+      "index": 63,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "68b975ee16b5d459ab852357ae8b2d325a464363a07f86693064cd283d84d99d"
+    },
+    {
+      "character": "`",
+      "codepoint": 96,
+      "index": 64,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "59b1f275ccbacda09d90b2653e7f167e23cf6c4780dc9f63f4fd32026f93a5e0"
+    },
+    {
+      "character": "a",
+      "codepoint": 97,
+      "index": 65,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "76db3cbb4bf5dd3c6ab8899695b3b2e45c6e47375d0facb162a7d7685cfd86e5"
+    },
+    {
+      "character": "b",
+      "codepoint": 98,
+      "index": 66,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "dddea23f201f582c3fd82a64d4beddc5a78f1323730f013a6d7d1c09cdec6440"
+    },
+    {
+      "character": "c",
+      "codepoint": 99,
+      "index": 67,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9f49aaddc6f310a6e4438f7d86536865c322cccbe50cb4839fb8cc5aefae3303"
+    },
+    {
+      "character": "d",
+      "codepoint": 100,
+      "index": 68,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8de29581aba3d624907e5754d9be668c9251a2a4d255e1f212ee899e96c4afff"
+    },
+    {
+      "character": "e",
+      "codepoint": 101,
+      "index": 69,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f9912b2aa4ed46ca2d117345529f480b77247b6ae547d7cedf89221bdd61322a"
+    },
+    {
+      "character": "f",
+      "codepoint": 102,
+      "index": 70,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "84b98e9ff00bf96c7b48bf1f4431c989fea99c6b957286c0e03a076129ebac52"
+    },
+    {
+      "character": "g",
+      "codepoint": 103,
+      "index": 71,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5eac9004af434cdc8f59a34a77cc10719a228bcd560b3a0076bc3bda4c5fe1f2"
+    },
+    {
+      "character": "h",
+      "codepoint": 104,
+      "index": 72,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9f72c5d5fc4846823384f21e46d5526dd4ae2a14f0f060028f433427ebc33bec"
+    },
+    {
+      "character": "i",
+      "codepoint": 105,
+      "index": 73,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5e82677cca48ba35da3ff3df4317c2af2baaf0195ef81884bba267517f78a3f7"
+    },
+    {
+      "character": "j",
+      "codepoint": 106,
+      "index": 74,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b66c6f501cbf75c2bd84fae7d3c44c4c7cdcec0b0c7e1ebecb771d01c0014026"
+    },
+    {
+      "character": "k",
+      "codepoint": 107,
+      "index": 75,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "341f2dc210c19998e3d52cbd307cc3920f0a13086972e8d8ec2a95a0689eabbf"
+    },
+    {
+      "character": "l",
+      "codepoint": 108,
+      "index": 76,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2c522fcf05790f68073157eaf5970bb103d91aba4df12d3a6f21511f07847f4a"
+    },
+    {
+      "character": "m",
+      "codepoint": 109,
+      "index": 77,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "80161a7492192fcb6a50a7d43de782b3aa8111bac22ed17fc24e4b00f92cef0a"
+    },
+    {
+      "character": "n",
+      "codepoint": 110,
+      "index": 78,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "09d7dbdc4d5188d3fc588c02c2702cb8933298327faf917305b9fa813467a334"
+    },
+    {
+      "character": "o",
+      "codepoint": 111,
+      "index": 79,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "244835a8c3ed8d0500ca0ab33c31fea4a6625fc55c268235b565ed7a37b37cbe"
+    },
+    {
+      "character": "p",
+      "codepoint": 112,
+      "index": 80,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "08693cd47c05b35ff1097fc60a16519419f465af677259555784e807a1179295"
+    },
+    {
+      "character": "q",
+      "codepoint": 113,
+      "index": 81,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "bc84989c409f7a44dd45e1813860aef0b53c0b88a74cecba27a4357883a383bb"
+    },
+    {
+      "character": "r",
+      "codepoint": 114,
+      "index": 82,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b0521a5c8934dcd5321cb7e18e2e2919732b30ff4c464e2932f20e905bce269f"
+    },
+    {
+      "character": "s",
+      "codepoint": 115,
+      "index": 83,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "28a1ad2d24fde8477482ce7865a6435c5de69be84bbe7fb7f0100335505fa73d"
+    },
+    {
+      "character": "t",
+      "codepoint": 116,
+      "index": 84,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f01944ed1d8819217eaca0aee814b2b8093a7efadd69a435d029341545ecfa64"
+    },
+    {
+      "character": "u",
+      "codepoint": 117,
+      "index": 85,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "03cc8ba8028d24435632fedc16bc08e30082ab9bad90c671267f298a1fa31590"
+    },
+    {
+      "character": "v",
+      "codepoint": 118,
+      "index": 86,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "cec5989c245200e520f239716f05cb022637ec33bdfad5958873373a54627812"
+    },
+    {
+      "character": "w",
+      "codepoint": 119,
+      "index": 87,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "24b0d372c4fa219a561018b07ce8326880aec95e30dbb1cee2aa6e411f6520a0"
+    },
+    {
+      "character": "x",
+      "codepoint": 120,
+      "index": 88,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "73b4293a7b3fddc7e7334c0a6edc05b06e43337600eeb4bd9ba7e881e82c67cc"
+    },
+    {
+      "character": "y",
+      "codepoint": 121,
+      "index": 89,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2365f3b018c11ec5788be36588696d761c7ec5a37d3166d049d561489a18450a"
+    },
+    {
+      "character": "z",
+      "codepoint": 122,
+      "index": 90,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d1f0d6b5fb3f55429a29fc6e3b7a2eac207629dbe1fd9c3a02552145258170ea"
+    },
+    {
+      "character": "{",
+      "codepoint": 123,
+      "index": 91,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c66b88ad7aa479d0af638a5d12d1b37866836f69a28f86f597accc501672bad3"
+    },
+    {
+      "character": "|",
+      "codepoint": 124,
+      "index": 92,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ee910883e78608f696d3f1f752764fc00f477f0c037da785f2ccc82266c53cb1"
+    },
+    {
+      "character": "}",
+      "codepoint": 125,
+      "index": 93,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "03adf098958d8917952993b69f6de5347bd826d90ad28bbfda728ef32d42bd53"
+    },
+    {
+      "character": "~",
+      "codepoint": 126,
+      "index": 94,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ac8b67175fd1b55764045e76169a7ede6c7e18aa6398c507596bd6c611e34b71"
+    },
+    {
+      "character": "·",
+      "codepoint": 183,
+      "index": 95,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4def9d212dffab0d5b2df53bab07bb0bbbf89608485b22ee1faf61647b1750a5"
+    },
+    {
+      "character": "…",
+      "codepoint": 8230,
+      "index": 96,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a4d834f122357dabbbee0a54630226b2d1908f4aaa35f9fbdf6b2849c387b345"
+    },
+    {
+      "character": "←",
+      "codepoint": 8592,
+      "index": 97,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "004163656e127ff8ad83d2c251906ba27345debade99d56241dad96151fe6313"
+    },
+    {
+      "character": "↑",
+      "codepoint": 8593,
+      "index": 98,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "80da49e465b5b8dc65e2be5e16e14467f2cd36c8bf00fcd46cfe2e883c1bec72"
+    },
+    {
+      "character": "→",
+      "codepoint": 8594,
+      "index": 99,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b95fb7cae6f08b157679f71da335923a24e4ade482cac03419a538832bb2605f"
+    },
+    {
+      "character": "↓",
+      "codepoint": 8595,
+      "index": 100,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0e644520d71a7e1a283c18b8f71888b8098b8ed7e8eaca65617548ca8ee14f09"
+    },
+    {
+      "character": "◆",
+      "codepoint": 9670,
+      "index": 101,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "da571a807f10ada975e15e0a32b5e88cb971e0fdd44d19ac6f125fd561c6bde1"
+    },
+    {
+      "character": "●",
+      "codepoint": 9679,
+      "index": 102,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e5fdda25e3637137688905ae48d415013b849995fcfe314ea5f20d4933f754e6"
+    },
+    {
+      "character": "가",
+      "codepoint": 44032,
+      "index": 103,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4e81d02651b094dad36900d9b65955f698aeb295b84b3d8ccd7dca398906a23c"
+    },
+    {
+      "character": "간",
+      "codepoint": 44036,
+      "index": 104,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d4e89b09c38488f1c6e2f17c5cccd1a36af6c9b4b65ac02cf34595ba500837f7"
+    },
+    {
+      "character": "갈",
+      "codepoint": 44040,
+      "index": 105,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ba7e90778050f360250713e8107bc9c088a5186e16b6fde725289a528f555b0d"
+    },
+    {
+      "character": "갑",
+      "codepoint": 44049,
+      "index": 106,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0a098580f005c91af1ddf4734546a144396fc7f2079525e461c1c470cfe874e4"
+    },
+    {
+      "character": "같",
+      "codepoint": 44057,
+      "index": 107,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2c791d50f03d4c2a6edc7157e7ee66f60f78e39992c9ad72e762cf0befb5e72e"
+    },
+    {
+      "character": "거",
+      "codepoint": 44144,
+      "index": 108,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0cef9b4895130448fe944130948ecd23b15e6845bb5ec1ceaadc9139ccea25e3"
+    },
+    {
+      "character": "건",
+      "codepoint": 44148,
+      "index": 109,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "33a00ba6c4fa793a334f498ab363ed81dd956ead2b3a68db9ed583a416c32835"
+    },
+    {
+      "character": "검",
+      "codepoint": 44160,
+      "index": 110,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "23c200678c460dea830290b67eb086096c875acdaf811c9960d20c1a3b5b2991"
+    },
+    {
+      "character": "게",
+      "codepoint": 44172,
+      "index": 111,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "87be113213b4740d32c033a7b826a517681e60e3d05738c9d2e8faca308765d0"
+    },
+    {
+      "character": "겠",
+      "codepoint": 44192,
+      "index": 112,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b5eb9d5794c5fc6432efe855eda0e9d86c220e0e6c3de8513c8da7a0109c98e4"
+    },
+    {
+      "character": "격",
+      "codepoint": 44201,
+      "index": 113,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8376c1044e4546b121ab1d0c0161cbe1815832078dd18c5ab563063b0d9de714"
+    },
+    {
+      "character": "결",
+      "codepoint": 44208,
+      "index": 114,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a5a0d599f357fe2d9c56e223783a1b025b8f25f9541d06e32de99de859a30448"
+    },
+    {
+      "character": "경",
+      "codepoint": 44221,
+      "index": 115,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9d45693f9b269cd0cae86c7be2fc0574b5e2d9dbe1157939e68c3ddee77b0f50"
+    },
+    {
+      "character": "계",
+      "codepoint": 44228,
+      "index": 116,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0a53bb78b0bf9393645e426c5cff994c6a8e0c7b8d3bf06f097f8db89ce40905"
+    },
+    {
+      "character": "고",
+      "codepoint": 44256,
+      "index": 117,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c3b859f2695ca285152f29129c91c4006c8d46354f33d66a3bf1a0ce46f68e92"
+    },
+    {
+      "character": "곳",
+      "codepoint": 44275,
+      "index": 118,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a3bc9f951361b5ed28f238da3abe3eeb68ff7825f19d998bbd26a4e1a79c88e1"
+    },
+    {
+      "character": "공",
+      "codepoint": 44277,
+      "index": 119,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fddf3f7f6e32847c96cfc90b4c6ce1675e47a9c977354875498dfb353d9a693c"
+    },
+    {
+      "character": "과",
+      "codepoint": 44284,
+      "index": 120,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6c1be4915ac97550175072e1bff63395e8f4ee516b4cd8171e35f59b61162702"
+    },
+    {
+      "character": "관",
+      "codepoint": 44288,
+      "index": 121,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6d2d517547f634233c71310d9a6bbd8c9c631cbcc909d7378f9d6a1a2880ee05"
+    },
+    {
+      "character": "괴",
+      "codepoint": 44340,
+      "index": 122,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d60f4fbb863e040fd41cb983267ee23a1947df39727e5d722af9e09aed9d61b4"
+    },
+    {
+      "character": "구",
+      "codepoint": 44396,
+      "index": 123,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "365dcbe230ca3c3c9c9f975ebf3c8738c57310812f6e8d4a9dd4bd353dd344dd"
+    },
+    {
+      "character": "귀",
+      "codepoint": 44480,
+      "index": 124,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "27bb80a20193905d1224c56d252d0c431b226aa14ac0c753099f0e27f5a775a6"
+    },
+    {
+      "character": "그",
+      "codepoint": 44536,
+      "index": 125,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "496bb10144cdb6bbb21db9d98763963bd1dd2b72f07bcb18d12c39cafbdb0e6a"
+    },
+    {
+      "character": "금",
+      "codepoint": 44552,
+      "index": 126,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f7b4db804b739a975ac8cd57365b7aaf94b526e37269eac173ebc96e74ff74eb"
+    },
+    {
+      "character": "기",
+      "codepoint": 44592,
+      "index": 127,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "7f43b439d434c4950930de3bf538c47afd68cbe8071428cb57540b0367652150"
+    },
+    {
+      "character": "긴",
+      "codepoint": 44596,
+      "index": 128,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fdd3d82d5912ac82266502f7d56e60580cbd1bd3425f435637468e333f0fb6a5"
+    },
+    {
+      "character": "길",
+      "codepoint": 44600,
+      "index": 129,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "905263489f828844e757d02800a50a50c505e16851b1e64556ef1d4b9cfe9be2"
+    },
+    {
+      "character": "까",
+      "codepoint": 44620,
+      "index": 130,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "79d5093218e25cab2e8ddf9d18c71a1075ecde53258ad4f6ada214fe7547c3f3"
+    },
+    {
+      "character": "깨",
+      "codepoint": 44648,
+      "index": 131,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "cef845422763594ae663ef2a23a18e803b242106444ff4a1764bb23f686d301b"
+    },
+    {
+      "character": "꺼",
+      "codepoint": 44732,
+      "index": 132,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2fac146603f3de8b91af8bc14131806d7056388a2c7f5a33234559bd329d188c"
+    },
+    {
+      "character": "끄",
+      "codepoint": 45124,
+      "index": 133,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "04bd9169bbc7f59d909dfcaf179e86d1d73846f3ac45bafb6a01369948025423"
+    },
+    {
+      "character": "끊",
+      "codepoint": 45130,
+      "index": 134,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2dffa0f0ec5f3897be5ab16a040913cc17e87f882b2d55d891c3ae5a1dc7f4d7"
+    },
+    {
+      "character": "끝",
+      "codepoint": 45149,
+      "index": 135,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "71e7b331d59523436c79b02c469fb860bdd171622f2b19e3064d028cf2af1302"
+    },
+    {
+      "character": "나",
+      "codepoint": 45208,
+      "index": 136,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8922c7c7997b274fd940b5082172530e206fe80f0c30789d7a35ec5d77108b8a"
+    },
+    {
+      "character": "낙",
+      "codepoint": 45209,
+      "index": 137,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "59a0a9ef09f4d80b556edcd8056a7b78392fbd4db0bbcf648e01665225c4f8a4"
+    },
+    {
+      "character": "남",
+      "codepoint": 45224,
+      "index": 138,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c2ee27d013b078511d9e165adb12b01a60b55730816c2ff2e26c370ad5b919aa"
+    },
+    {
+      "character": "납",
+      "codepoint": 45225,
+      "index": 139,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3c317da5f8965682f3969fac78a1539f0eb3ce7403dd1197241124bf99b5ca7a"
+    },
+    {
+      "character": "내",
+      "codepoint": 45236,
+      "index": 140,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c06c82ef9189bfd6209174ba43eedfc7f3c7d6a5d256b4bb2f13070b6d648d76"
+    },
+    {
+      "character": "낼",
+      "codepoint": 45244,
+      "index": 141,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "81fedd920d38b35dc600f2ff624486fb92c216a63cc2a381ed0df504d8b56458"
+    },
+    {
+      "character": "너",
+      "codepoint": 45320,
+      "index": 142,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2aa9a2938be9c60bf4e575e6f7e454ce20243a1918092a63bdcc17ac34e6b477"
+    },
+    {
+      "character": "네",
+      "codepoint": 45348,
+      "index": 143,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fcc208a49f71b36be72f5d98ea68dc3ec24a7c351542b285680469859ef41f0d"
+    },
+    {
+      "character": "노",
+      "codepoint": 45432,
+      "index": 144,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "218c2f1f3580b96df7b7597b86f10700cba1844068b811c6243cae92fabb60cc"
+    },
+    {
+      "character": "놓",
+      "codepoint": 45459,
+      "index": 145,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4773461218e22410d72b2330973bcd85b09026ef11e5d101943820e0db11ebe7"
+    },
+    {
+      "character": "누",
+      "codepoint": 45572,
+      "index": 146,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e36d95abee2c393ce56533126ef46824e1590c42f530d4ce554299df6c425647"
+    },
+    {
+      "character": "는",
+      "codepoint": 45716,
+      "index": 147,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "79e7279309085c496d2ed5ece04db789493a55e2223c8fbe2464b1f16a876b86"
+    },
+    {
+      "character": "니",
+      "codepoint": 45768,
+      "index": 148,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ba0eaa9ffd276c8efe58cddb2f08baef6d2272fc9d0128af416862c8b2d7e962"
+    },
+    {
+      "character": "다",
+      "codepoint": 45796,
+      "index": 149,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b25823ef7cc964dedd5321c144f528074ed60ba64ada7c56b8f5b4db3378d89d"
+    },
+    {
+      "character": "단",
+      "codepoint": 45800,
+      "index": 150,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "58ad93b2cd1ef687f9555d0024c59ae890997d5fe38b7fe6f0d4d7528ebb4d27"
+    },
+    {
+      "character": "대",
+      "codepoint": 45824,
+      "index": 151,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3f940a6bffe338103b3b096a14119d01f89a776a0cd9527bba6fa2ca3e2324ff"
+    },
+    {
+      "character": "더",
+      "codepoint": 45908,
+      "index": 152,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8feb0fec070b424d45d17129e93cfcd26fcccd20edf148e5c455d0478e023022"
+    },
+    {
+      "character": "도",
+      "codepoint": 46020,
+      "index": 153,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f05b5f7bbf9200f9f222e3641a4d863267f638ba5dcdfd48787ed660356607a4"
+    },
+    {
+      "character": "돌",
+      "codepoint": 46028,
+      "index": 154,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "cc042888814c1efa5f20f798ebfd9dff3f8aaf9c1beceea253821c664a1785a2"
+    },
+    {
+      "character": "동",
+      "codepoint": 46041,
+      "index": 155,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d4bbf6fcb3bb9db9a3441e3f742ed901299649468eebac86bf80ff15e883c58a"
+    },
+    {
+      "character": "되",
+      "codepoint": 46104,
+      "index": 156,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "703c83d5874a11e1ff989631929aecebea9265f8ad9747ad864e69ffa52a9c95"
+    },
+    {
+      "character": "된",
+      "codepoint": 46108,
+      "index": 157,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a458185b7a9fb7ab9d9db966b5dab98b4e20fb3c55f1e5dc7c6785da136509b0"
+    },
+    {
+      "character": "될",
+      "codepoint": 46112,
+      "index": 158,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "074e59d9524f41387d10e046b45992775581c9e90059e9d21d2f02f653083620"
+    },
+    {
+      "character": "됨",
+      "codepoint": 46120,
+      "index": 159,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a1db3f49405d707bb35a3d1d639d6cc24a469d07b152ec826ea34188dd3ffed2"
+    },
+    {
+      "character": "됩",
+      "codepoint": 46121,
+      "index": 160,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5a6583379eb620c1ae7d6946d3ed1d4f5d0322cba21917e412c6911b9d613770"
+    },
+    {
+      "character": "두",
+      "codepoint": 46160,
+      "index": 161,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "06c3d7c1d6b89cd5334cc488914a89c665ebc2dbd6f9ad217ae87540329c8d33"
+    },
+    {
+      "character": "둥",
+      "codepoint": 46181,
+      "index": 162,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f9ac7beadf3ed01d49f8912346b3d2af5709c20844af428fe93d0761f125db15"
+    },
+    {
+      "character": "뒤",
+      "codepoint": 46244,
+      "index": 163,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8e41b204b08348178567fb721c308d82aeb6bd68b6f992431d911ceba392a237"
+    },
+    {
+      "character": "드",
+      "codepoint": 46300,
+      "index": 164,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "782b6f2f315697b9801511b3a3dc677bc0b36c40e79d73a2472755f61f3780b2"
+    },
+    {
+      "character": "들",
+      "codepoint": 46308,
+      "index": 165,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e3ee827aa0dfafe93ab4fc9a1b16132cc2110249c253efefa88b1386eace7d0d"
+    },
+    {
+      "character": "때",
+      "codepoint": 46412,
+      "index": 166,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e017fb47a77292970884d730943dfca1f44a5929f6a51eaf8d351a59c6eba890"
+    },
+    {
+      "character": "뛰",
+      "codepoint": 46832,
+      "index": 167,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "64d701950e3c17071ae196554795b11db7c7d0d4eef87e1071fcb29d4a0e1e69"
+    },
+    {
+      "character": "란",
+      "codepoint": 46976,
+      "index": 168,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d2adebf4c6f3133fedfdc665153b477ddcfcc307cd8ec4bf9c40a83931e6ab33"
+    },
+    {
+      "character": "래",
+      "codepoint": 47000,
+      "index": 169,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2e7b10fdd45f48a0a6fe7e08b0aa67f6106c63e8677d3fdbed068d3254513c72"
+    },
+    {
+      "character": "러",
+      "codepoint": 47084,
+      "index": 170,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "09473e200e727ccf65f60cc773f9635e51c70cb028b22f9caef6d8c8dec63a59"
+    },
+    {
+      "character": "레",
+      "codepoint": 47112,
+      "index": 171,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "701e298d3cc46f062b65e079483a169cb6c5a2da0a2701155fa34d5ffffe1f67"
+    },
+    {
+      "character": "려",
+      "codepoint": 47140,
+      "index": 172,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "be5a758d047ae0e409ca696e151dfb31c42f1274b9e89f20fae18ba305a0da14"
+    },
+    {
+      "character": "력",
+      "codepoint": 47141,
+      "index": 173,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f3224baf8d669c91ce1bf77e8d9a96c20ccfb462d608b8951a200f0deee2dbc3"
+    },
+    {
+      "character": "렸",
+      "codepoint": 47160,
+      "index": 174,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "dead574006a4ce93b1db2172b45caf6e43fbbd529061a749a00cf8b4daa905b9"
+    },
+    {
+      "character": "령",
+      "codepoint": 47161,
+      "index": 175,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0342dcd816f8b61e511e5083f749b6bed60d513fcafa1249a763f6912752de5f"
+    },
+    {
+      "character": "로",
+      "codepoint": 47196,
+      "index": 176,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8ccf5cd70590118a794a9d3d70d89ba17dcba3d46895ebc26f686068fe0a03e8"
+    },
+    {
+      "character": "록",
+      "codepoint": 47197,
+      "index": 177,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "49ea66babf5ea44eacb539b2d8e14051f49eaaea8f10711f1f0ebc70940b45ce"
+    },
+    {
+      "character": "료",
+      "codepoint": 47308,
+      "index": 178,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "105a9ad30be423744ad0e0016468431dbef5e06b7db465f8572e247a67c89dab"
+    },
+    {
+      "character": "류",
+      "codepoint": 47448,
+      "index": 179,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "94b3536bce0f92fd2f9c84265c7c9c3b8126c609449ec130597fca3ab1296f57"
+    },
+    {
+      "character": "르",
+      "codepoint": 47476,
+      "index": 180,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "396ac38a58494954f2ebcb5d352fba3d84752798dc379945ae06c9eb6167c1d6"
+    },
+    {
+      "character": "른",
+      "codepoint": 47480,
+      "index": 181,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6590fc48867f9db49254b17d2552af005d5f58c41308748a1a191fa66405095d"
+    },
+    {
+      "character": "를",
+      "codepoint": 47484,
+      "index": 182,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b0f41b60cea9ab139602a9d7256b52f8e2ad5351a459462f8e8c7067d3dc6481"
+    },
+    {
+      "character": "리",
+      "codepoint": 47532,
+      "index": 183,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0ebfb8bbde332a1de1688cb1327a09dab49f36fab38743957641fc3b102c17ac"
+    },
+    {
+      "character": "린",
+      "codepoint": 47536,
+      "index": 184,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3edb55b95888a9506461462011eb780652d8a5165a6886a24430f257c1180ce2"
+    },
+    {
+      "character": "릴",
+      "codepoint": 47540,
+      "index": 185,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d5e45f4c2252bc6cfd2e41a2588ec1d75eacaa74894a0e57e45cbbe33866cf3c"
+    },
+    {
+      "character": "마",
+      "codepoint": 47560,
+      "index": 186,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4c0452b43b07e7d91b250a61b48a9747a29afdf2ff77ef18e3852853661f128a"
+    },
+    {
+      "character": "막",
+      "codepoint": 47561,
+      "index": 187,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "61d324cb849e8d38a5751449f874573bfd4237b8fc2d108645e23b37f0fd39f6"
+    },
+    {
+      "character": "만",
+      "codepoint": 47564,
+      "index": 188,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d9c02b2e3dcbf230b74e09eb3ec37c2b40c9988b5f43cc5271340b3cbd26ae76"
+    },
+    {
+      "character": "말",
+      "codepoint": 47568,
+      "index": 189,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c025d286b8cf35c495284bd0451df4d27cae0fbd8d107bd566ffd83dd783f305"
+    },
+    {
+      "character": "머",
+      "codepoint": 47672,
+      "index": 190,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "84856ad83ab92f6c84d62aef12622eb833e874efca4235ff3530ffdd9ef8dc9d"
+    },
+    {
+      "character": "먹",
+      "codepoint": 47673,
+      "index": 191,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e6f4dc8bd7d09224e0e53661410acd81a7cbddb5255e6f0ccbe6b8a3dc51162a"
+    },
+    {
+      "character": "먼",
+      "codepoint": 47676,
+      "index": 192,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "bf90e8247176fef3ac249c913e4757b3376d232e9ac68ff4d48d983610723acb"
+    },
+    {
+      "character": "멈",
+      "codepoint": 47688,
+      "index": 193,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9d85133fcf24ea381a04c50ce57568dd7a221e19ff863c923a57d1eb8611493a"
+    },
+    {
+      "character": "면",
+      "codepoint": 47732,
+      "index": 194,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "74ab59de2087b019d4c9a0deefe43bd277c275a45cf3024fdc4269c07921da55"
+    },
+    {
+      "character": "명",
+      "codepoint": 47749,
+      "index": 195,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e6d7fbff830e9db498b8e4ec4e63c858c33c37d6dc741a4f00f2d0ac56ca7168"
+    },
+    {
+      "character": "모",
+      "codepoint": 47784,
+      "index": 196,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0ddc4ab9d120b63884090d02a4046dd01aa7908df8a78b583ace5e7bd838fb0d"
+    },
+    {
+      "character": "목",
+      "codepoint": 47785,
+      "index": 197,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8050ff8bdc8a2893af521f84630cb46f6d56d26b878701b5c231c6309841e0bb"
+    },
+    {
+      "character": "무",
+      "codepoint": 47924,
+      "index": 198,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b882a31ec19d3f743ee9e3a9340b273ceccf4acceb6772fdbeeddc31bea01141"
+    },
+    {
+      "character": "문",
+      "codepoint": 47928,
+      "index": 199,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "46f2b38e04fc89a0221a85c4ac29f0e97819251988caf1771a1c508aec0dfe7c"
+    },
+    {
+      "character": "물",
+      "codepoint": 47932,
+      "index": 200,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "bc42970a2c0693a78a0be3f449f9b497c9b9209631867bdadf257adbbd41c923"
+    },
+    {
+      "character": "미",
+      "codepoint": 48120,
+      "index": 201,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9a53e6493d8531403a8fb580c1cbc6e9cf72c0ad57850f28c1aa01fe7809c79a"
+    },
+    {
+      "character": "밀",
+      "codepoint": 48128,
+      "index": 202,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "95807a653f4f06b905949d77dd0377b78735a918cbf1c832eb0ddc2f9e100774"
+    },
+    {
+      "character": "바",
+      "codepoint": 48148,
+      "index": 203,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c006e988a6db7ca7384edc549822058d8caa30f4ff76cdaefd9447d627caff1b"
+    },
+    {
+      "character": "밖",
+      "codepoint": 48150,
+      "index": 204,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6015eb41638f6ba6fff4a75e0986b54cdd92a310ca3d1b159cba3359ce67fcc5"
+    },
+    {
+      "character": "반",
+      "codepoint": 48152,
+      "index": 205,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "de7c050e829feecbbc4aa30944fcbe68507c8bed3a3765bd469674d2653a01b9"
+    },
+    {
+      "character": "받",
+      "codepoint": 48155,
+      "index": 206,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "84368113eff1680e829639d2dd4b3c5735987cc486c49fab22ea34b66cead897"
+    },
+    {
+      "character": "방",
+      "codepoint": 48169,
+      "index": 207,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6b7dd07a07b047ac5538992b4c637e8b31f12760658d6865c93fbd94e3de1250"
+    },
+    {
+      "character": "배",
+      "codepoint": 48176,
+      "index": 208,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f7719c1841ec5b5a86174734b93a745e8634a2f126a1f8f654a468682eef244a"
+    },
+    {
+      "character": "번",
+      "codepoint": 48264,
+      "index": 209,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9d8f8d44060c3eba23825abca2a4bc95cbc37f1dc057134e420010bab2fd3a6a"
+    },
+    {
+      "character": "벽",
+      "codepoint": 48317,
+      "index": 210,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c0e9ec09100fcbd8ebbf2191b186dce433943985739db77669be2e269d17c047"
+    },
+    {
+      "character": "별",
+      "codepoint": 48324,
+      "index": 211,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ff88d11229c90b1743cb711eea0b13dd119c8ef0b968da56fafd55d5f8d40c1a"
+    },
+    {
+      "character": "보",
+      "codepoint": 48372,
+      "index": 212,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ff5509e71b749696898496312542eca0330d79648524aeca99f59912d9c54dab"
+    },
+    {
+      "character": "복",
+      "codepoint": 48373,
+      "index": 213,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ce180ad88dbc8d92931cd9a2491f263d1a94c738f1f6025e1a373b7aa772691a"
+    },
+    {
+      "character": "볼",
+      "codepoint": 48380,
+      "index": 214,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "78590edaef340939e3b400db2ccc109549d5a925044b3bad88b31579be57f628"
+    },
+    {
+      "character": "봇",
+      "codepoint": 48391,
+      "index": 215,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2af1a6c8366c1c42f5ccd0550bd08d5ad01bf4fc0b488ea2cd999bf9b64678ae"
+    },
+    {
+      "character": "부",
+      "codepoint": 48512,
+      "index": 216,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "02fa0580b577fc3787c670ea8e36c4a92e3a9f8535362a541eec749fe9856273"
+    },
+    {
+      "character": "분",
+      "codepoint": 48516,
+      "index": 217,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4f4604d9b11e63563d980f91acfaa60b687934740eab03dc5ce57921398809fd"
+    },
+    {
+      "character": "불",
+      "codepoint": 48520,
+      "index": 218,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "bb700f71c2718c017c8811f8dad6b03c3c14ba8e73e89166d730b41e97c325a2"
+    },
+    {
+      "character": "붉",
+      "codepoint": 48521,
+      "index": 219,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a6e0b768980529d3fa1a6fc15fed83c63a3dc57634996fe7d767e25e7a64b3f5"
+    },
+    {
+      "character": "붙",
+      "codepoint": 48537,
+      "index": 220,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "bc38eaa54591bdeae4a32d467eac3a3bd719508ddb7794f54771b94775a189da"
+    },
+    {
+      "character": "블",
+      "codepoint": 48660,
+      "index": 221,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2de2b27b68b62ef261bf036c365c25182b6cbb83753be1e7b01e7aa082715704"
+    },
+    {
+      "character": "비",
+      "codepoint": 48708,
+      "index": 222,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "be38b3984d305f0b493365070b818bf9894dd4d0a958bcb89dda5384e8b572c9"
+    },
+    {
+      "character": "빛",
+      "codepoint": 48731,
+      "index": 223,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8ef49316c7e6c844a20e6980f87cd684da8de48225782afce41223540f65d892"
+    },
+    {
+      "character": "사",
+      "codepoint": 49324,
+      "index": 224,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b1d89207f82d2fbe5b6142d94fbff1104207d5e0491250a08958c745afd3bfd7"
+    },
+    {
+      "character": "상",
+      "codepoint": 49345,
+      "index": 225,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "bc7284ef56edb084c7ec1bcea6f34dd933cec9d564c41499ca9def33b1438f47"
+    },
+    {
+      "character": "서",
+      "codepoint": 49436,
+      "index": 226,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "99b3fa9af3f36201904c72918b21099495cee7d5b5d49b96dcb89f71bf76c559"
+    },
+    {
+      "character": "석",
+      "codepoint": 49437,
+      "index": 227,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2dfb3a835d9d4ec4af3298dfd552f26a2fc378d19b5dcef0a76aba222ed46cc7"
+    },
+    {
+      "character": "선",
+      "codepoint": 49440,
+      "index": 228,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "58907cbf13d75fb273b5f209b14d9654dc5b7a8cedbbf5a356a53a4d8513f9cf"
+    },
+    {
+      "character": "설",
+      "codepoint": 49444,
+      "index": 229,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b4c80ab51694479556f4225b9a7746dbf264e93d0081e7f5d2d85b00d3d40d47"
+    },
+    {
+      "character": "성",
+      "codepoint": 49457,
+      "index": 230,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0bb8c54c35dcceff4b0e95ded39a4b71e1e332cb33e8834de267dde4a756ec11"
+    },
+    {
+      "character": "세",
+      "codepoint": 49464,
+      "index": 231,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e3f9c730dbd0fa3ea92687bdf487ae42e7d05778c92e245646164215e42b151d"
+    },
+    {
+      "character": "소",
+      "codepoint": 49548,
+      "index": 232,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "97798399fb5b97e1921054c81130f7853f6256274278807f71a4d6d8970e4539"
+    },
+    {
+      "character": "속",
+      "codepoint": 49549,
+      "index": 233,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "7e23b28d1f44b58f2f5214392a48198b690bf76385ec2a1ca340597e08f65621"
+    },
+    {
+      "character": "손",
+      "codepoint": 49552,
+      "index": 234,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2c170b2eeff2c5006713ef52222fbe4766ddfe890cdc996137d67fb9d34b2666"
+    },
+    {
+      "character": "수",
+      "codepoint": 49688,
+      "index": 235,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b4952735cb078e76413fac6dd171edcbb139102a6f877b784c13233339f9c4a6"
+    },
+    {
+      "character": "스",
+      "codepoint": 49828,
+      "index": 236,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5e59f0d2edbb855316e8e8c71a0866e762fdd2d6d5938c55bab3678ea107ef92"
+    },
+    {
+      "character": "슬",
+      "codepoint": 49836,
+      "index": 237,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f4dcb2d54233d23763ba0b96f77cab9b0b55c5eb8389cebc66603d5785e66823"
+    },
+    {
+      "character": "습",
+      "codepoint": 49845,
+      "index": 238,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6e9e28d69f9757a68217b8c9be6585d009aee2a5d8f739f5fd3470c477ead213"
+    },
+    {
+      "character": "시",
+      "codepoint": 49884,
+      "index": 239,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "dfe458b5182d6244400eaa6d292801c9648c98813a03c1608c26b821529166ac"
+    },
+    {
+      "character": "식",
+      "codepoint": 49885,
+      "index": 240,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "08201bd334efc2d7fea7b3c9ff381b595162d31ddcae8d3f45d6811362454eea"
+    },
+    {
+      "character": "실",
+      "codepoint": 49892,
+      "index": 241,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "00e9142b5ba24e4d8782d7182018ccf1716a8dd776dd3eb79178ea0b2fb10535"
+    },
+    {
+      "character": "심",
+      "codepoint": 49900,
+      "index": 242,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "cc050a4c26fb788c5a9682febba110fac883eabed2da8d32952fa98bc4cd4c9d"
+    },
+    {
+      "character": "쓸",
+      "codepoint": 50424,
+      "index": 243,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "65105b7d3d20e5d43040d1b3a9ba6d9917d1b12cb0ee33797b21d572e632031e"
+    },
+    {
+      "character": "씩",
+      "codepoint": 50473,
+      "index": 244,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "765b10227a931722174972a084da0b2f8423107dc0d88a7f1f1eb809c1ddb5a8"
+    },
+    {
+      "character": "아",
+      "codepoint": 50500,
+      "index": 245,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b237a50cdec1f55477722687fdc528cb30a54362423abf4a96668addbdee012b"
+    },
+    {
+      "character": "안",
+      "codepoint": 50504,
+      "index": 246,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "25659c08d478a9e0bed91f00c1444961a9b66cf746161d84865802bfb020964b"
+    },
+    {
+      "character": "않",
+      "codepoint": 50506,
+      "index": 247,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ca05bf028fae58cea99251602b5b43a97f6c0746b53e3db0ce7cd567149b6a7d"
+    },
+    {
+      "character": "압",
+      "codepoint": 50517,
+      "index": 248,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fde17fa587b6b1b5638505fcaca2e8e07e8e7fd4edaf86a98929bdd039714e44"
+    },
+    {
+      "character": "앞",
+      "codepoint": 50526,
+      "index": 249,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "35e867391de80d07fb277c1a1f3d96f27970b6217a0eae84a0b5d89414b11349"
+    },
+    {
+      "character": "애",
+      "codepoint": 50528,
+      "index": 250,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5a1f1448e0c92db6065684e5703eaeacdd7cdf52b27b3499a52d3d7360eedfde"
+    },
+    {
+      "character": "야",
+      "codepoint": 50556,
+      "index": 251,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "1dc5e494a5eefb56257f153b214ab9c525b8d1ded82b0483a5ed187d83c03cf1"
+    },
+    {
+      "character": "어",
+      "codepoint": 50612,
+      "index": 252,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "86fd6832c651cedb53947f781e87e0031ea72cb43bb93a039494399c072f584e"
+    },
+    {
+      "character": "업",
+      "codepoint": 50629,
+      "index": 253,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e48bc40ce7191496091b18d8d661c809ba8deedfe1f578b90dc989b51664df57"
+    },
+    {
+      "character": "었",
+      "codepoint": 50632,
+      "index": 254,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "108655317a238ddbd3fab0c2233fd896f242873a5befc7c5706c7f8d09549fa1"
+    },
+    {
+      "character": "에",
+      "codepoint": 50640,
+      "index": 255,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2437327fa3bc99a673944d56c230ca02640fbf185cb597ae04c4647d2b7527c6"
+    },
+    {
+      "character": "엘",
+      "codepoint": 50648,
+      "index": 256,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8f8cc66b44add03e1e3e05832ed400d7b0d50f92f80819c54cc80ed20b0893e4"
+    },
+    {
+      "character": "여",
+      "codepoint": 50668,
+      "index": 257,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a74073a87f171049d6fbae3879d6bc7aa0e6de442748b87dee5837c648372698"
+    },
+    {
+      "character": "연",
+      "codepoint": 50672,
+      "index": 258,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ee7df874acf744ae27daf6ea339b9e1d4f981cfbe689d6995432e0972942b622"
+    },
+    {
+      "character": "열",
+      "codepoint": 50676,
+      "index": 259,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "76d7ebeece3967bc06dc64c73b23174fe88453fdb4cfb984a3644dfd775288b1"
+    },
+    {
+      "character": "였",
+      "codepoint": 50688,
+      "index": 260,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "959aa40c7b819203cb4385076de603a923fc12e0764885dc87352957622ab0b9"
+    },
+    {
+      "character": "옆",
+      "codepoint": 50694,
+      "index": 261,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b00916d35fff466daf4f1cd187d24489c434685deefe63d745cebb6f8b70d997"
+    },
+    {
+      "character": "예",
+      "codepoint": 50696,
+      "index": 262,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e46b095f7aa1dd239d68e55265784e6105539f552049c1233ec551952b9f1ebc"
+    },
+    {
+      "character": "오",
+      "codepoint": 50724,
+      "index": 263,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f407961cb1a19e11806093e6012b40c9399bc49f45acd70cf2695d1480aa616e"
+    },
+    {
+      "character": "온",
+      "codepoint": 50728,
+      "index": 264,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b2e659640dce76f5bf080542ffb14ada1449ad80d5e594f9af6b92f2ba5ae710"
+    },
+    {
+      "character": "옮",
+      "codepoint": 50734,
+      "index": 265,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4e685c198e1c60394213501b12f4aaa1675074359d7f41a9f0abffd6771d36ad"
+    },
+    {
+      "character": "옵",
+      "codepoint": 50741,
+      "index": 266,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "7f4947df7319a024637d8232d3b1a7d67e8634b53352ede01d4fb8161362a82f"
+    },
+    {
+      "character": "와",
+      "codepoint": 50752,
+      "index": 267,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b10518f62237a51b1cea25db0ede9b1048d34d4da5a5bad68f69ad57f246bd0f"
+    },
+    {
+      "character": "완",
+      "codepoint": 50756,
+      "index": 268,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2c4c6655841690b8fd4789810cdbb51bd29e2d89f27f14e7205f062579dfb55f"
+    },
+    {
+      "character": "왼",
+      "codepoint": 50812,
+      "index": 269,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "55ef15f4334af614e74fe865eeae0ac1c3fe4407e5ee13cff0dd5f536ae1440b"
+    },
+    {
+      "character": "요",
+      "codepoint": 50836,
+      "index": 270,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "938b2e44e6902cd826305bfafdad13011e1228c15993cffd6e16466b833d7e4d"
+    },
+    {
+      "character": "용",
+      "codepoint": 50857,
+      "index": 271,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3ea44db305486575cb90ed951e9aab206bdf63c4206d64620ae45bb91e5894dd"
+    },
+    {
+      "character": "운",
+      "codepoint": 50868,
+      "index": 272,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ebf164a0524cca86c090a6e61efb4c4f00f8d6bfb28cd19ab5ac858f78e95040"
+    },
+    {
+      "character": "움",
+      "codepoint": 50880,
+      "index": 273,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "550acf4c0279b54cb62ff3301f9c060a212494c5c832f94bac580603fbb906ab"
+    },
+    {
+      "character": "원",
+      "codepoint": 50896,
+      "index": 274,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "46c0019e1b7a280a12481d022781e11a5c4a8e2be2b67e9e62dc0508d7ee8cdd"
+    },
+    {
+      "character": "위",
+      "codepoint": 50948,
+      "index": 275,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "de2463b9ba9060dacc46f4edcae06c3e221df916e8f99c168e78cb9a415c782c"
+    },
+    {
+      "character": "유",
+      "codepoint": 50976,
+      "index": 276,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2b7691c2166341c2787c6631adef76f51b7d5e2b9e7b3d11cbd60f6d837d8af4"
+    },
+    {
+      "character": "으",
+      "codepoint": 51004,
+      "index": 277,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9a4d58f97cd0643de0fc510fea7c7269b11c884b8c23f62416bbc93a6694924d"
+    },
+    {
+      "character": "은",
+      "codepoint": 51008,
+      "index": 278,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b2c42fe470cf8e659f17aadee4db6929cea688270b93be26dba1272cdb452dc5"
+    },
+    {
+      "character": "을",
+      "codepoint": 51012,
+      "index": 279,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "93f865a06d199143db291f72b93d7fbffff3357bbe55b52811a6e1ef2966ba67"
+    },
+    {
+      "character": "음",
+      "codepoint": 51020,
+      "index": 280,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "08e7b5621e730dc284f688f0be28f8cbd2d01133a961a3531a3c03eaa1045c83"
+    },
+    {
+      "character": "응",
+      "codepoint": 51025,
+      "index": 281,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "79762f8e0c7d789aa8d21a1ab3de00de6b53edf761290436e47be70464f00713"
+    },
+    {
+      "character": "의",
+      "codepoint": 51032,
+      "index": 282,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "03bdfa02ffa60a56b15baf09749ccbe818c1fe9c4d2dfdd120cdd2aa3bc50fd4"
+    },
+    {
+      "character": "이",
+      "codepoint": 51060,
+      "index": 283,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c579759d4cd28599bef4ce0944d542b891d4d74b1ffd812a8a74eb767f058caf"
+    },
+    {
+      "character": "인",
+      "codepoint": 51064,
+      "index": 284,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "76e79489667977d7fed6f5777bf618e9b44e14df55983193662828c247a38001"
+    },
+    {
+      "character": "일",
+      "codepoint": 51068,
+      "index": 285,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "184add7087475367ec12c258bbad7da81af68ae2897af14c2e114d110be36346"
+    },
+    {
+      "character": "임",
+      "codepoint": 51076,
+      "index": 286,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b922f30689be1271765e58b874c1a572f71af966e1f4a80719e5097043b595a2"
+    },
+    {
+      "character": "입",
+      "codepoint": 51077,
+      "index": 287,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9f2d2ffeb79f90a97689ac0a382d44ffacb59faa6ed149463bcb8c86d476ebda"
+    },
+    {
+      "character": "잇",
+      "codepoint": 51079,
+      "index": 288,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2aa5d73b72be7cfa8bdc898b55d47287112200e93d1d95f6f8de971a61eb78b0"
+    },
+    {
+      "character": "있",
+      "codepoint": 51080,
+      "index": 289,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "1d4079e48dc1d02baab558470f430dd9f7da0099d9257f4fd5e30b0ea4ac7f0b"
+    },
+    {
+      "character": "자",
+      "codepoint": 51088,
+      "index": 290,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b63f9bb5ce94f8cf1c06a8e77351172bc0e4913498d48e5ee93188319aac4d86"
+    },
+    {
+      "character": "작",
+      "codepoint": 51089,
+      "index": 291,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2ea78b1a22d114de9d8a0d7fef78478ca2cf55a09b117d216acf8acfafc7d3a8"
+    },
+    {
+      "character": "잠",
+      "codepoint": 51104,
+      "index": 292,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d06c510a8c024aeed2de162e478c392960752d714b92666ecf9d795c71438154"
+    },
+    {
+      "character": "잡",
+      "codepoint": 51105,
+      "index": 293,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2ff54cc02d0c65bc6fb9e1e62d1c2633de91c4e6ad71ab2765889713f21593a2"
+    },
+    {
+      "character": "장",
+      "codepoint": 51109,
+      "index": 294,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "74b076af9bcd79953e6322fcd705eab790ea58b891746befe0ff0e4ba3372f9c"
+    },
+    {
+      "character": "재",
+      "codepoint": 51116,
+      "index": 295,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "aec9838c52985e29eaf9329c3972072b631d778f8987f878bb2360cef819ca5f"
+    },
+    {
+      "character": "저",
+      "codepoint": 51200,
+      "index": 296,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "481cec5aaaa1ac8951f51d349bb74c28a3ff26c393149714996c09e2cc983d15"
+    },
+    {
+      "character": "적",
+      "codepoint": 51201,
+      "index": 297,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "083ab57ebb81ba6c2cb69b5c1fff47fdc18a857c687d510eb26c8ee096c5b385"
+    },
+    {
+      "character": "전",
+      "codepoint": 51204,
+      "index": 298,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "efe3b337d281860a76c2c059d8a1745a6614a1f03236a8215f0d2b8e75de5eef"
+    },
+    {
+      "character": "절",
+      "codepoint": 51208,
+      "index": 299,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8f35531b93dd8b6374aa0b37ee9ceb8440ae55c2ae6abd9885c7915bf94b3120"
+    },
+    {
+      "character": "점",
+      "codepoint": 51216,
+      "index": 300,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "29371da0b93ce1e145bdf11e935eb59967ae1e34feaa12785b1336b8e390eb0c"
+    },
+    {
+      "character": "정",
+      "codepoint": 51221,
+      "index": 301,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d212bc3125815d2852380c3a59a155f2c01dca9528f41f440a1273976c1247b6"
+    },
+    {
+      "character": "제",
+      "codepoint": 51228,
+      "index": 302,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a0476986bdbc520b8c45127f4590aa503500f7a6f14162ee862c7ad172f0a50a"
+    },
+    {
+      "character": "조",
+      "codepoint": 51312,
+      "index": 303,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b7722b663fb74aa275b243d9ac8f568bfdb54bffbede41d076c32309c127399f"
+    },
+    {
+      "character": "족",
+      "codepoint": 51313,
+      "index": 304,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "255114cf96cbb85fd58bb0af8def86bd65459083b042532e6b8900ee6ecc1cc2"
+    },
+    {
+      "character": "졸",
+      "codepoint": 51320,
+      "index": 305,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9804352357680ce70fd2d10a8ffc4ea1a84cd9d0c028ec737b6c5ce1e438638e"
+    },
+    {
+      "character": "종",
+      "codepoint": 51333,
+      "index": 306,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b7d4fd87134f9be87788e95c0bff827bcec1f63239fa1b0ff27dd43438e51713"
+    },
+    {
+      "character": "주",
+      "codepoint": 51452,
+      "index": 307,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "d47e9c508ac5a4b4ba01a358de7412d89bba5fd52c7ed24b6939fb73ad669471"
+    },
+    {
+      "character": "준",
+      "codepoint": 51456,
+      "index": 308,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "18370600f014c3a5f4f23f22aba17333e926bd84cca4a9f4eeeb61414e04537b"
+    },
+    {
+      "character": "줄",
+      "codepoint": 51460,
+      "index": 309,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "08b3c338a04aad7c502d889a1c4cbf1c1055149534a1eb9ca0db9137f0e9cd92"
+    },
+    {
+      "character": "중",
+      "codepoint": 51473,
+      "index": 310,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f3d2d2a8c8bb7232c048755d5d5a9cb363aebf532d74e9408374ba5c20ebff69"
+    },
+    {
+      "character": "즐",
+      "codepoint": 51600,
+      "index": 311,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "aea48ac8c3dcc9dff5c6235a3522ac6e1d2b7502e3f83d6757b0ee1b5a984f5a"
+    },
+    {
+      "character": "지",
+      "codepoint": 51648,
+      "index": 312,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2197692934df28380066428a615364a278ad111d5955734252c3a0bfe57a7304"
+    },
+    {
+      "character": "직",
+      "codepoint": 51649,
+      "index": 313,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "dde13aa3d7d0af6ede23b973f58bb718df7b198bd8d099639536fa22e604fe15"
+    },
+    {
+      "character": "진",
+      "codepoint": 51652,
+      "index": 314,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fd15379916bec902aefd6d84e71b8952c56c64ae33acad4c56c08f48932138c1"
+    },
+    {
+      "character": "짐",
+      "codepoint": 51664,
+      "index": 315,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ce468018d65d3a30193c9eec1a231f3f17a25ae635a6e5059de99e5d88e9916b"
+    },
+    {
+      "character": "집",
+      "codepoint": 51665,
+      "index": 316,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b38ffa152476a6d82c1202fbeb013518cee7fd17e03bbd91cd79ed8bb472c7f5"
+    },
+    {
+      "character": "쪽",
+      "codepoint": 51901,
+      "index": 317,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fef1676eac66bb29f766e0b9e5a188762211be86593d8df3876714141e93a495"
+    },
+    {
+      "character": "차",
+      "codepoint": 52264,
+      "index": 318,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "e1c5ad8782dada14d3a2f8441c5e7e7aee484528f2678246f75ffb04b70eb0b3"
+    },
+    {
+      "character": "창",
+      "codepoint": 52285,
+      "index": 319,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "98f26fab607ee6529d5a807d79dc07cdc2ee2574c57586fea5e40c80fd8a6a0c"
+    },
+    {
+      "character": "찾",
+      "codepoint": 52286,
+      "index": 320,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "2123f432c0cbb30048044b367203126a8865df20f983a46ee7f921954159d55a"
+    },
+    {
+      "character": "처",
+      "codepoint": 52376,
+      "index": 321,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "404de74d888186acd4acf93d889267b9eabe3c2c3769eecdde2d0edfc73fb256"
+    },
+    {
+      "character": "철",
+      "codepoint": 52384,
+      "index": 322,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8be755d358dcd5c61b357e74a8d6f94ea58a9b98144541b207696925f692bbbb"
+    },
+    {
+      "character": "체",
+      "codepoint": 52404,
+      "index": 323,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "39fa27fe266e9ea30a07eeec3320bb097bf38a73148cc3f781f0df4d8dbc988d"
+    },
+    {
+      "character": "쳐",
+      "codepoint": 52432,
+      "index": 324,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "0b44273b9ba775e5363a883d010f503f149df5c561daff098c19258c73d609c3"
+    },
+    {
+      "character": "초",
+      "codepoint": 52488,
+      "index": 325,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "17a0c803063ebcefcbbde337bdcb56aefcffd12aa939620cef56a7afcaae63e8"
+    },
+    {
+      "character": "추",
+      "codepoint": 52628,
+      "index": 326,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ad5691470cff6809bf62c4b6eeec970bed716bd39697793a8959feb018d7a2c2"
+    },
+    {
+      "character": "춘",
+      "codepoint": 52632,
+      "index": 327,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4b537a9948273b2d267f93b9d81fe025737d9def802669a3debb478bdf686c24"
+    },
+    {
+      "character": "출",
+      "codepoint": 52636,
+      "index": 328,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "612bb9882531300e505e5ca9a62454b3ff4a4796c15224d7a9df68aafe42acdf"
+    },
+    {
+      "character": "춤",
+      "codepoint": 52644,
+      "index": 329,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3e638884930ab47d3955cc3b31568cf0373ff7d9c70dcd1552c5fe1b00986126"
+    },
+    {
+      "character": "충",
+      "codepoint": 52649,
+      "index": 330,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f4cfb9954c92cb2b7b5244a3f534d05613c103a48a1892ce5849568570fde838"
+    },
+    {
+      "character": "췄",
+      "codepoint": 52676,
+      "index": 331,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c1bae6c88cbbf2c7e9f28897fee373840eeaaa2edf9044a088f4f5eb76b9dcb7"
+    },
+    {
+      "character": "취",
+      "codepoint": 52712,
+      "index": 332,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "80ba0829c44bb6b2a8fe012ba7e6e2a971231cf66d2f645d60fee43c4ce3d055"
+    },
+    {
+      "character": "치",
+      "codepoint": 52824,
+      "index": 333,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "c9cf1910e0bcaec83203958c942464bd2866a7882569228f1d42793f006cc774"
+    },
+    {
+      "character": "칠",
+      "codepoint": 52832,
+      "index": 334,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6c425a9de03218f675e80d97d0981cecae5fbb59cdaab082a4b8ab3f5cda4a5b"
+    },
+    {
+      "character": "칸",
+      "codepoint": 52856,
+      "index": 335,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "49edf393a4aad5831c5a06e8f688d13f58eb66a44aead396776b84dbca98a6d7"
+    },
+    {
+      "character": "켓",
+      "codepoint": 53011,
+      "index": 336,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8c323a52bf6dfc2ed93a0ec89523c9617ea5b45d66392dd97efb7bf75bdd27a3"
+    },
+    {
+      "character": "켜",
+      "codepoint": 53020,
+      "index": 337,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "40304d2824dc487b49706a0bbe5f3f22c6095568ace1db21afe3df4e69d6cb6a"
+    },
+    {
+      "character": "크",
+      "codepoint": 53356,
+      "index": 338,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "125105bcce7a0e895c6163bb0b8df54836d3fa6f1b8e9a74f276fb7d55f6ff83"
+    },
+    {
+      "character": "키",
+      "codepoint": 53412,
+      "index": 339,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "75e4ddad3a881bbe320cef040e3a384c4bae7c967646b6dde23fde0cdb0ce538"
+    },
+    {
+      "character": "타",
+      "codepoint": 53440,
+      "index": 340,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "9638b492bffa830d81245d9fce06b869225b2e7f49392047da40e3534b1db322"
+    },
+    {
+      "character": "택",
+      "codepoint": 53469,
+      "index": 341,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "1433f2002f4d7ab56f86d8cdb0c0c29e1f80e34b410772b078be5133d0528c4f"
+    },
+    {
+      "character": "터",
+      "codepoint": 53552,
+      "index": 342,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "667b5587d9c49a7bc11c69bde13605d9c6277bab6a869186ee6582d62ffaeb67"
+    },
+    {
+      "character": "토",
+      "codepoint": 53664,
+      "index": 343,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "78fc7673eaf6ce9ceb6c53bb2177b2723ab2ea242e658dbfbfd0bfb483aaa340"
+    },
+    {
+      "character": "통",
+      "codepoint": 53685,
+      "index": 344,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a86c6b5b448bfa244a130e33459001fb8ba55e6ccef1351d273c3eb51b4dba0c"
+    },
+    {
+      "character": "투",
+      "codepoint": 53804,
+      "index": 345,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "47c7e6d6d366ddee03ed7019b4b019566ea42570fdd5bf73b1f4af60550fc64b"
+    },
+    {
+      "character": "트",
+      "codepoint": 53944,
+      "index": 346,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "8f9eb98c8624ee99c27f8cec1620e70fd70a3c0978e4a7c8ee89fe9122f5a645"
+    },
+    {
+      "character": "틈",
+      "codepoint": 53960,
+      "index": 347,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "106859089fea86862343362df824ab4910297dabea32f17b0ba0dc87e094a295"
+    },
+    {
+      "character": "티",
+      "codepoint": 54000,
+      "index": 348,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "91ab6beb692819efab9fb99c81cb6fbc83eeff561bbc74a00f5bc8d17b4837eb"
+    },
+    {
+      "character": "파",
+      "codepoint": 54028,
+      "index": 349,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "06416dd626c61583ae4d9522fabb5e17e81bbc7e04ae4aea4b177368567f4b4e"
+    },
+    {
+      "character": "판",
+      "codepoint": 54032,
+      "index": 350,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "50becc1e47954f18fb95227875fe885877e54a36f70583c3781c496bc09a9250"
+    },
+    {
+      "character": "팔",
+      "codepoint": 54036,
+      "index": 351,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b51d63d474fa1dbf251066b60ab1bffa1bf7e447da4e40fe88d8cccd35c61351"
+    },
+    {
+      "character": "퍼",
+      "codepoint": 54140,
+      "index": 352,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "1d4b5cac3c49ac313af836942f353c272b87d73db091b50b468b77e0fdfd03d7"
+    },
+    {
+      "character": "폐",
+      "codepoint": 54224,
+      "index": 353,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fb105d66ed7d02ba21c1989f00ae2981b1a7982b4f31e58052154251f2ce2679"
+    },
+    {
+      "character": "표",
+      "codepoint": 54364,
+      "index": 354,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "836092580fbce69dc771bde9d97a8fd8dada71fcaff99df5da4ffb99f5371c1d"
+    },
+    {
+      "character": "풀",
+      "codepoint": 54400,
+      "index": 355,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "a2811844f7660f058a749737ffa6847c4e47433ac9cc6df99a56374b4782f7fb"
+    },
+    {
+      "character": "품",
+      "codepoint": 54408,
+      "index": 356,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "585cb9d4e0f62e998baa72f0508ce35fed06e318d7ed52b22001e1c6292c13e9"
+    },
+    {
+      "character": "프",
+      "codepoint": 54532,
+      "index": 357,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "af0b2cb036663ec69813e9bc02fbb3e9e47f9bfb581298664eee932a850f58bb"
+    },
+    {
+      "character": "플",
+      "codepoint": 54540,
+      "index": 358,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "693bd00c51a8a88106ffeca49cbd5e8dac812903f899ac27c8ebc1d01d33d5bf"
+    },
+    {
+      "character": "피",
+      "codepoint": 54588,
+      "index": 359,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "b452d1db5bba477ed0ef05d8a2976967197b87b2fc3107c46a4d59a60c71e3b7"
+    },
+    {
+      "character": "필",
+      "codepoint": 54596,
+      "index": 360,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fa661a6154e45cd957197864144b4c2960de7491dc76a7d0e12bf2f7796698a4"
+    },
+    {
+      "character": "하",
+      "codepoint": 54616,
+      "index": 361,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6a192b0a57cb32f375a28f699c9e9e6c2ce640c62908c7d97b7f30522e768cb6"
+    },
+    {
+      "character": "한",
+      "codepoint": 54620,
+      "index": 362,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6dd7f2bfc0bc97a24f29e2a00975dd342b2cbc943a974f599539d4745d46739c"
+    },
+    {
+      "character": "할",
+      "codepoint": 54624,
+      "index": 363,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "084a84587907d07cde70bad838f74ca45aedde7edb496d89f86c2770a2f3574c"
+    },
+    {
+      "character": "합",
+      "codepoint": 54633,
+      "index": 364,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "4e4d852162303391d4ee48dd5daa5f64741d32f34f3336a79a95e665db600ba5"
+    },
+    {
+      "character": "해",
+      "codepoint": 54644,
+      "index": 365,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "50c30fd2a8573f2c90d7257e90b624cfcaa5bdf99e4da54688172f4a26d90d54"
+    },
+    {
+      "character": "핸",
+      "codepoint": 54648,
+      "index": 366,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "bc04cb3c51de845d89d200472295bb2af1a8bb3e3a0d483c79c6f58c5ca1c790"
+    },
+    {
+      "character": "했",
+      "codepoint": 54664,
+      "index": 367,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "ce9fed483edd6f41117ed4b10b95e70e130f58ff87fcf03bc90015dbd25e8a30"
+    },
+    {
+      "character": "행",
+      "codepoint": 54665,
+      "index": 368,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "eb52513c96af98f6085a9e7a7a3d0450a783eafa2a03912aceca0c17a1ee69b3"
+    },
+    {
+      "character": "향",
+      "codepoint": 54693,
+      "index": 369,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5295b15e8e9946a19dcd792dc70197269c84316c2652287a5bf8673518caca4f"
+    },
+    {
+      "character": "허",
+      "codepoint": 54728,
+      "index": 370,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "497a318deff17a3ae6d1e2752e22ea3226d53f34f761af0183ab9054dd48c81f"
+    },
+    {
+      "character": "험",
+      "codepoint": 54744,
+      "index": 371,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5cf46eddf93db7021c25bf7da49de199b9316964d94a7fdf9996575cad8bbce7"
+    },
+    {
+      "character": "혔",
+      "codepoint": 54804,
+      "index": 372,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "fb91b30a01db4f209d4008c3fa3ac2036d208a752659d97f81077a9ef1396dcc"
+    },
+    {
+      "character": "호",
+      "codepoint": 54840,
+      "index": 373,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "84906b751ed482117eec2284e58649d3ba21d250f28889ae43ee153c5ab1499e"
+    },
+    {
+      "character": "화",
+      "codepoint": 54868,
+      "index": 374,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "5fafeca63771fccac86e3ab6c115f0c5864deb2030c835723de69be93ffb24ff"
+    },
+    {
+      "character": "확",
+      "codepoint": 54869,
+      "index": 375,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "f2a2f9e90e01e00a758645a7d473b299584714699feb8ce486e7dc9bb406d784"
+    },
+    {
+      "character": "환",
+      "codepoint": 54872,
+      "index": 376,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "68ccda10b86b3d4a6cf14ea00512f6ea78ac78c85716d377a615aadf964a5c99"
+    },
+    {
+      "character": "회",
+      "codepoint": 54924,
+      "index": 377,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "3b31cd66b48c5a7699a7de234339f79f53b6778a40478aa49d4806d3a939fd18"
+    },
+    {
+      "character": "효",
+      "codepoint": 54952,
+      "index": 378,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6a0bc619b448110f943cf69136701af76bd2939e0a6bea5019c76399fb0da408"
+    },
+    {
+      "character": "힌",
+      "codepoint": 55180,
+      "index": 379,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "04faac8993f0da5133e9c49dfeb2a15a9cea0a8aaacbcc26a38e59a4033c9bea"
+    },
+    {
+      "character": "힐",
+      "codepoint": 55184,
+      "index": 380,
+      "method": "unchanged-approved-atlas-tile",
+      "alphaSha256": "6f679700cea403a51e06b8fadc353e75e68be7138e7af6a6753b26ec325da86c"
+    },
+    {
+      "character": "–",
+      "codepoint": 8211,
+      "index": 381,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "cdae0a17e13c47d31cd4049ab3a28425dff9f492d3001c54e7b41b772202a391"
+    },
+    {
+      "character": "겨",
+      "codepoint": 44200,
+      "index": 382,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "26d0c191331a536c658c3a79f57e95eeb80c02d3ef708fe2d3e87d33503e95a0"
+    },
+    {
+      "character": "꿔",
+      "codepoint": 45012,
+      "index": 383,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "1111e1232ff30de440769188f8b3b23e8eb3538f7c6528897b03aa6b5e7d3d35"
+    },
+    {
+      "character": "끼",
+      "codepoint": 45180,
+      "index": 384,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "ed38ddf1413e03d29b4c02560c191078ed7a776bcbafb85c253d7fed8ed85cfc"
+    },
+    {
+      "character": "넘",
+      "codepoint": 45336,
+      "index": 385,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "1369c9e4b4a3745c336282d7f0631ce89f145859bbad56e00a4f4507feb5ddbc"
+    },
+    {
+      "character": "넣",
+      "codepoint": 45347,
+      "index": 386,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "235dce0e0a3bb17b75250f728119b23c2120faf14a906972d1b59a393e59bc27"
+    },
+    {
+      "character": "눌",
+      "codepoint": 45580,
+      "index": 387,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "b6b356ff735c66269073fafee2c51419d66a8e0220d4915e0b6e0eec828eeae0"
+    },
+    {
+      "character": "뉴",
+      "codepoint": 45684,
+      "index": 388,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "49d9171b441488f1c2ad28393f8ac3173827118a5c40d720187ebcadf89e6cb6"
+    },
+    {
+      "character": "닌",
+      "codepoint": 45772,
+      "index": 389,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "c152dd742ecd85fd7dbada1dcd84fc445a894b0846d735aa008e131628e917ae"
+    },
+    {
+      "character": "닫",
+      "codepoint": 45803,
+      "index": 390,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "81b1a5213e55554e768ce36ec6fc38c5010de04c037fed31eb6b9b5bf3bfa8ee"
+    },
+    {
+      "character": "닿",
+      "codepoint": 45823,
+      "index": 391,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "cc7b6c3f94d69a439bd4ef6e53ebc5fe96543fb61ab64b6bce9e70c604dd7399"
+    },
+    {
+      "character": "딪",
+      "codepoint": 46378,
+      "index": 392,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "7270a251e35c3347b69293b9c1fb02436a9cfaeb4f81908b007975b70b91c102"
+    },
+    {
+      "character": "메",
+      "codepoint": 47700,
+      "index": 393,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "68f85622d4729a6323c89117782892d45223904d4332b593b0c07b154e0923f8"
+    },
+    {
+      "character": "며",
+      "codepoint": 47728,
+      "index": 394,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "57bb3e8f0038a80c71286bdb1109f07d8703bdf71aacbe16354f5939b8052e34"
+    },
+    {
+      "character": "빠",
+      "codepoint": 48736,
+      "index": 395,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "58e1f0bf579ffcecf9712c8e71311e7169e0f49fcaa07b53bc99124136dcd3fb"
+    },
+    {
+      "character": "써",
+      "codepoint": 50024,
+      "index": 396,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "24ab9d6ef30e7eda88a2bce246ab8f0a73acdd2eee3f092e049d361fafd3a1a3"
+    },
+    {
+      "character": "우",
+      "codepoint": 50864,
+      "index": 397,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "19429f9c6aa7f4bb959cd2702df4b32262c0c36d719f60ed653099b6f37b9dbc"
+    },
+    {
+      "character": "워",
+      "codepoint": 50892,
+      "index": 398,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "142d33c3fb220acdbf2f2d01375dc9a0efe6776eabd744d370a5e7156c764ecf"
+    },
+    {
+      "character": "져",
+      "codepoint": 51256,
+      "index": 399,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "d89f6349227eb1845b27ea0b61d44047b3f79acbce588f8ab0ed2c5c4e9a8539"
+    },
+    {
+      "character": "짧",
+      "codepoint": 51687,
+      "index": 400,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "814aab80ce8ba2a932d19a7514784d398dd3dfa6722e4cfa71d77e746cd69a6f"
+    },
+    {
+      "character": "착",
+      "codepoint": 52265,
+      "index": 401,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "5db34b84e22a70c7a85b8f4f681398ce1c6e8f747e008f77124d0d2baa87b93e"
+    },
+    {
+      "character": "채",
+      "codepoint": 52292,
+      "index": 402,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "a913b40fedfdf5954b2172bab10a0a8d6057f8b9d27a7974feece741e0df7989"
+    },
+    {
+      "character": "춰",
+      "codepoint": 52656,
+      "index": 403,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "bc461c28768c1ccf93ca89a85c0202eb98f29442af53e510e80686879e252fdf"
+    },
+    {
+      "character": "턱",
+      "codepoint": 53553,
+      "index": 404,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "2bf9b917286545adf2c906320605b8f49c03304b07121afcd337d1379b7101e3"
+    },
+    {
+      "character": "혀",
+      "codepoint": 54784,
+      "index": 405,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "e1f183cbe5e7b83798fc592e52b9294358afc46dfed8f397d7ab1c01bad7a811"
+    },
+    {
+      "character": "히",
+      "codepoint": 55176,
+      "index": 406,
+      "method": "unchanged-licensed-font-outline-to-binary-16px-tile",
+      "alphaSha256": "af5f13b35e76b340c966d9f6596fc8e667547153a66a61b68169fc96f8c916bf"
+    }
+  ]
+}

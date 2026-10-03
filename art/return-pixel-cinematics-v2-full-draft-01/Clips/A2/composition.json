@@ -1,0 +1,107 @@
+{
+  "frames": [
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/00.png",
+      "sourcePngSha256": "78ceaba4513696d8c156c1d852699e95cbd7c7d27db9c4df3c99d4d026faf18f",
+      "timeMs": 0,
+      "durationMs": 200,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "e22c899105c79d408674cc3a35d80061a09190ffa0ab8cb455c9720eda5eb629"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/01.png",
+      "sourcePngSha256": "7275e1eca62a8579bba0ffadf248d94535d0718dff27fee3953b2a8dd7fb3512",
+      "timeMs": 200,
+      "durationMs": 120,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "22c3821c63ee2e04c212f5850673315c14ac0455eda8d8b7617d1133314a99ce"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/02.png",
+      "sourcePngSha256": "51731e5f7fc24a777f7cd0c3bdd129d0e75c7fa51b3603fd528db242de82b5b4",
+      "timeMs": 320,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "cf47a6b55dfeef9bdd949820a0d28ba2ed93485ea51a53233f1a3a2771180b18"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/03.png",
+      "sourcePngSha256": "c0242980ec42968aeb7397caaecdf6b1e6f38423c6e1ac848ae35002299da256",
+      "timeMs": 420,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "ca0e4621764884632e69123d9a45bd7424807f32d8ff36782c6522e0ece13b52"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/04.png",
+      "sourcePngSha256": "b22614a449a7ceafa99f356bb80293c306fda7cf0d86e6f92c5bd217fae6edd5",
+      "timeMs": 520,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "268eb973b43712c3df9613ef5df2b8cd34e32e25783e3fdf8db70a28640fc5a8"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/05.png",
+      "sourcePngSha256": "75d7698bd7375057885050be682e6516a7be4afd6686b0099a10ad08cd4281cd",
+      "timeMs": 620,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "e3f576246a8c9698c2e16396b0e5efa96791cd6c380e077fcf370644fce14156"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/06.png",
+      "sourcePngSha256": "64629ee97af30d689cb2872ad4e482a09c23272ffef2ea7a958e4d4d8935bf30",
+      "timeMs": 720,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "465d381dbcbed3b5f8245d777d2de7d4bf90445446fed716c4a5e982a93da945"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/07.png",
+      "sourcePngSha256": "c7a85d1903010b748bbcc3118b155389d3124c532f5f49c8e0ed6c9be8851f10",
+      "timeMs": 820,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "56502dc9ff3b1b47479c02b681e73ee242b8b6b7666fe12773550c5c3bcb5e60"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/08.png",
+      "sourcePngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "timeMs": 920,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/09.png",
+      "sourcePngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "timeMs": 1020,
+      "durationMs": 100,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/10.png",
+      "sourcePngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "timeMs": 1120,
+      "durationMs": 280,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f"
+    },
+    {
+      "source": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-pixel-cinematics-v1/Clips/relay-power/11.png",
+      "sourcePngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "timeMs": 1400,
+      "durationMs": 600,
+      "reusedPngByteExact": true,
+      "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f"
+    }
+  ],
+  "sourceInfo": {
+    "priorClip": "relay-power",
+    "priorGeneratedSource": "Source/v1-provenance.json",
+    "originalFrameTimingPreserved": true,
+    "newPropsAuthored": false,
+    "captionOnsetMs": null
+  }
+}

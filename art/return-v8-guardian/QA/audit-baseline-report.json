@@ -1,0 +1,23 @@
+{
+  "scope": "independent static source/native/export audit; no game/Unity launched",
+  "humanAppearanceApproval": "pending",
+  "humanFunValidation": "pending",
+  "passed": [
+    {
+      "check": "v7-baseline-frame-count71",
+      "detail": "71"
+    },
+    {
+      "check": "v7-package-unchanged-from-audit-baseline",
+      "detail": ""
+    },
+    {
+      "check": "v7-palette32",
+      "detail": ""
+    }
+  ],
+  "failed": [],
+  "observations": {},
+  "phase": "baseline",
+  "mechanicalPassed": true
+}

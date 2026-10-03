@@ -1,0 +1,1775 @@
+{
+  "name": "awakening",
+  "durationMs": 8000,
+  "frames": [
+    {
+      "index": 0,
+      "startMs": 0,
+      "endMs": 40,
+      "rgbaSha256": "ae4e48ad7acb38751612cda48ed19fdf287d690bcb3d5a06c0cfce3844527a53",
+      "pngSha256": "fc3863ce63f3647f633e02bb3095225e7712537185f550d158870f934f72713f",
+      "subExposures": [
+        {
+          "startMs": 0,
+          "endMs": 40,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/00",
+          "originalFrameIndex": 0,
+          "originalExposureMs": 40,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "startMs": 40,
+      "endMs": 60,
+      "rgbaSha256": "81f870b8d60ac504bded6ff42a024e1d8c59a6e08c5600747fd16f5c1d7a6d31",
+      "pngSha256": "88611c5aa1aa91825f51189741839d757e05e916a670d54624aaac7d42e1361b",
+      "subExposures": [
+        {
+          "startMs": 40,
+          "endMs": 60,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/01",
+          "originalFrameIndex": 1,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "startMs": 60,
+      "endMs": 70,
+      "rgbaSha256": "9fd0ea47b189723d3044fd4ae21e85b9750fd50a841aa20281b9e1452728d000",
+      "pngSha256": "adb446bb350afb401f22eea0a74b6897e1a745a263ea6d39cefab88aaa19cb87",
+      "subExposures": [
+        {
+          "startMs": 60,
+          "endMs": 70,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/02",
+          "originalFrameIndex": 2,
+          "originalExposureMs": 10,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "startMs": 70,
+      "endMs": 80,
+      "rgbaSha256": "595e187bd9157fbfce7cebb073d299e92e81d67ac07b797e78b77e5b23fc5922",
+      "pngSha256": "3577e9acf58cd42e38b01a97baaa2f30810f232515de9cb608c81322c3d56865",
+      "subExposures": [
+        {
+          "startMs": 70,
+          "endMs": 80,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/03",
+          "originalFrameIndex": 3,
+          "originalExposureMs": 10,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "startMs": 80,
+      "endMs": 100,
+      "rgbaSha256": "bc585487163351d6f65e6c645c47616a24f46bd9d7a922378ef3c9f9ac5597ba",
+      "pngSha256": "9081227acda0343413e8627bbe4a8f2e8a8703840edddfea87f5c3066372f42c",
+      "subExposures": [
+        {
+          "startMs": 80,
+          "endMs": 100,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/04",
+          "originalFrameIndex": 4,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "startMs": 100,
+      "endMs": 120,
+      "rgbaSha256": "a5266c8ab6956bc4ce381966186ffc35b97e75e8de1ccf62b59756b7d4e7b79e",
+      "pngSha256": "8dec802d0dcf19eeb4552ee23d79c84afff1c952db3aaf59d1439d64bddf9c61",
+      "subExposures": [
+        {
+          "startMs": 100,
+          "endMs": 120,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/05",
+          "originalFrameIndex": 5,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "startMs": 120,
+      "endMs": 160,
+      "rgbaSha256": "4524c390afde8f2e8d666bf9a54e20d9ab281983138d8f09f71ea2e0b147f917",
+      "pngSha256": "3582b96a059d4bbe75a91e65ffe648364719eb230359132f9ca3c57d10838f19",
+      "subExposures": [
+        {
+          "startMs": 120,
+          "endMs": 160,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/06",
+          "originalFrameIndex": 6,
+          "originalExposureMs": 40,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "startMs": 160,
+      "endMs": 170,
+      "rgbaSha256": "b937e295f4bf22d7e48ac6c34bbc7f3adc077af48e0680306c9a0c12bedada08",
+      "pngSha256": "90c6e075f43b8e1bbe584615c85dea393c513499122333ef7e68a0bbadf05cbc",
+      "subExposures": [
+        {
+          "startMs": 160,
+          "endMs": 170,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/07",
+          "originalFrameIndex": 7,
+          "originalExposureMs": 10,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "startMs": 170,
+      "endMs": 180,
+      "rgbaSha256": "f2870575c7cefa4d07ec6444d720f5bab7d9ffbd1606e344c52b33a4bb7c7ef9",
+      "pngSha256": "a26dc2b67a3df7a6db32f97c00af4e5d5bf951b633a8a1e91c9b43e5a5c30bc2",
+      "subExposures": [
+        {
+          "startMs": 170,
+          "endMs": 180,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/08",
+          "originalFrameIndex": 8,
+          "originalExposureMs": 10,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "startMs": 180,
+      "endMs": 220,
+      "rgbaSha256": "47d69f9006a4264a0129c29023302158215f3b6f91d9802f4655ab4508061ca0",
+      "pngSha256": "76ad0054860ac18d2ec7d8cca02018266491e9a2c6a5d9e10bb95b46a1e3bf63",
+      "subExposures": [
+        {
+          "startMs": 180,
+          "endMs": 220,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/09",
+          "originalFrameIndex": 9,
+          "originalExposureMs": 40,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "startMs": 220,
+      "endMs": 240,
+      "rgbaSha256": "e9358c48a26ed6518fc8d6a2048283afec0b0e6ab5b3647bb8f4f0ec2d757348",
+      "pngSha256": "b1481b815d7c03697cd1b1303282e4fbf91c51c6562fb02f4e32da96d2ade8fc",
+      "subExposures": [
+        {
+          "startMs": 220,
+          "endMs": 240,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/10",
+          "originalFrameIndex": 10,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "startMs": 240,
+      "endMs": 260,
+      "rgbaSha256": "c0f9e29af5e38542770bc028e6125ee15d5e4350b84875697efb25d8cb20d75d",
+      "pngSha256": "92a1f509f47625cbac9d64ff2230c2b3cbeb679a9821d5a30f2e3b2426ae4161",
+      "subExposures": [
+        {
+          "startMs": 240,
+          "endMs": 260,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/11",
+          "originalFrameIndex": 11,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "startMs": 260,
+      "endMs": 280,
+      "rgbaSha256": "6de51b9eb7ef7c3f518948760dbfd36fa166597d1f5d14d2e59922c028e02278",
+      "pngSha256": "ac0373de5ff37a77b450336aadea830d1b6a829ce22ee267422e059ee7c29219",
+      "subExposures": [
+        {
+          "startMs": 260,
+          "endMs": 280,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/12",
+          "originalFrameIndex": 12,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "startMs": 280,
+      "endMs": 295,
+      "rgbaSha256": "f29121fd8e6ed9bd561534b2c28ff691e58a62661b83e6665820c1aa6d7af024",
+      "pngSha256": "148c635e20c48a4f1c344db98f52747e2a4da8d10aeb7edb2342cf4e525a5e4e",
+      "subExposures": [
+        {
+          "startMs": 280,
+          "endMs": 295,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/13",
+          "originalFrameIndex": 13,
+          "originalExposureMs": 15,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "startMs": 295,
+      "endMs": 320,
+      "rgbaSha256": "c2dda37a49e6be451684e9f5a8132adfc6f54f06776ee6901e941737fd3449dc",
+      "pngSha256": "5376e482d44faf0537022f31e5d5403bd0ffd87593fb0cd6a61e91494efd542e",
+      "subExposures": [
+        {
+          "startMs": 295,
+          "endMs": 320,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/14",
+          "originalFrameIndex": 14,
+          "originalExposureMs": 25,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "startMs": 320,
+      "endMs": 330,
+      "rgbaSha256": "d0e2e8e2cb29543f9ed3d1a447d41066befe3909423c1969e5ba7199792a9c6b",
+      "pngSha256": "83d030426c91882671698420f797a02ff2c548bbd4706a7b8f583c87196b5ae7",
+      "subExposures": [
+        {
+          "startMs": 320,
+          "endMs": 330,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/15",
+          "originalFrameIndex": 15,
+          "originalExposureMs": 10,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "startMs": 330,
+      "endMs": 360,
+      "rgbaSha256": "657d9e9fb426e33eafd1a8f7384623b434814a3bdc14f30331c3b58318791b0e",
+      "pngSha256": "5dac02a10034ada9cc43035b6f6f95eb00c0f78520904aa911f4baa6e5a90299",
+      "subExposures": [
+        {
+          "startMs": 330,
+          "endMs": 360,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/16",
+          "originalFrameIndex": 16,
+          "originalExposureMs": 30,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "startMs": 360,
+      "endMs": 380,
+      "rgbaSha256": "71cf0de47168beebbace7bdb003b397afc559319c1c8e2c35f320867a5e1de8f",
+      "pngSha256": "7bd59d60851da9c85c4569b708e53e3eaa56bdf117cd1a9d9522e0de14316aff",
+      "subExposures": [
+        {
+          "startMs": 360,
+          "endMs": 380,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/17",
+          "originalFrameIndex": 17,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "startMs": 380,
+      "endMs": 400,
+      "rgbaSha256": "55d220ff9877023b24ab3a22839548199dd72e55d48753f9ad1ec699d39924cd",
+      "pngSha256": "5626bbed6439967d66b68f8321f03593e8ad95277a2a2e2e85d8eecb34e801be",
+      "subExposures": [
+        {
+          "startMs": 380,
+          "endMs": 400,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/18",
+          "originalFrameIndex": 18,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "startMs": 400,
+      "endMs": 440,
+      "rgbaSha256": "c44dc4487284f3e9bb036d62ccffd56674bf4b97a91fc59f4ec737cbfc35ad3a",
+      "pngSha256": "33bb17fd6eef48d9af1796bd8cb23b7cb667e81434d4ee039ae1fc2d2114e2bf",
+      "subExposures": [
+        {
+          "startMs": 400,
+          "endMs": 440,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/19",
+          "originalFrameIndex": 19,
+          "originalExposureMs": 40,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "startMs": 440,
+      "endMs": 480,
+      "rgbaSha256": "d59002925b059aa2bfff996e8ac952c5cb811dd69f974779398b50470b704e20",
+      "pngSha256": "49eb871f104e119f54ec227932daf8911bfe72028d25a05d72d15213de4c0626",
+      "subExposures": [
+        {
+          "startMs": 440,
+          "endMs": 480,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/20",
+          "originalFrameIndex": 20,
+          "originalExposureMs": 40,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "startMs": 480,
+      "endMs": 510,
+      "rgbaSha256": "2c3a29ffdea259a500af30c833795bec51cb277092028df5dd2962e9da95ce50",
+      "pngSha256": "fb8c24d91f301bf70fdc2fbce7748416bef4454b2090cdc4556ac166d5f37fe6",
+      "subExposures": [
+        {
+          "startMs": 480,
+          "endMs": 510,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/21",
+          "originalFrameIndex": 21,
+          "originalExposureMs": 30,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "startMs": 510,
+      "endMs": 520,
+      "rgbaSha256": "a7729735d438b5b8549162821718ad1ba14682f0b3d2d047ce8e7d1e23db2751",
+      "pngSha256": "5292b1488f289f4529954bd72ee87ca1b1b5c4329d730a0bb9854d1ed611eb14",
+      "subExposures": [
+        {
+          "startMs": 510,
+          "endMs": 520,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/22",
+          "originalFrameIndex": 22,
+          "originalExposureMs": 10,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "startMs": 520,
+      "endMs": 540,
+      "rgbaSha256": "78a0a2cae79b72633d07d12a2edb74141642f207adac517e88e46bea7152404b",
+      "pngSha256": "4c17d6a0c72323b7aa98bca5f25a504e4a106c3db058b08c1d63cd55758017cc",
+      "subExposures": [
+        {
+          "startMs": 520,
+          "endMs": 540,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/23",
+          "originalFrameIndex": 23,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "startMs": 540,
+      "endMs": 560,
+      "rgbaSha256": "b53f3020715e5f806d93d39069034a5097f86aa762c4576cf8bdc2d7887adff4",
+      "pngSha256": "35154a3492c47d86f11032b5da1af59a4ea96872aa9480365cf4ed30d2faf114",
+      "subExposures": [
+        {
+          "startMs": 540,
+          "endMs": 560,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/24",
+          "originalFrameIndex": 24,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "startMs": 560,
+      "endMs": 600,
+      "rgbaSha256": "a2e1ab60829f8ce34fe656da7d74621d2b46eb4e231dfa969835dd7a0efd5f0f",
+      "pngSha256": "dfcee3b21e39d0b2d262ffa8afca1280c86ff9ad6969f6a8cacfc5b0b0d37783",
+      "subExposures": [
+        {
+          "startMs": 560,
+          "endMs": 600,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/25",
+          "originalFrameIndex": 25,
+          "originalExposureMs": 40,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "startMs": 600,
+      "endMs": 610,
+      "rgbaSha256": "45151011c2984bd7cbeeff5576f8f28db13b406eaa161d0b7210e4b649f8fb79",
+      "pngSha256": "489c4dde0a8f364f860aff51ab6c464ac42cd14c479723fd9959271bac3c182b",
+      "subExposures": [
+        {
+          "startMs": 600,
+          "endMs": 610,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/26",
+          "originalFrameIndex": 26,
+          "originalExposureMs": 10,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "startMs": 610,
+      "endMs": 640,
+      "rgbaSha256": "3da50990b4b5f296af31504b9eec0fa9e03da6df55dcd633051d9d6ffba23d48",
+      "pngSha256": "1485f0a6802e0c2dd3bd7da22e439613065f318ab128a80ce777ad0a75b3b009",
+      "subExposures": [
+        {
+          "startMs": 610,
+          "endMs": 640,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/27",
+          "originalFrameIndex": 27,
+          "originalExposureMs": 30,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "startMs": 640,
+      "endMs": 660,
+      "rgbaSha256": "3d239b2db490293369f5ae14d023a0f93056f9b251f2be19610287f264efd5b2",
+      "pngSha256": "daba86e2cde235cfd9b61d405b487ee15f893a63d59f66d766b295528babd411",
+      "subExposures": [
+        {
+          "startMs": 640,
+          "endMs": 660,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/28",
+          "originalFrameIndex": 28,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "startMs": 660,
+      "endMs": 680,
+      "rgbaSha256": "8c0c9c19c18b085d4764c15dcc33f08782a53a131f601b04c8fb18ec234ebfaf",
+      "pngSha256": "78806cda3e5fa9b332828cb6386d325e320994f883a36e7d7c41f152aa30fac0",
+      "subExposures": [
+        {
+          "startMs": 660,
+          "endMs": 680,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/29",
+          "originalFrameIndex": 29,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "startMs": 680,
+      "endMs": 700,
+      "rgbaSha256": "06fa28fb8249f94c61cb80c70076c7df184ec2e14f65b747de0ec80a2a53f28c",
+      "pngSha256": "956b0cd245e66d0d40765ad705f41f73bb1d5a8e72f77ba283a46a6bfe25bf0d",
+      "subExposures": [
+        {
+          "startMs": 680,
+          "endMs": 700,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/30",
+          "originalFrameIndex": 30,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "startMs": 700,
+      "endMs": 720,
+      "rgbaSha256": "52d088799404e9083bc8ceec8c87d5d6123c83aa0c9d618115e5c2533392caa1",
+      "pngSha256": "c2eec965f0ff7995c29444b50de09ddcef004264c5032d0d56e3f1f8bfb3aaa9",
+      "subExposures": [
+        {
+          "startMs": 700,
+          "endMs": 720,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/31",
+          "originalFrameIndex": 31,
+          "originalExposureMs": 20,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "startMs": 720,
+      "endMs": 735,
+      "rgbaSha256": "2f0537e774cabcb3bb21d8b037c181331ddd19d839dfaf1b782063cc7a639b37",
+      "pngSha256": "b338ad6bc17bbf22d6f941d405c8328d9fe5291fa94f10be9182cebc9cfe3a5b",
+      "subExposures": [
+        {
+          "startMs": 720,
+          "endMs": 735,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/32",
+          "originalFrameIndex": 32,
+          "originalExposureMs": 15,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "startMs": 735,
+      "endMs": 760,
+      "rgbaSha256": "a41e97f4b5f9ddad4c34027ed0ff491cd3675a3606831f40b4e72c662694839f",
+      "pngSha256": "5a4ba3adad16b048556866f2bc50a3bafe88f3d97569252e17962ad878def9b2",
+      "subExposures": [
+        {
+          "startMs": 735,
+          "endMs": 760,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/33",
+          "originalFrameIndex": 33,
+          "originalExposureMs": 25,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "startMs": 760,
+      "endMs": 810,
+      "rgbaSha256": "bf3bae758f63ba16cfea0935cd69a7364a0b7b3c8732288faf1b05a0eb645764",
+      "pngSha256": "9151e3055f03aee6edd30b4014f590b8f2c14e817a4fc7c9a3f2143c07e6a750",
+      "subExposures": [
+        {
+          "startMs": 760,
+          "endMs": 810,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/34",
+          "originalFrameIndex": 34,
+          "originalExposureMs": 50,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "startMs": 810,
+      "endMs": 880,
+      "rgbaSha256": "41bea1fe74d32016cd0380a185f77852a3f077a2c4c2e8d685c36c01248fa36a",
+      "pngSha256": "5e3d5c0a3ec84a03292cca4dffebca6f277140a3d9bb840a5d512914b551b076",
+      "subExposures": [
+        {
+          "startMs": 810,
+          "endMs": 880,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/35",
+          "originalFrameIndex": 35,
+          "originalExposureMs": 70,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "startMs": 880,
+      "endMs": 980,
+      "rgbaSha256": "65bf825fe97a2d3773b58bb4b331eab93865b4236c9463ee9ae59a09806fd4c3",
+      "pngSha256": "368f3045eded8675a3859f4ad0e39514267d86a60cce505382869fb07511e727",
+      "subExposures": [
+        {
+          "startMs": 880,
+          "endMs": 980,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/36",
+          "originalFrameIndex": 36,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "startMs": 980,
+      "endMs": 1060,
+      "rgbaSha256": "a8b5e7d7e45e44b73850fbd4afcf3f3b77cf76c5d2e92bea0ad7fbaf76fd9085",
+      "pngSha256": "635fd592f2571df0835fa9598b7616c2e5e6804966a66552239d7d44684dd938",
+      "subExposures": [
+        {
+          "startMs": 980,
+          "endMs": 1060,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/37",
+          "originalFrameIndex": 37,
+          "originalExposureMs": 80,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "startMs": 1060,
+      "endMs": 2000,
+      "rgbaSha256": "c9603d1e87558f6e5a2c130fba192f69a9f672128b92776c00d3fb9b54e1c0b6",
+      "pngSha256": "08dee6b08d93d87cfd73d4c0ffa2567aa6271d31ce5a4cd4b850b74831b54730",
+      "subExposures": [
+        {
+          "startMs": 1060,
+          "endMs": 2000,
+          "shotId": "A1",
+          "cameraRect": [
+            192,
+            130,
+            320,
+            180
+          ],
+          "cameraScale": 2,
+          "sourceFrameKey": "awakening/A1/38",
+          "originalFrameIndex": 38,
+          "originalExposureMs": 940,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "startMs": 2000,
+      "endMs": 2200,
+      "rgbaSha256": "e22c899105c79d408674cc3a35d80061a09190ffa0ab8cb455c9720eda5eb629",
+      "pngSha256": "78ceaba4513696d8c156c1d852699e95cbd7c7d27db9c4df3c99d4d026faf18f",
+      "subExposures": [
+        {
+          "startMs": 2000,
+          "endMs": 2200,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/00",
+          "originalFrameIndex": 0,
+          "originalExposureMs": 200,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "startMs": 2200,
+      "endMs": 2320,
+      "rgbaSha256": "22c3821c63ee2e04c212f5850673315c14ac0455eda8d8b7617d1133314a99ce",
+      "pngSha256": "7275e1eca62a8579bba0ffadf248d94535d0718dff27fee3953b2a8dd7fb3512",
+      "subExposures": [
+        {
+          "startMs": 2200,
+          "endMs": 2320,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/01",
+          "originalFrameIndex": 1,
+          "originalExposureMs": 120,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "startMs": 2320,
+      "endMs": 2420,
+      "rgbaSha256": "cf47a6b55dfeef9bdd949820a0d28ba2ed93485ea51a53233f1a3a2771180b18",
+      "pngSha256": "51731e5f7fc24a777f7cd0c3bdd129d0e75c7fa51b3603fd528db242de82b5b4",
+      "subExposures": [
+        {
+          "startMs": 2320,
+          "endMs": 2420,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/02",
+          "originalFrameIndex": 2,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "startMs": 2420,
+      "endMs": 2520,
+      "rgbaSha256": "ca0e4621764884632e69123d9a45bd7424807f32d8ff36782c6522e0ece13b52",
+      "pngSha256": "c0242980ec42968aeb7397caaecdf6b1e6f38423c6e1ac848ae35002299da256",
+      "subExposures": [
+        {
+          "startMs": 2420,
+          "endMs": 2520,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/03",
+          "originalFrameIndex": 3,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "startMs": 2520,
+      "endMs": 2620,
+      "rgbaSha256": "268eb973b43712c3df9613ef5df2b8cd34e32e25783e3fdf8db70a28640fc5a8",
+      "pngSha256": "b22614a449a7ceafa99f356bb80293c306fda7cf0d86e6f92c5bd217fae6edd5",
+      "subExposures": [
+        {
+          "startMs": 2520,
+          "endMs": 2620,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/04",
+          "originalFrameIndex": 4,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "startMs": 2620,
+      "endMs": 2720,
+      "rgbaSha256": "e3f576246a8c9698c2e16396b0e5efa96791cd6c380e077fcf370644fce14156",
+      "pngSha256": "75d7698bd7375057885050be682e6516a7be4afd6686b0099a10ad08cd4281cd",
+      "subExposures": [
+        {
+          "startMs": 2620,
+          "endMs": 2720,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/05",
+          "originalFrameIndex": 5,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "startMs": 2720,
+      "endMs": 2820,
+      "rgbaSha256": "465d381dbcbed3b5f8245d777d2de7d4bf90445446fed716c4a5e982a93da945",
+      "pngSha256": "64629ee97af30d689cb2872ad4e482a09c23272ffef2ea7a958e4d4d8935bf30",
+      "subExposures": [
+        {
+          "startMs": 2720,
+          "endMs": 2820,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/06",
+          "originalFrameIndex": 6,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "startMs": 2820,
+      "endMs": 2920,
+      "rgbaSha256": "56502dc9ff3b1b47479c02b681e73ee242b8b6b7666fe12773550c5c3bcb5e60",
+      "pngSha256": "c7a85d1903010b748bbcc3118b155389d3124c532f5f49c8e0ed6c9be8851f10",
+      "subExposures": [
+        {
+          "startMs": 2820,
+          "endMs": 2920,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/07",
+          "originalFrameIndex": 7,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "startMs": 2920,
+      "endMs": 4000,
+      "rgbaSha256": "bba41b7f150b7c73b5ced6f1d89ccb8f0ef4934bdf2f2e299b379fc42bbdaf3f",
+      "pngSha256": "07f09d83599c27cdba90b7177f3fad4ba595be7e0b3206e8f8e232e88fb3a1a1",
+      "subExposures": [
+        {
+          "startMs": 2920,
+          "endMs": 3020,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/08",
+          "originalFrameIndex": 8,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        },
+        {
+          "startMs": 3020,
+          "endMs": 3120,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/09",
+          "originalFrameIndex": 9,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        },
+        {
+          "startMs": 3120,
+          "endMs": 3400,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/10",
+          "originalFrameIndex": 10,
+          "originalExposureMs": 280,
+          "sourceClockRestarted": false
+        },
+        {
+          "startMs": 3400,
+          "endMs": 4000,
+          "shotId": "A2",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A2/11",
+          "originalFrameIndex": 11,
+          "originalExposureMs": 600,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "startMs": 4000,
+      "endMs": 4200,
+      "rgbaSha256": "40ad2ca875a379081b5efbb09374a37a254b9a32fba5e1d56f11a04ef59fd4c1",
+      "pngSha256": "25448677a11b9966837f645c5d61dfa60b1784087737753a705a353e3ccb47ab",
+      "subExposures": [
+        {
+          "startMs": 4000,
+          "endMs": 4200,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/00",
+          "originalFrameIndex": 0,
+          "originalExposureMs": 200,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "startMs": 4200,
+      "endMs": 4320,
+      "rgbaSha256": "db748ad566635f23781009593bdcf0a5eaede457db25abb5f57fb7e46d2682a3",
+      "pngSha256": "64917e21d0e89d2d076d78888a39bc45843edb87b623fc8294337cc27494ca7c",
+      "subExposures": [
+        {
+          "startMs": 4200,
+          "endMs": 4320,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/01",
+          "originalFrameIndex": 1,
+          "originalExposureMs": 120,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "startMs": 4320,
+      "endMs": 4420,
+      "rgbaSha256": "5a05b6319065f1e3e344a7fe420c6872e30f69668be4b330b07d31c6053af83c",
+      "pngSha256": "7b203e9068d4c07c8b57a241cef0acb3d065a7fa3c4cff056472fd07fc9f250d",
+      "subExposures": [
+        {
+          "startMs": 4320,
+          "endMs": 4420,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/02",
+          "originalFrameIndex": 2,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "startMs": 4420,
+      "endMs": 4520,
+      "rgbaSha256": "c5f519a274c2035cc85c0a0be32c94f14811aebe2a073905623c1988c44fcedf",
+      "pngSha256": "b49d156c4ff5f87e2ad534052a1e6a64d87bbbb135da8243480673b87335241b",
+      "subExposures": [
+        {
+          "startMs": 4420,
+          "endMs": 4520,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/03",
+          "originalFrameIndex": 3,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "startMs": 4520,
+      "endMs": 4620,
+      "rgbaSha256": "0fe03d9b81f793b40336905df0f6ce8ca25b29ad68acc2f9cb9541870187138b",
+      "pngSha256": "7122458cb19a884bece9563e6686fd05f3239afd7a79456f1751fd6572ab6eae",
+      "subExposures": [
+        {
+          "startMs": 4520,
+          "endMs": 4620,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/04",
+          "originalFrameIndex": 4,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "startMs": 4620,
+      "endMs": 4720,
+      "rgbaSha256": "8108ec34b650ff9dead27fa85a3e2600d32a82e0dd608d61a2d46c1a7fd22ff2",
+      "pngSha256": "19610df5e529548da06bdc611c505ccd88e16bf7de54282d86cb49cb47c1e63f",
+      "subExposures": [
+        {
+          "startMs": 4620,
+          "endMs": 4720,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/05",
+          "originalFrameIndex": 5,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "startMs": 4720,
+      "endMs": 4820,
+      "rgbaSha256": "0faeec0cb5a6383bdb81862d44569746ccc76a0d4b8d0fe4dd4e6cbb1028688d",
+      "pngSha256": "5d7643ac59d777e5978caa9cc1ea973b205663cc27391f5a3a9dca515fb4f1f2",
+      "subExposures": [
+        {
+          "startMs": 4720,
+          "endMs": 4820,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/06",
+          "originalFrameIndex": 6,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "startMs": 4820,
+      "endMs": 4920,
+      "rgbaSha256": "1d957e08c9e9f3794691d4cf2a8363ee7a4e40ecd7e09f2a76cb20bdacba49cb",
+      "pngSha256": "a5622f583f94a99c907d64eaf9dc4ed12f3e54160f391da69acf2afe0e3bee1a",
+      "subExposures": [
+        {
+          "startMs": 4820,
+          "endMs": 4920,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/07",
+          "originalFrameIndex": 7,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "startMs": 4920,
+      "endMs": 5020,
+      "rgbaSha256": "251d6da736489e8b51dbd2700bec21c9988912f8aa21535a5ffc7ad5da4af1d7",
+      "pngSha256": "9620ebaa4e96d001146dc02cc19478157a6452bee470522cd808ddbd00da64ed",
+      "subExposures": [
+        {
+          "startMs": 4920,
+          "endMs": 5020,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/08",
+          "originalFrameIndex": 8,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "startMs": 5020,
+      "endMs": 5120,
+      "rgbaSha256": "1b9c69ef45a1b7b21750ca2ace7afede228006082b8eb260910cc46d92972b4d",
+      "pngSha256": "5b16c6fb0d333872727ddf50d4e362353a156ff65551b2427c606c79e275c30f",
+      "subExposures": [
+        {
+          "startMs": 5020,
+          "endMs": 5120,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/09",
+          "originalFrameIndex": 9,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "startMs": 5120,
+      "endMs": 6000,
+      "rgbaSha256": "6eea4bc7eaed45b490b4ab44112695dd27dcf9119839333dc05968b16ee6d77e",
+      "pngSha256": "1723e9126b8c0dd16a78ecfb2f1049f9fe1968a40dc13bae5b439a7c29d34fe1",
+      "subExposures": [
+        {
+          "startMs": 5120,
+          "endMs": 5400,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/10",
+          "originalFrameIndex": 10,
+          "originalExposureMs": 280,
+          "sourceClockRestarted": false
+        },
+        {
+          "startMs": 5400,
+          "endMs": 6000,
+          "shotId": "A3",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A3/11",
+          "originalFrameIndex": 11,
+          "originalExposureMs": 600,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "startMs": 6000,
+      "endMs": 6100,
+      "rgbaSha256": "495fad50b5747e0f8ceead59621bf08bd81d7c85d2d28415b6a86c5ca4781f4c",
+      "pngSha256": "c4070367658eb647d6e4f6005d897fc796fe5f15559f740793fe0dc63e230a31",
+      "subExposures": [
+        {
+          "startMs": 6000,
+          "endMs": 6100,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/00",
+          "originalFrameIndex": 0,
+          "originalExposureMs": 100,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "startMs": 6100,
+      "endMs": 6400,
+      "rgbaSha256": "2de489ed66cc3dd47ae1a9c0b726359b65e45bececedb882833a874f92ff7297",
+      "pngSha256": "cfccd448c698d0955d173ad845ea83853f5527f56c81b84a36be829735374d66",
+      "subExposures": [
+        {
+          "startMs": 6100,
+          "endMs": 6400,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/01",
+          "originalFrameIndex": 1,
+          "originalExposureMs": 300,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "startMs": 6400,
+      "endMs": 6600,
+      "rgbaSha256": "34192b269d1a82b9cc6c353636d3479110634c26dadfccdaec537c09852476ef",
+      "pngSha256": "c8177bca0fc5b77ecbf110f9419cb286958a1f3f43ab7c723df730f6018e1ec9",
+      "subExposures": [
+        {
+          "startMs": 6400,
+          "endMs": 6600,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/02",
+          "originalFrameIndex": 2,
+          "originalExposureMs": 200,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "startMs": 6600,
+      "endMs": 6650,
+      "rgbaSha256": "35bfae5bb979654ebbb87d5a03f3ad35cdbfe17f9210dee833e54bbac4ab8420",
+      "pngSha256": "f9586cc28f9c7f7cb8bac7de12269f7cf8efb218aed5b66707b7db1d0f65bfbd",
+      "subExposures": [
+        {
+          "startMs": 6600,
+          "endMs": 6650,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/03",
+          "originalFrameIndex": 3,
+          "originalExposureMs": 50,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "startMs": 6650,
+      "endMs": 6900,
+      "rgbaSha256": "35597eea28b27857bae8272f6d8c8c9d73047079682068e89e7798d091c2f148",
+      "pngSha256": "a3f391272ea79dee7ecda72a1727ca91ea931cf45245867faabf32b36a5d0aa5",
+      "subExposures": [
+        {
+          "startMs": 6650,
+          "endMs": 6900,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/04",
+          "originalFrameIndex": 4,
+          "originalExposureMs": 250,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "startMs": 6900,
+      "endMs": 7150,
+      "rgbaSha256": "784fcc9342f0ef06cd56862859261af62ee3716ec5778ea0c1a33f37c3c8cfb6",
+      "pngSha256": "cd05a81463fa031d26f6695488640469b3b251ecbb76ef7c364c0de5b52e02a8",
+      "subExposures": [
+        {
+          "startMs": 6900,
+          "endMs": 7150,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/05",
+          "originalFrameIndex": 5,
+          "originalExposureMs": 250,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "startMs": 7150,
+      "endMs": 7400,
+      "rgbaSha256": "dd41356d1d100c10553d986fa69198a690882081f8014b64863f0b53148092ef",
+      "pngSha256": "8bbd5eb15a6b934c2e14699cac891c9b532dbb4f30b505ac3771694240e4175d",
+      "subExposures": [
+        {
+          "startMs": 7150,
+          "endMs": 7400,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/06",
+          "originalFrameIndex": 6,
+          "originalExposureMs": 250,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "startMs": 7400,
+      "endMs": 7700,
+      "rgbaSha256": "1688e80a309c87d54ee20d5204db71194562083301f646ffbce0d317f883f330",
+      "pngSha256": "026f0a73c9c2d65faea07d499812ab4cd4c583f8fef9e31d6972d89d6041c213",
+      "subExposures": [
+        {
+          "startMs": 7400,
+          "endMs": 7700,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/07",
+          "originalFrameIndex": 7,
+          "originalExposureMs": 300,
+          "sourceClockRestarted": false
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "startMs": 7700,
+      "endMs": 8000,
+      "rgbaSha256": "1cf40b24ed346bece166a9bb5954fa45baf27fa319b5ff4cdfba2b3c3e4d9220",
+      "pngSha256": "3b369ba0e9b0fa1e70a73fea87d1c21bb125f524eda7655d1930cafb57f6633b",
+      "subExposures": [
+        {
+          "startMs": 7700,
+          "endMs": 8000,
+          "shotId": "A4",
+          "cameraRect": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "cameraScale": 1,
+          "sourceFrameKey": "awakening/A4/08",
+          "originalFrameIndex": 8,
+          "originalExposureMs": 300,
+          "sourceClockRestarted": false
+        }
+      ]
+    }
+  ],
+  "sourceActorPosesUnchanged": true,
+  "wholeCameraIntegerScalingOnly": true,
+  "humanAppearanceApproval": "pending",
+  "humanMotionApproval": "pending",
+  "runtimeCapture": false
+}

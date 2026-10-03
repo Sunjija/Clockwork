@@ -1,0 +1,60 @@
+{
+  "note": "Saved generated originals; portable SHA evidence. Cache-origin verification recorded separately.",
+  "assets": [
+    {
+      "asset": "idle",
+      "file": "Source/Generated/rev1/idle.png",
+      "sha256": "b7545f5f1509a9b5ef974f95aac6ef6ebcdad4b21156ab555dab435d3e5cec60",
+      "crop128": [
+        167,
+        439,
+        1228,
+        1126
+      ]
+    },
+    {
+      "asset": "jaw-impact-03",
+      "file": "Source/Generated/rev1/jaw-impact-03.png",
+      "sha256": "f6fb438895a5fe93146385e3eb3c16fbe7f169d8bfadbf3c23b7473a22d77e21",
+      "crop128": [
+        214,
+        508,
+        1299,
+        1113
+      ]
+    },
+    {
+      "asset": "jaw-impact-04",
+      "file": "Source/Generated/rev1/jaw-impact-04.png",
+      "sha256": "379288badf48bd17298ac3d529a93411bfeaf86cd6bfa4e694fb0dc1ab997cc9",
+      "crop128": [
+        90,
+        586,
+        1261,
+        1111
+      ]
+    },
+    {
+      "asset": "jaw-impact-05",
+      "file": "Source/Generated/rev1/jaw-impact-05.png",
+      "sha256": "abcf8b70ef30992e54773dabb9876a473d1d13997040fd8308da876572048de2",
+      "crop128": [
+        184,
+        388,
+        1430,
+        974
+      ]
+    },
+    {
+      "asset": "slam-land",
+      "file": "Source/Generated/rev1/slam-land.png",
+      "sha256": "ff1d908bd8084fca92ea0e8b60d36530fd68240eb79928c3d72e7a22fcc0e2c3",
+      "crop128": [
+        163,
+        412,
+        1435,
+        939
+      ]
+    }
+  ]
+}

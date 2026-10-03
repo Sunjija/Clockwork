@@ -10,18 +10,21 @@ public static class ReworkBuild
 {
     const string Scene="Assets/Scenes/TiqueReturnV2.unity";
     [MenuItem("Tique Return/Build Reworked Prototype")]
-    public static void Build()
+    public static void Build() => BuildForTarget(BuildTarget.StandaloneWindows64);
+    [MenuItem("Tique Return/Build Reworked Prototype for Mac")]
+    public static void BuildMac() => BuildForTarget(BuildTarget.StandaloneOSX);
+    static void BuildForTarget(BuildTarget target)
     {
         Configure();
         var book=JsonUtility.FromJson<PuzzleBook>(Resources.Load<TextAsset>("ReturnV2/puzzles").text);
         ReworkChecks.Run(book,s=>Debug.Log(s));
         EnsureScene();
         string[] args=Environment.GetCommandLineArgs();int n=Array.IndexOf(args,"--return-output");
-        string output=n>=0&&n+1<args.Length?args[n+1]:"Builds/WindowsV10/TiqueReturn.exe";
+        string output=n>=0&&n+1<args.Length?args[n+1]:target==BuildTarget.StandaloneOSX?"Builds/MacV10/TiqueReturn.app":"Builds/WindowsV10/TiqueReturn.exe";
         Directory.CreateDirectory(Path.GetDirectoryName(output));
-        var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{Scene},locationPathName=output,target=BuildTarget.StandaloneWindows64,options=BuildOptions.None});
+        var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{Scene},locationPathName=output,target=target,options=BuildOptions.None});
         Debug.Log("RETURN_V2_BUILD "+report.summary.result+" bytes="+report.summary.totalSize);
-        if(report.summary.result!=BuildResult.Succeeded)throw new Exception("V2 Windows build failed");
+        if(report.summary.result!=BuildResult.Succeeded)throw new Exception("V10 build failed: "+target);
         File.Copy("Assets/Resources/ReturnV2/Feedback/FONT-LICENSE.txt",Path.Combine(Path.GetDirectoryName(output),"FONT-LICENSE.txt"),true);
     }
     static void Configure()

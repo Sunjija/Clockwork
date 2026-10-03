@@ -1,0 +1,243 @@
+{
+    "passed": true,
+    "scope": "Actual complete Unity player renders including production OnGUI; scripted presentation fixtures, not human input testing or human visual approval.",
+    "captureApi": "ScreenCapture.CaptureScreenshotAsTexture after WaitForEndOfFrame; no desktop/OS capture or native computer control.",
+    "outputDirectory": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ui-v2/QA/font-position-repair/runtime-ui",
+    "tiqueArtRoot": "ReturnV2/TiqueV10/",
+    "wardenArtRoot": "ReturnV2/WardenV8/",
+    "fontRoot": "ReturnV2/UiV2/",
+    "humanAppearanceApproval": "pending",
+    "passMeaning": "All requested complete player-frame files were produced; this is not an assertion that typography or composition has human approval.",
+    "openingScope": "The approved falling opening is not altered or fixture-tested by this review.",
+    "nativeWidth": 640,
+    "nativeHeight": 360,
+    "observations": [
+        {
+            "file": "01-title.png",
+            "phase": "Title",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "02-title-large.png",
+            "phase": "Title",
+            "help": "",
+            "largeText": true,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208",
+                "32px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "03-puzzle-1.png",
+            "phase": "Puzzle",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "04-puzzle-2.png",
+            "phase": "Puzzle",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "05-puzzle-3.png",
+            "phase": "Puzzle",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "06-puzzle-auto-help.png",
+            "phase": "Puzzle",
+            "help": "막힌 부품은 Z로 되돌려, 밀 방향을 바꿔 보세요.",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "07-puzzle-auto-help-large.png",
+            "phase": "Puzzle",
+            "help": "막힌 부품은 Z로 되돌려, 밀 방향을 바꿔 보세요.",
+            "largeText": true,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "08-pause.png",
+            "phase": "Combat",
+            "help": "",
+            "largeText": false,
+            "paused": true,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 3,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "09-pause-large.png",
+            "phase": "Combat",
+            "help": "",
+            "largeText": true,
+            "paused": true,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 4,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208",
+                "32px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "10-combat-rest.png",
+            "phase": "Combat",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "11-combat-core.png",
+            "phase": "Combat",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "12-combat-auto-help.png",
+            "phase": "Combat",
+            "help": "턱이 내려오기 전에 점프해 충격파를 넘겨 보세요.",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "13-combat-auto-help-large.png",
+            "phase": "Combat",
+            "help": "턱이 내려오기 전에 점프해 충격파를 넘겨 보세요.",
+            "largeText": true,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "14-dead.png",
+            "phase": "Dead",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        },
+        {
+            "file": "15-ending.png",
+            "phase": "Ending",
+            "help": "",
+            "largeText": false,
+            "paused": false,
+            "screenWidth": 1280,
+            "screenHeight": 720,
+            "integerScale": 2,
+            "menuSelection": 0,
+            "screenDpi": 258.0,
+            "textSizes": [
+                "16px:base-atlas:512x208"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "revision": "full-eight-cut-v2",
+  "inspectedByMain": true,
+  "generatedAnchorsShownBeforeNativeDerivation": true,
+  "selectedGeneratedAnchorsInspected": ["puzzle-plate", "arena-plate", "exit-open-edit"],
+  "firstExitCandidateRejected": "Door/floor positions changed; kept original but not used in final frames.",
+  "reviewedArtifacts": ["QA/full-eight-cut-contact.png", "Sequences/awakening/preview.gif", "Sequences/homecoming/preview.gif"],
+  "visualInspectionScope": "Generated originals, eight final key frames and GIF first-frame views. Full exposure RGB/timing replay is a separate automated check, not human motion approval.",
+  "compositionNotes": [
+    "A1 preserves connected gray steel grid, handled brass square weights and cyan round orb; docking socket is visible before insertion.",
+    "A4 Tique remains left, four-legged guardian right, red mouth core without new eyes.",
+    "B1 guardian crouches/core off; B2 only door crop changes on shared arena; original Walk reaches door and ends in Idle.",
+    "B3 and B4 share the same workshop source and prop positions; final subtitle uses existing 16px pixel font."
+  ],
+  "audioListeningReview": "not-performed",
+  "timingRefinement": "First draft preserved separately; battery-moving original exposure boundaries included; final source159frames,72awakening/87homecoming. Independent1ms source-pose revalidation reports0ms prop delay.",
+  "humanAppearanceApproval": "pending",
+  "humanMotionApproval": "pending",
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "gameIntegrated": false,
+  "openingChanged": false
+}

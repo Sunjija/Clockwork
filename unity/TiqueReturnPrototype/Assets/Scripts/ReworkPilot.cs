@@ -21,11 +21,35 @@ namespace TiqueReturn
             if(m.phase==Journey.Restored){c.axis=p.x<602?1:0;c.interact=p.x>594;return c;}
             if(m.phase!=Journey.Combat)return c;
             float target;
-            if(m.Vulnerable)
+            // Approach during the short landing/opening transition, not only
+            // after the 1.6-second counter is already exposed. Still use the
+            // ordinary X command only after the model reports vulnerability.
+            if(m.Vulnerable||m.bossMove==IronMove.CounterSettle||m.bossMove==IronMove.Open&&m.openingSource==CoreOpeningSource.SlamCounter)
             {
-                target=m.WeakX+m.bossFacing*32;
+                target=m.WeakX+m.bossFacing*22;
                 c.axis=Math.Abs(p.x-target)>2?Math.Sign(target-p.x):0;
-                if(Math.Abs(p.x-target)<8){if(p.facing!=-m.bossFacing)c.axis=-m.bossFacing;c.attack=true;}
+                if(Math.Abs(p.x-target)<5&&m.Vulnerable){if(p.facing!=-m.bossFacing)c.axis=-m.bossFacing;c.attack=true;}
+                return c;
+            }
+            // The mixed smoke deliberately exercises one complete three-hit
+            // pylon opening first, then the new counter route. Returning to the
+            // legal service ledge avoids crossing an uncharged rolling charge
+            // while also keeping floor-wave defense repeatable.
+            if(m.breaks>0)
+            {
+                target=80;
+                if(m.bossMove==IronMove.SlamAim&&m.bossAge>.48f||m.bossMove==IronMove.Slam)
+                {
+                    target=m.aimX<320?Math.Min(618,m.aimX+100):Math.Max(22,m.aimX-100);
+                    c.axis=Math.Abs(p.x-target)>2?Math.Sign(target-p.x):0;
+                    if(m.bossMove==IronMove.SlamAim&&m.bossAge>.55f&&Math.Abs(p.x-m.aimX)<74)c.dash=p.dashReady;
+                    return c;
+                }
+                c.axis=Math.Abs(p.x-target)>2?Math.Sign(target-p.x):0;
+                if(p.grounded&&p.y==ReworkModel.Floor)c.jump=true;
+                else if(p.jumps==1&&p.y>236&&p.vy>-90)c.jump=true;
+                if(m.bossMove==IronMove.ChargeAim&&m.bossAge>.75f&&Math.Abs(m.bossX-p.x)<140&&p.grounded)c.jump=true;
+                if(m.bossMove==IronMove.Charge&&Math.Abs(m.bossX-p.x)<125&&p.grounded)c.jump=true;
                 return c;
             }
             int goal=m.bossX<320?1:0;

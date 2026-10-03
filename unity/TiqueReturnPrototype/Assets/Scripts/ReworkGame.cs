@@ -10,7 +10,7 @@ namespace TiqueReturn
     {
         public ReworkModel Model {get;private set;}
         PuzzleBook book;
-        string tiqueResourceRoot;
+        string tiqueResourceRoot,readabilityResourceRoot,wardenResourceRoot;
         readonly Dictionary<string,Sprite> art=new Dictionary<string,Sprite>();
         readonly Dictionary<string,Sprite[]> animations=new Dictionary<string,Sprite[]>();
         readonly Dictionary<string,int[]> durations=new Dictionary<string,int[]>();
@@ -19,7 +19,7 @@ namespace TiqueReturn
         Camera cameraWorld;RenderTexture target;Sprite pixel;AudioSource speaker;
         float accumulator,keyRepeat;int heldDirection=-1;
         ReworkCommand pending=ReworkCommand.Empty;
-        bool smoke,tiqueReview,offscreenCapture,releaseGate;int inputEpoch,manualShot;float smokeStart;readonly ReworkPilot pilot=new ReworkPilot();
+        bool smoke,tiqueReview,readabilityReview,offscreenCapture,releaseGate,readabilityArt;int inputEpoch,manualShot;float smokeStart;readonly ReworkPilot pilot=new ReworkPilot();
         readonly HashSet<string> screenshots=new HashSet<string>();
         readonly HashSet<string> seenArtStates=new HashSet<string>();
         readonly Color cyan=new Color(.39f,.89f,.87f),gold=new Color(.95f,.73f,.36f),red=new Color(1,.36f,.28f);
@@ -29,7 +29,9 @@ namespace TiqueReturn
             Application.targetFrameRate=60;QualitySettings.vSyncCount=0;QualitySettings.antiAliasing=0;Application.runInBackground=true;
             smoke=Array.IndexOf(Environment.GetCommandLineArgs(),"--return-v2-smoke")>=0;smokeStart=Time.realtimeSinceStartup+1.2f;
             tiqueReview=Array.IndexOf(Environment.GetCommandLineArgs(),"--return-tique-review")>=0;
-            offscreenCapture=(smoke||tiqueReview)&&Array.IndexOf(Environment.GetCommandLineArgs(),"--return-offscreen-capture")>=0;
+            readabilityReview=Array.IndexOf(Environment.GetCommandLineArgs(),"--return-readability-review")>=0;
+            uiReview=Array.IndexOf(Environment.GetCommandLineArgs(),"--return-ui-review")>=0;
+            offscreenCapture=(smoke||tiqueReview||readabilityReview)&&Array.IndexOf(Environment.GetCommandLineArgs(),"--return-offscreen-capture")>=0;
             book=JsonUtility.FromJson<PuzzleBook>(Resources.Load<TextAsset>("ReturnV2/puzzles").text);Restart();
             // Explicit QA fixture, never used by Play.cmd or the normal title.
             // Physical key probes can reach the existing safe guide without
@@ -49,12 +51,16 @@ namespace TiqueReturn
                 for(int i=0;i<frames.Length;i++)frames[i]=Load(tiqueRoot+c.name+"/"+i.ToString("00"));animations[key]=frames;
             }
             foreach(string name in new[]{"floor","wall"})art[name]=Load("ReturnV2/Art/"+name);
-            // v7: dotified guardian motion images. v0.3 WardenAuthored and v6 WardenRig stay for comparison.
-            var warden=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/WardenV7/clips").text);
+            // v8 corrects selected poses; earlier guardian art stays preserved.
+            wardenResourceRoot="ReturnV2/WardenV8/";
+            var wardenAsset=Resources.Load<TextAsset>(wardenResourceRoot+"clips");
+            if(wardenAsset==null){wardenResourceRoot="ReturnV2/WardenV7/";wardenAsset=Resources.Load<TextAsset>(wardenResourceRoot+"clips");}
+            var warden=JsonUtility.FromJson<ClipFile>(wardenAsset.text);
+            Debug.Log("WARDEN_ART_ROOT "+wardenResourceRoot+" clips="+warden.clips.Length);
             foreach(var clip in warden.clips)
             {
                 var frames=new Sprite[clip.durations.Length];durations["iron-"+clip.name]=clip.durations;
-                for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/WardenV7/"+clip.name+"/"+i.ToString("00"));
+                for(int i=0;i<frames.Length;i++)frames[i]=Load(wardenResourceRoot+clip.name+"/"+i.ToString("00"));
                 animations["iron-"+clip.name]=frames;
             }
             var states=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/StateArt/clips").text);
@@ -63,6 +69,25 @@ namespace TiqueReturn
                 var frames=new Sprite[clip.durations.Length];durations["state-"+clip.name]=clip.durations;
                 for(int i=0;i<frames.Length;i++)frames[i]=Load("ReturnV2/StateArt/"+clip.name+"/"+i.ToString("00"));
                 animations["state-"+clip.name]=frames;
+            }
+            // Image-first v2 overrides matching puzzle props only. The older
+            // readability prototype remains a fallback and a preserved comparison.
+            readabilityResourceRoot="ReturnV2/ReadabilityArtV2/";
+            var readable=Resources.Load<TextAsset>(readabilityResourceRoot+"clips");
+            if(readable==null)
+            {
+                readabilityResourceRoot="ReturnV2/ReadabilityArt/";
+                readable=Resources.Load<TextAsset>(readabilityResourceRoot+"clips");
+            }
+            if(readable!=null)
+            {
+                foreach(var clip in JsonUtility.FromJson<ClipFile>(readable.text).clips)
+                {
+                    string key="state-"+clip.name;var frames=new Sprite[clip.durations.Length];durations[key]=clip.durations;
+                    for(int i=0;i<frames.Length;i++)frames[i]=Load(readabilityResourceRoot+clip.name+"/"+i.ToString("00"));
+                    animations[key]=frames;
+                }
+                readabilityArt=true;Debug.Log("PUZZLE_ART_ROOT "+readabilityResourceRoot);
             }
             var feedbackClips=JsonUtility.FromJson<ClipFile>(Resources.Load<TextAsset>("ReturnV2/Feedback/clips").text);
             foreach(var c in feedbackClips.clips){string key="fx-"+c.name;if(animations.ContainsKey(key))continue;durations[key]=c.durations;var f=new Sprite[c.durations.Length];for(int i=0;i<f.Length;i++)f[i]=Load("ReturnV2/Feedback/"+c.name+"/"+i.ToString("00"));animations[key]=f;}
@@ -76,19 +101,19 @@ namespace TiqueReturn
             display.cullingMask=0;display.depth=1;display.clearFlags=CameraClearFlags.SolidColor;display.backgroundColor=Color.black;
             speaker=gameObject.AddComponent<AudioSource>();speaker.playOnAwake=false;speaker.volume=.3f;
             LoadPixelUi();
-            DrawWorld();if(smoke)StartCoroutine(Smoke());else if(tiqueReview)StartCoroutine(ReviewTique());
+            DrawWorld();if(uiReview)StartCoroutine(ReviewCompactUi());else if(smoke)StartCoroutine(Smoke());else if(tiqueReview)StartCoroutine(ReviewTique());else if(readabilityReview)StartCoroutine(ReviewReadability());
         }
         Sprite Load(string path)
         {
             var t=Resources.Load<Texture2D>(path);if(t==null)throw new InvalidOperationException("Missing V2 art: "+path);
             t.filterMode=FilterMode.Point;return Sprite.Create(t,new Rect(0,0,t.width,t.height),Vector2.one*.5f,64);
         }
-        void Restart(){Model=new ReworkModel(book);Model.Sound=Sound;FlushInput();inputEpoch=Model.inputEpoch;}
+        void Restart(){Model=new ReworkModel(book);Model.Sound=Sound;ResetPuzzleGuide();FlushInput();inputEpoch=Model.inputEpoch;}
         void Sound(string name){if(!Model.muted&&speaker!=null&&audio.TryGetValue(name,out var clip))speaker.PlayOneShot(clip,name=="land"?.2f:.8f);}
         bool Down(KeyCode a,KeyCode b)=>Input.GetKeyDown(a)||Input.GetKeyDown(b);
         void Update()
         {
-            if(tiqueReview){DrawWorld();return;}
+            if(uiReview||tiqueReview||readabilityReview){DrawWorld();return;}
             if(smoke&&Time.realtimeSinceStartup<smokeStart){DrawWorld();return;}
             if(Screen.width<640||Screen.height<360)Screen.SetResolution(Math.Max(640,Screen.width),Math.Max(360,Screen.height),false);
             if(Input.GetKeyDown(KeyCode.F11))Screen.fullScreen=!Screen.fullScreen;
@@ -99,7 +124,7 @@ namespace TiqueReturn
             if(!smoke)
             {
                 pending.interact|=Model.phase==Journey.Opening||Model.phase==Journey.Arrival||Model.phase==Journey.RoomClear?Input.GetKeyDown(KeyCode.Return):Input.GetKeyDown(KeyCode.E);
-                pending.undo|=Down(KeyCode.Z,KeyCode.Backspace);pending.restart|=Input.GetKeyDown(KeyCode.R);pending.hint|=Input.GetKeyDown(KeyCode.H);
+                pending.undo|=Down(KeyCode.Z,KeyCode.Backspace);pending.restart|=Input.GetKeyDown(KeyCode.R);
                 pending.jump|=Down(KeyCode.Space,KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.Z);pending.dash|=Input.GetKeyDown(KeyCode.C);pending.attack|=Input.GetKeyDown(KeyCode.X);
                 pending.axis=(Input.GetKey(KeyCode.RightArrow)?1:0)-(Input.GetKey(KeyCode.LeftArrow)?1:0);
                 int dir=-1;
@@ -119,13 +144,14 @@ namespace TiqueReturn
             accumulator+=Mathf.Min(.1f,Time.unscaledDeltaTime);
             while(accumulator>=1f/120)
             {
-                int axis=pending.axis;Model.Tick(1f/120,smoke?pilot.Next(Model):pending);
+                int axis=pending.axis;var command=smoke?pilot.Next(Model):pending;
+                Model.Tick(1f/120,command);guidance.Observe(Model,command,smoke?command.grid:heldDirection);
                 pending=ReworkCommand.Empty;pending.axis=axis;accumulator-=1f/120;
                 if(inputEpoch!=Model.inputEpoch){inputEpoch=Model.inputEpoch;FlushInput();break;}
             }
             DrawWorld();
         }
-        void OnApplicationFocus(bool focus){if(!focus&&!smoke&&!tiqueReview&&Model!=null&&Model.phase!=Journey.Title){Model.paused=true;FlushInput();inputEpoch=Model.inputEpoch;}}
+        void OnApplicationFocus(bool focus){if(!focus&&!uiReview&&!smoke&&!tiqueReview&&!readabilityReview&&Model!=null&&Model.phase!=Journey.Title){Model.paused=true;FlushInput();inputEpoch=Model.inputEpoch;}}
         void Draw(string id,Sprite sprite,float x,float y,int layer,Color? tint=null,bool flip=false,float width=0,float height=0)
         {
             if(!pool.TryGetValue(id,out var r)){var go=new GameObject(id);go.transform.SetParent(transform);r=go.AddComponent<SpriteRenderer>();pool[id]=r;}
@@ -154,6 +180,12 @@ namespace TiqueReturn
             StateProp("bg",m.InArena?(m.phase==Journey.Restored||m.phase==Journey.Ending?"arena-restored":"arena-dark"):
                 "workshop-power-"+WorldArtState.WorkshopPower(m),0,0,0,0);
             cameraWorld.transform.position=new Vector3((320+(m.shake>0&&!m.reducedEffects?Mathf.Round(Mathf.Sin(m.clock*90)*2):0))/64,180f/64,-10);
+            if(m.phase==Journey.Title)
+            {
+                // Reuse the approved workshop and idle hero; do not put a live
+                // puzzle board behind a menu that has not started the journey.
+                Tique(94,288,"Idle",WardenAnimation.FrameAt(durations["Idle"],m.clock,loop:true),20);return;
+            }
             if(!m.InArena)
             {
                 const float bx=194,by=64,cell=36;
@@ -162,7 +194,8 @@ namespace TiqueReturn
                 for(int pos=0;pos<49;pos++)
                 {
                     float x=bx+pos%7*cell,y=by+pos/7*cell;
-                    Prop("tile"+pos,p.Wall(pos)?"wall":"floor",x,y,p.Wall(pos)?10+pos/7*20:1,p.Wall(pos)?new Color(.5f,.62f,.72f):new Color(.62f,.69f,.76f));
+                    if(readabilityArt)StateProp("tile"+pos,p.Wall(pos)?"wall-"+WorldArtState.WallMask(p,pos).ToString("00"):"floor",0,x,y,p.Wall(pos)?10+pos/7*20:1);
+                    else Prop("tile"+pos,p.Wall(pos)?"wall":"floor",x,y,p.Wall(pos)?10+pos/7*20:1,p.Wall(pos)?new Color(.5f,.62f,.72f):new Color(.62f,.69f,.76f));
                 }
                 for(int i=0;i<p.room.goals.Length;i++)
                 {
@@ -174,6 +207,15 @@ namespace TiqueReturn
                     float x=Mathf.Lerp(p.previousBoxes[i]%7,p.boxes[i]%7,t),y=Mathf.Lerp(p.previousBoxes[i]/7,p.boxes[i]/7,t);
                     bool orb=p.room.types[i]==1;string box=WorldArtState.Box(p,i,out float boxAge);
                     StateProp("box"+i,box,boxAge,bx+x*cell+(orb?5:3),by+y*cell+(orb?6:0),15+Mathf.RoundToInt(y*20),true);
+                }
+                // Brief physical travel trail, never a solver/goal preview.
+                if(readabilityArt&&p.motion>0&&p.lastPushedBox>=0&&p.room.types[p.lastPushedBox]==1)
+                {
+                    int b=p.lastPushedBox,from=p.previousBoxes[b],end=p.boxes[b];int travelled=Mathf.Max(Mathf.Abs(end%7-from%7),Mathf.Abs(end/7-from/7));
+                    int exposed=Mathf.FloorToInt(travelled*t);
+                    for(int j=1;j<=exposed;j++)
+                    {float x=bx+(from%7+OpeningSequence.DirectionX(p.lastDirection)*j)*cell+18,y=by+(from/7+OpeningSequence.DirectionY(p.lastDirection)*j)*cell+31;
+                        Bar("orb-path"+j,x-1,y,3,1,new Color(.19f,.38f,.40f),3);}
                 }
                 float ht=Mathf.Clamp01(p.visualAge/.15f);ht=ht*ht*(3-2*ht);
                 float px=Mathf.Lerp(p.previousPlayer%7,p.player%7,ht),py=Mathf.Lerp(p.previousPlayer/7,p.player/7,ht);
@@ -210,6 +252,16 @@ namespace TiqueReturn
                 // The core is painted into the held Open pose; a hit flashes just those pixels.
                 if(m.Vulnerable&&m.clock-m.lastCoreHitAt<.14f)
                     Draw("core-flash",animations["iron-core-flash"][WardenAnimation.FrameAt(durations["iron-core-flash"],m.clock-m.lastCoreHitAt)],bossLeft,bossTop,11,Color.white,m.bossFacing>0);
+                if(m.Vulnerable)
+                {
+                    // Same held core and real attack point for both routes.
+                    // Four small native-pixel brackets do not cover core artwork.
+                    float wx=m.WeakX,wy=m.WeakY;
+                    Bar("core-top-l",wx-12,wy-12,5,1,ink,13);Bar("core-left-t",wx-12,wy-12,1,5,ink,13);
+                    Bar("core-top-r",wx+8,wy-12,5,1,ink,13);Bar("core-right-t",wx+12,wy-12,1,5,ink,13);
+                    Bar("core-bot-l",wx-12,wy+12,5,1,ink,13);Bar("core-left-b",wx-12,wy+8,1,5,ink,13);
+                    Bar("core-bot-r",wx+8,wy+12,5,1,ink,13);Bar("core-right-b",wx+12,wy+8,1,5,ink,13);
+                }
                 if(m.bossMove==IronMove.ChargeAim)
                 {
                     float start=m.bossFacing<0?24:m.bossX,end=m.bossFacing<0?m.bossX:616;
@@ -219,7 +271,7 @@ namespace TiqueReturn
                 {
                     StateProp("slam-area","warning-slam",m.bossAge,m.aimX-68,266,12,true);
                 }
-                if(m.bossMove==IronMove.WaveAim||(m.bossMove==IronMove.Wave&&m.Rage>=2&&m.bossAge>=.92f&&m.bossAge<1.1f)||(m.bossMove==IronMove.Slam&&m.Rage>=2))for(int i=0;i<15;i++)StateProp("wave-warn"+i,"warning-wave",m.bossAge,20+i*41,274,12,true);
+                if(m.bossMove==IronMove.WaveAim||(m.bossMove==IronMove.Wave&&m.Rage>=2&&m.bossAge>=.92f&&m.bossAge<1.1f))for(int i=0;i<15;i++)StateProp("wave-warn"+i,"warning-wave",m.bossAge,20+i*41,274,12,true);
                 for(int i=0;i<m.waves.Count;i++)StateProp("wave"+i,"wave-spin",m.clock,m.waves[i].x-12,260,12,true,m.waves[i].direction<0);
                 int f=TiqueAnimation.Select(m.hero,durations,out string pose);
                 if(m.phase==Journey.Dead){pose="fx-power-down";f=WardenAnimation.FrameAt(durations[pose],m.age);}
@@ -309,6 +361,8 @@ namespace TiqueReturn
                 if(Model.bossMove==IronMove.SlamAim)yield return Capture(folder,"07-slam");
                 if(Model.bossMove==IronMove.ChargeAim&&Model.bossAge>.2f)yield return Capture(folder,"09-authored-charge-brace");
                 if(Model.bossMove==IronMove.Open&&Model.bossAge>.3f)yield return Capture(folder,"10-authored-open-hold");
+                if(Model.Vulnerable&&Model.openingSource==CoreOpeningSource.SlamCounter)yield return Capture(folder,"22-slam-counter-ready");
+                if(Model.counterHits>0&&Model.clock-Model.lastCoreHitAt<.14f)yield return Capture(folder,"23-slam-counter-hit");
                 if(Model.bossMove==IronMove.SlamAim&&Model.bossAge>.4f)yield return Capture(folder,"11-authored-air-tuck");
                 if(Model.bossMove==IronMove.Recover&&Model.bossSequence=="slam"&&Model.bossAge<.06f)yield return Capture(folder,"12-authored-landing");
                 if(Model.phase==Journey.RoomClear&&Model.age>.66f&&Model.age<.8f)yield return Capture(folder,"13-connected-room-"+(Model.roomIndex+1));
@@ -334,8 +388,10 @@ namespace TiqueReturn
                 }
                 yield return null;
             }
-            bool pass=Model.phase==Journey.Ending&&Model.breaks>=3;yield return Capture(folder,pass?"08-ending":"failure");
-            File.WriteAllText(Path.Combine(folder,"result.json"),"{\"passed\":"+pass.ToString().ToLowerInvariant()+",\"phase\":\""+Model.phase+"\",\"health\":"+Model.health+",\"breaks\":"+Model.breaks+",\"playSeconds\":"+Model.playTime.ToString("F2",System.Globalization.CultureInfo.InvariantCulture)+"}");
+            bool pass=Model.phase==Journey.Ending&&Model.bossHealth==0&&Model.events.Exists(e=>e.EndsWith(":armor-break"));
+            if(Array.IndexOf(args,"--require-readability-v2")>=0)pass&=readabilityArt&&readabilityResourceRoot=="ReturnV2/ReadabilityArtV2/";
+            yield return Capture(folder,pass?"08-ending":"failure");
+            File.WriteAllText(Path.Combine(folder,"result.json"),"{\"passed\":"+pass.ToString().ToLowerInvariant()+",\"artRoot\":\""+readabilityResourceRoot+"\",\"phase\":\""+Model.phase+"\",\"health\":"+Model.health+",\"breaks\":"+Model.breaks+",\"playSeconds\":"+Model.playTime.ToString("F2",System.Globalization.CultureInfo.InvariantCulture)+"}");
             var observed=new List<string>(seenArtStates);observed.Sort();File.WriteAllLines(Path.Combine(folder,"observed-art-states.txt"),observed);
             File.WriteAllLines(Path.Combine(folder,"events.txt"),Model.events);Debug.Log("RETURN_V2_SMOKE "+(pass?"PASS":"FAIL"));Application.Quit(pass?0:2);
         }

@@ -1,0 +1,23 @@
+{
+  "status": "passed-incremental-read-only-independent-audit",
+  "performedBy": "/root/cinematic_v4_packager",
+  "baseline": "art/return-cinematic-edit-v4-draft-01,previously fully audited",
+  "latestPreparedFrameCount": 223,
+  "clipFrames": {"awakening":68,"guardian-collapse":8,"elevator-ascent":147},
+  "clipDurationMs": {"awakening":8000,"guardian-collapse":3000,"elevator-ascent":7000},
+  "changedFrames": {"clip":"elevator-ascent","indexes":[25,26,27,28,29,30,31,32,33,34,35],"shot":"E2","timeMs":[1200,2200]},
+  "other212PngsByteIdentical": true,
+  "allDurationsUnchanged": true,
+  "awakeningCollapseAllExportArtifactsByteIdentical": true,
+  "nativeGeneratedDerivationReusedReferenceFilesByteIdentical":114,
+  "onlyCameraCropAndInspectionNotesChangedInRegistration":true,
+  "elevatorWorldActorAndClockMetadataUnchanged":true,
+  "latestElevatorApngPiskelReplayRgbaAndDurationsExact":true,
+  "latestElevatorGifReplayRgbAnd10msBoundaryTimingExact":true,
+  "allRelevantScriptHelperSourceProvenanceRegistrationManifestHashesExact":true,
+  "technicalFailures":0,
+  "agentFilesWrittenDuringAudit":false,
+  "humanAppearanceApproval":"pending",
+  "humanMotionApproval":"pending",
+  "runtimeIntegrated":false
+}

@@ -1,0 +1,44 @@
+{
+  "clips": [
+    {
+      "name": "panel",
+      "width": 96,
+      "height": 23,
+      "durations": [
+        1000
+      ]
+    },
+    {
+      "name": "button",
+      "width": 112,
+      "height": 21,
+      "durations": [
+        1000
+      ]
+    },
+    {
+      "name": "button-selected",
+      "width": 112,
+      "height": 21,
+      "durations": [
+        1000
+      ]
+    },
+    {
+      "name": "button-pressed",
+      "width": 112,
+      "height": 21,
+      "durations": [
+        1000
+      ]
+    },
+    {
+      "name": "button-disabled",
+      "width": 112,
+      "height": 21,
+      "durations": [
+        1000
+      ]
+    }
+  ]
+}

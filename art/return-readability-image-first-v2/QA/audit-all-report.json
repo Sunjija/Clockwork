@@ -1,0 +1,4925 @@
+{
+  "scope": "independent source/native/export mechanical audit, not user approval or gameplay",
+  "userAppearanceApproval": "pending",
+  "humanFunValidation": "pending",
+  "passed": [
+    {
+      "check": "generated-call-mapping:wall",
+      "detail": "Source/Generated/rev1/wall.png"
+    },
+    {
+      "check": "generated-original-present:wall",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-564c2ed6-7ac4-492f-8cc3-378bb210d2fa.png"
+    },
+    {
+      "check": "generated-original-unchanged:wall",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:wall",
+      "detail": "Source/prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:weight",
+      "detail": "Source/Generated/rev1/weight.png"
+    },
+    {
+      "check": "generated-original-present:weight",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-f7af5ff0-abc3-46d9-8f3c-8e1ece6af0c4.png"
+    },
+    {
+      "check": "generated-original-unchanged:weight",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:weight",
+      "detail": "Source/prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:orb",
+      "detail": "Source/Generated/rev1/orb.png"
+    },
+    {
+      "check": "generated-original-present:orb",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-acfc6f66-63a9-4aa3-b4bc-566ebe757e4f.png"
+    },
+    {
+      "check": "generated-original-unchanged:orb",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:orb",
+      "detail": "Source/prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:weight_socket",
+      "detail": "Source/Generated/rev2/weight_socket.png"
+    },
+    {
+      "check": "generated-original-present:weight_socket",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-1507fad4-c7ef-430c-acbc-9366ffd51f06.png"
+    },
+    {
+      "check": "generated-original-unchanged:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:weight_socket",
+      "detail": "Source/socket-revision-prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:orb_socket",
+      "detail": "Source/Generated/rev2/orb_socket.png"
+    },
+    {
+      "check": "generated-original-present:orb_socket",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-c244d3ff-0375-4acc-8234-28acf85c9945.png"
+    },
+    {
+      "check": "generated-original-unchanged:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:orb_socket",
+      "detail": "Source/socket-revision-prompts.json"
+    },
+    {
+      "check": "generated-call-mapping:floor",
+      "detail": "Source/Generated/rev1/floor.png"
+    },
+    {
+      "check": "generated-original-present:floor",
+      "detail": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-408c1928-2df7-4ae1-bfde-b9e03713fcd0.png"
+    },
+    {
+      "check": "generated-original-unchanged:floor",
+      "detail": ""
+    },
+    {
+      "check": "prompt-preserved:floor",
+      "detail": "Source/prompts.json"
+    },
+    {
+      "check": "selected-raw-baseline-unchanged:wall",
+      "detail": ""
+    },
+    {
+      "check": "selected-raw-baseline-unchanged:weight",
+      "detail": ""
+    },
+    {
+      "check": "selected-raw-baseline-unchanged:orb",
+      "detail": ""
+    },
+    {
+      "check": "selected-raw-baseline-unchanged:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "selected-raw-baseline-unchanged:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "selected-raw-baseline-unchanged:floor",
+      "detail": ""
+    },
+    {
+      "check": "native-derivation-manifest-present",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Derivation/native-derivation.json"
+    },
+    {
+      "check": "native-present:wall",
+      "detail": ""
+    },
+    {
+      "check": "native-dimensions:wall",
+      "detail": "(36, 36)"
+    },
+    {
+      "check": "native-binary-alpha:wall",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold-128:wall",
+      "detail": ""
+    },
+    {
+      "check": "native-source-present:wall",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Generated/rev1/wall.png"
+    },
+    {
+      "check": "native-source-sha:wall",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:wall",
+      "detail": "record=[186, 199, 1069, 1035] expected=[186, 199, 1069, 1035]"
+    },
+    {
+      "check": "native-output-sha:wall",
+      "detail": ""
+    },
+    {
+      "check": "native-pixel-source-map:wall",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Derivation/wall-pixel-map.json"
+    },
+    {
+      "check": "pixel-map-source-sha:wall",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-complete-unique:wall",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:wall",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-palette-exact:wall",
+      "detail": ""
+    },
+    {
+      "check": "source-footprints-inside-128-crop:wall",
+      "detail": ""
+    },
+    {
+      "check": "not-v1-native-copy:wall",
+      "detail": ""
+    },
+    {
+      "check": "native-present:floor",
+      "detail": ""
+    },
+    {
+      "check": "native-dimensions:floor",
+      "detail": "(36, 36)"
+    },
+    {
+      "check": "native-binary-alpha:floor",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold-128:floor",
+      "detail": ""
+    },
+    {
+      "check": "native-source-present:floor",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Generated/rev1/floor.png"
+    },
+    {
+      "check": "native-source-sha:floor",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:floor",
+      "detail": "record=[182, 196, 1072, 1056] expected=[182, 196, 1072, 1056]"
+    },
+    {
+      "check": "native-output-sha:floor",
+      "detail": ""
+    },
+    {
+      "check": "native-pixel-source-map:floor",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Derivation/floor-pixel-map.json"
+    },
+    {
+      "check": "pixel-map-source-sha:floor",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-complete-unique:floor",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:floor",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-palette-exact:floor",
+      "detail": ""
+    },
+    {
+      "check": "source-footprints-inside-128-crop:floor",
+      "detail": ""
+    },
+    {
+      "check": "not-v1-native-copy:floor",
+      "detail": ""
+    },
+    {
+      "check": "native-present:weight",
+      "detail": ""
+    },
+    {
+      "check": "native-dimensions:weight",
+      "detail": "(30, 32)"
+    },
+    {
+      "check": "native-binary-alpha:weight",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold-128:weight",
+      "detail": ""
+    },
+    {
+      "check": "native-source-present:weight",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Generated/rev1/weight.png"
+    },
+    {
+      "check": "native-source-sha:weight",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:weight",
+      "detail": "record=[255, 277, 960, 1066] expected=[255, 277, 960, 1066]"
+    },
+    {
+      "check": "native-output-sha:weight",
+      "detail": ""
+    },
+    {
+      "check": "native-pixel-source-map:weight",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Derivation/weight-pixel-map.json"
+    },
+    {
+      "check": "pixel-map-source-sha:weight",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-complete-unique:weight",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:weight",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-palette-exact:weight",
+      "detail": ""
+    },
+    {
+      "check": "source-footprints-inside-128-crop:weight",
+      "detail": ""
+    },
+    {
+      "check": "not-v1-native-copy:weight",
+      "detail": ""
+    },
+    {
+      "check": "native-present:orb",
+      "detail": ""
+    },
+    {
+      "check": "native-dimensions:orb",
+      "detail": "(26, 26)"
+    },
+    {
+      "check": "native-binary-alpha:orb",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold-128:orb",
+      "detail": ""
+    },
+    {
+      "check": "native-source-present:orb",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Generated/rev1/orb.png"
+    },
+    {
+      "check": "native-source-sha:orb",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:orb",
+      "detail": "record=[326, 342, 928, 951] expected=[326, 342, 928, 951]"
+    },
+    {
+      "check": "native-output-sha:orb",
+      "detail": ""
+    },
+    {
+      "check": "native-pixel-source-map:orb",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Derivation/orb-pixel-map.json"
+    },
+    {
+      "check": "pixel-map-source-sha:orb",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-complete-unique:orb",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:orb",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-palette-exact:orb",
+      "detail": ""
+    },
+    {
+      "check": "source-footprints-inside-128-crop:orb",
+      "detail": ""
+    },
+    {
+      "check": "not-v1-native-copy:orb",
+      "detail": ""
+    },
+    {
+      "check": "native-present:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-dimensions:weight_socket",
+      "detail": "(36, 36)"
+    },
+    {
+      "check": "native-binary-alpha:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold-128:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-source-present:weight_socket",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Generated/rev2/weight_socket.png"
+    },
+    {
+      "check": "native-source-sha:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:weight_socket",
+      "detail": "record=[283, 305, 971, 940] expected=[283, 305, 971, 940]"
+    },
+    {
+      "check": "native-output-sha:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-pixel-source-map:weight_socket",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Derivation/weight_socket-pixel-map.json"
+    },
+    {
+      "check": "pixel-map-source-sha:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-complete-unique:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-palette-exact:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "source-footprints-inside-128-crop:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "not-v1-native-copy:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-present:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-dimensions:orb_socket",
+      "detail": "(36, 36)"
+    },
+    {
+      "check": "native-binary-alpha:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "crop-threshold-128:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-source-present:orb_socket",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Generated/rev2/orb_socket.png"
+    },
+    {
+      "check": "native-source-sha:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "crop128-exact:orb_socket",
+      "detail": "record=[343, 351, 912, 901] expected=[343, 351, 912, 901]"
+    },
+    {
+      "check": "native-output-sha:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-pixel-source-map:orb_socket",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Derivation/orb_socket-pixel-map.json"
+    },
+    {
+      "check": "pixel-map-source-sha:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-complete-unique:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-replays-native:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "pixel-map-palette-exact:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "source-footprints-inside-128-crop:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "not-v1-native-copy:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "native-shared-palette-cap48",
+      "detail": "47"
+    },
+    {
+      "check": "weight-handle-hole-readable",
+      "detail": "[{'pixels': 21, 'bounds': [11, 6, 18, 9]}]"
+    },
+    {
+      "check": "orb-empty-corners",
+      "detail": ""
+    },
+    {
+      "check": "socket-dark-negative-space:weight_socket",
+      "detail": "0.870 interior below luma65; heuristic, not aesthetic approval"
+    },
+    {
+      "check": "socket-dark-negative-space:orb_socket",
+      "detail": "0.938 interior below luma65; heuristic, not aesthetic approval"
+    },
+    {
+      "check": "floor-darker-than-wall",
+      "detail": "{'wall': 79.47081435185184, 'floor': 44.678559413580246, 'weight': 104.17383074901446, 'orb': 99.4350947761194, 'weight_socket': 32.44624270833333, 'orb_socket': 42.38990680628272}"
+    },
+    {
+      "check": "runtime-clips-present",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/ReadabilityArtV2/clips.json"
+    },
+    {
+      "check": "clip-name-set31",
+      "detail": ""
+    },
+    {
+      "check": "native-frame-count77",
+      "detail": ""
+    },
+    {
+      "check": "source-runtime-manifest-identical",
+      "detail": ""
+    },
+    {
+      "check": "frame-source-mapping-manifest-present",
+      "detail": ""
+    },
+    {
+      "check": "all-clips-have-native-source-mapping",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:floor",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/floor.png"
+    },
+    {
+      "check": "frame-provenance-count:floor",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:floor",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:floor",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:floor",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:floor",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:floor",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:floor/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-00",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-00",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-00",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-00",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-00",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-00",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-00/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-01",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-01",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-01",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-01",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-01",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-01",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-01",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-01/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-02",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-02",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-02",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-02",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-02",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-02",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-02",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-02/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-03",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-03",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-03",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-03",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-03",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-03",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-03",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-03/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-04",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-04",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-04",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-04",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-04",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-04",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-04",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-04/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-05",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-05",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-05",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-05",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-05",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-05",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-05",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-05/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-06",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-06",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-06",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-06",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-06",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-06",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-06",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-06/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-07",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-07",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-07",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-07",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-07",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-07",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-07",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-07/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-08",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-08",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-08",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-08",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-08",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-08",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-08",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-08/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-09",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-09",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-09",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-09",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-09",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-09",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-09",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-09/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-10",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-10",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-10",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-10",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-10",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-10",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-10",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-10/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-11",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-11",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-11",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-11",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-11",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-11",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-11",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-11/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-12",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-12",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-12",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-12",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-12",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-12",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-12",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-12/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-13",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-13",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-13",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-13",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-13",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-13",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-13",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-13/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-14",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-14",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-14",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-14",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-14",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-14",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-14",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-14/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:wall-15",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/wall.png"
+    },
+    {
+      "check": "frame-provenance-count:wall-15",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:wall-15",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:wall-15",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:wall-15",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:wall-15",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:wall-15",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:wall-15/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:battery-idle",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/weight.png"
+    },
+    {
+      "check": "frame-provenance-count:battery-idle",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:battery-idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:battery-idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:battery-idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:battery-idle",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:battery-idle",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:orb-idle",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/orb.png"
+    },
+    {
+      "check": "frame-provenance-count:orb-idle",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:orb-idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:orb-idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:orb-idle",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:orb-idle",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:orb-idle",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-idle/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:battery-moving",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/weight.png"
+    },
+    {
+      "check": "frame-provenance-count:battery-moving",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:battery-moving",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:battery-moving",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:battery-moving",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:battery-moving",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:battery-moving",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:battery-moving",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:battery-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:orb-moving",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/orb.png"
+    },
+    {
+      "check": "frame-provenance-count:orb-moving",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:orb-moving",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:orb-moving",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:orb-moving",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:orb-moving",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:orb-moving",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:orb-moving",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/00",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/01",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/02",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/03",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/04",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/05",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/06",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/07",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/08",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/09",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/10",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/11",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/12",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:orb-moving/13",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:battery-docked",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/weight.png"
+    },
+    {
+      "check": "frame-provenance-count:battery-docked",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:battery-docked",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:battery-docked",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:battery-docked",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:battery-docked",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:battery-docked",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:battery-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:orb-docked",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/orb.png"
+    },
+    {
+      "check": "frame-provenance-count:orb-docked",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:orb-docked",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:orb-docked",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:orb-docked",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:orb-docked",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:orb-docked",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:orb-docked/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:amber-slot-empty",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/weight_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:amber-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:amber-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:amber-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:amber-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:amber-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:amber-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:amber-slot-filled",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/weight_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:amber-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:amber-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:amber-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:amber-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:amber-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:amber-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:amber-slot-wrong",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/weight_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:amber-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:amber-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:amber-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:amber-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:amber-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:amber-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:amber-slot-connect",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/weight_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:amber-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:amber-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:amber-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:amber-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:amber-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:amber-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:amber-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:amber-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:cyan-slot-empty",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/orb_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:cyan-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:cyan-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:cyan-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:cyan-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:cyan-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:cyan-slot-empty",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-empty/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:cyan-slot-filled",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/orb_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:cyan-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:cyan-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:cyan-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:cyan-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:cyan-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:cyan-slot-filled",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-filled/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:cyan-slot-wrong",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/orb_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:cyan-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:cyan-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:cyan-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:cyan-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:cyan-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:cyan-slot-wrong",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-wrong/00",
+      "detail": ""
+    },
+    {
+      "check": "export-native-sha:cyan-slot-connect",
+      "detail": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-readability-image-first-v2/Source/Native/orb_socket.png"
+    },
+    {
+      "check": "frame-provenance-count:cyan-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "unchanged-timing:cyan-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "piskel-present:cyan-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "piskel-sheet-identical:cyan-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "piskel-frame-count:cyan-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "runtime-png-count:cyan-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-count:cyan-slot-connect",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/00",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/01",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/02",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/03",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/04",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/05",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/06",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/07",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/08",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/09",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/10",
+      "detail": ""
+    },
+    {
+      "check": "export-dimensions:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "export-binary-alpha:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "runtime-copy-identical:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "recorded-frame-sha:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "point-nomip-uncompressed:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "pixel-delta-replay-identical:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "native-source-edit-replay-identical:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "sheet-frame-identical:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "apng-frame-timing-identical:cyan-slot-connect/11",
+      "detail": ""
+    },
+    {
+      "check": "export-shared-palette-cap48",
+      "detail": "48"
+    },
+    {
+      "check": "idle-is-generated-derived-native:weight",
+      "detail": ""
+    },
+    {
+      "check": "idle-is-generated-derived-native:orb",
+      "detail": ""
+    },
+    {
+      "check": "idle-is-generated-derived-native:weight_socket",
+      "detail": ""
+    },
+    {
+      "check": "idle-is-generated-derived-native:orb_socket",
+      "detail": ""
+    },
+    {
+      "check": "idle-is-generated-derived-native:floor",
+      "detail": ""
+    },
+    {
+      "check": "idle-is-generated-derived-native:wall",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:0",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:0",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:1",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:1",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:2",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:2",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:2",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:3",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:3",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:3",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:4",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:4",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:4",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:5",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:5",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:5",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:6",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:6",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:6",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:6",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:7",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:7",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:7",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:7",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:8",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:8",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:9",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:9",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:10",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:10",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:10",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:11",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:11",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:11",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:12",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:12",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:12",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:13",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:13",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:13",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:14",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:14",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:14",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:14",
+      "detail": ""
+    },
+    {
+      "check": "wall-full-cell-alpha:15",
+      "detail": ""
+    },
+    {
+      "check": "wall-architecture-centre-not-repainted:15",
+      "detail": ""
+    },
+    {
+      "check": "wall-east-west-connected-continuity:15",
+      "detail": ""
+    },
+    {
+      "check": "wall-south-north-connected-continuity:15",
+      "detail": ""
+    }
+  ],
+  "failed": [],
+  "observations": {
+    "sources": [
+      {
+        "asset": "wall",
+        "file": "Source/Generated/rev1/wall.png",
+        "sha256": "84b56ce9db2fe0072d04bfc07906b7201f45f59f2912aeb4c8a4aa402af4080a",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          186,
+          199,
+          1069,
+          1035
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          23,
+          77,
+          1220,
+          1214
+        ]
+      },
+      {
+        "asset": "weight",
+        "file": "Source/Generated/rev1/weight.png",
+        "sha256": "98c7d9c42a912d25aa85ab409876f1123b237b7830fa73106bc8c8e275081b2d",
+        "size": [
+          1215,
+          1295
+        ],
+        "crop128": [
+          255,
+          277,
+          960,
+          1066
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          0,
+          51,
+          1160,
+          1277
+        ]
+      },
+      {
+        "asset": "orb",
+        "file": "Source/Generated/rev1/orb.png",
+        "sha256": "aabfb002b31d174b55dd77d1c6a26d272b0ca01460f469bb9d246e037b1b2cd2",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          326,
+          342,
+          928,
+          951
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          111,
+          53,
+          1208,
+          1150
+        ]
+      },
+      {
+        "asset": "weight_socket",
+        "file": "Source/Generated/rev2/weight_socket.png",
+        "sha256": "f7f20928d6d461eb3cf94a53779131520e31f99250dc230df5a75636979ccbef",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          283,
+          305,
+          971,
+          940
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          111,
+          52,
+          1121,
+          1214
+        ]
+      },
+      {
+        "asset": "orb_socket",
+        "file": "Source/Generated/rev2/orb_socket.png",
+        "sha256": "183e5da2c1868c107b9bbc002aa2d0ee6d463aad5621f9daa440a8141386db42",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          343,
+          351,
+          912,
+          901
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          59,
+          21,
+          1194,
+          1228
+        ]
+      },
+      {
+        "asset": "floor",
+        "file": "Source/Generated/rev1/floor.png",
+        "sha256": "f8768489030d984589ae62bf33dfb1d7699422977c6e9fcf39ad410bb5e9ba03",
+        "size": [
+          1254,
+          1254
+        ],
+        "crop128": [
+          182,
+          196,
+          1072,
+          1056
+        ],
+        "unsafeNonzeroAlphaBbox": [
+          0,
+          40,
+          1222,
+          1214
+        ]
+      }
+    ],
+    "nativePaletteColors": 47,
+    "weightTransparentHoles": [
+      {
+        "pixels": 21,
+        "bounds": [
+          11,
+          6,
+          18,
+          9
+        ]
+      }
+    ],
+    "visibleMeanLuminance": {
+      "wall": 79.47081435185184,
+      "floor": 44.678559413580246,
+      "weight": 104.17383074901446,
+      "orb": 99.4350947761194,
+      "weight_socket": 32.44624270833333,
+      "orb_socket": 42.38990680628272
+    },
+    "exportPaletteColors": 48,
+    "exportFrames": [
+      {
+        "clip": "floor",
+        "index": 0,
+        "sha256": "f5663fb4ead32c236d8a779d291ffd6f40b3da91ce64fb1618e77e98aa2deee3",
+        "pixelsSha256": "06d1778a5a202af2c5984ca2c445731fc574509a327a22105e7e6953fc157b5a"
+      },
+      {
+        "clip": "wall-00",
+        "index": 0,
+        "sha256": "fda3561c2f87fb4c6a53fcb352b85f2e3a1921e793c7fe0a94e4275aacbcdb55",
+        "pixelsSha256": "4fe03bcf42bc833492bc73869632555f885f8446f2faca23f3f6aca9ed8a8d72"
+      },
+      {
+        "clip": "wall-01",
+        "index": 0,
+        "sha256": "ebe71ae977452429b0acf01d60edd62f69b14e7877bab41c04d67f237c23492f",
+        "pixelsSha256": "bb75eeb9921e39ae6313dbcf6b938437facf5e75dea75a2ae593c46bc6058d56"
+      },
+      {
+        "clip": "wall-02",
+        "index": 0,
+        "sha256": "3deb6aa2abf3a0a5790f9e1628434ed6a06c28dfbffc85c7bcb6ac8963d0b576",
+        "pixelsSha256": "4b2627bda1a1e372923e4e4805e1b3e15b2ca54a17bcbd67b22241f534611c47"
+      },
+      {
+        "clip": "wall-03",
+        "index": 0,
+        "sha256": "83fa443bb7cf424ec7259e973ba7904b37a8da7724c76178f3ab1bd815688ddc",
+        "pixelsSha256": "44a98cbc5dbcf9a850ebdd6a21bfdb348bcf4f8cb8e526975826b46d866cce22"
+      },
+      {
+        "clip": "wall-04",
+        "index": 0,
+        "sha256": "233b53ef5ff195862a0814f37b734875ad4cc6092bc5574977830b36eb60cae8",
+        "pixelsSha256": "6e613e39fead210f0f740815dcd86ab21bce0c66b0d923b29ec319288896d3cc"
+      },
+      {
+        "clip": "wall-05",
+        "index": 0,
+        "sha256": "5046a762f44ad4c92fec13ea5a150698407e385132b6332197f8e7483ddf1f88",
+        "pixelsSha256": "5e0da7783f75f6d2d2e66c7e1f79c7fa50b1304d7a18043395a9346749f3539e"
+      },
+      {
+        "clip": "wall-06",
+        "index": 0,
+        "sha256": "b867fc648171c30fe4c9ea296a85b82a70546054fab24dafb1cd881696e9ef61",
+        "pixelsSha256": "2ae466b4fd853d063bedd50e7d9d6284fb66e39f26e3257d9e9dde22880343ea"
+      },
+      {
+        "clip": "wall-07",
+        "index": 0,
+        "sha256": "48f44fdd8678a65207909879c03c8dfb46b006223948cce0dc55df2d6a6de3cb",
+        "pixelsSha256": "97d0a0908b5f58c2e91ac443b930f5a02f172a5b2812ead824f4ef974e05a42d"
+      },
+      {
+        "clip": "wall-08",
+        "index": 0,
+        "sha256": "5517f532d1962615fea56f285bceb5801184f99af9b9d4b2cefe1e3e36ea1c8c",
+        "pixelsSha256": "0351200a6cee64e033fdebbd0c664f0bbe2a43d6326bf30d618990e0cf53f679"
+      },
+      {
+        "clip": "wall-09",
+        "index": 0,
+        "sha256": "d66d1a34f822d593f6e31c32975edd14acee318ccf234d05a6eff218e165ea76",
+        "pixelsSha256": "38d5c46ced308b9ec9188bd35b9e725dbdb82f2439b4f16304cb936f7f13f8b9"
+      },
+      {
+        "clip": "wall-10",
+        "index": 0,
+        "sha256": "89ce9244cf48af897ebbc0b97765a5c878e14b98eb66bdbb7d55f5d36870318d",
+        "pixelsSha256": "46143e96d6b6e95d4116b6dcb0e3d821c3d91cdf32f041854e9753f832128378"
+      },
+      {
+        "clip": "wall-11",
+        "index": 0,
+        "sha256": "82089adbd924db02066585b1068f6535d2f0d59972627099a9698940ae442313",
+        "pixelsSha256": "5abc86446ac05451b82995b89115c225939095d0093c5771c663fc3228e7f765"
+      },
+      {
+        "clip": "wall-12",
+        "index": 0,
+        "sha256": "d9436417e5ad148cb27d505b9d370aa389ab751b837983169db38b0baf5c3a04",
+        "pixelsSha256": "62ea7a9a6c7d9468e858163da8f494d8981f0ae1a206d583cdea9f2fec0d93dc"
+      },
+      {
+        "clip": "wall-13",
+        "index": 0,
+        "sha256": "df4e60c02af95abf87fd45dccf658009482d46ce549d5a935bfa1b41d04f9d05",
+        "pixelsSha256": "cb321a54a3e6f634f104747805f4ad27c06abe2576ed07e0a541b103936d118e"
+      },
+      {
+        "clip": "wall-14",
+        "index": 0,
+        "sha256": "76608122fad8306c8e22f70af45af9627c78db1fa542e7ddab3c97ab12fe138e",
+        "pixelsSha256": "de56cd13117bfd2777281b4750f049a6294a7e8d4ffe73903e0d176c1ec3fc06"
+      },
+      {
+        "clip": "wall-15",
+        "index": 0,
+        "sha256": "c8c7d25e110687b6f06f419fdd7f40eb9214af3a5cc3935ad04e72de9f7f0a51",
+        "pixelsSha256": "3ea8f9d6e01a19fff04c1857473d6d8638852407a3fdb602ff73f0edcf29da48"
+      },
+      {
+        "clip": "battery-idle",
+        "index": 0,
+        "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+        "pixelsSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b"
+      },
+      {
+        "clip": "orb-idle",
+        "index": 0,
+        "sha256": "16a8fba36b27c239f3529d09cb97f0d367d63eb257b2fd4ee4dcff63ecc00bba",
+        "pixelsSha256": "89c1b42ff66f3db6cf22b6262e9371c59166ec87f823db0a7b2b4e1462995b66"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 0,
+        "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+        "pixelsSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 1,
+        "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+        "pixelsSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 2,
+        "sha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea",
+        "pixelsSha256": "470d593f6d89930c4279df2cf6cbc37572d4280a1b5b49bfe7ddbe6376334332"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 3,
+        "sha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea",
+        "pixelsSha256": "470d593f6d89930c4279df2cf6cbc37572d4280a1b5b49bfe7ddbe6376334332"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 4,
+        "sha256": "212accdb6eb71015275c5b224fbdf210f61b0dea3d1f6782617af81e5f640cea",
+        "pixelsSha256": "470d593f6d89930c4279df2cf6cbc37572d4280a1b5b49bfe7ddbe6376334332"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 5,
+        "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+        "pixelsSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 6,
+        "sha256": "6f867303457eeaf29136c2e9ca883645ca5eab92dea6230e26920dd8ef3fef4b",
+        "pixelsSha256": "25f72aa9010162d6108aff69879787b0855df3971e2d8d76ef3019878189dd60"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 7,
+        "sha256": "c83d3cbbbe1f70d57ed157b665d553c9af41b98aa5cc5831f3fa2ca90692a770",
+        "pixelsSha256": "f96bf10a64ece75c5bcb4cafc54db429c6c90b4f889347ccfd0aa318fb46ea84"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 8,
+        "sha256": "7c2d826575b289d24040bb1087d2ae1457bb64f0fdda7d854f99a7aa9cb5941a",
+        "pixelsSha256": "b04ca86892f69ea4dff69a47dd05e28804db81571abb01aaf53ed26cc3c8785b"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 9,
+        "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+        "pixelsSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 10,
+        "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+        "pixelsSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b"
+      },
+      {
+        "clip": "battery-moving",
+        "index": 11,
+        "sha256": "30ff97d171902e07801e204fc3979ed76fbcd2e88dd0a4d8c7189db5d53d90e2",
+        "pixelsSha256": "98335a7f528c202d3c5b220640eae8680a0b8ebcd6f1adc02850ebb90abbd23b"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 0,
+        "sha256": "16a8fba36b27c239f3529d09cb97f0d367d63eb257b2fd4ee4dcff63ecc00bba",
+        "pixelsSha256": "89c1b42ff66f3db6cf22b6262e9371c59166ec87f823db0a7b2b4e1462995b66"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 1,
+        "sha256": "2971540ecb9e792d2d070a9698296bf04b3c337b57e6dc07ddea1efe209fb312",
+        "pixelsSha256": "40cb1436be67d101daff90e301f71e4c1b7e8f4ee39dcdff8c33fcbe1b3e25d5"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 2,
+        "sha256": "0f7eb6d1cdb63354c70c90511471b65e061b522772bf5fe8a5c2ad33a42c898f",
+        "pixelsSha256": "b4cfff29e798afe8722ad662d5e0a3c5003a443fff83b1247649c03896e12972"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 3,
+        "sha256": "d37a88faf0a6daa1190367b83e164b5b73a61c93ec4c80eb81fef70bbd55d876",
+        "pixelsSha256": "fe5fe1b6e82723c2997e0849f04ac439f12a3a3be4461e6e75ab490df7489234"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 4,
+        "sha256": "9508bc8f9d4574f7aa2a6ffe81fb8a0549a545b252155ef7978e65d49547bcdc",
+        "pixelsSha256": "e59abe29f3209e3e7f734b58e735271f32f8391b9287920ddc17846c29b1b808"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 5,
+        "sha256": "bdd6a47b63b1c36a7ee02d04f8e3c12be9adf30f80cb08e65764a5745bb1c95d",
+        "pixelsSha256": "507a44f56aa57e5537ec9f0efd8f344f5f22f14df9f1ce3eb8702614b3689995"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 6,
+        "sha256": "0c6380a56085b8a79765234acc8110832b866c70a4ae11d4731fc77954e39572",
+        "pixelsSha256": "3c93a83a5699b61d21bfcd1c8a7867843e95cf880bfea19e0408d84bf0d16393"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 7,
+        "sha256": "16a8fba36b27c239f3529d09cb97f0d367d63eb257b2fd4ee4dcff63ecc00bba",
+        "pixelsSha256": "89c1b42ff66f3db6cf22b6262e9371c59166ec87f823db0a7b2b4e1462995b66"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 8,
+        "sha256": "26c7c72d8525a9c3c95f094927ee5a1d4cb0f17d55c4b64beaa74f148d42b598",
+        "pixelsSha256": "f91c401ee5bb863c41b7c4c04f951a23c9c0807aa7ff2442564423852f2b2b00"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 9,
+        "sha256": "648d59613389215ebf724f353f78424f0219343f453601630d982b2dc508dc56",
+        "pixelsSha256": "e9c592fcb1e7ddcb4c01782d4c4c35e044f372d86df71837034ca60f5434cf96"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 10,
+        "sha256": "8e10be2ffd7d0f53afdcf38c4ccad99f086e5c51b396f0b8cbaa1455e91ecbe2",
+        "pixelsSha256": "069a2fe4da7f86b55d4a4198df6883b82f23550d7da5a6cb9ee5c03c13225fe7"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 11,
+        "sha256": "7fc39462852bded97c693c94d5a923fba29f1427d3227bc28424037839fa7b9a",
+        "pixelsSha256": "af3b20c18879b02f01dda83a79ed9b63d379390d96b55763b06116be2e16a6d0"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 12,
+        "sha256": "b481c38eeda0fd20f893275bb583e5f23581efb4a6e95a08cc11c9c446991fe1",
+        "pixelsSha256": "5a3ecafb9d903bb585251f985bf97f6d96b43840fdfaeb902dd5160886933f30"
+      },
+      {
+        "clip": "orb-moving",
+        "index": 13,
+        "sha256": "d43300ad201f6b2b4bd68b46f680e0c84784e143c138ba94ec249c3ecc5c3f7b",
+        "pixelsSha256": "9701a553e1bec8a34001d1c4e7238dfb0f56ec01ca62b989040f98594f4bd044"
+      },
+      {
+        "clip": "battery-docked",
+        "index": 0,
+        "sha256": "1267f087ac2340d670adc0c2cf71b7a9fb00597a789880e1e74c84b2b9c1e218",
+        "pixelsSha256": "fa53e6b6f993624a7cc99daeca022d35b92d845a91a0e36f317af374555760eb"
+      },
+      {
+        "clip": "orb-docked",
+        "index": 0,
+        "sha256": "dd7d0296176f4dc76a3057b67d6c025b37aa561fc640ef8071e9f462e7f24c89",
+        "pixelsSha256": "17b23f9cb4dd98caee7e1db2dcb7f2ee1547881f1090644e4fb5fdf86d8f5223"
+      },
+      {
+        "clip": "amber-slot-empty",
+        "index": 0,
+        "sha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca",
+        "pixelsSha256": "7eb617109f0d0f114d6f865cc28b371a6cbfa3d724d53ea478ad7b4508fa078e"
+      },
+      {
+        "clip": "amber-slot-filled",
+        "index": 0,
+        "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e",
+        "pixelsSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48"
+      },
+      {
+        "clip": "amber-slot-wrong",
+        "index": 0,
+        "sha256": "c35c7f9c8dd957033521abba102ae833944918005a796f031934a20cb36deb71",
+        "pixelsSha256": "e753d79e67007bd6c1e5432783730f42175a817572349236a68727c7cfbd7e50"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 0,
+        "sha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca",
+        "pixelsSha256": "7eb617109f0d0f114d6f865cc28b371a6cbfa3d724d53ea478ad7b4508fa078e"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 1,
+        "sha256": "27b1f10cc1e8ebfdd951c97dfe67389ec844c2bf01be6f0f815982df0e12d4ca",
+        "pixelsSha256": "7eb617109f0d0f114d6f865cc28b371a6cbfa3d724d53ea478ad7b4508fa078e"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 2,
+        "sha256": "62a371dda4be3a62a18fbfbfcd00309400e4253d3b00b9c1f3585c9e42a1d2dd",
+        "pixelsSha256": "112b0679106bc4474ef728c64bf3169375bf494c51e4205d8de276efa829b52c"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 3,
+        "sha256": "62a371dda4be3a62a18fbfbfcd00309400e4253d3b00b9c1f3585c9e42a1d2dd",
+        "pixelsSha256": "112b0679106bc4474ef728c64bf3169375bf494c51e4205d8de276efa829b52c"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 4,
+        "sha256": "9e523da9998e494de93450258717abfa4df5062fa3605f7c77a2cf0216633089",
+        "pixelsSha256": "c178963360c9175306fefdd793d7766f0391496e3914312fe372ef4f8c65385d"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 5,
+        "sha256": "9e523da9998e494de93450258717abfa4df5062fa3605f7c77a2cf0216633089",
+        "pixelsSha256": "c178963360c9175306fefdd793d7766f0391496e3914312fe372ef4f8c65385d"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 6,
+        "sha256": "5ebdb73c5bb8e9763c52f265cfc7625687fbb69876ff1356109aa2933df94cdc",
+        "pixelsSha256": "79afd7e131441aa2929c3600bf13eb4d9fca9070a891dea8e93e38da53630662"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 7,
+        "sha256": "5ebdb73c5bb8e9763c52f265cfc7625687fbb69876ff1356109aa2933df94cdc",
+        "pixelsSha256": "79afd7e131441aa2929c3600bf13eb4d9fca9070a891dea8e93e38da53630662"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 8,
+        "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e",
+        "pixelsSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 9,
+        "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e",
+        "pixelsSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 10,
+        "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e",
+        "pixelsSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48"
+      },
+      {
+        "clip": "amber-slot-connect",
+        "index": 11,
+        "sha256": "3d02e197eefb61113e7164085a45e949cad66872b36c12cb59297224534f051e",
+        "pixelsSha256": "79534967a78a96043f2376d7055a1c2e6784eecbfe89edb617a2c79f709ccc48"
+      },
+      {
+        "clip": "cyan-slot-empty",
+        "index": 0,
+        "sha256": "438580e03dcfea98c56d70b73833a5a2945cbd0d785963405c3597dc36104191",
+        "pixelsSha256": "b5ac1e0dc7041e154697cd478ea21499d9e29440391e1e1142da34bb7f528e7f"
+      },
+      {
+        "clip": "cyan-slot-filled",
+        "index": 0,
+        "sha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd",
+        "pixelsSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92"
+      },
+      {
+        "clip": "cyan-slot-wrong",
+        "index": 0,
+        "sha256": "add0aaf18e7dcab9cb33e88843429afbf5299bb2a9441922f22791fc66e5c3ad",
+        "pixelsSha256": "958491a9f55bebec520fad3f833139eff410ef810bfc4167141e80ad7aa56950"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 0,
+        "sha256": "438580e03dcfea98c56d70b73833a5a2945cbd0d785963405c3597dc36104191",
+        "pixelsSha256": "b5ac1e0dc7041e154697cd478ea21499d9e29440391e1e1142da34bb7f528e7f"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 1,
+        "sha256": "438580e03dcfea98c56d70b73833a5a2945cbd0d785963405c3597dc36104191",
+        "pixelsSha256": "b5ac1e0dc7041e154697cd478ea21499d9e29440391e1e1142da34bb7f528e7f"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 2,
+        "sha256": "42c0637dc7458b530cb397b7b389d6d44a9b7c65aadb16a1741715e4bbdefe25",
+        "pixelsSha256": "7cdcd76bfc7efa3281fb4dd54af7d025e759df01186423a57a11fbb6632134a5"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 3,
+        "sha256": "42c0637dc7458b530cb397b7b389d6d44a9b7c65aadb16a1741715e4bbdefe25",
+        "pixelsSha256": "7cdcd76bfc7efa3281fb4dd54af7d025e759df01186423a57a11fbb6632134a5"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 4,
+        "sha256": "e380b8fac548adad22473465663cd51a5d3c3de8e6496add95f5421b2e73850f",
+        "pixelsSha256": "d6ddc1022602bda5f321390f1add2c05b678dbc44edeaea523ad74ce6d94e5bf"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 5,
+        "sha256": "e380b8fac548adad22473465663cd51a5d3c3de8e6496add95f5421b2e73850f",
+        "pixelsSha256": "d6ddc1022602bda5f321390f1add2c05b678dbc44edeaea523ad74ce6d94e5bf"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 6,
+        "sha256": "de99c11e4ea9821a230a1d1b9ac2395f99334ee08c990ad59921f54ef9faadb0",
+        "pixelsSha256": "097cfbc405b2142f47e3a0d650d641f0abc865da5270dad17b316e7ec4710e49"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 7,
+        "sha256": "de99c11e4ea9821a230a1d1b9ac2395f99334ee08c990ad59921f54ef9faadb0",
+        "pixelsSha256": "097cfbc405b2142f47e3a0d650d641f0abc865da5270dad17b316e7ec4710e49"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 8,
+        "sha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd",
+        "pixelsSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 9,
+        "sha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd",
+        "pixelsSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 10,
+        "sha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd",
+        "pixelsSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92"
+      },
+      {
+        "clip": "cyan-slot-connect",
+        "index": 11,
+        "sha256": "16d511a3a6a7bf5b3bb5032e0ee4f2f2524f7afa5416629fa244d33b12eda4bd",
+        "pixelsSha256": "c13de03bf25d0d315c752a395deead81f65baca2363aa5761074900530558a92"
+      }
+    ]
+  },
+  "mechanicalPassed": true,
+  "phase": "all"
+}

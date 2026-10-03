@@ -1,0 +1,161 @@
+{
+  "method": "Existing V7/V8 exported PNG composition only; nearest-neighbour integer enlargement",
+  "runtimeCapture": false,
+  "gameLaunched": false,
+  "unityBuildPerformed": false,
+  "humanAppearanceApproval": "pending",
+  "geometryModified": false,
+  "sequences": [
+    {
+      "clip": "wave-strike",
+      "durations": [
+        120,
+        120,
+        200,
+        310
+      ],
+      "contactPath": "art/return-v8-guardian/QA/clip-wave-strike-v7-v8-full-contact.png",
+      "contactSha256": "1c65a9ee4e290c328d588163e62ef57291b931e642a6776a4dcf7f58ba7d7042",
+      "versions": [
+        {
+          "version": "v7",
+          "previewPath": "art/return-v8-guardian/QA/clip-wave-strike-v7-preview.gif",
+          "previewSha256": "e37631766eb170daf1baabbfdd3ad88e4ea47267d759ecaf142abf6727227574",
+          "frames": [
+            {
+              "frame": 0,
+              "durationMs": 120,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/00.png",
+              "sourceSha256": "34aca92f7a5286b9009ae912af138466645332d15e6e3723a3e3c1665f9852a7",
+              "rgbaSha256": "2e8dbdb415613435b0b8a0df1d98eeeb8bb3070f36f9ed22e7cf9c39e34b4a36"
+            },
+            {
+              "frame": 1,
+              "durationMs": 120,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/01.png",
+              "sourceSha256": "50e58de508e5a798fc722a13686df33bc494d329d5c0484711cf4576a2ba7729",
+              "rgbaSha256": "e411fcbca21e80ce576e88234f8c3fc3f06a41538c335c56db6a425343390d4a"
+            },
+            {
+              "frame": 2,
+              "durationMs": 200,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/02.png",
+              "sourceSha256": "795ece63c7ed21fa53d9903b82857a4314b54983769189ecbcae44df70dcd61a",
+              "rgbaSha256": "be546980ed1ecdb4eb48997dd0b392539c3bc1dc39529a69846bd529cfed53d9"
+            },
+            {
+              "frame": 3,
+              "durationMs": 310,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/wave-strike/03.png",
+              "sourceSha256": "4dac18723d6a0646e1e51f2644bd9beef3bbe284b1676f8c731f75a917e528ad",
+              "rgbaSha256": "7bfef15e9ed7f40cc5a9aa2efe7c67563bf926a58915b6d4e42347c151d3e9c1"
+            }
+          ]
+        },
+        {
+          "version": "v8",
+          "previewPath": "art/return-v8-guardian/QA/clip-wave-strike-v8-preview.gif",
+          "previewSha256": "9a07f48fa47295e2c7d2bc679205b464ef7be52ce94963aadf6a41bb31b4a0da",
+          "frames": [
+            {
+              "frame": 0,
+              "durationMs": 120,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/00.png",
+              "sourceSha256": "e098d3a29f23501fb4a52b91c1ab66de055940920a8d849c664e3c27e6b716b6",
+              "rgbaSha256": "5896ab2f0e20afa2acc8d2d432f3a15f7f02650d24d154d50ff5f7d799756268"
+            },
+            {
+              "frame": 1,
+              "durationMs": 120,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/01.png",
+              "sourceSha256": "0f7081e8376f09e04d83c96e98d07bce0ef60d3f41b406901dfa0ec08fdbec8b",
+              "rgbaSha256": "11afdb2aa4ae43b47e9cba2e73168d225143511cd9ff420aac4c9b836f5ee497"
+            },
+            {
+              "frame": 2,
+              "durationMs": 200,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/02.png",
+              "sourceSha256": "74b35dee0915255ae7d221293da37be405a40b9cc49da98066031d2df3600d75",
+              "rgbaSha256": "aa5b393036c0918127af75c098ab596629af8b8cd5f756a7b3c31ef898c95f27"
+            },
+            {
+              "frame": 3,
+              "durationMs": 310,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/wave-strike/03.png",
+              "sourceSha256": "4dac18723d6a0646e1e51f2644bd9beef3bbe284b1676f8c731f75a917e528ad",
+              "rgbaSha256": "7bfef15e9ed7f40cc5a9aa2efe7c67563bf926a58915b6d4e42347c151d3e9c1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "clip": "slam-land",
+      "durations": [
+        220,
+        250,
+        110
+      ],
+      "contactPath": "art/return-v8-guardian/QA/clip-slam-land-v7-v8-full-contact.png",
+      "contactSha256": "6a0d06fbf31da7eb0c1fdf3cb7af6031e3373691d0ad92dba9a36b01cde3a838",
+      "versions": [
+        {
+          "version": "v7",
+          "previewPath": "art/return-v8-guardian/QA/clip-slam-land-v7-preview.gif",
+          "previewSha256": "598fd32acc7a9521d1c8351f87601db4f40bb99b86a13eeebcd6de6af2915d6f",
+          "frames": [
+            {
+              "frame": 0,
+              "durationMs": 220,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-land/00.png",
+              "sourceSha256": "9999321409529b069c0d52a8bf6c68e1a5b93eddca1ea30c1db6cbb8f812efb6",
+              "rgbaSha256": "b355f5bc5c3aea2ad503024307afed56ae19a71f5f126e4552ad3ad1258b40b4"
+            },
+            {
+              "frame": 1,
+              "durationMs": 250,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-land/01.png",
+              "sourceSha256": "75d576fd16f8248416c96ca443dd2f2f666fa3a6e05986b4d1e39670d91958e0",
+              "rgbaSha256": "bd3a3868bef00d0fc486d06888a51a1b7b86e35be5c53fcbd34ef45dfc804757"
+            },
+            {
+              "frame": 2,
+              "durationMs": 110,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV7/slam-land/02.png",
+              "sourceSha256": "6f30bd40189cf0d20253c89826489242899f20fe1b43812f70348bf02b6bdc68",
+              "rgbaSha256": "262eba4b2d10896220f0afda8d2246afad53e0085d1e352dd244794a277452a5"
+            }
+          ]
+        },
+        {
+          "version": "v8",
+          "previewPath": "art/return-v8-guardian/QA/clip-slam-land-v8-preview.gif",
+          "previewSha256": "eda7e1b38c9f0084bb146591c71363333e5c4a90caf65ffef3a8d6e873a50805",
+          "frames": [
+            {
+              "frame": 0,
+              "durationMs": 220,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-land/00.png",
+              "sourceSha256": "cf8de711b55bedc6ce288b898752ca6867368f21fa59d9f9aa3ee365f4a358d2",
+              "rgbaSha256": "db950ee94465977667ef8e9e572d730041111c449c54dd3ce62261d321b283c7"
+            },
+            {
+              "frame": 1,
+              "durationMs": 250,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-land/01.png",
+              "sourceSha256": "75d576fd16f8248416c96ca443dd2f2f666fa3a6e05986b4d1e39670d91958e0",
+              "rgbaSha256": "bd3a3868bef00d0fc486d06888a51a1b7b86e35be5c53fcbd34ef45dfc804757"
+            },
+            {
+              "frame": 2,
+              "durationMs": 110,
+              "sourcePath": "unity/TiqueReturnPrototype/Assets/Resources/ReturnV2/WardenV8/slam-land/02.png",
+              "sourceSha256": "e8014e3bdf26c96887e50be7546241bc130b4f6d927ebfb79f22d1127aafea54",
+              "rgbaSha256": "9e8bc71de7223b95ca9a799aa1e040458fdf4957332804394d066d70cc256aa0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

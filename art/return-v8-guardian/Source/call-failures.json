@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-02",
+  "failedDispatches": [
+    {
+      "asset": "jaw-impact-05",
+      "requestFile": "Source/halo-removal-request.json",
+      "error": "An asset bookkeeping key was incorrectly passed to the image tool. Request rejected before generation; no output produced.",
+      "resolution": "Retried with only prompt, referenced_image_paths and transparent_background. This failed dispatch is excluded from the successful generation count."
+    }
+  ]
+}

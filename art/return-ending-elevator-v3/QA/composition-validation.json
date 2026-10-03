@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "clips": [
+    {
+      "name": "guardian-collapse",
+      "durationMs": 3000,
+      "frameCount": 7,
+      "subExposuresReplayed": 7,
+      "allCompositionRgbaExact": true
+    },
+    {
+      "name": "elevator-homecoming",
+      "durationMs": 7000,
+      "frameCount": 116,
+      "subExposuresReplayed": 148,
+      "allCompositionRgbaExact": true
+    }
+  ],
+  "generatedOriginalsAndReferencesUnchanged": true,
+  "reusedPngBytesUnchanged": true,
+  "nativePaletteMapRgbaExact": true,
+  "nativeInteger2xRgbaExact": true,
+  "wholeCompositionRgbaExact": true,
+  "closedArenaCollapse": true,
+  "rigidRiderAttachment": true,
+  "humanAppearanceApproval": "pending",
+  "humanMotionApproval": "pending",
+  "runtimeIntegrationTested": false,
+  "scope": "Offline source mapping/composition technical check only",
+  "validatorSha256": "24db32bcab3fac97c53fc6f1e52c6ba8bafde667283376891dc0980a3c41d595"
+}

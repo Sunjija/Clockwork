@@ -5,7 +5,8 @@ using M = TiqueReturn.GridMath;
 namespace TiqueReturn
 {
     public enum Journey { Title, Opening, Puzzle, RoomClear, Arrival, Combat, Restored, Ending, Dead }
-    public enum IronMove { Rest, ChargeAim, Charge, WaveAim, Wave, SlamAim, Slam, Recover, Open, Down }
+    public enum IronMove { Rest, ChargeAim, Charge, WaveAim, Wave, SlamAim, Slam, Recover, Open, Down, CounterSettle }
+    public enum CoreOpeningSource { None, Pylon, SlamCounter }
     public struct ReworkCommand
     {
         public int axis, grid; // Grid direction is -1 when no discrete move was requested.
@@ -27,6 +28,10 @@ namespace TiqueReturn
         public float dischargedAt=-100,lastCoreHitAt=-100,restoredAt=-100;
         public Journey phase=Journey.Title;
         public IronMove bossMove=IronMove.Rest;
+        public CoreOpeningSource openingSource=CoreOpeningSource.None;
+        public const float CounterSettleDuration=.2f,CounterOpenWarmup=.2f,CounterExposureDuration=1.6f;
+        public int counterOpportunities,counterHits;
+        public float lastSlamMissAt=-100;
         public string bossSequence="charge";
         public CorePuzzle puzzle;
         public int roomIndex,hintLevel,health=5,bossHealth=9,breaks,openHits,pattern,deaths,charged=-1;
@@ -42,7 +47,11 @@ namespace TiqueReturn
         public float noticeLeft;
         public Action<string> Sound;
         public bool InArena => phase==Journey.Arrival||phase==Journey.Combat||phase==Journey.Restored||phase==Journey.Ending||phase==Journey.Dead;
-        public bool Vulnerable => phase==Journey.Combat&&bossMove==IronMove.Open;
+        // The short counter waits for the authored open pose; pylon timing is unchanged.
+        public bool Vulnerable => phase==Journey.Combat&&bossMove==IronMove.Open&&(openingSource!=CoreOpeningSource.SlamCounter||bossAge>=CounterOpenWarmup);
+        public float OpeningDuration => openingSource==CoreOpeningSource.SlamCounter?CounterOpenWarmup+CounterExposureDuration:(assisted?7:5.2f);
+        public float OpeningRemaining => bossMove==IronMove.Open?M.Max(0,OpeningDuration-bossAge):0;
+        public int OpenHitLimit => openingSource==CoreOpeningSource.SlamCounter?1:3;
         public int Rage => Math.Min(2,(9-bossHealth)/3);
         // Centre of the core painted into the held v7 Open pose (canvas 69,124; body centre 96, feet 164).
         public float WeakX => bossX+bossFacing*27;
@@ -63,13 +72,25 @@ namespace TiqueReturn
         {
             phase=Journey.Arrival;age=0;ResetHero();health=5;bossHealth=9;breaks=openHits=pattern=0;
             bossX=490;bossY=Floor;bossFacing=-1;charged=-1;chargeLife=chargeCooldown=0;waves.Clear();Next(IronMove.Rest);
-            feedback.Clear();hitStop=0;idleAge=0;attackResolved=-1;inputEpoch++;hudRefillAt=clock;
+            feedback.Clear();hitStop=shake=flash=0;idleAge=0;hitSerial=attackResolved=-1;actionConsumed=false;inputEpoch++;hudRefillAt=clock;
+            bossSequence="charge";aimX=0;hurtAt=lastBossDamageAt=-100;
+            openingSource=CoreOpeningSource.None;counterOpportunities=counterHits=0;lastSlamMissAt=-100;
             pylonChargedAt[0]=pylonChargedAt[1]=-100;lastDischargedPylon=-1;dischargedAt=lastCoreHitAt=restoredAt=-100;
             Say("귀환 전력 복구. 그러나 폐기 집행 장치가 길을 막습니다.",4);Event("arena-arrival");
         }
         public void Retry(){if(phase!=Journey.Dead)return;BeginArena();age=2.4f;Event("checkpoint-retry");}
+        // Section two is the entire guardian encounter, not a boss HP phase.
+        // Keep the same puzzle checkpoint, records, counters and preferences.
+        public bool RestartCombat()
+        {
+            if(!InArena&&phase!=Journey.Title)return false;
+            bool fromTitle=phase==Journey.Title;
+            BeginArena();age=2.4f;paused=false;
+            Event(fromTitle?"combat-only-start":"combat-only-restart");return true;
+        }
         void Next(IronMove move)
         {
+            if(move!=IronMove.Open&&move!=IronMove.CounterSettle)openingSource=CoreOpeningSource.None;
             if(move==IronMove.ChargeAim)bossSequence="charge";
             if(move==IronMove.WaveAim)bossSequence="attack";
             if(move==IronMove.SlamAim)bossSequence="slam";
@@ -148,10 +169,16 @@ namespace TiqueReturn
                 if(Vulnerable&&M.Abs(hand-WeakX)<31&&hero.y>Floor-25)
                 {
                     hitSerial=attackResolved=hero.attackSerial;bossHealth--;openHits++;lastCoreHitAt=lastBossDamageAt=clock;flash=.12f;shake=.1f;hitStop=.045f;
+                    if(openingSource==CoreOpeningSource.SlamCounter){counterHits++;Event("counter-hit");}
                     feedback.Emit("hit",WeakX,WeakY,hero.facing,.17f);
                     Event("boss-hit");Sound?.Invoke("hit");
                     if(bossHealth<=0){phase=Journey.Restored;age=0;restoredAt=clock;Next(IronMove.Down);waves.Clear();hero.attackAge=hero.dashAge=9;hero.jumpUntil=-100;feedback.Emit("shutdown",bossX,Floor-16,1,.8f);Event("guardian-stopped");Say("폐기 명령을 해제했습니다. 오른쪽 문에서 E로 귀환 기록을 확인하세요.",8);}
-                    else if(openHits>=3){Next(IronMove.Recover);Say("장갑 재결합. 다음 충전 기둥으로 이동하세요.",3);}
+                    else if(openHits>=OpenHitLimit)
+                    {
+                        bool counter=openingSource==CoreOpeningSource.SlamCounter;
+                        if(counter)Event("counter-close-hit");Next(IronMove.Recover);
+                        Say(counter?"반격 성공. 다음 공격을 피하고 다시 기회를 만드세요.":"장갑 재결합. 다음 충전 기둥으로 이동하세요.",3);
+                    }
                 }
                 else if(M.Abs(hand-bossX)<61&&hero.y>bossY-58&&hero.y<bossY+8)
                 {attackResolved=hero.attackSerial;feedback.Emit("armor",hand,hero.y-20,hero.facing,.14f);Event("armor-contact");Sound?.Invoke("switch");}
@@ -231,7 +258,7 @@ namespace TiqueReturn
                     if(charged>=0&&(old+bossFacing*49-pylons[charged])*bossFacing<0&&(bossX+bossFacing*49-pylons[charged])*bossFacing>=0)
                     {
                         bossX=pylons[charged]-bossFacing*49;lastDischargedPylon=charged;dischargedAt=clock;charged=-1;chargeLife=0;chargeCooldown=2;
-                        feedback.Emit("pylon-impact",pylons[lastDischargedPylon],Floor-30,bossFacing,.15f);breaks++;openHits=0;waves.Clear();Next(IronMove.Open);shake=.3f;Sound?.Invoke("hit");Event("armor-break");Say("장갑이 열렸어요! 기둥 쪽 붉은 틈을 X로 세 번 공격하세요.",4);break;
+                        feedback.Emit("pylon-impact",pylons[lastDischargedPylon],Floor-30,bossFacing,.15f);breaks++;openHits=0;waves.Clear();openingSource=CoreOpeningSource.Pylon;Next(IronMove.Open);shake=.3f;Sound?.Invoke("hit");Event("armor-break");Say("장갑이 열렸어요! 기둥 쪽 붉은 틈을 X로 세 번 공격하세요.",4);break;
                     }
                     if(M.Abs(hero.x-bossX)<61&&hero.y>Floor-58)Damage("charge");
                     if(bossX<82||bossX>558){bossX=M.Clamp(bossX,82,558);feedback.Emit("wall-brake",bossX+bossFacing*52,Floor,bossFacing);Event("wall-brake");Next(IronMove.Recover);shake=.2f;}break;
@@ -249,11 +276,27 @@ namespace TiqueReturn
                     bossX=M.MoveTowards(bossX,aimX,dt*900);bossY=M.MoveTowards(bossY,Floor,dt*230);
                     if(bossY>=Floor)
                     {
-                        bossX=aimX;if(M.Abs(hero.x-bossX)<68&&hero.y>Floor-75)Damage("slam");
-                        feedback.Emit("slam-dust",bossX,Floor,1,.24f);shake=.23f;Sound?.Invoke("land");if(Rage>=2)SpawnWaves();Next(IronMove.Recover);
+                        bossX=aimX;
+                        // A miss is geometry, not the absence of Damage: dash/grace inside the
+                        // collision rectangle must never manufacture a free counter opportunity.
+                        bool connected=M.Abs(hero.x-bossX)<68&&hero.y>Floor-75;
+                        if(connected)Damage("slam");
+                        feedback.Emit("slam-dust",bossX,Floor,1,.24f);shake=.23f;Sound?.Invoke("land");
+                        if(!connected&&phase==Journey.Combat)
+                        {
+                            waves.Clear();openHits=0;openingSource=CoreOpeningSource.SlamCounter;
+                            if(hero.x!=bossX)bossFacing=hero.x<bossX?-1:1;
+                            lastSlamMissAt=clock;counterOpportunities++;Next(IronMove.CounterSettle);Event("slam-miss");
+                        }
+                        else{if(phase==Journey.Combat&&Rage>=2)SpawnWaves();Next(IronMove.Recover);}
                     }break;
+                case IronMove.CounterSettle:
+                    bossY=Floor;
+                    if(bossAge>=CounterSettleDuration){Next(IronMove.Open);Event("counter-open");Sound?.Invoke("switch");Say("낙하를 피했어요! 열린 노심에 X로 한 번 반격하세요.",2);}
+                    break;
                 case IronMove.Open:
-                    if(bossAge>(assisted?7:5.2f))Next(IronMove.Recover);break;
+                    if(bossAge>OpeningDuration)
+                    {if(openingSource==CoreOpeningSource.SlamCounter)Event("counter-close-timeout");Next(IronMove.Recover);}break;
                 case IronMove.Recover:
                     bossY=Floor;
                     if(bossAge>.85f){pattern++;Next(IronMove.Rest);}break;

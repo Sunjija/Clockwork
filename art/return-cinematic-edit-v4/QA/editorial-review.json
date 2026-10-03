@@ -1,0 +1,23 @@
+{
+  "revision": "cinematic-edit-v4",
+  "performedBy": "/root/shot_structure_review_v4",
+  "scope": "Read-only visual and narrative review of actual generated/native plate,11-shot board,E1/E2/E3/E4 and finalexit/black frames; not human approval",
+  "noWorkshopOrUpperLandingObserved": true,
+  "noWorkbenchTaskLampClockOrDestinationObserved": true,
+  "noDisembarkOrEndingCaptionObserved": true,
+  "awakeningCauseEffectReadable": true,
+  "collapseNotRestartedBetweenShots": true,
+  "riderShapePreserved": true,
+  "wideAscentExitReadable": true,
+  "insertRevision": {
+    "firstDraftPreserved": "art/return-cinematic-edit-v4-draft-01",
+    "firstCrop": [328,180,160,90],
+    "currentCrop": [277,188,160,90],
+    "reviewNotes": "CurrentE2 places the existing cyanindicator/guidepost nearcenter and Tiqueleftforeground anchors the sameoccupiedcar. Headremainswhole; lowerlegs intentionalCUcrop. E2contact->E3rider shiftsfocalpoint on thesame4x scale. No additionalrecroprecommendedbeforeuserfeedback."
+  },
+  "retainedCreativeChoice": "Gentle beginning acceleration and400ms blackhold remain for user timing feedback",
+  "humanAppearanceApproval": "pending",
+  "humanMotionApproval": "pending",
+  "runtimeIntegrated": false,
+  "agentFilesWrittenDuringReview": false
+}

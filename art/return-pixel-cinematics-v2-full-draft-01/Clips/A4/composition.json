@@ -1,0 +1,540 @@
+{
+  "shot": "A4",
+  "frames": [
+    {
+      "timeMs": 0,
+      "durationMs": 100,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/00.png",
+              "sourceSha256": "b8fac2728f4d369c19410981fd693b8ab82313573604b3aa2b2045a76019b542",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "36109701529a98f89fb699cd49ff2aa3fb31395cdab2e1542e42b548160392ce",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "495fad50b5747e0f8ceead59621bf08bd81d7c85d2d28415b6a86c5ca4781f4c"
+    },
+    {
+      "timeMs": 100,
+      "durationMs": 300,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/01.png",
+              "sourceSha256": "8d73b6c99f61421c8fb17f3e40a44d6f171f938ba1020003d7a92518e3f9144f",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "7a027ec9eb77293032a243ee35c1af336bef6d3320dea8b4e6f6fca3387c0477",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "2de489ed66cc3dd47ae1a9c0b726359b65e45bececedb882833a874f92ff7297"
+    },
+    {
+      "timeMs": 400,
+      "durationMs": 200,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/02.png",
+              "sourceSha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "6054761d05c153cc75f7205233b1840450bda3258c2345d4352a068d8282242d",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ]
+        }
+      ],
+      "rgbaSha256": "34192b269d1a82b9cc6c353636d3479110634c26dadfccdaec537c09852476ef"
+    },
+    {
+      "timeMs": 600,
+      "durationMs": 50,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/02.png",
+              "sourceSha256": "2b7c9319aeca851543dfa9830ab195e8ee571b5cd48983646a927470b1b3a53e",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "6054761d05c153cc75f7205233b1840450bda3258c2345d4352a068d8282242d",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ],
+          "caption": {
+            "text": "폐기 대상 감지",
+            "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "sizeNative": 16,
+            "fontmode": "1",
+            "generatedLettering": false
+          }
+        }
+      ],
+      "rgbaSha256": "35bfae5bb979654ebbb87d5a03f3ad35cdbfe17f9210dee833e54bbac4ab8420"
+    },
+    {
+      "timeMs": 650,
+      "durationMs": 250,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/03.png",
+              "sourceSha256": "8dfc46f1b05a737bf470c856cb54ac6c10248836dc03d9d9fc4d7ac8d160f6d9",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "cee856491978698dd227496294a7a858704528fe3f9ca28e3d1869100f2cb802",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ],
+          "caption": {
+            "text": "폐기 대상 감지",
+            "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "sizeNative": 16,
+            "fontmode": "1",
+            "generatedLettering": false
+          }
+        }
+      ],
+      "rgbaSha256": "35597eea28b27857bae8272f6d8c8c9d73047079682068e89e7798d091c2f148"
+    },
+    {
+      "timeMs": 900,
+      "durationMs": 250,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/04.png",
+              "sourceSha256": "19c8c9647b1a759458da787447b8ef94adfdd6f2a81395bc49e942b619aee1cf",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "4d4d6f0384c71d66b9fe7c2dcfc327bdaf65e542205b555f72bd59463a449eda",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ],
+          "caption": {
+            "text": "폐기 대상 감지",
+            "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "sizeNative": 16,
+            "fontmode": "1",
+            "generatedLettering": false
+          }
+        }
+      ],
+      "rgbaSha256": "784fcc9342f0ef06cd56862859261af62ee3716ec5778ea0c1a33f37c3c8cfb6"
+    },
+    {
+      "timeMs": 1150,
+      "durationMs": 250,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/05.png",
+              "sourceSha256": "f0c3caff482ae4e472168a478de81d3ee7e476a43189d4a51921791413b97177",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "c559a9333582bdc2685abf3ab8d1a0757657e3ca84d76efb6f6e08c88641cac0",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ],
+          "caption": {
+            "text": "폐기 대상 감지",
+            "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "sizeNative": 16,
+            "fontmode": "1",
+            "generatedLettering": false
+          }
+        }
+      ],
+      "rgbaSha256": "dd41356d1d100c10553d986fa69198a690882081f8014b64863f0b53148092ef"
+    },
+    {
+      "timeMs": 1400,
+      "durationMs": 300,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/06.png",
+              "sourceSha256": "eb993a32da474263515ae2224d4fdccfd67c252fcd5c82eec3159f0a453e4b1d",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "5205ff362cf53c724661dce91899fe895cecfe71b5c71917e0f37148108f8f1a",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ],
+          "caption": {
+            "text": "폐기 대상 감지",
+            "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "sizeNative": 16,
+            "fontmode": "1",
+            "generatedLettering": false
+          }
+        }
+      ],
+      "rgbaSha256": "1688e80a309c87d54ee20d5204db71194562083301f646ffbce0d317f883f330"
+    },
+    {
+      "timeMs": 1700,
+      "durationMs": 300,
+      "subexposures": [
+        {
+          "background": "arena-plate",
+          "layers": [
+            {
+              "source": "WardenV8/boot/07.png",
+              "sourceSha256": "d7496f48861251f3065b18945466c6db838fa494e0a44537ea0de3a094c05017",
+              "xy": [
+                354,
+                118
+              ],
+              "size": [
+                192,
+                176
+              ],
+              "anchor": [
+                96,
+                164
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "b1e7698a0fd6b4cebd126cca526baa70300298057723e0a1efb6fbd9da54634a",
+              "bodyPartsRedrawn": false
+            },
+            {
+              "source": "TiqueV10/Idle/00.png",
+              "sourceSha256": "608f094c30f30e16a7bedfbfad73fa0670601ce2cccae2512b92d233b1859c41",
+              "xy": [
+                126,
+                226
+              ],
+              "size": [
+                64,
+                64
+              ],
+              "anchor": [
+                32,
+                56
+              ],
+              "scale": 1,
+              "flip": false,
+              "rgbaSha256": "a678686c1b302dad743979f7561bfa98f587e5c2b5106a82d4452d412e524872",
+              "bodyPartsRedrawn": false
+            }
+          ],
+          "caption": {
+            "text": "폐기 대상 감지",
+            "font": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-v5-feedback/Source/Font/neodgm.ttf",
+            "fontSha256": "77305267996073aae07bad9313dad2e306a4128e55bfafbed4c41558fee57b4d",
+            "sizeNative": 16,
+            "fontmode": "1",
+            "generatedLettering": false
+          }
+        }
+      ],
+      "rgbaSha256": "1cf40b24ed346bece166a9bb5954fa45baf27fa319b5ff4cdfba2b3c3e4d9220"
+    }
+  ],
+  "sourceInfo": {
+    "action": "Current guardian boot t400..2400; current Tique left/guardian right; threat subtitle.",
+    "bootDeadHoldOmittedMs": 400,
+    "originalPoseTimingAfterOmission": true,
+    "registration": {
+      "Tique": [
+        32,
+        56
+      ],
+      "Warden": [
+        96,
+        164
+      ],
+      "floorY": 282
+    },
+    "background": "arena-plate",
+    "runtimeCapture": false,
+    "spriteScaling": false
+  }
+}

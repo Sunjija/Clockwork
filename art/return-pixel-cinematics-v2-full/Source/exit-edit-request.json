@@ -1,0 +1,7 @@
+{
+  "prompt": "Targeted local edit to this EXACT frame: open ONLY the mechanical door at the extreme right (the brass frame near the right edge). Its opening now reveals a quiet warm workshop with a small amber work-lamp. Keep every other pixel/architectural feature, the large central gear, windows, cold blue lights, floor at its EXACT current height, framing, perspective and resolution UNCHANGED. The door stays in precisely the same place and retains its exact brass frame. No new doorway, do not move the door inward, do not lower or raise the floor, no characters, no text, no UI, no fog, no bloom. Maintain the exact crisp pixel-art tone of the source. A tiny amber spill on the adjacent existing floor is okay; all other floor/room geometry must stay fixed.",
+  "referenced_image_paths": [
+    "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-9888646f-a8b8-449d-9be9-22996a394ea3.png"
+  ],
+  "transparent_background": false
+}

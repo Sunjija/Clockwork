@@ -1,0 +1,13 @@
+{
+  "modelVersion": 2,
+  "piskel": {
+    "name": "button",
+    "description": "Generated-source button; documented palette-only state remap, identical alpha and silhouette; exact timing/deltas included.",
+    "fps": 20,
+    "width": 112,
+    "height": 21,
+    "layers": [
+      "{\"name\": \"button\", \"opacity\": 1, \"frameCount\": 1, \"chunks\": [{\"layout\": [[0]], \"base64PNG\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAAAVCAYAAACe2WqiAAACaklEQVR4nO2az2sTQRTH36YhIUVMNLU1zaWx/gi0PQU8WErQgEfx3ouC/4R/gTfxIgh68OpNitcUSre1CD2ZlmgbySWJxW5NRSxZhMr3bd8yKYI3Zwrvc8jO7I+w5MObmTcvHhnkCqXjzPkst49+HJK0FbuICxwHYUhHQceTa54p7+7iQ7pXu8X9pfo6TRcnLL2yYtLq7LGLmfI0vXj+kjbf+7HEJD4y+eLxbOUmy9tqtviBj2sr1M2PDX2RYocg2Cear7KXhdodPue/e8NHz4w8yFutL1Nr51Mcrop9cmOXaPRcliq3a9xHNMITIjGJsRUnMGR2m1vU633lmyAPDyp2QSD197+xQIyKcyeROFmeocbmhygCC1NXqH8QUO5ino+6gHEPOIEnIK7an5uUkJXmq0fjFIa/2bTiJvmTNcmD2RE+plMpSsAsLjxZuUCFwmXLr6j8C7h6283FMj2sQM25DkKB5oBucXpak0VmEvK2n5VpvXFA/kZArxtZnjQzVl9X+RuY3jBKPq5+J6JxWny6QwlcgDzzJsVdFtK7Q30WqJxdkhhL/Y1oVQN+/Tzk1Y3iHnBDNMJTncBbaauDq5wYgtF2PV7IKG6B3K9VqnIbmy6D0I8Eygnec1OcBakDdmOkzXkgOhCHyRGJvOI+9yf7cbBxBGJ/jYoTVClFVQipPWku6AamC3E119mjXvtLlMhPXS9zSMo8iOFUKhKKfbjgcO3GkB9EIPZCuSh4WiKqE9jxBlrUtQs8QBjqgNIWeSjqxhV5U6LiLij3ddu7cUU+FigSJQc8a8XcdCr1X97ZzJFt/Ubmf2L+ANT0I8mflYnlAAAAAElFTkSuQmCC\"}]}"
+    ]
+  }
+}

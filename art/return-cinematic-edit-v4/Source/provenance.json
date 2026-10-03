@@ -1,0 +1,32 @@
+{
+  "revision": "cinematic-edit-v4",
+  "inspectedByMain": true,
+  "shownToUser": true,
+  "builtInMode": true,
+  "selectedSource": {
+    "sourcePath": "/Users/daddung/.codex/generated_images/01a0a331-bd2c-78d0-996e-0b8f1f55dce7/exec-5d1d77ce-beff-44b0-8571-6edfee0dc528.png",
+    "sourceSha256": "10d347d4f1d9874330e70b48f66656fb1fedfd5a93535aac6efc2a1fc077992e",
+    "projectCopy": "Source/Generated/shaft-no-destination.png",
+    "copySha256": "10d347d4f1d9874330e70b48f66656fb1fedfd5a93535aac6efc2a1fc077992e",
+    "args": {
+      "prompt": "Use case: precise-object-edit.\nAsset type: Clockwork ending ELEVATOR SHAFT background-only plate; single16:9 landscape, the same flat fixed side-view game world.\nInput image1: edit target, existing two-level shaft factory background. Primary request: REMOVE the ENTIRE upper-right workshop and upper landing. The ending now shows only boarding and riding upward; the destination must NEVER be visible.\nKeep the lower boarding floor exactly at the existing native640x360 equivalent y282, the shaft center at x310, the two existing straight steel guide rails approximately x252 andx366, and the existing cold left factory wall/windows/cables. Preserve room framing and camera perspective. Leave the empty shaft unblocked between the rails and continuing straight out of the TOP of the image so an unchanged open lift can ascend offscreen.\nReplace the entire upper-right room with quiet dark navy/slate riveted structural steel wall and existing-like vertical service pipes: no occupied room, no alcove or visible destination, NO workshop lamp, NO workbench/table/stool/shelf, NO wall clock, NO tools or new signage. REMOVE the upper horizontal landing floor/railing at y172 entirely. Above the lower floor there must be uninterrupted vertical shaft/industrial wall, not a second exit or stopping floor. Retain the lower floor platforms and dark steel foundation around the shaft only. Do not move the lower-left floor line or rails. No upper doorway/window into a warm room. No warm amber room lighting; only restrained existing brass metal and tiny cyan factory lights.\nBackground ONLY: no elevator carriage, robot, guardian, passengers, UI or text. No new moving mechanical parts, cables dangling into the shaft, roofs closing the shaft, portals, fog, bloom or lens effect. Stay crisp chunky high-quality native-pixel-art styled with hard stepped silhouettes and limited flat steel/brass/navy/cyan shading; no smooth gradients, painted texture or3D realism. This source will support wide, medium and close camera crops from the SAME geometry. One complete background plate, not a storyboard/montage.",
+      "referenced_image_paths": [
+        "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/Generated/shaft-workshop-plate.png"
+      ],
+      "transparent_background": false
+    },
+    "references": [
+      {
+        "sourcePath": "/Users/daddung/Documents/Codex/2026-09-15/https-github-com-sunjija-clockwork-tree/work/Clockwork-latest-3338c55/art/return-ending-elevator-v3/Source/Generated/shaft-workshop-plate.png",
+        "sourceSha256": "79e37a6421a7e50a18b2c1864cea8148e9f0b1099aa980708540a90dabb96db5",
+        "projectCopy": "Source/References/shaft-0.png",
+        "copySha256": "79e37a6421a7e50a18b2c1864cea8148e9f0b1099aa980708540a90dabb96db5"
+      }
+    ]
+  },
+  "requestsSha256": "3945988cbb313699fe3d8f74e54e1c06c833008fd4cb6e57d228f778e19b52e9",
+  "humanAppearanceApproval": "pending",
+  "runtimeIntegrated": false,
+  "gameLaunched": false,
+  "unityFilesWritten": false
+}
